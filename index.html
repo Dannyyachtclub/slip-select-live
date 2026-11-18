@@ -556,7 +556,7 @@ document.addEventListener("click",e=>{
 function switchTab(name){activeTab=name;
  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-tab")===name));
  document.querySelectorAll(".tabpage").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));
- if(window.Arena3D)Arena3D.onTab(name);
+ if(typeof Arena3D!=="undefined"&&Arena3D.onTab)Arena3D.onTab(name);
  requestAnimationFrame(observeReveals);}
 
 /* ================= draggable auto-sliding strips =================
@@ -743,16 +743,47 @@ function renderRoster(d){
 }
 
 /* ================= render: bets (Top-3 match cards) ================= */
+const KIND_ORDER={"GRAND PICK":0,"CONFIDENCE":1,"UNDERDOG DESK":2,"DRAW DESK":3};
+function heroSlip(d){
+ if(d.top3&&d.top3.slip)return d.top3.slip;
+ const slips=d.slips||[]; if(!slips.length)return null;
+ return slips.reduce((a,b)=>((b.number||0)>(a.number||0)?b:a),slips[0]);
+}
+function normBet(b){
+ const stRaw=String(b.status||"").toUpperCase();
+ const state=b.state||(stRaw==="IN PLAY"?"inplay":stRaw==="ENDED"?"ended":"upcoming");
+ return {game:b.game||"",pick:b.pick||b.selection||"",kind:b.kind||"",paper:!!b.paper,desk:!!b.paper,
+  called_stake_m:(b.called_stake_m!=null?b.called_stake_m:b.stake_m),
+  odds:(b.odds!=null?b.odds:b.price),state:state,
+  result:b.result?String(b.result).toLowerCase():null,pnl_m:b.pnl_m,
+  final_score:b.final_score||null,tip_time:b.tip_time||(b.tip_at?fmtTime(b.tip_at):""),game_id:b.game_id||"",
+  user_stake_m:(b.user_stake_m!=null?b.user_stake_m:null),user_bet:b.user_bet||null};
+}
+function calledBets(d,slipNo){
+ if(d.bets&&d.bets.length){
+   const rows=d.bets.filter(b=>b.slip===slipNo);
+   const called=rows.filter(b=>b.kind!=="USER BET").map(normBet);
+   const users=rows.filter(b=>b.kind==="USER BET");
+   called.forEach(c=>{const u=users.find(x=>x.game_id&&c.game_id&&x.game_id===c.game_id)||users.find(x=>x.pick===c.pick);
+     if(u)c.user_bet={stake_m:u.stake_m,odds:(u.price!=null?u.price:u.odds)};});
+   return called.sort((a,b)=>((KIND_ORDER[a.kind]!=null?KIND_ORDER[a.kind]:9)-(KIND_ORDER[b.kind]!=null?KIND_ORDER[b.kind]:9)));
+ }
+ if(d.top3&&d.top3.picks&&(!slipNo||(d.top3.slip&&d.top3.slip.number===slipNo)))return d.top3.picks;
+ const s=(d.slips||[]).find(x=>x.number===slipNo);
+ return s&&s.bets?s.bets:[];
+}
 function splitTeams(game){
  const parts=String(game||"").split(" v ");
  if(parts.length===2)return[parts[0],parts[1]];
  return[game||"",null];
 }
 function renderBoard(d){
- const t3=(d.top3&&d.top3.picks)||[], slip=d.top3&&d.top3.slip;
+ const slip=heroSlip(d), t3=slip?calledBets(d,slip.number):[];
  let h="";
- if(slip)h+='<div class="board-head"><div><div class="kick">The King\u2019s Top 3</div><h4>Slip #'+esc(slip.number)+'</h4></div>'
-   +'<div class="meta">'+esc(slip.date||"")+' · '+esc(slip.sport||"")+' · '+esc(slip.n_games||"")+' games · lock: '+esc(String(slip.lock||"")).toUpperCase()+"</div></div>";
+ if(slip){const gc=(slip.games!=null?slip.games:slip.n_games);
+   const meta=[slip.date||"",slip.sport||"",gc!=null?gc+" games":"",slip.status||""].filter(Boolean).join(" · ");
+   h+='<div class="board-head"><div><div class="kick">The King\u2019s Top 3</div><h4>Slip #'+esc(slip.number)+'</h4></div>'
+   +'<div class="meta">'+esc(meta)+"</div></div>";}
  if(!t3.length)h+='<div class="card">No Top 3 called on this slip — the gate passed on every game.</div>';
  h+='<div class="t3grid">'+t3.map((p,i)=>{
    const teams=splitTeams(p.game), st=p.state||"upcoming";
@@ -764,9 +795,11 @@ function renderBoard(d){
      +(p.pnl_m!=null?'<span class="t3pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
    else zone='<span class="chip amb">UPCOMING</span><span class="when">tips '+esc(p.tip_time||"")+"</span>";
    let um="";
-   if(p.user_bet)um='<div class="usermark"><span class="lab">Your bet</span> — <b>'+fmtInt(p.user_bet.stake_m)+"m @"+esc(p.user_bet.odds)+"</b>"
-     +(p.user_bet.stake_m!==p.called_stake_m?' · the call was '+stakeWords(p.called_stake_m):" · exactly as called")+"</div>";
-   else if(p.desk)um='<div class="usermark"><span class="lab">Paper desk</span> — no real money rides on this one</div>';
+   if(p.user_bet)um='<div class="usermark"><span class="lab">Your bet</span> — '
+     +(p.user_bet.stake_m!=null?'<b>'+fmtInt(p.user_bet.stake_m)+"m @"+esc(p.user_bet.odds)+"</b>"
+       +(p.user_bet.stake_m!==p.called_stake_m?' · the call was '+stakeWords(p.called_stake_m):" · exactly as called")
+       :"amount not stated @"+esc(p.user_bet.odds))+"</div>";
+   if(p.desk)um+='<div class="usermark"><span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours above is real</div>';
    return '<article class="t3card reveal"><div class="t3-top"><div class="kind">'+esc(p.kind||"")+'</div><div class="rank">'+String(i+1).padStart(2,"0")+'</div></div>'
      +'<div class="teams">'+teamHtml+'</div><div class="pick-callout"><div class="lab">The pick</div><div class="pick">'+esc(p.pick||"")+'</div></div>'
      +'<div class="t3chips"><span class="data-chip">Price <b>'+esc(p.odds||"")+'</b></span><span class="data-chip">Stake <b>'+esc(stakeWords(p.called_stake_m))+"</b></span></div>"
@@ -784,7 +817,7 @@ function renderBank(d){
    '<div class="stat"><div class="lab">Earned since reset</div><div class="v num '+(b.earned_m>0?"pos":b.earned_m<0?"neg":"")+'">'+fmtM(b.earned_m)+'</div></div>'
   +'<div class="stat"><div class="lab">Your bets since reset</div><div class="v num">'+esc(b.record||"—")+'</div></div>'
   +'<div class="stat"><div class="lab">Win rate</div><div class="v num">'+(b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—")+'</div></div>'
-  +'<div class="stat"><div class="lab">Bets still in play</div><div class="v num">'+esc(b.in_play!=null?b.in_play:"—")+'</div></div>';
+  +'<div class="stat"><div class="lab">Bets still in play</div><div class="v num">'+esc(b.in_play!=null?b.in_play:(b.pending?b.pending.length:"—"))+'</div></div>';
 }
 function resChip(r){if(r==="won")return '<span class="chip grn">WON</span>';if(r==="lost")return '<span class="chip red">LOST</span>';
  if(r==="pending")return '<span class="chip amb">PENDING</span>';return '<span class="chip ink">'+esc(String(r||"").toUpperCase())+"</span>"}
@@ -795,19 +828,22 @@ function renderRecord(d){
    +box("Confidence desk",f.confidence,f.confidence&&f.confidence.pnl_m)
    +box("Underdog desk",f.underdog_desk,f.underdog_desk&&f.underdog_desk.pnl_m)
    +box("Draw desk",f.draw_desk,f.draw_desk&&f.draw_desk.pnl_m)
-   +'<div class="stat"><div class="lab">Totals leans (no stake)</div><div class="v num">'+(f.totals_leans?f.totals_leans.wins+"-"+f.totals_leans.losses:"—")+'</div><div class="num"></div></div>';
+   +(f.totals_leans?'<div class="stat"><div class="lab">Totals leans (no stake)</div><div class="v num">'+f.totals_leans.wins+"-"+f.totals_leans.losses+'</div><div class="num"></div></div>':"");
  $("rec-grid").innerHTML=h;
- const cur=d.top3&&d.top3.slip?d.top3.slip.number:null;
+ const hero=heroSlip(d), cur=hero?hero.number:null;
  const past=(d.slips||[]).filter(s=>!cur||s.number!==cur);
  $("archive").innerHTML=past.map(s=>{
-   let rows=(s.bets||[]).map(b=>{
-     let u=""; if(b.user_stake_m!=null)u='<span class="umark">Your bet: '+fmtInt(b.user_stake_m)+"m @"+esc(b.odds)
-       +(b.user_stake_m!==b.called_stake_m?' — the call was '+stakeWords(b.called_stake_m):" — exactly as called")+"</span>";
+   let rows=calledBets(d,s.number).map(b=>{
+     const us=b.user_bet?b.user_bet.stake_m:b.user_stake_m;
+     let u=""; if(us!=null)u='<span class="umark">Your bet: '+fmtInt(us)+"m @"+esc(b.user_bet?b.user_bet.odds:b.odds)
+       +(us!==b.called_stake_m?' — the call was '+stakeWords(b.called_stake_m):" — exactly as called")+"</span>";
      return '<div class="betrow">'+resChip(b.result)+'<span class="g">'+esc(b.game)+'</span><span class="p">'+esc(b.kind)+" · "+esc(b.pick)+" @<b>"+esc(b.odds)+"</b> · "+esc(stakeWords(b.called_stake_m))+"</span>"
        +(b.final_score?'<span class="score">'+esc(b.final_score)+"</span>":"")
        +'<span class="num '+(b.pnl_m>0?"pos":b.pnl_m<0?"neg":"")+'">'+fmtM(b.pnl_m)+"</span>"+u+"</div>"}).join("");
    if(!rows)rows='<div class="betrow"><span class="g">No called bets on this slip — the gate passed on every game.</span></div>';
-   return '<div class="arch-slip"><div class="arch-head"><b>Slip #'+esc(s.number)+'</b><span>'+esc(s.date||"")+" · "+esc(s.sport||"")+'</span><span class="n">'+esc(s.status||"")+"</span></div>"+rows+"</div>";
+   const gc=(s.games!=null?s.games:s.n_games);
+   const meta=[s.date||"",s.sport||"",gc!=null?gc+" games":""].filter(Boolean).join(" · ");
+   return '<div class="arch-slip"><div class="arch-head"><b>Slip #'+esc(s.number)+'</b><span>'+esc(meta)+'</span><span class="n">'+esc(s.status||"")+"</span></div>"+rows+"</div>";
  }).join("");
 }
 
@@ -818,25 +854,31 @@ function renderWar(d){
    return '<div class="acard">'+thumbTag(key)+'<div style="min-width:0"><div class="n"><span class="sdot'+(a.status==="active"?" on":"")+'"></span>'+esc(a.name)+'</div>'
      +'<div class="r">'+esc(a.role||"")+'</div><div class="h">'+esc(a.headline||"")+'</div>'
      +'<div class="la">'+(a.last_activity?"last activity "+fmtTime(a.last_activity):"")+"</div></div></div>"}).join("");
- const sh=d.stakehunter||{};
- if(sh.status==="not_started"||!sh.findings||!sh.findings.length){
+ const sh=d.stakehunter||{}, finds=sh.findings||[];
+ if(sh.status==="not_started"||!finds.length){
    $("stakehunter").innerHTML='<div class="card"><b>The hunt has not filed yet.</b><br><span class="sub">The first cycle is measuring every king flat first — its own audit — before any sizing rule is allowed to speak.</span></div>';
  }else{
-   let h='<div class="card"><div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><b style="font-family:var(--serif);font-size:1.12rem">Cycle '+esc(sh.cycle||"")+' — findings on the fitted set</b><span class="chip ink">flat 25m stays the official scoreboard</span></div>';
+   const cyc=(sh.latest_cycle!=null?sh.latest_cycle:sh.cycle);
+   const good=finds.filter(f=>f.status==="FINDING"||(!f.status&&f.rule));
+   const bad=finds.filter(f=>f.status&&f.status!=="FINDING");
+   let h='<div class="card"><div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><b style="font-family:var(--serif);font-size:1.12rem">Findings on the fitted set'+(cyc!=null?" — through cycle "+esc(cyc):"")+'</b><span class="chip ink">flat 25m stays the official scoreboard</span></div>';
    h+='<p class="sub" style="margin-top:9px">Every rule below beat flat staking on at least 3 of 5 kings with drawdown held inside 1.5× flat. All paper, all fitted — nothing here changes a real stake without your word.</p>';
-   h+=sh.findings.map(fd=>'<div class="findrow"><div class="fh"><span class="chip gold">'+esc(fd.id)+'</span><b>'+esc(fd.name)+'</b><span class="chip grn">beat flat on '+esc(fd.kings_beaten||"")+" of 5 kings</span></div>"
-     +'<div class="vd">'+esc(fd.rule||"")+'</div><div class="vd">On the grand king: <b class="num pos">'+fmtM(fd.grand_king_pnl_m)+'</b> vs flat <b class="num">'+fmtM(fd.flat_grand_king_pnl_m)+"</b></div></div>").join("");
-   h+=acc("sh-refuted","Refuted this cycle ("+((sh.refuted||[]).length)+")",
-     (sh.refuted||[]).map(r=>"<b>"+esc(r.id)+" "+esc(r.name)+"</b> — "+esc(r.why||"")+"<br>").join("")||"None.");
+   h+=good.map(fd=>'<div class="findrow"><div class="fh"><span class="chip gold">'+esc(fd.id)+'</span><b>'+esc(fd.name)+'</b>'+(fd.cycle!=null?'<span class="chip ink">cycle '+esc(fd.cycle)+"</span>":"")+"</div>"
+     +(fd.verdict?'<div class="vd">'+esc(fd.verdict)+"</div>"
+       :'<div class="vd">'+esc(fd.rule||"")+'</div><div class="vd">On the grand king: <b class="num pos">'+fmtM(fd.grand_king_pnl_m)+'</b> vs flat <b class="num">'+fmtM(fd.flat_grand_king_pnl_m)+"</b></div>")+"</div>").join("");
+   const refuted=bad.length?bad:(sh.refuted||[]);
+   if(refuted.length)h+=acc("sh-refuted","Refuted & not findings ("+refuted.length+")",
+     refuted.map(r=>"<b>"+esc(r.id)+" "+esc(r.name)+"</b> — "+esc(r.verdict||r.why||"")+"<br>").join(""));
    $("stakehunter").innerHTML=h+"</div>";
  }
  const ch=d.autopsy_challengers||[];
  $("challengers").innerHTML=ch.length?ch.map(c=>'<div class="findrow"><div class="fh"><span class="chip vio">'+esc(c.id)+'</span><b>'+esc(c.name)+'</b><span class="chip grn">clears the gate</span></div>'
-   +'<div class="vd">'+esc(c.rule||"")+'</div><div class="vd">Fitted line: <b class="num">'+esc(c.wins+"-"+c.losses)+"</b> · <b class=\"num pos\">"+fmtM(c.pnl_m)+"</b> · ROI <b class=\"num\">"+fmtPct(c.roi_pct)+"</b></div></div>").join("")
+   +'<div class="vd">'+esc(c.mechanism||c.rule||"")+'</div><div class="vd">Fitted line: <b class="num">'+esc(c.wins+"-"+c.losses)+"</b> · <b class=\"num pos\">"+fmtM(c.pnl_m)+"</b> · ROI <b class=\"num\">"+fmtPct(c.roi_pct)+"</b></div></div>").join("")
    :'<div class="card">The autopsy has not filed a gate-clearing challenger yet.</div>';
  $("river").innerHTML=(d.activity||[]).map(a=>{
-   const key=AGENT_KEY[a.source]||(a.source==="Arena"?"arena":"vault");
-   return '<div class="ritem"><div class="thumb">'+imgTag(key)+'</div><div style="min-width:0"><div class="tt">'+esc(a.title)+'</div><div class="sm">'+esc(a.summary||"")+'</div></div><div class="when">'+esc(a.when||"")+"</div></div>"}).join("");
+   const ag=a.agent||a.source||"", key=AGENT_KEY[ag]||"vault";
+   const when=a.at?fmtTime(a.at):(a.when||"");
+   return '<div class="ritem"><div class="thumb">'+imgTag(key)+'</div><div style="min-width:0"><div class="tt">'+esc(a.title)+'</div><div class="sm">'+esc(a.summary||"")+'</div></div><div class="when">'+esc(when)+"</div></div>"}).join("");
 }
 
 /* ================= render: vault + slips ================= */
@@ -852,14 +894,18 @@ function renderVault(d){
    $("vault-cd").textContent=dd+"d "+String(hh).padStart(2,"0")+":"+String(mm).padStart(2,"0")+":"+String(ss).padStart(2,"0")}
  tick(); if(vaultCdTimer)clearInterval(vaultCdTimer); vaultCdTimer=setInterval(tick,1000);
  $("slips").innerHTML=(d.slips||[]).map(s=>{
-   const gl=s.games_list||[];
-   let body='<div class="betrow"><span class="g">'+esc(s.n_games||"")+' games · '+esc(s.sport||"")+"</span>"
+   const gl=s.games_list||[], gc=(s.games!=null?s.games:s.n_games);
+   let body='<div class="betrow"><span class="g">'+esc(gc!=null?gc:"")+' games'+(s.sport?" · "+esc(s.sport):"")+"</span>"
      +'<span class="p">'+(s.status==="LOCKED"?"Picks locked before tip-off — results land when the games finish.":"Graded from two independent sources.")+"</span></div>";
-   body+=(s.bets||[]).map(b=>'<div class="betrow">'+resChip(b.result)+'<span class="g">'+esc(b.game)+'</span><span class="p">'+esc(b.kind)+" · "+esc(b.pick)+" @<b>"+esc(b.odds)+"</b> · "+esc(stakeWords(b.called_stake_m))+"</span>"
+   if(s.results){const R=s.results, parts=[];
+     [["Grand pick",R.grand_pick],["Confidence",R.confidence_bet],["Underdog desk",R.underdog_desk],["Draw desk",R.draw_desk]].forEach(([lab,r])=>{
+       if(r&&r.result)parts.push(lab+": "+resChip(String(r.result).toLowerCase())+' <span class="num '+(r.pnl_m>0?"pos":r.pnl_m<0?"neg":"")+'">'+fmtM(r.pnl_m)+"</span>");});
+     if(parts.length)body+='<div class="betrow"><span class="g">'+parts.join(" &nbsp;·&nbsp; ")+"</span></div>";}
+   body+=calledBets(d,s.number).map(b=>'<div class="betrow">'+resChip(b.result)+'<span class="g">'+esc(b.game)+'</span><span class="p">'+esc(b.kind)+" · "+esc(b.pick)+" @<b>"+esc(b.odds)+"</b> · "+esc(stakeWords(b.called_stake_m))+"</span>"
      +(b.final_score?'<span class="score">'+esc(b.final_score)+"</span>":"")+'<span class="num '+(b.pnl_m>0?"pos":b.pnl_m<0?"neg":"")+'">'+fmtM(b.pnl_m)+"</span></div>").join("");
    if(gl.length)body+='<table class="games"><tr><th>Game</th><th>Score</th><th>King picked</th></tr>'
-     +gl.map(g=>"<tr><td>"+esc(g.game)+'</td><td class="sc">'+(g.score?esc(g.score):"—")+"</td><td>"+esc(g.winner||"")+"</td></tr>").join("")+"</table>";
-   const head='<span>Slip #'+esc(s.number)+" — "+esc(s.date||"")+"</span>"+resChip(s.status==="LOCKED"?"pending":s.status==="GRADED"?"won":"ink");
+     +gl.map(g=>{const sc=(g.final_score!=null?g.final_score:g.score);return "<tr><td>"+esc(g.game)+'</td><td class="sc">'+(sc?esc(sc):"—")+"</td><td>"+esc(g.winner||"")+"</td></tr>"}).join("")+"</table>";
+   const head='<span>Slip #'+esc(s.number)+(s.date?" — "+esc(s.date):"")+"</span>"+resChip(s.status==="LOCKED"?"pending":s.status==="GRADED"?"won":"ink");
    return acc("slip"+s.number,head,body);
  }).join("");
 }
@@ -879,14 +925,58 @@ function animateBankroll(){
    if(p<1)requestAnimationFrame(step); })(start);
 }
 
+/* ================= the bout (data -> Pit.setBout) ================= */
+function roiFrac(roi){if(roi==null)return .45;return Math.max(.06,Math.min(1,roi/110))}
+function evAgent(a){return a.agent||a.source||""}
+function evKind(a){
+ if(a.kind&&a.kind!=="generation"&&a.kind!=="filing")return a.kind;
+ const t=(a.title||"")+" "+(a.summary||"");
+ if(/\bCROWNED\b/.test(t))return "crown";
+ if(/AUTOPSY-\d/.test(t))return "challenger";
+ return a.kind||"generation";
+}
+function pickBout(d){
+ const gk=grandKing(d); if(!gk)return null;
+ const gkKey=COURT_KEY[gk.court]||"regime";
+ const defChar={key:gkKey,name:gk.court+" — "+(CHAR[gkKey]||{}).title,
+   label:gk.name+" · "+fmtPct(gk.roi_pct),frac:roiFrac(gk.roi_pct),roi:gk.roi_pct,pnl:gk.pnl_m};
+ const acts=(d.activity||[]).filter(a=>a&&(a.title||a.summary));
+ const crown=acts.find(a=>evKind(a)==="crown");
+ const chal=acts.find(a=>evKind(a)==="challenger");
+ const ev=crown||chal||acts[0]; if(!ev)return null;
+ let atk=null;
+ if(chal&&!crown){
+   const c=(d.autopsy_challengers||[]).find(x=>(ev.title||"").indexOf(x.id)>=0||(ev.summary||"").indexOf(x.id)>=0)||(d.autopsy_challengers||[])[0];
+   if(c)atk={key:"autopsy",name:c.id+" — Necromancer",label:c.name+" · "+fmtPct(c.roi_pct),frac:roiFrac(c.roi_pct),roi:c.roi_pct,pnl:c.pnl_m};
+ }
+ if(!atk){
+   const ag=evAgent(ev), key=AGENT_KEY[ag]||"discovery";
+   const k=(d.kings||[]).find(x=>x&&x.court===ag);
+   if(k&&k.court!==gk.court)atk={key:COURT_KEY[k.court],name:k.court+" — "+(CHAR[COURT_KEY[k.court]]||{}).title,label:k.name+" · "+fmtPct(k.roi_pct),frac:roiFrac(k.roi_pct),roi:k.roi_pct,pnl:k.pnl_m};
+   else atk={key:key,name:(ag||"Discovery")+" — "+(CHAR[key]||{}).title,label:cleanMd(ev.title).slice(0,60),frac:.55,roi:null,pnl:null};
+ }
+ return {atk:atk,def:defChar,verdict:crown?"CROWNED":"PARRIED",title:cleanMd(ev.title),crown:!!crown};
+}
+let seenCrowns=null;
+function crownFireworks(d){
+ const keys=(d.activity||[]).filter(a=>evKind(a)==="crown").map(a=>evAgent(a)+"|"+a.title+"|"+(a.at||a.when||""));
+ if(seenCrowns===null){seenCrowns=new Set(keys);return}
+ const fresh=keys.filter(k=>!seenCrowns.has(k)); keys.forEach(k=>seenCrowns.add(k));
+ if(fresh.length&&typeof bigFireworks==="function")bigFireworks();
+}
+
 /* ================= load + render ================= */
 function renderAll(d){
  DATA=d;
  renderHero(d); renderPyramid(d); renderRoster(d);
  renderBoard(d); renderBank(d); renderRecord(d);
  renderWar(d); renderVault(d);
- if(window.Pit)Pit.boot(d);
- if(window.Arena3D)Arena3D.init(d);
+ const bout=pickBout(d);
+ if(bout){
+   $("pit-caption").innerHTML='<span class="versus">The Fight Pit</span><span><b>'+esc(bout.atk.name)+"</b> — "+esc(bout.atk.label)+'</span><span><b>'+esc(bout.def.name)+"</b> — "+esc(bout.def.label)+"</span>";
+   if(window.Pit)Pit.setBout(bout);
+ }
+ crownFireworks(d);
  animateBankroll();
  switchTab(activeTab);
  requestAnimationFrame(observeReveals);
