@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:09:28.104423-06:00",
+  "generated_at": "2026-11-18T12:31:00.214641-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,50 +126,50 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T11:32:28.170022-06:00",
+      "last_activity": "2026-11-18T12:09:36.443005-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-18T11:39:47.766019-06:00",
+      "last_activity": "2026-11-18T12:16:23.282002-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP — 211-28, +67.21% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-18T11:45:43.786016-06:00",
+      "last_activity": "2026-11-18T12:26:16.163997-06:00",
       "headline": "VG19-DOGGE600VETO — 185-54, +25.30% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T12:02:01.044009-06:00",
+      "last_activity": "2026-11-18T12:17:09.113002-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T12:00:26.331009-06:00",
-      "headline": "Latest search cycle: 143"
+      "last_activity": "2026-11-18T12:17:05.373002-06:00",
+      "headline": "Latest search cycle: 144"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T12:01:07.763009-06:00",
-      "headline": "Latest filing: P104"
+      "last_activity": "2026-11-18T12:21:39.969000-06:00",
+      "headline": "Latest filing: P105"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T11:49:14.655015-06:00",
-      "headline": "2 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
+      "last_activity": "2026-11-18T12:18:54.614001-06:00",
+      "headline": "3 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Research Director",
@@ -180,6 +180,13 @@
     }
   ],
   "activity": [
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 144 — 2026-11-18 12:11 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
+      "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the mirror has been re-exported from the…",
+      "at": "2026-11-18T12:11:00-06:00"
+    },
     {
       "agent": "Discovery",
       "kind": "generation",
@@ -216,11 +223,11 @@
       "at": "2026-11-18T10:56:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 138 — 2026-11-18 10:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
-      "at": "2026-11-18T10:41:00-06:00"
+      "title": "CYCLE 4 — 2026-11-18 — Slice 4: FAVOURITE-side losses (grand king picked the favourite and lost)",
+      "summary": "The favourite book — grand's quiet bulk at 143-13 — loses the way the dog book loses: alone. Ten of its thirteen losses had at least one…",
+      "at": "2026-11-18T00:00:00-06:00"
     },
     {
       "agent": "Loss Autopsy",
@@ -241,6 +248,13 @@
       "kind": "generation",
       "title": "CYCLE 1 — 2026-11-18 — Slice 1: UNANIMOUS losses (every sitting king picked wrong)",
       "summary": "The eight games no king could get right are not one disease. Two are structurally unwinnable (handball draws with no draw market in the…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-18 (12:12 CST) — audit + hunt (classes e + d + f: public data — officials / sport-specific soccer / the house's chair —…",
+      "summary": "P105 EFFECTIVE-LENGTH FREEZE (the assigned soccer referee's added-time propensity) — FILED as collector proposal P105 (needs-data; no…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -279,10 +293,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P100: HOUSE ACCESS, ELIGIBILITY & MARKET-GATING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G141;…",
-      "summary": "Filed Arena P100: HOUSE ACCESS, ELIGIBILITY & MARKET-GATING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G141; classes f…",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G145 — F5 SOFT-ANGLE EXTREMES (twenty-ninth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -321,10 +335,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
+      "agent": "Vanguard",
       "kind": "generation",
-      "title": "Arena G139 — F4 CROSS-REFERENCE (twenty-eighth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery rule:…",
+      "title": "Vanguard R4-G61 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V6 SOCCER x…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -363,10 +377,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Vanguard",
+      "agent": "Selector",
       "kind": "generation",
-      "title": "R4-G55 (loop, 2026-11-18) — parent VG19-DOGGE600VETO",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best gate-eligible variant V3 BB x OVR[5.00,6.00)…",
+      "title": "R4-G247 (loop, 2026-11-18) — SELECTOR generation on the NODP base",
+      "summary": "NO NEW KING. UUUUUUUUU4-OVRMISS-NODP stands (211-28, +3797.53m, +67.21%). Best headline variant V6 OVR>=8.00 at +67.47% QUEUED sub-gate…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -374,20 +388,6 @@
       "kind": "generation",
       "title": "SELECTOR R4-G246 (loop, 2026-11-18)",
       "summary": "NO NEW KING. Best gate-eligible variant V2 FAVP [1.60,1.80) REFUTED at +67.18% (increment -1.75m at tied accuracy — the closest any…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G245 (loop, 2026-11-18)",
-      "summary": "NO NEW KING. Best gate-eligible variant V8 AWAY x DOGSIDE REFUTED at +67.00% (increment -11.95m at -1 — the closest any stack-add has…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "crown",
-      "title": "SELECTOR R4-G244 (loop, 2026-11-18)",
-      "summary": "NEW SELECTOR KING CROWNED — UUUUUUUUU4-OVRMISS-NODP (UUUUUUUUU4-OVRMISS with its underlying U4 chain's DOGPRICE [2.20,2.60) leg ABLATED;…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -826,6 +826,16 @@
     "next_opening": "2026-12-01"
   },
   "autopsy_challengers": [
+    {
+      "id": "AUTOPSY-10",
+      "name": "L&Q-CONSENSUS FAV FLIP (Legacy=dog + Quantum=dog → dog)",
+      "mechanism": "L&Q-CONSENSUS FAV FLIP (Legacy=dog + Quantum=dog → dog)",
+      "wins": 203,
+      "losses": 36,
+      "pnl_m": 3773.15,
+      "roi_pct": 65.91,
+      "status": "gate-clearing challenger (not crowned)"
+    },
     {
       "id": "AUTOPSY-6",
       "name": "L&S-CONSENSUS DOG VETO selector",
