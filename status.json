@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:15:49.038969-06:00",
+  "generated_at": "2026-11-18T17:20:42.176449-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T17:02:38.625648-06:00",
+      "last_activity": "2026-11-18T17:19:03.167637-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T16:47:52.960659-06:00",
-      "headline": "Cycle 11: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T17:18:11.633638-06:00",
+      "headline": "Cycle 12: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 11,
+    "latest_cycle": 12,
     "findings": [
       {
         "id": "Z1",
@@ -727,6 +727,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 12 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle12.py (new file only; reuses Cycle 11's stream builder read-only — the court has not changed since…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 11 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle11.py (new file only; reuses Cycle 10's stream builder read-only — the court has not changed since…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -757,13 +764,6 @@
       "kind": "generation",
       "title": "CYCLE 7 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle7.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 6 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle6.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -853,6 +853,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G165 — F5 SOFT-ANGLE EXTREMES (thirty-fifth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note, whose control…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G164 — F4 CROSS-REFERENCE (thirty-fifth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only, and this generation IS a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G160 — F5 SOFT-ANGLE EXTREMES (thirty-third visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G159 — F4 CROSS-REFERENCE (thirty-third visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only, and this generation IS a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
