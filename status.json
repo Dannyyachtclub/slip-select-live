@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:20:53.890187-06:00",
+  "generated_at": "2026-11-18T14:21:40.887764-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -712,10 +712,6 @@
           "result": "WON",
           "pnl_m": 0.5
         },
-        "underdog_desk": {
-          "result": "WON",
-          "pnl_m": 26.25
-        },
         "draw_desk": {
           "result": "LOST",
           "pnl_m": -25.0
@@ -1120,12 +1116,43 @@
       "draw_desk": null,
       "results": {
         "grand_pick": {
-          "result": "WON",
-          "pnl_m": 0.75
+          "result": "LOST",
+          "pnl_m": -25.0
         },
         "confidence_bet": {
           "result": "WON",
           "pnl_m": 0.75
+        },
+        "underdog_desk": {
+          "result": "LOST",
+          "pnl_m": -25.0
+        },
+        "king_records": {
+          "Legacy": {
+            "wins": 11,
+            "losses": 5,
+            "pnl_m": 61.5
+          },
+          "Regime": {
+            "wins": 7,
+            "losses": 9,
+            "pnl_m": -95.0
+          },
+          "Quantum": {
+            "wins": 11,
+            "losses": 5,
+            "pnl_m": 61.5
+          },
+          "Selector": {
+            "wins": 9,
+            "losses": 7,
+            "pnl_m": -11.5
+          },
+          "Vanguard": {
+            "wins": 10,
+            "losses": 6,
+            "pnl_m": -58.25
+          }
         }
       },
       "user_bets": null,
@@ -1690,8 +1717,8 @@
       "kind": "GRAND PICK",
       "paper": false,
       "status": "ENDED",
-      "result": "WON",
-      "pnl_m": 27.5,
+      "result": "LOST",
+      "pnl_m": -25.0,
       "final_score": "98-84",
       "tip_at": "2026-11-18T11:00:00-06:00"
     },
