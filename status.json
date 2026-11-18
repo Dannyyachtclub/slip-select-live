@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:15:40.884962-06:00",
+  "generated_at": "2026-11-18T13:20:50.593609-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,29 +147,29 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T13:06:28.850836-06:00",
+      "last_activity": "2026-11-18T13:17:00.443861-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T13:02:31.353827-06:00",
-      "headline": "Latest search cycle: 147"
+      "last_activity": "2026-11-18T13:16:34.408859-06:00",
+      "headline": "Latest search cycle: 148"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T13:05:23.744833-06:00",
-      "headline": "Latest filing: P108"
+      "last_activity": "2026-11-18T13:16:30.972859-06:00",
+      "headline": "Latest filing: P109"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T12:52:50.364804-06:00",
-      "headline": "3 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
+      "last_activity": "2026-11-18T13:20:02.400868-06:00",
+      "headline": "6 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
@@ -384,6 +384,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 148 — 2026-11-18 13:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (cycle 147's mirror lag resolved by the parent's re-export), NO CROWN. All kings tie to the cent, registry DB = mirror by…",
+      "at": "2026-11-18T13:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 147 — 2026-11-18 12:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the owning generations have exported the…",
       "at": "2026-11-18T12:56:00-06:00"
@@ -417,13 +424,6 @@
       "at": "2026-11-18T11:56:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 142 — 2026-11-18 11:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
-      "at": "2026-11-18T11:41:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 4 — 2026-11-18",
@@ -449,6 +449,13 @@
       "kind": "generation",
       "title": "CYCLE 1 — 2026-11-18",
       "summary": "Step 1 — AUDIT (before any sizing)",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
+      "title": "CYCLE 6 — 2026-11-18 — Slice 6: SINGLE-KING blind spots (per king in turn)",
+      "summary": "Single-king blind spots are not a court disease — they are Vanguard's address. The other four kings are almost never alone wrong (3, 2,…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -489,6 +496,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P109: STAKELESS FORECAST PANEL FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G149; classes c + h)",
+      "summary": "Filed Arena P109: STAKELESS FORECAST PANEL FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G149; classes c + h)",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P108: CONTRACT-SHADOW FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G148; classes c + h)",
       "summary": "Filed Arena P108: CONTRACT-SHADOW FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G148; classes c + h)",
       "at": "2026-11-18T00:00:00-06:00"
@@ -522,10 +536,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P104: NON-BOOK WITNESS FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G144; classes c + h)",
-      "summary": "Filed Arena P104: NON-BOOK WITNESS FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G144; classes c + h)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G149 — F4 CROSS-REFERENCE (thirtieth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only, and this generation IS a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -564,13 +578,6 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G143 — F3 THROW-INCENTIVE ASYMMETRY (twenty-ninth visit) — 2026-11-18",
-      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
       "agent": "Vanguard",
       "kind": "generation",
       "title": "Vanguard R4-G61 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
@@ -582,13 +589,6 @@
       "kind": "generation",
       "title": "Vanguard R4-G60 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
       "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V2 DESK…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G59 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V6 SOCCER x HOME…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -1774,6 +1774,36 @@
       "losses": 36,
       "pnl_m": 3773.15,
       "roi_pct": 65.91,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-16",
+      "name": "UNANIMOUS-CONSENSUS OVERRIDE selector vs Vanguard",
+      "mechanism": "UNANIMOUS-CONSENSUS OVERRIDE selector vs Vanguard",
+      "wins": 208,
+      "losses": 31,
+      "pnl_m": 3622.03,
+      "roi_pct": 63.27,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-17",
+      "name": "SOCCER-DRAW ADOPTION (stack copy)",
+      "mechanism": "SOCCER-DRAW ADOPTION (stack copy)",
+      "wins": 191,
+      "losses": 48,
+      "pnl_m": 2584.2,
+      "roi_pct": 45.14,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-18",
+      "name": "NON-SOCCER UNANIMOUS-CONSENSUS OVERRIDE selector vs Vanguard",
+      "mechanism": "NON-SOCCER UNANIMOUS-CONSENSUS OVERRIDE selector vs Vanguard",
+      "wins": 202,
+      "losses": 37,
+      "pnl_m": 2521.4,
+      "roi_pct": 44.04,
       "status": "gate-clearing challenger (not crowned)"
     },
     {
