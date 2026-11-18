@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:40:48.028983-06:00",
+  "generated_at": "2026-11-18T12:51:06.844374-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T12:09:36.443005-06:00",
+      "last_activity": "2026-11-18T12:47:39.985988-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T12:34:14.772994-06:00",
+      "last_activity": "2026-11-18T12:49:34.259797-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T12:31:51.492995-06:00",
-      "headline": "Latest search cycle: 145"
+      "last_activity": "2026-11-18T12:46:24.535988-06:00",
+      "headline": "Latest search cycle: 146"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T12:33:09.177994-06:00",
-      "headline": "Latest filing: P106"
+      "last_activity": "2026-11-18T12:51:04.104800-06:00",
+      "headline": "Latest filing: P107"
     },
     {
       "name": "Loss Autopsy",
@@ -172,6 +172,13 @@
       "headline": "3 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
+      "name": "Stakehunter",
+      "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
+      "status": "active",
+      "last_activity": "2026-11-18T12:45:57.612988-06:00",
+      "headline": "Cycle 3: 13 sizing finding(s) banked (proposals only)"
+    },
+    {
       "name": "Research Director",
       "role": "Daily manager — assigns hunting grounds, issues stop orders",
       "status": "daily",
@@ -179,7 +186,152 @@
       "headline": "Daily brief at 08:15 CST"
     }
   ],
+  "stakehunter": {
+    "latest_cycle": 3,
+    "findings": [
+      {
+        "id": "P1",
+        "name": "VENUE-SPLIT",
+        "cycle": 3,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, ROI up on all five, on only ~200m more staked per king. Disclosed correlation: dog picks are away whenever the favourite is home, so part of P1 may be the known dog effect arriving via venue. P8 (below)…"
+      },
+      {
+        "id": "P2",
+        "name": "SLIP-RANK WEIGHTING",
+        "cycle": 3,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, ROI up on all five. The anti-confidence effect survives translation into purely relative, within-slip terms — no absolute price band is needed. Same correlation warning: the longest-priced pick in a slip…"
+      },
+      {
+        "id": "P5",
+        "name": "PRICE U-SHAPE",
+        "cycle": 3,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 but stakes ~950m more per king and ROI is *down* on three kings (Vanguard +22.46% vs flat +25.30%). Like Cycle 2's N3, the P&L gain is leverage on positive-EV streams, not efficiency. Not to be…"
+      },
+      {
+        "id": "P6",
+        "name": "DEVIG-SMOOTH-INVERTED",
+        "cycle": 3,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +5,252.27 vs +3,600.68, +1,651.59m) with ROI up everywhere (grand king +86.71% vs +63.17%), drawdowns inside the guard on all five. Honest qualification: it pays slightly *less* than…"
+      },
+      {
+        "id": "P8",
+        "name": "VENUE × DOG-TILT",
+        "cycle": 3,
+        "status": "NOT A FINDING",
+        "verdict": "Beats flat on 5 of 5 with ROI up everywhere (grand king +4,398.79, +81.08% — above plain S5 dog-tilt's +3,979.39), but the Selector's drawdown 90.00 breaches the guard (87.45). The combination adds P&L over both parents and…"
+      },
+      {
+        "id": "N1",
+        "name": "DEVIG-INVERTED",
+        "cycle": 2,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +5,303.65 vs +3,600.68, +1,702.97m) with ROI up everywhere (grand king +82.23% vs +63.17%). Cycle 1's S2 lesson confirmed in mirror: the kings earn precisely where the market is least…"
+      },
+      {
+        "id": "N2",
+        "name": "SPORT-SPLIT",
+        "cycle": 2,
+        "status": "FINDING",
+        "verdict": "Beats flat on Legacy, Regime, Quantum and Selector with ROI up on all four, on slightly less staked. It *loses* on Vanguard (−16.38m) and Vanguard's drawdown worsens to 221.69 (inside the guard: 1.39× flat). The minority-sport…"
+      },
+      {
+        "id": "N3",
+        "name": "WIN-STREAK PRESS",
+        "cycle": 2,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5, but ROI is *down* on every single king (e.g. grand king +62.43% vs flat +63.17%) while staking ~1,750m more per king. On streams that win ~85% of picks, pressing after wins is mostly just betting…"
+      },
+      {
+        "id": "N4",
+        "name": "OVERROUND DISCOUNT",
+        "cycle": 2,
+        "status": "FINDING",
+        "verdict": "Beats flat on exactly 3 of 5, by +2.68m (Quantum), +69.25m (Vanguard) and +0.18m (Selector) — the Selector margin is rounding-scale, and ROI is down on four kings. Treat as noise until forward evidence says otherwise; the…"
+      },
+      {
+        "id": "N5",
+        "name": "DRAW-TILT",
+        "cycle": 2,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, ROI up on all five, on *less* total staked than flat on four kings. The draw leg is doing real work where it exists; on Vanguard (no draws) it still wins as a plain dog/fav tilt, so part of N5 is the…"
+      },
+      {
+        "id": "N6",
+        "name": "PRICE-SMOOTH",
+        "cycle": 2,
+        "status": "NOT A FINDING",
+        "verdict": "The largest raw P&L gains of the cycle (grand king +5,217.76, ROI +95.07%; Selector ROI +102.30%) — but the Selector's max drawdown 88.75 breaches the 1.5× guard (87.45). The bar was declared before results and it binds: N6 is…"
+      },
+      {
+        "id": "N7",
+        "name": "DOG-TILT × WIN-PRESS",
+        "cycle": 2,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, ROI up on all five (grand king +81.98%). It does NOT beat the better of its parents everywhere — Cycle 1's plain S5 dog-tilt paid the grand king +3,979.39 at +82.22% ROI on less staked — so the press…"
+      },
+      {
+        "id": "N8",
+        "name": "BRAKE-2",
+        "cycle": 2,
+        "status": "REFUTED",
+        "verdict": "Beats flat on 0 of 5. It engages for real this time and does cut drawdowns (Quantum 75.00 vs 100.00; worst streaks down on four kings), but it pays for that insurance with P&L on every king. Brakes remain drawdown insurance,…"
+      },
+      {
+        "id": "C1",
+        "name": "DEVIG × DOG-TILT",
+        "cycle": 1,
+        "status": "REFUTED",
+        "verdict": "0 of 5. The dog tilt cannot rescue the de-vig ladder; S2's damage outweighs S5's gain wherever the two are multiplied. Confidence-sizing is the poison, in combination as much as alone"
+      },
+      {
+        "id": "C2",
+        "name": "PRICE-BAND + BRAKE",
+        "cycle": 1,
+        "status": "FINDING",
+        "verdict": "it beats flat on 5 of 5 almost entirely *because S1 does*. The brake layer adds a real increment only on Quantum (+16.97m over S1 with DD cut 110.00 → 92.50) and slightly *costs* on Vanguard and Selector. C2 is S1 with a…"
+      },
+      {
+        "id": "S1",
+        "name": "PRICE-BAND",
+        "cycle": 1,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (+277.43m Legacy, +282.09m Regime, +257.66m Quantum, +157.88m Vanguard, +307.53m Selector) while staking less money in total than flat on every king, and with no king's drawdown beyond 1.2× flat…"
+      },
+      {
+        "id": "S2",
+        "name": "DEVIG-CONFIDENCE",
+        "cycle": 1,
+        "status": "REFUTED",
+        "verdict": "Stakes *more* total money than flat on every king and makes *less* on all five (grand king: +2,488.54 vs +3,600.68 on 435m *more* staked), and breaches the drawdown guard on the Selector. The lesson is the mirror of the…"
+      },
+      {
+        "id": "S3",
+        "name": "FRACTIONAL KELLY",
+        "cycle": 1,
+        "status": "NOT A FINDING",
+        "verdict": "Market-implied Kelly is negative on essentially every pick (on the grand king: 216 of 228 priced picks sat at the 10m floor, 10 at the 25m no-de-vig fallback, only 2 hockey picks ever lifted above the floor). Both fractions…"
+      },
+      {
+        "id": "S5",
+        "name": "DOG-TILT",
+        "cycle": 1,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 kings (largest margins of any rule: Selector +394.37m, Legacy +394.77m, Regime +378.71m, Quantum +381.64m, Vanguard +262.03m), again on *less* total staked than flat everywhere. Drawdowns rise modestly on…"
+      }
+    ]
+  },
   "activity": [
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 146 — 2026-11-18 12:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent, registry DB = mirror by verbatim signature presence (16,812 rows), vault sealed at 170…",
+      "at": "2026-11-18T12:41:00-06:00"
+    },
     {
       "agent": "Discovery",
       "kind": "generation",
@@ -216,11 +368,25 @@
       "at": "2026-11-18T11:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 140 — 2026-11-18 11:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
-      "at": "2026-11-18T11:11:00-06:00"
+      "title": "CYCLE 3 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle3.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
+      "title": "CYCLE 2 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle2.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
+      "title": "CYCLE 1 — 2026-11-18",
+      "summary": "Step 1 — AUDIT (before any sizing)",
+      "at": "2026-11-18T00:00:00-06:00"
     },
     {
       "agent": "Loss Autopsy",
@@ -253,6 +419,20 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "CYCLE 2026-11-18 (12:42 CST) — audit + hunt (classes d + e + f: sport-specific hockey / public venue data / the house's chair — the…",
+      "summary": "P107 RINK-GEOMETRY FREEZE (venue ice width × the favourite's home-ice delta, hockey) — FILED as collector proposal P107 (needs-data; no…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P107: BOOK-ACCEPTANCE-RESPONSE FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena…",
+      "summary": "Filed Arena P107: BOOK-ACCEPTANCE-RESPONSE FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G147;…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P106: HOUSE HEDGING, OFFLOAD & RISK-TRANSFER FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G146;…",
       "summary": "Filed Arena P106: HOUSE HEDGING, OFFLOAD & RISK-TRANSFER FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G146; classes f + i)",
       "at": "2026-11-18T00:00:00-06:00"
@@ -279,17 +459,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P102: FUTURE-ALLEGIANCE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G143; classes c…",
-      "summary": "Filed Arena P102: FUTURE-ALLEGIANCE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G143; classes c + h)",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P101: FLOW-BY-TRACK-RECORD FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena…",
-      "summary": "Filed Arena P101: FLOW-BY-TRACK-RECORD FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G142; classes…",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G147 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirtieth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE in full. MILESTONE under the delivery rule:…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -328,13 +501,6 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G141 — F1 HOUSE-VIEW (twenty-ninth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
       "agent": "Vanguard",
       "kind": "generation",
       "title": "Vanguard R4-G61 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
@@ -367,27 +533,6 @@
       "kind": "gate-refusal",
       "title": "Vanguard R4-G57 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
       "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). One above-king headline GATE-REFUSED on accuracy:…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G56 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best gate-eligible variant V6 SOCCER x DEVIG[60,70)…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "R4-G247 (loop, 2026-11-18) — SELECTOR generation on the NODP base",
-      "summary": "NO NEW KING. UUUUUUUUU4-OVRMISS-NODP stands (211-28, +3797.53m, +67.21%). Best headline variant V6 OVR>=8.00 at +67.47% QUEUED sub-gate…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G246 (loop, 2026-11-18)",
-      "summary": "NO NEW KING. Best gate-eligible variant V2 FAVP [1.60,1.80) REFUTED at +67.18% (increment -1.75m at tied accuracy — the closest any…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -468,7 +613,315 @@
       "games_status": {
         "games_total": 34,
         "games_ended": 34
-      }
+      },
+      "games_list": [
+        {
+          "game_id": "S33-01",
+          "game": "California Baptist Lancers v Seattle Redhawks",
+          "time": "21:00",
+          "tip_at": "2026-11-17T21:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Seattle Redhawks)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-02",
+          "game": "Stanford Cardinal v UC Irvine Anteaters",
+          "time": "21:00",
+          "tip_at": "2026-11-17T21:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Stanford Cardinal)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-03",
+          "game": "LA Clippers v Utah Jazz",
+          "time": "21:30",
+          "tip_at": "2026-11-17T21:30:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (Utah Jazz)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-04",
+          "game": "Los Angeles Lakers v Charlotte Hornets",
+          "time": "22:00",
+          "tip_at": "2026-11-17T22:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Los Angeles Lakers)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-05",
+          "game": "Gonzaga Bulldogs v Montana State Bobcats",
+          "time": "22:00",
+          "tip_at": "2026-11-17T22:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Gonzaga Bulldogs)",
+          "bet_call": "NO BET (confidence blocked — unscreened)"
+        },
+        {
+          "game_id": "S33-06",
+          "game": "Auburn Tigers v West Virginia Mountaineers",
+          "time": "22:59",
+          "tip_at": "2026-11-17T22:59:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (West Virginia Mountaineers)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-07",
+          "game": "New Zealand Breakers v South East Melbourne Phoenix",
+          "time": "00:30",
+          "tip_at": "2026-11-18T00:30:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (South East Melbourne Phoenix)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-08",
+          "game": "Seoul Samsung Thunders v Changwon LG Sakers",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Seoul Samsung Thunders)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-09",
+          "game": "Incheon Shinhan Bank S-Birds v Cheongju KB Stars",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (Incheon Shinhan Bank S-Birds)",
+          "bet_call": "BET — GRAND PICK: S-Birds 25m @ 2.05 + Desk #11 (paper)"
+        },
+        {
+          "game_id": "S33-10",
+          "game": "Chiba Jets v Akita Northern Happinets",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Chiba Jets)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-11",
+          "game": "Nagoya Diamond Dolphins v Ryukyu Golden Kings",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Nagoya Diamond Dolphins)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-12",
+          "game": "Gunma Crane Thunders v Shimane Susanoo Magic",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Gunma Crane Thunders)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-13",
+          "game": "Kobe Storks v Kawasaki Brave Thunders",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Kawasaki Brave Thunders)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-14",
+          "game": "Osaka Evessa v Hiroshima Dragonflies",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Hiroshima Dragonflies)",
+          "bet_call": "CONFIDENCE BET: Hiroshima 25m @ 1.02"
+        },
+        {
+          "game_id": "S33-15",
+          "game": "Sendai 89ers v SAN-EN NeoPhoenix",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Sendai 89ers)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-16",
+          "game": "Sunrockers Shibuya v Alvark Tokyo",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Sunrockers Shibuya)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-17",
+          "game": "Utsunomiya Brex v Levanga Hokkaido",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (Utsunomiya Brex)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-18",
+          "game": "Nicaragua v Montserrat",
+          "time": "21:00",
+          "tip_at": "2026-11-17T21:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Nicaragua)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-19",
+          "game": "JEF United Ladies v AC Nagano Parceiro Ladies",
+          "time": "22:00",
+          "tip_at": "2026-11-17T22:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (AC Nagano Parceiro Ladies)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-20",
+          "game": "Albirex Niigata Ladies v AS Elfen Saitama",
+          "time": "23:00",
+          "tip_at": "2026-11-17T23:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Albirex Niigata Ladies)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-21",
+          "game": "Mynavi Sendai Ladies v NTV Tokyo Verdy Beleza",
+          "time": "23:00",
+          "tip_at": "2026-11-17T23:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (NTV Tokyo Verdy Beleza)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-22",
+          "game": "Cerezo Osaka Sakai Ladies v Urawa Red Diamonds Ladies",
+          "time": "03:30",
+          "tip_at": "2026-11-18T03:30:00-06:00",
+          "status": "ENDED",
+          "winner": "DRAW",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-23",
+          "game": "Sanfrecce Hiroshima Regina v Nojima Stella",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (Nojima Stella Kanagawa Sagamihara)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-24",
+          "game": "Serik Spor v 24 Erzincanspor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (24 Erzincanspor)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-25",
+          "game": "12 Bingolspor v Sakaryaspor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Sakaryaspor)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-26",
+          "game": "Ankara Demirspor v 52 Orduspor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (52 Orduspor)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-27",
+          "game": "1461 Trabzon FK v Kahramanmaras Istiklalspor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Dog (1461 Trabzon FK)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-28",
+          "game": "Isparta 32 Spor v Soma Spor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "DRAW",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-29",
+          "game": "Hatayspor v Inegol Kafkas",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Inegol Kafkas)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-30",
+          "game": "Adana Demirspor v Kastamonuspor 1966",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "DRAW",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-31",
+          "game": "Guzide Gebzespor v Ankaraspor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Guzide Gebzespor)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-32",
+          "game": "Corluspor 1947 v Mus Spor",
+          "time": "04:00",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Mus Spor)",
+          "bet_call": "DRAW DESK #5 (paper): Draw @ 3.14"
+        },
+        {
+          "game_id": "S33-33",
+          "game": "Ankaragucu v Kirklarelispor",
+          "time": "05:00",
+          "tip_at": "2026-11-18T05:00:00-06:00",
+          "status": "ENDED",
+          "winner": "DRAW",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S33-34",
+          "game": "Arnavutkoy Belediyespor v 68 Aksaray Belediyespor",
+          "time": "05:00",
+          "tip_at": "2026-11-18T05:00:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (68 Aksaray Belediyespor)",
+          "bet_call": "NO BET"
+        }
+      ]
     },
     {
       "number": 34,
@@ -498,7 +951,153 @@
       "games_status": {
         "games_total": 16,
         "games_ended": 2
-      }
+      },
+      "games_list": [
+        {
+          "game_id": "S34-01",
+          "game": "Yokohama B-Corsairs v Saga Ballooners",
+          "time": "04:05",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Yokohama B-Corsairs)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-02",
+          "game": "Kyoto Hannaryz v Shinshu Brave Warriors",
+          "time": "04:15",
+          "tip_at": "2026-11-18T04:15:00-06:00",
+          "status": "ENDED",
+          "winner": "Favourite (Kyoto Hannaryz)",
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-03",
+          "game": "Uralmash Yekaterinburg v Lokomotiv Kuban",
+          "time": "08:30",
+          "tip_at": "2026-11-18T08:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-04",
+          "game": "BC Slovan Bratislava v BK Iskra Svit",
+          "time": "09:00",
+          "tip_at": "2026-11-18T09:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "CONFIDENCE BET: Slovan 25m @ 1.03"
+        },
+        {
+          "game_id": "S34-05",
+          "game": "Landau Lions v BC Prievidza",
+          "time": "09:00",
+          "tip_at": "2026-11-18T09:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-06",
+          "game": "Unics Kazan v Enisey Krasnoyarsk",
+          "time": "10:00",
+          "tip_at": "2026-11-18T10:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET — model-only"
+        },
+        {
+          "game_id": "S34-07",
+          "game": "Esenler Erokspor v Rilski Sportist",
+          "time": "10:00",
+          "tip_at": "2026-11-18T10:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET — model-only"
+        },
+        {
+          "game_id": "S34-08",
+          "game": "Derthona Basket v Rigas Zelli",
+          "time": "10:30",
+          "tip_at": "2026-11-18T10:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-09",
+          "game": "MBA Moscow v BC Samara",
+          "time": "10:30",
+          "tip_at": "2026-11-18T10:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (confidence blocked — 1 trip)"
+        },
+        {
+          "game_id": "S34-10",
+          "game": "TalTech v BK Ventspils",
+          "time": "10:30",
+          "tip_at": "2026-11-18T10:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-11",
+          "game": "Nevezis v BC Rytas",
+          "time": "10:50",
+          "tip_at": "2026-11-18T10:50:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-12",
+          "game": "BK Lokomotiva Plzen v SLUNETA Usti nad Labem",
+          "time": "11:00",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-13",
+          "game": "Basket Brno v NH Ostrava",
+          "time": "11:00",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET — model-only"
+        },
+        {
+          "game_id": "S34-14",
+          "game": "USK Prague v BK Decin",
+          "time": "11:00",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "BET — GRAND PICK: Decin 25m @ 2.10"
+        },
+        {
+          "game_id": "S34-15",
+          "game": "U-BT Cluj-Napoca v Maxima Roma",
+          "time": "11:00",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S34-16",
+          "game": "Galatasaray v Legia Warszawa",
+          "time": "11:00",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "UNDERDOG DESK #12 (paper): Legia @ 5.00"
+        }
+      ]
     },
     {
       "number": 35,
@@ -543,6 +1142,206 @@
         "games_total": 22,
         "games_ended": 0
       },
+      "games_list": [
+        {
+          "game_id": "S35-01",
+          "game": "Cedevita Olimpija v San Pablo Burgos",
+          "time": "11:30",
+          "tip_at": "2026-11-18T11:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-02",
+          "game": "KB Trepca v KK Split",
+          "time": "11:30",
+          "tip_at": "2026-11-18T11:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "BET — GRAND PICK: KK Split 25m @ 2.18"
+        },
+        {
+          "game_id": "S35-03",
+          "game": "Bakken Bears v Lions de Geneve",
+          "time": "11:30",
+          "tip_at": "2026-11-18T11:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "UNDERDOG DESK #13 (paper): Geneve @ 3.10"
+        },
+        {
+          "game_id": "S35-04",
+          "game": "Hradec Kralove v Srsni Pisek",
+          "time": "12:00",
+          "tip_at": "2026-11-18T12:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-05",
+          "game": "Buducnost VOLI v Slask Wroclaw",
+          "time": "12:00",
+          "tip_at": "2026-11-18T12:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (price under floor, de-vig under bar)"
+        },
+        {
+          "game_id": "S35-06",
+          "game": "Chemnitz 99 v Tofas Bursa",
+          "time": "12:00",
+          "tip_at": "2026-11-18T12:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-07",
+          "game": "Aris BSA v Le Mans Sarthe",
+          "time": "12:00",
+          "tip_at": "2026-11-18T12:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-08",
+          "game": "King Wilki Morskie Szczecin v BC Vienna",
+          "time": "12:00",
+          "tip_at": "2026-11-18T12:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-09",
+          "game": "KB Bashkimi v Manchester Basketball",
+          "time": "12:00",
+          "tip_at": "2026-11-18T12:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-10",
+          "game": "Bourg-en-Bresse v Napoli Basketball",
+          "time": "12:30",
+          "tip_at": "2026-11-18T12:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-11",
+          "game": "Bosna Royal v Lietkabelis",
+          "time": "12:30",
+          "tip_at": "2026-11-18T12:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-12",
+          "game": "Fraport Skyliners v Reyer Venezia",
+          "time": "12:30",
+          "tip_at": "2026-11-18T12:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-13",
+          "game": "Aquila Basket Trento v BC Neptunas",
+          "time": "13:00",
+          "tip_at": "2026-11-18T13:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (two-trip favourite, dog too poor to name)"
+        },
+        {
+          "game_id": "S35-14",
+          "game": "Cibona v Strasbourg",
+          "time": "13:00",
+          "tip_at": "2026-11-18T13:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-15",
+          "game": "Gladiators Trier v ASP Promitheas",
+          "time": "13:00",
+          "tip_at": "2026-11-18T13:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (price under floor, de-vig under bar)"
+        },
+        {
+          "game_id": "S35-16",
+          "game": "Notre Dame Fighting Irish v Rutgers Scarlet Knights",
+          "time": "13:00",
+          "tip_at": "2026-11-18T13:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET"
+        },
+        {
+          "game_id": "S35-17",
+          "game": "Manresa v PAOK",
+          "time": "13:30",
+          "tip_at": "2026-11-18T13:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (near-miss recorded)"
+        },
+        {
+          "game_id": "S35-18",
+          "game": "Unicaja v Pardubice",
+          "time": "13:30",
+          "tip_at": "2026-11-18T13:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "CONFIDENCE BET: Unicaja 25m @ 1.03"
+        },
+        {
+          "game_id": "S35-19",
+          "game": "Sporting CP v SCM Craiova",
+          "time": "13:30",
+          "tip_at": "2026-11-18T13:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET — model-only"
+        },
+        {
+          "game_id": "S35-20",
+          "game": "Florida Gators v Houston Cougars",
+          "time": "15:30",
+          "tip_at": "2026-11-18T15:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (near-miss recorded)"
+        },
+        {
+          "game_id": "S35-21",
+          "game": "Franca v Caxias do Sul",
+          "time": "16:30",
+          "tip_at": "2026-11-18T16:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET — model-only"
+        },
+        {
+          "game_id": "S35-22",
+          "game": "Georgetown Hoyas v Navy Midshipmen",
+          "time": "17:30",
+          "tip_at": "2026-11-18T17:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "bet_call": "NO BET (confidence blocked — screen not run in full)"
+        }
+      ],
       "top3": [
         {
           "rank": 1,
