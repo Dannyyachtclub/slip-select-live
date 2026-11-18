@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T17:10:39.373869-06:00",
+  "generated_at": "2026-11-18T17:15:49.038969-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-18T16:33:00.568669-06:00",
+      "last_activity": "2026-11-18T17:15:13.688640-06:00",
       "headline": "VG19-DOGGE600VETO — 185-54, +25.30% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T17:00:18.066650-06:00",
-      "headline": "Latest search cycle: 163"
+      "last_activity": "2026-11-18T17:14:35.992640-06:00",
+      "headline": "Latest search cycle: 164"
     },
     {
       "name": "Edge Finder",
@@ -168,7 +168,7 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T16:48:53.893560-06:00",
+      "last_activity": "2026-11-18T17:14:38.392038-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 164 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T17:14:35.992640-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 163 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T17:00:18.066650-06:00"
+      "at": "2026-11-18T17:14:35.992640-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 162 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T17:00:18.066650-06:00"
+      "at": "2026-11-18T17:14:35.992640-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 161 OUTCOME",
-      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T17:00:18.066650-06:00"
+      "title": "CYCLE 164 — 2026-11-18 17:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T17:11:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -716,13 +723,6 @@
       "title": "CYCLE 162 — 2026-11-18 16:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T16:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 161 — 2026-11-18 16:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T16:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -769,6 +769,13 @@
     {
       "agent": "Loss Autopsy",
       "kind": "generation",
+      "title": "CYCLE 14 — 2026-11-18 — IDLE CHECK (no slice; re-autopsy already complete)",
+      "summary": "Cycles 8–13 completed the re-autopsy of all six slices under the current kings. Under the programme's standing rule the hunt re-runs a…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
       "title": "CYCLE 13 — 2026-11-18 — Slice 6 RE-AUTOPSY under the current kings (SINGLE-KING blind spots)",
       "summary": "Slice 6 is the second slice (after Slice 5) that the intervening crowns have left essentially untouched — and the more striking of the…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -799,13 +806,6 @@
       "kind": "generation",
       "title": "CYCLE 9 — 2026-11-18 — Slice 2 RE-AUTOPSY under the current kings (SELECTION failures)",
       "summary": "Slice 2 under the new kings is the same disease in a smaller body. The crowns removed two of Cycle 2's 28 failures outright and added…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 8 — 2026-11-18 — Slice 1 RE-AUTOPSY under the current kings (UNANIMOUS losses)",
-      "summary": "The Cycle 7 block is cleared and the hunt is live again under the current kings — that is this cycle's real yield. On substance, Slice 1…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
