@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:46:18.992910-06:00",
+  "generated_at": "2026-11-18T14:50:44.795817-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-18T14:08:40.915981-06:00",
+      "last_activity": "2026-11-18T14:46:55.118493-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO — 204-35, +63.22% fitted ROI"
     },
     {
@@ -147,36 +147,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T14:31:22.584034-06:00",
+      "last_activity": "2026-11-18T14:47:20.991492-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T14:32:06.813035-06:00",
-      "headline": "Latest search cycle: 153"
+      "last_activity": "2026-11-18T14:50:04.197489-06:00",
+      "headline": "Latest search cycle: 154"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T14:31:22.579034-06:00",
-      "headline": "Latest filing: P116"
+      "last_activity": "2026-11-18T14:46:49.218493-06:00",
+      "headline": "Latest filing: P117"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T14:18:16.270003-06:00",
-      "headline": "6 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
+      "last_activity": "2026-11-18T14:50:00.555490-06:00",
+      "headline": "9 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T14:15:23.970997-06:00",
-      "headline": "Cycle 6: 21 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T14:49:21.965490-06:00",
+      "headline": "Cycle 7: 23 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,8 +187,43 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 6,
+    "latest_cycle": 7,
     "findings": [
+      {
+        "id": "V1",
+        "name": "FLIP-VS-HOLD",
+        "cycle": 7,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +5,085.18 vs +3,600.68, +1,484.50m) with ROI up on all five, and its mirror V2 loses on 0 of 5 — direction confirmed inside the fitted set. Honest qualification, as disclosed before…"
+      },
+      {
+        "id": "V2",
+        "name": "FLIP-INVERTED",
+        "cycle": 7,
+        "status": "REFUTED",
+        "verdict": "The control that prices V1: staking the passive holds and starving the active calls loses everywhere, by ~765–795m on the strong kings"
+      },
+      {
+        "id": "V3",
+        "name": "PRICE-SPREAD",
+        "cycle": 7,
+        "status": "REFUTED",
+        "verdict": "Market one-sidedness by raw price gap carries no sizing signal; ROI is near-flat on the strong kings and collapses on Vanguard (+19.89%). The spread family is closed on this evidence"
+      },
+      {
+        "id": "V4",
+        "name": "SLIP DOG-SHARE",
+        "cycle": 7,
+        "status": "REFUTED",
+        "verdict": "It wins only on Vanguard (+212.56m, with a drawdown cut to 121.08) and loses on all four strong kings. A king's dog-heavy slip is not, in general, a conviction signal worth staking on"
+      },
+      {
+        "id": "V8",
+        "name": "LEAGUE-TIER",
+        "cycle": 7,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 with ROI up on all five, on essentially flat total staked (grand king +3,656.51 vs +3,600.68, +55.83m; largest margin Selector +47.48m, Vanguard +64.39m). The margins are the smallest of any 5-of-5 finding…"
+      },
       {
         "id": "T1",
         "name": "FRAGILITY-FADE",
@@ -477,7 +512,14 @@
       "kind": "generation",
       "title": "CYCLE 151 OUTCOME",
       "summary": "AUDIT FAILURE (milestone). Kings tie to the cent — Legacy DEAP6 +62.95%, grand king Regime TRIPS1VETO 204-35 +3603.80m +63.22%, Quantum…",
-      "at": "2026-11-18T14:32:06.813035-06:00"
+      "at": "2026-11-18T14:50:04.197489-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 154 — 2026-11-18 14:41 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
+      "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the mirror has been re-exported from the…",
+      "at": "2026-11-18T14:41:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -508,11 +550,11 @@
       "at": "2026-11-18T13:41:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 149 — 2026-11-18 13:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence, 16,991 rows, 0 missing),…",
-      "at": "2026-11-18T13:26:00-06:00"
+      "title": "CYCLE 7 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle7.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "at": "2026-11-18T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -550,10 +592,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 1 — 2026-11-18",
-      "summary": "Step 1 — AUDIT (before any sizing)",
+      "title": "CYCLE 9 — 2026-11-18 — Slice 2 RE-AUTOPSY under the current kings (SELECTION failures)",
+      "summary": "Slice 2 under the new kings is the same disease in a smaller body. The crowns removed two of Cycle 2's 28 failures outright and added…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -592,10 +634,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 3 — 2026-11-18 — Slice 3: DOG-side losses (grand king picked the dog and lost)",
-      "summary": "The dog book — the grand king's glory at 49-18 — does not lose randomly. It loses when grand stands nearly alone: half its dog losses…",
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P117: DEW / FLOODLIGHT-EVENING SURFACE-MOISTURE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-18,…",
+      "summary": "Filed Arena P117: DEW / FLOODLIGHT-EVENING SURFACE-MOISTURE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-18, Arena G155;…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -634,10 +676,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P111: PRICING-PRODUCTION FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G151; classes f + i)",
-      "summary": "Filed Arena P111: PRICING-PRODUCTION FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G151; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G155 — F5 SOFT-ANGLE EXTREMES (thirty-second visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. This generation IS a…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -673,13 +715,6 @@
       "kind": "generation",
       "title": "Arena G150 — F5 SOFT-ANGLE EXTREMES (thirtieth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G149 — F4 CROSS-REFERENCE (thirtieth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only, and this generation IS a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -2443,6 +2478,36 @@
       "losses": 37,
       "pnl_m": 2521.4,
       "roi_pct": 44.04,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-22",
+      "name": "L&S-CONSENSUS DOG VETO, LGLEN20 Selector (AUTOPSY-6 replication)",
+      "mechanism": "When the grand king picks the underdog but Legacy and the Selector both pick the favourite, drop the dog pick and follow them.",
+      "wins": 210,
+      "losses": 29,
+      "pnl_m": 3690.05,
+      "roi_pct": 64.74,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-23",
+      "name": "LONE-DOG VETO, current kings (AUTOPSY-7 replication)",
+      "mechanism": "When the grand king picks the underdog and at most one of the other four kings agrees with it, switch to the favourite.",
+      "wins": 209,
+      "losses": 30,
+      "pnl_m": 3709.55,
+      "roi_pct": 65.08,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-24",
+      "name": "L&Q-CONSENSUS FAV FLIP, current kings (AUTOPSY-10 replication)",
+      "mechanism": "L&Q-CONSENSUS FAV FLIP, current kings (AUTOPSY-10 replication)",
+      "wins": 205,
+      "losses": 34,
+      "pnl_m": 3843.78,
+      "roi_pct": 67.14,
       "status": "gate-clearing challenger (not crowned)"
     },
     {
