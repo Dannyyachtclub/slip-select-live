@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:15:39.773193-06:00",
+  "generated_at": "2026-11-18T15:20:45.134010-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-18T14:39:38.646053-06:00",
+      "last_activity": "2026-11-18T15:18:15.093461-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T15:02:54.879476-06:00",
+      "last_activity": "2026-11-18T15:15:49.487463-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -168,15 +168,15 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T14:50:00.555490-06:00",
-      "headline": "9 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
+      "last_activity": "2026-11-18T15:19:16.981459-06:00",
+      "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T14:49:21.965490-06:00",
-      "headline": "Cycle 7: 23 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T15:17:57.375461-06:00",
+      "headline": "Cycle 8: 24 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,8 +187,50 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 7,
+    "latest_cycle": 8,
     "findings": [
+      {
+        "id": "W1",
+        "name": "SPORT-MEDIAN RANK",
+        "cycle": 8,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +4,548.58 vs +3,603.80, +944.78m) with ROI up on every king (grand king +79.80% vs +63.22%), on total staked essentially identical to flat on every king (equal on Legacy, Regime,…"
+      },
+      {
+        "id": "W2",
+        "name": "CONSENSUS-5 DISSENT",
+        "cycle": 8,
+        "status": "REFUTED",
+        "verdict": "The mirror of R3 loses everywhere and collapses on Vanguard (+618.54, ROI +10.88%, DD 255.36, guard breached). Combined with Cycle 4's Q3 and Cycle 5's R3, the consensus axis is now priced from both directions on two different…"
+      },
+      {
+        "id": "W3",
+        "name": "PRICE-TEMPLATE",
+        "cycle": 8,
+        "status": "REFUTED",
+        "verdict": "Stakes ~950m more per king and makes less on all five (ROI down everywhere; grand king +52.28% vs +63.22%). Hand-set off-tenth prices carry no sizing premium; the template family is closed for sizing (its crown history in the…"
+      },
+      {
+        "id": "W4",
+        "name": "LEAGUE-NAME LENGTH",
+        "cycle": 8,
+        "status": "REFUTED",
+        "verdict": "P&L down on all five, ROI down on four. The naming proxy that priced as a Selector *pick* conditioner in G250/G251 carries no *stake* signal — a clean separation between pick information and sizing information, recorded as such"
+      },
+      {
+        "id": "W5",
+        "name": "SLIP-TYPE",
+        "cycle": 8,
+        "status": "REFUTED",
+        "verdict": "P&L down on all five; ROI up only on Legacy (+63.23% vs +62.95%, a rounding-scale margin) and Vanguard. The BB/Korea construction split adds nothing on top of the sport split it correlates with, exactly the restatement risk…"
+      },
+      {
+        "id": "W7",
+        "name": "SLIP-RANK INVERTED",
+        "cycle": 8,
+        "status": "REFUTED",
+        "verdict": "The mirror of Cycle 3's slip-rank finding loses on every king (grand king +3,239.35 vs flat +3,603.80). P2's direction — longest-in-slip carries the money — is confirmed inside the fitted set by its control, on the corrected…"
+      },
       {
         "id": "V1",
         "name": "FLIP-VS-HOLD",
@@ -552,6 +594,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 8 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle8.py (new file only). Firewall unchanged: read-only on engine.py, all king stacks,…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 7 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle7.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -585,10 +634,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 2 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle2.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "title": "CYCLE 10 — 2026-11-18 — Slice 3 RE-AUTOPSY under the current kings (DOG-side losses)",
+      "summary": "Slice 3 under the new kings is Cycle 3's disease in a smaller, slightly purer body. TRIPS1VETO removed two of the 18 dog losses…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -624,13 +673,6 @@
       "kind": "generation",
       "title": "CYCLE 5 — 2026-11-18 — Slice 5: SOCCER DRAW misses",
       "summary": "The soccer draw book has no blind spot on the taking side — Part A is empty, and the one drawn game grand missed (S10-02) was…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 4 — 2026-11-18 — Slice 4: FAVOURITE-side losses (grand king picked the favourite and lost)",
-      "summary": "The favourite book — grand's quiet bulk at 143-13 — loses the way the dog book loses: alone. Ten of its thirteen losses had at least one…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -678,6 +720,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G157 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-third visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE only beyond the B1 control. This generation IS a…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G156 — F1 HOUSE-VIEW (thirty-second visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the F-E note. This generation IS a…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -708,13 +757,6 @@
       "kind": "generation",
       "title": "Arena G152 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-second visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE in full. MILESTONE on the NEEDS-FREEZE arm: spec…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G151 — F1 HOUSE-VIEW (thirty-first visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE on…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -2508,6 +2550,26 @@
       "losses": 34,
       "pnl_m": 3843.78,
       "roi_pct": 67.14,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-25",
+      "name": "L&S-CONSENSUS DOG VETO, BBONLY Selector (AUTOPSY-6/22 replication)",
+      "mechanism": "When the grand king picks the underdog but Legacy and the Selector both pick the favourite, drop the dog pick and follow them.",
+      "wins": 211,
+      "losses": 28,
+      "pnl_m": 3721.3,
+      "roi_pct": 65.29,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-26",
+      "name": "LONE-DOG VETO, current kings (AUTOPSY-7/23 replication)",
+      "mechanism": "When the grand king picks the underdog and at most one of the other four kings agrees with it, switch to the favourite.",
+      "wins": 210,
+      "losses": 29,
+      "pnl_m": 3740.8,
+      "roi_pct": 65.63,
       "status": "gate-clearing challenger (not crowned)"
     },
     {
