@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:40:43.265104-06:00",
+  "generated_at": "2026-11-18T13:45:41.562071-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -175,7 +175,7 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T13:15:14.866856-06:00",
+      "last_activity": "2026-11-18T13:45:03.469926-06:00",
       "headline": "Cycle 4: 16 sizing finding(s) banked (proposals only)"
     },
     {
@@ -426,6 +426,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 5 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle5.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 4 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle4.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -582,13 +589,6 @@
       "kind": "generation",
       "title": "Vanguard R4-G61 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
       "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V6 SOCCER x…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G60 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V2 DESK…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
