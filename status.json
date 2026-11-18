@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:30:46.334109-06:00",
+  "generated_at": "2026-11-18T16:35:38.237948-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,29 +140,29 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-18T15:52:25.389426-06:00",
+      "last_activity": "2026-11-18T16:33:00.568669-06:00",
       "headline": "VG19-DOGGE600VETO — 185-54, +25.30% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T16:16:59.070400-06:00",
+      "last_activity": "2026-11-18T16:33:46.721668-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T16:22:39.498394-06:00",
-      "headline": "Latest search cycle: 160"
+      "last_activity": "2026-11-18T16:34:05.046668-06:00",
+      "headline": "Latest search cycle: 161"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T16:19:32.490398-06:00",
-      "headline": "Latest filing: P125"
+      "last_activity": "2026-11-18T16:31:54.326670-06:00",
+      "headline": "Latest filing: P126"
     },
     {
       "name": "Loss Autopsy",
@@ -629,23 +629,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 161 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T16:34:05.046668-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 160 OUTCOME",
       "summary": "NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence on both runs, 17,650 -> 17,651 rows, 0…",
-      "at": "2026-11-18T16:22:39.498394-06:00"
+      "at": "2026-11-18T16:34:05.046668-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 159 OUTCOME",
       "summary": "NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence on runs 2-3, 17,590 -> 17,608 rows, 0…",
-      "at": "2026-11-18T16:22:39.498394-06:00"
+      "at": "2026-11-18T16:34:05.046668-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 158 OUTCOME",
-      "summary": "NO CROWN. All kings tie to the cent at audit on two identical runs (registry DB = mirror by verbatim signature presence, 17,533 rows, 0…",
-      "at": "2026-11-18T16:22:39.498394-06:00"
+      "title": "CYCLE 161 — 2026-11-18 16:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T16:26:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -660,13 +667,6 @@
       "title": "CYCLE 159 — 2026-11-18 15:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T15:56:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 158 — 2026-11-18 15:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T15:41:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -797,6 +797,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G162 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-fourth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION in G162, no branch DEAD, and no new best form — F2 remains parked, fully specified, awaiting its freeze. This…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G161 — F1 HOUSE-VIEW (thirty-fourth visit) — 2026-11-18",
       "summary": "Audit CLEAN — all five sitting kings re-ran EXACT to the cent on BOTH maps on the 239 set (arena baseline: Legacy G28 +52.82%, Regime…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -827,13 +834,6 @@
       "kind": "generation",
       "title": "Arena G157 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-third visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE only beyond the B1 control. This generation IS a…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G156 — F1 HOUSE-VIEW (thirty-second visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the F-E note. This generation IS a…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
