@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SLIP SELECT — The Living Court</title>
 <style>
-/* ============ SLIP SELECT design system — institutional, mobile-first ============ */
+/* ============ SLIP SELECT design system v4 — institutional, spacious, mobile-first ============
+   One idea per section. Air is the design: wide gaps, large padding, a calm
+   rhythm, one hero number per section. Charcoal-navy + muted gold only. */
 :root{
   --bg:#0a0c11; --surface:#12151d; --surface2:#171b26; --inset:#0d1017;
   --line:#242a3a; --line-soft:#1b2130;
@@ -13,113 +15,121 @@
   --gold:#c8a24a; --gold-hi:#e6cb7d;
   --pos:#3fb97f; --neg:#e05d5d; --amb:#e0a44e;
   --cyan:#6fc3d8; --vio:#9a86d8; --mag:#d873b8;
-  --radius:14px;
+  --radius:18px;
 }
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size:17px;line-height:1.55}
+  font-size:17px;line-height:1.6}
 #fx{position:fixed;inset:0;z-index:0;pointer-events:none}
-.wrap{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 16px 48px}
+.wrap{position:relative;z-index:2;max-width:1060px;margin:0 auto;padding:0 20px 72px}
 .num{font-variant-numeric:tabular-nums;font-weight:700;color:#fff;white-space:nowrap}
 .pos{color:var(--pos)} .neg{color:var(--neg)}
 .lab{color:var(--mut);font-size:.72rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
-.chip{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.72rem;font-weight:700;
+.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
+.chip{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:700;
   letter-spacing:.05em;border:1px solid var(--line);background:transparent;color:var(--mut);white-space:nowrap}
 .chip.gold{color:var(--gold-hi);border-color:rgba(200,162,74,.55)}
 .chip.grn{color:var(--pos);border-color:rgba(63,185,127,.5)} .chip.red{color:var(--neg);border-color:rgba(224,93,93,.5)}
 .chip.amb{color:var(--amb);border-color:rgba(224,164,78,.5)} .chip.cyan{color:var(--cyan);border-color:rgba(111,195,216,.5)}
 .chip.vio{color:var(--vio);border-color:rgba(154,134,216,.5)} .chip.ink{color:var(--ink);border-color:#3a4358}
-.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
-  padding:20px;margin:16px 0;box-shadow:0 12px 32px rgba(0,0,0,.35)}
-.panel h2{margin:0 0 4px;font-size:1.28rem;font-weight:800;letter-spacing:-.01em}
-.panel .sub{color:var(--mut);margin:0 0 14px;font-size:.94rem}
+.chip.live{color:var(--mag);border-color:rgba(216,115,184,.55)}
 img.portrait{background:#0a0e20;object-fit:cover;display:block}
+
+/* ---------- sections: editorial headers, one idea each ---------- */
+.sec{margin:60px 0 0}
+.sec:first-child{margin-top:38px}
+.sec-head{display:flex;align-items:center;gap:16px;margin:0 0 12px}
+.sec-head .no{font-size:2.1rem;font-weight:900;color:var(--gold);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.sec-head h3{margin:0;font-size:1.5rem;font-weight:800;letter-spacing:.01em;line-height:1.2}
+.sec-head .rule{flex:1;height:1px;background:var(--line)}
+.sec-sub{color:var(--mut);margin:0 0 28px;font-size:.98rem;max-width:58ch}
+.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
+  padding:30px;box-shadow:0 12px 32px rgba(0,0,0,.35)}
 
 /* ---------- HERO ---------- */
 .hero{position:relative;overflow:hidden;border:1px solid var(--line-soft);border-top:none;
-  border-radius:0 0 18px 18px;background:linear-gradient(180deg,#141926 0%,#0c0f16 78%);padding:16px 16px 0}
-.hero-top{position:relative;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;justify-content:space-between}
+  border-radius:0 0 20px 20px;background:linear-gradient(180deg,#141926 0%,#0c0f16 78%);padding:24px 22px 4px}
+.hero-top{position:relative;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
 .livedot{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.08em;font-size:.85rem}
 .livedot i{width:9px;height:9px;border-radius:50%;background:var(--pos);display:inline-block;animation:pulse 1.8s ease-in-out infinite}
 @keyframes pulse{50%{opacity:.3}}
 .hero .clock{font-size:.98rem;color:var(--mut)}
-.hero h1{position:relative;text-align:center;margin:16px 0 0;font-size:clamp(2.3rem,8vw,3.9rem);
+.hero h1{position:relative;text-align:center;margin:26px 0 0;font-size:clamp(2.6rem,9vw,4.2rem);
   letter-spacing:.14em;line-height:1.04;font-weight:900;color:#fff}
 .hero h1 .thin{color:var(--gold-hi)}
-.hero .tagline{position:relative;text-align:center;color:var(--mut);margin:6px 0 18px;font-size:.98rem;letter-spacing:.02em}
-.bank-block{position:relative;margin:0 auto 18px;max-width:560px;text-align:center;
-  border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:14px 10px 12px}
-.bank-block .amt{font-size:clamp(2rem,7.5vw,3rem);color:var(--gold-hi);line-height:1.12;font-weight:800}
-.bank-block .mini{color:var(--mut);font-size:.9rem;margin-top:2px}
+.hero .tagline{position:relative;text-align:center;color:var(--mut);margin:10px 0 26px;font-size:1rem;letter-spacing:.02em}
+.bank-block{position:relative;margin:0 auto 24px;max-width:560px;text-align:center;
+  border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:20px 10px 18px}
+.bank-block .amt{font-size:clamp(2.2rem,8vw,3.2rem);color:var(--gold-hi);line-height:1.12;font-weight:800}
+.bank-block .mini{color:var(--mut);font-size:.92rem;margin-top:4px}
 /* draggable filmstrip + ticker */
 .strip{position:relative;overflow:hidden;border-top:1px solid var(--line-soft);
-  padding:10px 0;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+  padding:14px 0;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 .strip.grabbing{cursor:grabbing}
 .strip img{-webkit-user-drag:none;user-drag:none;pointer-events:none}
-.mq-track{display:flex;gap:30px;width:max-content;will-change:transform}
-.mq-item{display:flex;align-items:center;gap:10px;min-width:max-content}
-.mq-item img{width:46px;height:46px;border-radius:50%;border:1px solid var(--line)}
-.mq-item .n{font-weight:700;line-height:1.2;font-size:.95rem}
-.mq-item .t{color:var(--mut);font-size:.78rem;line-height:1.2}
-.ticker{padding:9px 0 12px}
-.tk-track{display:flex;gap:38px;width:max-content;will-change:transform;font-size:.95rem}
+.mq-track{display:flex;gap:34px;width:max-content;will-change:transform}
+.mq-item{display:flex;align-items:center;gap:11px;min-width:max-content}
+.mq-item img{width:48px;height:48px;border-radius:50%;border:1px solid var(--line)}
+.mq-item .n{font-weight:700;line-height:1.25;font-size:.95rem}
+.mq-item .t{color:var(--mut);font-size:.78rem;line-height:1.25}
+.ticker{padding:12px 0 16px}
+.tk-track{display:flex;gap:42px;width:max-content;will-change:transform;font-size:.95rem}
 .tk-item{white-space:nowrap;color:var(--mut)} .tk-item b{color:#fff;font-variant-numeric:tabular-nums}
 .tk-item .sep{color:var(--gold)}
 .strip .hint{position:absolute;right:2px;top:2px;color:var(--dim);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
 
 /* ---------- TABS — segmented control ---------- */
 .tabs{position:sticky;top:10px;z-index:50;display:flex;gap:4px;
-  background:rgba(13,16,23,.96);border:1px solid var(--line);border-radius:999px;padding:4px;margin-top:16px;
+  background:rgba(13,16,23,.96);border:1px solid var(--line);border-radius:999px;padding:4px;margin-top:22px;
   box-shadow:0 10px 26px rgba(0,0,0,.45)}
-.tab-btn{flex:1 1 0;min-height:44px;border-radius:999px;border:0;cursor:pointer;background:transparent;
+.tab-btn{flex:1 1 0;min-height:46px;border-radius:999px;border:0;cursor:pointer;background:transparent;
   color:var(--mut);font-size:.92rem;font-weight:700;font-family:inherit;padding:8px 4px;white-space:nowrap}
 .tab-btn.active{background:var(--surface2);color:#fff;box-shadow:inset 0 0 0 1px var(--line),inset 0 -2px 0 var(--gold)}
 .tabpage{display:none} .tabpage.active{display:block}
-.tabpage>h2.ptitle{font-size:1.55rem;margin:24px 2px 2px;font-weight:800;letter-spacing:-.01em}
-.tabpage>p.pintro{color:var(--mut);margin:0 2px 6px;font-size:.96rem}
 
-/* ---------- PYRAMID — architectural steps ---------- */
-.pyr-wrap{position:relative;padding:8px 0 2px}
-.tier{position:relative;margin:0 auto}
-.tier .bar{height:8px;border-radius:4px;background:linear-gradient(90deg,transparent,var(--line) 18%,var(--line) 82%,transparent);margin:0 auto}
-.tier .tlab{text-align:center;margin:12px 0 10px}
-.tier-apex .bar{width:56%}.tier-2 .bar{width:78%}.tier-3 .bar{width:90%}.tier-base .bar{width:100%}
-.kingrow{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.kcard{background:var(--surface2);border:1px solid var(--line-soft);border-radius:var(--radius);
-  padding:14px 12px;width:calc(50% - 6px);max-width:212px;text-align:center}
-.kcard .frame{aspect-ratio:1/1;border-radius:10px;overflow:hidden;border:1px solid var(--line);margin:0 auto;max-width:150px}
+/* ---------- PYRAMID — architectural steps, room to breathe ---------- */
+.tier{position:relative;margin:44px auto 0}
+.tier:first-child{margin-top:6px}
+.tier .tlab{display:flex;align-items:center;gap:16px;margin:0 0 22px;
+  color:var(--mut);font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap}
+.tier .tlab::before,.tier .tlab::after{content:"";flex:1;height:1px;background:var(--line-soft)}
+.tier-apex .tlab{color:var(--gold-hi)}
+.kingrow{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
+.kcard{background:var(--surface2);border:1px solid var(--line-soft);border-radius:16px;
+  padding:22px 18px;width:calc(50% - 10px);max-width:248px;text-align:center}
+.kcard .frame{aspect-ratio:1/1;border-radius:12px;overflow:hidden;border:1px solid var(--line);margin:0 auto;max-width:158px}
 .kcard .frame img{width:100%;height:100%}
-.kcard .cname{font-weight:800;font-size:1rem;margin-top:9px;line-height:1.25}
-.kcard .sname{color:var(--mut);font-size:.78rem;word-break:break-word}
-.kcard .rec{font-size:1.35rem;margin-top:5px}
-.kcard .roi{font-size:1.5rem;line-height:1.2}
-.kcard .rows{margin-top:8px;text-align:left;font-size:.88rem;color:var(--mut)}
+.kcard .cname{font-weight:800;font-size:1.02rem;margin-top:12px;line-height:1.3}
+.kcard .sname{color:var(--mut);font-size:.78rem;word-break:break-word;margin-top:2px}
+.kcard .rec{font-size:1.35rem;margin-top:8px}
+.kcard .roi{font-size:1.55rem;line-height:1.25}
+.kcard .rows{margin-top:10px;text-align:left;font-size:.88rem;color:var(--mut);line-height:1.55}
 .kcard .rows b{color:#fff;font-variant-numeric:tabular-nums}
-.kcard.grand{width:min(300px,88%);max-width:300px;border:1px solid rgba(200,162,74,.6);
+.kcard.grand{width:min(350px,94%);max-width:350px;padding:30px 24px;border:1px solid rgba(200,162,74,.6);
   box-shadow:0 0 0 1px rgba(200,162,74,.25),0 16px 38px rgba(0,0,0,.5);background:#181c29}
-.kcard.grand .frame{max-width:172px;border-color:rgba(200,162,74,.6)}
-.kcard.grand .crown{font-size:1.35rem;line-height:1;color:var(--gold-hi)}
-.kcard.grand .roi{font-size:1.95rem}
+.kcard.grand .frame{max-width:208px;border-color:rgba(200,162,74,.6)}
+.kcard.grand .crown{font-size:1.5rem;line-height:1;color:var(--gold-hi)}
+.kcard.grand .roi{font-size:2.1rem}
 .ghost{border-style:dashed}
-.clash{text-align:center;color:var(--mag);font-weight:800;letter-spacing:.14em;font-size:.78rem;margin:0 0 10px}
-.workers{display:flex;gap:9px;flex-wrap:wrap;justify-content:center}
-.wchip{display:flex;align-items:center;gap:9px;background:var(--inset);border:1px solid var(--line-soft);
-  border-radius:12px;padding:6px 12px 6px 6px;max-width:100%}
-.wchip .thumb{width:42px;height:42px;border-radius:9px;overflow:hidden;flex:none}
+.clash{text-align:center;color:var(--mag);font-weight:800;letter-spacing:.18em;font-size:.78rem;margin:0 0 20px}
+.workers{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.wchip{display:flex;align-items:center;gap:10px;background:var(--inset);border:1px solid var(--line-soft);
+  border-radius:14px;padding:8px 14px 8px 8px;max-width:100%}
+.wchip .thumb{width:44px;height:44px;border-radius:10px;overflow:hidden;flex:none}
 .wchip .thumb img{width:100%;height:100%}
-.wchip .n{font-weight:700;line-height:1.2;font-size:.93rem}.wchip .h{color:var(--mut);font-size:.79rem;line-height:1.3}
+.wchip .n{font-weight:700;line-height:1.25;font-size:.93rem}.wchip .h{color:var(--mut);font-size:.79rem;line-height:1.35}
 .sdot{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none;display:inline-block;vertical-align:2px}
 .sdot.on{background:var(--pos)}
 
 /* ---------- ACCORDIONS ---------- */
-.acc{border:1px solid var(--line-soft);border-radius:12px;background:var(--inset);margin:10px 0;overflow:hidden}
+.acc{border:1px solid var(--line-soft);border-radius:14px;background:var(--inset);margin:14px 0;overflow:hidden}
 .acc-h{width:100%;text-align:left;background:none;border:0;color:var(--ink);cursor:pointer;font-family:inherit;
-  font-size:.98rem;font-weight:700;padding:13px 14px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+  font-size:.98rem;font-weight:700;padding:16px 18px;display:flex;gap:10px;align-items:center;justify-content:space-between}
 .acc-h .chev{color:var(--gold-hi);font-size:1.05rem;transition:transform .2s;flex:none}
 .acc.open .acc-h .chev{transform:rotate(90deg)}
-.acc-b{display:none;padding:4px 14px 14px;color:var(--mut)}
+.acc-b{display:none;padding:6px 18px 18px;color:var(--mut)}
 .acc.open .acc-b{display:block}
 .acc-b b{color:#fff}
 
@@ -150,60 +160,103 @@ img.portrait{background:#0a0e20;object-fit:cover;display:block}
 .pit-banner{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:5;display:none;
   background:rgba(10,12,17,.95);border:1px solid rgba(200,162,74,.65);color:var(--gold-hi);font-weight:800;
   letter-spacing:.14em;padding:8px 22px;border-radius:999px;font-size:1.05rem;white-space:nowrap}
-.pit-caption{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:space-between;margin-top:12px;font-size:.97rem;color:var(--mut)}
+.pit-caption{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between;margin-top:18px;font-size:.97rem;color:var(--mut)}
 .pit-caption b{color:#fff;font-variant-numeric:tabular-nums}
 
-/* ---------- BANKROLL / BETS ---------- */
-.bank-amt{font-size:clamp(2.1rem,7vw,3.4rem);color:var(--gold-hi);line-height:1.1;text-align:center;font-weight:800}
-.bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:11px;margin-top:14px}
-.stat{background:var(--inset);border:1px solid var(--line-soft);border-radius:12px;padding:12px;text-align:center}
-.stat .v{font-size:1.38rem;margin-top:2px}
-.top3{display:grid;grid-template-columns:repeat(auto-fit,minmax(225px,1fr));gap:14px}
-.t3card{background:var(--inset);border:1px solid rgba(200,162,74,.45);border-radius:var(--radius);padding:15px;position:relative;margin-top:12px}
-.t3card .rank{position:absolute;top:-13px;left:12px;background:var(--gold);color:#171106;font-weight:900;
-  border-radius:50%;width:27px;height:27px;text-align:center;line-height:27px}
-.t3card .game{font-weight:700;font-size:1.03rem;margin:7px 0 2px}
-.betgroup{margin:16px 0}
-.betgroup .bgh{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
-.prog{flex:1 1 120px;height:8px;background:#0a0d1e;border:1px solid var(--line-soft);border-radius:6px;overflow:hidden;min-width:90px}
-.prog i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--vio))}
+/* ---------- TOP 3 — the live board ---------- */
+.board-head{display:flex;gap:12px 16px;align-items:baseline;flex-wrap:wrap;margin:0 0 24px}
+.board-head .kick{color:var(--gold-hi);font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
+.board-head h4{margin:2px 0 0;font-size:1.9rem;font-weight:900;line-height:1.15;letter-spacing:-.01em}
+.board-head .meta{margin-left:auto;color:var(--mut);font-size:.92rem}
+.t3grid{display:grid;grid-template-columns:1fr;gap:22px}
+@media (min-width:920px){.t3grid{grid-template-columns:repeat(3,1fr)}}
+.t3card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
+  padding:28px 26px;position:relative;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+.t3card .ghostno{position:absolute;top:2px;right:18px;font-size:3.6rem;font-weight:900;line-height:1;
+  color:rgba(200,162,74,.13);font-variant-numeric:tabular-nums;pointer-events:none}
+.t3card .kind{color:var(--gold-hi);font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.t3card .game{font-weight:800;font-size:1.34rem;line-height:1.3;margin:12px 0 6px}
+.t3card .pickline{font-size:1.06rem;color:var(--mut)}
+.t3card .pickline b{color:#fff;font-size:1.14rem}
+.t3card .meta{display:flex;gap:8px 22px;flex-wrap:wrap;margin-top:16px;color:var(--mut);font-size:.95rem}
+.t3card .meta b{color:#fff;font-variant-numeric:tabular-nums}
+.t3state{margin-top:22px;border-top:1px solid var(--line-soft);padding-top:18px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:38px}
+.t3state .when{color:var(--mut);font-size:.95rem}
+.livepulse{width:11px;height:11px;border-radius:50%;background:var(--mag);flex:none;animation:pulse 1.4s ease-in-out infinite}
+.livetxt{font-weight:800;letter-spacing:.14em;color:var(--mag);font-size:.92rem}
+.t3score{font-size:1.75rem;font-weight:800;color:#fff;font-variant-numeric:tabular-nums;line-height:1.1}
+.t3pnl{font-size:1.3rem}
+.usermark{margin-top:18px;border:1px dashed rgba(200,162,74,.55);border-radius:12px;
+  padding:11px 15px;font-size:.95rem;background:rgba(200,162,74,.05);color:var(--ink)}
+.usermark .lab{color:var(--gold-hi)}
+.usermark b{font-variant-numeric:tabular-nums}
+
+/* ---------- BANKROLL / RECORD / ARCHIVE ---------- */
+.bank-card{text-align:center}
+.bank-amt{font-size:clamp(2.7rem,9vw,4.1rem);color:var(--gold-hi);line-height:1.08;font-weight:800}
+.bank-since{color:var(--mut);margin:10px auto 0;font-size:.96rem;max-width:52ch}
+.bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:26px;text-align:center}
+.bank-note{color:var(--dim);font-size:.88rem;margin:22px 0 0}
+.stat{background:var(--inset);border:1px solid var(--line-soft);border-radius:14px;padding:18px 14px;text-align:center}
+.stat .v{font-size:1.5rem;margin-top:3px}
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.arch-slip{margin-top:36px}
+.arch-slip:first-child{margin-top:28px}
+.arch-head{display:flex;gap:10px 14px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+.arch-head b{font-size:1.2rem}
+.arch-head .n{color:var(--mut);font-size:.92rem;margin-left:auto}
+.arow{display:flex;gap:9px 12px;flex-wrap:wrap;align-items:center;background:var(--inset);
+  border:1px solid var(--line-soft);border-radius:12px;padding:13px 16px;margin:10px 0}
+.arow .g{font-weight:700;flex:1 1 230px;line-height:1.4}
+.arow .p{color:var(--mut)} .arow .p b{color:#fff}
+.arow .score{font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
+.arow .umark{flex-basis:100%;color:var(--gold-hi);font-size:.88rem}
 .betrow{display:flex;gap:9px;flex-wrap:wrap;align-items:center;background:var(--inset);border:1px solid var(--line-soft);
-  border-radius:11px;padding:10px 12px;margin:7px 0}
-.betrow .g{font-weight:700;flex:1 1 230px;line-height:1.35}
+  border-radius:12px;padding:12px 14px;margin:9px 0}
+.betrow .g{font-weight:700;flex:1 1 230px;line-height:1.4}
 .betrow .p{color:var(--mut)} .betrow .p b{color:#fff}
 .betrow .score{font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
 table.games{width:100%;border-collapse:collapse;font-size:.93rem}
-table.games td,table.games th{padding:7px 8px;border-bottom:1px solid var(--line-soft);text-align:left;vertical-align:top}
+table.games td,table.games th{padding:8px;border-bottom:1px solid var(--line-soft);text-align:left;vertical-align:top}
 table.games th{color:var(--mut);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
 table.games .sc{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
-.findrow{background:var(--inset);border:1px solid var(--line-soft);border-radius:12px;padding:12px 14px;margin:9px 0}
+
+/* ---------- WAR ROOM ---------- */
+.findrow{background:var(--inset);border:1px solid var(--line-soft);border-radius:14px;padding:17px 19px;margin:12px 0}
 .findrow .fh{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
-.findrow .vd{color:var(--mut);margin-top:5px}
-.agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:12px}
-.acard{background:var(--inset);border:1px solid var(--line-soft);border-radius:13px;padding:13px;display:flex;gap:12px}
-.acard .thumb{width:60px;height:60px;border-radius:10px;overflow:hidden;flex:none}
+.findrow .vd{color:var(--mut);margin-top:6px}
+.agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:16px}
+.acard{background:var(--inset);border:1px solid var(--line-soft);border-radius:16px;padding:18px;display:flex;gap:14px}
+.acard .thumb{width:64px;height:64px;border-radius:11px;overflow:hidden;flex:none}
 .acard .thumb img{width:100%;height:100%}
 .acard .n{font-weight:800;display:flex;gap:8px;align-items:center}
-.acard .r{color:var(--mut);font-size:.85rem;line-height:1.35}
-.acard .h{margin-top:5px;font-size:.93rem}
-.acard .la{color:var(--dim);font-size:.79rem;margin-top:3px}
-.river .ritem{display:flex;gap:12px;padding:11px 4px;border-bottom:1px solid var(--line-soft)}
-.river .ritem .thumb{width:42px;height:42px;border-radius:9px;overflow:hidden;flex:none}
+.acard .r{color:var(--mut);font-size:.85rem;line-height:1.4}
+.acard .h{margin-top:6px;font-size:.93rem}
+.acard .la{color:var(--dim);font-size:.79rem;margin-top:4px}
+.river .ritem{display:flex;gap:14px;padding:16px 4px;border-bottom:1px solid var(--line-soft)}
+.river .ritem .thumb{width:44px;height:44px;border-radius:10px;overflow:hidden;flex:none}
 .river .ritem .thumb img{width:100%;height:100%}
 .river .tt{font-weight:700}
 .river .sm{color:var(--mut);font-size:.92rem}
 .river .when{color:var(--dim);font-size:.79rem;white-space:nowrap;margin-left:auto}
-.vault-big{font-size:clamp(2.4rem,8vw,3.8rem);text-align:center;color:#fff;line-height:1.1;font-weight:800}
-.countdown{text-align:center;font-size:1.22rem;color:var(--cyan)}
-footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:28px;line-height:1.6}
+
+/* ---------- VAULT ---------- */
+.vault-big{font-size:clamp(3rem,10vw,4.6rem);text-align:center;color:#fff;line-height:1.05;font-weight:800}
+.countdown{text-align:center;font-size:1.35rem;color:var(--cyan)}
+footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:64px;line-height:1.7}
 @media (max-width:640px){
-  .wrap{padding:0 12px 40px}
-  .panel{padding:16px}
+  .wrap{padding:0 16px 56px}
+  .sec{margin-top:48px}
+  .sec:first-child{margin-top:30px}
+  .card{padding:24px 20px}
   .tab-btn{font-size:.83rem}
   .fighter{width:96px}
+  .t3card{padding:24px 20px}
+  .hero{padding:20px 16px 2px}
 }
 @media (prefers-reduced-motion:reduce){
-  .livedot i{animation:none!important}
+  .livedot i,.livepulse{animation:none!important}
   .fighter,.fighter .hp i{transition:none}
 }
 </style>
@@ -231,23 +284,20 @@ footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:28px;line-
 
   <nav class="tabs" id="tabs">
     <button class="tab-btn active" data-tab="court">The Court</button>
-    <button class="tab-btn" data-tab="bets">Bets in Play</button>
+    <button class="tab-btn" data-tab="bets">Top 3 &amp; Bets</button>
     <button class="tab-btn" data-tab="war">War Room</button>
     <button class="tab-btn" data-tab="vault">Vault &amp; Slips</button>
   </nav>
 
   <section class="tabpage active" id="page-court">
-    <h2 class="ptitle">The Court</h2>
-    <p class="pintro">The Pyramid of Power — who rules, who challenges, who works. Then the arena, where the latest challenge is fought by full 3D characters.</p>
-    <div class="panel" style="margin-top:10px">
-      <h2>Pyramid of Power</h2>
-      <p class="sub">Apex: the grand king whose pick goes on every slip card. Below: the four rival kings, the ghost challengers rising from the loss autopsies, and the worker army that feeds them all.</p>
-      <div class="pyr-wrap" id="pyramid"><div id="pyr-tiers"></div></div>
+    <div class="sec">
+      <div class="sec-head"><span class="no">01</span><h3>Pyramid of Power</h3><span class="rule"></span></div>
+      <p class="sec-sub">Who rules, who challenges, who works. The apex is the grand king — his pick goes on every slip card. Below him, the four rival kings, the ghost challengers rising from the loss autopsies, and the worker army that feeds them all.</p>
+      <div id="pyr-tiers"></div>
     </div>
-
-    <div class="panel">
-      <h2>The Fight Pit — Live 3D Arena</h2>
-      <p class="sub" id="pit-sub">The newest real challenge in the system, fought by the characters themselves — full 3D bodies, real attack animations — inside a 3D colosseum. Verdicts come from the record: CROWNED means a crown actually changed hands.</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">02</span><h3>The Fight Pit — Live 3D Arena</h3><span class="rule"></span></div>
+      <p class="sec-sub" id="pit-sub">The newest real challenge in the system, fought by the characters themselves — full 3D bodies, real attack animations — inside a 3D colosseum. Verdicts come from the record: CROWNED means a crown actually changed hands.</p>
       <div class="pit-stage" id="pit-stage">
         <canvas id="gl"></canvas>
         <div class="pit-fallback" id="pit-css">
@@ -262,70 +312,66 @@ footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:28px;line-
   </section>
 
   <section class="tabpage" id="page-bets">
-    <h2 class="ptitle">Bets in Play</h2>
-    <p class="pintro">The money, plainly: the reset bankroll, the king's Top 3, and one board with every called bet — grand picks, confidence picks, desk picks and your own bets together.</p>
-    <div class="panel" id="bank-panel" style="margin-top:10px">
-      <h2 style="text-align:center">Grand Bankroll</h2>
-      <p class="sub" style="text-align:center" id="bank-since">The reset counter.</p>
-      <div class="bank-amt num" id="bank-num">—</div>
-      <div class="bank-grid" id="bank-grid"></div>
-      <div id="bank-pending" style="margin-top:14px"></div>
+    <div class="sec">
+      <div class="sec-head"><span class="no">01</span><h3>The Top 3 — The Live Board</h3><span class="rule"></span></div>
+      <p class="sec-sub">The king's three called bets on the newest slip — a cap of three, never a quota. These cards ARE the board: each one carries its own state, upcoming, live, or final with the score and the money on it.</p>
+      <div id="board"></div>
     </div>
-    <div class="panel">
-      <h2>The King's Top 3 — Bet These</h2>
-      <p class="sub">The only bets called on the newest slip, ranked. A cap of three, never a quota — a weak pick is never promoted to fill the board.</p>
-      <div class="top3" id="top3"></div>
+    <div class="sec">
+      <div class="sec-head"><span class="no">02</span><h3>Grand Bankroll</h3><span class="rule"></span></div>
+      <div class="card bank-card">
+        <div class="lab">The reset counter</div>
+        <div class="bank-amt num" id="bank-num">—</div>
+        <p class="bank-since" id="bank-since">The reset counter.</p>
+        <div class="bank-grid" id="bank-grid"></div>
+        <p class="bank-note">Stakes still out are not listed twice — they ride on the Top 3 cards above, each showing its own live state.</p>
+      </div>
     </div>
-    <div class="panel">
-      <h2>Forward Record — Real Slips, Real Calls</h2>
-      <p class="sub">Lifetime lines from actual delivered slips. These never reset.</p>
-      <div class="bank-grid" id="forward-grid" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))"></div>
-    </div>
-    <div class="panel">
-      <h2>Bets Board — Every Called Bet</h2>
-      <p class="sub">One board for everything: grand picks, confidence picks, the underdog and draw desks, and your own bets — grouped by slip, with live progress, final scores and the money.</p>
-      <div id="bets-board"></div>
+    <div class="sec">
+      <div class="sec-head"><span class="no">03</span><h3>The Record</h3><span class="rule"></span></div>
+      <p class="sec-sub">Lifetime lines from actual delivered slips — these never reset — then every past slip's called bets, settled and done. History, not a second live board.</p>
+      <div class="rec-grid" id="rec-grid"></div>
+      <div id="archive"></div>
     </div>
   </section>
 
   <section class="tabpage" id="page-war">
-    <h2 class="ptitle">War Room</h2>
-    <p class="pintro">The machine behind the crown: every agent, what it is doing right now, and the newest weapons being forged.</p>
-    <div class="panel" style="margin-top:10px">
-      <h2>The Agent Network</h2>
-      <p class="sub">Eleven workers on standing orders. A green light means its log moved in the last 90 minutes.</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">01</span><h3>The Agent Network</h3><span class="rule"></span></div>
+      <p class="sec-sub">The machine behind the crown — eleven workers on standing orders. A green light means its log moved in the last 90 minutes.</p>
       <div class="agents" id="agents"></div>
     </div>
-    <div class="panel">
-      <h2>The Stakehunter — Sizing Findings</h2>
-      <p class="sub">The goblin banker hunts stake-sizing rules on the side. Walled off: proposals only — the kings and the flat-25m scoreboard are never touched.</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">02</span><h3>The Stakehunter — Sizing Findings</h3><span class="rule"></span></div>
+      <p class="sec-sub">The goblin banker hunts stake-sizing rules on the side. Walled off: proposals only — the kings and the flat-25m scoreboard are never touched.</p>
       <div id="stakehunter"></div>
     </div>
-    <div class="panel">
-      <h2>Autopsy Challengers</h2>
-      <p class="sub">Rules invented from the kings' own losses that already clear the crowning gate on the fitted set. Challengers, not kings — the December 1 vault opening judges them blind.</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">03</span><h3>Autopsy Challengers</h3><span class="rule"></span></div>
+      <p class="sec-sub">Rules invented from the kings' own losses that already clear the crowning gate on the fitted set. Challengers, not kings — the December 1 vault opening judges them blind.</p>
       <div id="challengers"></div>
     </div>
-    <div class="panel">
-      <h2>Activity River</h2>
-      <p class="sub">The newest generations, cycles and filings across every log in the system.</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">04</span><h3>Activity River</h3><span class="rule"></span></div>
+      <p class="sec-sub">The newest generations, cycles and filings across every log in the system.</p>
       <div class="river" id="river"></div>
     </div>
   </section>
 
   <section class="tabpage" id="page-vault">
-    <h2 class="ptitle">The Vault &amp; Slips</h2>
-    <p class="pintro">Sealed games the kings have never trained on — opened December 1, when the blind line decides who really rules.</p>
-    <div class="panel" style="margin-top:10px">
-      <h2 style="text-align:center">The Vault</h2>
-      <div class="vault-big num" id="vault-count">—</div>
-      <p class="sub" style="text-align:center">graded games sealed inside</p>
-      <div class="countdown num" id="vault-cd">—</div>
-      <p class="sub" style="text-align:center" id="vault-next">until the first opening</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">01</span><h3>The Vault</h3><span class="rule"></span></div>
+      <p class="sec-sub" style="margin-left:auto;margin-right:auto;text-align:center">Sealed games the kings have never trained on — opened December 1, when the blind line decides who really rules.</p>
+      <div class="card">
+        <div class="vault-big num" id="vault-count">—</div>
+        <p class="sub" style="text-align:center">graded games sealed inside</p>
+        <div class="countdown num" id="vault-cd">—</div>
+        <p class="sub" style="text-align:center;margin:6px 0 0" id="vault-next">until the first opening</p>
+      </div>
     </div>
-    <div class="panel">
-      <h2>The Slips</h2>
-      <p class="sub">Every delivered slip: its calls, its results, and every game with its final score — open a slip to see the full card.</p>
+    <div class="sec">
+      <div class="sec-head"><span class="no">02</span><h3>The Slips</h3><span class="rule"></span></div>
+      <p class="sec-sub">Every delivered slip: its calls, its results, and every game with its final score — open a slip to see the full card.</p>
       <div id="slips"></div>
     </div>
   </section>
@@ -449,10 +495,10 @@ function renderPyramid(d){
  const kings=(d.kings||[]).filter(Boolean);
  const gk=grandKing(d), others=kings.filter(k=>k!==gk);
  let h="";
- if(gk)h+='<div class="tier tier-apex"><div class="bar"></div><div class="tlab"><span class="chip gold">TIER I — THE GRAND KING</span></div><div class="kingrow">'+kingCard(gk,true)+"</div></div>";
- if(others.length)h+='<div class="tier tier-2"><div class="bar"></div><div class="tlab"><span class="chip cyan">TIER II — THE RIVAL KINGS</span></div><div class="kingrow">'+others.map(k=>kingCard(k,false)).join("")+"</div></div>";
+ if(gk)h+='<div class="tier tier-apex"><div class="tlab"><span class="chip gold">TIER I — THE GRAND KING</span></div><div class="kingrow">'+kingCard(gk,true)+"</div></div>";
+ if(others.length)h+='<div class="tier tier-2"><div class="tlab"><span class="chip cyan">TIER II — THE RIVAL KINGS</span></div><div class="kingrow">'+others.map(k=>kingCard(k,false)).join("")+"</div></div>";
  const ch=d.autopsy_challengers||[];
- if(ch.length){h+='<div class="tier tier-3"><div class="bar"></div><div class="tlab"><span class="chip" style="color:var(--mag);border-color:rgba(216,115,184,.5)">TIER III — GHOST CHALLENGERS</span></div>'
+ if(ch.length){h+='<div class="tier tier-3"><div class="tlab"><span class="chip" style="color:var(--mag);border-color:rgba(216,115,184,.5)">TIER III — GHOST CHALLENGERS</span></div>'
    +'<div class="clash">⚔ CLASHING FOR THE CROWN ⚔</div><div class="kingrow">'
    +ch.map(c=>'<div class="kcard ghost"><div class="frame">'+imgTag("autopsy")+'</div>'
      +'<div class="cname">'+esc(c.id)+'</div><div class="sname">'+esc(c.status||"challenger")+'</div>'
@@ -464,67 +510,123 @@ function renderPyramid(d){
  let base=workers.map(a=>{const key=AGENT_KEY[a.name]||"vault";
    return '<div class="wchip">'+thumbTag(key)+'<div><div class="n"><span class="sdot'+(a.status==="active"?" on":"")+'"></span> '+esc(a.name)+'</div><div class="h">'+esc(a.headline||a.role||"")+"</div></div></div>"}).join("");
  if(d.vault)base+='<div class="wchip">'+thumbTag("vault")+'<div><div class="n"><span class="sdot on"></span> The Vault</div><div class="h">'+fmtInt(d.vault.count)+' sealed games · opens Dec 1</div></div></div>';
- h+='<div class="tier tier-base"><div class="bar"></div><div class="tlab"><span class="chip">THE FOUNDATION — WORKER ARMY</span></div><div class="workers">'+base+"</div></div>";
+ h+='<div class="tier tier-base"><div class="tlab"><span class="chip">THE FOUNDATION — WORKER ARMY</span></div><div class="workers">'+base+"</div></div>";
  $("pyr-tiers").innerHTML=h;
 }
 /* ================= render: bets tab ================= */
 function statBox(lab,val,cls){return '<div class="stat"><div class="lab">'+lab+'</div><div class="v num '+(cls||"")+'">'+val+"</div></div>"}
+/* ================= render: bets tab =================
+   THE TOP 3 ARE THE LIVE BOARD. There is no separate in-play panel:
+   each Top-3 card carries its own state — UPCOMING with its tip time,
+   IN PLAY with a live pulse, or ENDED with the final score, the result
+   and the money. The user's own bet rides ON the card as a marker.
+   Below the board: the bankroll (no duplicate pending list) and the
+   record — lifetime desk lines as stat boxes, then past slips as a
+   quiet settled archive. */
 function renderBankroll(d){
  const b=d.bankroll||{};
  $("bank-num").textContent=(b.current_m!=null)?fmtInt(b.current_m)+"m":"RESET PENDING";
  $("bank-since").textContent=(b.start_m!=null)
-   ?"Reset at "+fmtInt(b.start_m)+"m · counting only called bets placed since the reset. Pending bets below are already spoken for."
-   :"The billion reset has not landed in the data yet — the counter starts with the first graded called bet.";
+   ?"Reset at "+fmtInt(b.start_m)+"m · counting only your own graded bets placed since the reset."
+   :"The billion reset has not landed in the data yet — the counter starts with the first graded bet of yours.";
  $("bank-grid").innerHTML=
    statBox("Earned since reset",fmtM(b.earned_m),b.earned_m>0?"pos":(b.earned_m<0?"neg":""))
   +statBox("Bet record",esc(b.record||"0-0"))
   +statBox("Win rate",b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—")
   +statBox("ROI on staked",b.roi_pct!=null?fmtPct(b.roi_pct):"—",b.roi_pct>0?"pos":"")
   +statBox("Bets in play",(b.pending||[]).length);
- const p=b.pending||[];
- $("bank-pending").innerHTML=p.length
-   ?'<div class="lab" style="margin-bottom:6px">Pending — stakes already out</div>'+p.map(x=>'<div class="betrow"><span class="g">'+esc(x.pick)+'</span><span class="p">'+esc(x.game||"")+'</span><span class="num">'+fmtInt(x.stake_m)+"m @ "+(x.price!=null?x.price.toFixed(2):"—")+'</span><span class="chip amb">'+esc(x.status||"")+"</span></div>").join("")
-   :'<p class="sub" style="margin:0">No stakes currently out.</p>';
 }
-function renderTop3(d){
- const slip=(d.slips||[]).filter(s=>s.top3&&s.top3.length).sort((a,b)=>b.number-a.number)[0];
- if(!slip){$("top3").innerHTML='<p class="sub">No Top 3 on the newest slip yet.</p>';return}
- $("top3").innerHTML=slip.top3.map(t=>'<div class="t3card"><div class="rank">'+t.rank+'</div>'
-   +'<span class="chip gold">'+esc(t.kind)+'</span>'+(t.paper?' <span class="chip">PAPER</span>':"")
-   +'<div class="game">'+esc(t.game||"")+'</div>'
-   +'<div>Pick: <b>'+esc(t.pick)+'</b></div>'
-   +'<div style="margin-top:4px">Stake: <span class="num">'+stakeWords(t.stake_m)+'</span> · Price: <span class="num">'+(t.price!=null?t.price.toFixed(2):"—")+'</span></div>'
-   +'<div class="lab" style="margin-top:6px">Slip #'+slip.number+" · "+esc(t.game_id||"")+"</div></div>").join("");
+function top3State(t){
+ if(t.status==="ENDED"){
+   return (t.final_score?'<span class="t3score">FT '+esc(t.final_score)+"</span>":"")
+     +(t.result?'<span class="chip '+(t.result==="WON"?"grn":"red")+'">'+esc(t.result)+"</span>":"")
+     +(t.pnl_m!=null?'<span class="t3pnl num '+(t.pnl_m>=0?"pos":"neg")+'">'+fmtM(t.pnl_m)+"</span>":"");
+ }
+ if(t.status==="IN PLAY"){
+   return '<span class="livepulse"></span><span class="livetxt">IN PLAY</span>'
+     +(t.tip_at?'<span class="when">tipped '+fmtTime(t.tip_at)+"</span>":"");
+ }
+ if(t.status==="UPCOMING"){
+   return '<span class="chip cyan">UPCOMING</span>'
+     +(t.tip_at?'<span class="when">Tips '+fmtTime(t.tip_at)+"</span>":'<span class="when">tip time on the slip card</span>');
+ }
+ return '<span class="chip">ON THE BOARD</span>';
 }
-function renderForward(d){
- const f=d.forward||{};
- const box=(lab,o)=>o?statBox(lab,(o.wins+"-"+o.losses)+" · "+fmtM(o.pnl_m),o.pnl_m>0?"pos":(o.pnl_m<0?"neg":"")):statBox(lab,"—");
- $("forward-grid").innerHTML=box("Chosen bets",f.chosen_bets)+box("Confidence (v1.1)",f.confidence)
-   +box("Underdog Desk",f.underdog_desk)+box("Draw Desk",f.draw_desk);
+function top3UserMark(t){
+ if(!t.user_bet)return"";
+ let txt;
+ if(t.user_stake_m==null)txt="You bet this pick — <b>amount not stated</b>";
+ else txt="You bet <b>"+fmtInt(t.user_stake_m)+"m</b>"+(t.user_price!=null?" @ "+t.user_price.toFixed(2):"");
+ if(t.user_stake_m!=null&&t.stake_m!=null&&t.user_stake_m!==t.stake_m)
+   txt+=" · the call was "+stakeWords(t.stake_m);
+ else if(t.user_stake_m!=null&&t.stake_m!=null)
+   txt+=" · exactly as called";
+ return '<div class="usermark"><span class="lab">Your bet</span><br>'+txt+"</div>";
 }
-/* ONE unified board: grand picks, confidence, both desks and the user's
-   own bets together, grouped by slip, each row kind-labelled. */
+function top3Card(slip,t){
+ return '<div class="t3card"><div class="ghostno">'+t.rank+'</div>'
+  +'<div class="kind">'+esc(t.kind)+(t.paper?" · Paper":"")+'</div>'
+  +'<div class="game">'+esc(t.game||"")+'</div>'
+  +'<div class="pickline">Pick — <b>'+esc(t.pick)+'</b></div>'
+  +'<div class="meta"><span>Stake <b>'+stakeWords(t.stake_m)+'</b></span><span>Price <b>'+(t.price!=null?t.price.toFixed(2):"—")+'</b></span><span>'+esc(t.game_id||"")+'</span></div>'
+  +'<div class="t3state">'+top3State(t)+'</div>'
+  +top3UserMark(t)
+  +"</div>";
+}
+function heroSlips(d){return (d.slips||[]).filter(s=>s.top3&&s.top3.length).sort((a,b)=>b.number-a.number)}
+function renderBoard(d){
+ const hs=heroSlips(d);
+ if(!hs.length){$("board").innerHTML='<p class="sub">No Top 3 on the newest slip yet — the board lights up with the next slip.</p>';return}
+ $("board").innerHTML=hs.map(s=>{
+   const gs=s.games_status||{};
+   return '<div class="board-head"><div><div class="kick">The King\'s Top 3</div><h4>Slip #'+s.number+'</h4></div>'
+    +'<span class="chip gold">'+esc(s.status||"")+'</span>'
+    +'<span class="meta num">'+(gs.games_ended||0)+"/"+(gs.games_total||s.games||0)+' games ended</span></div>'
+    +'<div class="t3grid">'+s.top3.slice().sort((a,b)=>a.rank-b.rank).map(t=>top3Card(s,t)).join("")+"</div>"}).join("");
+}
 const KIND_CHIP={"GRAND PICK":"gold","CONFIDENCE":"cyan","UNDERDOG DESK":"amb","DRAW DESK":"vio","USER BET":"ink"};
 function betStatusChip(b){
  if(b.status==="ENDED")return '<span class="chip '+(b.result==="WON"?"grn":"red")+'">ENDED · '+esc(b.result||"")+" "+fmtM(b.pnl_m)+"</span>";
- if(b.status==="IN PLAY")return '<span class="chip" style="color:var(--mag);border-color:rgba(216,115,184,.5)">● IN PLAY</span>';
+ if(b.status==="IN PLAY")return '<span class="chip live">● IN PLAY</span>';
  return '<span class="chip cyan">UPCOMING</span>';
 }
-function renderBets(d){
+function renderRecord(d){
+ const f=d.forward||{};
+ const box=(lab,o)=>o?statBox(lab,(o.wins+"-"+o.losses)+" · "+fmtM(o.pnl_m),o.pnl_m>0?"pos":(o.pnl_m<0?"neg":"")):statBox(lab,"—");
+ $("rec-grid").innerHTML=box("Chosen bets",f.chosen_bets)+box("Confidence (v1.1)",f.confidence)
+   +box("Underdog Desk",f.underdog_desk)+box("Draw Desk",f.draw_desk);
+ /* archive: past slips only (the hero slip's calls live on its Top-3
+    cards). USER BET rows fold onto the matching called bet as a marker;
+    a user bet with no matching call keeps its own quiet row. */
+ const heroNums={};heroSlips(d).forEach(s=>heroNums[s.number]=1);
  const bySlip={};
- (d.bets||[]).forEach(b=>{(bySlip[b.slip]=bySlip[b.slip]||[]).push(b)});
+ (d.bets||[]).forEach(b=>{if(heroNums[b.slip])return;(bySlip[b.slip]=bySlip[b.slip]||[]).push(b)});
  const slipsMeta={};(d.slips||[]).forEach(s=>slipsMeta[s.number]=s);
  const kindRank=k=>({"GRAND PICK":0,"CONFIDENCE":1,"UNDERDOG DESK":2,"DRAW DESK":3,"USER BET":4}[k]||5);
- $("bets-board").innerHTML=Object.keys(bySlip).sort((a,b)=>b-a).map(n=>{
-   const rows=bySlip[n].slice().sort((a,b)=>kindRank(a.kind)-kindRank(b.kind)), meta=slipsMeta[n]||{};
-   const gs=meta.games_status||{};const tot=gs.games_total||rows.length, end=gs.games_ended||0;
-   return '<div class="betgroup"><div class="bgh"><b style="font-size:1.08rem">Slip #'+n+'</b><span class="chip">'+esc(meta.status||"")+'</span><div class="prog"><i style="width:'+(tot?Math.round(end/tot*100):0)+'%"></i></div><span class="num">'+end+"/"+tot+' games ended</span></div>'
-    +rows.map(b=>'<div class="betrow"><span class="chip '+(KIND_CHIP[b.kind]||"")+'" style="font-size:.68rem">'+esc(b.kind)+'</span>'+(b.paper?'<span class="chip">PAPER</span>':"")
+ $("archive").innerHTML=Object.keys(bySlip).sort((a,b)=>b-a).map(n=>{
+   const all=bySlip[n], meta=slipsMeta[n]||{}, gs=meta.games_status||{};
+   const called=all.filter(b=>b.kind!=="USER BET");
+   const marks={};
+   all.filter(b=>b.kind==="USER BET").forEach(u=>{
+     const m=called.find(c=>c.game_id===u.game_id&&c.pick===u.pick);
+     if(m)marks[called.indexOf(m)]=u;});
+   const rows=called.slice().sort((a,b)=>kindRank(a.kind)-kindRank(b.kind)).map(b=>{
+     const u=marks[called.indexOf(b)];
+     return '<div class="arow"><span class="chip '+(KIND_CHIP[b.kind]||"")+'" style="font-size:.68rem">'+esc(b.kind)+'</span>'+(b.paper?'<span class="chip">PAPER</span>':"")
       +'<span class="g">'+esc(b.game||"")+'</span><span class="p">Pick <b>'+esc(b.pick)+'</b></span>'
       +(b.final_score?'<span class="score">FT '+esc(b.final_score)+"</span>":"")
-      +'<span class="num">'+(b.stake_m!=null?fmtInt(b.stake_m)+"m":"amount not stated")+" @ "+(b.price!=null?b.price.toFixed(2):"—")+"</span>"+betStatusChip(b)+"</div>").join("")+"</div>"}).join("")
-   ||'<p class="sub">No called bets on record yet.</p>';
+      +'<span class="num">'+(b.stake_m!=null?fmtInt(b.stake_m)+"m":"amount not stated")+" @ "+(b.price!=null?b.price.toFixed(2):"—")+"</span>"+betStatusChip(b)
+      +(u?'<span class="umark">Your bet: '+(u.stake_m!=null?fmtInt(u.stake_m)+"m":"amount not stated")+(u.price!=null?" @ "+u.price.toFixed(2):"")+"</span>":"")
+      +"</div>"}).join("");
+   const orphans=all.filter(b=>b.kind==="USER BET"&&!called.some(c=>c.game_id===b.game_id&&c.pick===b.pick))
+     .map(b=>'<div class="arow"><span class="chip ink" style="font-size:.68rem">USER BET</span><span class="g">'+esc(b.game||"")+'</span><span class="p">Pick <b>'+esc(b.pick)+'</b></span>'
+      +(b.final_score?'<span class="score">FT '+esc(b.final_score)+"</span>":"")
+      +'<span class="num">'+(b.stake_m!=null?fmtInt(b.stake_m)+"m":"amount not stated")+" @ "+(b.price!=null?b.price.toFixed(2):"—")+"</span>"+betStatusChip(b)+"</div>").join("");
+   return '<div class="arch-slip"><div class="arch-head"><b>Slip #'+n+'</b><span class="chip">'+esc(meta.status||"")+'</span><span class="n num">'+(gs.games_ended||0)+"/"+(gs.games_total||meta.games||0)+' games ended</span></div>'
+    +rows+orphans+"</div>"}).join("")
+   ||'<p class="sub" style="margin-top:24px">No settled slips in the archive yet.</p>';
 }
+
 /* ================= render: war room ================= */
 function renderWar(d){
  $("agents").innerHTML=(d.agents||[]).map(a=>{const key=AGENT_KEY[a.name]||"vault";
@@ -605,7 +707,7 @@ function pickBout(d){
 let seenEvents=new Set(), bankShown=null;
 function renderAll(d){
  DATA=d;
- renderHero(d);renderPyramid(d);renderBankroll(d);renderTop3(d);renderForward(d);renderBets(d);renderWar(d);renderVault(d);tickVault();
+ renderHero(d);renderPyramid(d);renderBankroll(d);renderBoard(d);renderRecord(d);renderWar(d);renderVault(d);tickVault();
  const bout=pickBout(d);
  if(bout){$("pit-caption").innerHTML="<span>⚔ <b>"+esc(bout.atk.name)+"</b> — "+esc(bout.atk.label)+'</span><span>🛡 <b>'+esc(bout.def.name)+"</b> — "+esc(bout.def.label)+"</span>";
    if(window.Pit)Pit.setBout(bout);}
