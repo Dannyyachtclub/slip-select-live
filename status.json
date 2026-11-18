@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:55:39.567475-06:00",
+  "generated_at": "2026-11-18T14:00:48.582081-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-18T13:01:02.679823-06:00",
+      "last_activity": "2026-11-18T13:55:54.343951-06:00",
       "headline": "VG19-DOGGE600VETO — 185-54, +25.30% fitted ROI"
     },
     {
@@ -147,8 +147,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T13:48:43.659934-06:00",
-      "headline": "Latest search cycle: 150"
+      "last_activity": "2026-11-18T14:00:47.165962-06:00",
+      "headline": "Latest search cycle: 151"
     },
     {
       "name": "Edge Finder",
@@ -419,6 +419,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 151 OUTCOME",
+      "summary": "AUDIT FAILURE (milestone). Kings tie to the cent — Legacy DEAP6 +62.95%, grand king Regime TRIPS1VETO 204-35 +3603.80m +63.22%, Quantum…",
+      "at": "2026-11-18T14:00:47.165962-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 151 — 2026-11-18 13:56 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
+      "summary": "STEP 1 — AUDIT (before any search or write)",
+      "at": "2026-11-18T13:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 150 — 2026-11-18 13:41 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
       "summary": "Kings tie to the cent — Legacy DEAP6 +62.95%, new grand king Regime TRIPS1VETO 204-35 +3603.80m +63.22% (crowned by parallel Regime…",
       "at": "2026-11-18T13:41:00-06:00"
@@ -443,20 +457,6 @@
       "title": "CYCLE 147 — 2026-11-18 12:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the owning generations have exported the…",
       "at": "2026-11-18T12:56:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 146 — 2026-11-18 12:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent, registry DB = mirror by verbatim signature presence (16,812 rows), vault sealed at 170…",
-      "at": "2026-11-18T12:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 145 — 2026-11-18 12:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (cycle 144's parser artefact resolved by the corrected census method), NO CROWN. All kings tie to the cent, registry DB =…",
-      "at": "2026-11-18T12:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -622,8 +622,8 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
-      "title": "Vanguard R4-G61 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V6 SOCCER x…",
+      "title": "Vanguard R4-G63 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Only above-king headline V11 SPLIT-by-venue as…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
