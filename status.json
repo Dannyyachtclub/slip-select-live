@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:30:43.688178-06:00",
+  "generated_at": "2026-11-18T15:35:44.887638-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T14:54:09.770485-06:00",
+      "last_activity": "2026-11-18T15:32:42.283446-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T15:15:49.487463-06:00",
+      "last_activity": "2026-11-18T15:34:07.375444-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T15:21:48.104457-06:00",
-      "headline": "Latest search cycle: 156"
+      "last_activity": "2026-11-18T15:35:14.791443-06:00",
+      "headline": "Latest search cycle: 157"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T15:21:22.074457-06:00",
-      "headline": "Latest filing: P121"
+      "last_activity": "2026-11-18T15:33:32.424445-06:00",
+      "headline": "Latest filing: P122"
     },
     {
       "name": "Loss Autopsy",
@@ -552,9 +552,23 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 157 OUTCOME",
+      "summary": "NO CROWN. All kings tie to the cent at audit on two identical runs (registry DB = mirror by verbatim signature presence, 17,470 rows, 0…",
+      "at": "2026-11-18T15:35:14.791443-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 156 OUTCOME",
       "summary": "NO CROWN. All kings tie to the cent at audit on two identical runs (registry DB = mirror by verbatim signature presence, 17,412 rows, 0…",
-      "at": "2026-11-18T15:21:48.104457-06:00"
+      "at": "2026-11-18T15:35:14.791443-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 157 — 2026-11-18 15:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T15:26:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -576,20 +590,6 @@
       "title": "CYCLE 154 — 2026-11-18 14:41 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
       "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the mirror has been re-exported from the…",
       "at": "2026-11-18T14:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 153 — 2026-11-18 14:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence, 17,233 rows, 0 missing —…",
-      "at": "2026-11-18T14:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 152 — 2026-11-18 14:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence, 17,163 rows, 0 missing —…",
-      "at": "2026-11-18T14:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -678,6 +678,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P122: COACH-PRESSURE / HOT-SEAT FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G158;…",
+      "summary": "Filed Arena P122: COACH-PRESSURE / HOT-SEAT FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G158; classes f + i)",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "CYCLE 2026-11-18 (15:12 CST) — audit + hunt (classes g + c + f + d: cross-market structure / market microstructure / the house's chair /…",
       "summary": "P121 PLAYER-PROP CROSS-DESK FREEZE (basketball) — FILED as collector proposal P121 (needs-data; no user spend — one additional market…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -711,10 +718,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P116: COMMON-OPPONENT TRANSITIVE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G154; classes f + i)",
-      "summary": "Filed Arena P116: COMMON-OPPONENT TRANSITIVE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G154; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G158 — F3 THROW-INCENTIVE ASYMMETRY (thirty-third visit) — 2026-11-18",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -750,13 +757,6 @@
       "kind": "generation",
       "title": "Arena G153 — F3 THROW-INCENTIVE ASYMMETRY (thirty-second visit) — 2026-11-18",
       "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G152 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-second visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE in full. MILESTONE on the NEEDS-FREEZE arm: spec…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
