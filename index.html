@@ -105,7 +105,7 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .hero-king-name{font-family:var(--serif);font-size:clamp(1.42rem,6vw,2.25rem);font-weight:800;line-height:1.12;color:#fff}
 .hero-king-line{color:var(--mut);font-size:.92rem;margin-top:6px;overflow-wrap:anywhere}
 .hero-bank{margin-top:25px;text-align:center}
-.hero-bank .amt{font-family:var(--serif);font-size:clamp(2rem,12.8vw,4.6rem);font-weight:900;line-height:1.04;
+.hero-bank .amt{font-family:var(--serif);font-size:clamp(2rem,11.6vw,4.6rem);font-weight:900;line-height:1.04;
   color:var(--gold-hi);font-variant-numeric:tabular-nums;letter-spacing:.015em;text-shadow:0 8px 34px rgba(0,0,0,.66);white-space:nowrap}
 .hero-bank .mini{color:var(--mut);font-size:.9rem;margin-top:5px}
 .hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(640px,100%);margin-top:22px;border-top:1px solid rgba(200,162,74,.22);border-bottom:1px solid rgba(200,162,74,.22)}
@@ -296,7 +296,7 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 
 /* ---------- bankroll / record / archive ---------- */
 .bank-card{text-align:center}
-.bank-amt{font-family:var(--serif);font-size:clamp(1.95rem,10vw,4.35rem);color:var(--gold-hi);line-height:1.05;font-weight:900;white-space:nowrap}
+.bank-amt{font-family:var(--serif);font-size:clamp(1.95rem,9.4vw,4.35rem);color:var(--gold-hi);line-height:1.05;font-weight:900;white-space:nowrap}
 .bank-since{color:var(--mut);margin:11px auto 0;font-size:.96rem;max-width:54ch}
 .bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:14px;margin-top:27px;text-align:center}
 .bank-note{color:var(--dim);font-size:.88rem;margin:22px 0 0}
@@ -326,8 +326,8 @@ table.games .sc{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;whi
 /* ---------- war room ---------- */
 .procession{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:17px 0}
 .agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:17px}
-.acard{background:var(--inset);border:1px solid var(--line-soft);border-radius:18px;padding:19px;display:flex;gap:15px}
-.acard .thumb{width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;border:1px solid rgba(200,162,74,.35)}
+.acard{background:var(--inset);border:1px solid var(--line-soft);border-radius:18px;padding:14px;display:flex;gap:12px}
+.acard .thumb{width:52px;height:52px;border-radius:50%;overflow:hidden;flex:none;border:1px solid rgba(200,162,74,.35)}
 .acard .thumb img{width:100%;height:100%}
 .acard .n{font-family:var(--serif);font-weight:800;display:flex;gap:8px;align-items:center}
 .acard .r{color:var(--mut);font-size:.85rem;line-height:1.4}.acard .h{margin-top:6px;font-size:.93rem}.acard .la{color:var(--dim);font-size:.79rem;margin-top:4px}
@@ -701,6 +701,10 @@ function switchTab(name){activeTab=name;
  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-tab")===name));
  document.querySelectorAll(".tabpage").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));
  if(typeof Arena3D!=="undefined"&&Arena3D.onTab)Arena3D.onTab(name);
+ if(DATA){
+   if(name==="vault"&&DATA.vault)tweenNum($("vault-count"),DATA.vault.count);
+   if(name==="records")tweenNum($("rec-total"),REC_ALL.length);
+ }
  requestAnimationFrame(observeReveals);}
 
 /* ================= draggable auto-sliding strips =================
@@ -1115,10 +1119,17 @@ function renderWar(d){
  $("challengers").innerHTML=ch.length?ch.map(c=>'<div class="findrow"><div class="fh"><span class="chip vio">'+esc(c.id)+'</span><b>'+esc(c.name)+'</b><span class="chip grn">clears the gate</span></div>'
    +'<div class="vd">'+esc(c.mechanism||c.rule||"")+'</div><div class="vd">Fitted line: <b class="num">'+esc(c.wins+"-"+c.losses)+"</b> · <b class=\"num pos\">"+fmtM(c.pnl_m)+"</b> · ROI <b class=\"num\">"+fmtPct(c.roi_pct)+"</b></div></div>").join("")
    :'<div class="card">The autopsy has not filed a gate-clearing challenger yet.</div>';
- $("river").innerHTML=(d.activity||[]).map(a=>{
+ const riverRow=a=>{
    const ag=a.agent||a.source||"", key=AGENT_KEY[ag]||"vault";
    const when=a.at?fmtTime(a.at):(a.when||"");
-   return '<div class="ritem"><div class="thumb">'+imgTag(key)+'</div><div style="min-width:0"><div class="tt">'+esc(a.title)+'</div><div class="sm">'+esc(a.summary||"")+'</div></div><div class="when">'+esc(when)+"</div></div>"}).join("");
+   const kind=evKind(a);
+   const mark=kind==="crown"?'<span class="arr crown" title="Crown event">▲</span>'
+     :kind==="challenger"?'<span class="arr chal" title="Challenger">▲</span>'
+     :'<span class="arr neut">❯</span>';
+   return '<div class="ritem">'+mark+'<div class="thumb">'+imgTag(key)+'</div><div style="min-width:0"><div class="tt">'+esc(a.title)+'</div><div class="sm">'+esc(a.summary||"")+'</div></div><div class="when">'+esc(when)+"</div></div>"};
+ const acts=d.activity||[];
+ $("river").innerHTML=acts.slice(0,5).map(riverRow).join("")
+   +(acts.length>5?acc("river-more","Older activity ("+(acts.length-5)+" more)",acts.slice(5).map(riverRow).join("")):"");
 }
 
 /* ================= render: vault + slips ================= */
@@ -1153,6 +1164,131 @@ function renderVault(d){
    const head='<span>Slip #'+esc(s.number)+(s.date?" — "+esc(s.date):"")+"</span>"+resChip(s.status==="LOCKED"?"pending":s.status==="GRADED"?"won":"ink");
    return acc("slip"+s.number,head,body);
  }).join("");
+}
+
+/* ================= THE RECORD BOOK =================
+   Every game on every slip, permanently: search + result/sport/slip
+   filters over slips[].games_list (extended by the exporter with league,
+   sport, card pick, frozen price and — only where the tracker grades the
+   game — the outcome). Ungraded games render AWAITING; no score or result
+   is ever invented here. */
+const recState={q:"",filter:"all",sport:"all",slip:"all"};
+let REC_ALL=[], REC_SLIP_TOTALS={}, recWired=false;
+function buildRecords(d){
+ REC_ALL=[]; REC_SLIP_TOTALS={};
+ (d.slips||[]).forEach(s=>{
+   let w=0,l=0;
+   (s.games_list||[]).forEach(g=>{
+     if(g.outcome==="WON")w++; else if(g.outcome==="LOST")l++;
+     REC_ALL.push({slip:s.number,date:s.date||"",game_id:g.game_id,game:g.game||"",
+       league:g.league||"",sport:g.sport||"",pick:g.pick||"",price:g.price,
+       outcome:g.outcome||null,final_score:g.final_score||null,tip_at:g.tip_at||null,
+       bets:(d.bets||[]).filter(b=>b.slip===s.number&&b.game_id===g.game_id)});
+   });
+   REC_SLIP_TOTALS[s.number]={w:w,l:l,n:(s.games_list||[]).length};
+ });
+}
+function recStep(g){
+ if(g.outcome)return 3;
+ if(g.tip_at&&new Date(g.tip_at).getTime()<Date.now())return 2;
+ return 1;
+}
+function stepperHtml(g){
+ const st=recStep(g);
+ const dot=(n,lab)=>{
+   const cls=n<st?"done":(n===st?(st===3?"done":"on"):"");
+   return (n>1?'<span class="bar'+(n<=st?" on":"")+'"></span>':"")
+     +'<span class="dot '+cls+'"></span><span class="slab'+(n<=st?" on":"")+'">'+lab+"</span>"};
+ return '<div class="stepper">'+dot(1,"Picked")+dot(2,"In Play")+dot(3,"Final")+"</div>";
+}
+function recRow(g,i){
+ const marks=g.bets.map(b=>{
+   const who=b.kind==="USER BET"?"Your bet":esc(b.kind)+" bet";
+   const res=b.result?(' — <b>'+esc(b.result)+"</b>"+(b.pnl_m!=null?" · "+fmtM(b.pnl_m):"")):" — in play";
+   return '<div class="rec-betmark">'+who+": <b>"+esc(b.pick)+"</b> @ "+esc(b.price)+res+"</div>"}).join("");
+ const side=g.outcome
+   ?'<div class="rec-score">'+esc(g.final_score||"")+'</div>'+resChip(g.outcome.toLowerCase())
+   :'<div class="rec-await">AWAITING</div>';
+ return '<div class="rec-row" style="animation-delay:'+Math.min(i*28,280)+'ms"><div class="rec-main">'
+   +'<div class="rec-game">'+esc(g.game)+'</div>'
+   +'<div class="rec-meta">'+esc(g.league)+(g.sport?' · <span style="color:var(--cyan)">'+esc(g.sport)+"</span>":"")
+   +(g.tip_at?" · tips "+fmtTime(g.tip_at):"")+"</div>"
+   +'<div class="rec-pick">Card pick <b>'+esc(g.pick||"—")+"</b>"
+   +(g.price!=null?' <span class="pr">@ '+esc(g.price)+"</span>":"")+"</div>"
+   +marks+stepperHtml(g)
+   +'</div><div class="rec-side">'+side+"</div></div>";
+}
+function recMatches(g){
+ if(recState.filter==="wins"&&g.outcome!=="WON")return false;
+ if(recState.filter==="losses"&&g.outcome!=="LOST")return false;
+ if(recState.filter==="awaiting"&&g.outcome)return false;
+ if(recState.sport!=="all"&&g.sport!==recState.sport)return false;
+ if(recState.slip!=="all"&&g.slip!==Number(recState.slip))return false;
+ if(recState.q){
+   const hay=(g.game+" "+g.league+" "+g.pick+" "+g.bets.map(b=>b.pick).join(" ")).toLowerCase();
+   if(hay.indexOf(recState.q)<0)return false;
+ }
+ return true;
+}
+function renderRecGroups(){
+ const shown=REC_ALL.filter(recMatches);
+ if(!shown.length){$("rec-groups").innerHTML='<div class="rec-empty">No games match that search yet — the book only holds what the kings have actually picked.</div>';return}
+ const bySlip={};
+ shown.forEach(g=>{(bySlip[g.slip]=bySlip[g.slip]||[]).push(g)});
+ $("rec-groups").innerHTML=Object.keys(bySlip).map(Number).sort((a,b)=>b-a).map(n=>{
+   const t=REC_SLIP_TOTALS[n]||{w:0,l:0,n:0};
+   const rows=bySlip[n];
+   const date=rows.length?rows[0].date:"";
+   return '<div class="rec-group"><div class="rec-group-head"><b>Slip #'+n+"</b><span>"+esc(date)+'</span>'
+     +'<span class="n">'+rows.length+" of "+t.n+" games · card "+t.w+"-"+t.l+"</span></div>"
+     +rows.map((g,i)=>recRow(g,i)).join("")+"</div>";
+ }).join("");
+}
+function renderRecords(d){
+ buildRecords(d);
+ const total=REC_ALL.length, graded=REC_ALL.filter(g=>g.outcome).length;
+ const W=REC_ALL.filter(g=>g.outcome==="WON").length, L=REC_ALL.filter(g=>g.outcome==="LOST").length;
+ const wr=(W+L)?Math.round(W/(W+L)*1000)/10:null;
+ $("rec-summary").innerHTML=
+   '<div class="stat"><div class="lab">Games recorded</div><div class="v num" id="rec-total">'+total+'</div></div>'
+  +'<div class="stat"><div class="lab">Graded</div><div class="v num">'+graded+'</div></div>'
+  +'<div class="stat"><div class="lab">Card record</div><div class="v num">'+W+"-"+L+'</div></div>'
+  +'<div class="stat"><div class="lab">Card win rate</div><div class="v num">'+(wr!=null?wr+"%":"—")+'</div>'
+  +'<div class="winbar"><i style="width:'+(wr||0)+'%"></i></div></div>';
+ const cnt=f=>f==="all"?total:f==="wins"?W:f==="losses"?L:total-graded;
+ $("rec-filters").innerHTML='<span class="lab">Result</span>'+[["all","All"],["wins","Wins"],["losses","Losses"],["awaiting","Awaiting result"]]
+   .map(([k,lab])=>'<button class="fchip'+(recState.filter===k?" on":"")+'" data-recf="'+k+'">'+lab+' <span class="cnt">'+cnt(k)+"</span></button>").join("");
+ const sports={}; REC_ALL.forEach(g=>{if(g.sport)sports[g.sport]=(sports[g.sport]||0)+1});
+ $("rec-sports").innerHTML='<span class="lab">Sport</span>'
+   +'<button class="fchip'+(recState.sport==="all"?" on":"")+'" data-recs="all">All sports <span class="cnt">'+total+"</span></button>"
+   +Object.keys(sports).sort().map(sp=>'<button class="fchip'+(recState.sport===sp?" on":"")+'" data-recs="'+esc(sp)+'">'+esc(sp)+' <span class="cnt">'+sports[sp]+"</span></button>").join("");
+ const sel=$("rec-slip");
+ const cur=sel.value||recState.slip;
+ sel.innerHTML='<option value="all">All slips</option>'+Object.keys(REC_SLIP_TOTALS).map(Number).sort((a,b)=>b-a)
+   .map(n=>'<option value="'+n+'"'+(String(n)===String(cur)?" selected":"")+">Slip #"+n+"</option>").join("");
+ if(String(recState.slip)!=="all"&&REC_SLIP_TOTALS[recState.slip])sel.value=recState.slip;
+ renderRecGroups();
+ if(!recWired){
+   recWired=true;
+   $("rec-search").addEventListener("input",e=>{recState.q=e.target.value.trim().toLowerCase();renderRecGroups()});
+   $("rec-filters").addEventListener("click",e=>{const b=e.target.closest("[data-recf]");if(!b)return;
+     recState.filter=b.getAttribute("data-recf");
+     $("rec-filters").querySelectorAll(".fchip").forEach(c=>c.classList.toggle("on",c.getAttribute("data-recf")===recState.filter));
+     renderRecGroups()});
+   $("rec-sports").addEventListener("click",e=>{const b=e.target.closest("[data-recs]");if(!b)return;
+     recState.sport=b.getAttribute("data-recs");
+     $("rec-sports").querySelectorAll(".fchip").forEach(c=>c.classList.toggle("on",c.getAttribute("data-recs")===recState.sport));
+     renderRecGroups()});
+   sel.addEventListener("change",e=>{recState.slip=e.target.value;renderRecGroups()});
+ }
+}
+function tweenNum(el,target,suffix){
+ if(!el||target==null)return;
+ if(REDUCED||typeof requestAnimationFrame!=="function"){el.textContent=fmtInt(target)+(suffix||"");return}
+ const start=performance.now(),dur=1200;
+ (function step(t){const p=Math.min(1,(t-start)/dur),e=1-Math.pow(1-p,3);
+   el.textContent=fmtInt(target*e)+(suffix||"");
+   if(p<1)requestAnimationFrame(step)})(start);
 }
 
 /* ================= bankroll count-up ================= */
@@ -1213,8 +1349,8 @@ function crownFireworks(d){
 /* ================= load + render ================= */
 function renderAll(d){
  DATA=d;
- renderHero(d); renderPyramid(d); renderRoster(d);
- renderBoard(d); renderBank(d); renderRecord(d);
+ renderHero(d); renderFlow(d); renderPyramid(d); renderRoster(d);
+ renderBoard(d); renderBank(d); renderRecord(d); renderRecords(d);
  renderWar(d); renderVault(d);
  const bout=pickBout(d);
  if(bout){
@@ -1235,6 +1371,44 @@ function tickClock(){const el=$("clock"); if(!el)return;
  try{el.textContent=new Date().toLocaleTimeString("en-CA",{timeZone:"America/Regina",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false})+" Regina"}catch(e){}}
 setInterval(tickClock,1000); tickClock();
 load(); setInterval(load,60000);
+/* ================= ambient motion layer (v5.1) =================
+   Drifting embers across every tab + gentle display bursts. Cheap and
+   capped for phones, paused while the tab is hidden, and fully disabled
+   under prefers-reduced-motion. Crown events still get the big barrage
+   from the fireworks segment below — this layer is ambience only. */
+(function ambientFx(){
+ if(REDUCED)return;
+ const cv=$("embers"); if(!cv||!cv.getContext)return;
+ const ctx=cv.getContext("2d");
+ const COLS=["240,212,138","114,199,220","164,143,224","230,203,125"];
+ let W=0,H=0,ps=[];
+ function size(){W=cv.width=innerWidth;H=cv.height=innerHeight;
+   const n=innerWidth<700?16:26;
+   ps=Array.from({length:n},()=>({x:Math.random()*W,y:Math.random()*H,
+     r:.8+Math.random()*1.7,s:.12+Math.random()*.35,dr:(Math.random()-.5)*.16,
+     c:COLS[Math.floor(Math.random()*COLS.length)],ph:Math.random()*6.28}))}
+ size(); addEventListener("resize",size);
+ (function loop(t){
+   requestAnimationFrame(loop);
+   if(document.hidden)return;
+   ctx.clearRect(0,0,W,H);
+   ps.forEach(p=>{
+     p.y-=p.s; p.x+=p.dr+Math.sin(t/2400+p.ph)*.08; p.ph+=.008;
+     if(p.y<-6){p.y=H+6;p.x=Math.random()*W}
+     if(p.x<-6)p.x=W+6; if(p.x>W+6)p.x=-6;
+     const a=.16+.14*Math.sin(p.ph*2);
+     ctx.beginPath(); ctx.arc(p.x,p.y,p.r,0,6.283);
+     ctx.fillStyle="rgba("+p.c+","+Math.max(.04,a)+")"; ctx.fill();
+   });
+ })(0);
+ /* gentle ambient bursts — small, high on the screen, never over copy */
+ setInterval(()=>{
+   if(document.hidden||typeof burst!=="function")return;
+   try{burst(innerWidth*(0.2+Math.random()*0.6),innerHeight*0.16,16,
+     ["#e6cb7d","#6fc3d8","#9a86d8"])}catch(e){}
+ },9000);
+})();
+
 /* ================= fireworks — real crowns only ================= */
 const fx=$("fx"),fctx=fx.getContext("2d");let parts=[];
 function fxSize(){fx.width=innerWidth;fx.height=innerHeight}
