@@ -36,6 +36,14 @@ button{font-family:inherit}
 button:focus-visible,a:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
 #fx{position:fixed;inset:0;z-index:90;pointer-events:none}
 .num{font-variant-numeric:tabular-nums;font-weight:700;color:#fff;white-space:nowrap}
+/* ---------- global overflow defence (v5.1): no data string may push the
+   page wider than the phone — long stack names, team names and headlines
+   wrap anywhere rather than clip or stretch the layout ---------- */
+.strategy,.char-headline,.hero-king-line,.acard .h,.acard .n,.findrow .vd,.river .sm,.river .tt,
+.teams,.pick,.arch-head,.betrow .g,.betrow .p,.arow .g,.arow .p,.sec-sub,.sub,.usermark,
+.rec-game,.rec-pick,.board-head .meta,.pit-caption span{overflow-wrap:anywhere}
+img{max-width:100%}
+#embers{position:fixed;inset:0;z-index:1;pointer-events:none}
 .pos{color:var(--pos)} .neg{color:var(--neg)}
 .lab{color:var(--mut);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
 .sub{color:var(--mut);margin:0 0 14px;font-size:.96rem}
@@ -72,8 +80,8 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .hero .clock{font-size:.9rem;color:var(--mut)}
 .hero-main{margin:auto;text-align:center;display:flex;flex-direction:column;align-items:center;padding:30px 0 6px;width:100%}
 .hero-kicker{font-family:var(--serif);font-size:.68rem;font-weight:700;letter-spacing:.42em;color:var(--gold-hi);text-transform:uppercase;margin-bottom:14px}
-.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.62rem,12.4vw,6.7rem);line-height:.96;
-  letter-spacing:.075em;margin:0;color:#fff;text-shadow:0 8px 42px rgba(0,0,0,.72),0 0 34px rgba(200,162,74,.12);white-space:nowrap}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.05rem,12.4vw,6.7rem);line-height:.96;
+  letter-spacing:.06em;margin:0;color:#fff;text-shadow:0 8px 42px rgba(0,0,0,.72),0 0 34px rgba(200,162,74,.12);white-space:nowrap}
 .hero h1 .thin{color:var(--gold-hi)}
 .hero-rule{width:min(300px,68vw);height:1px;margin:20px auto 13px;background:linear-gradient(90deg,transparent,var(--gold),transparent);position:relative}
 .hero-rule::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--gold-hi);transform:translate(-50%,-50%) rotate(45deg)}
@@ -97,7 +105,7 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .hero-king-name{font-family:var(--serif);font-size:clamp(1.42rem,6vw,2.25rem);font-weight:800;line-height:1.12;color:#fff}
 .hero-king-line{color:var(--mut);font-size:.92rem;margin-top:6px;overflow-wrap:anywhere}
 .hero-bank{margin-top:25px;text-align:center}
-.hero-bank .amt{font-family:var(--serif);font-size:clamp(2.55rem,12.8vw,4.6rem);font-weight:900;line-height:1.04;
+.hero-bank .amt{font-family:var(--serif);font-size:clamp(2rem,12.8vw,4.6rem);font-weight:900;line-height:1.04;
   color:var(--gold-hi);font-variant-numeric:tabular-nums;letter-spacing:.015em;text-shadow:0 8px 34px rgba(0,0,0,.66);white-space:nowrap}
 .hero-bank .mini{color:var(--mut);font-size:.9rem;margin-top:5px}
 .hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(640px,100%);margin-top:22px;border-top:1px solid rgba(200,162,74,.22);border-bottom:1px solid rgba(200,162,74,.22)}
@@ -137,8 +145,8 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 
 /* ---------- page + editorial sections ---------- */
 .wrap{position:relative;z-index:2;width:min(920px,100%);margin:0 auto;padding:0 20px 84px}
-.sec{margin:74px 0 0}
-.sec:first-child{margin-top:44px}
+.sec{margin:54px 0 0}
+.sec:first-child{margin-top:36px}
 .sec-head{display:flex;align-items:center;gap:17px;margin:0 0 13px}
 .sec-head .no{font-family:var(--serif);font-size:2.35rem;font-weight:900;color:rgba(200,162,74,.78);line-height:1;font-variant-numeric:tabular-nums}
 .sec-head h3{font-family:var(--serif);margin:0;font-size:clamp(1.55rem,6vw,2.35rem);font-weight:800;letter-spacing:.035em;line-height:1.12;color:#fff}
@@ -147,51 +155,68 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .card{background:linear-gradient(145deg,rgba(255,255,255,.026),rgba(255,255,255,0) 42%),var(--surface);
   border:1px solid var(--line-soft);border-radius:var(--radius);padding:30px;box-shadow:0 18px 44px rgba(0,0,0,.36)}
 
-/* ================= PYRAMID — a true triangle ================= */
-.pyramid-stage{position:relative;width:100%;max-width:880px;min-height:610px;margin:6px auto 0;isolation:isolate}
-.pyramid-stage::before{content:"";position:absolute;inset:0;z-index:-2;opacity:.5;
+/* ================= PYRAMID — stacked tiers in normal flow (v5.1) =======
+   No absolute positioning, no text over portraits: every tier is a centred
+   row in the document flow with its label as a horizontal header above it.
+   The triangle lives only as a quiet backdrop behind the rows. */
+.pyramid-stage{position:relative;width:100%;max-width:880px;margin:6px auto 0;padding:30px 12px 10px;isolation:isolate}
+.pyramid-stage::before{content:"";position:absolute;inset:0;z-index:-2;opacity:.5;pointer-events:none;
   background-image:radial-gradient(rgba(190,205,255,.28) .7px,transparent .9px),radial-gradient(rgba(240,212,138,.20) .6px,transparent .8px);
   background-size:53px 53px,79px 79px;background-position:8px 14px,29px 4px}
-.pyramid-outline{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible}
-.pyramid-outline polygon{fill:rgba(200,162,74,.045);stroke:rgba(200,162,74,.42);stroke-width:.45}
-.pyramid-outline .inner-line{stroke:rgba(200,162,74,.13);stroke-width:.28}
-.pyr-label{position:absolute;left:0;z-index:3;writing-mode:vertical-rl;transform:rotate(180deg);
-  font-family:var(--serif);font-size:.58rem;font-weight:800;letter-spacing:.3em;color:var(--dim);text-transform:uppercase;white-space:nowrap}
-.pyr-label.apex{top:13%}.pyr-label.rivals{top:43%}.pyr-label.challengers{top:65%}.pyr-label.foundation{top:84%}
+.pyramid-bg{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.pyramid-bg svg{width:100%;height:100%;display:block}
+.pyr-tier{position:relative;text-align:center;margin:0 auto}
+.pyr-tier + .pyr-tier{margin-top:34px}
+.pyr-tier-head{display:flex;align-items:center;gap:14px;margin:0 auto 18px;max-width:560px;
+  font-family:var(--serif);font-size:.66rem;font-weight:800;letter-spacing:.3em;color:var(--dim);text-transform:uppercase;white-space:nowrap}
+.pyr-tier-head::before,.pyr-tier-head::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(200,162,74,.4),transparent)}
+.pyr-tier-head.gold{color:var(--gold-hi)}
 .pyr-node{text-align:center;min-width:0}
 .pyr-photo{border-radius:50%;overflow:hidden;margin:0 auto;background:#0a0d1c;border:2px solid var(--line);box-shadow:0 16px 34px rgba(0,0,0,.55)}
 .pyr-photo img{width:100%;height:100%}
-.pyr-apex{position:absolute;left:50%;top:2.5%;transform:translateX(-50%);width:46%;max-width:310px;z-index:4}
-.pyr-apex .pyr-photo{width:clamp(124px,38vw,196px);height:clamp(124px,38vw,196px);border:3px solid var(--gold);box-shadow:0 22px 48px rgba(0,0,0,.66),0 0 38px rgba(200,162,74,.24)}
-.pyr-apex .crown{font-family:var(--serif);font-size:1.65rem;line-height:1;color:var(--gold-hi);text-shadow:0 0 18px rgba(240,212,138,.5)}
-.pyr-apex .court{font-family:var(--serif);font-size:clamp(1.15rem,5vw,1.65rem);font-weight:900;line-height:1.12;margin-top:8px}
-.pyr-apex .title{color:var(--gold-hi);font-size:.84rem;font-weight:700}
-.pyr-apex .strategy{color:var(--dim);font-size:.66rem;line-height:1.35;overflow-wrap:anywhere;margin-top:3px}
-.pyr-apex .line{font-family:var(--serif);font-weight:800;font-size:1rem;margin-top:5px;font-variant-numeric:tabular-nums}
-.pyr-rivals{position:absolute;left:5%;right:5%;top:40.5%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;z-index:3}
-.pyr-rivals .pyr-photo{width:min(100%,112px);aspect-ratio:1;height:auto}
-.pyr-rivals .court{font-family:var(--serif);font-size:clamp(.66rem,2.8vw,.92rem);font-weight:800;line-height:1.15;margin-top:7px;overflow-wrap:anywhere}
+.pyr-apex{max-width:340px}
+.pyr-apex .pyr-photo{width:clamp(132px,40vw,198px);height:clamp(132px,40vw,198px);border:3px solid var(--gold);
+  box-shadow:0 22px 48px rgba(0,0,0,.66),0 0 38px rgba(200,162,74,.24);animation:glowPulse 4.6s ease-in-out infinite}
+.pyr-apex .crown{font-family:var(--serif);font-size:1.65rem;line-height:1;color:var(--gold-hi);text-shadow:0 0 18px rgba(240,212,138,.5);margin-bottom:10px}
+.pyr-apex .court{font-family:var(--serif);font-size:clamp(1.2rem,5vw,1.7rem);font-weight:900;line-height:1.12;margin-top:12px}
+.pyr-apex .title{color:var(--gold-hi);font-size:.86rem;font-weight:700;margin-top:2px}
+.pyr-apex .strategy{color:var(--dim);font-size:.7rem;line-height:1.4;overflow-wrap:anywhere;margin-top:4px}
+.pyr-apex .line{font-family:var(--serif);font-weight:800;font-size:1.02rem;margin-top:6px;font-variant-numeric:tabular-nums}
+.pyr-rivals{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:640px;margin:0 auto}
+.pyr-rivals .pyr-photo{width:min(100%,104px);aspect-ratio:1;height:auto}
+.pyr-rivals .court{font-family:var(--serif);font-size:clamp(.62rem,2.8vw,.92rem);font-weight:800;line-height:1.15;margin-top:8px;overflow-wrap:anywhere}
 .pyr-rivals .line{color:var(--gold-hi);font-size:.78rem;font-weight:800;font-variant-numeric:tabular-nums;margin-top:1px}
 .pyr-rivals .record{color:var(--mut);font-size:.68rem;font-variant-numeric:tabular-nums}
-.pyr-challengers{position:absolute;left:11%;right:11%;top:65.5%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;z-index:3}
-.pyr-challengers .pyr-photo{width:min(100%,62px);aspect-ratio:1;height:auto;border-style:dashed;filter:saturate(.72);opacity:.82}
-.pyr-challengers .cid{font-family:var(--serif);font-size:.53rem;font-weight:800;line-height:1.25;margin-top:5px;color:#d7cce8;overflow-wrap:anywhere}
-.pyr-challengers .roi{font-size:.62rem;color:var(--vio);font-weight:800;font-variant-numeric:tabular-nums}
-.pyr-foundation{position:absolute;left:2.5%;right:2.5%;top:84.5%;z-index:3;display:flex;justify-content:space-between;gap:5px;
-  padding:13px 6px 0;border-top:1px solid rgba(200,162,74,.42);background:linear-gradient(180deg,rgba(200,162,74,.055),transparent)}
-.pyr-foundation .worker{flex:1 1 0;min-width:0;text-align:center}
-.pyr-foundation .pyr-photo{width:min(100%,54px);aspect-ratio:1;height:auto;border-width:1px}
-.pyr-foundation .wname{font-size:.55rem;font-weight:700;line-height:1.2;color:var(--mut);margin-top:4px;overflow-wrap:anywhere}
-.status-dot{width:7px;height:7px;border-radius:50%;background:var(--dim);display:block;margin:4px auto 0}
+.pyr-challengers{max-width:640px;margin:0 auto}
+.pyr-medallion{width:84px;height:84px;margin:0 auto}
+.pyr-medallion .pyr-photo{width:84px;height:84px;border-style:dashed;border-color:rgba(164,143,224,.65)}
+.pyr-medallion .rise{display:block;color:var(--gold-hi);font-size:.95rem;line-height:1;margin-top:7px;animation:riseNudge 1.8s ease-in-out infinite}
+.pyr-chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:16px}
+.pyr-chip{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(164,143,224,.45);border-radius:999px;
+  padding:6px 12px;background:rgba(12,10,24,.66);font-size:.74rem;color:#d7cce8;max-width:100%}
+.pyr-chip .arr{color:var(--gold-hi);font-size:.8rem;animation:riseNudge 1.8s ease-in-out infinite}
+.pyr-chip b{color:#fff;font-variant-numeric:tabular-nums}
+.pyr-chip .roi{color:var(--vio);font-weight:800;font-variant-numeric:tabular-nums}
+@keyframes riseNudge{0%,100%{transform:translateY(1px);opacity:.55}50%{transform:translateY(-3px);opacity:1}}
+@keyframes glowPulse{0%,100%{box-shadow:0 22px 48px rgba(0,0,0,.66),0 0 26px rgba(200,162,74,.16)}50%{box-shadow:0 22px 48px rgba(0,0,0,.66),0 0 48px rgba(200,162,74,.34)}}
+.pyr-foundation{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:720px;margin:0 auto;
+  padding:16px 4px 2px;border-top:1px solid rgba(200,162,74,.42)}
+.pyr-foundation .worker{display:flex;align-items:center;gap:8px;border:1px solid var(--line-soft);border-radius:999px;
+  padding:5px 13px 5px 5px;background:rgba(7,9,18,.72);max-width:100%}
+.pyr-foundation .pyr-photo{width:34px;height:34px;border-width:1px;margin:0;flex:none}
+.pyr-foundation .wname{font-size:.72rem;font-weight:700;line-height:1.2;color:var(--mut);overflow-wrap:anywhere}
+.status-dot{width:7px;height:7px;border-radius:50%;background:var(--dim);flex:none;display:inline-block}
 .status-dot.on{background:var(--pos);box-shadow:0 0 9px rgba(67,201,138,.75)}
 
 /* ================= CHARACTER ROSTER ================= */
-.roster{display:grid;grid-template-columns:1fr;gap:20px}
-.char-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:19px;min-height:218px;overflow:hidden;
+.roster{display:grid;grid-template-columns:1fr;gap:16px}
+.formbar{height:7px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden;margin-top:10px}
+.formbar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--gold-deep),var(--gold-hi));transition:width 1.1s cubic-bezier(.19,.68,.22,1)}
+.char-card{display:grid;grid-template-columns:118px minmax(0,1fr);gap:15px;overflow:hidden;
   background:linear-gradient(145deg,rgba(255,255,255,.026),rgba(255,255,255,0) 45%),var(--surface);
   border:1px solid var(--line-soft);border-radius:24px;box-shadow:0 16px 38px rgba(0,0,0,.32)}
 .char-card.king{border-color:rgba(200,162,74,.38)}
-.char-photo{position:relative;min-height:218px;overflow:hidden;background:#090b18}
+.char-photo{position:relative;min-height:158px;overflow:hidden;background:#090b18}
 .char-photo img{position:absolute;inset:0;width:100%;height:100%}
 .char-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 58%,rgba(12,15,26,.52));pointer-events:none}
 .char-body{padding:21px 21px 19px 0;min-width:0}
@@ -202,7 +227,7 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .data-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid var(--line-faint)}
 .data-row span{color:var(--dim);font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
 .data-row b{color:#fff;font-size:.9rem;text-align:right;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
-@media (min-width:780px){.roster{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:620px){.roster{grid-template-columns:repeat(2,minmax(0,1fr))}.char-card{grid-template-columns:104px minmax(0,1fr)}}
 
 /* ================= ARENA — letterbox cinema ================= */
 .cinema{width:100vw;margin-left:calc(50% - 50vw);background:#000;border-top:1px solid rgba(200,162,74,.28);border-bottom:1px solid rgba(200,162,74,.28);box-shadow:0 28px 70px rgba(0,0,0,.5)}
@@ -271,7 +296,7 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 
 /* ---------- bankroll / record / archive ---------- */
 .bank-card{text-align:center}
-.bank-amt{font-family:var(--serif);font-size:clamp(2.45rem,10vw,4.35rem);color:var(--gold-hi);line-height:1.05;font-weight:900;white-space:nowrap}
+.bank-amt{font-family:var(--serif);font-size:clamp(1.95rem,10vw,4.35rem);color:var(--gold-hi);line-height:1.05;font-weight:900;white-space:nowrap}
 .bank-since{color:var(--mut);margin:11px auto 0;font-size:.96rem;max-width:54ch}
 .bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:14px;margin-top:27px;text-align:center}
 .bank-note{color:var(--dim);font-size:.88rem;margin:22px 0 0}
@@ -320,34 +345,129 @@ table.games .sc{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;whi
 .vault-art .frame{position:absolute;inset:0;border-radius:50%;padding:7px;background:linear-gradient(145deg,#e8e2d2,#5d6474 30%,#171a26 52%,#c8a24a 76%,#4b5265);box-shadow:0 24px 54px rgba(0,0,0,.6)}
 .vault-art img{width:100%;height:100%;border-radius:50%;border:5px solid #070812}
 .vault-main{text-align:left;min-width:0}
-.vault-big{font-family:var(--serif);font-size:clamp(4.2rem,17vw,7.2rem);text-align:left;color:#fff;line-height:.98;font-weight:900;font-variant-numeric:tabular-nums}
+.vault-big{font-family:var(--serif);font-size:clamp(3.3rem,17vw,7.2rem);text-align:left;color:#fff;line-height:.98;font-weight:900;font-variant-numeric:tabular-nums}
 .countdown{font-family:var(--serif);font-size:clamp(1.25rem,5vw,1.65rem);color:var(--gold-hi);font-weight:800;margin-top:20px;font-variant-numeric:tabular-nums}
 .vault-main .sub{text-align:left}
 footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:68px;line-height:1.7}
 footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 
+/* ================= v5.1 — progression, records, motion ================= */
+/* sticky mini-summary bar (Bets tab) */
+.mini-bar{position:sticky;top:76px;z-index:60;display:flex;gap:8px;flex-wrap:wrap;align-items:center;
+  background:rgba(4,5,11,.88);border:1px solid var(--line-soft);border-radius:999px;padding:7px 12px;
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin:0 0 26px;font-size:.82rem;color:var(--mut)}
+.mini-bar b{color:#fff;font-variant-numeric:tabular-nums}
+.mini-bar .sep{color:var(--gold)}
+/* progression strip — the pipeline, seen flowing */
+.flow{display:flex;align-items:stretch;gap:0;overflow-x:auto;padding:6px 2px 12px;scrollbar-width:none}
+.flow::-webkit-scrollbar{display:none}
+.flow-stage{flex:1 0 auto;min-width:104px;text-align:center;background:var(--inset);border:1px solid var(--line-soft);
+  border-radius:15px;padding:12px 10px 10px}
+.flow-stage .fs-name{font-family:var(--serif);font-size:.6rem;font-weight:800;letter-spacing:.14em;color:var(--gold-hi);text-transform:uppercase;line-height:1.35}
+.flow-stage .fs-val{font-size:.8rem;color:#fff;font-weight:700;margin-top:5px;font-variant-numeric:tabular-nums;line-height:1.3;overflow-wrap:anywhere}
+.flow-stage .fs-sub{font-size:.68rem;color:var(--dim);margin-top:1px;line-height:1.3}
+.flow-arrow{flex:0 0 auto;align-self:center;padding:0 3px;color:var(--gold);font-size:1rem;font-weight:900;pointer-events:none;
+  animation:chevFlash 1.6s ease-in-out infinite}
+.flow-arrow.d1{animation-delay:.18s}.flow-arrow.d2{animation-delay:.36s}.flow-arrow.d3{animation-delay:.54s}
+.flow-arrow.d4{animation-delay:.72s}.flow-arrow.d5{animation-delay:.9s}
+@keyframes chevFlash{0%,100%{opacity:.25;transform:translateX(-2px)}50%{opacity:1;transform:translateX(2.5px)}}
+/* bet cards — THE PICK IS THE HERO (directive 8) */
+.t3card .teams{font-size:clamp(1.02rem,4.4vw,1.3rem);color:#cfd4e2;margin-top:16px}
+.pick-callout{margin-top:18px;padding:18px;background:linear-gradient(150deg,rgba(200,162,74,.14),rgba(200,162,74,.03));border-left:4px solid var(--gold);position:relative;overflow:hidden}
+.pick-callout::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 42%,rgba(255,244,200,.13) 50%,transparent 58%);
+  transform:translateX(-110%);animation:shimmerSweep 4.8s ease-in-out infinite;pointer-events:none}
+@keyframes shimmerSweep{0%,55%{transform:translateX(-110%)}85%,100%{transform:translateX(110%)}}
+.pick-callout .lab{color:var(--gold-hi);font-size:.78rem;letter-spacing:.22em}
+.pick-callout .pick{font-family:var(--serif);font-size:clamp(1.66rem,7.4vw,2.35rem);font-weight:900;line-height:1.08;margin-top:5px;color:#fff;text-shadow:0 0 22px rgba(200,162,74,.25)}
+.pick-callout .pickline{margin-top:9px;font-size:1.02rem;color:var(--ink)}
+.pick-callout .pickline b{color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.sport-chip{border-color:rgba(114,199,220,.5);color:var(--cyan)}
+/* archive sport sub-headings + vault table sport groups */
+.arch-sport{font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.24em;color:var(--gold-hi);
+  text-transform:uppercase;margin:20px 0 2px;display:flex;align-items:center;gap:12px}
+.arch-sport::after{content:"";flex:1;height:1px;background:rgba(200,162,74,.25)}
+table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weight:800;letter-spacing:.22em;
+  color:var(--gold-hi);text-transform:uppercase;background:rgba(200,162,74,.06);padding-top:12px}
+/* ================= THE RECORD BOOK ================= */
+.rec-summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:13px;margin-bottom:8px}
+.rec-controls{position:sticky;top:76px;z-index:60;background:rgba(4,5,11,.9);border:1px solid var(--line-soft);
+  border-radius:18px;padding:13px 14px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);margin:22px 0 6px}
+.rec-search{width:100%;background:var(--inset);border:1px solid var(--line);border-radius:12px;color:#fff;
+  font-family:inherit;font-size:1rem;padding:12px 14px;outline:none}
+.rec-search:focus{border-color:rgba(200,162,74,.65)}
+.rec-search::placeholder{color:var(--dim)}
+.rec-chiprow{display:flex;gap:7px;flex-wrap:wrap;margin-top:11px;align-items:center}
+.rec-chiprow .lab{margin-right:2px}
+.fchip{border:1px solid var(--line);background:transparent;color:var(--mut);border-radius:999px;padding:6px 13px;
+  font-size:.78rem;font-weight:700;cursor:pointer;font-family:inherit}
+.fchip.on{background:rgba(200,162,74,.16);color:var(--gold-hi);border-color:rgba(200,162,74,.6)}
+.fchip .cnt{opacity:.75;font-variant-numeric:tabular-nums}
+.rec-select{background:var(--inset);color:#fff;border:1px solid var(--line);border-radius:10px;padding:7px 10px;font-family:inherit;font-size:.85rem}
+.rec-group{margin-top:30px}
+.rec-group-head{display:flex;gap:10px 14px;align-items:baseline;flex-wrap:wrap;margin-bottom:4px}
+.rec-group-head b{font-family:var(--serif);font-size:1.25rem}
+.rec-group-head .n{color:var(--mut);font-size:.9rem;margin-left:auto;font-variant-numeric:tabular-nums}
+.rec-row{display:flex;gap:12px;align-items:flex-start;background:var(--inset);border:1px solid var(--line-soft);
+  border-radius:14px;padding:14px 16px;margin:9px 0;animation:recIn .45s ease both}
+@keyframes recIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.rec-main{flex:1 1 auto;min-width:0}
+.rec-game{font-weight:700;line-height:1.35}
+.rec-meta{color:var(--mut);font-size:.82rem;margin-top:3px;line-height:1.45}
+.rec-pick{margin-top:6px;font-size:.95rem}
+.rec-pick b{color:#fff;font-size:1.02rem}
+.rec-pick .pr{color:var(--gold-hi);font-variant-numeric:tabular-nums;font-weight:700}
+.rec-betmark{margin-top:7px;font-size:.84rem;color:var(--gold-hi);border-top:1px dashed rgba(200,162,74,.3);padding-top:7px}
+.rec-betmark b{font-variant-numeric:tabular-nums}
+.rec-side{flex:none;text-align:right;min-width:74px}
+.rec-score{font-family:var(--serif);font-size:1.45rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1.1}
+.rec-await{color:var(--dim);font-size:.78rem;font-weight:700;letter-spacing:.1em}
+.stepper{display:flex;align-items:center;gap:0;margin-top:9px}
+.stepper .dot{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--dim);flex:none;position:relative}
+.stepper .dot.on{background:var(--gold-hi);border-color:var(--gold-hi);box-shadow:0 0 8px rgba(240,212,138,.55)}
+.stepper .dot.done{background:var(--pos);border-color:var(--pos);box-shadow:0 0 8px rgba(67,201,138,.5)}
+.stepper .bar{width:22px;height:1.5px;background:var(--line);flex:none}
+.stepper .bar.on{background:var(--gold)}
+.stepper .slab{font-size:.6rem;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin:0 6px 0 5px}
+.stepper .slab.on{color:var(--gold-hi)}
+.rec-empty{color:var(--mut);text-align:center;padding:34px 10px;border:1px dashed var(--line);border-radius:16px;margin-top:22px}
+.winbar{height:8px;border-radius:99px;background:rgba(228,101,101,.25);overflow:hidden;margin-top:9px}
+.winbar i{display:block;height:100%;background:linear-gradient(90deg,#2c8a5c,var(--pos));transition:width 1.1s cubic-bezier(.19,.68,.22,1)}
+.river .arr{flex:none;font-weight:900;margin-top:2px}
+.river .arr.crown{color:var(--gold-hi)} .river .arr.chal{color:var(--vio)} .river .arr.neut{color:var(--dim)}
+
 @media (max-width:700px){
   .vault-hero{grid-template-columns:1fr;gap:30px}.vault-main{text-align:center}.vault-big{text-align:center}.vault-main .sub{text-align:center}
 }
 @media (max-width:640px){
-  .wrap{padding:0 16px 62px}.sec{margin-top:52px}.sec:first-child{margin-top:34px}.card{padding:25px 21px}
-  .tab-btn{font-size:.61rem;letter-spacing:.08em}.hero{padding-left:16px;padding-right:16px}
+  .wrap{padding:0 16px 62px}.sec{margin-top:44px}.sec:first-child{margin-top:28px}.card{padding:25px 21px}
+  .tab-btn{font-size:.56rem;letter-spacing:.05em;padding:8px 1px}.hero{padding-left:16px;padding-right:16px}
   .hero-top .chip{display:none}.hero-art{width:min(74vw,320px)}
-  .pyramid-stage{min-height:590px}.pyr-rivals{left:3.5%;right:3.5%;gap:6px}.pyr-challengers{left:8%;right:8%;gap:4px}
-  .char-card{grid-template-columns:140px minmax(0,1fr);gap:13px;min-height:204px}.char-photo{min-height:204px}.char-body{padding:17px 15px 16px 0}
+  .pyr-rivals{gap:6px}.pyr-tier-head{letter-spacing:.2em;font-size:.6rem}
+  .char-card{grid-template-columns:104px minmax(0,1fr);gap:13px}.char-photo{min-height:150px}.char-body{padding:15px 14px 14px 0}
   .char-name{font-size:1.28rem}.data-row{gap:9px}.data-row b{font-size:.84rem}
   .fighter{width:96px}.t3card{padding:25px 21px}
+  .mini-bar,.rec-controls{top:70px}
+  /* tables become stacked rows — nothing scrolls sideways */
+  table.games,table.games tbody,table.games tr,table.games td{display:block;width:100%}
+  table.games th{display:none}
+  table.games tr{border-bottom:1px solid var(--line-soft);padding:6px 0}
+  table.games td{border-bottom:0;padding:3px 8px}
+  .rec-side{min-width:64px}.rec-score{font-size:1.25rem}
+  .flow-stage{min-width:96px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1!important;transform:none!important;transition:none!important}
-  .livedot i,.livepulse,.aura,.nebula,.scroll-cue::after{animation:none!important}
+  .livedot i,.livepulse,.aura,.nebula,.scroll-cue::after,.flow-arrow,.pyr-chip .arr,
+  .pyr-medallion .rise,.pyr-apex .pyr-photo,.pick-callout::after,.rec-row{animation:none!important}
+  .formbar i,.winbar i{transition:none}
   .fighter,.fighter .hp i{transition:none}
 }
 </style>
 </head>
 <body>
 <canvas id="fx"></canvas>
+<canvas id="embers" aria-hidden="true"></canvas>
 
 <header class="hero" id="hero">
   <canvas id="stars" aria-hidden="true"></canvas>
@@ -393,6 +513,7 @@ footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
   <nav class="tabs" id="tabs" aria-label="Site sections">
     <button class="tab-btn active" data-tab="court">Court</button>
     <button class="tab-btn" data-tab="bets">Bets</button>
+    <button class="tab-btn" data-tab="records">Records</button>
     <button class="tab-btn" data-tab="war">War Room</button>
     <button class="tab-btn" data-tab="vault">Vault</button>
   </nav>
@@ -401,19 +522,26 @@ footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 <div class="wrap">
   <section class="tabpage active" id="page-court">
     <div class="sec reveal">
-      <div class="sec-head"><span class="no">01</span><h3>Pyramid of Power</h3><span class="rule"></span></div>
+      <div class="sec-head"><span class="no">01</span><h3>The Progression</h3><span class="rule"></span></div>
+      <p class="sec-sub">How a slip becomes a verdict — every stage below is live, read from the court's own records right now.</p>
+      <div class="flow" id="flow"></div>
+    </div>
+
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">02</span><h3>Pyramid of Power</h3><span class="rule"></span></div>
       <p class="sec-sub">One throne, four rivals, the ghosts rising beneath them, and the worker army holding the base. The shape is the hierarchy — read it at a glance.</p>
       <div class="pyramid-stage" id="pyr-tiers"></div>
     </div>
 
     <div class="sec reveal">
-      <div class="sec-head"><span class="no">02</span><h3>The Court Roster</h3><span class="rule"></span></div>
-      <p class="sec-sub">Every crown and every worker at full scale — the characters who pick, challenge, hunt, audit and guard the vault.</p>
+      <div class="sec-head"><span class="no">03</span><h3>The Court Roster</h3><span class="rule"></span></div>
+      <p class="sec-sub">The five kings at full scale. The worker court — hunters, auditors and the vault's guardian — waits behind one tap.</p>
       <div class="roster" id="roster"></div>
+      <div id="roster-workers"></div>
     </div>
 
     <div class="sec reveal">
-      <div class="sec-head"><span class="no">03</span><h3>The Fight Pit</h3><span class="rule"></span></div>
+      <div class="sec-head"><span class="no">04</span><h3>The Fight Pit</h3><span class="rule"></span></div>
       <p class="sec-sub" id="pit-sub">The newest real challenge in the system, fought by the characters themselves — full 3D bodies and real attack animations inside the colosseum. Verdicts come from the record: CROWNED means a crown actually changed hands.</p>
       <div class="cinema">
         <div class="cinema-bar"><span></span></div>
@@ -435,8 +563,9 @@ footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 
   <section class="tabpage" id="page-bets">
     <div class="sec reveal">
-      <div class="sec-head"><span class="no">01</span><h3>The Top 3</h3><span class="rule"></span></div>
-      <p class="sec-sub">The king's three called bets on the newest slip — a cap of three, never a quota. These match cards are the live board: each carries its own state, score and money.</p>
+      <div class="sec-head"><span class="no">01</span><h3>The Choices</h3><span class="rule"></span></div>
+      <p class="sec-sub">Every live slip carries its own Top 3 choices — a cap of three per slip, never a quota. A board stays here only while at least one of its picks is still to play; once a slip's choices are all settled, they move to the Record Book as history.</p>
+      <div class="mini-bar" id="bets-mini"></div>
       <div id="board"></div>
     </div>
     <div class="sec reveal">
@@ -454,6 +583,21 @@ footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
       <p class="sec-sub">Lifetime lines from actual delivered slips — these never reset — then every past slip's called bets, settled and done. History, not a second live board.</p>
       <div class="rec-grid" id="rec-grid"></div>
       <div id="archive"></div>
+    </div>
+  </section>
+
+  <section class="tabpage" id="page-records">
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">01</span><h3>The Record Book</h3><span class="rule"></span></div>
+      <p class="sec-sub">Every game the kings have ever picked, in one permanent archive — its final score, its result, and the bet it carried. Search it, filter it, by sport or by slip. This book only grows.</p>
+      <div class="rec-summary" id="rec-summary"></div>
+      <div class="rec-controls">
+        <input class="rec-search" id="rec-search" type="search" placeholder="Search a team, league or pick…" autocomplete="off">
+        <div class="rec-chiprow" id="rec-filters"></div>
+        <div class="rec-chiprow" id="rec-sports"></div>
+        <div class="rec-chiprow"><span class="lab">Slip</span><select class="rec-select" id="rec-slip"></select></div>
+      </div>
+      <div id="rec-groups"></div>
     </div>
   </section>
 
@@ -676,36 +820,67 @@ function renderHero(d){
  if(strips.mq)strips.mq.remeasure(); if(strips.tk)strips.tk.remeasure();
 }
 
-/* ================= render: true triangular pyramid ================= */
+/* ================= render: pyramid — stacked tiers, normal flow =========
+   v5.1: no absolute positioning anywhere in the pyramid. Each tier is a
+   centred row in the flow; its label is a horizontal header ABOVE the row;
+   every name/record sits BELOW its portrait in reserved space. Nothing can
+   overlap at any width. The triangle is only a backdrop. */
 function pyrPhoto(key,extra){
  const c=CHAR[key]||CHAR.vault;
  return '<div class="pyr-photo '+(extra||"")+'" style="border-color:'+c.col+'">'+imgTag(key)+"</div>";
 }
+function tierHead(text,gold){return '<div class="pyr-tier-head'+(gold?" gold":"")+'">'+esc(text)+"</div>"}
 function renderPyramid(d){
  const kings=(d.kings||[]).filter(Boolean), gk=grandKing(d), rivals=kings.filter(k=>k!==gk);
- let h='<svg class="pyramid-outline" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">'
-   +'<defs><linearGradient id="pyrGlow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0d48a" stop-opacity=".12"/><stop offset="1" stop-color="#f0d48a" stop-opacity=".015"/></linearGradient></defs>'
-   +'<polygon points="50,1 98,99 2,99" fill="url(#pyrGlow)"></polygon>'
-   +'<polygon class="inner-line" points="50,14 84,86 16,86" fill="none"></polygon></svg>';
- h+='<span class="pyr-label apex">Tier I · The Throne</span><span class="pyr-label rivals">Tier II · Rivals</span>'
-   +'<span class="pyr-label challengers">Tier III · Ghosts</span><span class="pyr-label foundation">The Foundation</span>';
+ let h='<div class="pyramid-bg" aria-hidden="true"><svg viewBox="0 0 100 100" preserveAspectRatio="none">'
+   +'<defs><linearGradient id="pyrGlow" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0d48a" stop-opacity=".13"/><stop offset="1" stop-color="#f0d48a" stop-opacity=".015"/></linearGradient></defs>'
+   +'<polygon points="50,0 100,100 0,100" fill="url(#pyrGlow)" stroke="rgba(200,162,74,.35)" stroke-width=".4"></polygon>'
+   +'<polygon points="50,15 85,87 15,87" fill="none" stroke="rgba(200,162,74,.13)" stroke-width=".3"></polygon></svg></div>';
  if(gk){const key=COURT_KEY[gk.court]||"regime", c=CHAR[key];
-   h+='<div class="pyr-node pyr-apex reveal"><div class="crown">♛</div>'+pyrPhoto(key)
+   h+='<div class="pyr-tier">'+tierHead("Tier I · The Throne",true)
+     +'<div class="pyr-node pyr-apex"><div class="crown">♛</div>'+pyrPhoto(key)
      +'<div class="court">'+esc(gk.court)+'</div><div class="title">'+esc(c.title)+'</div>'
-     +'<div class="strategy">'+esc(gk.name)+'</div><div class="line">'+gk.wins+"-"+gk.losses+" · "+fmtPct(gk.roi_pct)+"</div></div>";}
- if(rivals.length)h+='<div class="pyr-rivals">'+rivals.map(k=>{const key=COURT_KEY[k.court]||"vault";
-   return '<div class="pyr-node reveal">'+pyrPhoto(key)+'<div class="court">'+esc(k.court)+'</div>'
-     +'<div class="line">'+fmtPct(k.roi_pct)+'</div><div class="record">'+k.wins+"-"+k.losses+"</div></div>"}).join("")+"</div>";
+     +'<div class="strategy">'+esc(gk.name)+'</div><div class="line">'+gk.wins+"-"+gk.losses+" · "+fmtPct(gk.roi_pct)+"</div></div></div>";}
+ if(rivals.length)h+='<div class="pyr-tier">'+tierHead("Tier II · The Rivals")
+   +'<div class="pyr-rivals">'+rivals.map(k=>{const key=COURT_KEY[k.court]||"vault";
+   return '<div class="pyr-node">'+pyrPhoto(key)+'<div class="court">'+esc(k.court)+'</div>'
+     +'<div class="line">'+fmtPct(k.roi_pct)+'</div><div class="record">'+k.wins+"-"+k.losses+"</div></div>"}).join("")+"</div></div>";
  const ch=d.autopsy_challengers||[];
- if(ch.length)h+='<div class="pyr-challengers">'+ch.map(c=>{const parts=String(c.id||"").split("-");
-   return '<div class="pyr-node reveal">'+pyrPhoto("autopsy")+'<div class="cid">'+esc(parts[0]||"AUTOPSY")+"<br>"+esc(parts.slice(1).join("-"))+'</div><div class="roi">'+fmtPct(c.roi_pct)+"</div></div>"}).join("")+"</div>";
+ if(ch.length)h+='<div class="pyr-tier">'+tierHead("Tier III · Ghosts Rising")
+   +'<div class="pyr-challengers"><div class="pyr-medallion">'+pyrPhoto("autopsy")+'<span class="rise">▲</span></div>'
+   +'<div class="pyr-chips">'+ch.map(c=>'<span class="pyr-chip"><span class="arr">▲</span><b>'+esc(c.id)+'</b> '+esc(c.name)+' <span class="roi">'+fmtPct(c.roi_pct)+"</span></span>").join("")+"</div></div></div>";
  const workers=(d.agents||[]).filter(a=>!COURT_KEY[a.name]);
  const short={"Arena":"Arena","Discovery":"Discovery","Edge Finder":"Edge","Loss Autopsy":"Autopsy","Stakehunter":"Stake","Research Director":"Director"};
  let base=workers.map(a=>{const key=AGENT_KEY[a.name]||"vault";
    return '<div class="worker"><div class="pyr-photo">'+imgTag(key)+'</div><div class="wname">'+esc(short[a.name]||a.name)+'</div><span class="status-dot'+(a.status==="active"?" on":"")+'"></span></div>'}).join("");
  base+='<div class="worker"><div class="pyr-photo">'+imgTag("vault")+'</div><div class="wname">Vault</div><span class="status-dot on"></span></div>';
- h+='<div class="pyr-foundation">'+base+"</div>";
+ h+='<div class="pyr-tier">'+tierHead("The Foundation")+'<div class="pyr-foundation">'+base+"</div></div>";
  $("pyr-tiers").innerHTML=h;
+}
+
+/* ================= render: the progression strip =================
+   The pipeline as connected stages with live values from the feed, joined
+   by flashing gold chevrons that point the way the work flows. */
+function renderFlow(d){
+ const slips=(d.slips||[]).slice().sort((a,b)=>(b.number||0)-(a.number||0));
+ const newest=slips[0]||{};
+ let graded=0, recorded=0;
+ (d.slips||[]).forEach(s=>{(s.games_list||[]).forEach(g=>{recorded++; if(g.outcome)graded++})});
+ const livePicks=(d.slips||[]).reduce((n,s)=>n+((s.top3||[]).filter(t=>t.status!=="ENDED").length),0);
+ const inPlay=(d.bets||[]).filter(b=>b.status==="IN PLAY").length;
+ const crown=(d.activity||[]).find(a=>evKind(a)==="crown");
+ const stages=[
+  {n:"Slip Arrives",v:newest.number?("Slip #"+newest.number):"—",s:newest.date||""},
+  {n:"Kings Pick",v:(newest.games!=null?newest.games:"—")+" games",s:"all five kings, every game"},
+  {n:"Top 3 Chosen",v:livePicks+" live",s:"choices on the board"},
+  {n:"In Play",v:inPlay+"",s:"bets running now"},
+  {n:"Graded",v:graded+" of "+recorded,s:"games in the book"},
+  {n:"Sealed in Vault",v:(d.vault&&d.vault.count!=null)?fmtInt(d.vault.count):"—",s:"blind games banked"},
+  {n:"Crown Fights",v:crown?esc(cleanMd(crown.title).slice(0,34)):"the pit is warm",s:crown?(crown.agent||crown.source||""):""}];
+ $("flow").innerHTML=stages.map((st,i)=>
+   (i?'<span class="flow-arrow d'+((i-1)%6)+'">❯</span>':"")
+   +'<div class="flow-stage"><div class="fs-name">'+st.n+'</div><div class="fs-val">'+st.v+'</div><div class="fs-sub">'+esc(st.s)+"</div></div>"
+ ).join("");
 }
 
 /* ================= render: character roster ================= */
@@ -722,24 +897,28 @@ function renderRoster(d){
  ordered.forEach(k=>{
    const key=COURT_KEY[k.court]||"vault", c=CHAR[key], dl=k.dog_line;
    let rows=dataRow("Record",k.wins+"-"+k.losses)+dataRow("Fitted ROI",fmtPct(k.roi_pct),k.roi_pct>=0?"pos":"neg")
+     +'<div class="formbar"><i style="width:'+Math.round(roiFrac(k.roi_pct)*100)+'%"></i></div>'
      +dataRow("Profit",fmtM(k.pnl_m))+dataRow("Priced",String(k.priced!=null?k.priced:"—")+" / "+(k.set_size||"—"));
    rows+=dl?dataRow("Dog line",dl.wins+"-"+dl.losses+" · "+fmtPct(dl.roi_pct)):dataRow("Dog line","Composition rule");
    if(k.stamp)rows+=dataRow("Stamp",k.stamp);
    if(k.crowned_on)rows+=dataRow("Crowned",k.crowned_on);
    cards.push(rosterCard({key:key,king:true,role:(k.grand_king?"Grand King · ":"King · ")+c.title,name:k.court,headline:k.name,rows:rows}));
  });
+ $("roster").innerHTML=cards.join("");
+ const workers=[];
  const agentOrder=["Arena","Discovery","Edge Finder","Loss Autopsy","Stakehunter","Research Director"];
  agentOrder.forEach(name=>{
    const a=(d.agents||[]).find(x=>x.name===name); if(!a)return;
    const key=AGENT_KEY[name]||"vault", c=CHAR[key];
    const rows=dataRow("Station",c.title)+dataRow("Status",a.status||"—")+dataRow("Last activity",a.last_activity?fmtTime(a.last_activity):"Daily orders")+dataRow("Orders",a.role||"");
-   cards.push(rosterCard({key:key,king:false,role:"Court Worker · "+c.title,name:name==="Arena"?"The Arena":name,headline:a.headline||a.role||"",rows:rows}));
+   workers.push(rosterCard({key:key,king:false,role:"Court Worker · "+c.title,name:name==="Arena"?"The Arena":name,headline:a.headline||a.role||"",rows:rows}));
  });
  const v=d.vault||{};
- cards.push(rosterCard({key:"vault",king:false,role:"Guardian · "+CHAR.vault.title,name:"The Vault",
+ workers.push(rosterCard({key:"vault",king:false,role:"Guardian · "+CHAR.vault.title,name:"The Vault",
    headline:"Blind evidence, sealed until the opening — the court's final judge.",
    rows:dataRow("Sealed games",v.count!=null?fmtInt(v.count):"—")+dataRow("Next opening",v.next_opening||"—")+dataRow("Status","Sealed")}));
- $("roster").innerHTML=cards.join("");
+ $("roster-workers").innerHTML=acc("roster-workers","The Worker Court — "+workers.length+" more characters",
+   '<div class="roster" style="margin-top:14px">'+workers.join("")+"</div>");
 }
 
 /* ================= render: bets (Top-3 match cards) ================= */
@@ -777,35 +956,80 @@ function splitTeams(game){
  if(parts.length===2)return[parts[0],parts[1]];
  return[game||"",null];
 }
+function metaFor(d,slipNo,gid){
+ const s=(d.slips||[]).find(x=>x.number===slipNo); if(!s)return null;
+ return (s.games_list||[]).find(g=>g.game_id===gid)||null;
+}
+function slipSports(s){
+ const set=[]; (s.games_list||[]).forEach(g=>{if(g.sport&&set.indexOf(g.sport)<0)set.push(g.sport)});
+ return set;
+}
+function boardPicks(d,slip){
+ /* a slip's Top 3: the exporter's per-slip top3 (with live state joined),
+    falling back to its called bets in the flat bets array. */
+ if(slip.top3&&slip.top3.length)return slip.top3.map(t=>({
+   game:t.game,pick:t.pick,kind:t.kind,paper:!!t.paper,game_id:t.game_id,
+   called_stake_m:t.stake_m,odds:t.price,
+   state:t.status?(String(t.status).toUpperCase()==="IN PLAY"?"inplay":String(t.status).toLowerCase()):(t.result?"ended":"upcoming"),
+   result:t.result?String(t.result).toLowerCase():null,pnl_m:t.pnl_m,
+   final_score:t.final_score,tip_time:t.tip_at?fmtTime(t.tip_at):"",
+   user_bet:t.user_bet?{stake_m:t.user_stake_m,odds:t.user_price}:null}));
+ return calledBets(d,slip.number).filter(b=>b.kind!=="DRAW DESK");
+}
+function t3Card(d,slip,p,i){
+ const teams=splitTeams(p.game), st=p.state||"upcoming";
+ const teamHtml=teams[1]?'<span class="team">'+esc(teams[0])+'</span><span class="vs">VS</span><span class="team">'+esc(teams[1])+"</span>":esc(teams[0]);
+ const meta=metaFor(d,slip.number,p.game_id);
+ let zone="";
+ if(st==="inplay")zone='<span class="livepulse"></span><span class="livetxt">IN PLAY</span><span class="when">tipped '+esc(p.tip_time||"")+"</span>";
+ else if(st==="ended")zone='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">'+esc(String(p.result||"").toUpperCase())+'</span>'
+   +(p.final_score?'<span class="t3score">'+esc(p.final_score)+'</span>':"")
+   +(p.pnl_m!=null?'<span class="t3pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
+ else zone='<span class="chip amb">UPCOMING</span><span class="when">tips '+esc(p.tip_time||"")+"</span>";
+ let um="";
+ if(p.user_bet)um='<div class="usermark"><span class="lab">Your bet</span> — '
+   +(p.user_bet.stake_m!=null?'<b>'+fmtInt(p.user_bet.stake_m)+"m @"+esc(p.user_bet.odds)+"</b>"
+     +(p.user_bet.stake_m!==p.called_stake_m?' · the call was '+stakeWords(p.called_stake_m):" · exactly as called")
+     :"amount not stated @"+esc(p.user_bet.odds))+"</div>";
+ if(p.desk||p.paper)um+='<div class="usermark"><span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours above is real</div>';
+ const betLab=p.paper?"PAPER PICK — THE DESK CALLS":"BET";
+ return '<article class="t3card reveal"><div class="t3-top"><div class="kind">'+esc(p.kind||"")+'</div><div class="rank">'+String(i+1).padStart(2,"0")+'</div></div>'
+   +'<div class="teams">'+teamHtml+'</div>'
+   +'<div class="pick-callout"><div class="lab">'+betLab+'</div><div class="pick">'+esc(p.pick||"")+'</div>'
+   +'<div class="pickline"><b>'+esc(stakeWords(p.called_stake_m))+'</b> @ <b>'+esc(p.odds||"")+"</b></div></div>"
+   +'<div class="t3chips">'
+   +(meta&&meta.sport?'<span class="data-chip sport-chip">Sport <b>'+esc(meta.sport)+"</b></span>":"")
+   +(meta&&meta.league?'<span class="data-chip">'+esc(meta.league)+"</span>":"")
+   +"</div>"
+   +'<div class="t3state">'+zone+"</div>"+um+"</article>";
+}
 function renderBoard(d){
- const slip=heroSlip(d), t3=slip?calledBets(d,slip.number):[];
- let h="";
- if(slip){const gc=(slip.games!=null?slip.games:slip.n_games);
-   const meta=[slip.date||"",slip.sport||"",gc!=null?gc+" games":"",slip.status||""].filter(Boolean).join(" · ");
-   h+='<div class="board-head"><div><div class="kick">The King\u2019s Top 3</div><h4>Slip #'+esc(slip.number)+'</h4></div>'
-   +'<div class="meta">'+esc(meta)+"</div></div>";}
- if(!t3.length)h+='<div class="card">No Top 3 called on this slip — the gate passed on every game.</div>';
- h+='<div class="t3grid">'+t3.map((p,i)=>{
-   const teams=splitTeams(p.game), st=p.state||"upcoming";
-   const teamHtml=teams[1]?'<span class="team">'+esc(teams[0])+'</span><span class="vs">VS</span><span class="team">'+esc(teams[1])+"</span>":esc(teams[0]);
-   let zone="";
-   if(st==="inplay")zone='<span class="livepulse"></span><span class="livetxt">IN PLAY</span><span class="when">tipped '+esc(p.tip_time||"")+"</span>";
-   else if(st==="ended")zone='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">'+esc(String(p.result||"").toUpperCase())+'</span>'
-     +(p.final_score?'<span class="t3score">'+esc(p.final_score)+'</span>':"")
-     +(p.pnl_m!=null?'<span class="t3pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
-   else zone='<span class="chip amb">UPCOMING</span><span class="when">tips '+esc(p.tip_time||"")+"</span>";
-   let um="";
-   if(p.user_bet)um='<div class="usermark"><span class="lab">Your bet</span> — '
-     +(p.user_bet.stake_m!=null?'<b>'+fmtInt(p.user_bet.stake_m)+"m @"+esc(p.user_bet.odds)+"</b>"
-       +(p.user_bet.stake_m!==p.called_stake_m?' · the call was '+stakeWords(p.called_stake_m):" · exactly as called")
-       :"amount not stated @"+esc(p.user_bet.odds))+"</div>";
-   if(p.desk)um+='<div class="usermark"><span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours above is real</div>';
-   return '<article class="t3card reveal"><div class="t3-top"><div class="kind">'+esc(p.kind||"")+'</div><div class="rank">'+String(i+1).padStart(2,"0")+'</div></div>'
-     +'<div class="teams">'+teamHtml+'</div><div class="pick-callout"><div class="lab">The pick</div><div class="pick">'+esc(p.pick||"")+'</div></div>'
-     +'<div class="t3chips"><span class="data-chip">Price <b>'+esc(p.odds||"")+'</b></span><span class="data-chip">Stake <b>'+esc(stakeWords(p.called_stake_m))+"</b></span></div>"
-     +'<div class="t3state">'+zone+"</div>"+um+"</article>";
- }).join("")+"</div>";
- $("board").innerHTML=h;
+ const b=d.bankroll||{};
+ $("bets-mini").innerHTML="<span>Bankroll <b>"+(b.current_m!=null?fmtInt(b.current_m)+"m":"—")+'</b></span><span class="sep">◆</span>'
+   +"<span>Your record <b>"+esc(b.record||"—")+'</b></span><span class="sep">◆</span>'
+   +"<span>In play <b>"+(b.pending?b.pending.length:0)+"</b></span>";
+ /* The Choices board: one Top-3 board per slip, shown ONLY while at least
+    one of its picks is still upcoming or in play. A fully settled slip
+    leaves this tab — its picks are history (Record Book + archive). */
+ const slips=(d.slips||[]).slice().sort((a,b2)=>(b2.number||0)-(a.number||0));
+ const boards=[];
+ slips.forEach(s=>{
+   const picks=boardPicks(d,s);
+   if(!picks.length)return;
+   const live=picks.some(p=>(p.state||"upcoming")!=="ended");
+   if(live)boards.push({slip:s,picks:picks});
+ });
+ if(!boards.length){
+   $("board").innerHTML='<div class="card" style="text-align:center"><b style="font-family:var(--serif);font-size:1.15rem">No live choices right now</b><br><span class="sub">The next slip\u2019s Top 3 will appear here the moment it locks.</span></div>';
+   return;
+ }
+ $("board").innerHTML=boards.map(({slip,picks})=>{
+   const sports=slipSports(slip);
+   const meta=[slip.date||"",sports.join(" + "),slip.status||""].filter(Boolean).join(" · ");
+   return '<div class="board-head"><div><div class="kick">Top 3 Choices</div><h4>Slip #'+esc(slip.number)+'</h4></div>'
+     +'<div class="meta">'+esc(meta)+"</div></div>"
+     +'<div class="t3grid">'+picks.map((p,i)=>t3Card(d,slip,p,i)).join("")+"</div>";
+ }).join("");
 }
 function renderBank(d){
  const b=d.bankroll||{};
@@ -830,20 +1054,36 @@ function renderRecord(d){
    +box("Draw desk",f.draw_desk,f.draw_desk&&f.draw_desk.pnl_m)
    +(f.totals_leans?'<div class="stat"><div class="lab">Totals leans (no stake)</div><div class="v num">'+f.totals_leans.wins+"-"+f.totals_leans.losses+'</div><div class="num"></div></div>':"");
  $("rec-grid").innerHTML=h;
- const hero=heroSlip(d), cur=hero?hero.number:null;
- const past=(d.slips||[]).filter(s=>!cur||s.number!==cur);
+ /* Archive = history: every slip WITHOUT a live choices board (live slips
+    show on the board above; settled slips rest here, collapsed). */
+ const past=(d.slips||[]).filter(s=>{
+   const picks=boardPicks(d,s);
+   return !(picks.length&&picks.some(p=>(p.state||"upcoming")!=="ended"));
+ }).sort((a,b)=>(b.number||0)-(a.number||0));
  $("archive").innerHTML=past.map(s=>{
-   let rows=calledBets(d,s.number).map(b=>{
+   const bets=calledBets(d,s.number);
+   const rowFor=b=>{
      const us=b.user_bet?b.user_bet.stake_m:b.user_stake_m;
      let u=""; if(us!=null)u='<span class="umark">Your bet: '+fmtInt(us)+"m @"+esc(b.user_bet?b.user_bet.odds:b.odds)
        +(us!==b.called_stake_m?' — the call was '+stakeWords(b.called_stake_m):" — exactly as called")+"</span>";
      return '<div class="betrow">'+resChip(b.result)+'<span class="g">'+esc(b.game)+'</span><span class="p">'+esc(b.kind)+" · "+esc(b.pick)+" @<b>"+esc(b.odds)+"</b> · "+esc(stakeWords(b.called_stake_m))+"</span>"
        +(b.final_score?'<span class="score">'+esc(b.final_score)+"</span>":"")
-       +'<span class="num '+(b.pnl_m>0?"pos":b.pnl_m<0?"neg":"")+'">'+fmtM(b.pnl_m)+"</span>"+u+"</div>"}).join("");
+       +'<span class="num '+(b.pnl_m>0?"pos":b.pnl_m<0?"neg":"")+'">'+fmtM(b.pnl_m)+"</span>"+u+"</div>"};
+   let rows="";
+   const sportsOf=bets.map(b=>(metaFor(d,s.number,b.game_id)||{}).sport||null);
+   const multi=new Set(sportsOf.filter(Boolean)).size>1;
+   if(multi){
+     const groups={};
+     bets.forEach((b,i)=>{const sp=sportsOf[i]||"Other";(groups[sp]=groups[sp]||[]).push(b)});
+     rows=Object.keys(groups).map(sp=>'<div class="arch-sport">'+esc(sp)+"</div>"+groups[sp].map(rowFor).join("")).join("");
+   }else{
+     rows=bets.map(rowFor).join("");
+   }
    if(!rows)rows='<div class="betrow"><span class="g">No called bets on this slip — the gate passed on every game.</span></div>';
    const gc=(s.games!=null?s.games:s.n_games);
-   const meta=[s.date||"",s.sport||"",gc!=null?gc+" games":""].filter(Boolean).join(" · ");
-   return '<div class="arch-slip"><div class="arch-head"><b>Slip #'+esc(s.number)+'</b><span>'+esc(meta)+'</span><span class="n">'+esc(s.status||"")+"</span></div>"+rows+"</div>";
+   const sports=slipSports(s);
+   const meta=[s.date||"",sports.join(" + "),gc!=null?gc+" games":"",s.status||""].filter(Boolean).join(" · ");
+   return acc("arch"+s.number,'<span>Slip #'+esc(s.number)+'</span><span style="color:var(--mut);font-size:.85rem">'+esc(meta)+"</span>",rows);
  }).join("");
 }
 
@@ -895,7 +1135,8 @@ function renderVault(d){
  tick(); if(vaultCdTimer)clearInterval(vaultCdTimer); vaultCdTimer=setInterval(tick,1000);
  $("slips").innerHTML=(d.slips||[]).map(s=>{
    const gl=s.games_list||[], gc=(s.games!=null?s.games:s.n_games);
-   let body='<div class="betrow"><span class="g">'+esc(gc!=null?gc:"")+' games'+(s.sport?" · "+esc(s.sport):"")+"</span>"
+   const sports=slipSports(s);
+   let body='<div class="betrow"><span class="g">'+esc(gc!=null?gc:"")+' games'+(sports.length?" · "+esc(sports.join(" + ")):"")+"</span>"
      +'<span class="p">'+(s.status==="LOCKED"?"Picks locked before tip-off — results land when the games finish.":"Graded from two independent sources.")+"</span></div>";
    if(s.results){const R=s.results, parts=[];
      [["Grand pick",R.grand_pick],["Confidence",R.confidence_bet],["Underdog desk",R.underdog_desk],["Draw desk",R.draw_desk]].forEach(([lab,r])=>{
@@ -903,8 +1144,12 @@ function renderVault(d){
      if(parts.length)body+='<div class="betrow"><span class="g">'+parts.join(" &nbsp;·&nbsp; ")+"</span></div>";}
    body+=calledBets(d,s.number).map(b=>'<div class="betrow">'+resChip(b.result)+'<span class="g">'+esc(b.game)+'</span><span class="p">'+esc(b.kind)+" · "+esc(b.pick)+" @<b>"+esc(b.odds)+"</b> · "+esc(stakeWords(b.called_stake_m))+"</span>"
      +(b.final_score?'<span class="score">'+esc(b.final_score)+"</span>":"")+'<span class="num '+(b.pnl_m>0?"pos":b.pnl_m<0?"neg":"")+'">'+fmtM(b.pnl_m)+"</span></div>").join("");
-   if(gl.length)body+='<table class="games"><tr><th>Game</th><th>Score</th><th>King picked</th></tr>'
-     +gl.map(g=>{const sc=(g.final_score!=null?g.final_score:g.score);return "<tr><td>"+esc(g.game)+'</td><td class="sc">'+(sc?esc(sc):"—")+"</td><td>"+esc(g.winner||"")+"</td></tr>"}).join("")+"</table>";
+   if(gl.length){const multiSport=new Set(gl.map(g=>g.sport).filter(Boolean)).size>1;
+     let lastSport=null;
+     body+='<table class="games"><tr><th>Game</th><th>Score</th><th>King picked</th></tr>'
+     +gl.map(g=>{const sc=(g.final_score!=null?g.final_score:g.score);
+       let head=""; if(multiSport&&g.sport&&g.sport!==lastSport){lastSport=g.sport;head='<tr class="sport-head"><td colspan="3">'+esc(g.sport)+"</td></tr>"}
+       return head+"<tr><td>"+esc(g.game)+'</td><td class="sc">'+(sc?esc(sc):"—")+"</td><td>"+esc(g.winner||"")+"</td></tr>"}).join("")+"</table>";}
    const head='<span>Slip #'+esc(s.number)+(s.date?" — "+esc(s.date):"")+"</span>"+resChip(s.status==="LOCKED"?"pending":s.status==="GRADED"?"won":"ink");
    return acc("slip"+s.number,head,body);
  }).join("");
