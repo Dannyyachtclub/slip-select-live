@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T12:31:00.214641-06:00",
+  "generated_at": "2026-11-18T12:35:37.933513-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-18T11:55:18.143012-06:00",
+      "last_activity": "2026-11-18T12:31:13.546995-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T12:17:09.113002-06:00",
+      "last_activity": "2026-11-18T12:34:14.772994-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T12:17:05.373002-06:00",
-      "headline": "Latest search cycle: 144"
+      "last_activity": "2026-11-18T12:31:51.492995-06:00",
+      "headline": "Latest search cycle: 145"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T12:21:39.969000-06:00",
-      "headline": "Latest filing: P105"
+      "last_activity": "2026-11-18T12:33:09.177994-06:00",
+      "headline": "Latest filing: P106"
     },
     {
       "name": "Loss Autopsy",
@@ -180,6 +180,13 @@
     }
   ],
   "activity": [
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 145 — 2026-11-18 12:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (cycle 144's parser artefact resolved by the corrected census method), NO CROWN. All kings tie to the cent, registry DB =…",
+      "at": "2026-11-18T12:26:00-06:00"
+    },
     {
       "agent": "Discovery",
       "kind": "generation",
@@ -216,13 +223,6 @@
       "at": "2026-11-18T11:11:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 139 — 2026-11-18 10:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
-      "at": "2026-11-18T10:56:00-06:00"
-    },
-    {
       "agent": "Loss Autopsy",
       "kind": "generation",
       "title": "CYCLE 4 — 2026-11-18 — Slice 4: FAVOURITE-side losses (grand king picked the favourite and lost)",
@@ -248,6 +248,13 @@
       "kind": "generation",
       "title": "CYCLE 1 — 2026-11-18 — Slice 1: UNANIMOUS losses (every sitting king picked wrong)",
       "summary": "The eight games no king could get right are not one disease. Two are structurally unwinnable (handball draws with no draw market in the…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P106: HOUSE HEDGING, OFFLOAD & RISK-TRANSFER FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G146;…",
+      "summary": "Filed Arena P106: HOUSE HEDGING, OFFLOAD & RISK-TRANSFER FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G146; classes f + i)",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -286,10 +293,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-18 (11:12 CST) — audit + hunt (classes e + b + a + f: public ensemble data / open-source forecast tooling / quant forecast…",
-      "summary": "P100 ENSEMBLE-DISPERSION / FORECAST-DOUBT FREEZE — FILED as collector proposal P100 (needs-data; no user spend — the Open-Meteo Ensemble…",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G146 — F1 HOUSE-VIEW (thirtieth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -325,13 +332,6 @@
       "kind": "generation",
       "title": "Arena G141 — F1 HOUSE-VIEW (twenty-ninth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G140 — F5 SOFT-ANGLE EXTREMES (twenty-eighth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
