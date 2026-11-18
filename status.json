@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:15:39.963976-06:00",
+  "generated_at": "2026-11-18T14:20:53.890187-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T13:39:35.285913-06:00",
+      "last_activity": "2026-11-18T14:17:34.575001-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -140,28 +140,28 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T14:02:15.443966-06:00",
+      "last_activity": "2026-11-18T14:15:49.591997-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T14:02:57.824968-06:00",
-      "headline": "Latest search cycle: 151"
+      "last_activity": "2026-11-18T14:20:20.091008-06:00",
+      "headline": "Latest search cycle: 152"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T14:14:46.978995-06:00",
-      "headline": "Latest filing: P114"
+      "last_activity": "2026-11-18T14:18:11.522003-06:00",
+      "headline": "Latest filing: P115"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T13:47:20.204931-06:00",
+      "last_activity": "2026-11-18T14:18:16.270003-06:00",
       "headline": "6 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
@@ -470,7 +470,14 @@
       "kind": "generation",
       "title": "CYCLE 151 OUTCOME",
       "summary": "AUDIT FAILURE (milestone). Kings tie to the cent — Legacy DEAP6 +62.95%, grand king Regime TRIPS1VETO 204-35 +3603.80m +63.22%, Quantum…",
-      "at": "2026-11-18T14:02:57.824968-06:00"
+      "at": "2026-11-18T14:20:20.091008-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 152 — 2026-11-18 14:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence, 17,163 rows, 0 missing —…",
+      "at": "2026-11-18T14:11:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -499,13 +506,6 @@
       "title": "CYCLE 148 — 2026-11-18 13:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (cycle 147's mirror lag resolved by the parent's re-export), NO CROWN. All kings tie to the cent, registry DB = mirror by…",
       "at": "2026-11-18T13:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 147 — 2026-11-18 12:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the owning generations have exported the…",
-      "at": "2026-11-18T12:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -552,6 +552,13 @@
     {
       "agent": "Loss Autopsy",
       "kind": "generation",
+      "title": "CYCLE 8 — 2026-11-18 — Slice 1 RE-AUTOPSY under the current kings (UNANIMOUS losses)",
+      "summary": "The Cycle 7 block is cleared and the hunt is live again under the current kings — that is this cycle's real yield. On substance, Slice 1…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
       "title": "CYCLE 7 — 2026-11-18 — TRIGGERED RE-AUDIT (sitting king changed) — CYCLE STOPPED AT THE AUDIT GATE",
       "summary": "Why this cycle ran at all",
       "at": "2026-11-18T00:00:00-06:00"
@@ -585,10 +592,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 2 — 2026-11-18 — Slice 2: SELECTION failures (grand king lost, at least one other king right)",
-      "summary": "The grand king's selection failures are not random: more than half are its dog flips dying into favourites, and those deaths concentrate…",
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-18 (14:12 CST) — audit + hunt (classes g + f + c: cross-market structure / the house's chair / market microstructure — the…",
+      "summary": "P115 BTTS CROSS-DESK FREEZE — FILED as collector proposal P115 (needs-data; no user spend — one additional price read per soccer fixture…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -627,10 +634,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P109: STAKELESS FORECAST PANEL FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G149; classes c + h)",
-      "summary": "Filed Arena P109: STAKELESS FORECAST PANEL FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G149; classes c + h)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G153 — F3 THROW-INCENTIVE ASYMMETRY (thirty-second visit) — 2026-11-18",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -666,13 +673,6 @@
       "kind": "generation",
       "title": "Arena G148 — F3 THROW-INCENTIVE ASYMMETRY (thirtieth visit) — 2026-11-18",
       "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G147 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirtieth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE in full. MILESTONE under the delivery rule:…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
