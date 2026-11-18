@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:20:47.370255-06:00",
+  "generated_at": "2026-11-18T16:26:04.394473-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-18T15:43:13.543435-06:00",
+      "last_activity": "2026-11-18T16:24:09.515393-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY — 211-28, +67.39% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T16:09:05.924408-06:00",
-      "headline": "Latest search cycle: 159"
+      "last_activity": "2026-11-18T16:22:39.498394-06:00",
+      "headline": "Latest search cycle: 160"
     },
     {
       "name": "Edge Finder",
@@ -629,23 +629,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 160 OUTCOME",
+      "summary": "NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence on both runs, 17,650 -> 17,651 rows, 0…",
+      "at": "2026-11-18T16:22:39.498394-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 159 OUTCOME",
       "summary": "NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence on runs 2-3, 17,590 -> 17,608 rows, 0…",
-      "at": "2026-11-18T16:09:05.924408-06:00"
+      "at": "2026-11-18T16:22:39.498394-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 158 OUTCOME",
       "summary": "NO CROWN. All kings tie to the cent at audit on two identical runs (registry DB = mirror by verbatim signature presence, 17,533 rows, 0…",
-      "at": "2026-11-18T16:09:05.924408-06:00"
+      "at": "2026-11-18T16:22:39.498394-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 157 OUTCOME",
-      "summary": "NO CROWN. All kings tie to the cent at audit on two identical runs (registry DB = mirror by verbatim signature presence, 17,470 rows, 0…",
-      "at": "2026-11-18T16:09:05.924408-06:00"
+      "title": "CYCLE 160 — 2026-11-18 16:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T16:11:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -660,13 +667,6 @@
       "title": "CYCLE 158 — 2026-11-18 15:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T15:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 157 — 2026-11-18 15:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T15:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
