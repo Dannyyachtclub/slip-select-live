@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:35:39.219986-06:00",
+  "generated_at": "2026-11-18T14:40:41.918796-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -24,24 +24,24 @@
     },
     {
       "court": "Regime",
-      "name": "ZEROTRIPFRAG-DEAP2",
+      "name": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO",
       "grand_king": true,
-      "wins": 203,
-      "losses": 36,
+      "wins": 204,
+      "losses": 35,
       "priced": 228,
-      "pnl_m": 3600.68,
-      "roi_pct": 63.17,
+      "pnl_m": 3603.8,
+      "roi_pct": 63.22,
       "set_size": 239,
       "dog_line": {
-        "picks": 67,
-        "wins": 49,
-        "losses": 18,
-        "priced": 63,
-        "pnl_m": 1791.65,
-        "roi_pct": 113.76
+        "picks": 64,
+        "wins": 48,
+        "losses": 16,
+        "priced": 60,
+        "pnl_m": 1799.15,
+        "roi_pct": 119.94
       },
-      "stamp": "PROVISIONAL",
-      "crowned_on": "2026-11-17"
+      "stamp": null,
+      "crowned_on": "2026-11-18"
     },
     {
       "court": "Quantum",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-18T14:01:59.126965-06:00",
+      "last_activity": "2026-11-18T14:39:38.646053-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -120,7 +120,7 @@
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
       "last_activity": "2026-11-18T14:08:40.915981-06:00",
-      "headline": "ZEROTRIPFRAG-DEAP2 — 203-36, +63.17% fitted ROI"
+      "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO — 204-35, +63.22% fitted ROI"
     },
     {
       "name": "Quantum",
@@ -753,6 +753,7 @@
         "best_king": "Vanguard"
       },
       "user_bets": null,
+      "date": "2026-11-17",
       "games_status": {
         "games_total": 34,
         "games_ended": 34
@@ -766,7 +767,12 @@
           "status": "ENDED",
           "winner": "Favourite (Seattle Redhawks)",
           "final_score": "54-83",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "California Baptist Lancers",
+          "price": 4.0,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-02",
@@ -776,7 +782,12 @@
           "status": "ENDED",
           "winner": "Favourite (Stanford Cardinal)",
           "final_score": "65-61",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "Stanford Cardinal",
+          "price": 1.3356,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-03",
@@ -786,7 +797,12 @@
           "status": "ENDED",
           "winner": "Dog (Utah Jazz)",
           "final_score": "107-132",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "NBA",
+          "sport": "Basketball",
+          "pick": "LA Clippers",
+          "price": 1.4367,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-04",
@@ -796,7 +812,12 @@
           "status": "ENDED",
           "winner": "Favourite (Los Angeles Lakers)",
           "final_score": "118-114",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "NBA",
+          "sport": "Basketball",
+          "pick": "Los Angeles Lakers",
+          "price": 1.346,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-05",
@@ -806,7 +827,12 @@
           "status": "ENDED",
           "winner": "Favourite (Gonzaga Bulldogs)",
           "final_score": "74-62",
-          "bet_call": "NO BET (confidence blocked — unscreened)"
+          "bet_call": "NO BET (confidence blocked — unscreened)",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "Montana State Bobcats",
+          "price": 19.0,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-06",
@@ -816,7 +842,12 @@
           "status": "ENDED",
           "winner": "Dog (West Virginia Mountaineers)",
           "final_score": "70-76",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "Auburn Tigers",
+          "price": 1.8929,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-07",
@@ -826,7 +857,12 @@
           "status": "ENDED",
           "winner": "Favourite (South East Melbourne Phoenix)",
           "final_score": "96-101",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Australia NBL",
+          "sport": "Basketball",
+          "pick": "South East Melbourne Phoenix",
+          "price": 1.75,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-08",
@@ -836,7 +872,12 @@
           "status": "ENDED",
           "winner": "Favourite (Seoul Samsung Thunders)",
           "final_score": "94-88",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Korea KBL",
+          "sport": "Basketball",
+          "pick": "Seoul Samsung Thunders",
+          "price": 1.83,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-09",
@@ -846,7 +887,12 @@
           "status": "ENDED",
           "winner": "Dog (Incheon Shinhan Bank S-Birds)",
           "final_score": "62-61",
-          "bet_call": "BET — GRAND PICK: S-Birds 25m @ 2.05 + Desk #11 (paper)"
+          "bet_call": "BET — GRAND PICK: S-Birds 25m @ 2.05 + Desk #11 (paper)",
+          "league": "Korea WKBL",
+          "sport": "Basketball",
+          "pick": "Cheongju KB Stars",
+          "price": 1.71,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-10",
@@ -856,7 +902,12 @@
           "status": "ENDED",
           "winner": "Favourite (Chiba Jets)",
           "final_score": "89-84",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Chiba Jets",
+          "price": 1.34,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-11",
@@ -866,7 +917,12 @@
           "status": "ENDED",
           "winner": "Favourite (Nagoya Diamond Dolphins)",
           "final_score": "93-76",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Ryukyu Golden Kings",
+          "price": 3.7,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-12",
@@ -876,7 +932,12 @@
           "status": "ENDED",
           "winner": "Favourite (Gunma Crane Thunders)",
           "final_score": "92-90",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Gunma Crane Thunders",
+          "price": 1.16,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-13",
@@ -886,7 +947,12 @@
           "status": "ENDED",
           "winner": "Favourite (Kawasaki Brave Thunders)",
           "final_score": "77-84",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Kawasaki Brave Thunders",
+          "price": 1.41,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-14",
@@ -896,7 +962,12 @@
           "status": "ENDED",
           "winner": "Favourite (Hiroshima Dragonflies)",
           "final_score": "59-92",
-          "bet_call": "CONFIDENCE BET: Hiroshima 25m @ 1.02"
+          "bet_call": "CONFIDENCE BET: Hiroshima 25m @ 1.02",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Hiroshima Dragonflies",
+          "price": 1.02,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-15",
@@ -906,7 +977,12 @@
           "status": "ENDED",
           "winner": "Favourite (Sendai 89ers)",
           "final_score": "91-84",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Sendai 89ers",
+          "price": 1.47,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-16",
@@ -916,7 +992,12 @@
           "status": "ENDED",
           "winner": "Favourite (Sunrockers Shibuya)",
           "final_score": "75-69",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Sunrockers Shibuya",
+          "price": 1.74,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-17",
@@ -926,7 +1007,12 @@
           "status": "ENDED",
           "winner": "Dog (Utsunomiya Brex)",
           "final_score": "98-71",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Levanga Hokkaido",
+          "price": 1.54,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-18",
@@ -936,7 +1022,12 @@
           "status": "ENDED",
           "winner": "Favourite (Nicaragua)",
           "final_score": "2-0",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "CONCACAF Nations League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 6.0,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-19",
@@ -946,7 +1037,12 @@
           "status": "ENDED",
           "winner": "Dog (AC Nagano Parceiro Ladies)",
           "final_score": "0-1",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "WE League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.3,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-20",
@@ -956,7 +1052,12 @@
           "status": "ENDED",
           "winner": "Favourite (Albirex Niigata Ladies)",
           "final_score": "1-0",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "WE League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.1,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-21",
@@ -966,7 +1067,12 @@
           "status": "ENDED",
           "winner": "Favourite (NTV Tokyo Verdy Beleza)",
           "final_score": "2-3",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "WE League",
+          "sport": "Soccer",
+          "pick": "NTV Tokyo Verdy Beleza",
+          "price": 1.55,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-22",
@@ -976,7 +1082,12 @@
           "status": "ENDED",
           "winner": "DRAW",
           "final_score": "2-2",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "WE League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.1,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-23",
@@ -986,7 +1097,12 @@
           "status": "ENDED",
           "winner": "Dog (Nojima Stella Kanagawa Sagamihara)",
           "final_score": "0-2",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "WE League",
+          "sport": "Soccer",
+          "pick": "Sanfrecce Hiroshima Regina",
+          "price": 1.57,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-24",
@@ -996,7 +1112,12 @@
           "status": "ENDED",
           "winner": "Favourite (24 Erzincanspor)",
           "final_score": "0-1",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig Red Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.1,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-25",
@@ -1006,7 +1127,12 @@
           "status": "ENDED",
           "winner": "Favourite (Sakaryaspor)",
           "final_score": "0-1",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig Red Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.6,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-26",
@@ -1016,7 +1142,12 @@
           "status": "ENDED",
           "winner": "Favourite (52 Orduspor)",
           "final_score": "0-2",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig Red Group",
+          "sport": "Soccer",
+          "pick": "52 Orduspor",
+          "price": 2.45,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-27",
@@ -1026,7 +1157,12 @@
           "status": "ENDED",
           "winner": "Dog (1461 Trabzon FK)",
           "final_score": "1-0",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig Red Group",
+          "sport": "Soccer",
+          "pick": "Kahramanmaras Istiklalspor",
+          "price": 2.02,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-28",
@@ -1036,7 +1172,12 @@
           "status": "ENDED",
           "winner": "DRAW",
           "final_score": "0-0",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig White Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.86,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-29",
@@ -1046,7 +1187,12 @@
           "status": "ENDED",
           "winner": "Favourite (Inegol Kafkas)",
           "final_score": "0-2",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig White Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 4.5,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-30",
@@ -1056,7 +1202,12 @@
           "status": "ENDED",
           "winner": "DRAW",
           "final_score": "2-2",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig White Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 4.0,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-31",
@@ -1066,7 +1217,12 @@
           "status": "ENDED",
           "winner": "Favourite (Guzide Gebzespor)",
           "final_score": "2-1",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig White Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 4.1,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-32",
@@ -1076,7 +1232,12 @@
           "status": "ENDED",
           "winner": "Favourite (Mus Spor)",
           "final_score": "1-4",
-          "bet_call": "DRAW DESK #5 (paper): Draw @ 3.14"
+          "bet_call": "DRAW DESK #5 (paper): Draw @ 3.14",
+          "league": "Turkiye 2. Lig White Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.14,
+          "outcome": "LOST"
         },
         {
           "game_id": "S33-33",
@@ -1086,7 +1247,12 @@
           "status": "ENDED",
           "winner": "DRAW",
           "final_score": "1-1",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig Red Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.9,
+          "outcome": "WON"
         },
         {
           "game_id": "S33-34",
@@ -1096,7 +1262,68 @@
           "status": "ENDED",
           "winner": "Favourite (68 Aksaray Belediyespor)",
           "final_score": "2-3",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Turkiye 2. Lig White Group",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.9,
+          "outcome": "LOST"
+        }
+      ],
+      "top3": [
+        {
+          "rank": 1,
+          "kind": "GRAND PICK",
+          "game_id": "S33-09",
+          "game": "Incheon Shinhan Bank S-Birds v Cheongju KB Stars",
+          "pick": "Incheon Shinhan Bank S-Birds",
+          "stake_m": 25,
+          "price": 2.05,
+          "paper": false,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 26.25,
+          "final_score": "62-61",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 2,
+          "kind": "CONFIDENCE",
+          "game_id": "S33-14",
+          "game": "Osaka Evessa v Hiroshima Dragonflies",
+          "pick": "Hiroshima Dragonflies",
+          "stake_m": 25,
+          "price": 1.02,
+          "paper": false,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.5,
+          "final_score": "59-92",
+          "tip_at": "2026-11-18T04:05:00-06:00",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 3,
+          "kind": "UNDERDOG DESK",
+          "game_id": "S33-09",
+          "game": "Incheon Shinhan Bank S-Birds v Cheongju KB Stars",
+          "pick": "Incheon Shinhan Bank S-Birds",
+          "stake_m": 25,
+          "price": 2.05,
+          "paper": true,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 26.25,
+          "final_score": "62-61",
+          "tip_at": "2026-11-18T04:00:00-06:00",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
         }
       ]
     },
@@ -1163,6 +1390,7 @@
         }
       },
       "user_bets": null,
+      "date": "2026-11-18",
       "games_status": {
         "games_total": 16,
         "games_ended": 16
@@ -1176,7 +1404,12 @@
           "status": "ENDED",
           "winner": "Favourite (Yokohama B-Corsairs)",
           "final_score": "97-88",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Saga Ballooners",
+          "price": 3.4,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-02",
@@ -1186,7 +1419,12 @@
           "status": "ENDED",
           "winner": "Favourite (Kyoto Hannaryz)",
           "final_score": "78-76",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Japan B League Premier",
+          "sport": "Basketball",
+          "pick": "Kyoto Hannaryz",
+          "price": 1.31,
+          "outcome": "WON"
         },
         {
           "game_id": "S34-03",
@@ -1196,7 +1434,12 @@
           "status": "ENDED",
           "winner": "Dog-side favourite (Lokomotiv Kuban, away)",
           "final_score": "95-100",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "VTB United League",
+          "sport": "Basketball",
+          "pick": "Uralmash Yekaterinburg",
+          "price": 3.51,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-04",
@@ -1206,7 +1449,12 @@
           "status": "ENDED",
           "winner": "Favourite (BC Slovan Bratislava)",
           "final_score": "102-76",
-          "bet_call": "CONFIDENCE BET: Slovan 25m @ 1.03"
+          "bet_call": "CONFIDENCE BET: Slovan 25m @ 1.03",
+          "league": "Slovak SBL",
+          "sport": "Basketball",
+          "pick": "BC Slovan Bratislava",
+          "price": 1.03,
+          "outcome": "WON"
         },
         {
           "game_id": "S34-05",
@@ -1216,7 +1464,12 @@
           "status": "ENDED",
           "winner": "Favourite (BC Prievidza, away)",
           "final_score": "93-97",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "FIBA Europe Cup Group G",
+          "sport": "Basketball",
+          "pick": "Landau Lions",
+          "price": 2.95,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-06",
@@ -1226,7 +1479,15 @@
           "status": "ENDED",
           "winner": "Favourite (Unics Kazan)",
           "final_score": "82-68",
-          "bet_call": "NO BET — model-only"
+          "bet_call": "NO BET — model-only",
+          "league": "VTB United League",
+          "sport": "Basketball",
+          "pick": "Unics Kazan",
+          "price": {
+            "status": "NOT_AVAILABLE",
+            "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Oddspedia lists 0 markets; Flashscore.mobi shows the 1xBet heading with no numbers; BetExplorer lists the fixture with no odds; Feedinco and SportyTrader carry no page for it). Goaloo tables for this pairing carry historic/in-play data and were not used. MODEL-ONLY game."
+          },
+          "outcome": "WON"
         },
         {
           "game_id": "S34-07",
@@ -1236,7 +1497,15 @@
           "status": "ENDED",
           "winner": "Favourite (Esenler Erokspor)",
           "final_score": "113-62",
-          "bet_call": "NO BET — model-only"
+          "bet_call": "NO BET — model-only",
+          "league": "FIBA Europe Cup Group C",
+          "sport": "Basketball",
+          "pick": "Esenler Erokspor",
+          "price": {
+            "status": "NOT_AVAILABLE",
+            "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Flashscore states no odds comparison is available for this match yet; Tips.GG carries no numeric odds; Oddspedia has no current page for the fixture). The 14 Oct reverse-fixture prices were NOT used. MODEL-ONLY game."
+          },
+          "outcome": "WON"
         },
         {
           "game_id": "S34-08",
@@ -1246,7 +1515,12 @@
           "status": "ENDED",
           "winner": "Underdog (Rigas Zelli)",
           "final_score": "92-96",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group A",
+          "sport": "Basketball",
+          "pick": "Derthona Basket",
+          "price": 1.29,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-09",
@@ -1256,7 +1530,12 @@
           "status": "ENDED",
           "winner": "Underdog (BC Samara)",
           "final_score": "78-83",
-          "bet_call": "NO BET (confidence blocked — 1 trip)"
+          "bet_call": "NO BET (confidence blocked — 1 trip)",
+          "league": "VTB United League",
+          "sport": "Basketball",
+          "pick": "MBA Moscow",
+          "price": 1.1,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-10",
@@ -1266,7 +1545,12 @@
           "status": "ENDED",
           "winner": "Favourite (TalTech)",
           "final_score": "92-87",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Latvian-Estonian League",
+          "sport": "Basketball",
+          "pick": "BK Ventspils",
+          "price": 2.3,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-11",
@@ -1276,7 +1560,12 @@
           "status": "ENDED",
           "winner": "Underdog (Nevezis, home)",
           "final_score": "103-97",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "LKL",
+          "sport": "Basketball",
+          "pick": "Nevezis",
+          "price": 4.1,
+          "outcome": "WON"
         },
         {
           "game_id": "S34-12",
@@ -1286,7 +1575,12 @@
           "status": "ENDED",
           "winner": "Favourite (SLUNETA Usti nad Labem, away)",
           "final_score": "79-82",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Czech NBL",
+          "sport": "Basketball",
+          "pick": "SLUNETA Usti nad Labem",
+          "price": 1.09,
+          "outcome": "WON"
         },
         {
           "game_id": "S34-13",
@@ -1296,7 +1590,15 @@
           "status": "ENDED",
           "winner": "Underdog (NH Ostrava)",
           "final_score": "90-98",
-          "bet_call": "NO BET — model-only"
+          "bet_call": "NO BET — model-only",
+          "league": "Czech NBL",
+          "sport": "Basketball",
+          "pick": "Basket Brno",
+          "price": {
+            "status": "NOT_AVAILABLE",
+            "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Flashscore states no odds comparison is available for this match yet; no SportyTrader event page exists; OddsPortal has no event page; Tips.GG and Smoance show probabilities/models only, which are not prices). MODEL-ONLY game."
+          },
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-14",
@@ -1306,7 +1608,12 @@
           "status": "ENDED",
           "winner": "Favourite (USK Prague)",
           "final_score": "98-84",
-          "bet_call": "BET — GRAND PICK: Decin 25m @ 2.10"
+          "bet_call": "BET — GRAND PICK: Decin 25m @ 2.10",
+          "league": "Czech NBL",
+          "sport": "Basketball",
+          "pick": "USK Prague",
+          "price": 1.67,
+          "outcome": "WON"
         },
         {
           "game_id": "S34-15",
@@ -1316,7 +1623,12 @@
           "status": "ENDED",
           "winner": "Underdog (U-BT Cluj-Napoca, home)",
           "final_score": "87-79",
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group B",
+          "sport": "Basketball",
+          "pick": "Maxima Roma",
+          "price": 1.69,
+          "outcome": "LOST"
         },
         {
           "game_id": "S34-16",
@@ -1326,7 +1638,68 @@
           "status": "ENDED",
           "winner": "Favourite (Galatasaray)",
           "final_score": "88-81",
-          "bet_call": "UNDERDOG DESK #12 (paper): Legia @ 5.00"
+          "bet_call": "UNDERDOG DESK #12 (paper): Legia @ 5.00",
+          "league": "Basketball Champions League Group B",
+          "sport": "Basketball",
+          "pick": "Legia Warszawa",
+          "price": 5.0,
+          "outcome": "LOST"
+        }
+      ],
+      "top3": [
+        {
+          "rank": 1,
+          "kind": "GRAND PICK",
+          "game_id": "S34-14",
+          "game": "USK Prague v BK Decin",
+          "pick": "BK Decin",
+          "stake_m": 25,
+          "price": 2.1,
+          "paper": false,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "98-84",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 2,
+          "kind": "CONFIDENCE",
+          "game_id": "S34-04",
+          "game": "BC Slovan Bratislava v BK Iskra Svit",
+          "pick": "BC Slovan Bratislava",
+          "stake_m": 25,
+          "price": 1.03,
+          "paper": false,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.75,
+          "final_score": "102-76",
+          "tip_at": "2026-11-18T09:00:00-06:00",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 3,
+          "kind": "UNDERDOG DESK",
+          "game_id": "S34-16",
+          "game": "Galatasaray v Legia Warszawa",
+          "pick": "Legia Warszawa",
+          "stake_m": 25,
+          "price": 5.0,
+          "paper": true,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "88-81",
+          "tip_at": "2026-11-18T11:00:00-06:00",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
         }
       ]
     },
@@ -1369,6 +1742,7 @@
           "price": 1.03
         }
       ],
+      "date": "2026-11-18",
       "games_status": {
         "games_total": 22,
         "games_ended": 0
@@ -1382,7 +1756,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group A",
+          "sport": "Basketball",
+          "pick": "Cedevita Olimpija",
+          "price": 1.32,
+          "outcome": null
         },
         {
           "game_id": "S35-02",
@@ -1392,7 +1771,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "BET — GRAND PICK: KK Split 25m @ 2.18"
+          "bet_call": "BET — GRAND PICK: KK Split 25m @ 2.18",
+          "league": "FIBA Europe Cup Group A",
+          "sport": "Basketball",
+          "pick": "KB Trepca",
+          "price": 1.65,
+          "outcome": null
         },
         {
           "game_id": "S35-03",
@@ -1402,7 +1786,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "UNDERDOG DESK #13 (paper): Geneve @ 3.10"
+          "bet_call": "UNDERDOG DESK #13 (paper): Geneve @ 3.10",
+          "league": "FIBA Europe Cup Group G",
+          "sport": "Basketball",
+          "pick": "Bakken Bears",
+          "price": 1.38,
+          "outcome": null
         },
         {
           "game_id": "S35-04",
@@ -1412,7 +1801,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Czech NBL",
+          "sport": "Basketball",
+          "pick": "Hradec Kralove",
+          "price": 3.25,
+          "outcome": null
         },
         {
           "game_id": "S35-05",
@@ -1422,7 +1816,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET (price under floor, de-vig under bar)"
+          "bet_call": "NO BET (price under floor, de-vig under bar)",
+          "league": "EuroCup Group C",
+          "sport": "Basketball",
+          "pick": "Slask Wroclaw",
+          "price": 8.05,
+          "outcome": null
         },
         {
           "game_id": "S35-06",
@@ -1432,7 +1831,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group C",
+          "sport": "Basketball",
+          "pick": "Tofas Bursa",
+          "price": 1.75,
+          "outcome": null
         },
         {
           "game_id": "S35-07",
@@ -1442,7 +1846,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group A",
+          "sport": "Basketball",
+          "pick": "Le Mans Sarthe",
+          "price": 4.5,
+          "outcome": null
         },
         {
           "game_id": "S35-08",
@@ -1452,7 +1861,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "FIBA Europe Cup Group D",
+          "sport": "Basketball",
+          "pick": "King Wilki Morskie Szczecin",
+          "price": 1.29,
+          "outcome": null
         },
         {
           "game_id": "S35-09",
@@ -1462,7 +1876,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "FIBA Europe Cup Group F",
+          "sport": "Basketball",
+          "pick": "KB Bashkimi",
+          "price": 1.55,
+          "outcome": null
         },
         {
           "game_id": "S35-10",
@@ -1472,7 +1891,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group C",
+          "sport": "Basketball",
+          "pick": "Bourg-en-Bresse",
+          "price": 2.15,
+          "outcome": null
         },
         {
           "game_id": "S35-11",
@@ -1482,7 +1906,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group D",
+          "sport": "Basketball",
+          "pick": "Bosna Royal",
+          "price": 1.35,
+          "outcome": null
         },
         {
           "game_id": "S35-12",
@@ -1492,7 +1921,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "EuroCup Group B",
+          "sport": "Basketball",
+          "pick": "Fraport Skyliners",
+          "price": 3.13,
+          "outcome": null
         },
         {
           "game_id": "S35-13",
@@ -1502,7 +1936,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET (two-trip favourite, dog too poor to name)"
+          "bet_call": "NO BET (two-trip favourite, dog too poor to name)",
+          "league": "EuroCup Group C",
+          "sport": "Basketball",
+          "pick": "Aquila Basket Trento",
+          "price": 1.45,
+          "outcome": null
         },
         {
           "game_id": "S35-14",
@@ -1512,7 +1951,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "Basketball Champions League Group B",
+          "sport": "Basketball",
+          "pick": "Strasbourg",
+          "price": 1.57,
+          "outcome": null
         },
         {
           "game_id": "S35-15",
@@ -1522,7 +1966,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET (price under floor, de-vig under bar)"
+          "bet_call": "NO BET (price under floor, de-vig under bar)",
+          "league": "FIBA Europe Cup Group A",
+          "sport": "Basketball",
+          "pick": "Gladiators Trier",
+          "price": 1.13,
+          "outcome": null
         },
         {
           "game_id": "S35-16",
@@ -1532,7 +1981,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET"
+          "bet_call": "NO BET",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "Notre Dame Fighting Irish",
+          "price": 1.62,
+          "outcome": null
         },
         {
           "game_id": "S35-17",
@@ -1542,7 +1996,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET (near-miss recorded)"
+          "bet_call": "NO BET (near-miss recorded)",
+          "league": "EuroCup Group D",
+          "sport": "Basketball",
+          "pick": "Manresa",
+          "price": 2.22,
+          "outcome": null
         },
         {
           "game_id": "S35-18",
@@ -1552,7 +2011,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "CONFIDENCE BET: Unicaja 25m @ 1.03"
+          "bet_call": "CONFIDENCE BET: Unicaja 25m @ 1.03",
+          "league": "Basketball Champions League Group E",
+          "sport": "Basketball",
+          "pick": "Unicaja",
+          "price": 1.03,
+          "outcome": null
         },
         {
           "game_id": "S35-19",
@@ -1562,7 +2026,15 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET — model-only"
+          "bet_call": "NO BET — model-only",
+          "league": "FIBA Europe Cup Group C",
+          "sport": "Basketball",
+          "pick": "Sporting CP",
+          "price": {
+            "status": "NOT_AVAILABLE",
+            "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
+          },
+          "outcome": null
         },
         {
           "game_id": "S35-20",
@@ -1572,7 +2044,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET (near-miss recorded)"
+          "bet_call": "NO BET (near-miss recorded)",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "Florida Gators",
+          "price": 1.68,
+          "outcome": null
         },
         {
           "game_id": "S35-21",
@@ -1582,7 +2059,15 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET — model-only"
+          "bet_call": "NO BET — model-only",
+          "league": "Brazil NBB",
+          "sport": "Basketball",
+          "pick": "Franca",
+          "price": {
+            "status": "NOT_AVAILABLE",
+            "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
+          },
+          "outcome": null
         },
         {
           "game_id": "S35-22",
@@ -1592,7 +2077,12 @@
           "status": "PENDING",
           "winner": null,
           "final_score": null,
-          "bet_call": "NO BET (confidence blocked — screen not run in full)"
+          "bet_call": "NO BET (confidence blocked — screen not run in full)",
+          "league": "NCAAB",
+          "sport": "Basketball",
+          "pick": "Georgetown Hoyas",
+          "price": 1.034,
+          "outcome": null
         }
       ],
       "top3": [
