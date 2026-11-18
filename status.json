@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:55:50.152958-06:00",
+  "generated_at": "2026-11-18T17:00:43.548087-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T16:14:33.938403-06:00",
+      "last_activity": "2026-11-18T16:58:35.271651-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T16:45:19.330660-06:00",
-      "headline": "Latest search cycle: 162"
+      "last_activity": "2026-11-18T17:00:18.066650-06:00",
+      "headline": "Latest search cycle: 163"
     },
     {
       "name": "Edge Finder",
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 163 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T17:00:18.066650-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 162 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T16:45:19.330660-06:00"
+      "at": "2026-11-18T17:00:18.066650-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 161 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T16:45:19.330660-06:00"
+      "at": "2026-11-18T17:00:18.066650-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 160 OUTCOME",
-      "summary": "NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence on both runs, 17,650 -> 17,651 rows, 0…",
-      "at": "2026-11-18T16:45:19.330660-06:00"
+      "title": "CYCLE 163 — 2026-11-18 16:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T16:56:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -716,13 +723,6 @@
       "title": "CYCLE 161 — 2026-11-18 16:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T16:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 160 — 2026-11-18 16:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T16:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
