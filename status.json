@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:25:51.873421-06:00",
+  "generated_at": "2026-11-18T13:30:52.825400-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -1015,7 +1015,7 @@
     },
     {
       "number": 34,
-      "status": "PART-GRADED",
+      "status": "GRADED",
       "games": 16,
       "grand_pick": {
         "selection": "BK Decin",
@@ -1035,12 +1035,19 @@
       },
       "draw_desk": null,
       "results": {
-        "graded_games": 2
+        "grand_pick": {
+          "result": "WON",
+          "pnl_m": 0.75
+        },
+        "confidence_bet": {
+          "result": "WON",
+          "pnl_m": 0.75
+        }
       },
       "user_bets": null,
       "games_status": {
         "games_total": 16,
-        "games_ended": 2
+        "games_ended": 16
       },
       "games_list": [
         {
@@ -1068,9 +1075,9 @@
           "game": "Uralmash Yekaterinburg v Lokomotiv Kuban",
           "time": "08:30",
           "tip_at": "2026-11-18T08:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Dog-side favourite (Lokomotiv Kuban, away)",
+          "final_score": "95-100",
           "bet_call": "NO BET"
         },
         {
@@ -1078,9 +1085,9 @@
           "game": "BC Slovan Bratislava v BK Iskra Svit",
           "time": "09:00",
           "tip_at": "2026-11-18T09:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (BC Slovan Bratislava)",
+          "final_score": "102-76",
           "bet_call": "CONFIDENCE BET: Slovan 25m @ 1.03"
         },
         {
@@ -1088,9 +1095,9 @@
           "game": "Landau Lions v BC Prievidza",
           "time": "09:00",
           "tip_at": "2026-11-18T09:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (BC Prievidza, away)",
+          "final_score": "93-97",
           "bet_call": "NO BET"
         },
         {
@@ -1098,9 +1105,9 @@
           "game": "Unics Kazan v Enisey Krasnoyarsk",
           "time": "10:00",
           "tip_at": "2026-11-18T10:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Unics Kazan)",
+          "final_score": "82-68",
           "bet_call": "NO BET — model-only"
         },
         {
@@ -1108,9 +1115,9 @@
           "game": "Esenler Erokspor v Rilski Sportist",
           "time": "10:00",
           "tip_at": "2026-11-18T10:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Esenler Erokspor)",
+          "final_score": "113-62",
           "bet_call": "NO BET — model-only"
         },
         {
@@ -1118,9 +1125,9 @@
           "game": "Derthona Basket v Rigas Zelli",
           "time": "10:30",
           "tip_at": "2026-11-18T10:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Rigas Zelli)",
+          "final_score": "92-96",
           "bet_call": "NO BET"
         },
         {
@@ -1128,9 +1135,9 @@
           "game": "MBA Moscow v BC Samara",
           "time": "10:30",
           "tip_at": "2026-11-18T10:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (BC Samara)",
+          "final_score": "78-83",
           "bet_call": "NO BET (confidence blocked — 1 trip)"
         },
         {
@@ -1138,9 +1145,9 @@
           "game": "TalTech v BK Ventspils",
           "time": "10:30",
           "tip_at": "2026-11-18T10:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (TalTech)",
+          "final_score": "92-87",
           "bet_call": "NO BET"
         },
         {
@@ -1148,9 +1155,9 @@
           "game": "Nevezis v BC Rytas",
           "time": "10:50",
           "tip_at": "2026-11-18T10:50:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Nevezis, home)",
+          "final_score": "103-97",
           "bet_call": "NO BET"
         },
         {
@@ -1158,9 +1165,9 @@
           "game": "BK Lokomotiva Plzen v SLUNETA Usti nad Labem",
           "time": "11:00",
           "tip_at": "2026-11-18T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (SLUNETA Usti nad Labem, away)",
+          "final_score": "79-82",
           "bet_call": "NO BET"
         },
         {
@@ -1168,9 +1175,9 @@
           "game": "Basket Brno v NH Ostrava",
           "time": "11:00",
           "tip_at": "2026-11-18T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (NH Ostrava)",
+          "final_score": "90-98",
           "bet_call": "NO BET — model-only"
         },
         {
@@ -1178,9 +1185,9 @@
           "game": "USK Prague v BK Decin",
           "time": "11:00",
           "tip_at": "2026-11-18T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (USK Prague)",
+          "final_score": "98-84",
           "bet_call": "BET — GRAND PICK: Decin 25m @ 2.10"
         },
         {
@@ -1188,9 +1195,9 @@
           "game": "U-BT Cluj-Napoca v Maxima Roma",
           "time": "11:00",
           "tip_at": "2026-11-18T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (U-BT Cluj-Napoca, home)",
+          "final_score": "87-79",
           "bet_call": "NO BET"
         },
         {
@@ -1198,9 +1205,9 @@
           "game": "Galatasaray v Legia Warszawa",
           "time": "11:00",
           "tip_at": "2026-11-18T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Galatasaray)",
+          "final_score": "88-81",
           "bet_call": "UNDERDOG DESK #12 (paper): Legia @ 5.00"
         }
       ]
@@ -1574,10 +1581,10 @@
       "price": 2.1,
       "kind": "GRAND PICK",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
-      "final_score": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 27.5,
+      "final_score": "98-84",
       "tip_at": "2026-11-18T11:00:00-06:00"
     },
     {
@@ -1589,10 +1596,10 @@
       "price": 1.03,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
-      "final_score": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.75,
+      "final_score": "102-76",
       "tip_at": "2026-11-18T09:00:00-06:00"
     },
     {
@@ -1604,10 +1611,10 @@
       "price": 5.0,
       "kind": "UNDERDOG DESK",
       "paper": true,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
-      "final_score": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
+      "final_score": "88-81",
       "tip_at": "2026-11-18T11:00:00-06:00"
     },
     {
@@ -1634,7 +1641,7 @@
       "price": 1.03,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "UPCOMING",
+      "status": "IN PLAY",
       "result": null,
       "pnl_m": null,
       "final_score": null,
@@ -1694,7 +1701,7 @@
       "price": 1.03,
       "kind": "USER BET",
       "paper": false,
-      "status": "UPCOMING",
+      "status": "IN PLAY",
       "result": null,
       "pnl_m": null,
       "final_score": null,
@@ -1735,25 +1742,25 @@
         "pick": "Unicaja",
         "stake_m": 250,
         "price": 1.03,
-        "status": "UPCOMING"
+        "status": "IN PLAY"
       }
     ]
   },
   "forward": {
     "chosen_bets": {
       "wins": 13,
-      "losses": 13,
-      "pnl_m": 26.25
+      "losses": 14,
+      "pnl_m": 1.25
     },
     "confidence": {
-      "wins": 25,
+      "wins": 26,
       "losses": 0,
-      "pnl_m": 11.4
+      "pnl_m": 12.15
     },
     "underdog_desk": {
       "wins": 6,
-      "losses": 5,
-      "pnl_m": 180.0
+      "losses": 6,
+      "pnl_m": 155.0
     },
     "draw_desk": {
       "wins": 2,
@@ -1762,7 +1769,7 @@
     }
   },
   "vault": {
-    "count": 170,
+    "count": 184,
     "next_opening": "2026-12-01"
   },
   "autopsy_challengers": [
