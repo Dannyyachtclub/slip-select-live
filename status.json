@@ -1,0 +1,850 @@
+{
+  "generated_at": "2026-11-18T12:09:28.104423-06:00",
+  "kings": [
+    {
+      "court": "Legacy",
+      "name": "COINFLIP64-DEAP6",
+      "grand_king": false,
+      "wins": 207,
+      "losses": 32,
+      "priced": 229,
+      "pnl_m": 3604.03,
+      "roi_pct": 62.95,
+      "set_size": 239,
+      "dog_line": {
+        "picks": 60,
+        "wins": 48,
+        "losses": 12,
+        "priced": 56,
+        "pnl_m": 1807.15,
+        "roi_pct": 129.08
+      },
+      "stamp": "PROVISIONAL",
+      "crowned_on": "2026-11-17"
+    },
+    {
+      "court": "Regime",
+      "name": "ZEROTRIPFRAG-DEAP2",
+      "grand_king": true,
+      "wins": 203,
+      "losses": 36,
+      "priced": 228,
+      "pnl_m": 3600.68,
+      "roi_pct": 63.17,
+      "set_size": 239,
+      "dog_line": {
+        "picks": 67,
+        "wins": 49,
+        "losses": 18,
+        "priced": 63,
+        "pnl_m": 1791.65,
+        "roi_pct": 113.76
+      },
+      "stamp": "PROVISIONAL",
+      "crowned_on": "2026-11-17"
+    },
+    {
+      "court": "Quantum",
+      "name": "DEVIG538FLIP-DEAP4",
+      "grand_king": false,
+      "wins": 201,
+      "losses": 38,
+      "priced": 229,
+      "pnl_m": 3574.35,
+      "roi_pct": 62.43,
+      "set_size": 239,
+      "dog_line": {
+        "picks": 71,
+        "wins": 50,
+        "losses": 21,
+        "priced": 68,
+        "pnl_m": 1775.9,
+        "roi_pct": 104.46
+      },
+      "stamp": "PROVISIONAL",
+      "crowned_on": "2026-11-18"
+    },
+    {
+      "court": "Selector",
+      "name": "UUUUUUUUU4-OVRMISS-NODP",
+      "grand_king": false,
+      "wins": 211,
+      "losses": 28,
+      "priced": 226,
+      "pnl_m": 3797.53,
+      "roi_pct": 67.21,
+      "set_size": 239,
+      "dog_line": {
+        "picks": 59,
+        "wins": 49,
+        "losses": 10,
+        "priced": 54,
+        "pnl_m": 1890.9,
+        "roi_pct": 140.07
+      },
+      "stamp": "CLEAR",
+      "crowned_on": "2026-11-18"
+    },
+    {
+      "court": "Vanguard",
+      "name": "VG19-DOGGE600VETO",
+      "grand_king": false,
+      "wins": 185,
+      "losses": 54,
+      "priced": 229,
+      "pnl_m": 1448.57,
+      "roi_pct": 25.3,
+      "set_size": 239,
+      "dog_line": {
+        "picks": 73,
+        "wins": 44,
+        "losses": 29,
+        "priced": 69,
+        "pnl_m": 1051.83,
+        "roi_pct": 60.98
+      },
+      "stamp": "PROVISIONAL",
+      "crowned_on": "2026-11-18"
+    }
+  ],
+  "agents": [
+    {
+      "name": "Legacy",
+      "role": "King — market-first picking court",
+      "status": "active",
+      "last_activity": "2026-11-18T11:55:18.143012-06:00",
+      "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
+    },
+    {
+      "name": "Regime",
+      "role": "Grand king — its pick is the card pick on every slip",
+      "status": "active",
+      "last_activity": "2026-11-18T12:03:02.087505-06:00",
+      "headline": "ZEROTRIPFRAG-DEAP2 — 203-36, +63.17% fitted ROI"
+    },
+    {
+      "name": "Quantum",
+      "role": "King — model-weighted picking court",
+      "status": "active",
+      "last_activity": "2026-11-18T11:32:28.170022-06:00",
+      "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
+    },
+    {
+      "name": "Selector",
+      "role": "King — chooses which king to follow, game by game",
+      "status": "active",
+      "last_activity": "2026-11-18T11:39:47.766019-06:00",
+      "headline": "UUUUUUUUU4-OVRMISS-NODP — 211-28, +67.21% fitted ROI"
+    },
+    {
+      "name": "Vanguard",
+      "role": "King — fragility-discount picking court",
+      "status": "active",
+      "last_activity": "2026-11-18T11:45:43.786016-06:00",
+      "headline": "VG19-DOGGE600VETO — 185-54, +25.30% fitted ROI"
+    },
+    {
+      "name": "Arena",
+      "role": "Proving court — exotic ideas fight here; never touches the kings",
+      "status": "active",
+      "last_activity": "2026-11-18T12:02:01.044009-06:00",
+      "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
+    },
+    {
+      "name": "Discovery",
+      "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
+      "status": "active",
+      "last_activity": "2026-11-18T12:00:26.331009-06:00",
+      "headline": "Latest search cycle: 143"
+    },
+    {
+      "name": "Edge Finder",
+      "role": "Hunts brand-new edges and files collector specs",
+      "status": "active",
+      "last_activity": "2026-11-18T12:01:07.763009-06:00",
+      "headline": "Latest filing: P104"
+    },
+    {
+      "name": "Loss Autopsy",
+      "role": "Studies the kings' losses to invent new rules",
+      "status": "active",
+      "last_activity": "2026-11-18T11:49:14.655015-06:00",
+      "headline": "2 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
+    },
+    {
+      "name": "Research Director",
+      "role": "Daily manager — assigns hunting grounds, issues stop orders",
+      "status": "daily",
+      "last_activity": null,
+      "headline": "Daily brief at 08:15 CST"
+    }
+  ],
+  "activity": [
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 143 — 2026-11-18 11:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-18T11:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 142 — 2026-11-18 11:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-18T11:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 141 — 2026-11-18 11:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-18T11:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 140 — 2026-11-18 11:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-18T11:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 139 — 2026-11-18 10:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-18T10:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 138 — 2026-11-18 10:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-18T10:41:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
+      "title": "CYCLE 3 — 2026-11-18 — Slice 3: DOG-side losses (grand king picked the dog and lost)",
+      "summary": "The dog book — the grand king's glory at 49-18 — does not lose randomly. It loses when grand stands nearly alone: half its dog losses…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
+      "title": "CYCLE 2 — 2026-11-18 — Slice 2: SELECTION failures (grand king lost, at least one other king right)",
+      "summary": "The grand king's selection failures are not random: more than half are its dog flips dying into favourites, and those deaths concentrate…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
+      "title": "CYCLE 1 — 2026-11-18 — Slice 1: UNANIMOUS losses (every sitting king picked wrong)",
+      "summary": "The eight games no king could get right are not one disease. Two are structurally unwinnable (handball draws with no draw market in the…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P104: NON-BOOK WITNESS FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G144; classes c + h)",
+      "summary": "Filed Arena P104: NON-BOOK WITNESS FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G144; classes c + h)",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-18 (11:42 CST) — audit + hunt (classes d + a + f: sport-specific individual sports / quant research / the house's chair —…",
+      "summary": "P103 EVENT-SPLIT FREEZE (tennis + badminton singles) — FILED as collector proposal P103 (needs-data; no user spend — published event…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P102: FUTURE-ALLEGIANCE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G143; classes c…",
+      "summary": "Filed Arena P102: FUTURE-ALLEGIANCE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G143; classes c + h)",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P101: FLOW-BY-TRACK-RECORD FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena…",
+      "summary": "Filed Arena P101: FLOW-BY-TRACK-RECORD FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G142; classes…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-18 (11:12 CST) — audit + hunt (classes e + b + a + f: public ensemble data / open-source forecast tooling / quant forecast…",
+      "summary": "P100 ENSEMBLE-DISPERSION / FORECAST-DOUBT FREEZE — FILED as collector proposal P100 (needs-data; no user spend — the Open-Meteo Ensemble…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P100: HOUSE ACCESS, ELIGIBILITY & MARKET-GATING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G141;…",
+      "summary": "Filed Arena P100: HOUSE ACCESS, ELIGIBILITY & MARKET-GATING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G141; classes f…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G144 — F4 CROSS-REFERENCE, twenty-ninth visit (2026-11-18, loop)",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only, and this generation IS a milestone under…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G143 — F3 THROW-INCENTIVE ASYMMETRY (twenty-ninth visit) — 2026-11-18",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G142 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (twenty-ninth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE in full. MILESTONE under the delivery rule:…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G141 — F1 HOUSE-VIEW (twenty-ninth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G140 — F5 SOFT-ANGLE EXTREMES (twenty-eighth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G139 — F4 CROSS-REFERENCE (twenty-eighth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery rule:…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "Vanguard R4-G60 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V2 DESK…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "Vanguard R4-G59 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V6 SOCCER x HOME…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "Vanguard R4-G58 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best gate-eligible variant V7 BB x HOME x…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "gate-refusal",
+      "title": "Vanguard R4-G57 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). One above-king headline GATE-REFUSED on accuracy:…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "Vanguard R4-G56 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best gate-eligible variant V6 SOCCER x DEVIG[60,70)…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "R4-G55 (loop, 2026-11-18) — parent VG19-DOGGE600VETO",
+      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best gate-eligible variant V3 BB x OVR[5.00,6.00)…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
+      "kind": "generation",
+      "title": "SELECTOR R4-G246 (loop, 2026-11-18)",
+      "summary": "NO NEW KING. Best gate-eligible variant V2 FAVP [1.60,1.80) REFUTED at +67.18% (increment -1.75m at tied accuracy — the closest any…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
+      "kind": "generation",
+      "title": "SELECTOR R4-G245 (loop, 2026-11-18)",
+      "summary": "NO NEW KING. Best gate-eligible variant V8 AWAY x DOGSIDE REFUTED at +67.00% (increment -11.95m at -1 — the closest any stack-add has…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
+      "kind": "crown",
+      "title": "SELECTOR R4-G244 (loop, 2026-11-18)",
+      "summary": "NEW SELECTOR KING CROWNED — UUUUUUUUU4-OVRMISS-NODP (UUUUUUUUU4-OVRMISS with its underlying U4 chain's DOGPRICE [2.20,2.60) leg ABLATED;…",
+      "at": "2026-11-18T00:00:00-06:00"
+    }
+  ],
+  "slips": [
+    {
+      "number": 33,
+      "status": "GRADED",
+      "games": 34,
+      "grand_pick": {
+        "selection": "Incheon Shinhan Bank S-Birds",
+        "stake_m": 25,
+        "price": 2.05
+      },
+      "confidence_bet": {
+        "selection": "Hiroshima Dragonflies",
+        "stake_m": 25,
+        "price": 1.02
+      },
+      "underdog_desk": {
+        "pick_no": 11,
+        "selection": "Incheon Shinhan Bank S-Birds",
+        "price": 2.05,
+        "paper": true
+      },
+      "draw_desk": {
+        "pick_no": 5,
+        "selection": "Corluspor 1947 v Mus Spor — Draw",
+        "price": 3.14,
+        "paper": true
+      },
+      "results": {
+        "grand_pick": {
+          "result": "WON",
+          "pnl_m": 26.25
+        },
+        "confidence_bet": {
+          "result": "WON",
+          "pnl_m": 0.5
+        },
+        "underdog_desk": {
+          "result": "WON",
+          "pnl_m": 26.25
+        },
+        "draw_desk": {
+          "result": "LOST",
+          "pnl_m": -25.0
+        },
+        "king_records": {
+          "Legacy": {
+            "wins": 14,
+            "losses": 20,
+            "pnl_m": -145.63
+          },
+          "Regime": {
+            "wins": 16,
+            "losses": 18,
+            "pnl_m": -18.46
+          },
+          "Quantum": {
+            "wins": 15,
+            "losses": 19,
+            "pnl_m": -59.61
+          },
+          "Selector": {
+            "wins": 15,
+            "losses": 19,
+            "pnl_m": -84.38
+          },
+          "Vanguard": {
+            "wins": 22,
+            "losses": 12,
+            "pnl_m": 202.52
+          }
+        },
+        "best_king": "Vanguard"
+      },
+      "user_bets": null,
+      "games_status": {
+        "games_total": 34,
+        "games_ended": 34
+      }
+    },
+    {
+      "number": 34,
+      "status": "PART-GRADED",
+      "games": 16,
+      "grand_pick": {
+        "selection": "BK Decin",
+        "stake_m": 25,
+        "price": 2.1
+      },
+      "confidence_bet": {
+        "selection": "BC Slovan Bratislava",
+        "stake_m": 25,
+        "price": 1.03
+      },
+      "underdog_desk": {
+        "pick_no": 12,
+        "selection": "Legia Warszawa",
+        "price": 5.0,
+        "paper": true
+      },
+      "draw_desk": null,
+      "results": {
+        "graded_games": 2
+      },
+      "user_bets": null,
+      "games_status": {
+        "games_total": 16,
+        "games_ended": 2
+      }
+    },
+    {
+      "number": 35,
+      "status": "LOCKED",
+      "games": 22,
+      "grand_pick": {
+        "selection": "KK Split",
+        "stake_m": 25,
+        "price": 2.18
+      },
+      "confidence_bet": {
+        "selection": "Unicaja",
+        "stake_m": 25,
+        "price": 1.03
+      },
+      "underdog_desk": {
+        "pick_no": 13,
+        "selection": "Lions de Geneve",
+        "price": 3.1,
+        "paper": true
+      },
+      "draw_desk": null,
+      "results": null,
+      "user_bets": [
+        {
+          "selection": "KK Split",
+          "stake_m": 25,
+          "price": 2.18
+        },
+        {
+          "selection": "Lions de Geneve",
+          "stake_m": null,
+          "price": 3.1
+        },
+        {
+          "selection": "Unicaja",
+          "stake_m": 250,
+          "price": 1.03
+        }
+      ],
+      "games_status": {
+        "games_total": 22,
+        "games_ended": 0
+      },
+      "top3": [
+        {
+          "rank": 1,
+          "kind": "GRAND PICK",
+          "game_id": "S35-02",
+          "game": "KB Trepca v KK Split",
+          "pick": "KK Split",
+          "stake_m": 25,
+          "price": 2.18,
+          "paper": false
+        },
+        {
+          "rank": 2,
+          "kind": "CONFIDENCE",
+          "game_id": "S35-18",
+          "game": "Unicaja v Pardubice",
+          "pick": "Unicaja",
+          "stake_m": 25,
+          "price": 1.03,
+          "paper": false
+        },
+        {
+          "rank": 3,
+          "kind": "UNDERDOG DESK",
+          "game_id": "S35-03",
+          "game": "Bakken Bears v Lions de Geneve",
+          "pick": "Lions de Geneve",
+          "stake_m": 25,
+          "price": 3.1,
+          "paper": true
+        }
+      ]
+    }
+  ],
+  "bets": [
+    {
+      "slip": 33,
+      "game_id": "S33-09",
+      "game": "Incheon Shinhan Bank S-Birds v Cheongju KB Stars",
+      "pick": "Incheon Shinhan Bank S-Birds",
+      "stake_m": 25,
+      "price": 2.05,
+      "kind": "GRAND PICK",
+      "paper": false,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 26.25,
+      "tip_at": "2026-11-18T04:00:00-06:00"
+    },
+    {
+      "slip": 33,
+      "game_id": "S33-14",
+      "game": "Osaka Evessa v Hiroshima Dragonflies",
+      "pick": "Hiroshima Dragonflies",
+      "stake_m": 25,
+      "price": 1.02,
+      "kind": "CONFIDENCE",
+      "paper": false,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.5,
+      "tip_at": "2026-11-18T04:05:00-06:00"
+    },
+    {
+      "slip": 33,
+      "game_id": "S33-09",
+      "game": "Incheon Shinhan Bank S-Birds v Cheongju KB Stars",
+      "pick": "Incheon Shinhan Bank S-Birds",
+      "stake_m": 25,
+      "price": 2.05,
+      "kind": "UNDERDOG DESK",
+      "paper": true,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 26.25,
+      "tip_at": "2026-11-18T04:00:00-06:00"
+    },
+    {
+      "slip": 33,
+      "game_id": "S33-32",
+      "game": "Corluspor 1947 v Mus Spor",
+      "pick": "Draw",
+      "stake_m": 25,
+      "price": 3.14,
+      "kind": "DRAW DESK",
+      "paper": true,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
+      "tip_at": "2026-11-18T04:00:00-06:00"
+    },
+    {
+      "slip": 34,
+      "game_id": "S34-14",
+      "game": "USK Prague v BK Decin",
+      "pick": "BK Decin",
+      "stake_m": 25,
+      "price": 2.1,
+      "kind": "GRAND PICK",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T11:00:00-06:00"
+    },
+    {
+      "slip": 34,
+      "game_id": "S34-04",
+      "game": "BC Slovan Bratislava v BK Iskra Svit",
+      "pick": "BC Slovan Bratislava",
+      "stake_m": 25,
+      "price": 1.03,
+      "kind": "CONFIDENCE",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T09:00:00-06:00"
+    },
+    {
+      "slip": 34,
+      "game_id": "S34-16",
+      "game": "Galatasaray v Legia Warszawa",
+      "pick": "Legia Warszawa",
+      "stake_m": 25,
+      "price": 5.0,
+      "kind": "UNDERDOG DESK",
+      "paper": true,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T11:00:00-06:00"
+    },
+    {
+      "slip": 35,
+      "game_id": "S35-02",
+      "game": "KB Trepca v KK Split",
+      "pick": "KK Split",
+      "stake_m": 25,
+      "price": 2.18,
+      "kind": "GRAND PICK",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T11:30:00-06:00"
+    },
+    {
+      "slip": 35,
+      "game_id": "S35-18",
+      "game": "Unicaja v Pardubice",
+      "pick": "Unicaja",
+      "stake_m": 25,
+      "price": 1.03,
+      "kind": "CONFIDENCE",
+      "paper": false,
+      "status": "UPCOMING",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T13:30:00-06:00"
+    },
+    {
+      "slip": 35,
+      "game_id": "S35-03",
+      "game": "Bakken Bears v Lions de Geneve",
+      "pick": "Lions de Geneve",
+      "stake_m": 25,
+      "price": 3.1,
+      "kind": "UNDERDOG DESK",
+      "paper": true,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T11:30:00-06:00"
+    },
+    {
+      "slip": 35,
+      "game_id": "S35-02",
+      "game": "KB Trepca v KK Split",
+      "pick": "KK Split",
+      "stake_m": 25,
+      "price": 2.18,
+      "kind": "USER BET",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T11:30:00-06:00"
+    },
+    {
+      "slip": 35,
+      "game_id": "S35-03",
+      "game": "Bakken Bears v Lions de Geneve",
+      "pick": "Lions de Geneve",
+      "stake_m": null,
+      "price": 3.1,
+      "kind": "USER BET",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T11:30:00-06:00"
+    },
+    {
+      "slip": 35,
+      "game_id": "S35-18",
+      "game": "Unicaja v Pardubice",
+      "pick": "Unicaja",
+      "stake_m": 250,
+      "price": 1.03,
+      "kind": "USER BET",
+      "paper": false,
+      "status": "UPCOMING",
+      "result": null,
+      "pnl_m": null,
+      "tip_at": "2026-11-18T13:30:00-06:00"
+    }
+  ],
+  "bankroll": {
+    "start_m": 1000000000,
+    "current_m": 1000000000.0,
+    "earned_m": 0.0,
+    "record": "0-0",
+    "roi_pct": null,
+    "winrate_pct": null,
+    "since": "2026-11-18",
+    "pending": [
+      {
+        "slip": 35,
+        "game_id": "S35-02",
+        "game": "KB Trepca v KK Split",
+        "pick": "KK Split",
+        "stake_m": 25,
+        "price": 2.18,
+        "status": "IN PLAY"
+      },
+      {
+        "slip": 35,
+        "game_id": "S35-03",
+        "game": "Bakken Bears v Lions de Geneve",
+        "pick": "Lions de Geneve",
+        "stake_m": null,
+        "price": 3.1,
+        "status": "IN PLAY"
+      },
+      {
+        "slip": 35,
+        "game_id": "S35-18",
+        "game": "Unicaja v Pardubice",
+        "pick": "Unicaja",
+        "stake_m": 250,
+        "price": 1.03,
+        "status": "UPCOMING"
+      }
+    ]
+  },
+  "forward": {
+    "chosen_bets": {
+      "wins": 13,
+      "losses": 13,
+      "pnl_m": 26.25
+    },
+    "confidence": {
+      "wins": 25,
+      "losses": 0,
+      "pnl_m": 11.4
+    },
+    "underdog_desk": {
+      "wins": 6,
+      "losses": 5,
+      "pnl_m": 180.0
+    },
+    "draw_desk": {
+      "wins": 2,
+      "losses": 3,
+      "pnl_m": 12.5
+    }
+  },
+  "vault": {
+    "count": 170,
+    "next_opening": "2026-12-01"
+  },
+  "autopsy_challengers": [
+    {
+      "id": "AUTOPSY-6",
+      "name": "L&S-CONSENSUS DOG VETO selector",
+      "mechanism": "When the grand king picks the underdog but Legacy and the Selector both pick the favourite, drop the dog pick and follow them.",
+      "wins": 211,
+      "losses": 28,
+      "pnl_m": 3711.18,
+      "roi_pct": 65.11,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-7",
+      "name": "LONE-DOG VETO (≤1 of other 4 kings on dog → fav)",
+      "mechanism": "When the grand king picks the underdog and at most one of the other four kings agrees with it, switch to the favourite.",
+      "wins": 210,
+      "losses": 29,
+      "pnl_m": 3762.75,
+      "roi_pct": 66.01,
+      "status": "gate-clearing challenger (not crowned)"
+    }
+  ]
+}
