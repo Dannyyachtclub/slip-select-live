@@ -40,8 +40,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold-hi);outline-of
    page wider than the phone — long stack names, team names and headlines
    wrap anywhere rather than clip or stretch the layout ---------- */
 .strategy,.char-headline,.hero-king-line,.acard .h,.acard .n,.findrow .vd,.river .sm,.river .tt,
-.teams,.pick,.arch-head,.betrow .g,.betrow .p,.arow .g,.arow .p,.sec-sub,.sub,.usermark,
-.rec-game,.rec-pick,.board-head .meta,.pit-caption span{overflow-wrap:anywhere}
+.trow-pick,.trow-game,.pick,.arch-head,.betrow .g,.betrow .p,.arow .g,.arow .p,.sec-sub,.sub,.trow-note,
+.rec-game,.rec-pick,.ticket-meta,.pit-caption span{overflow-wrap:anywhere}
 img{max-width:100%}
 #embers{position:fixed;inset:0;z-index:1;pointer-events:none}
 .pos{color:var(--pos)} .neg{color:var(--neg)}
@@ -262,37 +262,46 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .pit-caption b{color:#fff;font-variant-numeric:tabular-nums}
 .pit-caption .versus{color:var(--gold);font-size:.68rem;letter-spacing:.34em;font-weight:800}
 
-/* ================= BETS — match cards ================= */
-.board-head{display:flex;gap:12px 16px;align-items:flex-end;flex-wrap:wrap;margin:0 0 25px}
-.board-head .kick{color:var(--gold-hi);font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase}
-.board-head h4{font-family:var(--serif);margin:3px 0 0;font-size:clamp(1.9rem,7vw,2.7rem);font-weight:900;line-height:1.05}
-.board-head .meta{margin-left:auto;color:var(--mut);font-size:.92rem}
-.t3grid{display:grid;grid-template-columns:1fr;gap:24px}
-@media (min-width:900px){.t3grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.t3card{padding:24px 21px}.teams{font-size:1.28rem!important}}
-.t3card{background:linear-gradient(160deg,rgba(200,162,74,.055),transparent 38%),var(--surface);border:1px solid var(--line);border-radius:26px;
-  padding:30px 27px;position:relative;overflow:hidden;box-shadow:0 18px 42px rgba(0,0,0,.36)}
-.t3card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.72}
-.t3-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
-.t3card .kind{color:var(--gold-hi);font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
-.rank{font-family:var(--serif);color:rgba(200,162,74,.22);font-size:3.15rem;font-weight:900;line-height:.85;font-variant-numeric:tabular-nums}
-.teams{font-family:var(--serif);font-weight:800;font-size:clamp(1.42rem,6.2vw,2rem);line-height:1.16;margin:20px 0 0;color:#fff}
-.teams .team{display:block}
-.teams .vs{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.64rem;letter-spacing:.32em;margin:8px 0;font-weight:800}
-.teams .vs::before,.teams .vs::after{content:"";height:1px;flex:1;background:rgba(200,162,74,.28)}
-.pick-callout{margin-top:21px;padding:16px 18px;background:rgba(200,162,74,.055);border-left:3px solid var(--gold)}
-.pick-callout .lab{color:var(--gold-hi)}
-.pick-callout .pick{font-size:1.32rem;font-weight:800;line-height:1.25;margin-top:3px;color:#fff}
-.t3chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
-.data-chip{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--mut);font-size:.84rem;background:rgba(3,4,10,.28)}
-.data-chip b{color:#fff;font-variant-numeric:tabular-nums}
-.t3state{margin-top:23px;border-top:1px solid var(--line-soft);padding-top:19px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:52px}
-.t3state .when{color:var(--mut);font-size:.94rem}
-.livepulse{width:11px;height:11px;border-radius:50%;background:var(--mag);box-shadow:0 0 14px rgba(220,124,186,.8);flex:none;animation:pulse 1.4s ease-in-out infinite}
-.livetxt{font-family:var(--serif);font-weight:900;letter-spacing:.16em;color:var(--mag);font-size:.9rem}
-.t3score{font-family:var(--serif);font-size:1.72rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1.1}
-.t3pnl{font-size:1.28rem}
-.usermark{margin-top:18px;border:1px dashed rgba(200,162,74,.55);border-radius:14px;padding:12px 15px;font-size:.94rem;background:rgba(200,162,74,.05);color:var(--ink)}
-.usermark .lab{color:var(--gold-hi)} .usermark b{font-variant-numeric:tabular-nums}
+/* ================= BETS — betslip tickets (v5.3) =================
+   One bookmaker ticket per live slip: a compact header strip, then
+   exactly three rows split by hairlines. No nested cards, no callout
+   boxes, no empty zones — the pick is the hero of its row and every
+   other element in the row serves it. Tight enough that a whole
+   slip's Top 3 + header reads inside one phone viewport. */
+.ticket{background:linear-gradient(165deg,rgba(200,162,74,.05),transparent 42%),var(--surface);
+  border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.34);
+  margin:0 0 26px;position:relative}
+.ticket::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.72}
+.ticket-head{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;padding:11px 16px 10px 19px;
+  background:rgba(200,162,74,.05);border-bottom:1px solid var(--line-soft)}
+.ticket-title{font-family:var(--serif);font-weight:900;font-size:1.02rem;letter-spacing:.05em;color:#fff;white-space:nowrap}
+.ticket-title b{color:var(--gold-hi);font-weight:900}
+.ticket-meta{margin-left:auto;color:var(--mut);font-size:.76rem;text-align:right}
+.trow{display:flex;gap:12px;align-items:flex-start;padding:12px 16px 12px 19px}
+.trow + .trow{border-top:1px solid var(--line-faint)}
+.trow-medal{flex:none;width:46px;display:flex;flex-direction:column;align-items:center;gap:5px;padding-top:1px}
+.trow-medal .medal{width:33px;height:33px;border:1px solid rgba(200,162,74,.6);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:900;
+  font-size:.92rem;color:var(--gold-hi);font-variant-numeric:tabular-nums;background:rgba(200,162,74,.06)}
+.trow-kind{color:var(--gold);font-family:var(--serif);font-size:.53rem;font-weight:800;letter-spacing:.1em;
+  text-transform:uppercase;text-align:center;line-height:1.45;overflow-wrap:anywhere}
+.trow-main{flex:1 1 auto;min-width:0}
+.trow-pick{font-family:var(--serif);font-weight:900;font-size:1.35rem;line-height:1.12;color:#fff;overflow-wrap:anywhere}
+.trow-game{font-size:.92rem;color:#c3c9d8;line-height:1.3;margin-top:2px;overflow-wrap:anywhere}
+.trow-micro{margin-top:5px;font-size:.83rem;color:var(--mut);line-height:1.5;overflow-wrap:anywhere}
+.trow-micro b{color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.trow-micro .lab{color:var(--gold-hi)}
+.trow-micro .sport-chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 7px;
+  font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);vertical-align:1px;white-space:nowrap}
+.trow-note{margin-top:4px;font-size:.78rem;color:var(--dim);line-height:1.45;overflow-wrap:anywhere}
+.trow-note .lab{color:var(--gold-hi)} .trow-note b{color:var(--ink);font-variant-numeric:tabular-nums}
+.trow-state{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right;max-width:36%}
+.trow-live{display:inline-flex;align-items:center;gap:7px}
+.trow-when{color:var(--dim);font-size:.74rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.livepulse{width:10px;height:10px;border-radius:50%;background:var(--mag);box-shadow:0 0 12px rgba(220,124,186,.8);flex:none;animation:pulse 1.4s ease-in-out infinite}
+.livetxt{font-family:var(--serif);font-weight:900;letter-spacing:.14em;color:var(--mag);font-size:.82rem;white-space:nowrap}
+.trow-score{font-family:var(--serif);font-size:1.08rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1.15;white-space:nowrap}
+.trow-pnl{font-size:.95rem}
 
 /* ---------- bankroll / record / archive ---------- */
 .bank-card{text-align:center}
@@ -351,32 +360,27 @@ table.games .sc{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;whi
 footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:68px;line-height:1.7}
 footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 
-/* ================= v5.2 — TONIGHT'S CHOICES band + bets-first =================
+/* ================= v5.2/v5.3 — TONIGHT'S CHOICES band + bets-first ======
    The live choices are never a scroll away: a compact band sits at the top
    of the Court tab (straight under the hero) and the Bets tab opens ON its
-   boards. The pick is the hero of every band card — bigger than the game. */
+   boards. v5.3: the band reuses the Bets-tab betslip ticket at a tighter
+   density — same markup, same source, so the two views can never disagree. */
 .choices-band{background:linear-gradient(160deg,rgba(200,162,74,.10),rgba(200,162,74,.02) 55%),var(--surface);
   border:1px solid rgba(200,162,74,.45);border-radius:24px;padding:20px 18px 12px;box-shadow:0 18px 44px rgba(0,0,0,.36)}
 .band-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;cursor:pointer}
 .band-title{font-family:var(--serif);font-size:1.02rem;font-weight:900;letter-spacing:.24em;color:var(--gold-hi);white-space:nowrap}
 .band-go{color:var(--mut);font-size:.8rem;font-weight:700;text-align:right}
 .band-empty{color:var(--mut);font-size:.95rem;padding:12px 0 6px}
-.band-slip{margin-top:15px}
-.band-slip-head{font-family:var(--serif);font-weight:800;font-size:.94rem;color:#fff;cursor:pointer;margin-bottom:10px}
-.band-strip{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x proximity;scrollbar-width:none}
-.band-strip::-webkit-scrollbar{display:none}
-.band-card{flex:0 0 min(76vw,248px);scroll-snap-align:start;background:var(--inset);border:1px solid var(--line);
-  border-radius:18px;padding:16px;cursor:pointer;min-width:0}
-.band-card:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
-.band-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.band-rank{font-family:var(--serif);font-weight:900;color:var(--gold-hi);font-size:1rem;font-variant-numeric:tabular-nums}
-.band-kind{color:var(--gold-hi);font-family:var(--serif);font-size:.62rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}
-.band-top .chip{margin-left:auto}
-.band-pick{font-family:var(--serif);font-size:clamp(1.55rem,6vw,1.85rem);font-weight:900;line-height:1.08;color:#fff;margin-top:10px;overflow-wrap:anywhere}
-.band-game{color:var(--mut);font-size:.86rem;line-height:1.35;margin-top:6px;overflow-wrap:anywhere}
-.band-line{margin-top:10px;font-size:.98rem;color:var(--ink)}
-.band-line b{color:var(--gold-hi);font-variant-numeric:tabular-nums}
-.band-when{color:var(--dim);font-size:.8rem;margin-top:4px}
+.band-ticket{margin:14px 0 8px;box-shadow:none;cursor:pointer}
+.band-ticket:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.band-ticket .ticket-head{padding:8px 13px 7px 16px}
+.band-ticket .ticket-title{font-size:.92rem}
+.band-ticket .trow{padding:9px 13px 9px 16px;gap:10px}
+.band-ticket .trow-pick{font-size:1.18rem}
+.band-ticket .trow-game{font-size:.86rem}
+.band-ticket .trow-micro{font-size:.79rem;margin-top:3px}
+.band-ticket .trow-medal{width:40px}
+.band-ticket .trow-medal .medal{width:29px;height:29px;font-size:.84rem}
 /* Bets tab: boards first — the mini-bar and the choices boards are the
    first things rendered; bankroll and record sections follow below. */
 .bets-top{margin:30px 0 0}
@@ -402,16 +406,9 @@ footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 .flow-arrow.d1{animation-delay:.18s}.flow-arrow.d2{animation-delay:.36s}.flow-arrow.d3{animation-delay:.54s}
 .flow-arrow.d4{animation-delay:.72s}.flow-arrow.d5{animation-delay:.9s}
 @keyframes chevFlash{0%,100%{opacity:.25;transform:translateX(-2px)}50%{opacity:1;transform:translateX(2.5px)}}
-/* bet cards — THE PICK IS THE HERO (directive 8) */
-.t3card .teams{font-size:clamp(1.02rem,4.4vw,1.3rem);color:#cfd4e2;margin-top:16px}
-.pick-callout{margin-top:18px;padding:18px;background:linear-gradient(150deg,rgba(200,162,74,.14),rgba(200,162,74,.03));border-left:4px solid var(--gold);position:relative;overflow:hidden}
-.pick-callout::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 42%,rgba(255,244,200,.13) 50%,transparent 58%);
-  transform:translateX(-110%);animation:shimmerSweep 4.8s ease-in-out infinite;pointer-events:none}
-@keyframes shimmerSweep{0%,55%{transform:translateX(-110%)}85%,100%{transform:translateX(110%)}}
-.pick-callout .lab{color:var(--gold-hi);font-size:.78rem;letter-spacing:.22em}
-.pick-callout .pick{font-family:var(--serif);font-size:clamp(1.66rem,7.4vw,2.35rem);font-weight:900;line-height:1.08;margin-top:5px;color:#fff;text-shadow:0 0 22px rgba(200,162,74,.25)}
-.pick-callout .pickline{margin-top:9px;font-size:1.02rem;color:var(--ink)}
-.pick-callout .pickline b{color:var(--gold-hi);font-variant-numeric:tabular-nums}
+/* bet picks — THE PICK IS THE HERO (directive 8): in v5.3 the hero lives
+   in the betslip ticket row (.trow-pick, see the BETS section above) —
+   Cinzel 900 at 1.35rem, larger than everything else in its row. */
 .sport-chip{border-color:rgba(114,199,220,.5);color:var(--cyan)}
 /* archive sport sub-headings + vault table sport groups */
 .arch-sport{font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.24em;color:var(--gold-hi);
@@ -476,7 +473,8 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
   .pyr-rivals{gap:6px}.pyr-tier-head{letter-spacing:.2em;font-size:.6rem}
   .char-card{grid-template-columns:104px minmax(0,1fr);gap:13px}.char-photo{min-height:150px}.char-body{padding:15px 14px 14px 0}
   .char-name{font-size:1.28rem}.data-row{gap:9px}.data-row b{font-size:.84rem}
-  .fighter{width:96px}.t3card{padding:25px 21px}
+  .fighter{width:96px}
+  .trow{gap:10px;padding:11px 13px 11px 16px}.ticket-head{padding-left:16px}
   .mini-bar,.rec-controls{top:70px}
   /* tables become stacked rows — nothing scrolls sideways */
   table.games,table.games tbody,table.games tr,table.games td{display:block;width:100%}
@@ -490,7 +488,7 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
   html{scroll-behavior:auto}
   .reveal{opacity:1!important;transform:none!important;transition:none!important}
   .livedot i,.livepulse,.aura,.nebula,.scroll-cue::after,.flow-arrow,.pyr-chip .arr,
-  .pyr-medallion .rise,.pyr-apex .pyr-photo,.pick-callout::after,.rec-row{animation:none!important}
+  .pyr-medallion .rise,.pyr-apex .pyr-photo,.rec-row{animation:none!important}
   .formbar i,.winbar i{transition:none}
   .fighter,.fighter .hp i{transition:none}
 }
@@ -989,11 +987,6 @@ function calledBets(d,slipNo){
  const s=(d.slips||[]).find(x=>x.number===slipNo);
  return s&&s.bets?s.bets:[];
 }
-function splitTeams(game){
- const parts=String(game||"").split(" v ");
- if(parts.length===2)return[parts[0],parts[1]];
- return[game||"",null];
-}
 function metaFor(d,slipNo,gid){
  const s=(d.slips||[]).find(x=>x.number===slipNo); if(!s)return null;
  return (s.games_list||[]).find(g=>g.game_id===gid)||null;
@@ -1014,32 +1007,49 @@ function boardPicks(d,slip){
    user_bet:t.user_bet?{stake_m:t.user_stake_m,odds:t.user_price}:null}));
  return calledBets(d,slip.number).filter(b=>b.kind!=="DRAW DESK");
 }
-function t3Card(d,slip,p,i){
- const teams=splitTeams(p.game), st=p.state||"upcoming";
- const teamHtml=teams[1]?'<span class="team">'+esc(teams[0])+'</span><span class="vs">VS</span><span class="team">'+esc(teams[1])+"</span>":esc(teams[0]);
+/* ================= betslip ticket rows (v5.3) =================
+   ONE row renderer serves both the Bets-tab ticket and the Court-tab
+   Tonight's Choices band (band=true = tighter density + tap-through),
+   fed by the same boardPicks source — the two views cannot disagree.
+   Row anatomy: rank medallion + kind | pick (hero) / game / stake
+   micro-line / note line | live state block on the right. */
+function ticketRow(d,slip,p,i,band){
+ const st=p.state||"upcoming";
  const meta=metaFor(d,slip.number,p.game_id);
- let zone="";
- if(st==="inplay")zone='<span class="livepulse"></span><span class="livetxt">IN PLAY</span><span class="when">tipped '+esc(p.tip_time||"")+"</span>";
- else if(st==="ended")zone='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">'+esc(String(p.result||"").toUpperCase())+'</span>'
-   +(p.final_score?'<span class="t3score">'+esc(p.final_score)+'</span>':"")
-   +(p.pnl_m!=null?'<span class="t3pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
- else zone='<span class="chip amb">UPCOMING</span><span class="when">tips '+esc(p.tip_time||"")+"</span>";
- let um="";
- if(p.user_bet)um='<div class="usermark"><span class="lab">Your bet</span> — '
-   +(p.user_bet.stake_m!=null?'<b>'+fmtInt(p.user_bet.stake_m)+"m @"+esc(p.user_bet.odds)+"</b>"
-     +(p.user_bet.stake_m!==p.called_stake_m?' · the call was '+stakeWords(p.called_stake_m):" · exactly as called")
-     :"amount not stated @"+esc(p.user_bet.odds))+"</div>";
- if(p.desk||p.paper)um+='<div class="usermark"><span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours above is real</div>';
- const betLab=p.paper?"PAPER PICK — THE DESK CALLS":"BET";
- return '<article class="t3card reveal"><div class="t3-top"><div class="kind">'+esc(p.kind||"")+'</div><div class="rank">'+String(i+1).padStart(2,"0")+'</div></div>'
-   +'<div class="teams">'+teamHtml+'</div>'
-   +'<div class="pick-callout"><div class="lab">'+betLab+'</div><div class="pick">'+esc(p.pick||"")+'</div>'
-   +'<div class="pickline"><b>'+esc(stakeWords(p.called_stake_m))+'</b> @ <b>'+esc(p.odds||"")+"</b></div></div>"
-   +'<div class="t3chips">'
-   +(meta&&meta.sport?'<span class="data-chip sport-chip">Sport <b>'+esc(meta.sport)+"</b></span>":"")
-   +(meta&&meta.league?'<span class="data-chip">'+esc(meta.league)+"</span>":"")
-   +"</div>"
-   +'<div class="t3state">'+zone+"</div>"+um+"</article>";
+ let state="";
+ if(st==="inplay")state='<span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
+   +(p.tip_time?'<span class="trow-when">tipped '+esc(p.tip_time)+"</span>":"");
+ else if(st==="ended")state='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">ENDED'+(p.result?" · "+esc(String(p.result).toUpperCase()):"")+"</span>"
+   +(p.final_score?'<span class="trow-score">FT '+esc(p.final_score)+"</span>":"")
+   +(p.pnl_m!=null?'<span class="trow-pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
+ else state='<span class="chip amb">UPCOMING</span>'
+   +(p.tip_time?'<span class="trow-when">tips '+esc(p.tip_time)+"</span>":"");
+ const micro='<span class="lab">'+(p.paper?"Paper pick":"Bet")+'</span> — <b>'+esc(stakeWords(p.called_stake_m))+'</b> @ <b>'+esc(p.odds||"")+"</b>"
+   +(meta&&meta.league?" · "+esc(meta.league):"")
+   +(meta&&meta.sport?' <span class="sport-chip">'+esc(meta.sport)+"</span>":"");
+ const bits=[];
+ if(p.user_bet)bits.push('<span class="lab">Your bet</span> — '
+   +(p.user_bet.stake_m!=null?'<b>'+fmtInt(p.user_bet.stake_m)+"m @ "+esc(p.user_bet.odds)+"</b>"
+     +(p.user_bet.stake_m!==p.called_stake_m?" · the call was "+stakeWords(p.called_stake_m):" · exactly as called")
+     :"amount not stated @ "+esc(p.user_bet.odds)));
+ if(p.desk||p.paper)bits.push('<span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours is real');
+ const note=bits.length?'<div class="trow-note">'+bits.join(" · ")+"</div>":"";
+ const tap=band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+" choice "+(i+1)+": "+esc(p.pick||"")+' — see it on the Bets tab"':"";
+ return '<div class="trow"'+tap+">"
+   +'<div class="trow-medal"><span class="medal">'+String(i+1).padStart(2,"0")+'</span><span class="trow-kind">'+esc(p.kind||"")+"</span></div>"
+   +'<div class="trow-main"><div class="trow-pick">'+esc(p.pick||"")+'</div>'
+   +'<div class="trow-game">'+esc(p.game||"")+"</div>"
+   +'<div class="trow-micro">'+micro+"</div>"+note+"</div>"
+   +'<div class="trow-state">'+state+"</div></div>";
+}
+function slipTicket(d,slip,picks,band){
+ const sports=slipSports(slip);
+ const meta=[slip.date||"",sports.join(" + "),slip.status||""].filter(Boolean).join(" · ");
+ return '<div class="ticket'+(band?" band-ticket":" reveal")+'"'
+   +(band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+' Top 3 — see the Bets tab"':"")+">"
+   +'<div class="ticket-head"><span class="ticket-title">Slip #'+esc(slip.number)+' — <b>Top 3</b></span>'
+   +(meta?'<span class="ticket-meta">'+esc(meta)+"</span>":"")+"</div>"
+   +picks.map((p,i)=>ticketRow(d,slip,p,i,band)).join("")+"</div>";
 }
 function renderBoard(d){
  const b=d.bankroll||{};
@@ -1061,37 +1071,16 @@ function renderBoard(d){
    $("board").innerHTML='<div class="card" style="text-align:center"><b style="font-family:var(--serif);font-size:1.15rem">No live choices right now</b><br><span class="sub">The next slip\u2019s Top 3 will appear here the moment it locks.</span></div>';
    return;
  }
- $("board").innerHTML=boards.map(({slip,picks})=>{
-   const sports=slipSports(slip);
-   const meta=[slip.date||"",sports.join(" + "),slip.status||""].filter(Boolean).join(" · ");
-   return '<div class="board-head"><div><div class="kick">Top 3 Choices</div><h4>Slip #'+esc(slip.number)+'</h4></div>'
-     +'<div class="meta">'+esc(meta)+"</div></div>"
-     +'<div class="t3grid">'+picks.map((p,i)=>t3Card(d,slip,p,i)).join("")+"</div>";
- }).join("");
+ $("board").innerHTML=boards.map(({slip,picks})=>slipTicket(d,slip,picks,false)).join("");
 }
 /* ================= render: TONIGHT'S CHOICES band (Court tab) =========
    v5.2: the live Top 3, compact, straight under the hero — the same live
    boards as the Bets tab (same boardPicks source, same live rule: a slip
-   appears only while >=1 pick is UPCOMING or IN PLAY). Tapping any card,
-   strip head or band head carries data-tab="bets", which the global click
-   handler turns into a tab switch. */
-function bandStateChip(p){
- const st=p.state||"upcoming";
- if(st==="inplay")return '<span class="chip live">IN PLAY</span>';
- if(st==="ended")return '<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">ENDED'+(p.final_score?" · FT "+esc(p.final_score):"")+"</span>";
- return '<span class="chip amb">UPCOMING</span>';
-}
-function bandCard(slip,p,i){
- let extra="";
- if((p.state||"upcoming")==="upcoming"&&p.tip_time)extra='<div class="band-when">tips '+esc(p.tip_time)+"</div>";
- if((p.state||"upcoming")==="ended"&&p.pnl_m!=null)extra='<div class="band-line num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</div>";
- return '<article class="band-card" data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+' choice '+(i+1)+": "+esc(p.pick||"")+' — see it on the Bets tab">'
-   +'<div class="band-top"><span class="band-rank">#'+(i+1)+'</span><span class="band-kind">'+esc(p.kind||"")+"</span>"+bandStateChip(p)+"</div>"
-   +'<div class="band-pick">'+esc(p.pick||"")+'</div>'
-   +'<div class="band-game">'+esc(p.game||"")+'</div>'
-   +'<div class="band-line"><b>'+esc(stakeWords(p.called_stake_m))+"</b> @ <b>"+esc(p.odds||"")+"</b></div>"
-   +extra+"</article>";
-}
+   appears only while >=1 pick is UPCOMING or IN PLAY). v5.3: the band is
+   the SAME betslip ticket as the Bets tab, one density tighter, rendered
+   by slipTicket/ticketRow — tapping the ticket, a row or the band head
+   carries data-tab="bets", which the global click handler turns into a
+   tab switch. */
 function renderTonightBand(d){
  const el=$("tonight-band"); if(!el)return;
  const slips=(d.slips||[]).slice().sort((a,b)=>(b.number||0)-(a.number||0));
@@ -1107,11 +1096,7 @@ function renderTonightBand(d){
    return;
  }
  el.innerHTML='<div class="band-head" data-tab="bets" role="button" tabindex="0"><span class="band-title">TONIGHT\u2019S CHOICES</span><span class="band-go">All choices on the Bets tab ❯</span></div>'
-   +boards.map(({slip,picks})=>{
-     const sports=slipSports(slip);
-     return '<div class="band-slip"><div class="band-slip-head" data-tab="bets" role="button" tabindex="0">Slip #'+esc(slip.number)+" — Top 3"+(sports.length?" · "+esc(sports.join(" + ")):"")+'</div>'
-       +'<div class="band-strip">'+picks.map((p,i)=>bandCard(slip,p,i)).join("")+"</div></div>";
-   }).join("");
+   +boards.map(({slip,picks})=>slipTicket(d,slip,picks,true)).join("");
 }
 function renderBank(d){
  const b=d.bankroll||{};
