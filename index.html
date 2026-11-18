@@ -2,322 +2,444 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>SLIP SELECT — The Living Court</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* ============ SLIP SELECT design system v4 — institutional, spacious, mobile-first ============
-   One idea per section. Air is the design: wide gaps, large padding, a calm
-   rhythm, one hero number per section. Charcoal-navy + muted gold only. */
+/* ================= SLIP SELECT v5 — THE LIVING COURT =================
+   Art direction: a flagship game title screen crossed with a private-bank
+   terminal. Cinzel for ceremony, Inter for evidence. The portraits are the
+   architecture; everything else steps back and gives them air. */
 :root{
-  --bg:#0a0c11; --surface:#12151d; --surface2:#171b26; --inset:#0d1017;
-  --line:#242a3a; --line-soft:#1b2130;
-  --ink:#f2f4f8; --mut:#98a1b3; --dim:#68738a;
-  --gold:#c8a24a; --gold-hi:#e6cb7d;
-  --pos:#3fb97f; --neg:#e05d5d; --amb:#e0a44e;
-  --cyan:#6fc3d8; --vio:#9a86d8; --mag:#d873b8;
-  --radius:18px;
+  --bg:#03040a; --bg2:#070912; --surface:#0c0f1a; --surface2:#121627; --inset:#070912;
+  --line:#2b314a; --line-soft:#1c2136; --line-faint:#141829;
+  --ink:#f6f1e7; --mut:#a9afc0; --dim:#70778d;
+  --gold:#c8a24a; --gold-hi:#f0d48a; --gold-deep:#6d531d;
+  --pos:#43c98a; --neg:#e46565; --amb:#e0a44e;
+  --cyan:#72c7dc; --vio:#a48fe0; --mag:#dc7cba; --green:#58bd7d;
+  --radius:22px;
+  --serif:"Cinzel",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size:17px;line-height:1.6}
-#fx{position:fixed;inset:0;z-index:0;pointer-events:none}
-.wrap{position:relative;z-index:2;max-width:1060px;margin:0 auto;padding:0 20px 72px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;
+  background:
+    radial-gradient(900px 540px at 8% -6%,rgba(88,64,160,.20),transparent 62%),
+    radial-gradient(820px 520px at 94% 4%,rgba(35,105,128,.16),transparent 64%),
+    radial-gradient(760px 620px at 50% 112%,rgba(200,162,74,.07),transparent 66%),
+    var(--bg)}
+::selection{background:rgba(200,162,74,.38);color:#fff}
+button{font-family:inherit}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+#fx{position:fixed;inset:0;z-index:90;pointer-events:none}
 .num{font-variant-numeric:tabular-nums;font-weight:700;color:#fff;white-space:nowrap}
 .pos{color:var(--pos)} .neg{color:var(--neg)}
-.lab{color:var(--mut);font-size:.72rem;font-weight:600;letter-spacing:.11em;text-transform:uppercase}
-.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
-.chip{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.72rem;font-weight:700;
-  letter-spacing:.05em;border:1px solid var(--line);background:transparent;color:var(--mut);white-space:nowrap}
-.chip.gold{color:var(--gold-hi);border-color:rgba(200,162,74,.55)}
-.chip.grn{color:var(--pos);border-color:rgba(63,185,127,.5)} .chip.red{color:var(--neg);border-color:rgba(224,93,93,.5)}
-.chip.amb{color:var(--amb);border-color:rgba(224,164,78,.5)} .chip.cyan{color:var(--cyan);border-color:rgba(111,195,216,.5)}
-.chip.vio{color:var(--vio);border-color:rgba(154,134,216,.5)} .chip.ink{color:var(--ink);border-color:#3a4358}
-.chip.live{color:var(--mag);border-color:rgba(216,115,184,.55)}
-img.portrait{background:#0a0e20;object-fit:cover;display:block}
+.lab{color:var(--mut);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.96rem}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:4px 11px;border-radius:999px;font-size:.7rem;
+  font-weight:700;letter-spacing:.07em;border:1px solid var(--line);background:rgba(3,4,10,.42);color:var(--mut);white-space:nowrap}
+.chip.gold{color:var(--gold-hi);border-color:rgba(200,162,74,.6)}
+.chip.grn{color:var(--pos);border-color:rgba(67,201,138,.52)} .chip.red{color:var(--neg);border-color:rgba(228,101,101,.52)}
+.chip.amb{color:var(--amb);border-color:rgba(224,164,78,.52)} .chip.cyan{color:var(--cyan);border-color:rgba(114,199,220,.52)}
+.chip.vio{color:var(--vio);border-color:rgba(164,143,224,.52)} .chip.ink{color:var(--ink);border-color:#454d68}
+.chip.live{color:var(--mag);border-color:rgba(220,124,186,.58)}
+img.portrait{background:#090b18;object-fit:cover;display:block}
 
-/* ---------- sections: editorial headers, one idea each ---------- */
-.sec{margin:60px 0 0}
-.sec:first-child{margin-top:38px}
-.sec-head{display:flex;align-items:center;gap:16px;margin:0 0 12px}
-.sec-head .no{font-size:2.1rem;font-weight:900;color:var(--gold);line-height:1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
-.sec-head h3{margin:0;font-size:1.5rem;font-weight:800;letter-spacing:.01em;line-height:1.2}
-.sec-head .rule{flex:1;height:1px;background:var(--line)}
-.sec-sub{color:var(--mut);margin:0 0 28px;font-size:.98rem;max-width:58ch}
-.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--radius);
-  padding:30px;box-shadow:0 12px 32px rgba(0,0,0,.35)}
+/* ---------- reveal motion ---------- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s cubic-bezier(.19,.68,.22,1)}
+.reveal.in{opacity:1;transform:none}
 
-/* ---------- HERO ---------- */
-.hero{position:relative;overflow:hidden;border:1px solid var(--line-soft);border-top:none;
-  border-radius:0 0 20px 20px;background:linear-gradient(180deg,#141926 0%,#0c0f16 78%);padding:24px 22px 4px}
-.hero-top{position:relative;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:space-between}
-.livedot{display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.08em;font-size:.85rem}
-.livedot i{width:9px;height:9px;border-radius:50%;background:var(--pos);display:inline-block;animation:pulse 1.8s ease-in-out infinite}
-@keyframes pulse{50%{opacity:.3}}
-.hero .clock{font-size:.98rem;color:var(--mut)}
-.hero h1{position:relative;text-align:center;margin:26px 0 0;font-size:clamp(2.6rem,9vw,4.2rem);
-  letter-spacing:.14em;line-height:1.04;font-weight:900;color:#fff}
+/* ================= HERO — the title screen ================= */
+.hero{position:relative;min-height:100svh;overflow:hidden;isolation:isolate;
+  padding:max(18px,env(safe-area-inset-top)) 20px 16px;display:flex;
+  background:linear-gradient(180deg,#050611 0%,#03040a 72%,var(--bg) 100%)}
+#stars{position:absolute;inset:0;width:100%;height:100%;z-index:-3}
+.nebula{position:absolute;border-radius:50%;filter:blur(54px);pointer-events:none;z-index:-2;opacity:.62}
+.nebula.one{width:58vw;height:58vw;left:-22vw;top:-18vw;background:radial-gradient(circle,rgba(104,72,190,.42),transparent 66%);animation:nebulaDrift 24s ease-in-out infinite alternate}
+.nebula.two{width:52vw;height:52vw;right:-18vw;top:8vh;background:radial-gradient(circle,rgba(39,116,143,.36),transparent 66%);animation:nebulaDrift 30s ease-in-out infinite alternate-reverse}
+.nebula.three{width:44vw;height:44vw;left:30vw;bottom:-26vw;background:radial-gradient(circle,rgba(200,162,74,.20),transparent 68%);animation:nebulaDrift 27s ease-in-out infinite alternate}
+@keyframes nebulaDrift{from{transform:translate3d(-2%,-1%,0) scale(1)}to{transform:translate3d(4%,3%,0) scale(1.08)}}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:18svh;z-index:-1;
+  background:linear-gradient(180deg,transparent,rgba(3,4,10,.88));pointer-events:none}
+.hero-inner{position:relative;width:min(920px,100%);margin:0 auto;display:flex;flex-direction:column;align-items:center;min-height:calc(100svh - 34px)}
+.hero-top{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--mut);font-size:.82rem}
+.livedot{display:inline-flex;align-items:center;gap:9px;color:#fff;font-weight:800;letter-spacing:.18em;font-size:.76rem}
+.livedot i{width:9px;height:9px;border-radius:50%;background:var(--pos);box-shadow:0 0 16px var(--pos);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.28;transform:scale(.78)}}
+.hero .clock{font-size:.9rem;color:var(--mut)}
+.hero-main{margin:auto;text-align:center;display:flex;flex-direction:column;align-items:center;padding:30px 0 6px;width:100%}
+.hero-kicker{font-family:var(--serif);font-size:.68rem;font-weight:700;letter-spacing:.42em;color:var(--gold-hi);text-transform:uppercase;margin-bottom:14px}
+.hero h1{font-family:var(--serif);font-weight:900;font-size:clamp(2.62rem,12.4vw,6.7rem);line-height:.96;
+  letter-spacing:.075em;margin:0;color:#fff;text-shadow:0 8px 42px rgba(0,0,0,.72),0 0 34px rgba(200,162,74,.12);white-space:nowrap}
 .hero h1 .thin{color:var(--gold-hi)}
-.hero .tagline{position:relative;text-align:center;color:var(--mut);margin:10px 0 26px;font-size:1rem;letter-spacing:.02em}
-.bank-block{position:relative;margin:0 auto 24px;max-width:560px;text-align:center;
-  border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:20px 10px 18px}
-.bank-block .amt{font-size:clamp(2.2rem,8vw,3.2rem);color:var(--gold-hi);line-height:1.12;font-weight:800}
-.bank-block .mini{color:var(--mut);font-size:.92rem;margin-top:4px}
-/* draggable filmstrip + ticker */
-.strip{position:relative;overflow:hidden;border-top:1px solid var(--line-soft);
-  padding:14px 0;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.hero-rule{width:min(300px,68vw);height:1px;margin:20px auto 13px;background:linear-gradient(90deg,transparent,var(--gold),transparent);position:relative}
+.hero-rule::after{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:var(--gold-hi);transform:translate(-50%,-50%) rotate(45deg)}
+.hero-subtitle{font-family:var(--serif);font-size:clamp(.72rem,2.8vw,.94rem);font-weight:700;letter-spacing:.38em;color:#d9d2c0;text-transform:uppercase;margin:0}
+.hero-art{position:relative;width:min(72vw,340px);aspect-ratio:1;margin-top:4.2svh;will-change:transform}
+.aura{position:absolute;border-radius:50%;pointer-events:none;filter:blur(13px);mix-blend-mode:screen}
+.aura.one{inset:-10%;background:conic-gradient(from 12deg,transparent 0 10%,rgba(88,189,125,.72) 17%,transparent 29%,rgba(164,143,224,.78) 48%,transparent 61%,rgba(114,199,220,.72) 78%,transparent 91%);animation:auraSpin 27s linear infinite}
+.aura.two{inset:-19%;opacity:.46;background:conic-gradient(from 210deg,transparent 0 16%,rgba(114,199,220,.62) 25%,transparent 39%,rgba(88,189,125,.58) 57%,transparent 70%,rgba(164,143,224,.62) 84%,transparent 96%);animation:auraSpinReverse 41s linear infinite}
+@keyframes auraSpin{to{transform:rotate(360deg)}}
+@keyframes auraSpinReverse{to{transform:rotate(-360deg)}}
+.hero-frame{position:absolute;inset:0;border-radius:50%;padding:7px;
+  background:linear-gradient(145deg,#f7e19a 0%,#77591f 27%,#241b0c 49%,#eccd76 72%,#66501d 100%);
+  box-shadow:0 28px 70px rgba(0,0,0,.72),0 0 52px rgba(200,162,74,.20),inset 0 0 0 1px rgba(255,244,190,.55)}
+.hero-frame::before{content:"";position:absolute;inset:5px;border-radius:50%;border:1px solid rgba(240,212,138,.72);z-index:2;pointer-events:none}
+.hero-frame img{width:100%;height:100%;border-radius:50%;border:5px solid #070812;filter:saturate(1.06) contrast(1.04)}
+.hero-crown{position:absolute;left:50%;top:-29px;transform:translateX(-50%);z-index:3;font-family:var(--serif);
+  font-size:2rem;line-height:1;color:var(--gold-hi);text-shadow:0 4px 18px rgba(0,0,0,.85),0 0 20px rgba(240,212,138,.48)}
+.floor-glow{position:absolute;left:9%;right:9%;bottom:-39px;height:58px;border-radius:50%;
+  background:radial-gradient(ellipse,rgba(240,212,138,.34),rgba(88,189,125,.10) 48%,transparent 72%);filter:blur(11px);pointer-events:none}
+.hero-king{margin-top:43px;max-width:680px}
+.hero-king-name{font-family:var(--serif);font-size:clamp(1.42rem,6vw,2.25rem);font-weight:800;line-height:1.12;color:#fff}
+.hero-king-line{color:var(--mut);font-size:.92rem;margin-top:6px;overflow-wrap:anywhere}
+.hero-bank{margin-top:25px;text-align:center}
+.hero-bank .amt{font-family:var(--serif);font-size:clamp(2.55rem,12.8vw,4.6rem);font-weight:900;line-height:1.04;
+  color:var(--gold-hi);font-variant-numeric:tabular-nums;letter-spacing:.015em;text-shadow:0 8px 34px rgba(0,0,0,.66);white-space:nowrap}
+.hero-bank .mini{color:var(--mut);font-size:.9rem;margin-top:5px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(640px,100%);margin-top:22px;border-top:1px solid rgba(200,162,74,.22);border-bottom:1px solid rgba(200,162,74,.22)}
+.hero-stat{padding:13px 8px 12px;text-align:center;min-width:0}
+.hero-stat + .hero-stat{border-left:1px solid rgba(200,162,74,.16)}
+.hero-stat .v{font-family:var(--serif);font-size:clamp(1.05rem,4.6vw,1.5rem);font-weight:800;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hero-stat .l{color:var(--dim);font-size:.64rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
+.hero-ticker{width:100%;margin-top:auto}
+.scroll-cue{margin:15px auto 0;background:none;border:0;color:var(--gold-hi);cursor:pointer;padding:6px 12px 2px;
+  font-family:var(--serif);font-size:.68rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase}
+.scroll-cue::after{content:"";display:block;width:9px;height:9px;margin:7px auto 0;border-right:1.5px solid var(--gold-hi);border-bottom:1.5px solid var(--gold-hi);transform:rotate(45deg);animation:cueFloat 1.9s ease-in-out infinite}
+@keyframes cueFloat{50%{transform:translateY(4px) rotate(45deg);opacity:.55}}
+
+/* ---------- draggable strips ---------- */
+.strip{position:relative;overflow:hidden;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none}
 .strip.grabbing{cursor:grabbing}
 .strip img{-webkit-user-drag:none;user-drag:none;pointer-events:none}
-.mq-track{display:flex;gap:34px;width:max-content;will-change:transform}
-.mq-item{display:flex;align-items:center;gap:11px;min-width:max-content}
-.mq-item img{width:48px;height:48px;border-radius:50%;border:1px solid var(--line)}
-.mq-item .n{font-weight:700;line-height:1.25;font-size:.95rem}
-.mq-item .t{color:var(--mut);font-size:.78rem;line-height:1.25}
-.ticker{padding:12px 0 16px}
-.tk-track{display:flex;gap:42px;width:max-content;will-change:transform;font-size:.95rem}
+.strip .hint{position:absolute;right:2px;top:2px;color:var(--dim);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;z-index:2}
+.mq-track{display:flex;gap:38px;width:max-content;will-change:transform;padding:4px 2px}
+.mq-item{display:flex;align-items:center;gap:12px;min-width:max-content}
+.mq-item img{width:54px;height:54px;border-radius:50%;border:1px solid rgba(200,162,74,.48)}
+.mq-item .n{font-family:var(--serif);font-weight:700;line-height:1.25;font-size:.94rem}
+.mq-item .t{color:var(--mut);font-size:.76rem;line-height:1.25}
+.ticker{border-top:1px solid rgba(200,162,74,.18);padding:11px 0 2px}
+.tk-track{display:flex;gap:44px;width:max-content;will-change:transform;font-size:.9rem}
 .tk-item{white-space:nowrap;color:var(--mut)} .tk-item b{color:#fff;font-variant-numeric:tabular-nums}
 .tk-item .sep{color:var(--gold)}
-.strip .hint{position:absolute;right:2px;top:2px;color:var(--dim);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
 
-/* ---------- TABS — segmented control ---------- */
-.tabs{position:sticky;top:10px;z-index:50;display:flex;gap:4px;
-  background:rgba(13,16,23,.96);border:1px solid var(--line);border-radius:999px;padding:4px;margin-top:22px;
-  box-shadow:0 10px 26px rgba(0,0,0,.45)}
-.tab-btn{flex:1 1 0;min-height:46px;border-radius:999px;border:0;cursor:pointer;background:transparent;
-  color:var(--mut);font-size:.92rem;font-weight:700;font-family:inherit;padding:8px 4px;white-space:nowrap}
-.tab-btn.active{background:var(--surface2);color:#fff;box-shadow:inset 0 0 0 1px var(--line),inset 0 -2px 0 var(--gold)}
-.tabpage{display:none} .tabpage.active{display:block}
+/* ---------- navigation ---------- */
+.nav-shell{position:sticky;top:10px;z-index:70;width:min(920px,calc(100% - 24px));margin:14px auto 0}
+.tabs{display:flex;gap:4px;background:rgba(4,5,11,.9);border:1px solid #343a55;border-radius:999px;padding:5px;
+  box-shadow:0 16px 38px rgba(0,0,0,.52);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.tab-btn{flex:1 1 0;min-height:48px;border-radius:999px;border:0;cursor:pointer;background:transparent;color:var(--mut);
+  font-family:var(--serif);font-size:.74rem;font-weight:800;letter-spacing:.15em;padding:8px 3px;white-space:nowrap;text-transform:uppercase}
+.tab-btn.active{background:linear-gradient(180deg,rgba(200,162,74,.22),rgba(200,162,74,.08));color:var(--gold-hi);box-shadow:inset 0 0 0 1px rgba(200,162,74,.48)}
+.tabpage{display:none}.tabpage.active{display:block}
 
-/* ---------- PYRAMID — architectural steps, room to breathe ---------- */
-.tier{position:relative;margin:44px auto 0}
-.tier:first-child{margin-top:6px}
-.tier .tlab{display:flex;align-items:center;gap:16px;margin:0 0 22px;
-  color:var(--mut);font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;white-space:nowrap}
-.tier .tlab::before,.tier .tlab::after{content:"";flex:1;height:1px;background:var(--line-soft)}
-.tier-apex .tlab{color:var(--gold-hi)}
-.kingrow{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.kcard{background:var(--surface2);border:1px solid var(--line-soft);border-radius:16px;
-  padding:22px 18px;width:calc(50% - 10px);max-width:248px;text-align:center}
-.kcard .frame{aspect-ratio:1/1;border-radius:12px;overflow:hidden;border:1px solid var(--line);margin:0 auto;max-width:158px}
-.kcard .frame img{width:100%;height:100%}
-.kcard .cname{font-weight:800;font-size:1.02rem;margin-top:12px;line-height:1.3}
-.kcard .sname{color:var(--mut);font-size:.78rem;word-break:break-word;margin-top:2px}
-.kcard .rec{font-size:1.35rem;margin-top:8px}
-.kcard .roi{font-size:1.55rem;line-height:1.25}
-.kcard .rows{margin-top:10px;text-align:left;font-size:.88rem;color:var(--mut);line-height:1.55}
-.kcard .rows b{color:#fff;font-variant-numeric:tabular-nums}
-.kcard.grand{width:min(350px,94%);max-width:350px;padding:30px 24px;border:1px solid rgba(200,162,74,.6);
-  box-shadow:0 0 0 1px rgba(200,162,74,.25),0 16px 38px rgba(0,0,0,.5);background:#181c29}
-.kcard.grand .frame{max-width:208px;border-color:rgba(200,162,74,.6)}
-.kcard.grand .crown{font-size:1.5rem;line-height:1;color:var(--gold-hi)}
-.kcard.grand .roi{font-size:2.1rem}
-.ghost{border-style:dashed}
-.clash{text-align:center;color:var(--mag);font-weight:800;letter-spacing:.18em;font-size:.78rem;margin:0 0 20px}
-.workers{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
-.wchip{display:flex;align-items:center;gap:10px;background:var(--inset);border:1px solid var(--line-soft);
-  border-radius:14px;padding:8px 14px 8px 8px;max-width:100%}
-.wchip .thumb{width:44px;height:44px;border-radius:10px;overflow:hidden;flex:none}
-.wchip .thumb img{width:100%;height:100%}
-.wchip .n{font-weight:700;line-height:1.25;font-size:.93rem}.wchip .h{color:var(--mut);font-size:.79rem;line-height:1.35}
-.sdot{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none;display:inline-block;vertical-align:2px}
-.sdot.on{background:var(--pos)}
+/* ---------- page + editorial sections ---------- */
+.wrap{position:relative;z-index:2;width:min(920px,100%);margin:0 auto;padding:0 20px 84px}
+.sec{margin:74px 0 0}
+.sec:first-child{margin-top:44px}
+.sec-head{display:flex;align-items:center;gap:17px;margin:0 0 13px}
+.sec-head .no{font-family:var(--serif);font-size:2.35rem;font-weight:900;color:rgba(200,162,74,.78);line-height:1;font-variant-numeric:tabular-nums}
+.sec-head h3{font-family:var(--serif);margin:0;font-size:clamp(1.55rem,6vw,2.35rem);font-weight:800;letter-spacing:.035em;line-height:1.12;color:#fff}
+.sec-head .rule{flex:1;height:1px;background:linear-gradient(90deg,rgba(200,162,74,.55),rgba(200,162,74,.05))}
+.sec-sub{color:var(--mut);margin:0 0 30px;font-size:.98rem;max-width:64ch}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.026),rgba(255,255,255,0) 42%),var(--surface);
+  border:1px solid var(--line-soft);border-radius:var(--radius);padding:30px;box-shadow:0 18px 44px rgba(0,0,0,.36)}
 
-/* ---------- ACCORDIONS ---------- */
-.acc{border:1px solid var(--line-soft);border-radius:14px;background:var(--inset);margin:14px 0;overflow:hidden}
-.acc-h{width:100%;text-align:left;background:none;border:0;color:var(--ink);cursor:pointer;font-family:inherit;
-  font-size:.98rem;font-weight:700;padding:16px 18px;display:flex;gap:10px;align-items:center;justify-content:space-between}
-.acc-h .chev{color:var(--gold-hi);font-size:1.05rem;transition:transform .2s;flex:none}
-.acc.open .acc-h .chev{transform:rotate(90deg)}
-.acc-b{display:none;padding:6px 18px 18px;color:var(--mut)}
-.acc.open .acc-b{display:block}
-.acc-b b{color:#fff}
+/* ================= PYRAMID — a true triangle ================= */
+.pyramid-stage{position:relative;width:100%;max-width:880px;min-height:610px;margin:6px auto 0;isolation:isolate}
+.pyramid-stage::before{content:"";position:absolute;inset:0;z-index:-2;opacity:.5;
+  background-image:radial-gradient(rgba(190,205,255,.28) .7px,transparent .9px),radial-gradient(rgba(240,212,138,.20) .6px,transparent .8px);
+  background-size:53px 53px,79px 79px;background-position:8px 14px,29px 4px}
+.pyramid-outline{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible}
+.pyramid-outline polygon{fill:rgba(200,162,74,.045);stroke:rgba(200,162,74,.42);stroke-width:.45}
+.pyramid-outline .inner-line{stroke:rgba(200,162,74,.13);stroke-width:.28}
+.pyr-label{position:absolute;left:0;z-index:3;writing-mode:vertical-rl;transform:rotate(180deg);
+  font-family:var(--serif);font-size:.58rem;font-weight:800;letter-spacing:.3em;color:var(--dim);text-transform:uppercase;white-space:nowrap}
+.pyr-label.apex{top:13%}.pyr-label.rivals{top:43%}.pyr-label.challengers{top:65%}.pyr-label.foundation{top:84%}
+.pyr-node{text-align:center;min-width:0}
+.pyr-photo{border-radius:50%;overflow:hidden;margin:0 auto;background:#0a0d1c;border:2px solid var(--line);box-shadow:0 16px 34px rgba(0,0,0,.55)}
+.pyr-photo img{width:100%;height:100%}
+.pyr-apex{position:absolute;left:50%;top:2.5%;transform:translateX(-50%);width:46%;max-width:310px;z-index:4}
+.pyr-apex .pyr-photo{width:clamp(124px,38vw,196px);height:clamp(124px,38vw,196px);border:3px solid var(--gold);box-shadow:0 22px 48px rgba(0,0,0,.66),0 0 38px rgba(200,162,74,.24)}
+.pyr-apex .crown{font-family:var(--serif);font-size:1.65rem;line-height:1;color:var(--gold-hi);text-shadow:0 0 18px rgba(240,212,138,.5)}
+.pyr-apex .court{font-family:var(--serif);font-size:clamp(1.15rem,5vw,1.65rem);font-weight:900;line-height:1.12;margin-top:8px}
+.pyr-apex .title{color:var(--gold-hi);font-size:.84rem;font-weight:700}
+.pyr-apex .strategy{color:var(--dim);font-size:.66rem;line-height:1.35;overflow-wrap:anywhere;margin-top:3px}
+.pyr-apex .line{font-family:var(--serif);font-weight:800;font-size:1rem;margin-top:5px;font-variant-numeric:tabular-nums}
+.pyr-rivals{position:absolute;left:5%;right:5%;top:40.5%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;z-index:3}
+.pyr-rivals .pyr-photo{width:min(100%,112px);aspect-ratio:1;height:auto}
+.pyr-rivals .court{font-family:var(--serif);font-size:clamp(.66rem,2.8vw,.92rem);font-weight:800;line-height:1.15;margin-top:7px;overflow-wrap:anywhere}
+.pyr-rivals .line{color:var(--gold-hi);font-size:.78rem;font-weight:800;font-variant-numeric:tabular-nums;margin-top:1px}
+.pyr-rivals .record{color:var(--mut);font-size:.68rem;font-variant-numeric:tabular-nums}
+.pyr-challengers{position:absolute;left:11%;right:11%;top:65.5%;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;z-index:3}
+.pyr-challengers .pyr-photo{width:min(100%,62px);aspect-ratio:1;height:auto;border-style:dashed;filter:saturate(.72);opacity:.82}
+.pyr-challengers .cid{font-family:var(--serif);font-size:.53rem;font-weight:800;line-height:1.25;margin-top:5px;color:#d7cce8;overflow-wrap:anywhere}
+.pyr-challengers .roi{font-size:.62rem;color:var(--vio);font-weight:800;font-variant-numeric:tabular-nums}
+.pyr-foundation{position:absolute;left:2.5%;right:2.5%;top:84.5%;z-index:3;display:flex;justify-content:space-between;gap:5px;
+  padding:13px 6px 0;border-top:1px solid rgba(200,162,74,.42);background:linear-gradient(180deg,rgba(200,162,74,.055),transparent)}
+.pyr-foundation .worker{flex:1 1 0;min-width:0;text-align:center}
+.pyr-foundation .pyr-photo{width:min(100%,54px);aspect-ratio:1;height:auto;border-width:1px}
+.pyr-foundation .wname{font-size:.55rem;font-weight:700;line-height:1.2;color:var(--mut);margin-top:4px;overflow-wrap:anywhere}
+.status-dot{width:7px;height:7px;border-radius:50%;background:var(--dim);display:block;margin:4px auto 0}
+.status-dot.on{background:var(--pos);box-shadow:0 0 9px rgba(67,201,138,.75)}
 
-/* ---------- FIGHT PIT ---------- */
-.pit-stage{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line-soft);
-  background:#05060f;aspect-ratio:4/3}
-@media (min-width:720px){.pit-stage{aspect-ratio:16/9}}
+/* ================= CHARACTER ROSTER ================= */
+.roster{display:grid;grid-template-columns:1fr;gap:20px}
+.char-card{display:grid;grid-template-columns:150px minmax(0,1fr);gap:19px;min-height:218px;overflow:hidden;
+  background:linear-gradient(145deg,rgba(255,255,255,.026),rgba(255,255,255,0) 45%),var(--surface);
+  border:1px solid var(--line-soft);border-radius:24px;box-shadow:0 16px 38px rgba(0,0,0,.32)}
+.char-card.king{border-color:rgba(200,162,74,.38)}
+.char-photo{position:relative;min-height:218px;overflow:hidden;background:#090b18}
+.char-photo img{position:absolute;inset:0;width:100%;height:100%}
+.char-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 58%,rgba(12,15,26,.52));pointer-events:none}
+.char-body{padding:21px 21px 19px 0;min-width:0}
+.char-role{font-family:var(--serif);color:var(--gold-hi);font-size:.68rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.char-name{font-family:var(--serif);font-size:clamp(1.35rem,5vw,1.85rem);font-weight:900;line-height:1.08;margin-top:4px;color:#fff}
+.char-headline{color:var(--mut);font-size:.91rem;line-height:1.45;margin-top:6px;overflow-wrap:anywhere}
+.data-rows{margin-top:14px;border-top:1px solid var(--line-faint)}
+.data-row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:6px 0;border-bottom:1px solid var(--line-faint)}
+.data-row span{color:var(--dim);font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap}
+.data-row b{color:#fff;font-size:.9rem;text-align:right;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+@media (min-width:780px){.roster{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* ================= ARENA — letterbox cinema ================= */
+.cinema{width:100vw;margin-left:calc(50% - 50vw);background:#000;border-top:1px solid rgba(200,162,74,.28);border-bottom:1px solid rgba(200,162,74,.28);box-shadow:0 28px 70px rgba(0,0,0,.5)}
+.cinema-bar{height:clamp(25px,5vw,46px);background:#000;display:flex;align-items:center;justify-content:center}
+.cinema-bar span{display:block;width:72px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:.62}
+.pit-stage{position:relative;overflow:hidden;background:#03040a;aspect-ratio:16/10}
+@media (min-width:760px){.pit-stage{aspect-ratio:21/9}}
 #gl{position:absolute;inset:0;width:100%;height:100%;display:block}
-.pit-fallback{position:absolute;inset:0;display:none;overflow:hidden;
-  background:radial-gradient(90% 90% at 50% 0%,#171d33 0%,#0a0d18 60%,#05060f 100%)}
+.cinema-grain,.cinema-vignette{position:absolute;inset:0;pointer-events:none;z-index:4}
+.cinema-grain{opacity:.08;mix-blend-mode:screen;background-image:radial-gradient(rgba(255,255,255,.22) .55px,transparent .8px);background-size:5px 5px}
+.cinema-vignette{background:radial-gradient(ellipse at center,transparent 48%,rgba(0,0,0,.38) 76%,rgba(0,0,0,.78) 100%)}
+.pit-fallback{position:absolute;inset:0;display:none;overflow:hidden;background:radial-gradient(90% 90% at 50% 0%,#171d33 0%,#090c18 58%,#020308 100%)}
 .pit-fallback .floor{position:absolute;left:-10%;right:-10%;bottom:-12%;height:46%;
-  background:repeating-linear-gradient(90deg,rgba(111,195,216,.12) 0 2px,transparent 2px 64px),
-             repeating-linear-gradient(0deg,rgba(111,195,216,.1) 0 2px,transparent 2px 34px);
+  background:repeating-linear-gradient(90deg,rgba(200,162,74,.10) 0 2px,transparent 2px 64px),repeating-linear-gradient(0deg,rgba(114,199,220,.09) 0 2px,transparent 2px 34px);
   transform:perspective(420px) rotateX(58deg);transform-origin:bottom}
-.fighter{position:absolute;bottom:16%;width:118px;text-align:center;transition:transform .18s ease}
-.fighter .frame{aspect-ratio:1/1;border-radius:12px;overflow:hidden;border:2px solid var(--line);box-shadow:0 18px 24px rgba(0,0,0,.6)}
+.fighter{position:absolute;bottom:15%;width:clamp(94px,25vw,154px);text-align:center;transition:transform .18s ease;z-index:2}
+.fighter .frame{aspect-ratio:1/1;border-radius:50%;overflow:hidden;border:2px solid var(--gold);box-shadow:0 20px 32px rgba(0,0,0,.68),0 0 24px rgba(200,162,74,.16)}
 .fighter .frame img{width:100%;height:100%}
-.fighter .hp{height:11px;background:#0a0d1e;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:7px}
+.fighter .hp{height:11px;background:#070812;border:1px solid var(--line);border-radius:6px;overflow:hidden;margin-top:8px}
 .fighter .hp i{display:block;height:100%;background:linear-gradient(90deg,var(--pos),var(--cyan));transition:width .5s}
-.fighter .fn{font-weight:700;font-size:.84rem;margin-top:5px;line-height:1.25}
+.fighter .fn{font-family:var(--serif);font-weight:700;font-size:.78rem;margin-top:6px;line-height:1.25;text-shadow:0 2px 8px #000}
 .fighter.left{left:7%}.fighter.right{right:7%}
 .fighter.lunge-l{transform:translateX(52px) scale(1.08)} .fighter.lunge-r{transform:translateX(-52px) scale(1.08)}
 .fighter.hit{filter:brightness(2.1)} .fighter.recoil-l{transform:translateX(-20px) scale(.95)}
 .fighter.recoil-r{transform:translateX(20px) scale(.95)}
-.dmg{position:absolute;font-weight:900;color:var(--gold-hi);text-shadow:0 2px 8px #000;pointer-events:none;z-index:6;
-  animation:dmgfly 1s ease-out forwards;font-variant-numeric:tabular-nums}
+.dmg{position:absolute;font-family:var(--serif);font-weight:900;color:var(--gold-hi);text-shadow:0 2px 8px #000;pointer-events:none;z-index:6;animation:dmgfly 1s ease-out forwards;font-variant-numeric:tabular-nums}
 @keyframes dmgfly{to{transform:translateY(-72px);opacity:0}}
-.pit-banner{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:5;display:none;
-  background:rgba(10,12,17,.95);border:1px solid rgba(200,162,74,.65);color:var(--gold-hi);font-weight:800;
-  letter-spacing:.14em;padding:8px 22px;border-radius:999px;font-size:1.05rem;white-space:nowrap}
-.pit-caption{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between;margin-top:18px;font-size:.97rem;color:var(--mut)}
+.pit-banner{position:absolute;top:11%;left:50%;transform:translateX(-50%);z-index:7;display:none;background:rgba(2,3,7,.94);
+  border:1px solid rgba(200,162,74,.72);color:var(--gold-hi);font-family:var(--serif);font-weight:900;letter-spacing:.18em;
+  padding:9px 24px;border-radius:999px;font-size:clamp(.9rem,3.6vw,1.15rem);white-space:nowrap;box-shadow:0 14px 34px rgba(0,0,0,.55)}
+.pit-caption{margin-top:20px;text-align:center;font-family:var(--serif);display:flex;flex-direction:column;gap:5px;align-items:center;color:var(--mut);font-size:.92rem}
 .pit-caption b{color:#fff;font-variant-numeric:tabular-nums}
+.pit-caption .versus{color:var(--gold);font-size:.68rem;letter-spacing:.34em;font-weight:800}
 
-/* ---------- TOP 3 — the live board ---------- */
-.board-head{display:flex;gap:12px 16px;align-items:baseline;flex-wrap:wrap;margin:0 0 24px}
-.board-head .kick{color:var(--gold-hi);font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
-.board-head h4{margin:2px 0 0;font-size:1.9rem;font-weight:900;line-height:1.15;letter-spacing:-.01em}
+/* ================= BETS — match cards ================= */
+.board-head{display:flex;gap:12px 16px;align-items:flex-end;flex-wrap:wrap;margin:0 0 25px}
+.board-head .kick{color:var(--gold-hi);font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase}
+.board-head h4{font-family:var(--serif);margin:3px 0 0;font-size:clamp(1.9rem,7vw,2.7rem);font-weight:900;line-height:1.05}
 .board-head .meta{margin-left:auto;color:var(--mut);font-size:.92rem}
-.t3grid{display:grid;grid-template-columns:1fr;gap:22px}
-@media (min-width:920px){.t3grid{grid-template-columns:repeat(3,1fr)}}
-.t3card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);
-  padding:28px 26px;position:relative;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.35)}
-.t3card .ghostno{position:absolute;top:2px;right:18px;font-size:3.6rem;font-weight:900;line-height:1;
-  color:rgba(200,162,74,.13);font-variant-numeric:tabular-nums;pointer-events:none}
-.t3card .kind{color:var(--gold-hi);font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
-.t3card .game{font-weight:800;font-size:1.34rem;line-height:1.3;margin:12px 0 6px}
-.t3card .pickline{font-size:1.06rem;color:var(--mut)}
-.t3card .pickline b{color:#fff;font-size:1.14rem}
-.t3card .meta{display:flex;gap:8px 22px;flex-wrap:wrap;margin-top:16px;color:var(--mut);font-size:.95rem}
-.t3card .meta b{color:#fff;font-variant-numeric:tabular-nums}
-.t3state{margin-top:22px;border-top:1px solid var(--line-soft);padding-top:18px;
-  display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:38px}
-.t3state .when{color:var(--mut);font-size:.95rem}
-.livepulse{width:11px;height:11px;border-radius:50%;background:var(--mag);flex:none;animation:pulse 1.4s ease-in-out infinite}
-.livetxt{font-weight:800;letter-spacing:.14em;color:var(--mag);font-size:.92rem}
-.t3score{font-size:1.75rem;font-weight:800;color:#fff;font-variant-numeric:tabular-nums;line-height:1.1}
-.t3pnl{font-size:1.3rem}
-.usermark{margin-top:18px;border:1px dashed rgba(200,162,74,.55);border-radius:12px;
-  padding:11px 15px;font-size:.95rem;background:rgba(200,162,74,.05);color:var(--ink)}
-.usermark .lab{color:var(--gold-hi)}
-.usermark b{font-variant-numeric:tabular-nums}
+.t3grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media (min-width:900px){.t3grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.t3card{padding:24px 21px}.teams{font-size:1.28rem!important}}
+.t3card{background:linear-gradient(160deg,rgba(200,162,74,.055),transparent 38%),var(--surface);border:1px solid var(--line);border-radius:26px;
+  padding:30px 27px;position:relative;overflow:hidden;box-shadow:0 18px 42px rgba(0,0,0,.36)}
+.t3card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.72}
+.t3-top{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.t3card .kind{color:var(--gold-hi);font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.rank{font-family:var(--serif);color:rgba(200,162,74,.22);font-size:3.15rem;font-weight:900;line-height:.85;font-variant-numeric:tabular-nums}
+.teams{font-family:var(--serif);font-weight:800;font-size:clamp(1.42rem,6.2vw,2rem);line-height:1.16;margin:20px 0 0;color:#fff}
+.teams .team{display:block}
+.teams .vs{display:flex;align-items:center;gap:12px;color:var(--gold);font-size:.64rem;letter-spacing:.32em;margin:8px 0;font-weight:800}
+.teams .vs::before,.teams .vs::after{content:"";height:1px;flex:1;background:rgba(200,162,74,.28)}
+.pick-callout{margin-top:21px;padding:16px 18px;background:rgba(200,162,74,.055);border-left:3px solid var(--gold)}
+.pick-callout .lab{color:var(--gold-hi)}
+.pick-callout .pick{font-size:1.32rem;font-weight:800;line-height:1.25;margin-top:3px;color:#fff}
+.t3chips{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.data-chip{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--mut);font-size:.84rem;background:rgba(3,4,10,.28)}
+.data-chip b{color:#fff;font-variant-numeric:tabular-nums}
+.t3state{margin-top:23px;border-top:1px solid var(--line-soft);padding-top:19px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;min-height:52px}
+.t3state .when{color:var(--mut);font-size:.94rem}
+.livepulse{width:11px;height:11px;border-radius:50%;background:var(--mag);box-shadow:0 0 14px rgba(220,124,186,.8);flex:none;animation:pulse 1.4s ease-in-out infinite}
+.livetxt{font-family:var(--serif);font-weight:900;letter-spacing:.16em;color:var(--mag);font-size:.9rem}
+.t3score{font-family:var(--serif);font-size:1.72rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1.1}
+.t3pnl{font-size:1.28rem}
+.usermark{margin-top:18px;border:1px dashed rgba(200,162,74,.55);border-radius:14px;padding:12px 15px;font-size:.94rem;background:rgba(200,162,74,.05);color:var(--ink)}
+.usermark .lab{color:var(--gold-hi)} .usermark b{font-variant-numeric:tabular-nums}
 
-/* ---------- BANKROLL / RECORD / ARCHIVE ---------- */
+/* ---------- bankroll / record / archive ---------- */
 .bank-card{text-align:center}
-.bank-amt{font-size:clamp(2.7rem,9vw,4.1rem);color:var(--gold-hi);line-height:1.08;font-weight:800}
-.bank-since{color:var(--mut);margin:10px auto 0;font-size:.96rem;max-width:52ch}
-.bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:26px;text-align:center}
+.bank-amt{font-family:var(--serif);font-size:clamp(2.45rem,10vw,4.35rem);color:var(--gold-hi);line-height:1.05;font-weight:900;white-space:nowrap}
+.bank-since{color:var(--mut);margin:11px auto 0;font-size:.96rem;max-width:54ch}
+.bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:14px;margin-top:27px;text-align:center}
 .bank-note{color:var(--dim);font-size:.88rem;margin:22px 0 0}
-.stat{background:var(--inset);border:1px solid var(--line-soft);border-radius:14px;padding:18px 14px;text-align:center}
-.stat .v{font-size:1.5rem;margin-top:3px}
-.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
-.arch-slip{margin-top:36px}
-.arch-slip:first-child{margin-top:28px}
-.arch-head{display:flex;gap:10px 14px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
-.arch-head b{font-size:1.2rem}
-.arch-head .n{color:var(--mut);font-size:.92rem;margin-left:auto}
-.arow{display:flex;gap:9px 12px;flex-wrap:wrap;align-items:center;background:var(--inset);
-  border:1px solid var(--line-soft);border-radius:12px;padding:13px 16px;margin:10px 0}
-.arow .g{font-weight:700;flex:1 1 230px;line-height:1.4}
-.arow .p{color:var(--mut)} .arow .p b{color:#fff}
-.arow .score{font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
+.stat{background:var(--inset);border:1px solid var(--line-soft);border-radius:16px;padding:19px 14px;text-align:center}
+.stat .v{font-family:var(--serif);font-size:1.42rem;margin-top:4px}
+.rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px}
+.arch-slip{margin-top:38px}.arch-slip:first-child{margin-top:28px}
+.arch-head{display:flex;gap:10px 14px;align-items:baseline;flex-wrap:wrap;margin-bottom:7px}
+.arch-head b{font-family:var(--serif);font-size:1.22rem}.arch-head .n{color:var(--mut);font-size:.92rem;margin-left:auto}
+.arow,.betrow{display:flex;gap:9px 12px;flex-wrap:wrap;align-items:center;background:var(--inset);border:1px solid var(--line-soft);border-radius:14px;padding:14px 16px;margin:10px 0}
+.arow .g,.betrow .g{font-weight:700;flex:1 1 230px;line-height:1.4}
+.arow .p,.betrow .p{color:var(--mut)} .arow .p b,.betrow .p b{color:#fff}
+.arow .score,.betrow .score{font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
 .arow .umark{flex-basis:100%;color:var(--gold-hi);font-size:.88rem}
-.betrow{display:flex;gap:9px;flex-wrap:wrap;align-items:center;background:var(--inset);border:1px solid var(--line-soft);
-  border-radius:12px;padding:12px 14px;margin:9px 0}
-.betrow .g{font-weight:700;flex:1 1 230px;line-height:1.4}
-.betrow .p{color:var(--mut)} .betrow .p b{color:#fff}
-.betrow .score{font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
 table.games{width:100%;border-collapse:collapse;font-size:.93rem}
 table.games td,table.games th{padding:8px;border-bottom:1px solid var(--line-soft);text-align:left;vertical-align:top}
-table.games th{color:var(--mut);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+table.games th{color:var(--mut);font-size:.7rem;letter-spacing:.09em;text-transform:uppercase}
 table.games .sc{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
 
-/* ---------- WAR ROOM ---------- */
-.findrow{background:var(--inset);border:1px solid var(--line-soft);border-radius:14px;padding:17px 19px;margin:12px 0}
-.findrow .fh{display:flex;gap:9px;flex-wrap:wrap;align-items:center}
-.findrow .vd{color:var(--mut);margin-top:6px}
-.agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:16px}
-.acard{background:var(--inset);border:1px solid var(--line-soft);border-radius:16px;padding:18px;display:flex;gap:14px}
-.acard .thumb{width:64px;height:64px;border-radius:11px;overflow:hidden;flex:none}
-.acard .thumb img{width:100%;height:100%}
-.acard .n{font-weight:800;display:flex;gap:8px;align-items:center}
-.acard .r{color:var(--mut);font-size:.85rem;line-height:1.4}
-.acard .h{margin-top:6px;font-size:.93rem}
-.acard .la{color:var(--dim);font-size:.79rem;margin-top:4px}
-.river .ritem{display:flex;gap:14px;padding:16px 4px;border-bottom:1px solid var(--line-soft)}
-.river .ritem .thumb{width:44px;height:44px;border-radius:10px;overflow:hidden;flex:none}
-.river .ritem .thumb img{width:100%;height:100%}
-.river .tt{font-weight:700}
-.river .sm{color:var(--mut);font-size:.92rem}
-.river .when{color:var(--dim);font-size:.79rem;white-space:nowrap;margin-left:auto}
+/* ---------- accordions ---------- */
+.acc{border:1px solid var(--line-soft);border-radius:15px;background:var(--inset);margin:14px 0;overflow:hidden}
+.acc-h{width:100%;text-align:left;background:none;border:0;color:var(--ink);cursor:pointer;font-size:.97rem;font-weight:700;padding:17px 19px;display:flex;gap:10px;align-items:center;justify-content:space-between}
+.acc-h .chev{color:var(--gold-hi);font-size:1.05rem;transition:transform .2s;flex:none}
+.acc.open .acc-h .chev{transform:rotate(90deg)}
+.acc-b{display:none;padding:6px 19px 19px;color:var(--mut)} .acc.open .acc-b{display:block}.acc-b b{color:#fff}
 
-/* ---------- VAULT ---------- */
-.vault-big{font-size:clamp(3rem,10vw,4.6rem);text-align:center;color:#fff;line-height:1.05;font-weight:800}
-.countdown{text-align:center;font-size:1.35rem;color:var(--cyan)}
-footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:64px;line-height:1.7}
+/* ---------- war room ---------- */
+.procession{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);padding:17px 0}
+.agents{display:grid;grid-template-columns:repeat(auto-fill,minmax(258px,1fr));gap:17px}
+.acard{background:var(--inset);border:1px solid var(--line-soft);border-radius:18px;padding:19px;display:flex;gap:15px}
+.acard .thumb{width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;border:1px solid rgba(200,162,74,.35)}
+.acard .thumb img{width:100%;height:100%}
+.acard .n{font-family:var(--serif);font-weight:800;display:flex;gap:8px;align-items:center}
+.acard .r{color:var(--mut);font-size:.85rem;line-height:1.4}.acard .h{margin-top:6px;font-size:.93rem}.acard .la{color:var(--dim);font-size:.79rem;margin-top:4px}
+.sdot{width:8px;height:8px;border-radius:50%;background:var(--dim);flex:none;display:inline-block;vertical-align:2px}.sdot.on{background:var(--pos);box-shadow:0 0 8px rgba(67,201,138,.7)}
+.findrow{background:var(--inset);border:1px solid var(--line-soft);border-radius:15px;padding:18px 20px;margin:12px 0}
+.findrow .fh{display:flex;gap:9px;flex-wrap:wrap;align-items:center}.findrow .vd{color:var(--mut);margin-top:6px}
+.river .ritem{display:flex;gap:15px;padding:17px 4px;border-bottom:1px solid var(--line-soft)}
+.river .ritem .thumb{width:46px;height:46px;border-radius:50%;overflow:hidden;flex:none;border:1px solid var(--line)}
+.river .ritem .thumb img{width:100%;height:100%}
+.river .tt{font-weight:700}.river .sm{color:var(--mut);font-size:.92rem}.river .when{color:var(--dim);font-size:.79rem;white-space:nowrap;margin-left:auto}
+
+/* ---------- vault ---------- */
+.vault-hero{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:42px;align-items:center}
+.vault-art{position:relative;width:min(72vw,320px);aspect-ratio:1;margin:0 auto}
+.vault-art .frame{position:absolute;inset:0;border-radius:50%;padding:7px;background:linear-gradient(145deg,#e8e2d2,#5d6474 30%,#171a26 52%,#c8a24a 76%,#4b5265);box-shadow:0 24px 54px rgba(0,0,0,.6)}
+.vault-art img{width:100%;height:100%;border-radius:50%;border:5px solid #070812}
+.vault-main{text-align:left;min-width:0}
+.vault-big{font-family:var(--serif);font-size:clamp(4.2rem,17vw,7.2rem);text-align:left;color:#fff;line-height:.98;font-weight:900;font-variant-numeric:tabular-nums}
+.countdown{font-family:var(--serif);font-size:clamp(1.25rem,5vw,1.65rem);color:var(--gold-hi);font-weight:800;margin-top:20px;font-variant-numeric:tabular-nums}
+.vault-main .sub{text-align:left}
+footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:68px;line-height:1.7}
+footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
+
+@media (max-width:700px){
+  .vault-hero{grid-template-columns:1fr;gap:30px}.vault-main{text-align:center}.vault-big{text-align:center}.vault-main .sub{text-align:center}
+}
 @media (max-width:640px){
-  .wrap{padding:0 16px 56px}
-  .sec{margin-top:48px}
-  .sec:first-child{margin-top:30px}
-  .card{padding:24px 20px}
-  .tab-btn{font-size:.83rem}
-  .fighter{width:96px}
-  .t3card{padding:24px 20px}
-  .hero{padding:20px 16px 2px}
+  .wrap{padding:0 16px 62px}.sec{margin-top:52px}.sec:first-child{margin-top:34px}.card{padding:25px 21px}
+  .tab-btn{font-size:.61rem;letter-spacing:.08em}.hero{padding-left:16px;padding-right:16px}
+  .hero-top .chip{display:none}.hero-art{width:min(74vw,320px)}
+  .pyramid-stage{min-height:590px}.pyr-rivals{left:3.5%;right:3.5%;gap:6px}.pyr-challengers{left:8%;right:8%;gap:4px}
+  .char-card{grid-template-columns:140px minmax(0,1fr);gap:13px;min-height:204px}.char-photo{min-height:204px}.char-body{padding:17px 15px 16px 0}
+  .char-name{font-size:1.28rem}.data-row{gap:9px}.data-row b{font-size:.84rem}
+  .fighter{width:96px}.t3card{padding:25px 21px}
 }
 @media (prefers-reduced-motion:reduce){
-  .livedot i,.livepulse{animation:none!important}
+  html{scroll-behavior:auto}
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .livedot i,.livepulse,.aura,.nebula,.scroll-cue::after{animation:none!important}
   .fighter,.fighter .hp i{transition:none}
 }
 </style>
 </head>
 <body>
 <canvas id="fx"></canvas>
-<div class="wrap">
 
-  <header class="hero">
+<header class="hero" id="hero">
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="nebula one"></div><div class="nebula two"></div><div class="nebula three"></div>
+  <div class="hero-inner">
     <div class="hero-top">
       <span class="livedot"><i></i>LIVE</span>
       <span class="clock num" id="clock">—</span>
       <span class="chip" id="updated">Regina · loading…</span>
     </div>
-    <h1>SLIP <span class="thin">SELECT</span></h1>
-    <p class="tagline">The Living Court — five kings, one crown, and an army of hunters that never sleeps.</p>
-    <div class="bank-block">
-      <div class="lab">Grand Bankroll</div>
-      <div class="amt num" id="hero-bank">—</div>
-      <div class="mini" id="hero-bank-mini">the reset counter — every called bet moves it</div>
+    <div class="hero-main">
+      <div class="hero-kicker">A private court of kings &amp; hunters</div>
+      <h1>SLIP <span class="thin">SELECT</span></h1>
+      <div class="hero-rule"></div>
+      <p class="hero-subtitle">The Living Court</p>
+      <div class="hero-art" id="hero-art">
+        <div class="aura one"></div><div class="aura two"></div>
+        <div class="hero-crown">♛</div>
+        <div class="hero-frame"><img id="hero-portrait" src="assets/regime.jpg" alt="The grand king"></div>
+        <div class="floor-glow"></div>
+      </div>
+      <div class="hero-king">
+        <div class="hero-king-name" id="hero-king-name">The Grand King</div>
+        <div class="hero-king-line" id="hero-king-line">The court is taking its seats…</div>
+      </div>
+      <div class="hero-bank">
+        <div class="lab">Grand Bankroll</div>
+        <div class="amt" id="hero-bank">—</div>
+        <div class="mini" id="hero-bank-mini">The reset counter — every one of your graded bets moves it.</div>
+      </div>
+      <div class="hero-stats" aria-label="Bankroll summary">
+        <div class="hero-stat"><div class="v" id="hero-earned">—</div><div class="l">Earned</div></div>
+        <div class="hero-stat"><div class="v" id="hero-record">—</div><div class="l">Record</div></div>
+        <div class="hero-stat"><div class="v" id="hero-winrate">—</div><div class="l">Win rate</div></div>
+      </div>
     </div>
-    <div class="strip" id="mq"><span class="hint">drag</span><div class="mq-track" id="mq-track"></div></div>
-    <div class="strip ticker" id="tk"><div class="tk-track" id="tk-track"></div></div>
-  </header>
+    <div class="strip ticker hero-ticker" id="tk"><div class="tk-track" id="tk-track"></div></div>
+    <button class="scroll-cue" id="scroll-cue" type="button">Enter the Court</button>
+  </div>
+</header>
 
-  <nav class="tabs" id="tabs">
-    <button class="tab-btn active" data-tab="court">The Court</button>
-    <button class="tab-btn" data-tab="bets">Top 3 &amp; Bets</button>
+<div class="nav-shell">
+  <nav class="tabs" id="tabs" aria-label="Site sections">
+    <button class="tab-btn active" data-tab="court">Court</button>
+    <button class="tab-btn" data-tab="bets">Bets</button>
     <button class="tab-btn" data-tab="war">War Room</button>
-    <button class="tab-btn" data-tab="vault">Vault &amp; Slips</button>
+    <button class="tab-btn" data-tab="vault">Vault</button>
   </nav>
+</div>
 
+<div class="wrap">
   <section class="tabpage active" id="page-court">
-    <div class="sec">
+    <div class="sec reveal">
       <div class="sec-head"><span class="no">01</span><h3>Pyramid of Power</h3><span class="rule"></span></div>
-      <p class="sec-sub">Who rules, who challenges, who works. The apex is the grand king — his pick goes on every slip card. Below him, the four rival kings, the ghost challengers rising from the loss autopsies, and the worker army that feeds them all.</p>
-      <div id="pyr-tiers"></div>
+      <p class="sec-sub">One throne, four rivals, the ghosts rising beneath them, and the worker army holding the base. The shape is the hierarchy — read it at a glance.</p>
+      <div class="pyramid-stage" id="pyr-tiers"></div>
     </div>
-    <div class="sec">
-      <div class="sec-head"><span class="no">02</span><h3>The Fight Pit — Live 3D Arena</h3><span class="rule"></span></div>
-      <p class="sec-sub" id="pit-sub">The newest real challenge in the system, fought by the characters themselves — full 3D bodies, real attack animations — inside a 3D colosseum. Verdicts come from the record: CROWNED means a crown actually changed hands.</p>
-      <div class="pit-stage" id="pit-stage">
-        <canvas id="gl"></canvas>
-        <div class="pit-fallback" id="pit-css">
-          <div class="floor"></div>
-          <div class="fighter left" id="f-left"></div>
-          <div class="fighter right" id="f-right"></div>
+
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">02</span><h3>The Court Roster</h3><span class="rule"></span></div>
+      <p class="sec-sub">Every crown and every worker at full scale — the characters who pick, challenge, hunt, audit and guard the vault.</p>
+      <div class="roster" id="roster"></div>
+    </div>
+
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">03</span><h3>The Fight Pit</h3><span class="rule"></span></div>
+      <p class="sec-sub" id="pit-sub">The newest real challenge in the system, fought by the characters themselves — full 3D bodies and real attack animations inside the colosseum. Verdicts come from the record: CROWNED means a crown actually changed hands.</p>
+      <div class="cinema">
+        <div class="cinema-bar"><span></span></div>
+        <div class="pit-stage" id="pit-stage">
+          <canvas id="gl"></canvas>
+          <div class="pit-fallback" id="pit-css">
+            <div class="floor"></div>
+            <div class="fighter left" id="f-left"></div>
+            <div class="fighter right" id="f-right"></div>
+          </div>
+          <div class="cinema-grain"></div><div class="cinema-vignette"></div>
+          <div class="pit-banner" id="pit-banner"></div>
         </div>
-        <div class="pit-banner" id="pit-banner"></div>
+        <div class="cinema-bar"><span></span></div>
       </div>
       <div class="pit-caption" id="pit-caption">Warming up the arena…</div>
     </div>
   </section>
 
   <section class="tabpage" id="page-bets">
-    <div class="sec">
-      <div class="sec-head"><span class="no">01</span><h3>The Top 3 — The Live Board</h3><span class="rule"></span></div>
-      <p class="sec-sub">The king's three called bets on the newest slip — a cap of three, never a quota. These cards ARE the board: each one carries its own state, upcoming, live, or final with the score and the money on it.</p>
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">01</span><h3>The Top 3</h3><span class="rule"></span></div>
+      <p class="sec-sub">The king's three called bets on the newest slip — a cap of three, never a quota. These match cards are the live board: each carries its own state, score and money.</p>
       <div id="board"></div>
     </div>
-    <div class="sec">
+    <div class="sec reveal">
       <div class="sec-head"><span class="no">02</span><h3>Grand Bankroll</h3><span class="rule"></span></div>
       <div class="card bank-card">
         <div class="lab">The reset counter</div>
@@ -327,7 +449,7 @@ footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:64px;line-
         <p class="bank-note">Stakes still out are not listed twice — they ride on the Top 3 cards above, each showing its own live state.</p>
       </div>
     </div>
-    <div class="sec">
+    <div class="sec reveal">
       <div class="sec-head"><span class="no">03</span><h3>The Record</h3><span class="rule"></span></div>
       <p class="sec-sub">Lifetime lines from actual delivered slips — these never reset — then every past slip's called bets, settled and done. History, not a second live board.</p>
       <div class="rec-grid" id="rec-grid"></div>
@@ -336,744 +458,59 @@ footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:64px;line-
   </section>
 
   <section class="tabpage" id="page-war">
-    <div class="sec">
-      <div class="sec-head"><span class="no">01</span><h3>The Agent Network</h3><span class="rule"></span></div>
-      <p class="sec-sub">The machine behind the crown — eleven workers on standing orders. A green light means its log moved in the last 90 minutes.</p>
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">01</span><h3>The Court Procession</h3><span class="rule"></span></div>
+      <p class="sec-sub">Take hold of the procession and slide it yourself. Release it, and the court resumes its march.</p>
+      <div class="procession"><div class="strip" id="mq"><span class="hint">drag</span><div class="mq-track" id="mq-track"></div></div></div>
+    </div>
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">02</span><h3>The Agent Network</h3><span class="rule"></span></div>
+      <p class="sec-sub">The machine behind the crown — workers on standing orders. A green light means its log moved in the last 90 minutes.</p>
       <div class="agents" id="agents"></div>
     </div>
-    <div class="sec">
-      <div class="sec-head"><span class="no">02</span><h3>The Stakehunter — Sizing Findings</h3><span class="rule"></span></div>
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">03</span><h3>The Stakehunter</h3><span class="rule"></span></div>
       <p class="sec-sub">The goblin banker hunts stake-sizing rules on the side. Walled off: proposals only — the kings and the flat-25m scoreboard are never touched.</p>
       <div id="stakehunter"></div>
     </div>
-    <div class="sec">
-      <div class="sec-head"><span class="no">03</span><h3>Autopsy Challengers</h3><span class="rule"></span></div>
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">04</span><h3>Autopsy Challengers</h3><span class="rule"></span></div>
       <p class="sec-sub">Rules invented from the kings' own losses that already clear the crowning gate on the fitted set. Challengers, not kings — the December 1 vault opening judges them blind.</p>
       <div id="challengers"></div>
     </div>
-    <div class="sec">
-      <div class="sec-head"><span class="no">04</span><h3>Activity River</h3><span class="rule"></span></div>
+    <div class="sec reveal">
+      <div class="sec-head"><span class="no">05</span><h3>Activity River</h3><span class="rule"></span></div>
       <p class="sec-sub">The newest generations, cycles and filings across every log in the system.</p>
       <div class="river" id="river"></div>
     </div>
   </section>
 
   <section class="tabpage" id="page-vault">
-    <div class="sec">
+    <div class="sec reveal">
       <div class="sec-head"><span class="no">01</span><h3>The Vault</h3><span class="rule"></span></div>
-      <p class="sec-sub" style="margin-left:auto;margin-right:auto;text-align:center">Sealed games the kings have never trained on — opened December 1, when the blind line decides who really rules.</p>
-      <div class="card">
-        <div class="vault-big num" id="vault-count">—</div>
-        <p class="sub" style="text-align:center">graded games sealed inside</p>
-        <div class="countdown num" id="vault-cd">—</div>
-        <p class="sub" style="text-align:center;margin:6px 0 0" id="vault-next">until the first opening</p>
+      <p class="sec-sub">Sealed games the kings have never trained on. When the stone guardian opens the vault, the blind line decides who really rules.</p>
+      <div class="vault-hero">
+        <div class="vault-art"><div class="frame"><img src="assets/vault.jpg" alt="The Stone Golem Guardian"></div></div>
+        <div class="vault-main">
+          <div class="lab">Graded games sealed inside</div>
+          <div class="vault-big num" id="vault-count">—</div>
+          <div class="countdown num" id="vault-cd">—</div>
+          <p class="sub" id="vault-next">until the first opening</p>
+        </div>
       </div>
     </div>
-    <div class="sec">
+    <div class="sec reveal">
       <div class="sec-head"><span class="no">02</span><h3>The Slips</h3><span class="rule"></span></div>
       <p class="sec-sub">Every delivered slip: its calls, its results, and every game with its final score — open a slip to see the full card.</p>
       <div id="slips"></div>
     </div>
   </section>
 
-  <footer id="foot">SLIP SELECT — The Living Court · fitted lines are paper until the vault judges them · flat 25m is the eternal scoreboard<br>
+  <footer id="foot"><span class="brand">SLIP SELECT — THE LIVING COURT</span><br>
+  Fitted lines are paper until the vault judges them · flat 25m is the eternal scoreboard<br>
   Arena characters: KayKit Adventurers &amp; Skeletons by Kay Lousberg (CC0) · Quaternius Orc &amp; Goblin (CC0) — public-domain models, trimmed to fit this page.</footer>
 </div>
 <script src="assets/three.min.js"></script>
 <script src="assets/GLTFLoader.js"></script>
 <script>
 "use strict";
-/* ================= helpers ================= */
-const $=id=>document.getElementById(id);
-const REDUCED=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
-function fmtInt(n){if(n==null||isNaN(n))return"—";return Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g,",")}
-function fmtM(n){if(n==null||isNaN(n))return"—";const v=Math.round(n*100)/100;return (v>0?"+":"")+fmtInt(v)+"m"}
-function fmtPct(n){if(n==null||isNaN(n))return"—";return (n>0?"+":"")+n.toFixed(2)+"%"}
-function fmtTime(iso){if(!iso)return"";try{return new Date(iso).toLocaleString("en-CA",{timeZone:"America/Regina",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}catch(e){return""}}
-function stakeWords(m){if(m==null)return"amount not stated";if(m<=25)return"small "+m+"m";if(m<=100)return"standard "+m+"m";return"max "+m+"m"}
-function cleanMd(s){return String(s||"").replace(/\*/g,"")}
-const CHAR={
- regime:{img:"assets/regime.jpg",title:"High Elf King",col:"#e6cb7d"},
- legacy:{img:"assets/legacy.jpg",title:"Dwarf King",col:"#e0a44e"},
- quantum:{img:"assets/quantum.jpg",title:"Undead Lich King",col:"#9a86d8"},
- selector:{img:"assets/selector.jpg",title:"Orc Chieftain",col:"#3fb97f"},
- vanguard:{img:"assets/vanguard.jpg",title:"Human Paladin",col:"#6fc3d8"},
- arena:{img:"assets/arena.jpg",title:"Minotaur Gladiator",col:"#e05d5d"},
- discovery:{img:"assets/discovery.jpg",title:"Star Wizard",col:"#6fc3d8"},
- edgefinder:{img:"assets/edgefinder.jpg",title:"Elf Ranger",col:"#3fb97f"},
- autopsy:{img:"assets/autopsy.jpg",title:"Necromancer — the Corpse Reader",col:"#9a86d8"},
- director:{img:"assets/director.jpg",title:"Oracle Sage",col:"#e6cb7d"},
- vault:{img:"assets/vault.jpg",title:"Stone Golem Guardian",col:"#98a1b3"},
- stakehunter:{img:"assets/stakehunter.jpg",title:"Goblin Banker",col:"#e6cb7d"}};
-const COURT_KEY={Legacy:"legacy",Regime:"regime",Quantum:"quantum",Selector:"selector",Vanguard:"vanguard"};
-const AGENT_KEY={"Legacy":"legacy","Regime":"regime","Quantum":"quantum","Selector":"selector","Vanguard":"vanguard",
- "Arena":"arena","Discovery":"discovery","Edge Finder":"edgefinder","Loss Autopsy":"autopsy","Stakehunter":"stakehunter","Research Director":"director"};
-function imgTag(key,cls){const c=CHAR[key]||CHAR.vault;return '<img class="portrait '+(cls||"")+'" src="'+c.img+'" alt="" loading="lazy" onerror="this.style.display=\'none\'">'}
-function thumbTag(key){return '<div class="thumb">'+imgTag(key)+"</div>"}
-let DATA=null, activeTab="court";
-const openAcc=new Set();
-function acc(key,head,body){const open=openAcc.has(key)?" open":"";
- return '<div class="acc'+open+'" data-acc="'+esc(key)+'"><button class="acc-h" data-acch="'+esc(key)+'"><span>'+head+'</span><span class="chev">▸</span></button><div class="acc-b">'+body+'</div></div>'}
-document.addEventListener("click",e=>{
- const b=e.target.closest?e.target.closest("[data-acch]"):null;
- if(b){const k=b.getAttribute("data-acch");const box=b.parentElement;
-   if(openAcc.has(k)){openAcc.delete(k);box.classList.remove("open")}else{openAcc.add(k);box.classList.add("open")}return}
- const t=e.target.closest?e.target.closest("[data-tab]"):null;
- if(t){switchTab(t.getAttribute("data-tab"))}
-});
-function switchTab(name){activeTab=name;
- document.querySelectorAll(".tab-btn").forEach(b=>b.classList.toggle("active",b.getAttribute("data-tab")===name));
- document.querySelectorAll(".tabpage").forEach(p=>p.classList.toggle("active",p.id==="page-"+name));
- window.scrollTo({top:0,behavior:REDUCED?"auto":"smooth"});
- if(window.Arena3D)Arena3D.onTab(name);}
-
-/* ================= draggable auto-sliding strips =================
-   Grab and slide either strip; auto-slide pauses while held and resumes
-   the moment it is released — it can never get stuck paused. */
-const strips={};
-function makeStrip(containerId,trackId,seconds){
- const container=$(containerId),track=$(trackId);if(!container||!track)return;
- const S={off:0,half:0,drag:false,startX:0,startOff:0,last:performance.now()};
- function measure(){S.half=track.scrollWidth/2}
- measure();
- (function frame(t){const dt=Math.min(.05,(t-S.last)/1000);S.last=t;
-   if(!S.drag&&!REDUCED&&S.half>0)S.off-=(S.half/seconds)*dt;
-   if(S.half>0){while(S.off<=-S.half)S.off+=S.half;while(S.off>0)S.off-=S.half}
-   track.style.transform="translateX("+S.off+"px)";
-   requestAnimationFrame(frame)})(S.last);
- container.addEventListener("pointerdown",e=>{S.drag=true;S.startX=e.clientX;S.startOff=S.off;
-   try{container.setPointerCapture(e.pointerId)}catch(err){} container.classList.add("grabbing")});
- container.addEventListener("pointermove",e=>{if(S.drag)S.off=S.startOff+(e.clientX-S.startX)});
- const end=()=>{S.drag=false;container.classList.remove("grabbing")};
- container.addEventListener("pointerup",end);container.addEventListener("pointercancel",end);
- addEventListener("resize",measure);
- strips[containerId]={remeasure:measure};
-}
-makeStrip("mq","mq-track",75); makeStrip("tk","tk-track",55);
-
-/* ================= render: hero ================= */
-function grandKing(d){return (d.kings||[]).find(k=>k&&k.grand_king)||(d.kings||[])[0]||null}
-function renderHero(d){
- const b=d.bankroll||{};
- $("hero-bank").textContent=(b.current_m!=null)?fmtInt(b.current_m)+"m":"—";
- $("hero-bank-mini").textContent=(b.start_m!=null)
-   ?"reset "+fmtTime((b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" at "+fmtInt(b.start_m)+"m · earned so far: "+fmtM(b.earned_m)
-   :"BANKROLL RESET PENDING — the counter starts the moment the reset lands";
- const order=["regime","legacy","quantum","selector","vanguard","arena","discovery","edgefinder","autopsy","stakehunter","director","vault"];
- const names={regime:"Regime",legacy:"Legacy",quantum:"Quantum",selector:"Selector",vanguard:"Vanguard",arena:"The Arena",
-  discovery:"Discovery",edgefinder:"Edge Finder",autopsy:"Loss Autopsy",stakehunter:"Stakehunter",director:"Research Director",vault:"The Vault"};
- const one=order.map(k=>'<div class="mq-item">'+imgTag(k)+'<div><div class="n">'+names[k]+'</div><div class="t">'+CHAR[k].title+'</div></div></div>').join("");
- $("mq-track").innerHTML=one+one;
- const gk=grandKing(d), f=d.forward||{};
- const items=[];
- if(gk)items.push("GRAND KING <b>"+esc(gk.name)+"</b> ROI <b>"+fmtPct(gk.roi_pct)+"</b>");
- (d.kings||[]).forEach(k=>{if(k&&!k.grand_king)items.push(esc(k.court)+" <b>"+fmtPct(k.roi_pct)+"</b>")});
- if(f.chosen_bets)items.push("CHOSEN BETS <b>"+f.chosen_bets.wins+"-"+f.chosen_bets.losses+"</b> · <b>"+fmtM(f.chosen_bets.pnl_m)+"</b>");
- if(f.confidence)items.push("CONFIDENCE <b>"+f.confidence.wins+"-"+f.confidence.losses+"</b>");
- if(d.vault&&d.vault.count!=null)items.push("VAULT <b>"+fmtInt(d.vault.count)+"</b> SEALED GAMES");
- if(b.current_m!=null)items.push("BANKROLL <b>"+fmtInt(b.current_m)+"m</b>");
- const tk=items.map(t=>'<span class="tk-item"><span class="sep">◆</span> '+t+"</span>").join("");
- $("tk-track").innerHTML=tk+tk;
- $("updated").textContent="Regina · updated "+fmtTime(d.generated_at);
- if(strips.mq)strips.mq.remeasure(); if(strips.tk)strips.tk.remeasure();
-}
-/* ================= render: pyramid ================= */
-function kingCard(k,grand){
- const c=CHAR[COURT_KEY[k.court]||"vault"], dl=k.dog_line||{};
- return '<div class="kcard'+(grand?" grand":"")+'">'
-  +(grand?'<div class="crown">♛</div>':"")
-  +'<div class="frame">'+imgTag(COURT_KEY[k.court])+'</div>'
-  +'<div class="cname">'+esc(k.court)+" — "+esc(c.title)+'</div>'
-  +'<div class="sname">'+esc(k.name)+(k.stamp?' · <span class="chip amb" style="font-size:.66rem">'+esc(k.stamp)+"</span>":"")+'</div>'
-  +'<div class="rec num">'+k.wins+"-"+k.losses+'</div>'
-  +'<div class="lab">fitted ROI</div><div class="roi num '+(k.roi_pct>=0?"pos":"neg")+'">'+fmtPct(k.roi_pct)+'</div>'
-  +'<div class="rows"><div>P&amp;L <b>'+fmtM(k.pnl_m)+'</b> · priced <b>'+(k.priced!=null?k.priced:"—")+"/"+(k.set_size||239)+'</b></div>'
-  +'<div>Dog line: <b>'+(dl.wins!=null?dl.wins+"-"+dl.losses:"—")+'</b> · <b>'+fmtM(dl.pnl_m)+'</b> · <b>'+fmtPct(dl.roi_pct)+'</b></div></div></div>';
-}
-function renderPyramid(d){
- const kings=(d.kings||[]).filter(Boolean);
- const gk=grandKing(d), others=kings.filter(k=>k!==gk);
- let h="";
- if(gk)h+='<div class="tier tier-apex"><div class="tlab"><span class="chip gold">TIER I — THE GRAND KING</span></div><div class="kingrow">'+kingCard(gk,true)+"</div></div>";
- if(others.length)h+='<div class="tier tier-2"><div class="tlab"><span class="chip cyan">TIER II — THE RIVAL KINGS</span></div><div class="kingrow">'+others.map(k=>kingCard(k,false)).join("")+"</div></div>";
- const ch=d.autopsy_challengers||[];
- if(ch.length){h+='<div class="tier tier-3"><div class="tlab"><span class="chip" style="color:var(--mag);border-color:rgba(216,115,184,.5)">TIER III — GHOST CHALLENGERS</span></div>'
-   +'<div class="clash">⚔ CLASHING FOR THE CROWN ⚔</div><div class="kingrow">'
-   +ch.map(c=>'<div class="kcard ghost"><div class="frame">'+imgTag("autopsy")+'</div>'
-     +'<div class="cname">'+esc(c.id)+'</div><div class="sname">'+esc(c.status||"challenger")+'</div>'
-     +'<div class="rec num">'+(c.wins!=null?c.wins+"-"+c.losses:"—")+'</div>'
-     +'<div class="lab">fitted ROI</div><div class="roi num pos">'+fmtPct(c.roi_pct)+'</div>'
-     +'<div class="rows"><div>P&amp;L <b>'+fmtM(c.pnl_m)+'</b></div><div>'+esc(cleanMd(c.name||"")).slice(0,90)+'</div></div></div>').join("")
-   +"</div></div>";}
- const workers=(d.agents||[]).filter(a=>!COURT_KEY[a.name]);
- let base=workers.map(a=>{const key=AGENT_KEY[a.name]||"vault";
-   return '<div class="wchip">'+thumbTag(key)+'<div><div class="n"><span class="sdot'+(a.status==="active"?" on":"")+'"></span> '+esc(a.name)+'</div><div class="h">'+esc(a.headline||a.role||"")+"</div></div></div>"}).join("");
- if(d.vault)base+='<div class="wchip">'+thumbTag("vault")+'<div><div class="n"><span class="sdot on"></span> The Vault</div><div class="h">'+fmtInt(d.vault.count)+' sealed games · opens Dec 1</div></div></div>';
- h+='<div class="tier tier-base"><div class="tlab"><span class="chip">THE FOUNDATION — WORKER ARMY</span></div><div class="workers">'+base+"</div></div>";
- $("pyr-tiers").innerHTML=h;
-}
-/* ================= render: bets tab ================= */
-function statBox(lab,val,cls){return '<div class="stat"><div class="lab">'+lab+'</div><div class="v num '+(cls||"")+'">'+val+"</div></div>"}
-/* ================= render: bets tab =================
-   THE TOP 3 ARE THE LIVE BOARD. There is no separate in-play panel:
-   each Top-3 card carries its own state — UPCOMING with its tip time,
-   IN PLAY with a live pulse, or ENDED with the final score, the result
-   and the money. The user's own bet rides ON the card as a marker.
-   Below the board: the bankroll (no duplicate pending list) and the
-   record — lifetime desk lines as stat boxes, then past slips as a
-   quiet settled archive. */
-function renderBankroll(d){
- const b=d.bankroll||{};
- $("bank-num").textContent=(b.current_m!=null)?fmtInt(b.current_m)+"m":"RESET PENDING";
- $("bank-since").textContent=(b.start_m!=null)
-   ?"Reset at "+fmtInt(b.start_m)+"m · counting only your own graded bets placed since the reset."
-   :"The billion reset has not landed in the data yet — the counter starts with the first graded bet of yours.";
- $("bank-grid").innerHTML=
-   statBox("Earned since reset",fmtM(b.earned_m),b.earned_m>0?"pos":(b.earned_m<0?"neg":""))
-  +statBox("Bet record",esc(b.record||"0-0"))
-  +statBox("Win rate",b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—")
-  +statBox("ROI on staked",b.roi_pct!=null?fmtPct(b.roi_pct):"—",b.roi_pct>0?"pos":"")
-  +statBox("Bets in play",(b.pending||[]).length);
-}
-function top3State(t){
- if(t.status==="ENDED"){
-   return (t.final_score?'<span class="t3score">FT '+esc(t.final_score)+"</span>":"")
-     +(t.result?'<span class="chip '+(t.result==="WON"?"grn":"red")+'">'+esc(t.result)+"</span>":"")
-     +(t.pnl_m!=null?'<span class="t3pnl num '+(t.pnl_m>=0?"pos":"neg")+'">'+fmtM(t.pnl_m)+"</span>":"");
- }
- if(t.status==="IN PLAY"){
-   return '<span class="livepulse"></span><span class="livetxt">IN PLAY</span>'
-     +(t.tip_at?'<span class="when">tipped '+fmtTime(t.tip_at)+"</span>":"");
- }
- if(t.status==="UPCOMING"){
-   return '<span class="chip cyan">UPCOMING</span>'
-     +(t.tip_at?'<span class="when">Tips '+fmtTime(t.tip_at)+"</span>":'<span class="when">tip time on the slip card</span>');
- }
- return '<span class="chip">ON THE BOARD</span>';
-}
-function top3UserMark(t){
- if(!t.user_bet)return"";
- let txt;
- if(t.user_stake_m==null)txt="You bet this pick — <b>amount not stated</b>";
- else txt="You bet <b>"+fmtInt(t.user_stake_m)+"m</b>"+(t.user_price!=null?" @ "+t.user_price.toFixed(2):"");
- if(t.user_stake_m!=null&&t.stake_m!=null&&t.user_stake_m!==t.stake_m)
-   txt+=" · the call was "+stakeWords(t.stake_m);
- else if(t.user_stake_m!=null&&t.stake_m!=null)
-   txt+=" · exactly as called";
- return '<div class="usermark"><span class="lab">Your bet</span><br>'+txt+"</div>";
-}
-function top3Card(slip,t){
- return '<div class="t3card"><div class="ghostno">'+t.rank+'</div>'
-  +'<div class="kind">'+esc(t.kind)+(t.paper?" · Paper":"")+'</div>'
-  +'<div class="game">'+esc(t.game||"")+'</div>'
-  +'<div class="pickline">Pick — <b>'+esc(t.pick)+'</b></div>'
-  +'<div class="meta"><span>Stake <b>'+stakeWords(t.stake_m)+'</b></span><span>Price <b>'+(t.price!=null?t.price.toFixed(2):"—")+'</b></span><span>'+esc(t.game_id||"")+'</span></div>'
-  +'<div class="t3state">'+top3State(t)+'</div>'
-  +top3UserMark(t)
-  +"</div>";
-}
-function heroSlips(d){return (d.slips||[]).filter(s=>s.top3&&s.top3.length).sort((a,b)=>b.number-a.number)}
-function renderBoard(d){
- const hs=heroSlips(d);
- if(!hs.length){$("board").innerHTML='<p class="sub">No Top 3 on the newest slip yet — the board lights up with the next slip.</p>';return}
- $("board").innerHTML=hs.map(s=>{
-   const gs=s.games_status||{};
-   return '<div class="board-head"><div><div class="kick">The King\'s Top 3</div><h4>Slip #'+s.number+'</h4></div>'
-    +'<span class="chip gold">'+esc(s.status||"")+'</span>'
-    +'<span class="meta num">'+(gs.games_ended||0)+"/"+(gs.games_total||s.games||0)+' games ended</span></div>'
-    +'<div class="t3grid">'+s.top3.slice().sort((a,b)=>a.rank-b.rank).map(t=>top3Card(s,t)).join("")+"</div>"}).join("");
-}
-const KIND_CHIP={"GRAND PICK":"gold","CONFIDENCE":"cyan","UNDERDOG DESK":"amb","DRAW DESK":"vio","USER BET":"ink"};
-function betStatusChip(b){
- if(b.status==="ENDED")return '<span class="chip '+(b.result==="WON"?"grn":"red")+'">ENDED · '+esc(b.result||"")+" "+fmtM(b.pnl_m)+"</span>";
- if(b.status==="IN PLAY")return '<span class="chip live">● IN PLAY</span>';
- return '<span class="chip cyan">UPCOMING</span>';
-}
-function renderRecord(d){
- const f=d.forward||{};
- const box=(lab,o)=>o?statBox(lab,(o.wins+"-"+o.losses)+" · "+fmtM(o.pnl_m),o.pnl_m>0?"pos":(o.pnl_m<0?"neg":"")):statBox(lab,"—");
- $("rec-grid").innerHTML=box("Chosen bets",f.chosen_bets)+box("Confidence (v1.1)",f.confidence)
-   +box("Underdog Desk",f.underdog_desk)+box("Draw Desk",f.draw_desk);
- /* archive: past slips only (the hero slip's calls live on its Top-3
-    cards). USER BET rows fold onto the matching called bet as a marker;
-    a user bet with no matching call keeps its own quiet row. */
- const heroNums={};heroSlips(d).forEach(s=>heroNums[s.number]=1);
- const bySlip={};
- (d.bets||[]).forEach(b=>{if(heroNums[b.slip])return;(bySlip[b.slip]=bySlip[b.slip]||[]).push(b)});
- const slipsMeta={};(d.slips||[]).forEach(s=>slipsMeta[s.number]=s);
- const kindRank=k=>({"GRAND PICK":0,"CONFIDENCE":1,"UNDERDOG DESK":2,"DRAW DESK":3,"USER BET":4}[k]||5);
- $("archive").innerHTML=Object.keys(bySlip).sort((a,b)=>b-a).map(n=>{
-   const all=bySlip[n], meta=slipsMeta[n]||{}, gs=meta.games_status||{};
-   const called=all.filter(b=>b.kind!=="USER BET");
-   const marks={};
-   all.filter(b=>b.kind==="USER BET").forEach(u=>{
-     const m=called.find(c=>c.game_id===u.game_id&&c.pick===u.pick);
-     if(m)marks[called.indexOf(m)]=u;});
-   const rows=called.slice().sort((a,b)=>kindRank(a.kind)-kindRank(b.kind)).map(b=>{
-     const u=marks[called.indexOf(b)];
-     return '<div class="arow"><span class="chip '+(KIND_CHIP[b.kind]||"")+'" style="font-size:.68rem">'+esc(b.kind)+'</span>'+(b.paper?'<span class="chip">PAPER</span>':"")
-      +'<span class="g">'+esc(b.game||"")+'</span><span class="p">Pick <b>'+esc(b.pick)+'</b></span>'
-      +(b.final_score?'<span class="score">FT '+esc(b.final_score)+"</span>":"")
-      +'<span class="num">'+(b.stake_m!=null?fmtInt(b.stake_m)+"m":"amount not stated")+" @ "+(b.price!=null?b.price.toFixed(2):"—")+"</span>"+betStatusChip(b)
-      +(u?'<span class="umark">Your bet: '+(u.stake_m!=null?fmtInt(u.stake_m)+"m":"amount not stated")+(u.price!=null?" @ "+u.price.toFixed(2):"")+"</span>":"")
-      +"</div>"}).join("");
-   const orphans=all.filter(b=>b.kind==="USER BET"&&!called.some(c=>c.game_id===b.game_id&&c.pick===b.pick))
-     .map(b=>'<div class="arow"><span class="chip ink" style="font-size:.68rem">USER BET</span><span class="g">'+esc(b.game||"")+'</span><span class="p">Pick <b>'+esc(b.pick)+'</b></span>'
-      +(b.final_score?'<span class="score">FT '+esc(b.final_score)+"</span>":"")
-      +'<span class="num">'+(b.stake_m!=null?fmtInt(b.stake_m)+"m":"amount not stated")+" @ "+(b.price!=null?b.price.toFixed(2):"—")+"</span>"+betStatusChip(b)+"</div>").join("");
-   return '<div class="arch-slip"><div class="arch-head"><b>Slip #'+n+'</b><span class="chip">'+esc(meta.status||"")+'</span><span class="n num">'+(gs.games_ended||0)+"/"+(gs.games_total||meta.games||0)+' games ended</span></div>'
-    +rows+orphans+"</div>"}).join("")
-   ||'<p class="sub" style="margin-top:24px">No settled slips in the archive yet.</p>';
-}
-
-/* ================= render: war room ================= */
-function renderWar(d){
- $("agents").innerHTML=(d.agents||[]).map(a=>{const key=AGENT_KEY[a.name]||"vault";
-  return '<div class="acard">'+thumbTag(key)+'<div><div class="n"><span class="sdot'+(a.status==="active"?" on":"")+'"></span>'+esc(a.name)+'</div>'
-   +'<div class="r">'+esc(a.role||"")+'</div><div class="h">'+esc(a.headline||"—")+'</div>'
-   +'<div class="la">last activity: '+fmtTime(a.last_activity)+"</div></div></div>"}).join("");
- const sh=d.stakehunter||{findings:[]};
- const chipFor=s=>s==="FINDING"?'<span class="chip grn">FINDING</span>':(s==="REFUTED"?'<span class="chip red">REFUTED</span>':'<span class="chip amb">NOT A FINDING</span>');
- $("stakehunter").innerHTML=(sh.findings&&sh.findings.length)
-   ?'<p class="sub">Latest completed cycle: <b style="color:#fff">Cycle '+sh.latest_cycle+'</b> · ' + sh.findings.filter(f=>f.status==="FINDING").length + ' findings banked across all cycles. All fitted on the same 239 games — proposals, never live stake changes.</p>'
-    +sh.findings.map(f=>'<div class="findrow"><div class="fh"><span class="chip gold">'+esc(f.id)+'</span><b>'+esc(f.name)+'</b>'+chipFor(f.status)+'<span class="chip">Cycle '+f.cycle+'</span></div><div class="vd">'+esc(cleanMd(f.verdict))+"</div></div>").join("")
-   :'<p class="sub">No completed Stakehunter cycle in the feed yet.</p>';
- $("challengers").innerHTML=(d.autopsy_challengers||[]).map(c=>{
-   const body='<div style="margin-bottom:6px"><b>'+esc(c.wins!=null?c.wins+"-"+c.losses:"—")+'</b> · P&amp;L <b>'+fmtM(c.pnl_m)+'</b> · ROI <b>'+fmtPct(c.roi_pct)+'</b></div>'
-     +'<div>Mechanism: '+esc(cleanMd(c.mechanism||c.name||""))+'</div><div style="margin-top:5px">Status: '+esc(c.status||"")+' — fitted on the 239-game set; forward slips and the Dec 1 vault opening are its real judges.</div>';
-   return acc("chal-"+c.id,'<span>'+esc(c.id)+" — "+esc((c.name||"").slice(0,60))+'</span><span class="num pos">'+fmtPct(c.roi_pct)+"</span>",body)}).join("")
-   ||'<p class="sub">No gate-clearing challenger yet.</p>';
- $("river").innerHTML=(d.activity||[]).map(ev=>{const key=AGENT_KEY[ev.agent]||"vault";
-  return '<div class="ritem">'+thumbTag(key)+'<div><div class="tt">'+esc(ev.title)+'</div><div class="sm">'+esc(cleanMd(ev.summary||"")).slice(0,220)+'</div></div><div class="when">'+fmtTime(ev.at)+"</div></div>"}).join("");
-}
-/* ================= render: vault & slips ================= */
-function renderVault(d){
- const v=d.vault||{};
- $("vault-count").textContent=(v.count!=null)?fmtInt(v.count):"—";
- $("vault-next").textContent="until the first opening · "+(v.next_opening||"2026-12-01");
- const betScore={};(d.bets||[]).forEach(b=>{if(b.final_score)betScore[b.slip+"|"+b.kind]=b.final_score});
- const slips=(d.slips||[]).slice().sort((a,b)=>b.number-a.number);
- $("slips").innerHTML=slips.map(s=>{
-   const gs=s.games_status||{};
-   const call=(lab,o,res,kind)=>{if(!o)return"";const sc=betScore[s.number+"|"+kind];
-     return '<div class="betrow"><span class="chip '+(KIND_CHIP[kind]||"gold")+'" style="font-size:.68rem">'+lab+'</span><span class="g">'+esc(o.selection||"")+'</span>'
-     +(sc?'<span class="score">FT '+esc(sc)+"</span>":"")
-     +'<span class="num">'+(o.stake_m!=null?fmtInt(o.stake_m)+"m ":"")+"@ "+(o.price!=null?o.price.toFixed(2):"—")+"</span>"+(res?'<span class="chip '+(res.result==="WON"?"grn":"red")+'">'+res.result+" "+fmtM(res.pnl_m)+"</span>":'<span class="chip amb">PENDING</span>')+"</div>"};
-   const calls=call("GRAND PICK",s.grand_pick,(s.results||{}).grand_pick,"GRAND PICK")+call("CONFIDENCE",s.confidence_bet,(s.results||{}).confidence_bet,"CONFIDENCE")
-        +call("UNDERDOG DESK",s.underdog_desk,(s.results||{}).underdog_desk,"UNDERDOG DESK")+call("DRAW DESK",s.draw_desk,(s.results||{}).draw_desk,"DRAW DESK");
-   let kr="";
-   if(s.results&&s.results.king_records){kr='<div style="margin-top:8px"><span class="lab">King records on this slip</span><div style="margin-top:4px">'
-     +Object.keys(s.results.king_records).map(k=>{const r=s.results.king_records[k];return esc(k)+': <b class="num">'+r.wins+"-"+r.losses+"</b> "+fmtM(r.pnl_m)+(s.results.best_king===k?" ★ best":"")}).join(" · ")+"</div></div>"}
-   const gl=(s.games_list||[]).map(g=>'<tr><td class="num">'+esc(g.game_id)+'</td><td>'+esc(g.game||"")+'</td><td class="num">'+esc(g.tip_at?fmtTime(g.tip_at):(g.time||""))+'</td><td>'+(g.status==="ENDED"?'<span class="chip grn">ENDED</span>':'<span class="chip cyan">PENDING</span>')+'</td><td class="sc">'+(g.final_score?esc(g.final_score):"—")+'</td><td>'+esc(g.winner||"—")+'</td><td>'+esc(g.bet_call||"")+"</td></tr>").join("");
-   const gamesAcc=gl?acc("slip-"+s.number,'All '+(s.games_list||[]).length+' games on Slip #'+s.number,
-     '<div style="overflow-x:auto"><table class="games"><tr><th>ID</th><th>Game</th><th>Tip (Regina)</th><th>Status</th><th>Final score</th><th>Winner</th><th>Call</th></tr>'+gl+"</table></div>"):"";
-   return '<div style="margin:16px 0"><div class="bgh" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><b style="font-size:1.12rem">Slip #'+s.number+'</b><span class="chip">'+esc(s.status||"")+'</span><span class="num">'+(gs.games_ended||0)+"/"+(gs.games_total||s.games||0)+' games ended</span></div>'
-     +(calls||'<p class="sub">No bet layer recorded.</p>')+kr+gamesAcc+"</div>"}).join("")
-   ||'<p class="sub">No slips in the feed yet.</p>';
-}
-function tickVault(){
- const v=(DATA&&DATA.vault)||{};const dateStr=v.next_opening||"2026-12-01";
- const target=new Date(dateStr+"T10:46:00-06:00").getTime();
- const diff=target-Date.now();
- if(diff<=0){$("vault-cd").textContent="THE VAULT IS OPENING";return}
- const dd=Math.floor(diff/864e5),hh=Math.floor(diff/36e5)%24,mm=Math.floor(diff/6e4)%60,ss=Math.floor(diff/1e3)%60;
- $("vault-cd").textContent=dd+"d "+String(hh).padStart(2,"0")+"h "+String(mm).padStart(2,"0")+"m "+String(ss).padStart(2,"0")+"s";
-}
-/* ================= bout selection ================= */
-function roiFrac(roi){if(roi==null)return .45;return Math.max(.06,Math.min(1,roi/110))}
-function pickBout(d){
- const gk=grandKing(d);if(!gk)return null;
- const defChar={key:COURT_KEY[gk.court]||"regime",name:gk.court+" — "+(CHAR[COURT_KEY[gk.court]]||{}).title,
-   label:gk.name+" · "+fmtPct(gk.roi_pct),frac:roiFrac(gk.roi_pct),roi:gk.roi_pct,pnl:gk.pnl_m};
- const acts=d.activity||[];
- const crown=acts.find(a=>a.kind==="crown");
- const chal=acts.find(a=>a.kind==="challenger");
- const ev=crown||chal||acts[0];if(!ev)return null;
- let atk=null;
- if(chal&&!crown){
-   const c=(d.autopsy_challengers||[]).find(x=>ev.title.indexOf(x.id)>=0||(ev.summary||"").indexOf(x.id)>=0)||(d.autopsy_challengers||[])[0];
-   if(c)atk={key:"autopsy",name:c.id+" — Necromancer",label:c.name+" · "+fmtPct(c.roi_pct),frac:roiFrac(c.roi_pct),roi:c.roi_pct,pnl:c.pnl_m};
- }
- if(!atk){
-   const key=AGENT_KEY[ev.agent]||"discovery";
-   const k=(d.kings||[]).find(x=>x&&x.court===ev.agent);
-   if(k&&k.court!==gk.court)atk={key:COURT_KEY[k.court],name:k.court+" — "+(CHAR[COURT_KEY[k.court]]||{}).title,label:k.name+" · "+fmtPct(k.roi_pct),frac:roiFrac(k.roi_pct),roi:k.roi_pct,pnl:k.pnl_m};
-   else atk={key:key,name:ev.agent+" — "+(CHAR[key]||{}).title,label:cleanMd(ev.title).slice(0,60),frac:.55,roi:null,pnl:null};
- }
- return {atk:atk,def:defChar,verdict:crown?"CROWNED":"PARRIED",title:cleanMd(ev.title),crown:!!crown};
-}
-/* ================= refresh ================= */
-let seenEvents=new Set(), bankShown=null;
-function renderAll(d){
- DATA=d;
- renderHero(d);renderPyramid(d);renderBankroll(d);renderBoard(d);renderRecord(d);renderWar(d);renderVault(d);tickVault();
- const bout=pickBout(d);
- if(bout){$("pit-caption").innerHTML="<span>⚔ <b>"+esc(bout.atk.name)+"</b> — "+esc(bout.atk.label)+'</span><span>🛡 <b>'+esc(bout.def.name)+"</b> — "+esc(bout.def.label)+"</span>";
-   if(window.Pit)Pit.setBout(bout);}
- (d.activity||[]).forEach(ev=>{const key=ev.agent+"|"+ev.title+"|"+ev.at;
-   if(seenEvents.size&&ev.kind==="crown"&&!seenEvents.has(key))bigFireworks();
-   seenEvents.add(key)});
- const b=d.bankroll||{};
- if(b.current_m!=null){countUp($("bank-num"),bankShown,b.current_m,v=>fmtInt(v)+"m");bankShown=b.current_m}
-}
-function countUp(el,from,to,fmt){if(REDUCED||from==null||from===to){el.textContent=fmt(to);return}
- const t0=performance.now(),dur=900;
- (function step(t){const p=Math.min(1,(t-t0)/dur);el.textContent=fmt(from+(to-from)*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)})(t0);}
-function refresh(){fetch("status.json?cb="+Date.now(),{cache:"no-store"}).then(r=>r.json()).then(renderAll).catch(()=>{})}
-setInterval(refresh,60000);refresh();
-setInterval(()=>{const el=$("clock");if(el)el.textContent=new Date().toLocaleString("en-CA",{timeZone:"America/Regina",weekday:"short",hour:"numeric",minute:"2-digit",second:"2-digit"})+" Regina";tickVault()},1000);
-/* ================= fireworks — real crowns only ================= */
-const fx=$("fx"),fctx=fx.getContext("2d");let parts=[];
-function fxSize(){fx.width=innerWidth;fx.height=innerHeight}
-addEventListener("resize",fxSize);fxSize();
-function burst(x,y,n,cols){if(REDUCED)return;for(let i=0;i<n;i++){const a=Math.random()*6.283,s=1+Math.random()*4.4;
- parts.push({x:x,y:y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-1.4,l:1,c:cols[i%cols.length]})}
- if(parts.length>420)parts.splice(0,parts.length-420)}
-function bigFireworks(){for(let i=0;i<3;i++)setTimeout(()=>burst(innerWidth*(0.25+Math.random()*0.5),innerHeight*0.28,70,["#e6cb7d","#6fc3d8","#9a86d8","#d873b8"]),i*220)}
-(function fxLoop(){requestAnimationFrame(fxLoop);if(document.hidden)return;
- fctx.clearRect(0,0,fx.width,fx.height);
- parts=parts.filter(p=>p.l>0);
- for(const p of parts){p.x+=p.vx;p.y+=p.vy;p.vy+=0.045;p.l-=0.011;
-  fctx.globalAlpha=Math.max(0,p.l);fctx.fillStyle=p.c;fctx.fillRect(p.x,p.y,3,3)}
- fctx.globalAlpha=1})();
-
-/* ================= FIGHT PIT ================= */
-window.Pit={bout:null,_mode:null,_key:null,
- setBout(b){const key=b.atk.name+"|"+b.def.name+"|"+b.verdict+"|"+b.title;
-  if(this._key===key&&this._mode)return;this._key=key;this.bout=b;
-  if(this._mode==="3d"&&window.Arena3D)Arena3D.setBout(b);
-  else if(this._mode==="css")CssPit.setBout(b);},
- init(){let ok=false;
-  try{ok=window.Arena3D&&Arena3D.init($("gl"))}catch(e){ok=false}
-  if(ok){this._mode="3d";$("pit-css").style.display="none";$("gl").style.display="block"}
-  else{this._mode="css";$("gl").style.display="none";$("pit-css").style.display="block";CssPit.init();
-   const s=$("pit-sub");if(s)s.textContent+=" (3D unavailable on this device — showing the 2.5D pit.)"}
-  const b=this.bout;this._key=null;if(b)this.setBout(b);}};
-/* ---------- 2.5D CSS fallback pit ---------- */
-const CssPit={bout:null,timer:null,
- init(){},
- setBout(b){this.bout=b;this.play()},
- fighter(el,f){el.innerHTML='<div class="frame">'+imgTag(f.key)+'</div><div class="hp"><i style="width:'+Math.round(f.frac*100)+'%"></i></div><div class="fn">'+esc(f.name)+"</div>";el.dataset.frac=f.frac},
- play(){if(!this.bout)return;const b=this.bout,L=$("f-left"),R=$("f-right");
-  this.fighter(L,b.atk);this.fighter(R,b.def);
-  clearInterval(this.timer);const banner=$("pit-banner");banner.style.display="none";
-  let step=0;
-  const dmg=txt=>{const s=document.createElement("span");s.className="dmg";s.textContent=txt;
-   s.style.left=(20+Math.random()*50)+"%";s.style.top="16%";s.style.fontSize=(1+Math.random()*.5)+"rem";
-   $("pit-css").appendChild(s);setTimeout(()=>s.remove(),1050)};
-  const seq=()=>{if(activeTab!=="court"||document.hidden)return;
-   step++;
-   if(step<=3){const A=step%2?L:R,D=step%2?R:L,df=step%2?b.def:b.atk;
-    A.classList.add(A===L?"lunge-l":"lunge-r");
-    setTimeout(()=>{D.classList.add("hit");D.classList.add(D===L?"recoil-l":"recoil-r");
-     const bar=D.querySelector(".hp i");const cur=parseFloat(D.dataset.frac||df.frac);
-     const nf=Math.max(.05,cur-0.13);D.dataset.frac=nf;if(bar)bar.style.width=Math.round(nf*100)+"%";
-     dmg(df.roi!=null?fmtPct(df.roi):"HIT");if(df.pnl!=null&&step===1)dmg(fmtM(df.pnl));
-     setTimeout(()=>{A.classList.remove("lunge-l","lunge-r");D.classList.remove("hit","recoil-l","recoil-r")},420)},REDUCED?60:190);
-   }else if(step===4){banner.textContent=(b.verdict==="CROWNED"?"♛ CROWNED":"🛡 PARRIED");
-    banner.style.display="block";if(b.verdict==="CROWNED")bigFireworks();
-    setTimeout(()=>{banner.style.display="none";this.play()},5200);clearInterval(this.timer);
-    this.timer=setInterval(()=>{},1e9);return}};
-  if(REDUCED){banner.textContent=(b.verdict==="CROWNED"?"♛ CROWNED":"🛡 PARRIED");banner.style.display="block";return}
-  this.timer=setInterval(seq,1500);seq();}};
-/* ---------- 3D character roster (all CC0 — see 3d_characters_deepdive.md) ----------
-   file: vendored GLB in assets/models/ · h: height factor · tint: material
-   colour multiplier · atk: attack-clip preference · arena has NO rigged
-   model (no CC0 minotaur exists) and fights as a portrait banner. */
-const MODEL3D={
- regime:{file:"Mage.glb",h:1.0,tint:0xffe2a8,atk:["Spellcast_Shoot","1H_Melee_Attack_Chop"]},
- legacy:{file:"Barbarian.glb",h:0.8,tint:0xffffff,atk:["1H_Melee_Attack_Chop","1H_Melee_Attack_Slice_Horizontal"]},
- quantum:{file:"Skeleton_Mage.glb",h:1.02,tint:0xd9ccff,atk:["Spellcast_Shoot","1H_Melee_Attack_Chop"]},
- selector:{file:"Orc.glb",h:1.06,tint:0xffffff,atk:["Punch","Weapon","Attack"]},
- vanguard:{file:"Knight.glb",h:1.0,tint:0xffffff,atk:["1H_Melee_Attack_Slice_Horizontal","1H_Melee_Attack_Chop"]},
- discovery:{file:"Mage.glb",h:1.0,tint:0x9fc4ff,atk:["Spellcast_Shoot","1H_Melee_Attack_Chop"]},
- edgefinder:{file:"Rogue.glb",h:0.97,tint:0xffffff,atk:["1H_Melee_Attack_Slice_Horizontal","1H_Melee_Attack_Chop"]},
- autopsy:{file:"Skeleton_Rogue.glb",h:0.98,tint:0xffffff,atk:["1H_Melee_Attack_Chop","1H_Melee_Attack_Slice_Horizontal"]},
- director:{file:"Rogue_Hooded.glb",h:0.99,tint:0xffffff,atk:["1H_Melee_Attack_Chop"]},
- vault:{file:"Barbarian.glb",h:1.45,tint:0x9aa3b8,atk:["1H_Melee_Attack_Chop"]},
- stakehunter:{file:"Goblin.glb",h:0.72,tint:0xffffff,atk:["Attack","Punch"]}};
-const CLIP_SUFFIX={idle:["Idle"],walk:["Walking_A","Walk"],run:["Running_A","Run"],
- hit:["Hit_A","HitReact","HitRecieve"],death:["Death_A","Death"],cheer:["Cheer","Wave","Jump","Yes"]};
-function findClip(clips,tokens){
- for(const tok of tokens){for(const c of clips){const nm=c.name||"";
-   if(nm===tok||nm.split("|").pop()===tok)return c}}
- for(const tok of tokens){for(const c of clips){if((c.name||"").indexOf(tok)>=0)return c}}
- return null}
-/* ---------- REAL-TIME 3D ARENA (Three.js r128) ---------- */
-window.Arena3D={ok:false,bout:null,tabActive:true,visible:true,_bufCache:{},
- init(canvas){
-  if(typeof THREE==="undefined")return false;
-  let renderer;
-  try{renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true})}catch(e){return false}
-  if(!renderer||!renderer.getContext())return false;
-  this.renderer=renderer;this.canvas=canvas;
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.75));
-  renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
-  const scene=new THREE.Scene();this.scene=scene;
-  scene.background=new THREE.Color(0x05060f);
-  scene.fog=new THREE.FogExp2(0x070912,0.026);
-  const camera=new THREE.PerspectiveCamera(55,2,0.1,200);this.camera=camera;
-  camera.position.set(0,7.5,14);
-  scene.add(new THREE.AmbientLight(0x404060,0.9));
-  const hemi=new THREE.HemisphereLight(0x8fa3ff,0x1a1408,0.55);scene.add(hemi);
-  const key=new THREE.DirectionalLight(0xfff2cf,1.05);
-  key.position.set(7,13,6);key.castShadow=true;
-  key.shadow.mapSize.set(1024,1024);key.shadow.camera.left=-16;key.shadow.camera.right=16;
-  key.shadow.camera.top=16;key.shadow.camera.bottom=-16;scene.add(key);
-  const rim=new THREE.DirectionalLight(0x6fc3d8,0.7);rim.position.set(-9,6,-8);scene.add(rim);
-  this.flash=new THREE.PointLight(0xe6cb7d,0,18);this.flash.position.set(0,3.4,0);scene.add(this.flash);
-  const fc=document.createElement("canvas");fc.width=fc.height=512;const g=fc.getContext("2d");
-  g.fillStyle="#232842";g.fillRect(0,0,512,512);
-  for(let i=0;i<2600;i++){g.fillStyle="rgba("+(140+Math.random()*60|0)+","+(150+Math.random()*50|0)+",220,"+(Math.random()*0.08)+")";
-   g.fillRect(Math.random()*512,Math.random()*512,2,2)}
-  g.strokeStyle="rgba(120,140,220,.35)";for(let r=40;r<260;r+=44){g.beginPath();g.arc(256,256,r,0,6.283);g.stroke()}
-  g.strokeStyle="rgba(230,203,125,.5)";g.lineWidth=3;g.beginPath();g.arc(256,256,120,0,6.283);g.stroke();
-  const floorTex=new THREE.CanvasTexture(fc);
-  const floor=new THREE.Mesh(new THREE.CircleGeometry(16,48),
-   new THREE.MeshStandardMaterial({map:floorTex,roughness:.92,metalness:.05}));
-  floor.rotation.x=-Math.PI/2;floor.receiveShadow=true;scene.add(floor);
-  const ringGlow=new THREE.Mesh(new THREE.RingGeometry(6.9,7.25,64),
-   new THREE.MeshBasicMaterial({color:0x6fc3d8,transparent:true,opacity:.5,side:THREE.DoubleSide}));
-  ringGlow.rotation.x=-Math.PI/2;ringGlow.position.y=0.02;scene.add(ringGlow);this.ringGlow=ringGlow;
-  const stone=new THREE.MeshStandardMaterial({color:0x3a4066,roughness:.85});
-  const goldM=new THREE.MeshStandardMaterial({color:0x8a6d2f,roughness:.4,metalness:.7});
-  this.flames=[];
-  for(let i=0;i<10;i++){const a=i/10*Math.PI*2,px=Math.cos(a)*14.2,pz=Math.sin(a)*14.2;
-   const pil=new THREE.Mesh(new THREE.CylinderGeometry(0.55,0.7,7.5,10),stone);
-   pil.position.set(px,3.75,pz);pil.castShadow=true;scene.add(pil);
-   const cap=new THREE.Mesh(new THREE.BoxGeometry(1.7,0.5,1.7),stone);cap.position.set(px,7.7,pz);scene.add(cap);
-   if(i%3===0){const br=new THREE.Mesh(new THREE.CylinderGeometry(0.5,0.3,0.7,8),goldM);
-    br.position.set(px*0.93,0.35,pz*0.93);scene.add(br);
-    const li=new THREE.PointLight(0xff8c3a,1.1,11);li.position.set(px*0.93,1.5,pz*0.93);scene.add(li);
-    const fg=new THREE.BufferGeometry();const n=26,pos=new Float32Array(n*3);
-    for(let j=0;j<n;j++){pos[j*3]=(Math.random()-.5)*.5;pos[j*3+1]=Math.random()*1.1;pos[j*3+2]=(Math.random()-.5)*.5}
-    fg.setAttribute("position",new THREE.BufferAttribute(pos,3));
-    const fl=new THREE.Points(fg,new THREE.PointsMaterial({color:0xffa64d,size:.16,transparent:true,opacity:.9,blending:THREE.AdditiveBlending,depthWrite:false}));
-    fl.position.set(px*0.93,0.8,pz*0.93);scene.add(fl);
-    this.flames.push({pts:fl,light:li,seed:Math.random()*10});}}
-  const sg=new THREE.BufferGeometry();const sn=650,sp=new Float32Array(sn*3);
-  for(let i=0;i<sn;i++){const th=Math.random()*6.283,ph=Math.random()*1.35,r=70;
-   sp[i*3]=r*Math.sin(ph)*Math.cos(th);sp[i*3+1]=r*Math.cos(ph)*0.6+4;sp[i*3+2]=r*Math.sin(ph)*Math.sin(th)}
-  sg.setAttribute("position",new THREE.BufferAttribute(sp,3));
-  scene.add(new THREE.Points(sg,new THREE.PointsMaterial({color:0xafc4ff,size:.5,transparent:true,opacity:.85,fog:false})));
-  this.fighters={atk:this.makeFighter(-3.4,1),def:this.makeFighter(3.4,-1)};
-  scene.add(this.fighters.atk.group);scene.add(this.fighters.def.group);
-  this.bursts=[];this.dmgSprites=[];this.shake=0;
-  this.phase="idle";this.phaseT=0;this.strikeNo=0;this.strikeT=0;this.flags={};
-  this.clock=new THREE.Clock();
-  this.resize();const self=this;
-  if(window.ResizeObserver){try{new ResizeObserver(()=>self.resize()).observe(canvas.parentElement)}catch(e){}}
-  addEventListener("resize",()=>self.resize());
-  if(window.IntersectionObserver){try{new IntersectionObserver(en=>{self.visible=en[0].isIntersecting},{threshold:0.05}).observe(canvas)}catch(e){}}
-  this.ok=true;
-  (function loop(){requestAnimationFrame(loop);self.frame()})();
-  return true;},
- makeFighter(x,face){
-  const grp=new THREE.Group();grp.position.set(x,0,0);
-  const baseRotY=face>0?Math.PI/2-0.35:-Math.PI/2+0.35;grp.rotation.y=baseRotY;
-  const ped=new THREE.Mesh(new THREE.CylinderGeometry(1.15,1.4,0.55,8),
-   new THREE.MeshStandardMaterial({color:0x2c3358,roughness:.6,metalness:.3}));
-  ped.position.y=0.28;ped.castShadow=true;ped.receiveShadow=true;grp.add(ped);
-  const frame=new THREE.Mesh(new THREE.PlaneGeometry(2.5,3.3),
-   new THREE.MeshBasicMaterial({color:0xe6cb7d}));
-  frame.position.y=2.45;frame.position.z=-0.03;grp.add(frame);
-  const banner=new THREE.Mesh(new THREE.PlaneGeometry(2.3,3.1),
-   new THREE.MeshBasicMaterial({color:0x141a33}));
-  banner.position.y=2.45;grp.add(banner);
-  const holder=new THREE.Group();grp.add(holder);
-  const plateC=document.createElement("canvas");plateC.width=256;plateC.height=84;
-  const plateTex=new THREE.CanvasTexture(plateC);
-  const plate=new THREE.Sprite(new THREE.SpriteMaterial({map:plateTex,transparent:true}));
-  plate.scale.set(3.1,1.02,1);plate.position.y=4.6;grp.add(plate);
-  return {group:grp,banner:banner,frame:frame,holder:holder,plate:plate,plateC:plateC,plateTex:plateTex,
-   home:new THREE.Vector3(x,0,0),face:face,baseRotY:baseRotY,hp:1,hpShown:1,name:"",label:"",
-   charKey:null,model:null,loadToken:0};},
- setFighter(f,charKey,name,label,frac){
-  f.name=name;f.label=label;f.hp=frac;f.hpShown=frac;f.charKey=charKey;
-  const c=CHAR[charKey]||CHAR.vault;
-  f.frame.material.color.set(c.col);
-  try{const tex=new THREE.TextureLoader().load(c.img);
-   f.banner.material=new THREE.MeshBasicMaterial({map:tex});}catch(e){}
-  this.drawPlate(f);
-  this.loadModel(f,charKey);},
- loadModel(f,charKey){
-  const spec=MODEL3D[charKey];
-  f.loadToken++;const token=f.loadToken;
-  this.clearModel(f);
-  if(!spec||typeof THREE.GLTFLoader==="undefined"){f.banner.visible=true;f.frame.visible=true;return}
-  const self=this;
-  const build=ab=>{
-   if(token!==f.loadToken)return;
-   const fail=()=>{if(token===f.loadToken){f.banner.visible=true;f.frame.visible=true}};
-   try{new THREE.GLTFLoader().parse(ab,"",gltf=>{
-     if(token!==f.loadToken)return;
-     if(!gltf||!gltf.scene){fail();return}
-     buildScene(gltf);
-    },fail)}catch(e){fail()}
-   function buildScene(gltf){
-   const root=gltf.scene;
-   const mats=new Set();
-   root.traverse(o=>{if(o.isMesh){o.castShadow=true;
-     const ms=Array.isArray(o.material)?o.material:[o.material];
-     ms.forEach(m=>{if(m)mats.add(m)})}});
-   if(spec.tint&&spec.tint!==0xffffff)mats.forEach(m=>{if(m&&m.color)m.color.setHex(spec.tint)});
-   const box=new THREE.Box3().setFromObject(root);
-   const size=new THREE.Vector3();box.getSize(size);
-   const targetH=2.85*(spec.h||1);
-   const s=size.y>0?targetH/size.y:1;
-   root.scale.set(s,s,s);
-   const box2=new THREE.Box3().setFromObject(root);
-   root.position.y+=0.55-box2.min.y;
-   const mixer=new THREE.AnimationMixer(root);
-   const clips=gltf.animations||[];
-   const act={};
-   const mk=(clip,once)=>{if(!clip)return null;const a=mixer.clipAction(clip);
-     if(once){a.setLoop(THREE.LoopOnce,1);a.clampWhenFinished=(once==="death")}return a};
-   act.idle=mk(findClip(clips,CLIP_SUFFIX.idle));
-   act.walk=mk(findClip(clips,CLIP_SUFFIX.walk));
-   act.attack=mk(findClip(clips,spec.atk),"attack");
-   act.hit=mk(findClip(clips,CLIP_SUFFIX.hit),"hit");
-   act.death=mk(findClip(clips,CLIP_SUFFIX.death),"death");
-   act.cheer=mk(findClip(clips,CLIP_SUFFIX.cheer),"cheer");
-   f.model={root:root,mixer:mixer,act:act,cur:null};
-   f.holder.add(root);
-   f.banner.visible=false;f.frame.visible=false;
-   self.playRole(f,"idle");}};
-  if(this._bufCache[spec.file]){build(this._bufCache[spec.file]);return}
-  fetch("assets/models/"+spec.file).then(r=>{if(!r.ok)throw new Error("http "+r.status);return r.arrayBuffer()})
-   .then(ab=>{self._bufCache[spec.file]=ab;build(ab)})
-   .catch(()=>{if(token===f.loadToken){f.banner.visible=true;f.frame.visible=true}});},
- clearModel(f){
-  if(!f.model)return;
-  f.holder.remove(f.model.root);
-  f.model.root.traverse(o=>{if(o.isMesh){if(o.geometry)o.geometry.dispose();
-    const ms=Array.isArray(o.material)?o.material:[o.material];
-    ms.forEach(m=>{if(m){if(m.map)m.map.dispose();m.dispose()}})}});
-  f.model=null;},
- playRole(f,role){
-  if(!f.model)return;const M=f.model,a=M.act[role];if(!a)return;
-  if(M.cur===a){if(role==="idle"||role==="walk"){if(!a.isRunning())a.play()}return}
-  a.reset();a.setEffectiveWeight(1);a.fadeIn(0.16);a.play();
-  if(M.cur)M.cur.fadeOut(0.16);
-  M.cur=a;},
- drawPlate(f){
-  const g=f.plateC.getContext("2d");g.clearRect(0,0,256,84);
-  g.fillStyle="rgba(6,8,18,.88)";g.fillRect(0,0,256,84);
-  g.strokeStyle="rgba(230,203,125,.7)";g.strokeRect(1,1,254,82);
-  g.fillStyle="#fff";g.font="bold 21px sans-serif";g.textAlign="center";
-  g.fillText((f.name||"").slice(0,24),128,28);
-  g.fillStyle="#0a0d1e";g.fillRect(18,42,220,20);
-  const grd=g.createLinearGradient(18,0,238,0);grd.addColorStop(0,"#3fb97f");grd.addColorStop(1,"#6fc3d8");
-  g.fillStyle=grd;g.fillRect(18,42,220*Math.max(0,Math.min(1,f.hpShown)),20);
-  g.fillStyle="#e6cb7d";g.font="bold 17px sans-serif";
-  g.fillText((f.label||"").slice(0,34),128,79);
-  f.plateTex.needsUpdate=true;},
- setBout(b){this.bout=b;
-  this.setFighter(this.fighters.atk,b.atk.key,b.atk.name,b.atk.label,b.atk.frac);
-  this.setFighter(this.fighters.def,b.def.key,b.def.name,b.def.label,b.def.frac);
-  this.phase="intro";this.phaseT=0;this.strikeNo=0;
-  const bn=$("pit-banner");if(bn)bn.style.display="none";
-  if(REDUCED&&bn){bn.textContent=b.verdict==="CROWNED"?"♛ CROWNED":"🛡 PARRIED";bn.style.display="block"}},
- burst(pos,big){
-  const n=big?70:42,geo=new THREE.BufferGeometry(),p=new Float32Array(n*3),vel=[];
-  for(let i=0;i<n;i++){p[i*3]=pos.x;p[i*3+1]=pos.y;p[i*3+2]=pos.z;
-   vel.push(new THREE.Vector3((Math.random()-.5)*5,Math.random()*4.4,(Math.random()-.5)*5))}
-  geo.setAttribute("position",new THREE.BufferAttribute(p,3));
-  const pts=new THREE.Points(geo,new THREE.PointsMaterial({color:0xe6cb7d,size:.17,transparent:true,blending:THREE.AdditiveBlending,depthWrite:false}));
-  this.scene.add(pts);this.bursts.push({pts:pts,vel:vel,life:1});
-  this.flash.position.copy(pos);this.flash.intensity=2.6;},
- dmgSprite(pos,text,col){
-  const c=document.createElement("canvas");c.width=256;c.height=80;const g=c.getContext("2d");
-  g.font="900 44px sans-serif";g.textAlign="center";g.lineWidth=7;g.strokeStyle="#000";
-  g.strokeText(text,128,52);g.fillStyle=col||"#e6cb7d";g.fillText(text,128,52);
-  const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c),transparent:true,depthWrite:false}));
-  sp.scale.set(2.5,0.78,1);sp.position.copy(pos);sp.position.y+=1.2;
-  this.scene.add(sp);this.dmgSprites.push({sp:sp,life:1});},
- startStrike(){
-  this.strikeT=0;this.flags={};
-  const aKey=this.strikeNo%2===0?"atk":"def",dKey=aKey==="atk"?"def":"atk";
-  this.cur={a:this.fighters[aKey],d:this.fighters[dKey],aKey:aKey,dKey:dKey};
-  this.playRole(this.cur.a,"walk");this.playRole(this.cur.d,"idle");},
- impact(){
-  const A=this.cur.a,D=this.cur.d;
-  const pos=new THREE.Vector3(D.home.x-A.face*0.9,2.4,D.home.z);
-  this.burst(pos,this.strikeNo===2);if(!REDUCED)this.shake=0.55;
-  this.playRole(D,"hit");
-  D.hp=Math.max(0.05,D.hp-0.13);
-  const src=this.cur.dKey==="def"?this.bout.def:this.bout.atk;
-  this.dmgSprite(pos,src.roi!=null?fmtPct(src.roi):"HIT");
-  if(src.pnl!=null)this.dmgSprite(pos,fmtM(src.pnl),"#3fb97f");},
- frame(){
-  if(!this.ok)return;
-  const dt=Math.min(0.05,this.clock.getDelta()),t=this.clock.elapsedTime;
-  const active=this.tabActive&&this.visible&&!document.hidden;
-  if(!active)return;
-  for(const f of this.flames){f.light.intensity=1+Math.sin(t*11+f.seed)*0.28+Math.sin(t*23+f.seed*2)*0.12;
-   f.pts.rotation.y=t*0.7+f.seed;f.pts.position.y=0.8+Math.sin(t*7+f.seed)*0.06}
-  this.ringGlow.material.opacity=0.38+Math.sin(t*2)*0.14;
-  for(const k of["atk","def"]){const f=this.fighters[k];
-   if(f.model){if(!REDUCED)f.model.mixer.update(dt)}
-   else if(this.phase!=="strike")f.group.position.y=REDUCED?0:Math.sin(t*1.6+k.length)*0.05;
-   if(Math.abs(f.hpShown-f.hp)>0.002){f.hpShown+=(f.hp-f.hpShown)*Math.min(1,dt*5);this.drawPlate(f)}}
-  this.flash.intensity*=Math.pow(0.0018,dt);
-  for(let i=this.bursts.length-1;i>=0;i--){const b=this.bursts[i];b.life-=dt*1.5;
-   const arr=b.pts.geometry.attributes.position.array;
-   for(let j=0;j<b.vel.length;j++){arr[j*3]+=b.vel[j].x*dt;arr[j*3+1]+=b.vel[j].y*dt;arr[j*3+2]+=b.vel[j].z*dt;b.vel[j].y-=6.5*dt}
-   b.pts.geometry.attributes.position.needsUpdate=true;b.pts.material.opacity=Math.max(0,b.life);
-   if(b.life<=0){this.scene.remove(b.pts);this.bursts.splice(i,1)}}
-  for(let i=this.dmgSprites.length-1;i>=0;i--){const s=this.dmgSprites[i];s.life-=dt*0.85;
-   s.sp.position.y+=dt*1.5;s.sp.material.opacity=Math.max(0,s.life);
-   if(s.life<=0){this.scene.remove(s.sp);this.dmgSprites.splice(i,1)}}
-  /* bout state machine + cinematic camera */
-  this.phaseT+=dt;
-  const cam=this.camera,wide=new THREE.Vector3(0,7.5,14);
-  let target=wide,look=new THREE.Vector3(0,2.2,0);
-  if(!this.bout||REDUCED){target=REDUCED?wide:new THREE.Vector3(Math.sin(t*0.11)*11,6.4,Math.cos(t*0.11)*11+3)}
-  else if(this.phase==="intro"){target=new THREE.Vector3(0,5.4,11.5);
-   if(this.phaseT>1.4){this.phase="strike";this.phaseT=0;this.strikeNo=0;this.startStrike()}}
-  else if(this.phase==="strike"){
-   const A=this.cur.a,D=this.cur.d;
-   target=new THREE.Vector3(A.home.x*0.4,2.7,8.8);look=new THREE.Vector3(0,2.1,0);
-   this.strikeT+=dt;const st=this.strikeT,F=this.flags;
-   const near=new THREE.Vector3(D.home.x-A.face*2.05,0,D.home.z);
-   if(st<0.38){const p=st/0.38,e=1-Math.pow(1-p,2);A.group.position.lerpVectors(A.home,near,e)}
-   else if(st<0.7){A.group.position.copy(near)}
-   else{const p=Math.min(1,(st-0.7)/0.5),e=p*p;A.group.position.lerpVectors(near,A.home,e)}
-   if(st>=0.4&&!F.atk){F.atk=1;this.playRole(A,"attack")}
-   if(st>=0.66&&!F.hit){F.hit=1;this.impact()}
-   if(st>=1.3&&!F.settle){F.settle=1;this.playRole(A,"idle");this.playRole(D,"idle")}
-   if(st>=1.6){this.strikeNo++;
-    if(this.strikeNo<3)this.startStrike();
-    else{this.phase="verdict";this.phaseT=0;
-     const winKey=this.bout.verdict==="CROWNED"?"atk":"def",loseKey=winKey==="atk"?"def":"atk";
-     this.playRole(this.fighters[winKey],"cheer");this.playRole(this.fighters[loseKey],"death");
-     const bn=$("pit-banner");
-     if(bn){bn.textContent=this.bout.verdict==="CROWNED"?"♛ CROWNED":"🛡 PARRIED";bn.style.display="block"}
-     if(this.bout.verdict==="CROWNED")bigFireworks()}}}
-  else if(this.phase==="verdict"){target=new THREE.Vector3(0,4.6,10.5);
-   const win=this.bout.verdict==="CROWNED"?this.fighters.atk:this.fighters.def;
-   look=new THREE.Vector3(win.home.x,2.4,0);
-   if(this.phaseT>4.8){const bn=$("pit-banner");if(bn)bn.style.display="none";
-    for(const k of["atk","def"]){const f=this.fighters[k];
-     if(f.model)f.model.mixer.stopAllAction();
-     f.hp=k==="atk"?this.bout.atk.frac:this.bout.def.frac;
-     f.group.position.copy(f.home);this.playRole(f,"idle")}
-    this.phase="idle";this.phaseT=0}}
-  else{target=new THREE.Vector3(Math.sin(t*0.11)*11,6.4,Math.cos(t*0.11)*11+3);
-   if(this.bout&&this.phaseT>14){this.phase="intro";this.phaseT=0}}
-  const kk=REDUCED?1:1-Math.pow(0.0016,dt);
-  cam.position.lerp(target,kk);
-  if(this.shake>0){this.shake-=dt;cam.position.x+=(Math.random()-.5)*this.shake*0.5;cam.position.y+=(Math.random()-.5)*this.shake*0.4}
-  cam.lookAt(look);
-  this.renderer.render(this.scene,cam);},
- onTab(name){this.tabActive=(name==="court");
-  if(this.tabActive&&this.ok)this.resize()},
- resize(){if(!this.renderer)return;const c=this.canvas,host=c.parentElement;
-  const w=host.clientWidth||800,h=host.clientHeight||Math.round(w*0.75);
-  this.renderer.setSize(w,h,false);
-  this.camera.aspect=w/h;this.camera.updateProjectionMatrix()}};
-Pit.init();
-</script>
-</body>
-</html>
