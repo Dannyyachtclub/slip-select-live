@@ -773,8 +773,8 @@ window.Arena3D={ok:false,bout:null,tabActive:true,visible:true,
   f.name=name;f.label=label;f.hp=frac;f.hpShown=frac;
   const c=CHAR[charKey]||CHAR.vault;
   f.frame.material.color.set(c.col);
-  const tex=new THREE.TextureLoader().load(c.img);
-  f.banner.material=new THREE.MeshBasicMaterial({map:tex});
+  try{const tex=new THREE.TextureLoader().load(c.img);
+   f.banner.material=new THREE.MeshBasicMaterial({map:tex});}catch(e){/* portrait stays a coloured standard */}
   this.drawPlate(f);},
  drawPlate(f){
   const g=f.plateC.getContext("2d");g.clearRect(0,0,256,84);
