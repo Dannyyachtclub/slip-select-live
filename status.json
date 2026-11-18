@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:10:39.680013-06:00",
+  "generated_at": "2026-11-18T13:15:29.598374-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-18T12:38:45.457992-06:00",
+      "last_activity": "2026-11-18T13:15:24.820857-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2 — 203-36, +63.17% fitted ROI"
     },
     {
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T12:45:57.612988-06:00",
-      "headline": "Cycle 3: 13 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T13:15:14.866856-06:00",
+      "headline": "Cycle 4: 16 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,8 +187,64 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 3,
+    "latest_cycle": 4,
     "findings": [
+      {
+        "id": "Q1",
+        "name": "BRAND-SPLIT",
+        "cycle": 4,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 with ROI up on all five (grand king +4,281.12 on only +300m staked), but the entire effect rests on 22 brand-flagged games (~20 priced per king) — the thinnest base of any finding in this log, and…"
+      },
+      {
+        "id": "Q2",
+        "name": "CONSENSUS",
+        "cycle": 4,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +4,997.35 vs +3,600.68) with ROI up on all five — most strikingly on Vanguard (+37.16% vs +25.30%), where it also cuts max drawdown from 159.60 to 95.76. Its mirror Q3 loses on 0 of 5…"
+      },
+      {
+        "id": "Q3",
+        "name": "CONSENSUS-INVERTED",
+        "cycle": 4,
+        "status": "REFUTED",
+        "verdict": "The control that prices Q2: staking dissent loses everywhere"
+      },
+      {
+        "id": "Q4",
+        "name": "CLOSE-GAME",
+        "cycle": 4,
+        "status": "REFUTED",
+        "verdict": "Closeness of the favourite's de-vig carries no sizing signal; it beats flat only on Vanguard"
+      },
+      {
+        "id": "Q5",
+        "name": "SLIP-POSITION",
+        "cycle": 4,
+        "status": "REFUTED",
+        "verdict": "Slip construction order carries no sizing signal worth staking on"
+      },
+      {
+        "id": "Q6",
+        "name": "OVERROUND-INVERTED",
+        "cycle": 4,
+        "status": "REFUTED",
+        "verdict": "Together with Cycle 2's marginal N4, both overround directions are now tested and neither is robust (Q6's Selector line is a −0.20m dead tie). The overround family is closed: at most a whisper, in neither direction"
+      },
+      {
+        "id": "Q7",
+        "name": "PRESS-INVERTED",
+        "cycle": 4,
+        "status": "NOT A FINDING",
+        "verdict": "it holds or raises ROI on four kings while staking roughly a third less (grand king +64.56% on 3,945m vs flat's 5,700m). As a P&L rule it loses by construction — it is a capital-efficiency / risk-reduction shape, the mirror…"
+      },
+      {
+        "id": "Q8",
+        "name": "TAIL-ONLY",
+        "cycle": 4,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 on *less* total staked than flat on every king, ROI up everywhere (grand king +84.31% vs +63.17%). Disclosed plainly: this is very likely the ninth view of the one underlying long-price effect (S1, S5, N1,…"
+      },
       {
         "id": "P1",
         "name": "VENUE-SPLIT",
@@ -370,6 +426,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 4 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle4.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 3 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle3.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -526,13 +589,6 @@
       "kind": "generation",
       "title": "Vanguard R4-G59 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
       "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best clean gate-eligible variant V6 SOCCER x HOME…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G58 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Best gate-eligible variant V7 BB x HOME x…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
