@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T14:10:41.003659-06:00",
+  "generated_at": "2026-11-18T14:15:39.963976-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T14:01:11.126963-06:00",
-      "headline": "Latest filing: P113"
+      "last_activity": "2026-11-18T14:14:46.978995-06:00",
+      "headline": "Latest filing: P114"
     },
     {
       "name": "Loss Autopsy",
@@ -168,8 +168,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T13:46:11.501929-06:00",
-      "headline": "Cycle 5: 19 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T14:15:23.970997-06:00",
+      "headline": "Cycle 6: 21 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -180,8 +180,57 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 5,
+    "latest_cycle": 6,
     "findings": [
+      {
+        "id": "T1",
+        "name": "FRAGILITY-FADE",
+        "cycle": 6,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +3,716.29 vs +3,600.68, +115.61m) with ROI up on all five and no drawdown change on any king, and its mirror T2 loses on 0 of 5 — direction consistent inside the fitted set. The…"
+      },
+      {
+        "id": "T2",
+        "name": "FRAGILITY-INVERTED",
+        "cycle": 6,
+        "status": "REFUTED",
+        "verdict": "The control that prices T1/T8: staking the fragile favourite and starving its fade loses everywhere"
+      },
+      {
+        "id": "T3",
+        "name": "LEAGUE-FAMILIARITY",
+        "cycle": 6,
+        "status": "REFUTED",
+        "verdict": "It loses heavily on the four strong kings (grand king -242.20m) and wins only on Vanguard (+190.81m, with a drawdown cut). Familiar leagues are not, in general, where the strong kings' edge lives"
+      },
+      {
+        "id": "T4",
+        "name": "DIFFERENTIAL-GAP",
+        "cycle": 6,
+        "status": "REFUTED",
+        "verdict": "The relative-form gap loses everywhere, joining Cycle 5's marginal R5: the differential family carries no usable sizing signal on this set, alone or gapped. Family closed"
+      },
+      {
+        "id": "T5",
+        "name": "PRICE-RATIO CLOSE",
+        "cycle": 6,
+        "status": "NOT A FINDING",
+        "verdict": "It wins only on Vanguard; on the Selector it raises ROI while losing P&L on less staked. It does NOT reproduce Cycle 4 Q4's close-game shape in a second dress — closeness by price ratio is not the Q4 effect"
+      },
+      {
+        "id": "T6",
+        "name": "SLIP-ERA",
+        "cycle": 6,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 (grand king +3,751.37, +150.69m) with ROI up on all five, on near-flat total staked (~+60m per king). Later-era slips carrying more is consistent with a maturing builder, but it is equally consistent with…"
+      },
+      {
+        "id": "T7",
+        "name": "WITHIN-SLIP SPORT-MINORITY",
+        "cycle": 6,
+        "status": "NOT A FINDING",
+        "verdict": "ROI is essentially flat on ~1,100m less staked per king with drawdowns cut on all five (grand king 75.00 -> 60.00; Selector 58.30 -> 46.64). Like R4 slip-size and Q7 profit-take, it is a capital-efficiency shape, not a profit…"
+      },
       {
         "id": "R1",
         "name": "ELO-SUPPORT",
@@ -461,6 +510,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 6 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle6.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 5 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle5.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -538,6 +594,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P114: PRIZE-CLIFF / REWARD-GRADIENT FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena…",
+      "summary": "Filed Arena P114: PRIZE-CLIFF / REWARD-GRADIENT FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G153;…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P113: FLOW-ORIGIN-CHANNEL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G152;…",
       "summary": "Filed Arena P113: FLOW-ORIGIN-CHANNEL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G152; classes…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -568,13 +631,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P109: STAKELESS FORECAST PANEL FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G149; classes c + h)",
       "summary": "Filed Arena P109: STAKELESS FORECAST PANEL FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G149; classes c + h)",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P108: CONTRACT-SHADOW FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G148; classes c + h)",
-      "summary": "Filed Arena P108: CONTRACT-SHADOW FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-18, Arena G148; classes c + h)",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -617,13 +673,6 @@
       "kind": "generation",
       "title": "Arena G147 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirtieth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE in full. MILESTONE under the delivery rule:…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G63 (loop) — 2026-11-18, 239-game set, king VG19-DOGGE600VETO stands",
-      "summary": "NO NEW KING. King VG19-DOGGE600VETO stands (185-54, priced 229, +1448.57m, +25.30%). Only above-king headline V11 SPLIT-by-venue as…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
