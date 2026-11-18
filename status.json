@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T16:45:56.335845-06:00",
+  "generated_at": "2026-11-18T16:50:44.639467-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-18T16:06:24.568411-06:00",
+      "last_activity": "2026-11-18T16:49:22.780658-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO — 204-35, +63.22% fitted ROI"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T16:33:46.721668-06:00",
+      "last_activity": "2026-11-18T16:48:35.582658-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -161,22 +161,22 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T16:31:54.326670-06:00",
-      "headline": "Latest filing: P126"
+      "last_activity": "2026-11-18T16:48:04.125659-06:00",
+      "headline": "Latest filing: P127"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T16:17:45.935400-06:00",
+      "last_activity": "2026-11-18T16:48:53.893560-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T16:19:34.658398-06:00",
-      "headline": "Cycle 10: 30 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T16:47:52.960659-06:00",
+      "headline": "Cycle 11: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,8 +187,64 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 10,
+    "latest_cycle": 11,
     "findings": [
+      {
+        "id": "Z1",
+        "name": "POOLED-MEDIAN DISTANCE-SMOOTH",
+        "cycle": 11,
+        "status": "NOT A FINDING",
+        "verdict": "The largest raw numbers in this log's history: beats flat P&L on 5 of 5 by wide margins (grand king +6,028.55, ROI +89.33%; Selector ROI +95.75%) — and breaches the guard on two kings (Selector DD 100.00 vs an 87.45 guard;…"
+      },
+      {
+        "id": "Z2",
+        "name": "OVERROUND × POOLED-MEDIAN",
+        "cycle": 11,
+        "status": "FINDING",
+        "verdict": "Beats flat everywhere (grand king +4,880.34 vs +3,603.80, +1,276.54m) with ROI up on every king (grand king +79.74% vs +63.22%) and drawdown inside the guard everywhere — in fact DOWN on Legacy (70.00 vs 75.00). Read against…"
+      },
+      {
+        "id": "Z3",
+        "name": "DRAWDOWN-DEPTH TIERS",
+        "cycle": 11,
+        "status": "NOT A FINDING",
+        "verdict": "P&L down on all five (it stakes ~200–900m less per king), max drawdown down on Legacy (65.00 vs 75.00), Regime (65.00 vs 75.00), Quantum (85.00 vs 100.00) and Vanguard (116.84 vs 159.60), and tied on Selector (58.35 vs 58.30,…"
+      },
+      {
+        "id": "Z4",
+        "name": "KELLY-EDGE TIERS",
+        "cycle": 11,
+        "status": "REFUTED",
+        "verdict": "It stakes barely 43% of flat (~2,450m per king) because the de-vig Kelly fraction is ≤0 on most kings' picks — the market prices these picks at or below fair, so the floor tier dominates — and its ROI is flat to the second…"
+      },
+      {
+        "id": "Z5",
+        "name": "SPORT × SIDE GRID",
+        "cycle": 11,
+        "status": "FINDING",
+        "verdict": "Beats flat everywhere (grand king +4,163.04) while staking LESS than flat on four of five kings (grand king 5,240.00 vs 5,700.00) — the P&L gain cannot be leverage; ROI rises everywhere (grand king +79.45% vs +63.22%; Selector…"
+      },
+      {
+        "id": "Z6",
+        "name": "PRICE-QUINTILE TAILS",
+        "cycle": 11,
+        "status": "FINDING",
+        "verdict": "Beats flat everywhere (grand king +4,875.03, ROI +82.42%) inside the guard everywhere. Against its parent X7 on the grand king it pays +139.73m more (+4,875.03 vs +4,735.30) on a similar total staked — concentrating the…"
+      },
+      {
+        "id": "Z7",
+        "name": "THREE-WAY × DOG-TILT",
+        "cycle": 11,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 inside the guard — by +21.25m to +43.97m per king (grand king +3,626.72 vs +3,603.80). As disclosed before results, only 21 games carry a draw price, so the rule moves a handful of picks per king; the…"
+      },
+      {
+        "id": "Z8",
+        "name": "POOLED-MEDIAN × DOG-DEVIG",
+        "cycle": 11,
+        "status": "NOT A FINDING",
+        "verdict": "Beats flat on 5 of 5 (grand king +5,445.66, ROI up everywhere) but Selector's drawdown (90.00) breaches its 87.45 guard. It also pays LESS than Y6 on the grand king (+5,445.66 vs +5,546.79): X7 compounds better with…"
+      },
       {
         "id": "Y1",
         "name": "ELO-MAGNITUDE TIERS",
@@ -671,6 +727,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 11 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle11.py (new file only; reuses Cycle 10's stream builder read-only — the court has not changed since…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 10 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle10.py (new file only; reuses Cycle 8's stream builder for the four unchanged kings read-only and…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -704,10 +767,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 5 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle5.py (new file only; reuses Cycle 1's read-only stream builder). Firewall unchanged: read-only on…",
+      "title": "CYCLE 13 — 2026-11-18 — Slice 6 RE-AUTOPSY under the current kings (SINGLE-KING blind spots)",
+      "summary": "Slice 6 is the second slice (after Slice 5) that the intervening crowns have left essentially untouched — and the more striking of the…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -743,13 +806,6 @@
       "kind": "generation",
       "title": "CYCLE 8 — 2026-11-18 — Slice 1 RE-AUTOPSY under the current kings (UNANIMOUS losses)",
       "summary": "The Cycle 7 block is cleared and the hunt is live again under the current kings — that is this cycle's real yield. On substance, Slice 1…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 7 — 2026-11-18 — TRIGGERED RE-AUDIT (sitting king changed) — CYCLE STOPPED AT THE AUDIT GATE",
-      "summary": "Why this cycle ran at all",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -797,6 +853,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G163 — F3 THROW-INCENTIVE ASYMMETRY (thirty-fourth visit) — 2026-11-18",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G162 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-fourth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION in G162, no branch DEAD, and no new best form — F2 remains parked, fully specified, awaiting its freeze. This…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -827,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G158 — F3 THROW-INCENTIVE ASYMMETRY (thirty-third visit) — 2026-11-18",
       "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G157 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (thirty-third visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE only beyond the B1 control. This generation IS a…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
