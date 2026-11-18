@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:45:41.562071-06:00",
+  "generated_at": "2026-11-18T13:50:50.177176-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,23 +66,16 @@
     },
     {
       "court": "Selector",
-      "name": "UUUUUUUUU4-OVRMISS-NODP",
+      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV",
       "grand_king": false,
-      "wins": 211,
-      "losses": 28,
+      "wins": 210,
+      "losses": 29,
       "priced": 226,
-      "pnl_m": 3797.53,
-      "roi_pct": 67.21,
+      "pnl_m": 3756.4,
+      "roi_pct": 66.48,
       "set_size": 239,
-      "dog_line": {
-        "picks": 59,
-        "wins": 49,
-        "losses": 10,
-        "priced": 54,
-        "pnl_m": 1890.9,
-        "roi_pct": 140.07
-      },
-      "stamp": "CLEAR",
+      "dog_line": null,
+      "stamp": null,
       "crowned_on": "2026-11-18"
     },
     {
@@ -133,8 +126,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-18T12:55:55.585811-06:00",
-      "headline": "UUUUUUUUU4-OVRMISS-NODP — 211-28, +67.21% fitted ROI"
+      "last_activity": "2026-11-18T13:48:15.084933-06:00",
+      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV — 210-29, +66.48% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -147,36 +140,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T13:32:34.712897-06:00",
+      "last_activity": "2026-11-18T13:47:12.999931-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T13:32:23.724896-06:00",
-      "headline": "Latest search cycle: 149"
+      "last_activity": "2026-11-18T13:48:43.659934-06:00",
+      "headline": "Latest search cycle: 150"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T13:22:00.161872-06:00",
-      "headline": "Latest filing: P110"
+      "last_activity": "2026-11-18T13:48:12.284933-06:00",
+      "headline": "Latest filing: P112"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T13:20:02.400868-06:00",
+      "last_activity": "2026-11-18T13:47:20.204931-06:00",
       "headline": "6 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T13:45:03.469926-06:00",
-      "headline": "Cycle 4: 16 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T13:46:11.501929-06:00",
+      "headline": "Cycle 5: 19 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,8 +180,50 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 4,
+    "latest_cycle": 5,
     "findings": [
+      {
+        "id": "R1",
+        "name": "ELO-SUPPORT",
+        "cycle": 5,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 with ROI up on all five, and its mirror R2 loses on 0 of 5 — the direction is consistent inside the fitted set. But the entire effect rests on the 32 non-zero-Elo games, the gains are small (+29.51m to…"
+      },
+      {
+        "id": "R2",
+        "name": "ELO-INVERTED",
+        "cycle": 5,
+        "status": "REFUTED",
+        "verdict": "The control that prices R1: staking defiance of the rating loses everywhere, by small margins mirroring R1's small gains"
+      },
+      {
+        "id": "R3",
+        "name": "CONSENSUS-5",
+        "cycle": 5,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 (grand king +5,154.95) and repeats Q2's signature on Vanguard: P&L +2,908.22 vs +1,448.57 with drawdown *cut* from 159.60 to 95.76. But ROI is mixed — up on Regime, Quantum and Vanguard, a hair down on…"
+      },
+      {
+        "id": "R4",
+        "name": "SLIP-SIZE",
+        "cycle": 5,
+        "status": "NOT A FINDING",
+        "verdict": "like Cycle 4's Q7, it is a capital-efficiency shape — ROI up on four of five kings on ~760m *less* staked, with the sharpest drawdown cuts in the cycle (grand king 75.00 → 45.00; Selector 58.30 → 35.00). It loses P&L by…"
+      },
+      {
+        "id": "R5",
+        "name": "DIFFERENTIAL-SUPPORT",
+        "cycle": 5,
+        "status": "FINDING",
+        "verdict": "Beats flat on 4 of 5 (loses Legacy by -7.07m; its Selector win is +2.92m), ROI mixed (down on Legacy and Selector), all effects within a few tens of m on a subset of under a third of games. Recorded because the bar binds; in…"
+      },
+      {
+        "id": "R7",
+        "name": "MARKET-STRUCTURE",
+        "cycle": 5,
+        "status": "REFUTED",
+        "verdict": "Three-way games do not carry extra stake-worthy edge; the rule's P&L loss is mostly the mechanical cost of cutting two-way stakes to 20m, and its Vanguard drawdown (221.69) is the cycle's worst ride. The market-structure…"
+      },
       {
         "id": "Q1",
         "name": "BRAND-SPLIT",
@@ -384,6 +419,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 150 — 2026-11-18 13:41 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
+      "summary": "Kings tie to the cent — Legacy DEAP6 +62.95%, new grand king Regime TRIPS1VETO 204-35 +3603.80m +63.22% (crowned by parallel Regime…",
+      "at": "2026-11-18T13:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 149 — 2026-11-18 13:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence, 16,991 rows, 0 missing),…",
       "at": "2026-11-18T13:26:00-06:00"
@@ -415,13 +457,6 @@
       "title": "CYCLE 145 — 2026-11-18 12:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (cycle 144's parser artefact resolved by the corrected census method), NO CROWN. All kings tie to the cent, registry DB =…",
       "at": "2026-11-18T12:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 144 — 2026-11-18 12:11 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
-      "summary": "No search, no verification, no crown, no implementation. Next cycle re-audits from scratch: if the mirror has been re-exported from the…",
-      "at": "2026-11-18T12:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -461,6 +496,13 @@
     {
       "agent": "Loss Autopsy",
       "kind": "generation",
+      "title": "CYCLE 7 — 2026-11-18 — TRIGGERED RE-AUDIT (sitting king changed) — CYCLE STOPPED AT THE AUDIT GATE",
+      "summary": "Why this cycle ran at all",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
       "title": "CYCLE 6 — 2026-11-18 — Slice 6: SINGLE-KING blind spots (per king in turn)",
       "summary": "Single-king blind spots are not a court disease — they are Vanguard's address. The other four kings are almost never alone wrong (3, 2,…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -494,10 +536,17 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 1 — 2026-11-18 — Slice 1: UNANIMOUS losses (every sitting king picked wrong)",
-      "summary": "The eight games no king could get right are not one disease. Two are structurally unwinnable (handball draws with no draw market in the…",
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-18 (13:42 CST) — audit + hunt (classes e + d + f: public ephemeris & venue data / sport-specific outdoor sports / the…",
+      "summary": "P112 VENUE-AXIS ASYMMETRY / SUN-AND-AXIAL-WIND FREEZE — FILED as collector proposal P112 (needs-data; no user spend — a one-time…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P111: PRICING-PRODUCTION FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G151; classes f + i)",
+      "summary": "Filed Arena P111: PRICING-PRODUCTION FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G151; classes f + i)",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -529,17 +578,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P107: BOOK-ACCEPTANCE-RESPONSE FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena…",
-      "summary": "Filed Arena P107: BOOK-ACCEPTANCE-RESPONSE FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G147;…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P106: HOUSE HEDGING, OFFLOAD & RISK-TRANSFER FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G146;…",
-      "summary": "Filed Arena P106: HOUSE HEDGING, OFFLOAD & RISK-TRANSFER FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G146; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G151 — F1 HOUSE-VIEW (thirty-first visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE on…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -575,13 +617,6 @@
       "kind": "generation",
       "title": "Arena G146 — F1 HOUSE-VIEW (thirtieth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F1 remains NEEDS-FREEZE only beyond the standing F-E note. MILESTONE…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G145 — F5 SOFT-ANGLE EXTREMES (twenty-ninth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
