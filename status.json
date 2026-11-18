@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:20:45.134010-06:00",
+  "generated_at": "2026-11-18T15:25:42.195568-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-18T14:46:55.118493-06:00",
+      "last_activity": "2026-11-18T15:25:25.594453-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO — 204-35, +63.22% fitted ROI"
     },
     {
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T15:06:19.021473-06:00",
-      "headline": "Latest search cycle: 155"
+      "last_activity": "2026-11-18T15:21:48.104457-06:00",
+      "headline": "Latest search cycle: 156"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T15:15:00.299464-06:00",
-      "headline": "Latest filing: P120"
+      "last_activity": "2026-11-18T15:21:22.074457-06:00",
+      "headline": "Latest filing: P121"
     },
     {
       "name": "Loss Autopsy",
@@ -552,9 +552,16 @@
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 151 OUTCOME",
-      "summary": "AUDIT FAILURE (milestone). Kings tie to the cent — Legacy DEAP6 +62.95%, grand king Regime TRIPS1VETO 204-35 +3603.80m +63.22%, Quantum…",
-      "at": "2026-11-18T15:06:19.021473-06:00"
+      "title": "CYCLE 156 OUTCOME",
+      "summary": "NO CROWN. All kings tie to the cent at audit on two identical runs (registry DB = mirror by verbatim signature presence, 17,412 rows, 0…",
+      "at": "2026-11-18T15:21:48.104457-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 156 — 2026-11-18 15:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T15:11:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -583,13 +590,6 @@
       "title": "CYCLE 152 — 2026-11-18 14:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT, NO CROWN. All kings tie to the cent at audit (registry DB = mirror by verbatim signature presence, 17,163 rows, 0 missing —…",
       "at": "2026-11-18T14:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 151 — 2026-11-18 13:56 CST (scheduled run, job discovery-loop-continuous) — AUDIT FAILURE, CYCLE STOPPED",
-      "summary": "STEP 1 — AUDIT (before any search or write)",
-      "at": "2026-11-18T13:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -678,6 +678,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "CYCLE 2026-11-18 (15:12 CST) — audit + hunt (classes g + c + f + d: cross-market structure / market microstructure / the house's chair /…",
+      "summary": "P121 PLAYER-PROP CROSS-DESK FREEZE (basketball) — FILED as collector proposal P121 (needs-data; no user spend — one additional market…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P120: FLOW FUNDING-RAIL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G157;…",
       "summary": "Filed Arena P120: FLOW FUNDING-RAIL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G157; classes f + i)",
       "at": "2026-11-18T00:00:00-06:00"
@@ -708,13 +715,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P116: COMMON-OPPONENT TRANSITIVE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G154; classes f + i)",
       "summary": "Filed Arena P116: COMMON-OPPONENT TRANSITIVE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-18, Arena G154; classes f + i)",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-18 (14:12 CST) — audit + hunt (classes g + f + c: cross-market structure / the house's chair / market microstructure — the…",
-      "summary": "P115 BTTS CROSS-DESK FREEZE — FILED as collector proposal P115 (needs-data; no user spend — one additional price read per soccer fixture…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
