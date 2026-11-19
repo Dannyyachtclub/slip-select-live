@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:55:45.111529-06:00",
+  "generated_at": "2026-11-19T16:00:53.734572-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-19T15:25:28.183555-06:00",
+      "last_activity": "2026-11-19T15:58:37.138624-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15 — 208-31, +63.24% fitted ROI"
     },
     {
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T15:42:50.293591-06:00",
-      "headline": "Latest search cycle: 251"
+      "last_activity": "2026-11-19T15:58:13.384624-06:00",
+      "headline": "Latest search cycle: 252"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T15:45:35.841597-06:00",
-      "headline": "Latest filing: P233"
+      "last_activity": "2026-11-19T15:57:56.830623-06:00",
+      "headline": "Latest filing: P234"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 252 — 2026-11-19 15:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical discovery kings and no regeneration…",
+      "at": "2026-11-19T15:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 251 — 2026-11-19 15:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
       "at": "2026-11-19T15:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 247 — 2026-11-19 14:42 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
       "at": "2026-11-19T14:42:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 246 — 2026-11-19 14:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings; the closing record was…",
-      "at": "2026-11-19T14:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 5:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": null,
             "detail": "Scheduled",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 6:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7394,7 +7394,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7861,7 +7861,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+            "fetched_at": "2026-11-19T16:00:50.452350-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8410,7 +8410,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+        "fetched_at": "2026-11-19T16:00:50.452350-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T15:55:40.734465-06:00",
+        "fetched_at": "2026-11-19T16:00:50.452350-06:00",
         "source": "ESPN",
         "official": false
       },
