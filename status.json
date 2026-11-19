@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T19:45:39.541345-06:00",
+  "generated_at": "2026-11-18T19:50:37.747498-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,36 +147,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T19:35:25.063020-06:00",
+      "last_activity": "2026-11-18T19:49:22.046138-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T19:29:17.770023-06:00",
-      "headline": "Latest search cycle: 173"
+      "last_activity": "2026-11-18T19:45:54.383139-06:00",
+      "headline": "Latest search cycle: 174"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T19:34:57.408021-06:00",
+      "last_activity": "2026-11-18T19:48:00.926138-06:00",
       "headline": "Latest filing: P136"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T19:15:24.187518-06:00",
+      "last_activity": "2026-11-18T19:47:00.380139-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T19:45:21.758140-06:00",
-      "headline": "Cycle 16: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T19:46:42.909139-06:00",
+      "headline": "Cycle 17: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 16,
+    "latest_cycle": 17,
     "findings": [
       {
         "id": "Z1",
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 174 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T19:45:54.383139-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 173 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T19:29:17.770023-06:00"
+      "at": "2026-11-18T19:45:54.383139-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 172 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T19:29:17.770023-06:00"
+      "at": "2026-11-18T19:45:54.383139-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 171 OUTCOME",
-      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T19:29:17.770023-06:00"
+      "title": "CYCLE 174 — 2026-11-18 19:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T19:41:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -716,13 +723,6 @@
       "title": "CYCLE 172 — 2026-11-18 19:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T19:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 171 — 2026-11-18 18:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T18:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -769,6 +769,13 @@
     {
       "agent": "Loss Autopsy",
       "kind": "generation",
+      "title": "CYCLE 19 — 2026-11-18 — Slice 3 RE-AUTOPSY under the FAVP150160 kings (DOG-side losses)",
+      "summary": "Slice 3 under the FAVP150160 kings is Cycle 10's slice in every particular: same 16 games, same gradient (12 of 16 losses with ≤2 peers…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
       "title": "CYCLE 18 — 2026-11-18 — Slice 2 RE-AUTOPSY under the FAVP150160 kings (SELECTION failures)",
       "summary": "Rotation continues from Cycle 17 (Slice 1 done under the FAVP150160 kings). No further trigger was needed: the FAVP150160 re-autopsy…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -802,10 +809,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 13 — 2026-11-18 — Slice 6 RE-AUTOPSY under the current kings (SINGLE-KING blind spots)",
-      "summary": "Slice 6 is the second slice (after Slice 5) that the intervening crowns have left essentially untouched — and the more striking of the…",
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-18 (19:42 CST) — audit + hunt (classes d + e + f: sport-specific team sports / public disciplinary data / the house's…",
+      "summary": "P134 HEAD-COACH BENCH ABSENCE FREEZE — FILED as collector proposal P134 (needs-data; no user spend — published federation disciplinary…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -844,10 +851,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P133: MARKET-CALENDAR / LISTING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G171; classes f + i)",
-      "summary": "Filed Arena P133: MARKET-CALENDAR / LISTING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G171; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G175 — F5 SOFT-ANGLE EXTREMES (thirty-seventh visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G170 — F5 SOFT-ANGLE EXTREMES (thirty-sixth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G169 — F4 CROSS-REFERENCE (thirty-sixth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 remains NEEDS-FREEZE only. This generation IS a milestone under the…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
