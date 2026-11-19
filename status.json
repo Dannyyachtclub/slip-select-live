@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T08:15:39.834080-06:00",
+  "generated_at": "2026-11-19T08:16:25.302710-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -161,7 +161,7 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T08:11:38.636357-06:00",
+      "last_activity": "2026-11-19T08:15:42.931364-06:00",
       "headline": "Latest filing: P201"
     },
     {
@@ -797,6 +797,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P178: TIMEZONE-SHIFT (JET-LAG) SOFT-ANGLE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena…",
+      "summary": "Filed Arena P178: TIMEZONE-SHIFT (JET-LAG) SOFT-ANGLE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena G225;…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P177: TO-QUALIFY (ADVANCEMENT) CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena…",
       "summary": "Filed Arena P177: TO-QUALIFY (ADVANCEMENT) CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G224;…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -827,13 +834,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P173: ELEVATION-DIFFERENTIAL / ACCLIMATISATION FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19,…",
       "summary": "Filed Arena P173: ELEVATION-DIFFERENTIAL / ACCLIMATISATION FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena G220;…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P172: FIRST-GOAL CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G219; classes f + i)",
-      "summary": "Filed Arena P172: FIRST-GOAL CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G219; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -5868,6 +5868,7 @@
   "bankroll": {
     "start_m": 1000000000,
     "reset_date": "2026-11-18",
+    "tracking_since": "2026-11-18",
     "since": "2026-11-18",
     "first_tracked_slip": 34,
     "scoped_slips": [
@@ -5880,11 +5881,13 @@
       {
         "slip": 33,
         "date": "2026-11-17",
-        "reason": "dated before the reset date"
+        "reason": "dated before tracking began"
       }
     ],
     "balance_m": 999999927.55,
     "settled_pnl_m": -72.45,
+    "settled_staked_m": 250.0,
+    "roi_pct": -28.98,
     "wins": 7,
     "losses": 3,
     "record": "7-3",
@@ -6271,7 +6274,7 @@
       }
     ],
     "unsettled_m": 0,
-    "note": "Called bets only — the grand pick and every confidence fire at their called stakes, plus, on slips locked in the every-pick form (Slip #37 onward), every choice pick at its recorded flat stake — on every slip dated from the reset onward. The Underdog Desk is paper by design and never enters this ledger."
+    "note": "Called bets only — the grand pick and every confidence fire at their called stakes, plus, on slips locked in the every-pick form (Slip #37 onward), every choice pick at its recorded flat stake — on every slip dated from the start of tracking onward. The Underdog Desk is paper by design and never enters this ledger."
   },
   "forward": {
     "chosen_bets": {
