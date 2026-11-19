@@ -484,11 +484,81 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
   .rec-side{min-width:64px}.rec-score{font-size:1.25rem}
   .flow-stage{min-width:96px}
 }
+/* ================= v6 — LIVE DETAIL + PROGRESS + REVAMP =================
+   The ticket keeps its v5.3 shape; every row gains a tap-to-open detail
+   panel (why / kings / frozen prices / live score + stepper), every live
+   ticket header gains a progress line, the Court tab gains an IN PLAY
+   NOW strip, and Records rows carry live states. Polish: deeper section
+   rhythm, calmer panels, stronger hairlines — no layout is moved. */
+.trow-score-live{font-family:var(--serif);font-size:1.22rem;font-weight:900;color:#fff;
+  font-variant-numeric:tabular-nums;line-height:1.1;white-space:nowrap}
+.trow-clock{color:var(--mag);font-size:.76rem;font-weight:700;letter-spacing:.05em;
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.chip.unofficial{border-color:rgba(232,184,75,.65);color:var(--gold-hi);background:rgba(232,184,75,.08)}
+.trow-exp{margin-top:7px;background:none;border:1px solid var(--line);border-radius:999px;
+  color:var(--gold-hi);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:4px 10px;cursor:pointer;font-family:inherit}
+.trow-exp:hover{border-color:var(--gold)} .trow-exp:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.tdet{display:none;border-top:1px dashed var(--line-soft);margin:2px 16px 0 19px;padding:12px 0 14px}
+.tdet.open{display:block}
+.tdet + .trow{border-top:1px solid var(--line-faint)}
+.tdet .why{font-size:.9rem;line-height:1.55;color:var(--ink);overflow-wrap:anywhere}
+.tdet .why .lab,.tdet .dsec{color:var(--gold-hi);font-size:.66rem;font-weight:800;
+  letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:4px}
+.tdet .dsec{margin-top:13px}
+.krows{border:1px solid var(--line-soft);border-radius:10px;overflow:hidden}
+.krow{display:flex;align-items:baseline;gap:8px;padding:6px 10px;font-size:.85rem;background:rgba(255,255,255,.015)}
+.krow + .krow{border-top:1px solid var(--line-faint)}
+.krow .kc{flex:none;width:74px;color:var(--gold);font-family:var(--serif);font-weight:800;
+  font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.krow .kp{flex:1 1 auto;min-width:0;overflow-wrap:anywhere;color:var(--ink)}
+.krow .kpr{flex:none;color:var(--gold-hi);font-variant-numeric:tabular-nums;font-weight:700}
+.krow .ktag{flex:none;font-size:.6rem;font-weight:800;letter-spacing:.08em;color:var(--pos);
+  border:1px solid rgba(67,201,138,.5);border-radius:999px;padding:0 6px;text-transform:uppercase}
+.krow .kr{display:block;width:100%;color:var(--dim);font-size:.74rem;line-height:1.4;overflow-wrap:anywhere}
+.dline{font-size:.85rem;color:var(--mut);line-height:1.55;overflow-wrap:anywhere}
+.dline b{color:var(--ink);font-variant-numeric:tabular-nums}
+.dlive{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dlive .sc{font-family:var(--serif);font-size:1.3rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums}
+.dlive .ck{color:var(--mag);font-weight:700;font-size:.82rem;font-variant-numeric:tabular-nums}
+.dnote{font-size:.72rem;color:var(--dim);margin-top:5px;line-height:1.45}
+.ticket-prog{padding:8px 16px 10px 19px;border-bottom:1px solid var(--line-soft);
+  display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.014)}
+.prog-bar{flex:1 1 auto;height:5px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden;display:flex}
+.prog-bar .pf{background:var(--pos);height:100%}
+.prog-bar .pi{background:var(--mag);height:100%;animation:pulse 1.6s ease-in-out infinite}
+.prog-txt{flex:none;font-size:.72rem;color:var(--mut);letter-spacing:.04em;font-variant-numeric:tabular-nums;white-space:nowrap}
+.band-ticket .ticket-prog{padding:6px 13px 8px 16px}
+#inplay-strip:empty{display:none}
+.ip-head{display:flex;align-items:center;gap:9px;margin:0 0 10px}
+.ip-title{font-family:var(--serif);font-weight:900;letter-spacing:.1em;color:#fff;font-size:.95rem}
+.ip-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;margin-bottom:20px}
+.ip-card{border:1px solid var(--line);border-left:3px solid var(--mag);border-radius:12px;
+  background:var(--inset);padding:10px 13px;cursor:pointer}
+.ip-card:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.ip-game{font-weight:700;font-size:.92rem;color:#fff;line-height:1.3;overflow-wrap:anywhere}
+.ip-score{font-family:var(--serif);font-size:1.25rem;font-weight:900;color:#fff;
+  font-variant-numeric:tabular-nums;margin-top:3px}
+.ip-meta{color:var(--dim);font-size:.74rem;margin-top:2px;font-variant-numeric:tabular-nums}
+.ip-meta .ck{color:var(--mag);font-weight:700}
+.rec-live{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.rec-score-live{font-family:var(--serif);font-size:1.12rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rec-clock{color:var(--mag);font-size:.74rem;font-weight:700;font-variant-numeric:tabular-nums;white-space:nowrap}
+.rec-row.is-live{border-left:3px solid var(--mag)}
+/* whole-view polish: rhythm, depth, calm */
+.sec{margin:60px 0 0}
+.sec-sub{line-height:1.6}
+.ticket{box-shadow:0 18px 42px rgba(0,0,0,.42)}
+.tabs{backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.card,.stat,.krows{background-clip:padding-box}
+.trow{padding-top:13px;padding-bottom:13px}
+.rec-row{padding:13px 14px}
+@media (max-width:640px){ .sec{margin:46px 0 0} .prog-txt{white-space:normal} }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1!important;transform:none!important;transition:none!important}
   .livedot i,.livepulse,.aura,.nebula,.scroll-cue::after,.flow-arrow,.pyr-chip .arr,
-  .pyr-medallion .rise,.pyr-apex .pyr-photo,.rec-row{animation:none!important}
+  .pyr-medallion .rise,.pyr-apex .pyr-photo,.rec-row,.prog-bar .pi{animation:none!important}
   .formbar i,.winbar i{transition:none}
   .fighter,.fighter .hp i{transition:none}
 }
@@ -551,6 +621,7 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
 <div class="wrap">
   <section class="tabpage active" id="page-court">
     <div class="sec reveal">
+      <div id="inplay-strip"></div>
       <div class="choices-band" id="tonight-band"></div>
     </div>
 
@@ -720,12 +791,21 @@ function imgTag(key,cls){const c=CHAR[key]||CHAR.vault;return '<img class="portr
 function thumbTag(key){return '<div class="thumb">'+imgTag(key)+"</div>"}
 let DATA=null, activeTab="court";
 const openAcc=new Set();
+const openDetail=new Set();
 function acc(key,head,body){const open=openAcc.has(key)?" open":"";
  return '<div class="acc'+open+'" data-acc="'+esc(key)+'"><button class="acc-h" data-acch="'+esc(key)+'"><span>'+head+'</span><span class="chev">▸</span></button><div class="acc-b">'+body+'</div></div>'}
 document.addEventListener("click",e=>{
  const b=e.target.closest?e.target.closest("[data-acch]"):null;
  if(b){const k=b.getAttribute("data-acch");const box=b.parentElement;
    if(openAcc.has(k)){openAcc.delete(k);box.classList.remove("open")}else{openAcc.add(k);box.classList.add("open")}return}
+ const dt=e.target.closest?e.target.closest("[data-det]"):null;
+ if(dt){const k=dt.getAttribute("data-det");
+   const panel=dt.closest(".ticket").querySelector('.tdet[data-detpanel="'+k+'"]');
+   if(openDetail.has(k)){openDetail.delete(k);if(panel)panel.classList.remove("open");dt.setAttribute("aria-expanded","false");dt.textContent="Details ▾"}
+   else{openDetail.add(k);if(panel)panel.classList.add("open");dt.setAttribute("aria-expanded","true");dt.textContent="Details ▴"}
+   return}
+ const ip=e.target.closest?e.target.closest("[data-goto-slip]"):null;
+ if(ip){switchTab("bets");return}
  const t=e.target.closest?e.target.closest("[data-tab]"):null;
  if(t){switchTab(t.getAttribute("data-tab"))}
 });
@@ -972,6 +1052,7 @@ function normBet(b){
   odds:(b.odds!=null?b.odds:b.price),state:state,
   result:b.result?String(b.result).toLowerCase():null,pnl_m:b.pnl_m,
   final_score:b.final_score||null,tip_time:b.tip_time||(b.tip_at?fmtTime(b.tip_at):""),game_id:b.game_id||"",
+  live:b.live||null,reason:b.reason||null,
   user_stake_m:(b.user_stake_m!=null?b.user_stake_m:null),user_bet:b.user_bet||null};
 }
 function calledBets(d,slipNo){
@@ -1004,6 +1085,7 @@ function boardPicks(d,slip){
    state:t.status?(String(t.status).toUpperCase()==="IN PLAY"?"inplay":String(t.status).toLowerCase()):(t.result?"ended":"upcoming"),
    result:t.result?String(t.result).toLowerCase():null,pnl_m:t.pnl_m,
    final_score:t.final_score,tip_time:t.tip_at?fmtTime(t.tip_at):"",
+   live:t.live||null,reason:t.reason||null,
    user_bet:t.user_bet?{stake_m:t.user_stake_m,odds:t.user_price}:null}));
  return calledBets(d,slip.number).filter(b=>b.kind!=="DRAW DESK");
 }
@@ -1013,15 +1095,94 @@ function boardPicks(d,slip){
    fed by the same boardPicks source — the two views cannot disagree.
    Row anatomy: rank medallion + kind | pick (hero) / game / stake
    micro-line / note line | live state block on the right. */
+/* ================= v6 live helpers =================
+   The overlay (games_list[].live / top3[].live) is display-only data
+   from ESPN: state scheduled|in|final, home/away scores, clock, period.
+   A final here is UNOFFICIAL — the official result is the two-source
+   grade, which arrives as outcome/result and always outranks it. */
+function scoreLine(live){
+ if(!live||live.home_score==null||live.away_score==null)return "";
+ return live.home_score+"\u2013"+live.away_score;
+}
+function clockLine(live){
+ if(!live||live.state!=="in")return "";
+ const bits=[];
+ if(live.period)bits.push("P"+live.period);
+ if(live.clock)bits.push(live.clock);
+ return bits.join(" \u00b7 ");
+}
+function liveStepperHtml(step){
+ const dot=(n,lab)=>{
+   const cls=n<step?"done":(n===step?(step===3?"done":"on"):"");
+   return (n>1?'<span class="bar'+(n<=step?" on":"")+'"></span>':"")
+     +'<span class="dot '+cls+'"></span><span class="slab'+(n<=step?" on":"")+'">'+lab+"</span>"};
+ return '<div class="stepper">'+dot(1,"Picked")+dot(2,"In Play")+dot(3,"Final")+"</div>";
+}
+function detailHtml(d,slip,p,meta){
+ const det=(meta&&meta.detail)||null;
+ const live=p.live||(meta&&meta.live)||null;
+ const reason=p.reason||(det&&det.bet_call)||null;
+ let h="";
+ if(live&&(live.state==="in"||live.state==="final")){
+   const sc=scoreLine(live);
+   const step=live.state==="final"?3:2;
+   h+='<span class="dsec">'+(live.state==="in"?"Live now":"Full time \u2014 unofficial")+'</span>'
+     +'<div class="dlive">'+(sc?'<span class="sc">'+esc(sc)+"</span>":"")
+     +(live.state==="in"?'<span class="ck">'+esc(clockLine(live))+"</span>"
+                        :'<span class="ck">'+esc(live.detail||"Final")+"</span>")+"</div>"
+     +liveStepperHtml(step)
+     +(live.state==="final"?'<div class="dnote">Live score via ESPN \u2014 display only. The official result lands with the two-source grade.</div>':"");
+ }
+ if(reason)h+='<span class="dsec">Why this pick</span><div class="why">'+esc(reason)+"</div>";
+ if(det&&det.kings&&det.kings.length){
+   h+='<span class="dsec">The five kings on this game</span><div class="krows">'
+     +det.kings.map(k=>'<div class="krow"><span class="kc">'+esc(k.court)+'</span><span class="kp">'+esc(k.pick||"\u2014")
+       +(k.reason?'<span class="kr">'+esc(k.reason)+"</span>":"")+"</span>"
+       +(k.price!=null?'<span class="kpr">@ '+esc(k.price)+"</span>":"")
+       +(p.pick&&k.pick===p.pick?'<span class="ktag">the bet</span>':"")+"</div>").join("")+"</div>";
+ }
+ if(det&&det.prices&&(det.prices.home!=null||det.prices.away!=null||det.prices.draw!=null)){
+   h+='<span class="dsec">Frozen prices at the lock</span><div class="dline">'
+     +"<b>"+esc(det.home||"Home")+"</b> "+(det.prices.home!=null?esc(det.prices.home):"\u2014")
+     +" \u00b7 <b>"+esc(det.away||"Away")+"</b> "+(det.prices.away!=null?esc(det.prices.away):"\u2014")
+     +(det.prices.draw!=null?" \u00b7 <b>Draw</b> "+esc(det.prices.draw):"")+"</div>";
+   const dv=det.devig_pct||{};
+   if(dv.home!=null||dv.away!=null||det.overround_pct!=null){
+     h+='<div class="dline">De-vig \u2014 '+esc(det.home||"Home")+" <b>"+(dv.home!=null?dv.home+"%":"\u2014")+"</b>"
+       +" \u00b7 "+esc(det.away||"Away")+" <b>"+(dv.away!=null?dv.away+"%":"\u2014")+"</b>"
+       +(det.overround_pct!=null?" \u00b7 overround <b>"+esc(det.overround_pct)+"%</b>":"")+"</div>";
+   }
+   if(det.totals&&det.totals.line!=null){
+     h+='<div class="dline">Total \u2014 line <b>'+esc(det.totals.line)+"</b>"
+       +(det.totals.projection!=null?" \u00b7 projection <b>"+esc(det.totals.projection)+"</b>":"")+"</div>";
+   }
+ }
+ if(p.tip_time)h+='<div class="dline" style="margin-top:9px">Tips '+esc(p.tip_time)+"</div>";
+ return h||'<div class="dnote">No frozen detail on record for this game.</div>';
+}
 function ticketRow(d,slip,p,i,band){
  const st=p.state||"upcoming";
  const meta=metaFor(d,slip.number,p.game_id);
+ const live=p.live||(meta&&meta.live)||null;
  let state="";
- if(st==="inplay")state='<span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
-   +(p.tip_time?'<span class="trow-when">tipped '+esc(p.tip_time)+"</span>":"");
- else if(st==="ended")state='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">ENDED'+(p.result?" · "+esc(String(p.result).toUpperCase()):"")+"</span>"
+ if(st==="ended")state='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">ENDED'+(p.result?" · "+esc(String(p.result).toUpperCase()):"")+"</span>"
    +(p.final_score?'<span class="trow-score">FT '+esc(p.final_score)+"</span>":"")
    +(p.pnl_m!=null?'<span class="trow-pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
+ else if(live&&live.state==="in"){
+   const sc=scoreLine(live);
+   state='<span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
+   +(sc?'<span class="trow-score-live">'+esc(sc)+"</span>":"")
+   +(clockLine(live)?'<span class="trow-clock">'+esc(clockLine(live))+"</span>":"")
+   +(p.tip_time?'<span class="trow-when">tipped '+esc(p.tip_time)+"</span>":"");
+ }
+ else if(live&&live.state==="final"){
+   const sc=scoreLine(live);
+   state='<span class="chip unofficial">FINAL \u2014 UNOFFICIAL</span>'
+   +(sc?'<span class="trow-score-live">'+esc(sc)+"</span>":"")
+   +'<span class="trow-when">grade pending</span>';
+ }
+ else if(st==="inplay")state='<span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
+   +(p.tip_time?'<span class="trow-when">tipped '+esc(p.tip_time)+"</span>":"");
  else state='<span class="chip amb">UPCOMING</span>'
    +(p.tip_time?'<span class="trow-when">tips '+esc(p.tip_time)+"</span>":"");
  const micro='<span class="lab">'+(p.paper?"Paper pick":"Bet")+'</span> — <b>'+esc(stakeWords(p.called_stake_m))+'</b> @ <b>'+esc(p.odds||"")+"</b>"
@@ -1035,12 +1196,28 @@ function ticketRow(d,slip,p,i,band){
  if(p.desk||p.paper)bits.push('<span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours is real');
  const note=bits.length?'<div class="trow-note">'+bits.join(" · ")+"</div>":"";
  const tap=band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+" choice "+(i+1)+": "+esc(p.pick||"")+' — see it on the Bets tab"':"";
+ const key=slip.number+":"+p.game_id;
+ const expBtn=band?"":'<button class="trow-exp" type="button" data-det="'+esc(key)+'" aria-expanded="'+(openDetail.has(key)?"true":"false")+'">'+(openDetail.has(key)?"Details \u25b4":"Details \u25be")+"</button>";
+ const panel=band?"":'<div class="tdet'+(openDetail.has(key)?" open":"")+'" data-detpanel="'+esc(key)+'">'+detailHtml(d,slip,p,meta)+"</div>";
  return '<div class="trow"'+tap+">"
    +'<div class="trow-medal"><span class="medal">'+String(i+1).padStart(2,"0")+'</span><span class="trow-kind">'+esc(p.kind||"")+"</span></div>"
    +'<div class="trow-main"><div class="trow-pick">'+esc(p.pick||"")+'</div>'
    +'<div class="trow-game">'+esc(p.game||"")+"</div>"
    +'<div class="trow-micro">'+micro+"</div>"+note+"</div>"
-   +'<div class="trow-state">'+state+"</div></div>";
+   +'<div class="trow-state">'+state+expBtn+"</div></div>"+panel;
+}
+function slipProgress(slip){
+ /* counts from the slip's own games: officially ended, live-final and
+    in-play come from the grade + the overlay; the rest are still to come */
+ const gl=slip.games_list||[]; if(!gl.length)return "";
+ if(slip.status!=="LOCKED"&&slip.status!=="PART-GRADED")return "";
+ let fin=0,inp=0;
+ gl.forEach(g=>{ if(g.status==="ENDED"||(g.live&&g.live.state==="final"))fin++;
+   else if(g.live&&g.live.state==="in")inp++; });
+ const total=gl.length, up=total-fin-inp;
+ const fp=Math.round(fin/total*1000)/10, ip=Math.round(inp/total*1000)/10;
+ return '<div class="ticket-prog"><div class="prog-bar"><span class="pf" style="width:'+fp+'%"></span><span class="pi" style="width:'+ip+'%"></span></div>'
+   +'<span class="prog-txt">'+fin+" final \u00b7 "+inp+" in play \u00b7 "+up+" to come</span></div>";
 }
 function slipTicket(d,slip,picks,band){
  const sports=slipSports(slip);
@@ -1049,7 +1226,28 @@ function slipTicket(d,slip,picks,band){
    +(band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+' Top 3 — see the Bets tab"':"")+">"
    +'<div class="ticket-head"><span class="ticket-title">Slip #'+esc(slip.number)+' — <b>Top 3</b></span>'
    +(meta?'<span class="ticket-meta">'+esc(meta)+"</span>":"")+"</div>"
+   +slipProgress(slip)
    +picks.map((p,i)=>ticketRow(d,slip,p,i,band)).join("")+"</div>";
+}
+/* ================= IN PLAY NOW strip (Court tab, v6) =================
+   Every in-play game across the live slips, score + clock, straight
+   from the overlay; tapping a card jumps to the Bets tab. Empty when
+   nothing is in play — the strip simply is not there. */
+function renderInPlay(d){
+ const el=$("inplay-strip"); if(!el)return;
+ const cards=[];
+ (d.slips||[]).forEach(s=>{
+   if(s.status!=="LOCKED"&&s.status!=="PART-GRADED")return;
+   (s.games_list||[]).forEach(g=>{
+     if(g.live&&g.live.state==="in")cards.push({slip:s.number,g:g,lv:g.live});
+   });
+ });
+ if(!cards.length){el.innerHTML="";return}
+ el.innerHTML='<div class="ip-head"><span class="livepulse"></span><span class="ip-title">IN PLAY NOW</span></div>'
+   +'<div class="ip-grid">'+cards.map(c=>'<div class="ip-card" data-goto-slip="'+c.slip+'" role="button" tabindex="0" aria-label="In play: '+esc(c.g.game||"")+'">'
+     +'<div class="ip-game">'+esc(c.g.game||"")+'</div>'
+     +'<div class="ip-score">'+esc(scoreLine(c.lv)||"Live")+'</div>'
+     +'<div class="ip-meta"><span class="ck">'+esc(clockLine(c.lv))+'</span> \u00b7 Slip #'+c.slip+(c.g.league?" \u00b7 "+esc(c.g.league):"")+'</div></div>').join("")+"</div>";
 }
 function renderBoard(d){
  const b=d.bankroll||{};
@@ -1246,6 +1444,7 @@ function buildRecords(d){
      REC_ALL.push({slip:s.number,date:s.date||"",game_id:g.game_id,game:g.game||"",
        league:g.league||"",sport:g.sport||"",pick:g.pick||"",price:g.price,
        outcome:g.outcome||null,final_score:g.final_score||null,tip_at:g.tip_at||null,
+       live:g.live||null,
        bets:(d.bets||[]).filter(b=>b.slip===s.number&&b.game_id===g.game_id)});
    });
    REC_SLIP_TOTALS[s.number]={w:w,l:l,n:(s.games_list||[]).length};
@@ -1253,6 +1452,8 @@ function buildRecords(d){
 }
 function recStep(g){
  if(g.outcome)return 3;
+ if(g.live&&g.live.state==="final")return 3;
+ if(g.live&&g.live.state==="in")return 2;
  if(g.tip_at&&new Date(g.tip_at).getTime()<Date.now())return 2;
  return 1;
 }
@@ -1269,10 +1470,18 @@ function recRow(g,i){
    const who=b.kind==="USER BET"?"Your bet":esc(b.kind)+" bet";
    const res=b.result?(' — <b>'+esc(b.result)+"</b>"+(b.pnl_m!=null?" · "+fmtM(b.pnl_m):"")):" — in play";
    return '<div class="rec-betmark">'+who+": <b>"+esc(b.pick)+"</b> @ "+esc(b.price)+res+"</div>"}).join("");
+ const lv=g.live;
  const side=g.outcome
    ?'<div class="rec-score">'+esc(g.final_score||"")+'</div>'+resChip(g.outcome.toLowerCase())
-   :'<div class="rec-await">AWAITING</div>';
- return '<div class="rec-row" style="animation-delay:'+Math.min(i*28,280)+'ms"><div class="rec-main">'
+   :(lv&&lv.state==="in")
+     ?'<div class="rec-live"><span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
+       +(scoreLine(lv)?'<span class="rec-score-live">'+esc(scoreLine(lv))+"</span>":"")
+       +(clockLine(lv)?'<span class="rec-clock">'+esc(clockLine(lv))+"</span>":"")+"</div>"
+     :(lv&&lv.state==="final")
+       ?'<div class="rec-live">'+(scoreLine(lv)?'<span class="rec-score-live">'+esc(scoreLine(lv))+"</span>":"")
+         +'<span class="chip unofficial">FINAL \u2014 UNOFFICIAL</span></div>'
+       :'<div class="rec-await">AWAITING</div>';
+ return '<div class="rec-row'+(lv&&lv.state==="in"&&!g.outcome?" is-live":"")+'" style="animation-delay:'+Math.min(i*28,280)+'ms"><div class="rec-main">'
    +'<div class="rec-game">'+esc(g.game)+'</div>'
    +'<div class="rec-meta">'+esc(g.league)+(g.sport?' · <span style="color:var(--cyan)">'+esc(g.sport)+"</span>":"")
    +(g.tip_at?" · tips "+fmtTime(g.tip_at):"")+"</div>"
@@ -1412,7 +1621,7 @@ function crownFireworks(d){
 /* ================= load + render ================= */
 function renderAll(d){
  DATA=d;
- renderHero(d); renderTonightBand(d); renderFlow(d); renderPyramid(d); renderRoster(d);
+ renderHero(d); renderInPlay(d); renderTonightBand(d); renderFlow(d); renderPyramid(d); renderRoster(d);
  renderBoard(d); renderBank(d); renderRecord(d); renderRecords(d);
  renderWar(d); renderVault(d);
  const bout=pickBout(d);
