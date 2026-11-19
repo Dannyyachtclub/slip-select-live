@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T08:55:45.866926-06:00",
+  "generated_at": "2026-11-19T09:00:48.684357-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T08:44:09.957418-06:00",
-      "headline": "Latest search cycle: 223"
+      "last_activity": "2026-11-19T08:59:02.394446-06:00",
+      "headline": "Latest search cycle: 224"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 224 — 2026-11-19 08:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; kings tied to the cent on two PASS audit…",
+      "at": "2026-11-19T08:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 223 — 2026-11-19 08:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; kings tied to the cent on two PASS audit…",
       "at": "2026-11-19T08:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 219 — 2026-11-19 07:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T07:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 218 — 2026-11-19 07:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
-      "at": "2026-11-19T07:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 2:30 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 5:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": null,
             "detail": "Scheduled",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 6:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7394,7 +7394,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7861,7 +7861,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+            "fetched_at": "2026-11-19T09:00:45.011617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8410,7 +8410,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+        "fetched_at": "2026-11-19T09:00:45.011617-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T08:55:41.971649-06:00",
+        "fetched_at": "2026-11-19T09:00:45.011617-06:00",
         "source": "ESPN",
         "official": false
       },
