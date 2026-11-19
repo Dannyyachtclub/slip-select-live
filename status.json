@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T19:57:19.055685-06:00",
+  "generated_at": "2026-11-18T20:00:44.621033-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-18T19:15:51.569030-06:00",
+      "last_activity": "2026-11-18T19:57:47.740134-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 — 212-27, +68.07% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T19:45:54.383139-06:00",
-      "headline": "Latest search cycle: 174"
+      "last_activity": "2026-11-18T19:59:53.473133-06:00",
+      "headline": "Latest search cycle: 175"
     },
     {
       "name": "Edge Finder",
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 175 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T19:59:53.473133-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 174 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T19:45:54.383139-06:00"
+      "at": "2026-11-18T19:59:53.473133-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 173 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T19:45:54.383139-06:00"
+      "at": "2026-11-18T19:59:53.473133-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 172 OUTCOME",
-      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T19:45:54.383139-06:00"
+      "title": "CYCLE 175 — 2026-11-18 19:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T19:56:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -716,13 +723,6 @@
       "title": "CYCLE 173 — 2026-11-18 19:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T19:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 172 — 2026-11-18 19:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T19:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -3105,7 +3105,7 @@
             "clock": null,
             "period": 3,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3413,7 +3413,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3587,7 +3587,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3757,7 +3757,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3834,7 +3834,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3911,7 +3911,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3988,7 +3988,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4065,7 +4065,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4142,7 +4142,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4222,7 +4222,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4326,7 +4326,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4403,7 +4403,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4480,7 +4480,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:30 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4557,7 +4557,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:30 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4634,7 +4634,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4711,7 +4711,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4788,7 +4788,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4865,7 +4865,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4942,7 +4942,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5019,7 +5019,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5086,7 +5086,7 @@
           "stake_m": 25,
           "price": 2.4,
           "paper": false,
-          "status": "UPCOMING",
+          "status": "IN PLAY",
           "result": null,
           "pnl_m": null,
           "final_score": null,
@@ -5098,7 +5098,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5116,7 +5116,7 @@
           "stake_m": 25,
           "price": 1.002,
           "paper": false,
-          "status": "UPCOMING",
+          "status": "IN PLAY",
           "result": null,
           "pnl_m": null,
           "final_score": null,
@@ -5128,7 +5128,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:00 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5158,7 +5158,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:30 PM EST",
-            "fetched_at": "2026-11-18T19:57:17.292696-06:00",
+            "fetched_at": "2026-11-18T20:00:42.538906-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5375,7 +5375,7 @@
       "price": 2.4,
       "kind": "GRAND PICK",
       "paper": false,
-      "status": "UPCOMING",
+      "status": "IN PLAY",
       "result": null,
       "pnl_m": null,
       "final_score": null,
@@ -5390,7 +5390,7 @@
       "price": 1.002,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "UPCOMING",
+      "status": "IN PLAY",
       "result": null,
       "pnl_m": null,
       "final_score": null,
