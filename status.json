@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T01:40:38.989963-06:00",
+  "generated_at": "2026-11-19T01:45:45.047692-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-19T01:20:53.450251-06:00",
+      "last_activity": "2026-11-19T01:44:59.807234-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -154,28 +154,28 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T01:27:37.831246-06:00",
-      "headline": "Latest search cycle: 194"
+      "last_activity": "2026-11-19T01:42:46.240236-06:00",
+      "headline": "Latest search cycle: 195"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T01:32:23.845243-06:00",
-      "headline": "Latest filing: P155"
+      "last_activity": "2026-11-19T01:45:34.631698-06:00",
+      "headline": "Latest filing: P156"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T01:13:32.444256-06:00",
+      "last_activity": "2026-11-19T01:43:12.341235-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T01:15:06.115255-06:00",
+      "last_activity": "2026-11-19T01:44:49.935234-06:00",
       "headline": "Cycle 26: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 195 — 2026-11-19 01:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
+      "at": "2026-11-19T01:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 194 — 2026-11-19 01:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
       "at": "2026-11-19T01:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 190 — 2026-11-19 00:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
       "at": "2026-11-19T00:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 189 — 2026-11-19 00:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — court_state.json already fresh from a parallel refresh, kings unchanged; two PASS…",
-      "at": "2026-11-19T00:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -860,6 +860,13 @@
     {
       "agent": "Legacy",
       "kind": "generation",
+      "title": "R4-G445 (loop, 2026-11-19) — Legacy generation 445",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V8 DOGP500600 REFUTED at +62.36% (swing…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
+      "kind": "generation",
       "title": "Legacy R4-G444 (loop, 2026-11-19)",
       "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V8 BRANDXAWAYFLIP REFUTED at +62.66%…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 25 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle25.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 24 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle24.py (new file only; written fresh this cycle).",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
