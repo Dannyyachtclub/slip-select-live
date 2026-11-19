@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T04:55:43.417405-06:00",
+  "generated_at": "2026-11-19T05:00:45.670971-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T04:46:08.672522-06:00",
+      "last_activity": "2026-11-19T05:00:17.614242-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T04:42:40.615514-06:00",
-      "headline": "Latest search cycle: 207"
+      "last_activity": "2026-11-19T04:58:02.825550-06:00",
+      "headline": "Latest search cycle: 208"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T04:49:01.453529-06:00",
-      "headline": "Latest filing: P165"
+      "last_activity": "2026-11-19T04:59:27.907553-06:00",
+      "headline": "Latest filing: P166"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 208 — 2026-11-19 04:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged, no regeneration needed; two PASS audit…",
+      "at": "2026-11-19T04:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 207 — 2026-11-19 04:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; closing re-check PASSED; two PASS audit…",
       "at": "2026-11-19T04:41:00-06:00"
@@ -718,13 +725,6 @@
       "at": "2026-11-19T03:41:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 202 — 2026-11-19 03:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
-      "at": "2026-11-19T03:26:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 35 — 2026-11-19",
@@ -750,6 +750,13 @@
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19 — Slice 1 RE-AUTOPSY under the OVRGE79 kings (UNANIMOUS losses)",
       "summary": "The OVRGE79 crown — a five-fire overround-tail stack-add with the thinnest Selector crown swing on record (+2.70m) — barely touches the…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P166: WITHIN-WINDOW FLOW REVERSAL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19,…",
+      "summary": "Filed Arena P166: WITHIN-WINDOW FLOW REVERSAL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G212;…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -788,10 +795,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P159: MILESTONE / RECORD-CHASE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G203;…",
-      "summary": "Filed Arena P159: MILESTONE / RECORD-CHASE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G203; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G212 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (forty-fourth visit) — 2026-11-19",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P166 (within-window flow…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -827,13 +834,6 @@
       "kind": "generation",
       "title": "Arena G207 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (forty-third visit) — 2026-11-19",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P162 (cross-fixture…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G206 — F1 HOUSE-VIEW (forty-third visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P161 (cross-jurisdiction…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
