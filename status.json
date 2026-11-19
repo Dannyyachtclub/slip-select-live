@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T00:40:39.675736-06:00",
+  "generated_at": "2026-11-19T00:45:40.680333-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-19T00:12:47.120614-06:00",
+      "last_activity": "2026-11-19T00:43:51.619679-06:00",
       "headline": "VG20-OVR796FLIP — 186-53, +26.44% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T00:30:43.247652-06:00",
+      "last_activity": "2026-11-19T00:44:41.880681-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T00:27:57.899646-06:00",
-      "headline": "Latest search cycle: 190"
+      "last_activity": "2026-11-19T00:42:35.784677-06:00",
+      "headline": "Latest search cycle: 191"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T00:13:45.313616-06:00",
+      "last_activity": "2026-11-19T00:43:16.539678-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T00:15:38.444620-06:00",
+      "last_activity": "2026-11-19T00:45:02.214682-06:00",
       "headline": "Cycle 26: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 191 — 2026-11-19 00:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — court_state.json already fresh, kings unchanged; two PASS audit runs,…",
+      "at": "2026-11-19T00:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 190 — 2026-11-19 00:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
       "at": "2026-11-19T00:26:00-06:00"
@@ -722,6 +729,13 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-19 (00:12 CST) — audit + hunt (classes e + a + f + g: public calendar data / quant research / the house's chair /…",
       "summary": "P143 REARRANGED-FIXTURE FREEZE (team sports — originally published date vs actual date: brought-forward ≤ −2d favourite fade, postponed…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G195 — F5 SOFT-ANGLE EXTREMES (forty-first visit) — 2026-11-19",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -779,13 +793,6 @@
       "title": "CYCLE 186 — 2026-11-18 23:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (two PASS runs, byte-identical, registry signature sets exactly equal on both — 19,327 rows, 0 missing, 0 mirror-only; vault…",
       "at": "2026-11-18T23:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 185 — 2026-11-18 23:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (two PASS runs, registry signature sets exactly equal on both — 19,244 then 19,264 rows after a parallel Legacy append, 0…",
-      "at": "2026-11-18T23:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-18 (23:42 CST) — audit + hunt (classes d + a + f: sport-specific basketball / quant research / the house's chair — the…",
       "summary": "P142 TRANSITION-COMPOSITION FREEZE (basketball — fast-break points share × transition concession crossed: starved-transition fade,…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G192 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (fortieth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P150 (pre-news flow freeze)…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
