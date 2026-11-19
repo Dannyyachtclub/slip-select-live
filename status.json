@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:25:39.933647-06:00",
+  "generated_at": "2026-11-18T18:30:53.782804-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,21 +66,21 @@
     },
     {
       "court": "Selector",
-      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY",
+      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160",
       "grand_king": false,
-      "wins": 211,
-      "losses": 28,
+      "wins": 212,
+      "losses": 27,
       "priced": 226,
-      "pnl_m": 3807.65,
-      "roi_pct": 67.39,
+      "pnl_m": 3845.98,
+      "roi_pct": 68.07,
       "set_size": 239,
       "dog_line": {
-        "picks": 61,
+        "picks": 60,
         "wins": 50,
-        "losses": 11,
-        "priced": 56,
-        "pnl_m": 1892.15,
-        "roi_pct": 135.15
+        "losses": 10,
+        "priced": 55,
+        "pnl_m": 1917.15,
+        "roi_pct": 139.43
       },
       "stamp": null,
       "crowned_on": "2026-11-18"
@@ -133,8 +133,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-18T17:43:56.161620-06:00",
-      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY — 211-28, +67.39% fitted ROI"
+      "last_activity": "2026-11-18T18:28:09.463590-06:00",
+      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 — 212-27, +68.07% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T18:14:12.853599-06:00",
-      "headline": "Latest search cycle: 168"
+      "last_activity": "2026-11-18T18:29:44.942589-06:00",
+      "headline": "Latest search cycle: 169"
     },
     {
       "name": "Edge Finder",
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 169 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T18:29:44.942589-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 168 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T18:14:12.853599-06:00"
+      "at": "2026-11-18T18:29:44.942589-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 167 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T18:14:12.853599-06:00"
+      "at": "2026-11-18T18:29:44.942589-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 166 OUTCOME",
-      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T18:14:12.853599-06:00"
+      "title": "CYCLE 169 — 2026-11-18 18:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T18:26:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -716,13 +723,6 @@
       "title": "CYCLE 167 — 2026-11-18 17:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T17:56:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 166 — 2026-11-18 17:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T17:41:00-06:00"
     },
     {
       "agent": "Stakehunter",
