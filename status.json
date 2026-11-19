@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T14:10:56.551419-06:00",
+  "generated_at": "2026-11-19T14:15:45.907202-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-19T13:24:56.101697-06:00",
+      "last_activity": "2026-11-19T14:15:28.677408-06:00",
       "headline": "VG22-TRIPS2VETO — 187-52, +28.51% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T13:58:31.310697-06:00",
-      "headline": "Latest search cycle: 244"
+      "last_activity": "2026-11-19T14:13:46.026404-06:00",
+      "headline": "Latest search cycle: 245"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T13:43:45.756697-06:00",
+      "last_activity": "2026-11-19T14:13:32.727403-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T13:46:37.759697-06:00",
+      "last_activity": "2026-11-19T14:15:23.412407-06:00",
       "headline": "Cycle 38: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 245 — 2026-11-19 14:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
+      "at": "2026-11-19T14:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 244 — 2026-11-19 13:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
       "at": "2026-11-19T13:56:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 240 — 2026-11-19 12:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
       "at": "2026-11-19T12:56:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 239 — 2026-11-19 12:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and, after a sanctioned regeneration for routine mid-run appends, PASSED again on…",
-      "at": "2026-11-19T12:41:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -887,9 +887,9 @@
     },
     {
       "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G99 (loop, 2026-11-19) — NO NEW KING",
-      "summary": "NO NEW KING — VG22-TRIPS2VETO stands (187-52, priced 227, +1618.13m, +28.51%). Only above-king headline V7 BADMINTON x GAP>=5…",
+      "kind": "gate-refusal",
+      "title": "R4-G100 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING — VG22-TRIPS2VETO stands (187-52, priced 227, +1618.13m, +28.51%). Only above-king headline V2 BRAND x HOME GATE-REFUSED on…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
@@ -6310,11 +6310,11 @@
           "live": {
             "state": "in",
             "home_score": 32,
-            "away_score": 21,
-            "clock": "4:05",
+            "away_score": 23,
+            "clock": "3:13",
             "period": 1,
-            "detail": "4:05 - 1st",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "detail": "3:13 - 1st",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 5:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": null,
             "detail": "Scheduled",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 6:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7394,7 +7394,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7861,7 +7861,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+            "fetched_at": "2026-11-19T14:15:41.713283-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8410,7 +8410,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+        "fetched_at": "2026-11-19T14:15:41.713283-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T14:10:44.153212-06:00",
+        "fetched_at": "2026-11-19T14:15:41.713283-06:00",
         "source": "ESPN",
         "official": false
       },
