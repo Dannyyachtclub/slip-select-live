@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T14:00:53.645974-06:00",
+  "generated_at": "2026-11-19T14:05:49.056938-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T13:46:54.333697-06:00",
+      "last_activity": "2026-11-19T14:04:39.321697-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -161,7 +161,7 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T13:52:38.261697-06:00",
+      "last_activity": "2026-11-19T14:03:56.585697-06:00",
       "headline": "Latest filing: P229"
     },
     {
@@ -804,6 +804,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P204: PENDING-MEDICAL / DEAL-CONTINGENT FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena…",
+      "summary": "Filed Arena P204: PENDING-MEDICAL / DEAL-CONTINGENT FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G248;…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P203: TICKET-AMENDMENT FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena…",
       "summary": "Filed Arena P203: TICKET-AMENDMENT FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G247;…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -837,10 +844,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P198: PARTIAL-FILL FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G242;…",
-      "summary": "Filed Arena P198: PARTIAL-FILL FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G242; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G248 — F3 THROW-INCENTIVE ASYMMETRY (fifty-third visit) — 2026-11-19",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, and no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P204…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -876,13 +883,6 @@
       "kind": "generation",
       "title": "Arena G243 — F3 THROW-INCENTIVE ASYMMETRY (fifty-second visit) — 2026-11-19",
       "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P199 (ironman /…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G242 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (fifty-first visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P198 (partial-fill flow…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -6309,12 +6309,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 27,
-            "away_score": 15,
-            "clock": "7:55",
+            "home_score": 29,
+            "away_score": 16,
+            "clock": "6:34",
             "period": 1,
-            "detail": "7:55 - 1st",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "detail": "6:34 - 1st",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 5:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": null,
             "detail": "Scheduled",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 6:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7394,7 +7394,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7861,7 +7861,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+            "fetched_at": "2026-11-19T14:05:43.945841-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8410,7 +8410,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+        "fetched_at": "2026-11-19T14:05:43.945841-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T14:00:43.985197-06:00",
+        "fetched_at": "2026-11-19T14:05:43.945841-06:00",
         "source": "ESPN",
         "official": false
       },
