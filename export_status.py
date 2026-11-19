@@ -63,6 +63,8 @@ SLIP_TRACKERS = {
     34: "data_badminton/tracking_slip34_nov17.md",
     35: "data_badminton/tracking_slip35_nov18.md",
     36: "data_badminton/tracking_slip36_nov18.md",
+    37: "data_badminton/tracking_slip37_nov19.md",
+    38: "data_badminton/tracking_slip38_nov19.md",
 }
 
 SITE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -74,6 +76,8 @@ SLIP_JSONS = {
     34: ["slips/slip34.json"],
     35: ["slips/slip35.json"],
     36: ["slips/slip36.json"],
+    37: ["slips/slip37.json"],
+    38: ["slips/slip38.json"],
 }
 
 
@@ -571,6 +575,26 @@ def parse_slip(number, relpath):
                              "price": float(m.group(3))})
         if bets:
             slip["user_bets"] = bets
+
+    # slips locked in the JSON bet-layer form record the same headline
+    # calls in the lock file; fill whatever the tracker regexes above
+    # did not find (never overwrite a tracker-read value).
+    json_layer, _json_ledger, _json_fires = parse_json_bet_layer(number)
+    gp = json_layer.get("GRAND PICK")
+    if slip["grand_pick"] is None and gp:
+        slip["grand_pick"] = {"selection": gp["selection"],
+                              "stake_m": gp["stake_m"],
+                              "price": gp["price"]}
+    ud = json_layer.get("UNDERDOG DESK")
+    if slip["underdog_desk"] is None and ud:
+        slip["underdog_desk"] = {"pick_no": ud["pick_no"],
+                                 "selection": ud["selection"],
+                                 "price": ud["price"], "paper": True}
+    dd = json_layer.get("DRAW DESK")
+    if slip["draw_desk"] is None and dd:
+        slip["draw_desk"] = {"pick_no": dd["pick_no"],
+                             "selection": dd["selection"],
+                             "price": dd["price"], "paper": True}
     return slip
 
 
@@ -680,8 +704,14 @@ def parse_slip_json_games(number, tracker_text):
             home, away = g.get("home"), g.get("away")
             ko_cst = g.get("kickoff_cst") or ""
             time = ko_cst.split()[0] if ko_cst else None
+            # a game that records its own sport (Slip #37's mixed lock
+            # file is the first) uses it; every earlier slip's games
+            # carry no sport key and keep the file-level sport above.
+            gsport = g.get("sport")
+            game_sport = gsport.capitalize() \
+                if isinstance(gsport, str) and gsport else sport
             out[gid] = {"league": g.get("league"), "pick": pick,
-                        "price": price, "sport": sport,
+                        "price": price, "sport": game_sport,
                         "home": home, "away": away,
                         "game": (f"{home} v {away}"
                                  if home and away else None),
@@ -999,6 +1029,72 @@ def parse_tip_times(number):
     return tips
 
 
+def parse_json_bet_layer(number):
+    """(bet layer, ledger bets) recorded in the locked slip JSON's own
+    bet_layer block. Slip #37 is the first slip locked in this form:
+    its tracker announces the calls in prose the tracker regexes do
+    not read, while the lock file records them structured — the grand
+    pick as its own called bet, the two desk entries PAPER, and every
+    game flagged ledger_bet at its recorded flat stake (the user's
+    every-pick rule). Slips whose JSONs carry no bet_layer block —
+    every slip before #37 — return empty structures and are
+    completely unaffected. Prices are the recorded moneylines for the
+    card pick's side, computed exactly as in parse_slip_json_games."""
+    layer, ledger_bets, json_fires = {}, [], []
+    for rel in SLIP_JSONS.get(number, []):
+        try:
+            with open(os.path.join(BACKTEST, "data_core", rel),
+                      encoding="utf-8") as fh:
+                data = json.load(fh)
+        except (OSError, ValueError):
+            continue
+        if not isinstance(data, dict):
+            continue
+        bl = data.get("bet_layer") or {}
+        gp = bl.get("grand_pick") or {}
+        if gp.get("team") and "GRAND PICK" not in layer:
+            layer["GRAND PICK"] = {
+                "selection": gp["team"], "stake_m": gp.get("stake_m"),
+                "price": gp.get("price"), "game_id": gp.get("game_id")}
+        ud = bl.get("underdog_desk") or {}
+        if ud.get("team") and "UNDERDOG DESK" not in layer:
+            layer["UNDERDOG DESK"] = {
+                "selection": ud["team"], "stake_m": 25,
+                "price": ud.get("price"), "pick_no": ud.get("entry"),
+                "game_id": ud.get("game_id")}
+        dd = bl.get("draw_desk") or {}
+        if dd.get("pick") and "DRAW DESK" not in layer:
+            layer["DRAW DESK"] = {
+                "selection": dd["pick"], "stake_m": 25,
+                "price": dd.get("price"), "pick_no": dd.get("entry"),
+                "game_id": dd.get("game_id")}
+        for f in bl.get("confidence_fires") or []:
+            if f.get("team"):
+                json_fires.append({
+                    "selection": f["team"],
+                    "stake_m": f.get("stake_m") or 25,
+                    "price": f.get("price"),
+                    "game_id": f.get("game_id")})
+        default_stake = (bl.get("ledger_bets") or {}).get("stake_m_each")
+        for g in data.get("games", []):
+            if not g.get("ledger_bet"):
+                continue
+            pick = ((g.get("picks") or {}).get("regime") or {}).get("pick")
+            price = None
+            if pick:
+                if pick == g.get("home"):
+                    price = g.get("moneyline_home")
+                elif pick == g.get("away"):
+                    price = g.get("moneyline_away")
+                elif pick.strip().upper() == "DRAW":
+                    price = g.get("draw_price")
+            ledger_bets.append({
+                "selection": pick,
+                "stake_m": g.get("stake_m") or default_stake,
+                "price": price, "game_id": g.get("game_id")})
+    return layer, ledger_bets, json_fires
+
+
 def parse_bet_layer(text, games_table):
     """Called bets from the tracker bet-layer section:
     kind -> {selection, stake_m, price, game_id}. Desk stakes are the flat
@@ -1099,7 +1195,7 @@ def slip_context(number, relpath):
     text = read_text(os.path.join(BACKTEST, relpath))
     ctx = {"text": text, "games_table": {}, "graded": {}, "scores": {},
            "tips": {}, "bet_layer": {}, "user_bets": [], "date": None,
-           "json_games": {}}
+           "json_games": {}, "ledger_bets": []}
     if text is None:
         return ctx
     ctx["games_table"] = parse_games_table(text)
@@ -1110,6 +1206,17 @@ def slip_context(number, relpath):
     # the multi-fire confidence list rides beside the bet layer (the
     # layer itself stays kind -> bet dict for every other consumer)
     ctx["confidence_fires"] = ctx["bet_layer"].pop("CONFIDENCE_FIRES", [])
+    # slips locked in the JSON bet-layer form (Slip #37 onward) record
+    # their calls structured in the lock file: fill any kind the
+    # tracker parse did not find (the tracker always wins where it
+    # speaks) and take the every-pick ledger bets. Slips locked in
+    # the tracker form return empty structures here — no change.
+    json_layer, json_ledger_bets, json_fires = parse_json_bet_layer(number)
+    for kind, bet in json_layer.items():
+        ctx["bet_layer"].setdefault(kind, bet)
+    ctx["ledger_bets"] = json_ledger_bets
+    if not ctx["confidence_fires"] and json_fires:
+        ctx["confidence_fires"] = json_fires
     ctx["user_bets"] = parse_user_bets(text)
     bet_gids = {b.get("game_id") for b in ctx["bet_layer"].values()}
     bet_gids |= {b.get("game_id") for b in ctx["user_bets"]}
@@ -1213,9 +1320,13 @@ def build_bets(slips, contexts):
 
 
 def build_bankroll(slips, contexts):
-    """The LIVE bankroll — a tracked ledger of the CALLED bets only: the
+    """The LIVE bankroll — a tracked ledger of the CHOSEN bets only: the
     grand pick and EVERY confidence fire, each at its called stake as
-    recorded in the tracker. Scope (user directive 2026-11-18, v8 —
+    recorded in the tracker or the lock file's bet_layer block. (User
+    ruling 2026-11-19: the per-game flat-25m ledger_bet rows in the
+    lock files are the strategies' measurement layer and never enter
+    this ledger.)
+    Scope (user directive 2026-11-18, v8 —
     supersedes the original Slip-#36-first scope): every slip DATED
     on/after the reset date in bankroll_config.json — the billion is
     the system's ledger from the reset day itself, so the slips of
@@ -1237,6 +1348,7 @@ def build_bankroll(slips, contexts):
     out_of_scope = []
     balance = start
     settled_pnl = 0.0
+    settled_staked = 0.0
     wins = losses = 0
     pending_m = 0
     unsettled_m = 0
@@ -1249,7 +1361,7 @@ def build_bankroll(slips, contexts):
                 "slip": n, "date": sdate,
                 "reason": ("no date on the tracker — cannot be placed "
                            "in the date scope" if not sdate else
-                           "dated before the reset date")})
+                           "dated before tracking began")})
             continue
         scoped.append(n)
         layer = ctx.get("bet_layer", {})
@@ -1259,6 +1371,13 @@ def build_bankroll(slips, contexts):
         fires = ctx.get("confidence_fires") or (
             [layer["CONFIDENCE"]] if layer.get("CONFIDENCE") else [])
         counted += [("CONFIDENCE", f) for f in fires]
+        # CHOSEN BETS ONLY (user ruling 2026-11-19, superseding the
+        # 2026-11-18 every-pick ledger for this site ledger): the
+        # per-game ledger_bet rows the lock files record are the
+        # strategies' flat-25m measurement layer — they figure ROI
+        # in the programme's own books and are NOT counted here.
+        # This ledger counts only the bets the user actually rides:
+        # the grand pick and every confidence fire, at called stakes.
         for kind in ("UNDERDOG DESK", "DRAW DESK"):
             if layer.get(kind):
                 paper_excluded.append({
@@ -1287,6 +1406,7 @@ def build_bankroll(slips, contexts):
                 continue
             pnl = round(stake * (price - 1), 2) if won else -float(stake)
             settled_pnl = round(settled_pnl + pnl, 2)
+            settled_staked = round(settled_staked + float(stake), 2)
             if balance is not None:
                 balance = round(balance + pnl, 2)
             if won:
@@ -1302,12 +1422,16 @@ def build_bankroll(slips, contexts):
     return {
         "start_m": start,
         "reset_date": reset,
+        "tracking_since": reset,
         "since": reset,
         "first_tracked_slip": min(scoped) if scoped else None,
         "scoped_slips": scoped,
         "out_of_scope": out_of_scope,
         "balance_m": balance,
         "settled_pnl_m": settled_pnl,
+        "settled_staked_m": settled_staked,
+        "roi_pct": (round(settled_pnl / settled_staked * 100, 2)
+                    if settled_staked else None),
         "wins": wins,
         "losses": losses,
         "record": f"{wins}-{losses}",
@@ -1317,10 +1441,11 @@ def build_bankroll(slips, contexts):
         "ledger": ledger,
         "paper_excluded": paper_excluded,
         "unsettled_m": unsettled_m,
-        "note": ("Called bets only — the grand pick and every confidence "
-                 "fire at their called stakes, on every slip dated from "
-                 "the reset onward. The Underdog Desk is paper by design "
-                 "and never enters this ledger."),
+        "note": ("Chosen bets only — the grand pick and every confidence "
+                 "fire at their called stakes, on every slip dated "
+                 "from the start of tracking onward. The strategies' "
+                 "flat-25m measurement rows and the paper desks never "
+                 "enter this ledger."),
     }
 
 
