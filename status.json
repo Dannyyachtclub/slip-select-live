@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T02:15:46.385224-06:00",
+  "generated_at": "2026-11-19T02:20:39.492428-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,24 +66,24 @@
     },
     {
       "court": "Selector",
-      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160",
+      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE79",
       "grand_king": false,
       "wins": 212,
       "losses": 27,
       "priced": 226,
-      "pnl_m": 3845.98,
-      "roi_pct": 68.07,
+      "pnl_m": 3848.68,
+      "roi_pct": 68.12,
       "set_size": 239,
       "dog_line": {
         "picks": 60,
-        "wins": 50,
-        "losses": 10,
+        "wins": 49,
+        "losses": 11,
         "priced": 55,
-        "pnl_m": 1917.15,
-        "roi_pct": 139.43
+        "pnl_m": 1864.15,
+        "roi_pct": 135.57
       },
       "stamp": null,
-      "crowned_on": "2026-11-18"
+      "crowned_on": "2026-11-19"
     },
     {
       "court": "Vanguard",
@@ -133,8 +133,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-19T01:39:51.860238-06:00",
-      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 — 212-27, +68.07% fitted ROI"
+      "last_activity": "2026-11-19T02:17:25.357212-06:00",
+      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE79 — 212-27, +68.12% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T02:10:18.282217-06:00",
+      "last_activity": "2026-11-19T02:19:46.733210-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -161,8 +161,8 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T01:50:02.755230-06:00",
-      "headline": "Latest filing: P156"
+      "last_activity": "2026-11-19T02:18:59.785211-06:00",
+      "headline": "Latest filing: P157"
     },
     {
       "name": "Loss Autopsy",
@@ -175,7 +175,7 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T01:44:49.935234-06:00",
+      "last_activity": "2026-11-19T02:17:27.629212-06:00",
       "headline": "Cycle 26: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -734,6 +734,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P157: GUEST-VS-ACCOUNT PERSONALISED-PRICE FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G201;…",
+      "summary": "Filed Arena P157: GUEST-VS-ACCOUNT PERSONALISED-PRICE FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G201; classes f + i)",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P155: SEEDING / MATCHUP-CHOICE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G198;…",
       "summary": "Filed Arena P155: SEEDING / MATCHUP-CHOICE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G198; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
@@ -767,10 +774,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P151: PLAYOFF-SERIES STATE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G193;…",
-      "summary": "Filed Arena P151: PLAYOFF-SERIES STATE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G193; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G201 — F1 HOUSE-VIEW (forty-second visit) — 2026-11-19",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P157 (guest-vs-account…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -806,13 +813,6 @@
       "kind": "generation",
       "title": "Arena G196 — F1 HOUSE-VIEW (forty-first visit) — 2026-11-19",
       "summary": "All computation through data_core/engine.py via arena_g196.py + outcome-blind census arena_g196_audit_census.py. Set: 239 rows…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G195 — F5 SOFT-ANGLE EXTREMES (forty-first visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
