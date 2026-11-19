@@ -659,7 +659,7 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.72rem;font-weig
         <div class="hero-king-line" id="hero-king-line">The court is taking its seats…</div>
       </div>
       <div class="hero-bank">
-        <div class="lab">Grand Bankroll</div>
+        <div class="lab">Grand Bankroll · The Billion Ledger</div>
         <div class="amt" id="hero-bank">—</div>
         <div class="mini" id="hero-bank-mini">The live bankroll — settled called bets move it.</div>
       </div>
@@ -984,7 +984,7 @@ function renderHero(d){
  $("hero-record").textContent=b.record||"—";
  $("hero-winrate").textContent=b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—";
  $("hero-bank-mini").textContent=(b.start_m!=null)
-   ?"tracking since "+fmtTime((b.tracking_since||b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" · started at "+fmtInt(b.start_m)+"m · ROI "+(b.roi_pct!=null?b.roi_pct.toFixed(2)+"%":"—")+" on settled bets · the live ledger of the called bets"+(b.pending_m?" · "+fmtInt(b.pending_m)+"m out on unsettled slips":"")
+   ?"of "+fmtInt(b.start_m)+"m tracked since "+fmtTime((b.tracking_since||b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" · settled "+fmtM(b.settled_pnl_m)+" · ROI "+(b.roi_pct!=null?b.roi_pct.toFixed(2)+"%":"—")+" on settled bets · the balance above is what's left of the billion"+(b.pending_m?" · "+fmtInt(b.pending_m)+"m out on unsettled slips":"")
    :"BANKROLL TRACKING PENDING — the counter starts the moment tracking begins";
  const miniEl=$("hero-bank-mini");
  if(miniEl&&b.pending_m){const pill=document.createElement("span");pill.className="pend-pill";
