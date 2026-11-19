@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T05:55:49.669248-06:00",
+  "generated_at": "2026-11-19T06:00:47.266963-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -68,19 +68,19 @@
       "court": "Selector",
       "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE87-AWAYDVLT70",
       "grand_king": false,
-      "wins": 213,
-      "losses": 26,
+      "wins": 210,
+      "losses": 29,
       "priced": 226,
-      "pnl_m": 3897.5,
-      "roi_pct": 68.98,
+      "pnl_m": 3762.3,
+      "roi_pct": 66.59,
       "set_size": 239,
       "dog_line": {
-        "picks": 61,
-        "wins": 50,
-        "losses": 11,
-        "priced": 56,
-        "pnl_m": 1892.15,
-        "roi_pct": 135.15
+        "picks": 62,
+        "wins": 49,
+        "losses": 13,
+        "priced": 57,
+        "pnl_m": 1807.77,
+        "roi_pct": 126.86
       },
       "stamp": null,
       "crowned_on": "2026-11-19"
@@ -134,7 +134,7 @@
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
       "last_activity": "2026-11-19T05:38:05.217643-06:00",
-      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE87-AWAYDVLT70 — 213-26, +68.98% fitted ROI"
+      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE87-AWAYDVLT70 — 210-29, +66.59% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -154,14 +154,14 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T05:43:12.998655-06:00",
-      "headline": "Latest search cycle: 211"
+      "last_activity": "2026-11-19T05:59:52.480694-06:00",
+      "headline": "Latest search cycle: 212"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T05:29:55.263624-06:00",
+      "last_activity": "2026-11-19T05:55:55.289685-06:00",
       "headline": "Latest filing: P168"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 212 — 2026-11-19 05:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "STEP 1 — AUDIT (before any search or write)",
+      "at": "2026-11-19T05:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 211 — 2026-11-19 05:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged, no regeneration needed; two PASS audit…",
       "at": "2026-11-19T05:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 207 — 2026-11-19 04:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; closing re-check PASSED; two PASS audit…",
       "at": "2026-11-19T04:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 206 — 2026-11-19 04:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
-      "at": "2026-11-19T04:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
