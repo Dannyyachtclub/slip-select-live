@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:55:51.672786-06:00",
+  "generated_at": "2026-11-19T00:00:39.834301-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T23:43:47.576553-06:00",
-      "headline": "Latest search cycle: 187"
+      "last_activity": "2026-11-18T23:58:05.390583-06:00",
+      "headline": "Latest search cycle: 188"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 188 — 2026-11-18 23:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED after a routine STALE regeneration — kings unchanged; two PASS audit runs, byte-identical,…",
+      "at": "2026-11-18T23:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 187 — 2026-11-18 23:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (two PASS runs, byte-identical, registry signature sets exactly equal on both — 19,391 rows, 0 missing, 0 mirror-only; vault…",
       "at": "2026-11-18T23:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 183 — 2026-11-18 22:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (two consecutive identical PASS runs, registry signature sets exactly equal, 19,096 rows, 0 missing, 0 mirror-only; vault…",
       "at": "2026-11-18T22:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 182 — 2026-11-18 22:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (two consecutive identical PASS runs, registry signature sets exactly equal, 19,013 rows, 0 missing, 0 mirror-only; vault…",
-      "at": "2026-11-18T22:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
