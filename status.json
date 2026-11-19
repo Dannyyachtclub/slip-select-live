@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T02:25:42.804797-06:00",
+  "generated_at": "2026-11-19T02:30:43.316623-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-19T01:44:59.807234-06:00",
+      "last_activity": "2026-11-19T02:30:07.148203-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T02:19:46.733210-06:00",
+      "last_activity": "2026-11-19T02:30:33.635203-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T02:15:04.719213-06:00",
-      "headline": "Latest search cycle: 197"
+      "last_activity": "2026-11-19T02:27:54.282204-06:00",
+      "headline": "Latest search cycle: 198"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T02:20:49.034209-06:00",
-      "headline": "Latest filing: P157"
+      "last_activity": "2026-11-19T02:30:10.755203-06:00",
+      "headline": "Latest filing: P158"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 198 — 2026-11-19 02:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
+      "at": "2026-11-19T02:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 197 — 2026-11-19 02:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
       "at": "2026-11-19T02:11:00-06:00"
@@ -718,17 +725,17 @@
       "at": "2026-11-19T01:11:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 192 — 2026-11-19 00:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
-      "at": "2026-11-19T00:56:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19",
       "summary": "Script: data_core/stakehunter_cycle26.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P158: TWO-SIDED / NET-FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena…",
+      "summary": "Filed Arena P158: TWO-SIDED / NET-FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G202; classes…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -767,10 +774,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P152: DRAW-NO-BET CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G194; classes f…",
-      "summary": "Filed Arena P152: DRAW-NO-BET CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G194; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G202 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (forty-second visit) — 2026-11-19",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P158 (two-sided / net-flow…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -806,13 +813,6 @@
       "kind": "generation",
       "title": "Arena G197 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (forty-first visit) — 2026-11-19",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P154 (reprice-conviction…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G196 — F1 HOUSE-VIEW (forty-first visit) — 2026-11-19",
-      "summary": "All computation through data_core/engine.py via arena_g196.py + outcome-blind census arena_g196_audit_census.py. Set: 239 rows…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -873,6 +873,13 @@
     },
     {
       "agent": "Legacy",
+      "kind": "gate-refusal",
+      "title": "R4-G446 (loop, 2026-11-19) — Legacy generation 446",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). The only above-king headline, V14 HBHOME at +64.03%, is GATE-REFUSED…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
       "kind": "generation",
       "title": "R4-G445 (loop, 2026-11-19) — Legacy generation 445",
       "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V8 DOGP500600 REFUTED at +62.36% (swing…",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Legacy R4-G444 (loop, 2026-11-19)",
       "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V8 BRANDXAWAYFLIP REFUTED at +62.66%…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Legacy",
-      "kind": "generation",
-      "title": "Legacy R4-G442 (loop, 2026-11-19)",
-      "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V11 DOGPEXACT310FLIP REFUTED at +61.96%…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
