@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T00:50:37.596735-06:00",
+  "generated_at": "2026-11-19T00:55:33.052364-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-19T00:19:02.257627-06:00",
+      "last_activity": "2026-11-19T00:51:53.880270-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -776,6 +776,13 @@
     {
       "agent": "Legacy",
       "kind": "generation",
+      "title": "Legacy R4-G442 (loop, 2026-11-19)",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V11 DOGPEXACT310FLIP REFUTED at +61.96%…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
+      "kind": "generation",
       "title": "Legacy R4-G439 (loop, 2026-11-19)",
       "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V17 SPLITBBDEVIG72575 REFUTED at +62.84%…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P150: PRE-NEWS FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G192;…",
       "summary": "Filed Arena P150: PRE-NEWS FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-18, Arena G192; classes c + i)",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P149: DERIVATIVE-MENU COMPOSITION FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G191; classes f + i)",
-      "summary": "Filed Arena P149: DERIVATIVE-MENU COMPOSITION FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G191; classes f + i)",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -3484,6 +3484,1946 @@
           "user_price": null
         }
       ]
+    },
+    {
+      "number": 37,
+      "status": "LOCKED",
+      "games": null,
+      "grand_pick": {
+        "selection": "Diyala",
+        "stake_m": 25,
+        "price": 3.0
+      },
+      "confidence_bet": null,
+      "underdog_desk": {
+        "pick_no": 15,
+        "selection": "Diyala",
+        "price": 3.0,
+        "paper": true
+      },
+      "draw_desk": {
+        "pick_no": 6,
+        "selection": "Draw",
+        "price": 3.1,
+        "paper": true
+      },
+      "results": null,
+      "user_bets": null,
+      "date": "2026-11-19",
+      "games_status": {
+        "games_total": 25,
+        "games_ended": 0,
+        "games_live_final": 0,
+        "games_live_in": 0
+      },
+      "games_list": [
+        {
+          "game_id": "S37-01",
+          "game": "Preston Lions v South Hobart",
+          "time": "02:30",
+          "tip_at": "2026-11-19T02:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Australian Championship",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 8.0,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Preston Lions",
+            "away": "South Hobart",
+            "prices": {
+              "home": 1.08,
+              "away": 13.0,
+              "draw": 8.0
+            },
+            "devig_pct": {
+              "home": 82.1,
+              "away": 6.82,
+              "draw": 11.08
+            },
+            "overround_pct": 12.78,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Preston Lions",
+                "price": 1.08,
+                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
+              }
+            ],
+            "totals": {
+              "line": 2.5,
+              "projection": 3.3
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 8.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. Confidence screen evidence (no fire): Preston Lions's de-vig is 82.10% — under the 90% confidence bar (the 8.00 draw price holds the three-way de-vig down), so the confidence rule cannot fire; the fragility screen also cannot run in full (no full-table defensive rank in the research capture). The 1.08 price is under the 1.15 floor in any case."
+          }
+        },
+        {
+          "game_id": "S37-02",
+          "game": "Lions FC v Wollongong Wolves",
+          "time": "02:30",
+          "tip_at": "2026-11-19T02:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Australian Championship",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 4.2,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Lions FC",
+            "away": "Wollongong Wolves",
+            "prices": {
+              "home": 1.5,
+              "away": 4.6,
+              "draw": 4.2
+            },
+            "devig_pct": {
+              "home": 59.41,
+              "away": 19.37,
+              "draw": 21.22
+            },
+            "overround_pct": 12.22,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 4.2,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 4.2,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 4.2,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 4.2,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Wollongong Wolves",
+                "price": 4.6,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 4.20. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-03",
+          "game": "Illawarra Hawks v Adelaide 36ers",
+          "time": "02:30",
+          "tip_at": "2026-11-19T02:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Australia NBL",
+          "sport": "Basketball",
+          "pick": "Adelaide 36ers",
+          "price": 1.57,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Illawarra Hawks",
+            "away": "Adelaide 36ers",
+            "prices": {
+              "home": 2.28,
+              "away": 1.57,
+              "draw": null
+            },
+            "devig_pct": {
+              "home": 40.78,
+              "away": 59.22
+            },
+            "overround_pct": 7.55,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Adelaide 36ers",
+                "price": 1.57,
+                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
+              },
+              {
+                "court": "Regime",
+                "pick": "Adelaide 36ers",
+                "price": 1.57,
+                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Adelaide 36ers",
+                "price": 1.57,
+                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
+              },
+              {
+                "court": "Selector",
+                "pick": "Adelaide 36ers",
+                "price": 1.57,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Adelaide 36ers",
+                "price": 1.57,
+                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
+              }
+            ],
+            "totals": {
+              "line": 196.5,
+              "projection": 193.8
+            },
+            "bet_call": "LEDGER BET — Adelaide 36ers 25m @ 1.57. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. Illawarra @ 2.28 was weighed for the desk: Adelaide's differential edge is only +7.6 points/game over a dog that won this fixture at home in October — but Illawarra own the league's worst defence (104.7 allowed/game) and a -7.2 differential, and lost the return meeting by 28; the frozen numbers do not name the dog."
+          }
+        },
+        {
+          "game_id": "S37-04",
+          "game": "Omiya Ardija Ventus v INAC Kobe Leonessa",
+          "time": "03:00",
+          "tip_at": "2026-11-19T03:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Japan WE League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.3,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Omiya Ardija Ventus",
+            "away": "INAC Kobe Leonessa",
+            "prices": {
+              "home": 4.0,
+              "away": 1.75,
+              "draw": 3.3
+            },
+            "devig_pct": {
+              "home": 22.23,
+              "away": 50.82,
+              "draw": 26.95
+            },
+            "overround_pct": 12.45,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.3,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.3,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (3 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.3,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.3,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Omiya Ardija Ventus",
+                "price": 4.0,
+                "reason": "Clause devig_range_flip is the last to move the pick. VG20-OVR796FLIP forward judgment — computed for grading; it does not pick the cards."
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 2.81
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.30. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. INAC Kobe are winless in three with no clean sheet in eight, but their differential (+0.13 goals/game) still beats Omiya's (-0.67); the dog's case is form-only — no grand-pick or desk call on this game."
+          }
+        },
+        {
+          "game_id": "S37-05",
+          "game": "Anyang Jung Kwan Jang Red Boosters v KCC Egis",
+          "time": "04:00",
+          "tip_at": "2026-11-19T04:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "South Korea KBL",
+          "sport": "Basketball",
+          "pick": "Anyang Jung Kwan Jang Red Boosters",
+          "price": 1.51,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Anyang Jung Kwan Jang Red Boosters",
+            "away": "KCC Egis",
+            "prices": {
+              "home": 1.51,
+              "away": 2.44,
+              "draw": null
+            },
+            "devig_pct": {
+              "home": 61.77,
+              "away": 38.23
+            },
+            "overround_pct": 7.21,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Anyang Jung Kwan Jang Red Boosters",
+                "price": 1.51,
+                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
+              },
+              {
+                "court": "Regime",
+                "pick": "Anyang Jung Kwan Jang Red Boosters",
+                "price": 1.51,
+                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Anyang Jung Kwan Jang Red Boosters",
+                "price": 1.51,
+                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
+              },
+              {
+                "court": "Selector",
+                "pick": "Anyang Jung Kwan Jang Red Boosters",
+                "price": 1.51,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Anyang Jung Kwan Jang Red Boosters",
+                "price": 1.51,
+                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
+              }
+            ],
+            "totals": {
+              "line": 169.25,
+              "projection": 168.55
+            },
+            "bet_call": "LEDGER BET — Anyang Jung Kwan Jang Red Boosters 25m @ 1.51. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-06",
+          "game": "Suwon KT Sonicboom v Seoul SK Knights",
+          "time": "04:00",
+          "tip_at": "2026-11-19T04:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "South Korea KBL",
+          "sport": "Basketball",
+          "pick": "Seoul SK Knights",
+          "price": 1.65,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Suwon KT Sonicboom",
+            "away": "Seoul SK Knights",
+            "prices": {
+              "home": 2.14,
+              "away": 1.65,
+              "draw": null
+            },
+            "devig_pct": {
+              "home": 43.54,
+              "away": 56.46
+            },
+            "overround_pct": 7.34,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Seoul SK Knights",
+                "price": 1.65,
+                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
+              },
+              {
+                "court": "Regime",
+                "pick": "Seoul SK Knights",
+                "price": 1.65,
+                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Suwon KT Sonicboom",
+                "price": 2.14,
+                "reason": "Away-band flip — the favourite's price sits in the flip band and the favourite is away."
+              },
+              {
+                "court": "Selector",
+                "pick": "Seoul SK Knights",
+                "price": 1.65,
+                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 stays with the two-court majority — no leg of the crowned FAVP150160…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Seoul SK Knights",
+                "price": 1.65,
+                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
+              }
+            ],
+            "totals": {
+              "line": 165.75,
+              "projection": 167.7
+            },
+            "bet_call": "LEDGER BET — Seoul SK Knights 25m @ 1.65. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-07",
+          "game": "Dempo SC v Shillong Lajong",
+          "time": "04:30",
+          "tip_at": "2026-11-19T04:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Indian Football League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.25,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Dempo SC",
+            "away": "Shillong Lajong",
+            "prices": {
+              "home": 3.1,
+              "away": 2.05,
+              "draw": 3.25
+            },
+            "devig_pct": {
+              "home": 28.85,
+              "away": 43.63,
+              "draw": 27.52
+            },
+            "overround_pct": 11.81,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "Soccer ball sits on the draw — de-vig draw 27.52% >= 27% (favourite Shillong Lajong de-vig 43.63%); no clause in the stack fires to move…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "Soccer ball sits on the draw — de-vig draw 27.52% >= 27% (favourite Shillong Lajong de-vig 43.63%); no clause in the stack fires to move…"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Dempo SC",
+                "price": 3.1,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 2.17
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.25. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-08",
+          "game": "Nevesinje v Rudar Prijedor",
+          "time": "06:00",
+          "tip_at": "2026-11-19T06:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Bosnia 1. Division RS",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.75,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Nevesinje",
+            "away": "Rudar Prijedor",
+            "prices": {
+              "home": 5.0,
+              "away": 1.53,
+              "draw": 3.75
+            },
+            "devig_pct": {
+              "home": 17.85,
+              "away": 58.34,
+              "draw": 23.8
+            },
+            "overround_pct": 12.03,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.75,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.75,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (3 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.75,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.75,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Nevesinje",
+                "price": 5.0,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.75. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-09",
+          "game": "MFK Zvolen v FC Kosice",
+          "time": "06:00",
+          "tip_at": "2026-11-19T06:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Slovak FA Cup",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 4.8,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "MFK Zvolen",
+            "away": "FC Kosice",
+            "prices": {
+              "home": 8.0,
+              "away": 1.29,
+              "draw": 4.8
+            },
+            "devig_pct": {
+              "home": 11.28,
+              "away": 69.93,
+              "draw": 18.79
+            },
+            "overround_pct": 10.85,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 4.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 4.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 4.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 4.8,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "FC Kosice",
+                "price": 1.29,
+                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 4.80. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-10",
+          "game": "ND Beltinci v NK Celje",
+          "time": "06:30",
+          "tip_at": "2026-11-19T06:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Slovenian Cup",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 4.5,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "ND Beltinci",
+            "away": "NK Celje",
+            "prices": {
+              "home": 6.5,
+              "away": 1.36,
+              "draw": 4.5
+            },
+            "devig_pct": {
+              "home": 13.84,
+              "away": 66.16,
+              "draw": 20.0
+            },
+            "overround_pct": 11.14,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 4.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 4.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 4.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 4.5,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "NK Celje",
+                "price": 1.36,
+                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
+              }
+            ],
+            "totals": {
+              "line": 2.5,
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 4.50. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-11",
+          "game": "NK Dob v NK Bistrica",
+          "time": "06:30",
+          "tip_at": "2026-11-19T06:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Slovenian Cup",
+          "sport": "Soccer",
+          "pick": "NK Bistrica",
+          "price": 1.67,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "NK Dob",
+            "away": "NK Bistrica",
+            "prices": {
+              "home": 4.2,
+              "away": 1.67,
+              "draw": 3.4
+            },
+            "devig_pct": {
+              "home": 21.05,
+              "away": 52.94,
+              "draw": 26.0
+            },
+            "overround_pct": 13.1,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.4,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "NK Bistrica",
+                "price": 1.67,
+                "reason": "Draw-price band veto — a draw priced in [3.40, 3.60) is vetoed; the favourite is taken instead (the DRAW350VETO leg). (4 clauses moved…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.4,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "NK Bistrica",
+                "price": 1.67,
+                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 follows the lone dissenter — the crowned FAVP150160 chain takes the…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "NK Bistrica",
+                "price": 1.67,
+                "reason": "Dog-price rule — the dog's price hits a named point, so the pick takes that side. (2 clauses moved the pick; the last one decides it.)…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — NK Bistrica 25m @ 1.67. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-12",
+          "game": "Al-Wasl v Hatta",
+          "time": "06:45",
+          "tip_at": "2026-11-19T06:45:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "UAE Pro League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 8.0,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al-Wasl",
+            "away": "Hatta",
+            "prices": {
+              "home": 1.12,
+              "away": 13.0,
+              "draw": 8.0
+            },
+            "devig_pct": {
+              "home": 81.56,
+              "away": 7.03,
+              "draw": 11.42
+            },
+            "overround_pct": 9.48,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 8.0,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Al-Wasl",
+                "price": 1.12,
+                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 3.36
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 8.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. Confidence screen evidence (no fire): Al-Wasl's de-vig is 81.56% — under the 90% confidence bar (the 8.00 draw price holds the three-way de-vig down), so the confidence rule cannot fire; the fragility screen also cannot run in full (no full-table defensive rank in the research capture). The 1.12 price is under the 1.15 floor in any case."
+          }
+        },
+        {
+          "game_id": "S37-13",
+          "game": "Surkhon-2011 v Andijon",
+          "time": "07:00",
+          "tip_at": "2026-11-19T07:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Uzbekistan Superliga",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 2.8,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Surkhon-2011",
+            "away": "Andijon",
+            "prices": {
+              "home": 2.7,
+              "away": 2.5,
+              "draw": 2.8
+            },
+            "devig_pct": {
+              "home": 32.85,
+              "away": 35.48,
+              "draw": 31.68
+            },
+            "overround_pct": 12.75,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "Soccer ball sits on the draw — de-vig draw 31.68% >= 27% (favourite Andijon de-vig 35.48%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "Soccer ball sits on the draw — de-vig draw 31.68% >= 27% (favourite Andijon de-vig 35.48%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Surkhon-2011",
+                "price": 2.7,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 2.17
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 2.80. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. The draw was weighed for the Draw Desk on Surkhon's five straight draws (10 in 27) and ranked second: the 2.80 price already pays for the streak (draw de-vig 31.67%), and Andijon have drawn only 4 of 27, which drags the joint picture down. Surkhon @ 2.70 was also weighed and passed — a side that draws everything is not a win bet."
+          }
+        },
+        {
+          "game_id": "S37-14",
+          "game": "Samaleswari SC v Nagaland United",
+          "time": "07:00",
+          "tip_at": "2026-11-19T07:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Indian Football League",
+          "sport": "Soccer",
+          "pick": "Nagaland United",
+          "price": 2.38,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Samaleswari SC",
+            "away": "Nagaland United",
+            "prices": {
+              "home": 2.55,
+              "away": 2.38,
+              "draw": 3.4
+            },
+            "devig_pct": {
+              "home": 35.44,
+              "away": 37.97,
+              "draw": 26.58
+            },
+            "overround_pct": 10.64,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.4,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Nagaland United",
+                "price": 2.38,
+                "reason": "Draw-price band veto — a draw priced in [3.40, 3.60) is vetoed; the favourite is taken instead (the DRAW350VETO leg). (2 clauses moved…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.4,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.4,
+                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 stays with the two-court majority — no leg of the crowned FAVP150160…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Samaleswari SC",
+                "price": 2.55,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": 2.75,
+              "projection": 3.42
+            },
+            "bet_call": "LEDGER BET — Nagaland United 25m @ 2.38. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-15",
+          "game": "Al Kahrabaa v Diyala",
+          "time": "07:45",
+          "tip_at": "2026-11-19T07:45:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Iraq Stars League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.0,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al Kahrabaa",
+            "away": "Diyala",
+            "prices": {
+              "home": 2.25,
+              "away": 3.0,
+              "draw": 3.0
+            },
+            "devig_pct": {
+              "home": 40.0,
+              "away": 30.0,
+              "draw": 30.0
+            },
+            "overround_pct": 11.11,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "Soccer ball sits on the draw — de-vig draw 30.0% >= 27% (favourite Al Kahrabaa de-vig 40.0%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "Soccer ball sits on the draw — de-vig draw 30.0% >= 27% (favourite Al Kahrabaa de-vig 40.0%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Diyala",
+                "price": 3.0,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 2.19
+            },
+            "bet_call": "BET — GRAND PICK: Diyala, small 25m @ 3.00. Named gap (Kim Rule): the home favourite Al Kahrabaa are 18th in the Iraq Stars League with 2 wins from 13 and a -0.46 goals/game differential, while Diyala are 12th with the better differential (-0.23), more wins (3) and the better recent form (one loss in five against Kahrabaa's three in five). The 2.25 home price is home advantage alone — every frozen table dimension favours the dog. Small tier: the price is single-source (Soccereco) in an obscure league. This is a separate called bet ON TOP of the game's ledger bet: LEDGER BET — Draw 25m @ 3.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. The grand pick opposes the card pick on this game — the Split / Decin / UConn shape, disclosed."
+          }
+        },
+        {
+          "game_id": "S37-16",
+          "game": "Aigle Royal v Colombe",
+          "time": "08:00",
+          "tip_at": "2026-11-19T08:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Cameroon Elite One",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.25,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Aigle Royal",
+            "away": "Colombe",
+            "prices": {
+              "home": 2.3,
+              "away": 2.7,
+              "draw": 3.25
+            },
+            "devig_pct": {
+              "home": 39.07,
+              "away": 33.28,
+              "draw": 27.65
+            },
+            "overround_pct": 11.28,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "Soccer ball sits on the draw — de-vig draw 27.65% >= 27% (favourite Aigle Royal de-vig 39.07%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "Soccer ball sits on the draw — de-vig draw 27.65% >= 27% (favourite Aigle Royal de-vig 39.07%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.25,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Colombe",
+                "price": 2.7,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 2.62
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.25. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-17",
+          "game": "Dobrudzha Dobrich v Fratria",
+          "time": "09:00",
+          "tip_at": "2026-11-19T09:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Bulgaria Second League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.8,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Dobrudzha Dobrich",
+            "away": "Fratria",
+            "prices": {
+              "home": 4.78,
+              "away": 1.86,
+              "draw": 3.8
+            },
+            "devig_pct": {
+              "home": 20.71,
+              "away": 53.23,
+              "draw": 26.06
+            },
+            "overround_pct": 1.0,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (3 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.8,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Dobrudzha Dobrich",
+                "price": 4.78,
+                "reason": "Clause devig_range_flip is the last to move the pick. VG20-OVR796FLIP forward judgment — computed for grading; it does not pick the cards."
+              }
+            ],
+            "totals": {
+              "line": 2.5,
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.80. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-18",
+          "game": "Al Masry SC v Asyut Petroleum",
+          "time": "09:00",
+          "tip_at": "2026-11-19T09:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Egyptian Cup",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.0,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al Masry SC",
+            "away": "Asyut Petroleum",
+            "prices": {
+              "home": 1.75,
+              "away": 4.6,
+              "draw": 3.0
+            },
+            "devig_pct": {
+              "home": 50.92,
+              "away": 19.37,
+              "draw": 29.7
+            },
+            "overround_pct": 12.22,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "Soccer ball sits on the draw — de-vig draw 29.7% >= 27% (favourite Al Masry SC de-vig 50.92%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "Soccer ball sits on the draw — de-vig draw 29.7% >= 27% (favourite Al Masry SC de-vig 50.92%); no clause in the stack fires to move off it."
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.0,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Asyut Petroleum",
+                "price": 4.6,
+                "reason": "Clause devig_range_flip is the last to move the pick. VG20-OVR796FLIP forward judgment — computed for grading; it does not pick the cards."
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-19",
+          "game": "Al Mokawloon Al Arab v Olympic El Qanah FC",
+          "time": "09:00",
+          "tip_at": "2026-11-19T09:00:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Egyptian Cup",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.2,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al Mokawloon Al Arab",
+            "away": "Olympic El Qanah FC",
+            "prices": {
+              "home": 1.67,
+              "away": 4.8,
+              "draw": 3.2
+            },
+            "devig_pct": {
+              "home": 53.48,
+              "away": 18.61,
+              "draw": 27.91
+            },
+            "overround_pct": 11.96,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.2,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.2,
+                "reason": "Soccer ball sits on the draw — de-vig draw 27.91% >= 27% (favourite Al Mokawloon Al Arab de-vig 53.48%); no clause in the stack fires to…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.2,
+                "reason": "Soccer ball sits on the draw — de-vig draw 27.91% >= 27% (favourite Al Mokawloon Al Arab de-vig 53.48%); no clause in the stack fires to…"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.2,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Olympic El Qanah FC",
+                "price": 4.8,
+                "reason": "Clause devig_range_flip is the last to move the pick. VG20-OVR796FLIP forward judgment — computed for grading; it does not pick the cards."
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.20. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-20",
+          "game": "Al-Ain v Al-Dhafra",
+          "time": "09:25",
+          "tip_at": "2026-11-19T09:25:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "UAE Pro League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 7.5,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al-Ain",
+            "away": "Al-Dhafra",
+            "prices": {
+              "home": 1.14,
+              "away": 13.0,
+              "draw": 7.5
+            },
+            "devig_pct": {
+              "home": 80.67,
+              "away": 7.07,
+              "draw": 12.26
+            },
+            "overround_pct": 8.74,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 7.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 7.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 7.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 7.5,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Al-Ain",
+                "price": 1.14,
+                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
+              }
+            ],
+            "totals": {
+              "line": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
+              },
+              "projection": 2.93
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 7.50. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. Confidence screen evidence (no fire): Al-Ain's de-vig is 80.67% — under the 90% confidence bar (the 7.50 draw price holds the three-way de-vig down), so the confidence rule cannot fire; the fragility screen also cannot run in full (no full-table defensive rank in the research capture). The 1.14 price is under the 1.15 floor in any case."
+          }
+        },
+        {
+          "game_id": "S37-21",
+          "game": "Al-Ahli v Al-Shamal",
+          "time": "09:30",
+          "tip_at": "2026-11-19T09:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Qatar Stars League",
+          "sport": "Soccer",
+          "pick": "Al-Shamal",
+          "price": 2.0,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al-Ahli",
+            "away": "Al-Shamal",
+            "prices": {
+              "home": 3.0,
+              "away": 2.0,
+              "draw": 3.5
+            },
+            "devig_pct": {
+              "home": 29.79,
+              "away": 44.68,
+              "draw": 25.53
+            },
+            "overround_pct": 11.9,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Al-Shamal",
+                "price": 2.0,
+                "reason": "Draw-price band veto — a draw priced in [3.40, 3.60) is vetoed; the favourite is taken instead (the DRAW350VETO leg). (2 clauses moved…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.5,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.5,
+                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 stays with the two-court majority — no leg of the crowned FAVP150160…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Al-Ahli",
+                "price": 3.0,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": 2.5,
+              "projection": {
+                "status": "NOT_AVAILABLE",
+                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
+              }
+            },
+            "bet_call": "LEDGER BET — Al-Shamal 25m @ 2.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. Al-Shamal's form (one win in five) was weighed against their 2.00 away price with both sides level on 12 points, but Al-Ahli's own form and goal rates were not captured in the research, so the gap has only one side's numbers — no call beyond the ledger pick."
+          }
+        },
+        {
+          "game_id": "S37-22",
+          "game": "Al-Gharraf v Al Quwa Al Jawiya",
+          "time": "09:30",
+          "tip_at": "2026-11-19T09:30:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Iraq Stars League",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.1,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Al-Gharraf",
+            "away": "Al Quwa Al Jawiya",
+            "prices": {
+              "home": 3.7,
+              "away": 1.85,
+              "draw": 3.1
+            },
+            "devig_pct": {
+              "home": 23.85,
+              "away": 47.69,
+              "draw": 28.46
+            },
+            "overround_pct": 13.34,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.1,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.1,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.1,
+                "reason": "Soccer ball sits on the draw — de-vig draw 28.46% >= 27% (favourite Al Quwa Al Jawiya de-vig 47.69%); no clause in the stack fires to…"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.1,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "Al-Gharraf",
+                "price": 3.7,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": 2.5,
+              "projection": 2.0
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.10. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. DRAW DESK (paper) — Draw @ 3.10, flat 25m paper, Draw Desk entry #6. Named case: the two most draw-prone sides on the slip meet — Al Quwa Al Jawiya have drawn 7 of 13 (54%), Al-Gharraf 5 of 13 (38%) — their head-to-head this season finished 1-1, both are low-scoring (9 and 14 goals in 13), and the draw's de-vig (28.46%) has not compressed for that profile. The desk pick is paper only and is not merged into the ledger bet."
+          }
+        },
+        {
+          "game_id": "S37-23",
+          "game": "MB Rouissat v CR Belouizdad",
+          "time": "10:45",
+          "tip_at": "2026-11-19T10:45:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Algeria Ligue 1",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 2.8,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "MB Rouissat",
+            "away": "CR Belouizdad",
+            "prices": {
+              "home": 4.33,
+              "away": 1.91,
+              "draw": 2.8
+            },
+            "devig_pct": {
+              "home": 20.78,
+              "away": 47.1,
+              "draw": 32.13
+            },
+            "overround_pct": 11.16,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "Soccer ball sits on the draw — de-vig draw 32.13% >= 27% (favourite CR Belouizdad de-vig 47.1%); no clause in the stack fires to move…"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 2.8,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "MB Rouissat",
+                "price": 4.33,
+                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG20-OVR796FLIP forward judgment — computed for grading; it does…"
+              }
+            ],
+            "totals": {
+              "line": 1.5,
+              "projection": 2.08
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 2.80. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. Weighed for the grand pick and the desk and ranked second: Rouissat are 4th, unbeaten in six with four wins in five and only 6 conceded in 9 — but CR Belouizdad are 1st and unbeaten themselves (13:7), so the class gap the 4.33 price expresses is real. The game's draw (de-vig 32.12%, the slip's highest) was also weighed for the Draw Desk and ranked behind Al-Gharraf's pair of draw profiles at a longer price."
+          }
+        },
+        {
+          "game_id": "S37-24",
+          "game": "MC Alger v Olympique Akbou",
+          "time": "10:45",
+          "tip_at": "2026-11-19T10:45:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "Algeria Ligue 1",
+          "sport": "Soccer",
+          "pick": "Draw",
+          "price": 3.7,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "MC Alger",
+            "away": "Olympique Akbou",
+            "prices": {
+              "home": 1.4,
+              "away": 8.5,
+              "draw": 3.7
+            },
+            "devig_pct": {
+              "home": 64.81,
+              "away": 10.67,
+              "draw": 24.52
+            },
+            "overround_pct": 10.22,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Draw",
+                "price": 3.7,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Regime",
+                "pick": "Draw",
+                "price": 3.7,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
+              },
+              {
+                "court": "Quantum",
+                "pick": "Draw",
+                "price": 3.7,
+                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
+              },
+              {
+                "court": "Selector",
+                "pick": "Draw",
+                "price": 3.7,
+                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "MC Alger",
+                "price": 1.4,
+                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
+              }
+            ],
+            "totals": {
+              "line": 2.5,
+              "projection": 1.72
+            },
+            "bet_call": "LEDGER BET — Draw 25m @ 3.70. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        },
+        {
+          "game_id": "S37-25",
+          "game": "Maccabi Tel Aviv v BC Dubai",
+          "time": "11:15",
+          "tip_at": "2026-11-19T11:15:00-06:00",
+          "status": "PENDING",
+          "winner": null,
+          "final_score": null,
+          "bet_call": null,
+          "league": "EuroLeague",
+          "sport": "Basketball",
+          "pick": "BC Dubai",
+          "price": 1.57,
+          "outcome": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": {
+            "home": "Maccabi Tel Aviv",
+            "away": "BC Dubai",
+            "prices": {
+              "home": 2.38,
+              "away": 1.57,
+              "draw": null
+            },
+            "devig_pct": {
+              "home": 39.75,
+              "away": 60.25
+            },
+            "overround_pct": 5.71,
+            "kings": [
+              {
+                "court": "Legacy",
+                "pick": "Maccabi Tel Aviv",
+                "price": 2.38,
+                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
+              },
+              {
+                "court": "Regime",
+                "pick": "BC Dubai",
+                "price": 1.57,
+                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
+              },
+              {
+                "court": "Quantum",
+                "pick": "BC Dubai",
+                "price": 1.57,
+                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
+              },
+              {
+                "court": "Selector",
+                "pick": "Maccabi Tel Aviv",
+                "price": 2.38,
+                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 follows the lone dissenter — the crowned FAVP150160 chain takes the…"
+              },
+              {
+                "court": "Vanguard",
+                "pick": "BC Dubai",
+                "price": 1.57,
+                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG20-OVR796FLIP forward judgment — computed for…"
+              }
+            ],
+            "totals": {
+              "line": 177.0,
+              "projection": 174.25
+            },
+            "bet_call": "LEDGER BET — BC Dubai 25m @ 1.57. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick."
+          }
+        }
+      ],
+      "top3": [
+        {
+          "rank": 1,
+          "kind": "GRAND PICK",
+          "game_id": "S37-15",
+          "game": "Al Kahrabaa v Diyala",
+          "pick": "Diyala",
+          "stake_m": 25,
+          "price": 3.0,
+          "paper": false,
+          "status": "UPCOMING",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": "2026-11-19T07:45:00-06:00",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": "BET — GRAND PICK: Diyala, small 25m @ 3.00. Named gap (Kim Rule): the home favourite Al Kahrabaa are 18th in the Iraq Stars League with 2 wins from 13 and a -0.46 goals/game differential, while Diyala are 12th with the better differential (-0.23), more wins (3) and the better recent form (one loss in five against Kahrabaa's three in five). The 2.25 home price is home advantage alone — every frozen table dimension favours the dog. Small tier: the price is single-source (Soccereco) in an obscure league. This is a separate called bet ON TOP of the game's ledger bet: LEDGER BET — Draw 25m @ 3.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. The grand pick opposes the card pick on this game — the Split / Decin / UConn shape, disclosed.",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 3,
+          "kind": "UNDERDOG DESK",
+          "game_id": "S37-15",
+          "game": "Al Kahrabaa v Diyala",
+          "pick": "Diyala",
+          "stake_m": 25,
+          "price": 3.0,
+          "paper": true,
+          "status": "UPCOMING",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": "2026-11-19T07:45:00-06:00",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": "BET — GRAND PICK: Diyala, small 25m @ 3.00. Named gap (Kim Rule): the home favourite Al Kahrabaa are 18th in the Iraq Stars League with 2 wins from 13 and a -0.46 goals/game differential, while Diyala are 12th with the better differential (-0.23), more wins (3) and the better recent form (one loss in five against Kahrabaa's three in five). The 2.25 home price is home advantage alone — every frozen table dimension favours the dog. Small tier: the price is single-source (Soccereco) in an obscure league. This is a separate called bet ON TOP of the game's ledger bet: LEDGER BET — Draw 25m @ 3.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. The grand pick opposes the card pick on this game — the Split / Decin / UConn shape, disclosed.",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        }
+      ],
+      "choices": [
+        {
+          "rank": 1,
+          "kind": "GRAND PICK",
+          "fire": null,
+          "game_id": "S37-15",
+          "game": "Al Kahrabaa v Diyala",
+          "pick": "Diyala",
+          "stake_m": 25,
+          "price": 3.0,
+          "paper": false,
+          "status": "UPCOMING",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": "2026-11-19T07:45:00-06:00",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": "BET — GRAND PICK: Diyala, small 25m @ 3.00. Named gap (Kim Rule): the home favourite Al Kahrabaa are 18th in the Iraq Stars League with 2 wins from 13 and a -0.46 goals/game differential, while Diyala are 12th with the better differential (-0.23), more wins (3) and the better recent form (one loss in five against Kahrabaa's three in five). The 2.25 home price is home advantage alone — every frozen table dimension favours the dog. Small tier: the price is single-source (Soccereco) in an obscure league. This is a separate called bet ON TOP of the game's ledger bet: LEDGER BET — Draw 25m @ 3.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. The grand pick opposes the card pick on this game — the Split / Decin / UConn shape, disclosed.",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 2,
+          "kind": "UNDERDOG DESK",
+          "fire": null,
+          "game_id": "S37-15",
+          "game": "Al Kahrabaa v Diyala",
+          "pick": "Diyala",
+          "stake_m": 25,
+          "price": 3.0,
+          "paper": true,
+          "status": "UPCOMING",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": "2026-11-19T07:45:00-06:00",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": "BET — GRAND PICK: Diyala, small 25m @ 3.00. Named gap (Kim Rule): the home favourite Al Kahrabaa are 18th in the Iraq Stars League with 2 wins from 13 and a -0.46 goals/game differential, while Diyala are 12th with the better differential (-0.23), more wins (3) and the better recent form (one loss in five against Kahrabaa's three in five). The 2.25 home price is home advantage alone — every frozen table dimension favours the dog. Small tier: the price is single-source (Soccereco) in an obscure league. This is a separate called bet ON TOP of the game's ledger bet: LEDGER BET — Draw 25m @ 3.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick. The grand pick opposes the card pick on this game — the Split / Decin / UConn shape, disclosed.",
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        }
+      ]
     }
   ],
   "bets": [
@@ -3866,6 +5806,63 @@
       "live": null,
       "display_state": null,
       "display_final_score": null
+    },
+    {
+      "slip": 37,
+      "game_id": "S37-15",
+      "game": "Al Kahrabaa v Diyala",
+      "pick": "Diyala",
+      "stake_m": 25,
+      "price": 3.0,
+      "kind": "GRAND PICK",
+      "paper": false,
+      "status": "UPCOMING",
+      "result": null,
+      "pnl_m": null,
+      "fire": null,
+      "final_score": null,
+      "tip_at": "2026-11-19T07:45:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
+    },
+    {
+      "slip": 37,
+      "game_id": "S37-15",
+      "game": "Al Kahrabaa v Diyala",
+      "pick": "Diyala",
+      "stake_m": 25,
+      "price": 3.0,
+      "kind": "UNDERDOG DESK",
+      "paper": true,
+      "status": "UPCOMING",
+      "result": null,
+      "pnl_m": null,
+      "fire": null,
+      "final_score": null,
+      "tip_at": "2026-11-19T07:45:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
+    },
+    {
+      "slip": 37,
+      "game_id": "S37-22",
+      "game": "Al-Gharraf v Al Quwa Al Jawiya",
+      "pick": "Draw",
+      "stake_m": 25,
+      "price": 3.1,
+      "kind": "DRAW DESK",
+      "paper": true,
+      "status": "UPCOMING",
+      "result": null,
+      "pnl_m": null,
+      "fire": null,
+      "final_score": null,
+      "tip_at": "2026-11-19T09:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     }
   ],
   "bankroll": {
@@ -3876,7 +5873,8 @@
     "scoped_slips": [
       34,
       35,
-      36
+      36,
+      37
     ],
     "out_of_scope": [
       {
@@ -3891,8 +5889,243 @@
     "losses": 3,
     "record": "7-3",
     "winrate_pct": 70.0,
-    "pending_m": 0,
-    "pending": [],
+    "pending_m": 650,
+    "pending": [
+      {
+        "slip": 37,
+        "kind": "GRAND PICK",
+        "game_id": "S37-15",
+        "pick": "Diyala",
+        "stake_m": 25,
+        "price": 3.0,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-01",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 8.0,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-02",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 4.2,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-03",
+        "pick": "Adelaide 36ers",
+        "stake_m": 25,
+        "price": 1.57,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-04",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.3,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-05",
+        "pick": "Anyang Jung Kwan Jang Red Boosters",
+        "stake_m": 25,
+        "price": 1.51,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-06",
+        "pick": "Seoul SK Knights",
+        "stake_m": 25,
+        "price": 1.65,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-07",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.25,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-08",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.75,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-09",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 4.8,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-10",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 4.5,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-11",
+        "pick": "NK Bistrica",
+        "stake_m": 25,
+        "price": 1.67,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-12",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 8.0,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-13",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 2.8,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-14",
+        "pick": "Nagaland United",
+        "stake_m": 25,
+        "price": 2.38,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-15",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.0,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-16",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.25,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-17",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.8,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-18",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.0,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-19",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.2,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-20",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 7.5,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-21",
+        "pick": "Al-Shamal",
+        "stake_m": 25,
+        "price": 2.0,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-22",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.1,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-23",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 2.8,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-24",
+        "pick": "Draw",
+        "stake_m": 25,
+        "price": 3.7,
+        "status": "LOCKED"
+      },
+      {
+        "slip": 37,
+        "kind": "LEDGER BET",
+        "game_id": "S37-25",
+        "pick": "BC Dubai",
+        "stake_m": 25,
+        "price": 1.57,
+        "status": "LOCKED"
+      }
+    ],
     "ledger": [
       {
         "slip": 34,
@@ -4023,10 +6256,22 @@
         "kind": "UNDERDOG DESK",
         "pick": "UC Riverside Highlanders",
         "price": 3.35
+      },
+      {
+        "slip": 37,
+        "kind": "UNDERDOG DESK",
+        "pick": "Diyala",
+        "price": 3.0
+      },
+      {
+        "slip": 37,
+        "kind": "DRAW DESK",
+        "pick": "Draw",
+        "price": 3.1
       }
     ],
     "unsettled_m": 0,
-    "note": "Called bets only — the grand pick and every confidence fire at their called stakes, on every slip dated from the reset onward. The Underdog Desk is paper by design and never enters this ledger."
+    "note": "Called bets only — the grand pick and every confidence fire at their called stakes, plus, on slips locked in the every-pick form (Slip #37 onward), every choice pick at its recorded flat stake — on every slip dated from the reset onward. The Underdog Desk is paper by design and never enters this ledger."
   },
   "forward": {
     "chosen_bets": {
