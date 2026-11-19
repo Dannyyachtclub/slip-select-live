@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T02:40:43.360253-06:00",
+  "generated_at": "2026-11-19T02:45:42.508327-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-19T02:05:02.250220-06:00",
+      "last_activity": "2026-11-19T02:43:38.299186-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T02:27:54.282204-06:00",
-      "headline": "Latest search cycle: 198"
+      "last_activity": "2026-11-19T02:43:28.373186-06:00",
+      "headline": "Latest search cycle: 199"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T02:14:36.268214-06:00",
+      "last_activity": "2026-11-19T02:45:38.600190-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T02:17:27.629212-06:00",
+      "last_activity": "2026-11-19T02:44:48.849189-06:00",
       "headline": "Cycle 26: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 199 — 2026-11-19 02:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
+      "at": "2026-11-19T02:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 198 — 2026-11-19 02:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
       "at": "2026-11-19T02:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 194 — 2026-11-19 01:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
       "at": "2026-11-19T01:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 193 — 2026-11-19 01:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
-      "at": "2026-11-19T01:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -818,6 +818,13 @@
     {
       "agent": "Quantum",
       "kind": "generation",
+      "title": "Quantum R4-G445 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V8 DOGPEXACT290 REFUTED at +60.63%…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Quantum",
+      "kind": "generation",
       "title": "Quantum R4-G444 (loop, 2026-11-19) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V1 PRICESRCNONE REFUTED at +61.73%…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "gate-refusal",
       "title": "R4-G446 (loop, 2026-11-19) — Legacy generation 446",
       "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). The only above-king headline, V14 HBHOME at +64.03%, is GATE-REFUSED…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Legacy",
-      "kind": "generation",
-      "title": "R4-G445 (loop, 2026-11-19) — Legacy generation 445",
-      "summary": "NO NEW KING. COINFLIP64-DEAP6 stands (207-32, +3604.03m, +62.95%). Best gate-eligible variant V8 DOGP500600 REFUTED at +62.36% (swing…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
