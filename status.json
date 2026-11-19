@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T04:10:45.406536-06:00",
+  "generated_at": "2026-11-19T04:15:41.907615-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-19T03:43:42.401312-06:00",
+      "last_activity": "2026-11-19T04:12:29.079373-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -154,28 +154,28 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T03:57:52.774342-06:00",
-      "headline": "Latest search cycle: 204"
+      "last_activity": "2026-11-19T04:13:05.312374-06:00",
+      "headline": "Latest search cycle: 205"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T03:59:46.922346-06:00",
-      "headline": "Latest filing: P163"
+      "last_activity": "2026-11-19T04:15:37.559380-06:00",
+      "headline": "Latest filing: P164"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T03:43:33.999312-06:00",
+      "last_activity": "2026-11-19T04:13:36.740375-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T03:44:36.565314-06:00",
+      "last_activity": "2026-11-19T04:15:17.916379-06:00",
       "headline": "Cycle 26: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 205 — 2026-11-19 04:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; closing STALE regenerated and PASSED…",
+      "at": "2026-11-19T04:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 204 — 2026-11-19 03:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T03:56:00-06:00"
@@ -718,13 +725,6 @@
       "at": "2026-11-19T02:56:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 199 — 2026-11-19 02:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
-      "at": "2026-11-19T02:41:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19",
@@ -743,6 +743,13 @@
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19 — Slice 1 RE-AUTOPSY under the OVRGE79 kings (UNANIMOUS losses)",
       "summary": "The OVRGE79 crown — a five-fire overround-tail stack-add with the thinnest Selector crown swing on record (+2.70m) — barely touches the…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P164: TEAM-TOTAL CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G209; classes f + i)",
+      "summary": "Filed Arena P164: TEAM-TOTAL CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G209; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -778,13 +785,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P159: MILESTONE / RECORD-CHASE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G203;…",
       "summary": "Filed Arena P159: MILESTONE / RECORD-CHASE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G203; classes f + i)",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P158: TWO-SIDED / NET-FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena…",
-      "summary": "Filed Arena P158: TWO-SIDED / NET-FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G202; classes…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -853,6 +853,13 @@
     {
       "agent": "Quantum",
       "kind": "generation",
+      "title": "Quantum R4-G448 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V12 HOMEXDOGP180200 at +61.72% (swing…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Quantum",
+      "kind": "generation",
       "title": "Quantum R4-G447 (loop, 2026-11-19) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V15 REORDER6X22 at +61.95% (swing…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "gate-refusal",
       "title": "Quantum R4-G443 (loop, 2026-11-19) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Only above-king headline V10 BBXDOGP500600 GATE-REFUSED at +62.62%…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Quantum",
-      "kind": "gate-refusal",
-      "title": "Quantum R4-G442 (loop, 2026-11-19) — NO NEW KING",
-      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Only above-king headline V7 HOMEXDIFFDOGNEG105 GATE-REFUSED at…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
