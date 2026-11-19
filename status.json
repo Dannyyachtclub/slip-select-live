@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T06:25:49.727172-06:00",
+  "generated_at": "2026-11-19T06:30:45.325807-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -87,24 +87,24 @@
     },
     {
       "court": "Vanguard",
-      "name": "VG20-OVR796FLIP",
+      "name": "VG21-BBH7580FLIP",
       "grand_king": false,
       "wins": 186,
       "losses": 53,
-      "priced": 229,
-      "pnl_m": 1513.45,
-      "roi_pct": 26.44,
+      "priced": 227,
+      "pnl_m": 1609.73,
+      "roi_pct": 28.37,
       "set_size": 239,
       "dog_line": {
-        "picks": 76,
-        "wins": 46,
-        "losses": 30,
-        "priced": 72,
-        "pnl_m": 1082.83,
-        "roi_pct": 60.16
+        "picks": 80,
+        "wins": 48,
+        "losses": 32,
+        "priced": 74,
+        "pnl_m": 1137.83,
+        "roi_pct": 61.5
       },
       "stamp": null,
-      "crowned_on": "2026-11-18"
+      "crowned_on": "2026-11-19"
     }
   ],
   "agents": [
@@ -140,8 +140,8 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-19T05:46:00.139662-06:00",
-      "headline": "VG20-OVR796FLIP — 186-53, +26.44% fitted ROI"
+      "last_activity": "2026-11-19T06:27:49.786759-06:00",
+      "headline": "VG21-BBH7580FLIP — 186-53, +28.37% fitted ROI"
     },
     {
       "name": "Arena",
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T06:13:39.774726-06:00",
-      "headline": "Latest search cycle: 213"
+      "last_activity": "2026-11-19T06:28:13.550760-06:00",
+      "headline": "Latest search cycle: 214"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T06:20:32.741742-06:00",
-      "headline": "Latest filing: P170"
+      "last_activity": "2026-11-19T06:30:14.129765-06:00",
+      "headline": "Latest filing: P171"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 214 — 2026-11-19 06:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — the three discovery kings unchanged; closing record…",
+      "at": "2026-11-19T06:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 213 — 2026-11-19 06:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged, no regeneration needed; two PASS audit…",
       "at": "2026-11-19T06:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 209 — 2026-11-19 05:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T05:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 208 — 2026-11-19 04:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged, no regeneration needed; two PASS audit…",
-      "at": "2026-11-19T04:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -790,6 +790,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P171: CAREER-EARNINGS PRIZE-SHARE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G218;…",
+      "summary": "Filed Arena P171: CAREER-EARNINGS PRIZE-SHARE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G218; classes…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P170: AT-LIMIT FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G217;…",
       "summary": "Filed Arena P170: AT-LIMIT FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G217; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
@@ -820,13 +827,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P166: WITHIN-WINDOW FLOW REVERSAL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19,…",
       "summary": "Filed Arena P166: WITHIN-WINDOW FLOW REVERSAL FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G212;…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P164: TEAM-TOTAL CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G209; classes f + i)",
-      "summary": "Filed Arena P164: TEAM-TOTAL CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G209; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
