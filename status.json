@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T16:45:48.297231-06:00",
+  "generated_at": "2026-11-19T16:50:49.032779-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-19T16:05:52.696640-06:00",
+      "last_activity": "2026-11-19T16:48:39.500996-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO — 204-35, +63.22% fitted ROI"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T16:33:05.230012-06:00",
+      "last_activity": "2026-11-19T16:47:03.252998-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -161,8 +161,8 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T16:45:46.133999-06:00",
-      "headline": "Latest filing: P235"
+      "last_activity": "2026-11-19T16:50:22.492994-06:00",
+      "headline": "Latest filing: P236"
     },
     {
       "name": "Loss Autopsy",
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T16:16:04.754661-06:00",
-      "headline": "Cycle 58: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-19T16:48:43.884996-06:00",
+      "headline": "Cycle 59: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 58,
+    "latest_cycle": 59,
     "findings": [
       {
         "id": "Z1",
@@ -727,6 +727,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 59 — 2026-11-19",
+      "summary": "Script: data_core/stakehunter_cycle59.py (new file only, written fresh this cycle against the kings named in this run's…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 58 — 2026-11-19",
       "summary": "Script: data_core/stakehunter_cycle58.py (new file only, written fresh this cycle against the kings named in this run's…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -757,13 +764,6 @@
       "kind": "generation",
       "title": "CYCLE 35 — 2026-11-19",
       "summary": "Script: data_core/stakehunter_cycle35.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 26 — 2026-11-19",
-      "summary": "Script: data_core/stakehunter_cycle26.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -853,6 +853,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G259 — F4 CROSS-REFERENCE (fifty-first visit) — 2026-11-19",
+      "summary": "Verdict: NO ARENA CHAMPION in G259, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE: NEEDS-FREEZE spec…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G258 — F3 THROW-INCENTIVE ASYMMETRY (fifty-fifth visit) — 2026-11-19",
       "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, and no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P214 (card-amnesty…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G254 — F4 CROSS-REFERENCE (next visit) — 2026-11-19",
       "summary": "Verdict: NO ARENA CHAMPION in G254, no branch DEAD, and no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P210…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G253 — F3 THROW-INCENTIVE ASYMMETRY (fifty-fourth visit) — 2026-11-19",
-      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, and no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P209…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6875,12 +6875,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 32,
+            "home_score": 35,
             "away_score": 28,
-            "clock": "4:45",
+            "clock": "3:31",
             "period": 1,
-            "detail": "4:45 - 1st",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "detail": "3:31 - 1st",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7094,10 +7094,10 @@
             "state": "in",
             "home_score": 0,
             "away_score": 0,
-            "clock": "13'",
+            "clock": "19'",
             "period": 1,
-            "detail": "13'",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "detail": "19'",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 6:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7394,7 +7394,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7861,7 +7861,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+            "fetched_at": "2026-11-19T16:50:44.820456-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8410,7 +8410,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+        "fetched_at": "2026-11-19T16:50:44.820456-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T16:45:43.834798-06:00",
+        "fetched_at": "2026-11-19T16:50:44.820456-06:00",
         "source": "ESPN",
         "official": false
       },
