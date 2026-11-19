@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T22:55:49.636363-06:00",
+  "generated_at": "2026-11-18T23:00:42.791454-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T22:32:44.180643-06:00",
+      "last_activity": "2026-11-18T22:57:45.632456-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T22:44:08.174428-06:00",
-      "headline": "Latest search cycle: 183"
+      "last_activity": "2026-11-18T22:58:20.987458-06:00",
+      "headline": "Latest search cycle: 184"
     },
     {
       "name": "Edge Finder",
@@ -687,14 +687,21 @@
       "kind": "generation",
       "title": "CYCLE 181 OUTCOME",
       "summary": "NO CROWN. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime set 2ac6a2c8090f +63.17% vs…",
-      "at": "2026-11-18T22:44:08.174428-06:00"
+      "at": "2026-11-18T22:58:20.987458-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 180 OUTCOME",
       "summary": "NO CROWN. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime set 2ac6a2c8090f +63.17% vs…",
-      "at": "2026-11-18T22:44:08.174428-06:00"
+      "at": "2026-11-18T22:58:20.987458-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 184 — 2026-11-18 22:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (two consecutive identical PASS runs, registry signature sets exactly equal, 19,183 rows, 0 missing, 0 mirror-only; vault…",
+      "at": "2026-11-18T22:56:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -716,13 +723,6 @@
       "title": "CYCLE 181 — 2026-11-18 21:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
       "at": "2026-11-18T21:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 180 — 2026-11-18 21:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T21:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -966,7 +966,9 @@
       "date": "2026-11-17",
       "games_status": {
         "games_total": 34,
-        "games_ended": 34
+        "games_ended": 34,
+        "games_live_final": 0,
+        "games_live_in": 0
       },
       "games_list": [
         {
@@ -984,6 +986,8 @@
           "price": 4.0,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1001,6 +1005,8 @@
           "price": 1.3356,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1018,6 +1024,8 @@
           "price": 1.4367,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1035,6 +1043,8 @@
           "price": 1.346,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1052,6 +1062,8 @@
           "price": 19.0,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1069,6 +1081,8 @@
           "price": 1.8929,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1086,6 +1100,8 @@
           "price": 1.75,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1103,6 +1119,8 @@
           "price": 1.83,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1120,6 +1138,8 @@
           "price": 1.71,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1137,6 +1157,8 @@
           "price": 1.34,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1154,6 +1176,8 @@
           "price": 3.7,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1171,6 +1195,8 @@
           "price": 1.16,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1188,6 +1214,8 @@
           "price": 1.41,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1205,6 +1233,8 @@
           "price": 1.02,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1222,6 +1252,8 @@
           "price": 1.47,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1239,6 +1271,8 @@
           "price": 1.74,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1256,6 +1290,8 @@
           "price": 1.54,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1273,6 +1309,8 @@
           "price": 6.0,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1290,6 +1328,8 @@
           "price": 3.3,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1307,6 +1347,8 @@
           "price": 3.1,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1324,6 +1366,8 @@
           "price": 1.55,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1341,6 +1385,8 @@
           "price": 3.1,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1358,6 +1404,8 @@
           "price": 1.57,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1375,6 +1423,8 @@
           "price": 3.1,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1392,6 +1442,8 @@
           "price": 3.6,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1409,6 +1461,8 @@
           "price": 2.45,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1426,6 +1480,8 @@
           "price": 2.02,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1443,6 +1499,8 @@
           "price": 3.86,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1460,6 +1518,8 @@
           "price": 4.5,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1477,6 +1537,8 @@
           "price": 4.0,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1494,6 +1556,8 @@
           "price": 4.1,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1511,6 +1575,8 @@
           "price": 3.14,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1528,6 +1594,8 @@
           "price": 3.9,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1545,6 +1613,8 @@
           "price": 3.9,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         }
       ],
@@ -1564,6 +1634,8 @@
           "final_score": "62-61",
           "tip_at": "2026-11-18T04:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -1584,6 +1656,8 @@
           "final_score": "59-92",
           "tip_at": "2026-11-18T04:05:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -1604,6 +1678,8 @@
           "final_score": "62-61",
           "tip_at": "2026-11-18T04:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -1627,6 +1703,8 @@
           "final_score": "62-61",
           "tip_at": "2026-11-18T04:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -1648,6 +1726,8 @@
           "final_score": "59-92",
           "tip_at": "2026-11-18T04:05:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -1669,6 +1749,8 @@
           "final_score": "62-61",
           "tip_at": "2026-11-18T04:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -1742,7 +1824,9 @@
       "date": "2026-11-18",
       "games_status": {
         "games_total": 16,
-        "games_ended": 16
+        "games_ended": 16,
+        "games_live_final": 0,
+        "games_live_in": 0
       },
       "games_list": [
         {
@@ -1760,6 +1844,8 @@
           "price": 3.4,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1777,6 +1863,8 @@
           "price": 1.31,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1794,6 +1882,8 @@
           "price": 3.51,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1811,6 +1901,8 @@
           "price": 1.03,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1828,6 +1920,8 @@
           "price": 2.95,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1848,6 +1942,8 @@
           },
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1868,6 +1964,8 @@
           },
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1885,6 +1983,8 @@
           "price": 1.29,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1902,6 +2002,8 @@
           "price": 1.1,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1919,6 +2021,8 @@
           "price": 2.3,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1936,6 +2040,8 @@
           "price": 4.1,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1953,6 +2059,8 @@
           "price": 1.09,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1973,6 +2081,8 @@
           },
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -1990,6 +2100,8 @@
           "price": 1.67,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2007,6 +2119,8 @@
           "price": 1.69,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2024,6 +2138,8 @@
           "price": 5.0,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         }
       ],
@@ -2043,6 +2159,8 @@
           "final_score": "98-84",
           "tip_at": "2026-11-18T11:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2063,6 +2181,8 @@
           "final_score": "102-76",
           "tip_at": "2026-11-18T09:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2083,6 +2203,8 @@
           "final_score": "88-81",
           "tip_at": "2026-11-18T11:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2106,6 +2228,8 @@
           "final_score": "98-84",
           "tip_at": "2026-11-18T11:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2127,6 +2251,8 @@
           "final_score": "102-76",
           "tip_at": "2026-11-18T09:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2148,6 +2274,8 @@
           "final_score": "88-81",
           "tip_at": "2026-11-18T11:00:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2197,7 +2325,9 @@
       "date": "2026-11-18",
       "games_status": {
         "games_total": 22,
-        "games_ended": 22
+        "games_ended": 22,
+        "games_live_final": 0,
+        "games_live_in": 0
       },
       "games_list": [
         {
@@ -2215,6 +2345,8 @@
           "price": 1.32,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2232,6 +2364,8 @@
           "price": 1.65,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2249,6 +2383,8 @@
           "price": 1.38,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2266,6 +2402,8 @@
           "price": 3.25,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2283,6 +2421,8 @@
           "price": 8.05,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2300,6 +2440,8 @@
           "price": 1.75,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2317,6 +2459,8 @@
           "price": 4.5,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2334,6 +2478,8 @@
           "price": 1.29,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2351,6 +2497,8 @@
           "price": 1.55,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2368,6 +2516,8 @@
           "price": 2.15,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2385,6 +2535,8 @@
           "price": 1.35,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2402,6 +2554,8 @@
           "price": 3.13,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2419,6 +2573,8 @@
           "price": 1.45,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2436,6 +2592,8 @@
           "price": 1.57,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2453,6 +2611,8 @@
           "price": 1.13,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2470,6 +2630,8 @@
           "price": 1.62,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2487,6 +2649,8 @@
           "price": 2.22,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2504,6 +2668,8 @@
           "price": 1.03,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2524,6 +2690,8 @@
           },
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2541,6 +2709,8 @@
           "price": 1.68,
           "outcome": "LOST",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2561,6 +2731,8 @@
           },
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         },
         {
@@ -2578,6 +2750,8 @@
           "price": 1.034,
           "outcome": "WON",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "detail": null
         }
       ],
@@ -2597,6 +2771,8 @@
           "final_score": "94-88",
           "tip_at": "2026-11-18T11:30:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2617,6 +2793,8 @@
           "final_score": "94-66",
           "tip_at": "2026-11-18T13:30:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2637,6 +2815,8 @@
           "final_score": "77-69",
           "tip_at": "2026-11-18T11:30:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2660,6 +2840,8 @@
           "final_score": "94-88",
           "tip_at": "2026-11-18T11:30:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2681,6 +2863,8 @@
           "final_score": "94-66",
           "tip_at": "2026-11-18T13:30:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2702,6 +2886,8 @@
           "final_score": "77-69",
           "tip_at": "2026-11-18T11:30:00-06:00",
           "live": null,
+          "display_state": null,
+          "display_final_score": null,
           "reason": null,
           "user_bet": false,
           "user_stake_m": null,
@@ -2735,7 +2921,9 @@
       "date": null,
       "games_status": {
         "games_total": 17,
-        "games_ended": 0
+        "games_ended": 0,
+        "games_live_final": 11,
+        "games_live_in": 6
       },
       "games_list": [
         {
@@ -2759,10 +2947,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "88-65",
           "detail": {
             "home": "Creighton Bluejays",
             "away": "Bethune-Cookman Wildcats",
@@ -2836,10 +3026,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "74-77",
           "detail": {
             "home": "Colorado Buffaloes",
             "away": "Portland Pilots",
@@ -2913,10 +3105,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "85-79",
           "detail": {
             "home": "Arizona Wildcats",
             "away": "UConn Huskies",
@@ -2990,10 +3184,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "92-86",
           "detail": {
             "home": "San José State Spartans",
             "away": "Fresno State Bulldogs",
@@ -3067,10 +3263,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "71-64",
           "detail": {
             "home": "Colorado State Rams",
             "away": "North Dakota State Bison",
@@ -3144,10 +3342,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "101-71",
           "detail": {
             "home": "Utah State Aggies",
             "away": "Weber State Wildcats",
@@ -3224,10 +3424,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "102-41",
           "detail": {
             "home": "Missouri Tigers",
             "away": "Alcorn State Braves",
@@ -3328,10 +3530,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "98-54",
           "detail": {
             "home": "BYU Cougars",
             "away": "Northern Colorado Bears",
@@ -3405,10 +3609,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "68-65",
           "detail": {
             "home": "Arizona State Sun Devils",
             "away": "Oakland Golden Grizzlies",
@@ -3477,15 +3683,17 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 91,
-            "away_score": 92,
-            "clock": "6:14",
+            "home_score": 95,
+            "away_score": 95,
+            "clock": "4:18",
             "period": 4,
-            "detail": "6:14 - 4th",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "4:18 - 4th",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "detail": {
             "home": "Denver Nuggets",
             "away": "Boston Celtics",
@@ -3559,10 +3767,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "71-62",
           "detail": {
             "home": "San Diego Toreros",
             "away": "UC Riverside Highlanders",
@@ -3631,15 +3841,17 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 74,
-            "away_score": 76,
-            "clock": "1:16",
+            "home_score": 76,
+            "away_score": 78,
+            "clock": "0.0",
             "period": 3,
-            "detail": "1:16 - 3rd",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "End of 3rd",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "detail": {
             "home": "Los Angeles Lakers",
             "away": "Utah Jazz",
@@ -3708,15 +3920,17 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 90,
-            "away_score": 99,
-            "clock": "9:45",
+            "home_score": 96,
+            "away_score": 109,
+            "clock": "7:05",
             "period": 4,
-            "detail": "9:45 - 4th",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "7:05 - 4th",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "detail": {
             "home": "Sacramento Kings",
             "away": "Phoenix Suns",
@@ -3784,16 +3998,18 @@
           "price": 1.0476,
           "outcome": null,
           "live": {
-            "state": "in",
-            "home_score": 84,
-            "away_score": 63,
-            "clock": "2:36",
+            "state": "final",
+            "home_score": 91,
+            "away_score": 74,
+            "clock": null,
             "period": 2,
-            "detail": "2:36 - 2nd",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "91-74",
           "detail": {
             "home": "Nevada Wolf Pack",
             "away": "Idaho Vandals",
@@ -3862,15 +4078,17 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 73,
-            "away_score": 44,
-            "clock": "2:45",
+            "home_score": 75,
+            "away_score": 48,
+            "clock": "2:29",
             "period": 2,
-            "detail": "2:45 - 2nd",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "2:29 - 2nd",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "detail": {
             "home": "San Francisco Dons",
             "away": "Louisiana Ragin' Cajuns",
@@ -3940,14 +4158,16 @@
           "live": {
             "state": "in",
             "home_score": 60,
-            "away_score": 70,
-            "clock": "2:54",
+            "away_score": 74,
+            "clock": "1:56",
             "period": 2,
-            "detail": "2:54 - 2nd",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "1:56 - 2nd",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "detail": {
             "home": "Hawai'i Rainbow Warriors",
             "away": "Washington State Cougars",
@@ -4017,14 +4237,16 @@
           "live": {
             "state": "in",
             "home_score": 95,
-            "away_score": 46,
-            "clock": "2:58",
+            "away_score": 47,
+            "clock": "1:15",
             "period": 2,
-            "detail": "2:58 - 2nd",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "1:15 - 2nd",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "detail": {
             "home": "San Diego State Aztecs",
             "away": "Texas Southern Tigers",
@@ -4100,10 +4322,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "85-79",
           "reason": "BET — GRAND PICK: UConn Huskies, small 25m @ 2.40. Named gap (Kim Rule): the market favourite Arizona trips the fragility screen — its differential edge over the dog is -13.3 points/game (Arizona +13.2 v UConn +26.5), the wrong way entirely — while UConn holds the better record (4-0 v 3-1) and a far better defence (58.0 allowed/game, 16th of 365 nationally, v Arizona's 74.0, 223rd). No favourite on this slip trips the screen twice; this is the slip's clearest named gap. Whether the kings agree is recorded on the cards; the call stands on the frozen numbers either way.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4130,10 +4354,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "101-71",
           "reason": "CONFIDENCE BET (v1.1, walled off) — Utah State Aggies, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +35.0/game; defensive rank 167th of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4160,10 +4386,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "71-62",
           "reason": "UNDERDOG DESK (paper) — UC Riverside Highlanders @ 3.35, flat 25m paper, Underdog Desk pick #14. Named gap: the favourite San Diego trips the fragility screen once — its differential edge over the dog is -7.0 the wrong way (San Diego +8.7 v UC Riverside +15.7) — and UC Riverside defends better (67.8 allowed/game v 75.5) at the same 3-1 record. No real bet called on this game.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4193,10 +4421,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "85-79",
           "reason": "BET — GRAND PICK: UConn Huskies, small 25m @ 2.40. Named gap (Kim Rule): the market favourite Arizona trips the fragility screen — its differential edge over the dog is -13.3 points/game (Arizona +13.2 v UConn +26.5), the wrong way entirely — while UConn holds the better record (4-0 v 3-1) and a far better defence (58.0 allowed/game, 16th of 365 nationally, v Arizona's 74.0, 223rd). No favourite on this slip trips the screen twice; this is the slip's clearest named gap. Whether the kings agree is recorded on the cards; the call stands on the frozen numbers either way.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4224,10 +4454,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "101-71",
           "reason": "CONFIDENCE BET (v1.1, walled off) — Utah State Aggies, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +35.0/game; defensive rank 167th of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4255,10 +4487,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "88-65",
           "reason": "CONFIDENCE BET (v1.1, walled off) — Creighton Bluejays, 25m @ 1.0111. De-vig 96.26% >= 90% bar and 0 fragility trips (differential +9.3/game; defensive rank 120th of 365). The 1.0111 price is under the 1.15 floor, which the confidence rule expressly overrides.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4286,10 +4520,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "98-54",
           "reason": "CONFIDENCE BET (v1.1, walled off) — BYU Cougars, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +20.7/game; defensive rank 251st of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4317,10 +4553,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "68-65",
           "reason": "CONFIDENCE BET (v1.1, walled off) — Arizona State Sun Devils, 25m @ 1.0154. De-vig 95.39% >= 90% bar and 0 fragility trips (differential +22.3/game; defensive rank 52nd of 365). The 1.0154 price is under the 1.15 floor, which the confidence rule expressly overrides.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4344,14 +4582,16 @@
           "live": {
             "state": "in",
             "home_score": 95,
-            "away_score": 46,
-            "clock": "2:58",
+            "away_score": 47,
+            "clock": "1:15",
             "period": 2,
-            "detail": "2:58 - 2nd",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "detail": "1:15 - 2nd",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "in",
+          "display_final_score": null,
           "reason": "CONFIDENCE BET (v1.1, walled off) — San Diego State Aztecs, 25m @ 1.0111. De-vig 96.26% >= 90% bar and 0 fragility trips (differential +15.0/game; defensive rank 152nd of 365). The 1.0111 price is under the 1.15 floor, which the confidence rule expressly overrides.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4379,10 +4619,12 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:55:41.830204-06:00",
+            "fetched_at": "2026-11-18T23:00:38.681439-06:00",
             "source": "ESPN",
             "official": false
           },
+          "display_state": "final",
+          "display_final_score": "71-62",
           "reason": "UNDERDOG DESK (paper) — UC Riverside Highlanders @ 3.35, flat 25m paper, Underdog Desk pick #14. Named gap: the favourite San Diego trips the fragility screen once — its differential edge over the dog is -7.0 the wrong way (San Diego +8.7 v UC Riverside +15.7) — and UC Riverside defends better (67.8 allowed/game v 75.5) at the same 3-1 record. No real bet called on this game.",
           "user_bet": false,
           "user_stake_m": null,
@@ -4406,7 +4648,10 @@
       "pnl_m": 26.25,
       "fire": null,
       "final_score": "62-61",
-      "tip_at": "2026-11-18T04:00:00-06:00"
+      "tip_at": "2026-11-18T04:00:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 33,
@@ -4422,7 +4667,10 @@
       "pnl_m": 0.5,
       "fire": 1,
       "final_score": "59-92",
-      "tip_at": "2026-11-18T04:05:00-06:00"
+      "tip_at": "2026-11-18T04:05:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 33,
@@ -4438,7 +4686,10 @@
       "pnl_m": 26.25,
       "fire": null,
       "final_score": "62-61",
-      "tip_at": "2026-11-18T04:00:00-06:00"
+      "tip_at": "2026-11-18T04:00:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 33,
@@ -4454,7 +4705,10 @@
       "pnl_m": -25.0,
       "fire": null,
       "final_score": "1-4",
-      "tip_at": "2026-11-18T04:00:00-06:00"
+      "tip_at": "2026-11-18T04:00:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 34,
@@ -4470,7 +4724,10 @@
       "pnl_m": -25.0,
       "fire": null,
       "final_score": "98-84",
-      "tip_at": "2026-11-18T11:00:00-06:00"
+      "tip_at": "2026-11-18T11:00:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 34,
@@ -4486,7 +4743,10 @@
       "pnl_m": 0.75,
       "fire": 1,
       "final_score": "102-76",
-      "tip_at": "2026-11-18T09:00:00-06:00"
+      "tip_at": "2026-11-18T09:00:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 34,
@@ -4502,7 +4762,10 @@
       "pnl_m": -25.0,
       "fire": null,
       "final_score": "88-81",
-      "tip_at": "2026-11-18T11:00:00-06:00"
+      "tip_at": "2026-11-18T11:00:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 35,
@@ -4518,7 +4781,10 @@
       "pnl_m": -25.0,
       "fire": null,
       "final_score": "94-88",
-      "tip_at": "2026-11-18T11:30:00-06:00"
+      "tip_at": "2026-11-18T11:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 35,
@@ -4534,7 +4800,10 @@
       "pnl_m": 0.75,
       "fire": 1,
       "final_score": "94-66",
-      "tip_at": "2026-11-18T13:30:00-06:00"
+      "tip_at": "2026-11-18T13:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 35,
@@ -4550,7 +4819,10 @@
       "pnl_m": -25.0,
       "fire": null,
       "final_score": "77-69",
-      "tip_at": "2026-11-18T11:30:00-06:00"
+      "tip_at": "2026-11-18T11:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 35,
@@ -4566,7 +4838,10 @@
       "pnl_m": -25.0,
       "fire": null,
       "final_score": "94-88",
-      "tip_at": "2026-11-18T11:30:00-06:00"
+      "tip_at": "2026-11-18T11:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 35,
@@ -4582,7 +4857,10 @@
       "pnl_m": null,
       "fire": null,
       "final_score": "77-69",
-      "tip_at": "2026-11-18T11:30:00-06:00"
+      "tip_at": "2026-11-18T11:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 35,
@@ -4598,7 +4876,10 @@
       "pnl_m": -250.0,
       "fire": null,
       "final_score": "94-66",
-      "tip_at": "2026-11-18T13:30:00-06:00"
+      "tip_at": "2026-11-18T13:30:00-06:00",
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -4614,7 +4895,20 @@
       "pnl_m": null,
       "fire": null,
       "final_score": null,
-      "tip_at": "2026-11-18T20:00:00-06:00"
+      "tip_at": "2026-11-18T20:00:00-06:00",
+      "live": {
+        "state": "final",
+        "home_score": 85,
+        "away_score": 79,
+        "clock": null,
+        "period": 2,
+        "detail": "Final",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "final",
+      "display_final_score": "85-79"
     },
     {
       "slip": 36,
@@ -4630,7 +4924,20 @@
       "pnl_m": null,
       "fire": 1,
       "final_score": null,
-      "tip_at": "2026-11-18T20:00:00-06:00"
+      "tip_at": "2026-11-18T20:00:00-06:00",
+      "live": {
+        "state": "final",
+        "home_score": 101,
+        "away_score": 71,
+        "clock": null,
+        "period": 2,
+        "detail": "Final",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "final",
+      "display_final_score": "101-71"
     },
     {
       "slip": 36,
@@ -4646,7 +4953,20 @@
       "pnl_m": null,
       "fire": 2,
       "final_score": null,
-      "tip_at": "2026-11-18T20:00:00-06:00"
+      "tip_at": "2026-11-18T20:00:00-06:00",
+      "live": {
+        "state": "final",
+        "home_score": 88,
+        "away_score": 65,
+        "clock": null,
+        "period": 2,
+        "detail": "Final",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "final",
+      "display_final_score": "88-65"
     },
     {
       "slip": 36,
@@ -4662,7 +4982,20 @@
       "pnl_m": null,
       "fire": 3,
       "final_score": null,
-      "tip_at": "2026-11-18T20:00:00-06:00"
+      "tip_at": "2026-11-18T20:00:00-06:00",
+      "live": {
+        "state": "final",
+        "home_score": 98,
+        "away_score": 54,
+        "clock": null,
+        "period": 2,
+        "detail": "Final",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "final",
+      "display_final_score": "98-54"
     },
     {
       "slip": 36,
@@ -4678,7 +5011,20 @@
       "pnl_m": null,
       "fire": 4,
       "final_score": null,
-      "tip_at": "2026-11-18T20:00:00-06:00"
+      "tip_at": "2026-11-18T20:00:00-06:00",
+      "live": {
+        "state": "final",
+        "home_score": 68,
+        "away_score": 65,
+        "clock": null,
+        "period": 2,
+        "detail": "Final",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "final",
+      "display_final_score": "68-65"
     },
     {
       "slip": 36,
@@ -4694,7 +5040,20 @@
       "pnl_m": null,
       "fire": 5,
       "final_score": null,
-      "tip_at": "2026-11-18T21:00:00-06:00"
+      "tip_at": "2026-11-18T21:00:00-06:00",
+      "live": {
+        "state": "in",
+        "home_score": 95,
+        "away_score": 47,
+        "clock": "1:15",
+        "period": 2,
+        "detail": "1:15 - 2nd",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "in",
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -4710,7 +5069,20 @@
       "pnl_m": null,
       "fire": null,
       "final_score": null,
-      "tip_at": "2026-11-18T20:30:00-06:00"
+      "tip_at": "2026-11-18T20:30:00-06:00",
+      "live": {
+        "state": "final",
+        "home_score": 71,
+        "away_score": 62,
+        "clock": null,
+        "period": 2,
+        "detail": "Final",
+        "fetched_at": "2026-11-18T23:00:38.681439-06:00",
+        "source": "ESPN",
+        "official": false
+      },
+      "display_state": "final",
+      "display_final_score": "71-62"
     }
   ],
   "bankroll": {
