@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T03:40:41.271694-06:00",
+  "generated_at": "2026-11-19T03:45:41.240787-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-19T03:15:12.754252-06:00",
+      "last_activity": "2026-11-19T03:43:42.401312-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -154,28 +154,28 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T03:27:55.573279-06:00",
-      "headline": "Latest search cycle: 202"
+      "last_activity": "2026-11-19T03:42:55.750311-06:00",
+      "headline": "Latest search cycle: 203"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T03:30:06.135284-06:00",
-      "headline": "Latest filing: P161"
+      "last_activity": "2026-11-19T03:44:44.728315-06:00",
+      "headline": "Latest filing: P162"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T03:17:28.717257-06:00",
+      "last_activity": "2026-11-19T03:43:33.999312-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T03:14:53.566252-06:00",
+      "last_activity": "2026-11-19T03:44:36.565314-06:00",
       "headline": "Cycle 26: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 203 — 2026-11-19 03:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
+      "at": "2026-11-19T03:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 202 — 2026-11-19 03:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T03:26:00-06:00"
@@ -718,13 +725,6 @@
       "at": "2026-11-19T02:26:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 197 — 2026-11-19 02:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
-      "at": "2026-11-19T02:11:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19",
@@ -743,6 +743,13 @@
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19 — Slice 1 RE-AUTOPSY under the OVRGE79 kings (UNANIMOUS losses)",
       "summary": "The OVRGE79 crown — a five-fire overround-tail stack-add with the thinnest Selector crown swing on record (+2.70m) — barely touches the…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P162: CROSS-FIXTURE CIRCUIT-FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19,…",
+      "summary": "Filed Arena P162: CROSS-FIXTURE CIRCUIT-FLOW FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19, Arena G207;…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -778,13 +785,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P157: GUEST-VS-ACCOUNT PERSONALISED-PRICE FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G201;…",
       "summary": "Filed Arena P157: GUEST-VS-ACCOUNT PERSONALISED-PRICE FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G201; classes f + i)",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P155: SEEDING / MATCHUP-CHOICE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G198;…",
-      "summary": "Filed Arena P155: SEEDING / MATCHUP-CHOICE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G198; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -846,6 +846,13 @@
     {
       "agent": "Quantum",
       "kind": "generation",
+      "title": "Quantum R4-G447 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V15 REORDER6X22 at +61.95% (swing…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Quantum",
+      "kind": "generation",
       "title": "Quantum R4-G446 (loop, 2026-11-19) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V8 DOGPEXACT325 at +60.70% (swing…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -876,13 +883,6 @@
       "kind": "gate-refusal",
       "title": "Quantum R4-G442 (loop, 2026-11-19) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Only above-king headline V7 HOMEXDIFFDOGNEG105 GATE-REFUSED at…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Quantum",
-      "kind": "generation",
-      "title": "Quantum R4-G441 (loop, 2026-11-19) — NO NEW KING",
-      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V7 HOMEXDEVIG8590 REFUTED at +62.39%…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
