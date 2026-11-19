@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T18:45:38.449600-06:00",
+  "generated_at": "2026-11-18T18:50:40.735667-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,29 +154,29 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T18:29:44.942589-06:00",
-      "headline": "Latest search cycle: 169"
+      "last_activity": "2026-11-18T18:45:42.225044-06:00",
+      "headline": "Latest search cycle: 170"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-18T18:17:46.341597-06:00",
-      "headline": "Latest filing: P132"
+      "last_activity": "2026-11-18T18:50:13.821041-06:00",
+      "headline": "Latest filing: P133"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T18:14:21.851599-06:00",
+      "last_activity": "2026-11-18T18:48:06.116042-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T18:15:53.117598-06:00",
-      "headline": "Cycle 14: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T18:46:44.741043-06:00",
+      "headline": "Cycle 15: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 14,
+    "latest_cycle": 15,
     "findings": [
       {
         "id": "Z1",
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 170 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T18:45:42.225044-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 169 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T18:29:44.942589-06:00"
+      "at": "2026-11-18T18:45:42.225044-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 168 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T18:29:44.942589-06:00"
+      "at": "2026-11-18T18:45:42.225044-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 167 OUTCOME",
-      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T18:29:44.942589-06:00"
+      "title": "CYCLE 170 — 2026-11-18 18:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T18:41:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -718,11 +725,11 @@
       "at": "2026-11-18T18:11:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 167 — 2026-11-18 17:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T17:56:00-06:00"
+      "title": "CYCLE 15 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle15.py (new file only; reuses Cycle 14's stream builder read-only — the court has not changed since…",
+      "at": "2026-11-18T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -760,10 +767,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 9 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle9.py (new file only; reuses the Cycle 8 stream builder read-only, so the sitting kings are the Cycle…",
+      "title": "CYCLE 17 — 2026-11-18 — Slice 1 RE-AUTOPSY under the FAVP150160 kings (UNANIMOUS losses)",
+      "summary": "The FAVP150160 crown — a favourite-price band tightened by five points — barely touches the unanimous-loss slice at all: its three fires…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -802,10 +809,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 11 — 2026-11-18 — Slice 4 RE-AUTOPSY under the current kings (FAVOURITE-side losses)",
-      "summary": "Slice 4 under the new kings is Cycle 4's disease in the same body, plus the one break the TRIPS1VETO crown bought with its two fixes.…",
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P133: MARKET-CALENDAR / LISTING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G171; classes f + i)",
+      "summary": "Filed Arena P133: MARKET-CALENDAR / LISTING FREEZE (serves ARENA F1, house-view; filed 2026-11-18, Arena G171; classes f + i)",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -841,13 +848,6 @@
       "kind": "filing",
       "title": "CYCLE 2026-11-18 (17:42 CST) — audit + hunt (classes d + e + f + a: sport-specific soccer / public match data / the house's chair /…",
       "summary": "P130 EFFECTIVE PLAYING-TIME FREEZE (soccer — the live minutes inside the nominal 90, crossed between the sides) — FILED as collector…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-18 (17:12 CST) — audit + hunt (classes d + a + e + f: sport-specific soccer / quant research / public match-record data /…",
-      "summary": "P129 OFFSIDE-PROFILE FREEZE (soccer — attacks caught at the line × offsides provoked, crossed between the sides) — FILED as collector…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
