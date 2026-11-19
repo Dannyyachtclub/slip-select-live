@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T00:25:37.441960-06:00",
+  "generated_at": "2026-11-19T00:30:41.248209-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-18T23:54:48.569576-06:00",
+      "last_activity": "2026-11-19T00:30:25.356651-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T00:13:29.655616-06:00",
-      "headline": "Latest search cycle: 189"
+      "last_activity": "2026-11-19T00:27:57.899646-06:00",
+      "headline": "Latest search cycle: 190"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T00:17:25.283624-06:00",
-      "headline": "Latest filing: P151"
+      "last_activity": "2026-11-19T00:30:02.855650-06:00",
+      "headline": "Latest filing: P152"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 190 — 2026-11-19 00:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; two PASS audit runs, byte-identical,…",
+      "at": "2026-11-19T00:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 189 — 2026-11-19 00:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — court_state.json already fresh from a parallel refresh, kings unchanged; two PASS…",
       "at": "2026-11-19T00:11:00-06:00"
@@ -694,6 +701,13 @@
       "kind": "generation",
       "title": "CYCLE 26 — 2026-11-19",
       "summary": "Script: data_core/stakehunter_cycle26.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P152: DRAW-NO-BET CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G194; classes f…",
+      "summary": "Filed Arena P152: DRAW-NO-BET CROSS-REFERENCE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G194; classes f + i)",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -715,6 +729,13 @@
       "kind": "generation",
       "title": "Arena G193 — F3 THROW-INCENTIVE ASYMMETRY (fortieth visit) — 2026-11-19",
       "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P151 (playoff-series…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Quantum",
+      "kind": "generation",
+      "title": "Quantum R4-G441 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V7 HOMEXDEVIG8590 REFUTED at +62.39%…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -758,13 +779,6 @@
       "title": "CYCLE 185 — 2026-11-18 23:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (two PASS runs, registry signature sets exactly equal on both — 19,244 then 19,264 rows after a parallel Legacy append, 0…",
       "at": "2026-11-18T23:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 184 — 2026-11-18 22:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (two consecutive identical PASS runs, registry signature sets exactly equal, 19,183 rows, 0 missing, 0 mirror-only; vault…",
-      "at": "2026-11-18T22:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -865,13 +879,6 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-18 (23:12 CST) — audit + hunt (classes a + b + d + f: quant research / open-source analytics tooling / sport-specific…",
-      "summary": "P141 PRICE-ROLE CONVERSION FREEZE (individual sports — favourite-role conversion gap ≤ −8pp fade, crossed dog-role ≥ +5pp form,…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
       "agent": "Arena",
       "kind": "generation",
       "title": "Arena G192 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (fortieth visit) — 2026-11-18",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G191 — F1 HOUSE-VIEW (fortieth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — MILESTONE on the NEEDS-FREEZE arm: spec Arena P149 (derivative-menu…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G190 — F5 SOFT-ANGLE EXTREMES (fortieth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
