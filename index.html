@@ -984,8 +984,8 @@ function renderHero(d){
  $("hero-record").textContent=b.record||"—";
  $("hero-winrate").textContent=b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—";
  $("hero-bank-mini").textContent=(b.start_m!=null)
-   ?"reset "+fmtTime((b.reset_date||b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" at "+fmtInt(b.start_m)+"m · the live ledger of the called bets"+(b.pending_m?" · "+fmtInt(b.pending_m)+"m out on unsettled slips":"")
-   :"BANKROLL RESET PENDING — the counter starts the moment the reset lands";
+   ?"tracking since "+fmtTime((b.tracking_since||b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" · started at "+fmtInt(b.start_m)+"m · ROI "+(b.roi_pct!=null?b.roi_pct.toFixed(2)+"%":"—")+" on settled bets · the live ledger of the called bets"+(b.pending_m?" · "+fmtInt(b.pending_m)+"m out on unsettled slips":"")
+   :"BANKROLL TRACKING PENDING — the counter starts the moment tracking begins";
  const miniEl=$("hero-bank-mini");
  if(miniEl&&b.pending_m){const pill=document.createElement("span");pill.className="pend-pill";
    pill.innerHTML="<i></i>"+fmtInt(b.pending_m)+"m out · "+(b.pending||[]).length+" bets live";miniEl.appendChild(pill)}
@@ -1422,12 +1422,13 @@ function renderBank(d){
  const b=d.bankroll||{};
  $("bank-num").textContent=(b.balance_m!=null)?fmtInt(b.balance_m)+"m":"—";
  $("bank-since").textContent=(b.start_m!=null)
-   ?"Live since the reset on "+(b.reset_date||b.since||"")+" at "+fmtInt(b.start_m)+"m — the tracked ledger of the called bets (the grand pick and every confidence fire, at their called stakes) from Slip #"+(b.first_tracked_slip||36)+" onward."
-   :"BANKROLL RESET PENDING — the counter starts the moment the reset lands";
+   ?"Tracking since "+(b.tracking_since||b.since||"")+" · started at "+fmtInt(b.start_m)+"m and never reset — the tracked ledger of the called bets (the grand pick and every confidence fire, at their called stakes) from Slip #"+(b.first_tracked_slip||36)+" onward."
+   :"BANKROLL TRACKING PENDING — the counter starts the moment tracking begins";
  $("bank-grid").innerHTML=
    '<div class="stat"><div class="lab">Settled P&L</div><div class="v num '+(b.settled_pnl_m>0?"pos":b.settled_pnl_m<0?"neg":"")+'">'+fmtM(b.settled_pnl_m)+'</div></div>'
   +'<div class="stat"><div class="lab">Settled record</div><div class="v num">'+esc(b.record||"—")+'</div></div>'
   +'<div class="stat"><div class="lab">Win rate</div><div class="v num">'+(b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—")+'</div></div>'
+  +'<div class="stat"><div class="lab">ROI · settled bets</div><div class="v num '+(b.roi_pct>0?"pos":b.roi_pct<0?"neg":"")+'">'+(b.roi_pct!=null?b.roi_pct.toFixed(2)+"%":"—")+'</div></div>'
   +'<div class="stat"><div class="lab">Out now (pending)</div><div class="v num">'+(b.pending_m!=null?fmtInt(b.pending_m)+"m":"—")+'</div></div>';
  const led=b.ledger||[], pen=b.pending||[], excl=b.paper_excluded||[];
  let h='<div class="bank-sec">The ledger — settled called bets</div>';
