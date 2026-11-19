@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T07:40:44.663888-06:00",
+  "generated_at": "2026-11-19T07:45:47.606194-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,21 +66,21 @@
     },
     {
       "court": "Selector",
-      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE87-AWAYDVLT70",
+      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP",
       "grand_king": false,
-      "wins": 210,
-      "losses": 29,
+      "wins": 213,
+      "losses": 26,
       "priced": 226,
-      "pnl_m": 3762.3,
-      "roi_pct": 66.59,
+      "pnl_m": 3897.5,
+      "roi_pct": 68.98,
       "set_size": 239,
       "dog_line": {
-        "picks": 62,
-        "wins": 49,
-        "losses": 13,
-        "priced": 57,
-        "pnl_m": 1807.77,
-        "roi_pct": 126.86
+        "picks": 61,
+        "wins": 50,
+        "losses": 11,
+        "priced": 56,
+        "pnl_m": 1892.15,
+        "roi_pct": 135.15
       },
       "stamp": null,
       "crowned_on": "2026-11-19"
@@ -133,8 +133,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-19T06:59:20.471221-06:00",
-      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE87-AWAYDVLT70 — 210-29, +66.59% fitted ROI"
+      "last_activity": "2026-11-19T07:44:41.747306-06:00",
+      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP — 213-26, +68.98% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T07:28:27.691276-06:00",
-      "headline": "Latest search cycle: 218"
+      "last_activity": "2026-11-19T07:42:50.230303-06:00",
+      "headline": "Latest search cycle: 219"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T07:14:34.156250-06:00",
+      "last_activity": "2026-11-19T07:43:27.003304-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T07:16:27.259253-06:00",
+      "last_activity": "2026-11-19T07:45:23.064307-06:00",
       "headline": "Cycle 38: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 219 — 2026-11-19 07:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
+      "at": "2026-11-19T07:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 218 — 2026-11-19 07:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T07:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 214 — 2026-11-19 06:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — the three discovery kings unchanged; closing record…",
       "at": "2026-11-19T06:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 213 — 2026-11-19 06:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged, no regeneration needed; two PASS audit…",
-      "at": "2026-11-19T06:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -880,16 +880,16 @@
     },
     {
       "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G277 (loop) — 2026-11-19, 239-game set",
-      "summary": "NO NEW KING. AWAYDVLT70 stands (210-29, +3762.30m, +66.59%, §16 PROVISIONAL). Best headline V18 draw-bonus weighted vote at +67.90% was…",
+      "kind": "crown",
+      "title": "SELECTOR R4-G278 (loop) — 2026-11-19, 239-game set — NEW SELECTOR KING CROWNED",
+      "summary": "NEW SELECTOR KING CROWNED — UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP (selector_g278.py r26 — the…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
       "agent": "Selector",
       "kind": "generation",
-      "title": "SELECTOR R4-G276 (loop) — 2026-11-19, 239-game set",
-      "summary": "NO NEW KING. AWAYDVLT70 stands, re-gated on the new base (210-29, +3762.30m, +66.59%, §16 PROVISIONAL — trials over cap, CI clear of…",
+      "title": "SELECTOR R4-G277 (loop) — 2026-11-19, 239-game set",
+      "summary": "NO NEW KING. AWAYDVLT70 stands (210-29, +3762.30m, +66.59%, §16 PROVISIONAL). Best headline V18 draw-bonus weighted vote at +67.90% was…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
@@ -5340,7 +5340,7 @@
           "stake_m": 25,
           "price": 3.0,
           "paper": false,
-          "status": "UPCOMING",
+          "status": "IN PLAY",
           "result": null,
           "pnl_m": null,
           "final_score": null,
@@ -5362,7 +5362,7 @@
           "stake_m": 25,
           "price": 3.0,
           "paper": true,
-          "status": "UPCOMING",
+          "status": "IN PLAY",
           "result": null,
           "pnl_m": null,
           "final_score": null,
@@ -5387,7 +5387,7 @@
           "stake_m": 25,
           "price": 3.0,
           "paper": false,
-          "status": "UPCOMING",
+          "status": "IN PLAY",
           "result": null,
           "pnl_m": null,
           "final_score": null,
@@ -5410,7 +5410,7 @@
           "stake_m": 25,
           "price": 3.0,
           "paper": true,
-          "status": "UPCOMING",
+          "status": "IN PLAY",
           "result": null,
           "pnl_m": null,
           "final_score": null,
@@ -5816,7 +5816,7 @@
       "price": 3.0,
       "kind": "GRAND PICK",
       "paper": false,
-      "status": "UPCOMING",
+      "status": "IN PLAY",
       "result": null,
       "pnl_m": null,
       "fire": null,
@@ -5835,7 +5835,7 @@
       "price": 3.0,
       "kind": "UNDERDOG DESK",
       "paper": true,
-      "status": "UPCOMING",
+      "status": "IN PLAY",
       "result": null,
       "pnl_m": null,
       "fire": null,
