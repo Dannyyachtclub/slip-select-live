@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T22:10:44.085714-06:00",
+  "generated_at": "2026-11-18T22:15:43.776871-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-18T21:27:15.775645-06:00",
+      "last_activity": "2026-11-18T22:11:39.225644-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -168,15 +168,15 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T21:46:02.850644-06:00",
+      "last_activity": "2026-11-18T22:14:29.081644-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T21:45:29.565645-06:00",
-      "headline": "Cycle 21: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-18T22:15:32.432644-06:00",
+      "headline": "Cycle 22: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 21,
+    "latest_cycle": 22,
     "findings": [
       {
         "id": "Z1",
@@ -727,6 +727,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 22 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle22.py (new file only; reuses Cycle 21's stream builder read-only — the court has not changed since…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 21 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle21.py (new file only; reuses Cycle 20's stream builder read-only — the court has not changed since…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -760,10 +767,10 @@
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 16 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle16.py (new file only; reuses Cycle 15's stream builder read-only — the court has not changed since…",
+      "title": "CYCLE 24 — 2026-11-18 — IDLE CHECK (no slice; re-autopsy already complete)",
+      "summary": "Cycles 17–22 completed the re-autopsy of all six slices under the FAVP150160 + VG20 kings, and Cycle 23 was an idle check. Under the…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -799,13 +806,6 @@
       "kind": "generation",
       "title": "CYCLE 19 — 2026-11-18 — Slice 3 RE-AUTOPSY under the FAVP150160 kings (DOG-side losses)",
       "summary": "Slice 3 under the FAVP150160 kings is Cycle 10's slice in every particular: same 16 games, same gradient (12 of 16 losses with ≤2 peers…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Loss Autopsy",
-      "kind": "generation",
-      "title": "CYCLE 18 — 2026-11-18 — Slice 2 RE-AUTOPSY under the FAVP150160 kings (SELECTION failures)",
-      "summary": "Rotation continues from Cycle 17 (Slice 1 done under the FAVP150160 kings). No further trigger was needed: the FAVP150160 re-autopsy…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -2564,7 +2564,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -2641,7 +2641,7 @@
             "clock": "0:00",
             "period": 2,
             "detail": "0:00 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -2714,11 +2714,11 @@
           "live": {
             "state": "in",
             "home_score": 72,
-            "away_score": 59,
-            "clock": "5:35",
+            "away_score": 61,
+            "clock": "4:30",
             "period": 2,
-            "detail": "5:35 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "4:30 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -2795,7 +2795,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -2872,7 +2872,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -2949,7 +2949,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3023,13 +3023,13 @@
           },
           "outcome": null,
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 102,
             "away_score": 41,
-            "clock": "0:00",
+            "clock": null,
             "period": 2,
-            "detail": "0:00 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3133,7 +3133,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3204,13 +3204,13 @@
           "price": 1.0154,
           "outcome": null,
           "live": {
-            "state": "in",
-            "home_score": 66,
+            "state": "final",
+            "home_score": 68,
             "away_score": 65,
-            "clock": "0:21",
+            "clock": null,
             "period": 2,
-            "detail": "0:21 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3282,12 +3282,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 52,
-            "away_score": 63,
-            "clock": "10:54",
+            "home_score": 57,
+            "away_score": 65,
+            "clock": "8:31",
             "period": 3,
-            "detail": "10:54 - 3rd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "8:31 - 3rd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3359,12 +3359,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 52,
-            "away_score": 46,
-            "clock": "7:10",
+            "home_score": 54,
+            "away_score": 51,
+            "clock": "5:02",
             "period": 2,
-            "detail": "7:10 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "5:02 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3436,12 +3436,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 52,
-            "away_score": 54,
-            "clock": "35.4",
+            "home_score": 54,
+            "away_score": 56,
+            "clock": "0.0",
             "period": 2,
-            "detail": "35.4 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "Halftime",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3515,10 +3515,10 @@
             "state": "in",
             "home_score": 60,
             "away_score": 65,
-            "clock": "0.0",
-            "period": 2,
-            "detail": "Halftime",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "clock": "11:36",
+            "period": 3,
+            "detail": "11:36 - 3rd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3590,12 +3590,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 35,
+            "home_score": 43,
             "away_score": 35,
-            "clock": "0:00",
-            "period": 1,
-            "detail": "Halftime",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "clock": "17:42",
+            "period": 2,
+            "detail": "17:42 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3667,12 +3667,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 45,
-            "away_score": 20,
-            "clock": "19:09",
+            "home_score": 49,
+            "away_score": 22,
+            "clock": "16:58",
             "period": 2,
-            "detail": "19:09 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "16:58 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3744,12 +3744,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 26,
-            "away_score": 39,
-            "clock": "17:33",
+            "home_score": 29,
+            "away_score": 41,
+            "clock": "16:22",
             "period": 2,
-            "detail": "17:33 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "16:22 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3821,12 +3821,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 57,
-            "away_score": 23,
-            "clock": "0:00",
-            "period": 1,
-            "detail": "Halftime",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "home_score": 63,
+            "away_score": 26,
+            "clock": "17:15",
+            "period": 2,
+            "detail": "17:15 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3901,11 +3901,11 @@
           "live": {
             "state": "in",
             "home_score": 72,
-            "away_score": 59,
-            "clock": "5:35",
+            "away_score": 61,
+            "clock": "4:30",
             "period": 2,
-            "detail": "5:35 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "4:30 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3935,7 +3935,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3960,12 +3960,12 @@
           "tip_at": "2026-11-18T20:30:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 52,
-            "away_score": 46,
-            "clock": "7:10",
+            "home_score": 54,
+            "away_score": 51,
+            "clock": "5:02",
             "period": 2,
-            "detail": "7:10 - 2nd",
-            "fetched_at": "2026-11-18T22:10:40.800613-06:00",
+            "detail": "5:02 - 2nd",
+            "fetched_at": "2026-11-18T22:15:40.949722-06:00",
             "source": "ESPN",
             "official": false
           },
