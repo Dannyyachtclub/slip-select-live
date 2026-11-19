@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T20:40:43.004524-06:00",
+  "generated_at": "2026-11-18T20:45:59.851080-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T20:29:29.223119-06:00",
-      "headline": "Latest search cycle: 177"
+      "last_activity": "2026-11-18T20:45:22.454646-06:00",
+      "headline": "Latest search cycle: 178"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T20:17:24.429125-06:00",
+      "last_activity": "2026-11-18T20:45:59.863646-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T20:16:18.608125-06:00",
+      "last_activity": "2026-11-18T20:45:13.369646-06:00",
       "headline": "Cycle 18: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,23 +685,30 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 178 OUTCOME",
+      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
+      "at": "2026-11-18T20:45:22.454646-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 177 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T20:29:29.223119-06:00"
+      "at": "2026-11-18T20:45:22.454646-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 176 OUTCOME",
       "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T20:29:29.223119-06:00"
+      "at": "2026-11-18T20:45:22.454646-06:00"
     },
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 175 OUTCOME",
-      "summary": "NO CROWN. Vault sealed at 184 by count. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime…",
-      "at": "2026-11-18T20:29:29.223119-06:00"
+      "title": "CYCLE 178 — 2026-11-18 20:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
+      "at": "2026-11-18T20:41:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -718,11 +725,11 @@
       "at": "2026-11-18T20:11:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 175 — 2026-11-18 19:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. No candidate satisfied the gate as consistently applied: Quantum set A fails the real-profit test (PnL below the king; ROI…",
-      "at": "2026-11-18T19:56:00-06:00"
+      "title": "CYCLE 19 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle19.py (new file only; reuses Cycle 18's stream builder read-only — the court has not changed since…",
+      "at": "2026-11-18T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -757,13 +764,6 @@
       "kind": "generation",
       "title": "CYCLE 14 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle14.py (new file only; reuses Cycle 13's stream builder read-only — the court has not changed since…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 13 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle13.py (new file only; reuses Cycle 12's stream builder read-only — the court has not changed since…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
@@ -2027,7 +2027,7 @@
     },
     {
       "number": 35,
-      "status": "LOCKED",
+      "status": "GRADED",
       "games": 22,
       "grand_pick": {
         "selection": "KK Split",
@@ -2067,7 +2067,7 @@
       "date": "2026-11-18",
       "games_status": {
         "games_total": 22,
-        "games_ended": 19
+        "games_ended": 22
       },
       "games_list": [
         {
@@ -2085,57 +2085,7 @@
           "price": 1.32,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Cedevita Olimpija",
-            "away": "San Pablo Burgos",
-            "prices": {
-              "home": 1.32,
-              "away": 3.09,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 70.07,
-              "away": 29.93
-            },
-            "overround_pct": 8.12,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Cedevita Olimpija",
-                "price": 1.32,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Cedevita Olimpija",
-                "price": 1.32,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Cedevita Olimpija",
-                "price": 1.32,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Cedevita Olimpija",
-                "price": 1.32,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Cedevita Olimpija",
-                "price": 1.32,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 158.5,
-              "projection": 158.35
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-02",
@@ -2152,60 +2102,7 @@
           "price": 1.65,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "KB Trepca",
-            "away": "KK Split",
-            "prices": {
-              "home": 1.65,
-              "away": 2.18,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 56.92,
-              "away": 43.08
-            },
-            "overround_pct": 6.48,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "KB Trepca",
-                "price": 1.65,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "KB Trepca",
-                "price": 1.65,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "KB Trepca",
-                "price": 1.65,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "KB Trepca",
-                "price": 1.65,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "KB Trepca",
-                "price": 1.65,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. VG19-DOGGE600VETO forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 160.25
-            },
-            "bet_call": "BET — GRAND PICK: KK Split, small 25m @ 2.18. Named gap: the favourite KB Trepca trips the fragility screen twice (differential -3.7/game; differential gap to the dog -4.9, the wrong way entirely), while Split holds the better differential (+1.2/game), the better defensive rate (80.3 allowed/game v 81.2) and the better record (4-2 v 3-3) in the full Group A table. The bet opposes the card pick — all five kings hold Trepca — allowed and recorded per profile section 2.2."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-03",
@@ -2222,60 +2119,7 @@
           "price": 1.38,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Bakken Bears",
-            "away": "Lions de Geneve",
-            "prices": {
-              "home": 1.38,
-              "away": 3.1,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 69.2,
-              "away": 30.8
-            },
-            "overround_pct": 4.72,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Bakken Bears",
-                "price": 1.38,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Bakken Bears",
-                "price": 1.38,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Lions de Geneve",
-                "price": 3.1,
-                "reason": "Dog-price rule — the dog's price hits a named point, so the pick takes that side. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Lions de Geneve",
-                "price": 3.1,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP follows the lone dissenter — the split is one the OVRMISS leg covers (an uncovered 2-1 split with no…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Bakken Bears",
-                "price": 1.38,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 168.75
-            },
-            "bet_call": "UNDERDOG DESK (paper) — Lions de Geneve @ 3.10, flat 25m paper, Underdog Desk pick #13. Named gap: the favourite Bakken Bears trips the fragility screen twice (differential -1.3/game; gap -5.5 the wrong way), while Geneve owns the group's best attack (88.2 scored/game) and the better differential (+4.2/game) at the same 4-2 record. Quantum and the Selector also take Geneve; the card pick holds Bakken. No real bet called on this game."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-04",
@@ -2292,57 +2136,7 @@
           "price": 3.25,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Hradec Kralove",
-            "away": "Srsni Pisek",
-            "prices": {
-              "home": 3.25,
-              "away": 1.32,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 28.88,
-              "away": 71.12
-            },
-            "overround_pct": 6.53,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Srsni Pisek",
-                "price": 1.32,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Hradec Kralove",
-                "price": 3.25,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Srsni Pisek",
-                "price": 1.32,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Hradec Kralove",
-                "price": 3.25,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP follows the lone dissenter — the split is one the OVRMISS leg covers (an uncovered 2-1 split with no…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Srsni Pisek",
-                "price": 1.32,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 177.5,
-              "projection": 176.75
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-05",
@@ -2359,57 +2153,7 @@
           "price": 8.05,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Buducnost VOLI",
-            "away": "Slask Wroclaw",
-            "prices": {
-              "home": 1.1,
-              "away": 8.05,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 87.98,
-              "away": 12.02
-            },
-            "overround_pct": 3.33,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Slask Wroclaw",
-                "price": 8.05,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "Slask Wroclaw",
-                "price": 8.05,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Buducnost VOLI",
-                "price": 1.1,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Slask Wroclaw",
-                "price": 8.05,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP stays with the two-court majority — neither the OVRMISS leg nor the NODP chain's remaining legs fire on…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Buducnost VOLI",
-                "price": 1.1,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 173.0,
-              "projection": 171.2
-            },
-            "bet_call": "NO BET — Buducnost's 1.10 is under the 1.15 floor and its de-vig (87.98%) is under the 90% confidence bar, so no bet of either kind."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-06",
@@ -2426,57 +2170,7 @@
           "price": 1.75,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Chemnitz 99",
-            "away": "Tofas Bursa",
-            "prices": {
-              "home": 2.4,
-              "away": 1.75,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 42.17,
-              "away": 57.83
-            },
-            "overround_pct": -1.19,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Tofas Bursa",
-                "price": 1.75,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Tofas Bursa",
-                "price": 1.75,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Tofas Bursa",
-                "price": 1.75,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Tofas Bursa",
-                "price": 1.75,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Tofas Bursa",
-                "price": 1.75,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 175.5,
-              "projection": 172.5
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-07",
@@ -2493,57 +2187,7 @@
           "price": 4.5,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Aris BSA",
-            "away": "Le Mans Sarthe",
-            "prices": {
-              "home": 1.23,
-              "away": 4.5,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 78.53,
-              "away": 21.47
-            },
-            "overround_pct": 3.52,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Aris BSA",
-                "price": 1.23,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Le Mans Sarthe",
-                "price": 4.5,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Aris BSA",
-                "price": 1.23,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Le Mans Sarthe",
-                "price": 4.5,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP follows the lone dissenter — the split is one the OVRMISS leg covers (an uncovered 2-1 split with no…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Aris BSA",
-                "price": 1.23,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 172.5,
-              "projection": 163.2
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-08",
@@ -2560,60 +2204,7 @@
           "price": 1.29,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "King Wilki Morskie Szczecin",
-            "away": "BC Vienna",
-            "prices": {
-              "home": 1.29,
-              "away": 3.6,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 73.62,
-              "away": 26.38
-            },
-            "overround_pct": 5.3,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "King Wilki Morskie Szczecin",
-                "price": 1.29,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "King Wilki Morskie Szczecin",
-                "price": 1.29,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "King Wilki Morskie Szczecin",
-                "price": 1.29,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "King Wilki Morskie Szczecin",
-                "price": 1.29,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "King Wilki Morskie Szczecin",
-                "price": 1.29,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 167.1
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-09",
@@ -2630,57 +2221,7 @@
           "price": 1.55,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "KB Bashkimi",
-            "away": "Manchester Basketball",
-            "prices": {
-              "home": 1.55,
-              "away": 2.64,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 63.01,
-              "away": 36.99
-            },
-            "overround_pct": 2.39,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "KB Bashkimi",
-                "price": 1.55,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "KB Bashkimi",
-                "price": 1.55,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "KB Bashkimi",
-                "price": 1.55,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "KB Bashkimi",
-                "price": 1.55,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "KB Bashkimi",
-                "price": 1.55,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 163.5,
-              "projection": 161.3
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-10",
@@ -2697,57 +2238,7 @@
           "price": 2.15,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Bourg-en-Bresse",
-            "away": "Napoli Basketball",
-            "prices": {
-              "home": 2.15,
-              "away": 1.75,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 44.87,
-              "away": 55.13
-            },
-            "overround_pct": 3.65,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Bourg-en-Bresse",
-                "price": 2.15,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "Bourg-en-Bresse",
-                "price": 2.15,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Bourg-en-Bresse",
-                "price": 2.15,
-                "reason": "Clause sport_venue_dogprice_range_flip is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Bourg-en-Bresse",
-                "price": 2.15,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Napoli Basketball",
-                "price": 1.75,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 175.5,
-              "projection": 170.9
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-11",
@@ -2764,57 +2255,7 @@
           "price": 1.35,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Bosna Royal",
-            "away": "Lietkabelis",
-            "prices": {
-              "home": 1.35,
-              "away": 3.15,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 70.0,
-              "away": 30.0
-            },
-            "overround_pct": 5.82,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Bosna Royal",
-                "price": 1.35,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Bosna Royal",
-                "price": 1.35,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Bosna Royal",
-                "price": 1.35,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Bosna Royal",
-                "price": 1.35,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Bosna Royal",
-                "price": 1.35,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 159.5,
-              "projection": 158.6
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-12",
@@ -2831,57 +2272,7 @@
           "price": 3.13,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Fraport Skyliners",
-            "away": "Reyer Venezia",
-            "prices": {
-              "home": 3.13,
-              "away": 1.4,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 30.91,
-              "away": 69.09
-            },
-            "overround_pct": 3.38,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Fraport Skyliners",
-                "price": 3.13,
-                "reason": "Away-band flip — the favourite's price sits in the flip band and the favourite is away."
-              },
-              {
-                "court": "Regime",
-                "pick": "Fraport Skyliners",
-                "price": 3.13,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Reyer Venezia",
-                "price": 1.4,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Reyer Venezia",
-                "price": 1.4,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP follows the lone dissenter — the split is one the OVRMISS leg covers (an uncovered 2-1 split with no…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Reyer Venezia",
-                "price": 1.4,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 175.5,
-              "projection": 174.1
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-13",
@@ -2898,57 +2289,7 @@
           "price": 1.45,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Aquila Basket Trento",
-            "away": "BC Neptunas",
-            "prices": {
-              "home": 1.45,
-              "away": 2.99,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 67.34,
-              "away": 32.66
-            },
-            "overround_pct": 2.41,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Aquila Basket Trento",
-                "price": 1.45,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Aquila Basket Trento",
-                "price": 1.45,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Aquila Basket Trento",
-                "price": 1.45,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Aquila Basket Trento",
-                "price": 1.45,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "BC Neptunas",
-                "price": 2.99,
-                "reason": "Clause sport_diffgap_range_flip is the last to move the pick. VG19-DOGGE600VETO forward judgment — computed for grading; it does not…"
-              }
-            ],
-            "totals": {
-              "line": 174.0,
-              "projection": 173.05
-            },
-            "bet_call": "NO BET — the Trento favourite trips the screen twice, but the dog Neptunas is itself poor (differential -5.6/game, the group's worst defence at 90.3 allowed/game), so the gap does not name a bet. Vanguard alone takes Neptunas."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-14",
@@ -2965,57 +2306,7 @@
           "price": 1.57,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Cibona",
-            "away": "Strasbourg",
-            "prices": {
-              "home": 2.6,
-              "away": 1.57,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 37.65,
-              "away": 62.35
-            },
-            "overround_pct": 2.16,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Strasbourg",
-                "price": 1.57,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Strasbourg",
-                "price": 1.57,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Strasbourg",
-                "price": 1.57,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Strasbourg",
-                "price": 1.57,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Strasbourg",
-                "price": 1.57,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 165.5,
-              "projection": 166.05
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S35-15",
@@ -3032,57 +2323,7 @@
           "price": 1.13,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Gladiators Trier",
-            "away": "ASP Promitheas",
-            "prices": {
-              "home": 1.13,
-              "away": 6.83,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 85.8,
-              "away": 14.2
-            },
-            "overround_pct": 3.14,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Gladiators Trier",
-                "price": 1.13,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Gladiators Trier",
-                "price": 1.13,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Gladiators Trier",
-                "price": 1.13,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Gladiators Trier",
-                "price": 1.13,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Gladiators Trier",
-                "price": 1.13,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 176.0,
-              "projection": 170.75
-            },
-            "bet_call": "NO BET — Trier's 1.13 is under the 1.15 floor and its de-vig (85.80%) is under the 90% confidence bar, so no bet of either kind."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-16",
@@ -3098,68 +2339,8 @@
           "pick": "Notre Dame Fighting Irish",
           "price": 1.62,
           "outcome": "WON",
-          "live": {
-            "state": "final",
-            "home_score": 110,
-            "away_score": 100,
-            "clock": null,
-            "period": 3,
-            "detail": "Final/OT",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "detail": {
-            "home": "Notre Dame Fighting Irish",
-            "away": "Rutgers Scarlet Knights",
-            "prices": {
-              "home": 1.62,
-              "away": 2.36,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 59.3,
-              "away": 40.7
-            },
-            "overround_pct": 4.1,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Notre Dame Fighting Irish",
-                "price": 1.62,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Notre Dame Fighting Irish",
-                "price": 1.62,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Notre Dame Fighting Irish",
-                "price": 1.62,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Notre Dame Fighting Irish",
-                "price": 1.62,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Notre Dame Fighting Irish",
-                "price": 1.62,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              }
-            ],
-            "totals": {
-              "line": 150.5,
-              "projection": 149.75
-            },
-            "bet_call": null
-          }
+          "live": null,
+          "detail": null
         },
         {
           "game_id": "S35-17",
@@ -3176,57 +2357,7 @@
           "price": 2.22,
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Manresa",
-            "away": "PAOK",
-            "prices": {
-              "home": 2.22,
-              "away": 1.82,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 45.05,
-              "away": 54.95
-            },
-            "overround_pct": -0.01,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "PAOK",
-                "price": 1.82,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Manresa",
-                "price": 2.22,
-                "reason": "Away-band flip — the favourite's price sits in the flip band and the favourite is away."
-              },
-              {
-                "court": "Quantum",
-                "pick": "PAOK",
-                "price": 1.82,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Manresa",
-                "price": 2.22,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP follows the lone dissenter — the split is one the OVRMISS leg covers (an uncovered 2-1 split with no…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "PAOK",
-                "price": 1.82,
-                "reason": "Clause diffpos_veto is the last to move the pick. VG19-DOGGE600VETO forward judgment — computed for grading; it does not pick the cards."
-              }
-            ],
-            "totals": {
-              "line": 171.75,
-              "projection": 170.55
-            },
-            "bet_call": "NO BET — PAOK trips the screen once (differential edge only +0.9) and is missing its key scorer Cedi Osman (out long-term, meniscus surgery), a real gap for Manresa; but it is thinner than the grand pick's two-trip case and the exposure cap keeps one team bet per slip. Recorded as a near-miss, not a bet."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-18",
@@ -3243,57 +2374,7 @@
           "price": 1.03,
           "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Unicaja",
-            "away": "Pardubice",
-            "prices": {
-              "home": 1.03,
-              "away": 17.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 94.29,
-              "away": 5.71
-            },
-            "overround_pct": 2.97,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Unicaja",
-                "price": 1.03,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Unicaja",
-                "price": 1.03,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Unicaja",
-                "price": 1.03,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Unicaja",
-                "price": 1.03,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Unicaja",
-                "price": 1.03,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 168.0,
-              "projection": 164.6
-            },
-            "bet_call": "CONFIDENCE BET (v1.1, walled off) — Unicaja, 25m @ 1.03. De-vig 94.29% >= 90% bar and 0 fragility trips (differential +20.0/game; defensive rank 1st of 4 in Group E, 3rd in the BCL overall). The 1.03 price is under the 1.15 floor, which the confidence rule expressly overrides. Recorded on the record: Unicaja are without Diaz, Nzosa and Perez (Basketball Sphere, 18 Nov) — soft-angle data, not a screen test; the rule's own tests both pass."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-19",
@@ -3313,170 +2394,33 @@
           },
           "outcome": "LOST",
           "live": null,
-          "detail": {
-            "home": "Sporting CP",
-            "away": "SCM Craiova",
-            "prices": {
-              "home": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-              },
-              "away": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-              },
-              "draw": null
-            },
-            "devig_pct": {
-              "home": null,
-              "away": null
-            },
-            "overround_pct": {
-              "status": "NOT_AVAILABLE",
-              "reason": "No market exists to compute an overround."
-            },
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Sporting CP",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-                },
-                "reason": "Standings favourite — no market exists for any clause to price against; model-only pick, bet layer closed for this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Sporting CP",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-                },
-                "reason": "Standings favourite; model-only pick, bet layer closed for this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Sporting CP",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-                },
-                "reason": "Standings favourite; no priced favourite exists for any component to flip; model-only pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Sporting CP",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-                },
-                "reason": "Model-only game — no market prices exist for the courts to split on; the selector line follows the standings favourite for forward…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Sporting CP",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline for the 18 Nov fixture on any reachable source (Tips.GG lists the event with no odds, SportyTrader carries a Bet365 link with no price in text, and no Pythia page exists for the fixture). Smoance's 71% is a model probability, not a price. MODEL-ONLY game."
-                },
-                "reason": "Model-only game — no market price and no priced ball read; nominal standings-favourite line for forward judgment only. VG19-DOGGE600VETO…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 170.65
-            },
-            "bet_call": "NO BET — model-only game: no bookmaker moneyline pair was captured on any reachable source, so the bet layer is closed for this game."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-20",
           "game": "Florida Gators v Houston Cougars",
           "time": "15:30",
           "tip_at": "2026-11-18T15:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Houston Cougars)",
+          "final_score": "76-86",
           "bet_call": "NO BET (near-miss recorded)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Florida Gators",
           "price": 1.68,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 76,
-            "away_score": 86,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "detail": {
-            "home": "Florida Gators",
-            "away": "Houston Cougars",
-            "prices": {
-              "home": 1.68,
-              "away": 2.24,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 57.14,
-              "away": 42.86
-            },
-            "overround_pct": 4.17,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Florida Gators",
-                "price": 1.68,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Florida Gators",
-                "price": 1.68,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Florida Gators",
-                "price": 1.68,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Florida Gators",
-                "price": 1.68,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Florida Gators",
-                "price": 1.68,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 145.5,
-              "projection": 149.2
-            },
-            "bet_call": "NO BET — Florida trips the screen once (differential edge -11.4, the wrong way) and its guard Boogie Fland is questionable (shoulder, game-time decision), a live case for Houston; but it is a one-trip case and the slip's team exposure is already called. Recorded as a near-miss, not a bet."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "detail": null
         },
         {
           "game_id": "S35-21",
           "game": "Franca v Caxias do Sul",
           "time": "16:30",
           "tip_at": "2026-11-18T16:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Franca)",
+          "final_score": "89-62",
           "bet_call": "NO BET — model-only",
           "league": "Brazil NBB",
           "sport": "Basketball",
@@ -3485,163 +2429,26 @@
             "status": "NOT_AVAILABLE",
             "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
           },
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
-          "detail": {
-            "home": "Franca",
-            "away": "Caxias do Sul",
-            "prices": {
-              "home": {
-                "status": "NOT_AVAILABLE",
-                "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-              },
-              "away": {
-                "status": "NOT_AVAILABLE",
-                "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-              },
-              "draw": null
-            },
-            "devig_pct": {
-              "home": null,
-              "away": null
-            },
-            "overround_pct": {
-              "status": "NOT_AVAILABLE",
-              "reason": "No market exists to compute an overround."
-            },
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Franca",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-                },
-                "reason": "Standings favourite — no market exists for any clause to price against; model-only pick, bet layer closed for this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Franca",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-                },
-                "reason": "Standings favourite; model-only pick, bet layer closed for this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Franca",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-                },
-                "reason": "Standings favourite; no priced favourite exists for any component to flip; model-only pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Franca",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-                },
-                "reason": "Model-only game — no market prices exist for the courts to split on; the selector line follows the standings favourite for forward…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Franca",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "Only one side of the market is priced (Franca 1.10 on ForePitch); Caxias do Sul's moneyline is NOT_CAPTURED on every reachable source, so no pair can be frozen. MODEL-ONLY game (the single-side 1.10 is recorded in the notes, not frozen as a price)."
-                },
-                "reason": "Model-only game — no market price and no priced ball read; nominal standings-favourite line for forward judgment only. VG19-DOGGE600VETO…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 147.4
-            },
-            "bet_call": "NO BET — model-only game: no bookmaker moneyline pair was captured on any reachable source, so the bet layer is closed for this game."
-          }
+          "detail": null
         },
         {
           "game_id": "S35-22",
           "game": "Georgetown Hoyas v Navy Midshipmen",
           "time": "17:30",
           "tip_at": "2026-11-18T17:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Georgetown Hoyas)",
+          "final_score": "84-53",
           "bet_call": "NO BET (confidence blocked — screen not run in full)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Georgetown Hoyas",
           "price": 1.034,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 84,
-            "away_score": 53,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "detail": {
-            "home": "Georgetown Hoyas",
-            "away": "Navy Midshipmen",
-            "prices": {
-              "home": 1.034,
-              "away": 31.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 96.77,
-              "away": 3.23
-            },
-            "overround_pct": -0.06,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Georgetown Hoyas",
-                "price": 1.034,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Georgetown Hoyas",
-                "price": 1.034,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Georgetown Hoyas",
-                "price": 1.034,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Georgetown Hoyas",
-                "price": 1.034,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP line, computed for forward judgment — it…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Georgetown Hoyas",
-                "price": 1.034,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 140.5,
-              "projection": 145.25
-            },
-            "bet_call": "NO BET — confidence candidate BLOCKED by the screen rule: Georgetown's de-vig 96.77% is over the 90% bar, but the fragility screen could not be run in full (the defensive-rank test is unverifiable — no ranked PA/game source for Georgetown was retrieved at freeze), so it cannot fire on the Slip #33 Gonzaga precedent. Recorded as screen evidence only."
-          }
+          "outcome": "WON",
+          "live": null,
+          "detail": null
         }
       ],
       "top3": [
@@ -3660,7 +2467,7 @@
           "final_score": "94-88",
           "tip_at": "2026-11-18T11:30:00-06:00",
           "live": null,
-          "reason": "BET — GRAND PICK: KK Split, small 25m @ 2.18. Named gap: the favourite KB Trepca trips the fragility screen twice (differential -3.7/game; differential gap to the dog -4.9, the wrong way entirely), while Split holds the better differential (+1.2/game), the better defensive rate (80.3 allowed/game v 81.2) and the better record (4-2 v 3-3) in the full Group A table. The bet opposes the card pick — all five kings hold Trepca — allowed and recorded per profile section 2.2.",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -3680,7 +2487,7 @@
           "final_score": "94-66",
           "tip_at": "2026-11-18T13:30:00-06:00",
           "live": null,
-          "reason": "CONFIDENCE BET (v1.1, walled off) — Unicaja, 25m @ 1.03. De-vig 94.29% >= 90% bar and 0 fragility trips (differential +20.0/game; defensive rank 1st of 4 in Group E, 3rd in the BCL overall). The 1.03 price is under the 1.15 floor, which the confidence rule expressly overrides. Recorded on the record: Unicaja are without Diaz, Nzosa and Perez (Basketball Sphere, 18 Nov) — soft-angle data, not a screen test; the rule's own tests both pass.",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -3700,7 +2507,7 @@
           "final_score": "77-69",
           "tip_at": "2026-11-18T11:30:00-06:00",
           "live": null,
-          "reason": "UNDERDOG DESK (paper) — Lions de Geneve @ 3.10, flat 25m paper, Underdog Desk pick #13. Named gap: the favourite Bakken Bears trips the fragility screen twice (differential -1.3/game; gap -5.5 the wrong way), while Geneve owns the group's best attack (88.2 scored/game) and the better differential (+4.2/game) at the same 4-2 record. Quantum and the Selector also take Geneve; the card pick holds Bakken. No real bet called on this game.",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -3752,12 +2559,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 27,
-            "away_score": 18,
-            "clock": "6:46",
+            "home_score": 31,
+            "away_score": 25,
+            "clock": "4:30",
             "period": 1,
-            "detail": "6:46 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "4:30 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3829,12 +2636,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 23,
-            "away_score": 33,
-            "clock": "3:34",
+            "home_score": 27,
+            "away_score": 40,
+            "clock": "1:45",
             "period": 1,
-            "detail": "3:34 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "1:45 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3906,12 +2713,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 24,
-            "away_score": 9,
-            "clock": "10:55",
+            "home_score": 27,
+            "away_score": 11,
+            "clock": "8:36",
             "period": 1,
-            "detail": "10:55 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "8:36 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -3983,12 +2790,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 28,
-            "away_score": 31,
-            "clock": "4:38",
+            "home_score": 31,
+            "away_score": 33,
+            "clock": "3:23",
             "period": 1,
-            "detail": "4:38 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "3:23 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4060,12 +2867,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 17,
-            "away_score": 29,
-            "clock": "4:08",
+            "home_score": 20,
+            "away_score": 30,
+            "clock": "3:07",
             "period": 1,
-            "detail": "4:08 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "3:07 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4137,12 +2944,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 41,
-            "away_score": 14,
-            "clock": "6:57",
+            "home_score": 45,
+            "away_score": 24,
+            "clock": "3:42",
             "period": 1,
-            "detail": "6:57 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "3:42 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4217,12 +3024,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 38,
-            "away_score": 14,
-            "clock": "5:56",
+            "home_score": 43,
+            "away_score": 16,
+            "clock": "4:03",
             "period": 1,
-            "detail": "5:56 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "4:03 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4321,12 +3128,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 36,
-            "away_score": 20,
-            "clock": "3:38",
+            "home_score": 41,
+            "away_score": 24,
+            "clock": "1:25",
             "period": 1,
-            "detail": "3:38 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "1:25 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4398,12 +3205,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 22,
-            "away_score": 22,
-            "clock": "3:36",
+            "home_score": 26,
+            "away_score": 26,
+            "clock": "1:49",
             "period": 1,
-            "detail": "3:36 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "1:49 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4480,7 +3287,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 9:30 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4552,12 +3359,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 7,
-            "away_score": 5,
-            "clock": "15:34",
+            "home_score": 11,
+            "away_score": 7,
+            "clock": "13:47",
             "period": 1,
-            "detail": "15:34 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "13:47 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4634,7 +3441,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4711,7 +3518,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4788,7 +3595,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4865,7 +3672,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -4942,7 +3749,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5019,7 +3826,7 @@
             "clock": null,
             "period": null,
             "detail": "11/18 - 10:00 PM EST",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5093,12 +3900,12 @@
           "tip_at": "2026-11-18T20:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 24,
-            "away_score": 9,
-            "clock": "10:55",
+            "home_score": 27,
+            "away_score": 11,
+            "clock": "8:36",
             "period": 1,
-            "detail": "10:55 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "8:36 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5123,12 +3930,12 @@
           "tip_at": "2026-11-18T20:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 41,
-            "away_score": 14,
-            "clock": "6:57",
+            "home_score": 45,
+            "away_score": 24,
+            "clock": "3:42",
             "period": 1,
-            "detail": "6:57 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "3:42 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5153,12 +3960,12 @@
           "tip_at": "2026-11-18T20:30:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 7,
-            "away_score": 5,
-            "clock": "15:34",
+            "home_score": 11,
+            "away_score": 7,
+            "clock": "13:47",
             "period": 1,
-            "detail": "15:34 - 1st",
-            "fetched_at": "2026-11-18T20:40:39.692669-06:00",
+            "detail": "13:47 - 1st",
+            "fetched_at": "2026-11-18T20:45:57.678343-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -5435,8 +4242,8 @@
     },
     "underdog_desk": {
       "wins": 6,
-      "losses": 6,
-      "pnl_m": 155.0
+      "losses": 7,
+      "pnl_m": 130.0
     },
     "draw_desk": {
       "wins": 2,
@@ -5445,7 +4252,7 @@
     }
   },
   "vault": {
-    "count": 184,
+    "count": 206,
     "next_opening": "2026-12-01"
   },
   "autopsy_challengers": [
