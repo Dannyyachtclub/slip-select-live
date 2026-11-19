@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T05:40:45.304594-06:00",
+  "generated_at": "2026-11-19T05:45:47.787151-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T05:27:39.057619-06:00",
-      "headline": "Latest search cycle: 210"
+      "last_activity": "2026-11-19T05:43:12.998655-06:00",
+      "headline": "Latest search cycle: 211"
     },
     {
       "name": "Edge Finder",
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T05:15:21.644590-06:00",
-      "headline": "Cycle 36: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-19T05:45:24.586660-06:00",
+      "headline": "Cycle 37: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 36,
+    "latest_cycle": 37,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 211 — 2026-11-19 05:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged, no regeneration needed; two PASS audit…",
+      "at": "2026-11-19T05:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 210 — 2026-11-19 05:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T05:26:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-19T04:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 205 — 2026-11-19 04:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state STALE on first call, regenerated, then PASSED — kings unchanged; closing STALE regenerated and PASSED…",
-      "at": "2026-11-19T04:11:00-06:00"
+      "title": "CYCLE 37 — 2026-11-19",
+      "summary": "Script: data_core/stakehunter_cycle37.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
+      "at": "2026-11-19T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -883,13 +890,6 @@
       "kind": "crown",
       "title": "SELECTOR R4-G270 (loop) — 2026-11-19, 239-game set",
       "summary": "NEW SELECTOR KING CROWNED — UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160-OVRGE87 (213-26, +3891.80m, +68.88%, §16 CLEAR).…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Quantum",
-      "kind": "generation",
-      "title": "Quantum R4-G454 (loop, 2026-11-19) — NO NEW KING",
-      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4 stands (201-38, +3574.35m, +62.43%). Best gate-eligible variant V6 DIFFGAP1020FLIP REFUTED at +61.28%…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
