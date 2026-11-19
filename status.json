@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:40:46.695418-06:00",
+  "generated_at": "2026-11-18T23:45:38.552196-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-18T23:12:53.568488-06:00",
+      "last_activity": "2026-11-18T23:43:38.125553-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-18T23:28:11.388520-06:00",
-      "headline": "Latest search cycle: 186"
+      "last_activity": "2026-11-18T23:43:47.576553-06:00",
+      "headline": "Latest search cycle: 187"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-18T23:13:52.083490-06:00",
+      "last_activity": "2026-11-18T23:43:46.311553-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-18T23:15:30.152494-06:00",
+      "last_activity": "2026-11-18T23:45:14.390556-06:00",
       "headline": "Cycle 24: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,9 +685,9 @@
     {
       "agent": "Discovery",
       "kind": "generation",
-      "title": "CYCLE 181 OUTCOME",
-      "summary": "NO CROWN. No seed correction needed (all pointers already seed the sitting kings). Best per ball: Regime set 2ac6a2c8090f +63.17% vs…",
-      "at": "2026-11-18T23:28:11.388520-06:00"
+      "title": "CYCLE 187 — 2026-11-18 23:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (two PASS runs, byte-identical, registry signature sets exactly equal on both — 19,391 rows, 0 missing, 0 mirror-only; vault…",
+      "at": "2026-11-18T23:41:00-06:00"
     },
     {
       "agent": "Discovery",
@@ -727,6 +727,13 @@
     {
       "agent": "Stakehunter",
       "kind": "generation",
+      "title": "CYCLE 25 — 2026-11-18",
+      "summary": "Script: data_core/stakehunter_cycle25.py (new file only, written fresh this cycle against the kings named NOW). Firewall unchanged:…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
       "title": "CYCLE 24 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle24.py (new file only; written fresh this cycle).",
       "at": "2026-11-18T00:00:00-06:00"
@@ -757,13 +764,6 @@
       "kind": "generation",
       "title": "CYCLE 20 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle20.py (new file only; reuses Cycle 19's stream builder read-only — the court has not changed since…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 19 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle19.py (new file only; reuses Cycle 18's stream builder read-only — the court has not changed since…",
       "at": "2026-11-18T00:00:00-06:00"
     },
     {
