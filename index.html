@@ -262,46 +262,74 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .pit-caption b{color:#fff;font-variant-numeric:tabular-nums}
 .pit-caption .versus{color:var(--gold);font-size:.68rem;letter-spacing:.34em;font-weight:800}
 
-/* ================= BETS — betslip tickets (v5.3) =================
-   One bookmaker ticket per live slip: a compact header strip, then
-   exactly three rows split by hairlines. No nested cards, no callout
-   boxes, no empty zones — the pick is the hero of its row and every
-   other element in the row serves it. Tight enough that a whole
-   slip's Top 3 + header reads inside one phone viewport. */
-.ticket{background:linear-gradient(165deg,rgba(200,162,74,.05),transparent 42%),var(--surface);
-  border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,0,.34);
-  margin:0 0 26px;position:relative}
-.ticket::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,transparent,var(--gold),transparent);opacity:.72}
-.ticket-head{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;padding:11px 16px 10px 19px;
-  background:rgba(200,162,74,.05);border-bottom:1px solid var(--line-soft)}
-.ticket-title{font-family:var(--serif);font-weight:900;font-size:1.02rem;letter-spacing:.05em;color:#fff;white-space:nowrap}
-.ticket-title b{color:var(--gold-hi);font-weight:900}
-.ticket-meta{margin-left:auto;color:var(--mut);font-size:.76rem;text-align:right}
-.trow{display:flex;gap:12px;align-items:flex-start;padding:12px 16px 12px 19px}
-.trow + .trow{border-top:1px solid var(--line-faint)}
-.trow-medal{flex:none;width:46px;display:flex;flex-direction:column;align-items:center;gap:5px;padding-top:1px}
-.trow-medal .medal{width:33px;height:33px;border:1px solid rgba(200,162,74,.6);border-radius:50%;
-  display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:900;
-  font-size:.92rem;color:var(--gold-hi);font-variant-numeric:tabular-nums;background:rgba(200,162,74,.06)}
-.trow-kind{color:var(--gold);font-family:var(--serif);font-size:.53rem;font-weight:800;letter-spacing:.1em;
-  text-transform:uppercase;text-align:center;line-height:1.45;overflow-wrap:anywhere}
-.trow-main{flex:1 1 auto;min-width:0}
-.trow-pick{font-family:var(--serif);font-weight:900;font-size:1.35rem;line-height:1.12;color:#fff;overflow-wrap:anywhere}
-.trow-game{font-size:.92rem;color:#c3c9d8;line-height:1.3;margin-top:2px;overflow-wrap:anywhere}
-.trow-micro{margin-top:5px;font-size:.83rem;color:var(--mut);line-height:1.5;overflow-wrap:anywhere}
-.trow-micro b{color:var(--gold-hi);font-variant-numeric:tabular-nums}
-.trow-micro .lab{color:var(--gold-hi)}
-.trow-micro .sport-chip{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 7px;
-  font-size:.64rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);vertical-align:1px;white-space:nowrap}
-.trow-note{margin-top:4px;font-size:.78rem;color:var(--dim);line-height:1.45;overflow-wrap:anywhere}
-.trow-note .lab{color:var(--gold-hi)} .trow-note b{color:var(--ink);font-variant-numeric:tabular-nums}
-.trow-state{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-align:right;max-width:36%}
-.trow-live{display:inline-flex;align-items:center;gap:7px}
-.trow-when{color:var(--dim);font-size:.74rem;white-space:nowrap;font-variant-numeric:tabular-nums}
-.livepulse{width:10px;height:10px;border-radius:50%;background:var(--mag);box-shadow:0 0 12px rgba(220,124,186,.8);flex:none;animation:pulse 1.4s ease-in-out infinite}
-.livetxt{font-family:var(--serif);font-weight:900;letter-spacing:.14em;color:var(--mag);font-size:.82rem;white-space:nowrap}
-.trow-score{font-family:var(--serif);font-size:1.08rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums;line-height:1.15;white-space:nowrap}
-.trow-pnl{font-size:.95rem}
+/* ================= BETS — slim choice rows (v7) =================
+   One SLIM ROW per choice, grouped under a one-line slip header with
+   the progress summary built in. A slip's whole board — grand pick,
+   every confidence fire, the desk pick — reads at a glance, and
+   three live slips stack cleanly with no nested-card bulk. The pick
+   is still the row's most prominent text, just compact; everything
+   else (kings, frozen prices, the why) lives in the tap-to-open
+   detail panel, never on the surface. One rhythm throughout: 8px
+   spacing steps, hairline row splits, tabular numbers. */
+.choices{background:linear-gradient(165deg,rgba(200,162,74,.05),transparent 42%),var(--surface);
+  border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:0 10px 26px rgba(0,0,0,.30);margin:0 0 14px;position:relative}
+.choices-head{display:flex;align-items:baseline;gap:3px 10px;flex-wrap:wrap;
+  padding:8px 12px 7px;background:rgba(200,162,74,.05)}
+.choices-title{font-family:var(--serif);font-weight:900;font-size:.95rem;
+  letter-spacing:.04em;color:#fff;white-space:nowrap}
+.choices-title b{color:var(--gold-hi);font-weight:900}
+.choices-meta{color:var(--mut);font-size:.72rem;white-space:nowrap}
+.choices-prog{margin-left:auto;color:var(--mut);font-size:.7rem;letter-spacing:.03em;
+  font-variant-numeric:tabular-nums;white-space:nowrap}
+.choices-prog b{color:var(--ink);font-weight:700}
+.choices-bar{height:3px;background:rgba(255,255,255,.06);display:flex}
+.choices-bar .pf{background:var(--pos);height:100%}
+.choices-bar .pi{background:var(--mag);height:100%;animation:pulse 1.6s ease-in-out infinite}
+.crow{display:flex;gap:9px;align-items:center;padding:7px 12px;position:relative;
+  border-top:1px solid var(--line-faint)}
+.choices-head + .crow,.choices-bar + .crow{border-top:0}
+.crow::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--line)}
+.crow.k-grand::before{background:var(--gold)}
+.crow.k-conf::before{background:#6fc3d8}
+.crow.k-desk::before{background:#9a86d8}
+.crow-rank{flex:none;width:20px;text-align:center;font-family:var(--serif);font-weight:900;
+  font-size:.88rem;color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.crow-main{flex:1 1 auto;min-width:0}
+.crow-line1{display:flex;align-items:center;gap:7px;min-width:0}
+.crow-kind{flex:none;font-size:.54rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:999px;padding:1px 6px;color:var(--gold-hi);white-space:nowrap}
+.crow.k-conf .crow-kind{color:#6fc3d8}
+.crow.k-desk .crow-kind{color:#c9bcf0}
+.crow-pick{font-family:var(--serif);font-weight:800;font-size:1.03rem;line-height:1.15;
+  color:#fff;overflow-wrap:anywhere;min-width:0}
+.crow-line2{margin-top:1px;font-size:.76rem;color:var(--mut);line-height:1.35;overflow-wrap:anywhere}
+.crow-line2 b{color:var(--gold-hi);font-variant-numeric:tabular-nums;font-weight:700}
+.crow-line2 .sport-chip{display:inline-block;border:1px solid var(--line);border-radius:999px;
+  padding:0 6px;font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink);vertical-align:1px;white-space:nowrap}
+.crow-note{margin-top:2px;font-size:.7rem;color:var(--dim);line-height:1.4;overflow-wrap:anywhere}
+.crow-note .lab{color:var(--gold-hi)} .crow-note b{color:var(--ink);font-variant-numeric:tabular-nums}
+.crow-state{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:2px;
+  text-align:right;max-width:36%}
+.crow-live{display:inline-flex;align-items:center;gap:6px}
+.crow-score{font-family:var(--serif);font-size:1.02rem;font-weight:900;color:#fff;
+  font-variant-numeric:tabular-nums;line-height:1.1;white-space:nowrap}
+.crow-sub{color:var(--dim);font-size:.68rem;white-space:nowrap;font-variant-numeric:tabular-nums}
+.crow-sub .pnl{font-size:.82rem;font-weight:800}
+.crow-sub .ck{color:var(--mag);font-weight:700}
+.crow-exp{margin-top:3px;background:none;border:1px solid var(--line);border-radius:999px;
+  color:var(--gold-hi);font-size:.6rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
+  padding:2px 8px;cursor:pointer;font-family:inherit}
+.crow-exp:hover{border-color:var(--gold)} .crow-exp:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.livepulse{width:9px;height:9px;border-radius:50%;background:var(--mag);box-shadow:0 0 12px rgba(220,124,186,.8);flex:none;animation:pulse 1.4s ease-in-out infinite}
+.livetxt{font-family:var(--serif);font-weight:900;letter-spacing:.13em;color:var(--mag);font-size:.76rem;white-space:nowrap}
+@media (max-width:380px){
+  .crow{padding:7px 9px;gap:7px}
+  .crow-state{max-width:40%}
+  .crow-pick{font-size:.99rem}
+  .choices-prog{margin-left:0}
+}
 
 /* ---------- bankroll / record / archive ---------- */
 .bank-card{text-align:center}
@@ -309,6 +337,21 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .bank-since{color:var(--mut);margin:11px auto 0;font-size:.96rem;max-width:54ch}
 .bank-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(138px,1fr));gap:14px;margin-top:27px;text-align:center}
 .bank-note{color:var(--dim);font-size:.88rem;margin:22px 0 0}
+.bank-ledger{margin-top:26px;text-align:left}
+.bank-sec{font-family:var(--serif);font-size:.68rem;font-weight:800;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--gold-hi);margin:20px 0 2px}
+.bank-sec:first-child{margin-top:0}
+.led-row{display:flex;gap:6px 10px;align-items:center;flex-wrap:wrap;
+  padding:8px 2px;border-top:1px solid var(--line-faint);font-size:.87rem}
+.led-row .lp{font-weight:700;color:#fff}
+.led-row .lm{color:var(--mut);font-size:.8rem}
+.led-row .lpnl{font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+.led-row .lb{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--ink);
+  font-weight:700;white-space:nowrap}
+.led-empty{color:var(--mut);font-size:.9rem;line-height:1.55;padding:10px 2px 2px}
+.bank-excl{color:var(--dim);font-size:.82rem;line-height:1.55;margin-top:18px;
+  border-top:1px dashed var(--line-soft);padding-top:12px}
+.bank-excl b{color:var(--mut)}
 .stat{background:var(--inset);border:1px solid var(--line-soft);border-radius:16px;padding:19px 14px;text-align:center}
 .stat .v{font-family:var(--serif);font-size:1.42rem;margin-top:4px}
 .rec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(148px,1fr));gap:14px}
@@ -360,27 +403,25 @@ table.games .sc{font-weight:800;color:#fff;font-variant-numeric:tabular-nums;whi
 footer{color:var(--dim);font-size:.83rem;text-align:center;margin-top:68px;line-height:1.7}
 footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 
-/* ================= v5.2/v5.3 — TONIGHT'S CHOICES band + bets-first ======
-   The live choices are never a scroll away: a compact band sits at the top
-   of the Court tab (straight under the hero) and the Bets tab opens ON its
-   boards. v5.3: the band reuses the Bets-tab betslip ticket at a tighter
-   density — same markup, same source, so the two views can never disagree. */
+/* ================= TONIGHT'S CHOICES band + bets-first ==============
+   The live choices are never a scroll away: a compact band sits at the
+   top of the Court tab (straight under the hero) and the Bets tab
+   opens ON its boards. v7: the band reuses the Bets-tab slim choice
+   rows at a tighter density — same markup, same source, so the two
+   views can never disagree. */
 .choices-band{background:linear-gradient(160deg,rgba(200,162,74,.10),rgba(200,162,74,.02) 55%),var(--surface);
   border:1px solid rgba(200,162,74,.45);border-radius:24px;padding:20px 18px 12px;box-shadow:0 18px 44px rgba(0,0,0,.36)}
 .band-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;cursor:pointer}
 .band-title{font-family:var(--serif);font-size:1.02rem;font-weight:900;letter-spacing:.24em;color:var(--gold-hi);white-space:nowrap}
 .band-go{color:var(--mut);font-size:.8rem;font-weight:700;text-align:right}
 .band-empty{color:var(--mut);font-size:.95rem;padding:12px 0 6px}
-.band-ticket{margin:14px 0 8px;box-shadow:none;cursor:pointer}
-.band-ticket:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
-.band-ticket .ticket-head{padding:8px 13px 7px 16px}
-.band-ticket .ticket-title{font-size:.92rem}
-.band-ticket .trow{padding:9px 13px 9px 16px;gap:10px}
-.band-ticket .trow-pick{font-size:1.18rem}
-.band-ticket .trow-game{font-size:.86rem}
-.band-ticket .trow-micro{font-size:.79rem;margin-top:3px}
-.band-ticket .trow-medal{width:40px}
-.band-ticket .trow-medal .medal{width:29px;height:29px;font-size:.84rem}
+.band-choices{margin:12px 0 6px;box-shadow:none;cursor:pointer}
+.band-choices:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px}
+.band-choices .choices-head{padding:7px 10px 6px}
+.band-choices .choices-title{font-size:.9rem}
+.band-choices .crow{padding:6px 10px;gap:8px}
+.band-choices .crow-pick{font-size:.99rem}
+.band-choices .crow-line2{font-size:.74rem}
 /* Bets tab: boards first — the mini-bar and the choices boards are the
    first things rendered; bankroll and record sections follow below. */
 .bets-top{margin:30px 0 0}
@@ -484,28 +525,19 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
   .rec-side{min-width:64px}.rec-score{font-size:1.25rem}
   .flow-stage{min-width:96px}
 }
-/* ================= v6 — LIVE DETAIL + PROGRESS + REVAMP =================
-   The ticket keeps its v5.3 shape; every row gains a tap-to-open detail
-   panel (why / kings / frozen prices / live score + stepper), every live
-   ticket header gains a progress line, the Court tab gains an IN PLAY
-   NOW strip, and Records rows carry live states. Polish: deeper section
-   rhythm, calmer panels, stronger hairlines — no layout is moved. */
-.trow-score-live{font-family:var(--serif);font-size:1.22rem;font-weight:900;color:#fff;
-  font-variant-numeric:tabular-nums;line-height:1.1;white-space:nowrap}
-.trow-clock{color:var(--mag);font-size:.76rem;font-weight:700;letter-spacing:.05em;
-  font-variant-numeric:tabular-nums;white-space:nowrap}
+/* ================= v6/v7 — LIVE DETAIL + PROGRESS =================
+   Every choice row carries a tap-to-open detail panel (why / kings /
+   frozen prices / live score + stepper), every live slip header
+   carries its progress summary, the Court tab has an IN PLAY NOW
+   strip, and Records rows carry live states. v7: the rows went slim
+   (see the BETS block above) and the detail panel became .cdet. */
 .chip.unofficial{border-color:rgba(232,184,75,.65);color:var(--gold-hi);background:rgba(232,184,75,.08)}
-.trow-exp{margin-top:7px;background:none;border:1px solid var(--line);border-radius:999px;
-  color:var(--gold-hi);font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;
-  padding:4px 10px;cursor:pointer;font-family:inherit}
-.trow-exp:hover{border-color:var(--gold)} .trow-exp:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
-.tdet{display:none;border-top:1px dashed var(--line-soft);margin:2px 16px 0 19px;padding:12px 0 14px}
-.tdet.open{display:block}
-.tdet + .trow{border-top:1px solid var(--line-faint)}
-.tdet .why{font-size:.9rem;line-height:1.55;color:var(--ink);overflow-wrap:anywhere}
-.tdet .why .lab,.tdet .dsec{color:var(--gold-hi);font-size:.66rem;font-weight:800;
+.cdet{display:none;border-top:1px dashed var(--line-soft);padding:10px 12px 12px 41px}
+.cdet.open{display:block}
+.cdet .why{font-size:.9rem;line-height:1.55;color:var(--ink);overflow-wrap:anywhere}
+.cdet .why .lab,.cdet .dsec{color:var(--gold-hi);font-size:.66rem;font-weight:800;
   letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:4px}
-.tdet .dsec{margin-top:13px}
+.cdet .dsec{margin-top:13px}
 .krows{border:1px solid var(--line-soft);border-radius:10px;overflow:hidden}
 .krow{display:flex;align-items:baseline;gap:8px;padding:6px 10px;font-size:.85rem;background:rgba(255,255,255,.015)}
 .krow + .krow{border-top:1px solid var(--line-faint)}
@@ -522,13 +554,6 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
 .dlive .sc{font-family:var(--serif);font-size:1.3rem;font-weight:900;color:#fff;font-variant-numeric:tabular-nums}
 .dlive .ck{color:var(--mag);font-weight:700;font-size:.82rem;font-variant-numeric:tabular-nums}
 .dnote{font-size:.72rem;color:var(--dim);margin-top:5px;line-height:1.45}
-.ticket-prog{padding:8px 16px 10px 19px;border-bottom:1px solid var(--line-soft);
-  display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.014)}
-.prog-bar{flex:1 1 auto;height:5px;border-radius:99px;background:rgba(255,255,255,.07);overflow:hidden;display:flex}
-.prog-bar .pf{background:var(--pos);height:100%}
-.prog-bar .pi{background:var(--mag);height:100%;animation:pulse 1.6s ease-in-out infinite}
-.prog-txt{flex:none;font-size:.72rem;color:var(--mut);letter-spacing:.04em;font-variant-numeric:tabular-nums;white-space:nowrap}
-.band-ticket .ticket-prog{padding:6px 13px 8px 16px}
 #inplay-strip:empty{display:none}
 .ip-head{display:flex;align-items:center;gap:9px;margin:0 0 10px}
 .ip-title{font-family:var(--serif);font-weight:900;letter-spacing:.1em;color:#fff;font-size:.95rem}
@@ -548,17 +573,16 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
 /* whole-view polish: rhythm, depth, calm */
 .sec{margin:60px 0 0}
 .sec-sub{line-height:1.6}
-.ticket{box-shadow:0 18px 42px rgba(0,0,0,.42)}
+.choices{box-shadow:0 14px 34px rgba(0,0,0,.38)}
 .tabs{backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.35)}
 .card,.stat,.krows{background-clip:padding-box}
-.trow{padding-top:13px;padding-bottom:13px}
 .rec-row{padding:13px 14px}
-@media (max-width:640px){ .sec{margin:46px 0 0} .prog-txt{white-space:normal} }
+@media (max-width:640px){ .sec{margin:46px 0 0} }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .reveal{opacity:1!important;transform:none!important;transition:none!important}
   .livedot i,.livepulse,.aura,.nebula,.scroll-cue::after,.flow-arrow,.pyr-chip .arr,
-  .pyr-medallion .rise,.pyr-apex .pyr-photo,.rec-row,.prog-bar .pi{animation:none!important}
+  .pyr-medallion .rise,.pyr-apex .pyr-photo,.rec-row,.choices-bar .pi{animation:none!important}
   .formbar i,.winbar i{transition:none}
   .fighter,.fighter .hp i{transition:none}
 }
@@ -595,10 +619,10 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
       <div class="hero-bank">
         <div class="lab">Grand Bankroll</div>
         <div class="amt" id="hero-bank">—</div>
-        <div class="mini" id="hero-bank-mini">The reset counter — every one of your graded bets moves it.</div>
+        <div class="mini" id="hero-bank-mini">The live bankroll — settled called bets move it.</div>
       </div>
       <div class="hero-stats" aria-label="Bankroll summary">
-        <div class="hero-stat"><div class="v" id="hero-earned">—</div><div class="l">Earned</div></div>
+        <div class="hero-stat"><div class="v" id="hero-earned">—</div><div class="l">Settled P&amp;L</div></div>
         <div class="hero-stat"><div class="v" id="hero-record">—</div><div class="l">Record</div></div>
         <div class="hero-stat"><div class="v" id="hero-winrate">—</div><div class="l">Win rate</div></div>
       </div>
@@ -669,16 +693,17 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
     <div class="bets-top">
       <div class="mini-bar" id="bets-mini"></div>
       <div id="board"></div>
-      <p class="bets-note">Every live slip carries its own Top 3 choices — a cap of three per slip, never a quota. A board stays here only while at least one of its picks is still to play; once a slip's choices are all settled, they move to the Record Book as history.</p>
+      <p class="bets-note">Every live slip carries its own choices — the grand pick, every confidence fire and the desk pick, one slim row each. A board stays here only while at least one of its picks is still to play; once a slip's choices are all settled, they move to the Record Book as history.</p>
     </div>
     <div class="sec reveal">
       <div class="sec-head"><span class="no">01</span><h3>Grand Bankroll</h3><span class="rule"></span></div>
       <div class="card bank-card">
-        <div class="lab">The reset counter</div>
+        <div class="lab">The live bankroll</div>
         <div class="bank-amt num" id="bank-num">—</div>
-        <p class="bank-since" id="bank-since">The reset counter.</p>
+        <p class="bank-since" id="bank-since">The live bankroll.</p>
         <div class="bank-grid" id="bank-grid"></div>
-        <p class="bank-note">Stakes still out are not listed twice — they ride on the Top 3 cards above, each showing its own live state.</p>
+        <div class="bank-ledger" id="bank-ledger"></div>
+        <p class="bank-note">Stakes still out ride on the choice rows above, each showing its own live state — they join this ledger only when their slip's grade lands.</p>
       </div>
     </div>
     <div class="sec reveal">
@@ -800,7 +825,7 @@ document.addEventListener("click",e=>{
    if(openAcc.has(k)){openAcc.delete(k);box.classList.remove("open")}else{openAcc.add(k);box.classList.add("open")}return}
  const dt=e.target.closest?e.target.closest("[data-det]"):null;
  if(dt){const k=dt.getAttribute("data-det");
-   const panel=dt.closest(".ticket").querySelector('.tdet[data-detpanel="'+k+'"]');
+   const panel=dt.closest(".choices").querySelector('.cdet[data-detpanel="'+k+'"]');
    if(openDetail.has(k)){openDetail.delete(k);if(panel)panel.classList.remove("open");dt.setAttribute("aria-expanded","false");dt.textContent="Details ▾"}
    else{openDetail.add(k);if(panel)panel.classList.add("open");dt.setAttribute("aria-expanded","true");dt.textContent="Details ▴"}
    return}
@@ -982,7 +1007,7 @@ function renderFlow(d){
  const newest=slips[0]||{};
  let graded=0, recorded=0;
  (d.slips||[]).forEach(s=>{(s.games_list||[]).forEach(g=>{recorded++; if(g.outcome)graded++})});
- const livePicks=(d.slips||[]).reduce((n,s)=>n+((s.top3||[]).filter(t=>t.status!=="ENDED").length),0);
+ const livePicks=(d.slips||[]).reduce((n,s)=>n+((s.choices||s.top3||[]).filter(t=>t.status!=="ENDED").length),0);
  const inPlay=(d.bets||[]).filter(b=>b.status==="IN PLAY").length;
  const crown=(d.activity||[]).find(a=>evKind(a)==="crown");
  const stages=[
