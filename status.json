@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T15:35:47.411353-06:00",
+  "generated_at": "2026-11-19T15:40:42.534441-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-19T15:00:06.809501-06:00",
+      "last_activity": "2026-11-19T15:37:22.075580-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -5453,8 +5453,8 @@
       "games_status": {
         "games_total": 32,
         "games_ended": 0,
-        "games_live_final": 0,
-        "games_live_in": 1
+        "games_live_final": 1,
+        "games_live_in": 0
       },
       "games_list": [
         {
@@ -6308,18 +6308,18 @@
           "price": 1.222,
           "outcome": null,
           "live": {
-            "state": "in",
-            "home_score": 82,
+            "state": "final",
+            "home_score": 85,
             "away_score": 72,
-            "clock": "0:52",
+            "clock": null,
             "period": 2,
-            "detail": "0:52 - 2nd",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "85-72",
           "detail": {
             "home": "Florida Gators",
             "away": "West Virginia Mountaineers",
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 5:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": null,
             "detail": "Scheduled",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 6:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7394,7 +7394,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7861,7 +7861,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": null,
             "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+            "fetched_at": "2026-11-19T15:40:38.931467-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8410,7 +8410,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+        "fetched_at": "2026-11-19T15:40:38.931467-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": null,
         "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T15:35:42.481001-06:00",
+        "fetched_at": "2026-11-19T15:40:38.931467-06:00",
         "source": "ESPN",
         "official": false
       },
