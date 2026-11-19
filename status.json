@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T19:35:38.376196-06:00",
+  "generated_at": "2026-11-18T19:40:39.641880-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-18T18:53:43.002040-06:00",
+      "last_activity": "2026-11-18T19:35:57.013020-06:00",
       "headline": "COINFLIP64-DEAP6 — 207-32, +62.95% fitted ROI"
     },
     {
@@ -2351,6 +2351,92 @@
           "user_price": null
         }
       ]
+    },
+    {
+      "number": 36,
+      "status": null,
+      "games": null,
+      "grand_pick": {
+        "selection": "UConn Huskies",
+        "stake_m": 25,
+        "price": 2.4
+      },
+      "confidence_bet": {
+        "selection": "Utah State Aggies",
+        "stake_m": 25,
+        "price": 1.002
+      },
+      "underdog_desk": {
+        "pick_no": 14,
+        "selection": "UC Riverside Highlanders",
+        "price": 3.35,
+        "paper": true
+      },
+      "draw_desk": null,
+      "results": null,
+      "user_bets": null,
+      "date": null,
+      "games_status": {
+        "games_total": null,
+        "games_ended": 0
+      },
+      "games_list": [],
+      "top3": [
+        {
+          "rank": 1,
+          "kind": "GRAND PICK",
+          "game_id": "S36-03",
+          "game": null,
+          "pick": "UConn Huskies",
+          "stake_m": 25,
+          "price": 2.4,
+          "paper": false,
+          "status": "IN PLAY",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": null,
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 2,
+          "kind": "CONFIDENCE",
+          "game_id": "S36-06",
+          "game": null,
+          "pick": "Utah State Aggies",
+          "stake_m": 25,
+          "price": 1.002,
+          "paper": false,
+          "status": "IN PLAY",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": null,
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        },
+        {
+          "rank": 3,
+          "kind": "UNDERDOG DESK",
+          "game_id": "S36-11",
+          "game": null,
+          "pick": "UC Riverside Highlanders",
+          "stake_m": 25,
+          "price": 3.35,
+          "paper": true,
+          "status": "IN PLAY",
+          "result": null,
+          "pnl_m": null,
+          "final_score": null,
+          "tip_at": null,
+          "user_bet": false,
+          "user_stake_m": null,
+          "user_price": null
+        }
+      ]
     }
   ],
   "bets": [
@@ -2548,6 +2634,51 @@
       "pnl_m": -250.0,
       "final_score": "94-66",
       "tip_at": "2026-11-18T13:30:00-06:00"
+    },
+    {
+      "slip": 36,
+      "game_id": "S36-03",
+      "game": null,
+      "pick": "UConn Huskies",
+      "stake_m": 25,
+      "price": 2.4,
+      "kind": "GRAND PICK",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "final_score": null,
+      "tip_at": null
+    },
+    {
+      "slip": 36,
+      "game_id": "S36-06",
+      "game": null,
+      "pick": "Utah State Aggies",
+      "stake_m": 25,
+      "price": 1.002,
+      "kind": "CONFIDENCE",
+      "paper": false,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "final_score": null,
+      "tip_at": null
+    },
+    {
+      "slip": 36,
+      "game_id": "S36-11",
+      "game": null,
+      "pick": "UC Riverside Highlanders",
+      "stake_m": 25,
+      "price": 3.35,
+      "kind": "UNDERDOG DESK",
+      "paper": true,
+      "status": "IN PLAY",
+      "result": null,
+      "pnl_m": null,
+      "final_score": null,
+      "tip_at": null
     }
   ],
   "bankroll": {
