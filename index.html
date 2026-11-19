@@ -40,8 +40,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold-hi);outline-of
    page wider than the phone — long stack names, team names and headlines
    wrap anywhere rather than clip or stretch the layout ---------- */
 .strategy,.char-headline,.hero-king-line,.acard .h,.acard .n,.findrow .vd,.river .sm,.river .tt,
-.trow-pick,.trow-game,.pick,.arch-head,.betrow .g,.betrow .p,.arow .g,.arow .p,.sec-sub,.sub,.trow-note,
-.rec-game,.rec-pick,.ticket-meta,.pit-caption span{overflow-wrap:anywhere}
+.crow-pick,.crow-line2,.pick,.arch-head,.betrow .g,.betrow .p,.arow .g,.arow .p,.sec-sub,.sub,.crow-note,
+.rec-game,.rec-pick,.choices-meta,.pit-caption span{overflow-wrap:anywhere}
 img{max-width:100%}
 #embers{position:fixed;inset:0;z-index:1;pointer-events:none}
 .pos{color:var(--pos)} .neg{color:var(--neg)}
@@ -447,9 +447,9 @@ footer .brand{font-family:var(--serif);letter-spacing:.18em;color:var(--mut)}
 .flow-arrow.d1{animation-delay:.18s}.flow-arrow.d2{animation-delay:.36s}.flow-arrow.d3{animation-delay:.54s}
 .flow-arrow.d4{animation-delay:.72s}.flow-arrow.d5{animation-delay:.9s}
 @keyframes chevFlash{0%,100%{opacity:.25;transform:translateX(-2px)}50%{opacity:1;transform:translateX(2.5px)}}
-/* bet picks — THE PICK IS THE HERO (directive 8): in v5.3 the hero lives
-   in the betslip ticket row (.trow-pick, see the BETS section above) —
-   Cinzel 900 at 1.35rem, larger than everything else in its row. */
+/* bet picks — THE PICK IS THE HERO (directive 8): in v7 the hero lives
+   in the slim choice row (.crow-pick, see the BETS section above) —
+   the most prominent text in its row, set compact on purpose. */
 .sport-chip{border-color:rgba(114,199,220,.5);color:var(--cyan)}
 /* archive sport sub-headings + vault table sport groups */
 .arch-sport{font-family:var(--serif);font-size:.72rem;font-weight:800;letter-spacing:.24em;color:var(--gold-hi);
@@ -515,7 +515,7 @@ table.games tr.sport-head td{font-family:var(--serif);font-size:.7rem;font-weigh
   .char-card{grid-template-columns:104px minmax(0,1fr);gap:13px}.char-photo{min-height:150px}.char-body{padding:15px 14px 14px 0}
   .char-name{font-size:1.28rem}.data-row{gap:9px}.data-row b{font-size:.84rem}
   .fighter{width:96px}
-  .trow{gap:10px;padding:11px 13px 11px 16px}.ticket-head{padding-left:16px}
+  .crow{gap:8px;padding:7px 10px}
   .mini-bar,.rec-controls{top:70px}
   /* tables become stacked rows — nothing scrolls sideways */
   table.games,table.games tbody,table.games tr,table.games td{display:block;width:100%}
@@ -936,12 +936,12 @@ function renderHero(d){
  if(portrait){portrait.src=c.img;portrait.alt=gk?gk.court+" — "+c.title:c.title}
  $("hero-king-name").textContent=gk?gk.court+" — "+c.title:"The Grand King";
  $("hero-king-line").textContent=gk?gk.name+" · "+gk.wins+"-"+gk.losses+" · "+fmtPct(gk.roi_pct)+" fitted ROI":"The court is taking its seats…";
- $("hero-bank").textContent=(b.current_m!=null)?fmtInt(b.current_m)+"m":"—";
- $("hero-earned").textContent=fmtM(b.earned_m);
+ $("hero-bank").textContent=(b.balance_m!=null)?fmtInt(b.balance_m)+"m":"—";
+ $("hero-earned").textContent=fmtM(b.settled_pnl_m);
  $("hero-record").textContent=b.record||"—";
  $("hero-winrate").textContent=b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—";
  $("hero-bank-mini").textContent=(b.start_m!=null)
-   ?"reset "+fmtTime((b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" at "+fmtInt(b.start_m)+"m · counting your own graded bets"
+   ?"reset "+fmtTime((b.reset_date||b.since||"2026-11-18")+"T00:00:00-06:00").split(",")[0]+" at "+fmtInt(b.start_m)+"m · the live ledger of the called bets"+(b.pending_m?" · "+fmtInt(b.pending_m)+"m out on unsettled slips":"")
    :"BANKROLL RESET PENDING — the counter starts the moment the reset lands";
  const order=["regime","legacy","quantum","selector","vanguard","arena","discovery","edgefinder","autopsy","stakehunter","director","vault"];
  const names={regime:"Regime",legacy:"Legacy",quantum:"Quantum",selector:"Selector",vanguard:"Vanguard",arena:"The Arena",
@@ -954,7 +954,7 @@ function renderHero(d){
  if(f.chosen_bets)items.push("CHOSEN BETS <b>"+f.chosen_bets.wins+"-"+f.chosen_bets.losses+"</b> · <b>"+fmtM(f.chosen_bets.pnl_m)+"</b>");
  if(f.confidence)items.push("CONFIDENCE <b>"+f.confidence.wins+"-"+f.confidence.losses+"</b>");
  if(d.vault&&d.vault.count!=null)items.push("VAULT <b>"+fmtInt(d.vault.count)+"</b> SEALED GAMES");
- if(b.current_m!=null)items.push("BANKROLL <b>"+fmtInt(b.current_m)+"m</b>");
+ if(b.balance_m!=null)items.push("BANKROLL <b>"+fmtInt(b.balance_m)+"m</b>");
  const tk=items.map(t=>'<span class="tk-item"><span class="sep">◆</span> '+t+"</span>").join("");
  $("tk-track").innerHTML=tk+tk;
  $("updated").textContent="Regina · updated "+fmtTime(d.generated_at);
@@ -1062,7 +1062,7 @@ function renderRoster(d){
    '<div class="roster" style="margin-top:14px">'+workers.join("")+"</div>");
 }
 
-/* ================= render: bets (Top-3 match cards) ================= */
+/* ================= render: bets (choice boards) ================= */
 const KIND_ORDER={"GRAND PICK":0,"CONFIDENCE":1,"UNDERDOG DESK":2,"DRAW DESK":3};
 function heroSlip(d){
  if(d.top3&&d.top3.slip)return d.top3.slip;
@@ -1102,24 +1102,29 @@ function slipSports(s){
  return set;
 }
 function boardPicks(d,slip){
- /* a slip's Top 3: the exporter's per-slip top3 (with live state joined),
-    falling back to its called bets in the flat bets array. */
- if(slip.top3&&slip.top3.length)return slip.top3.map(t=>({
-   game:t.game,pick:t.pick,kind:t.kind,paper:!!t.paper,game_id:t.game_id,
+ /* a slip's choices: the exporter's per-slip choices list (grand pick,
+    EVERY confidence fire, desk pick — live state joined), falling back
+    to its Top 3, then to its called bets in the flat bets array. One
+    source feeds both the Bets-tab boards and the Tonight's Choices
+    band, so the two views cannot disagree. */
+ const mapEntry=t=>({
+   game:t.game,pick:t.pick,kind:t.kind,fire:t.fire||null,paper:!!t.paper,game_id:t.game_id,
    called_stake_m:t.stake_m,odds:t.price,
    state:t.status?(String(t.status).toUpperCase()==="IN PLAY"?"inplay":String(t.status).toLowerCase()):(t.result?"ended":"upcoming"),
    result:t.result?String(t.result).toLowerCase():null,pnl_m:t.pnl_m,
    final_score:t.final_score,tip_time:t.tip_at?fmtTime(t.tip_at):"",
    live:t.live||null,reason:t.reason||null,
-   user_bet:t.user_bet?{stake_m:t.user_stake_m,odds:t.user_price}:null}));
+   user_bet:t.user_bet?{stake_m:t.user_stake_m,odds:t.user_price}:null});
+ if(slip.choices&&slip.choices.length)return slip.choices.map(mapEntry);
+ if(slip.top3&&slip.top3.length)return slip.top3.map(mapEntry);
  return calledBets(d,slip.number).filter(b=>b.kind!=="DRAW DESK");
 }
-/* ================= betslip ticket rows (v5.3) =================
-   ONE row renderer serves both the Bets-tab ticket and the Court-tab
+/* ================= slim choice rows (v7) =================
+   ONE row renderer serves both the Bets-tab board and the Court-tab
    Tonight's Choices band (band=true = tighter density + tap-through),
    fed by the same boardPicks source — the two views cannot disagree.
-   Row anatomy: rank medallion + kind | pick (hero) / game / stake
-   micro-line / note line | live state block on the right. */
+   Row anatomy: rank + kind spine | kind pill + pick / game · stake
+   @ price / note line | state block on the right. */
 /* ================= v6 live helpers =================
    The overlay (games_list[].live / top3[].live) is display-only data
    from ESPN: state scheduled|in|final, home/away scores, clock, period.
@@ -1185,74 +1190,88 @@ function detailHtml(d,slip,p,meta){
  if(p.tip_time)h+='<div class="dline" style="margin-top:9px">Tips '+esc(p.tip_time)+"</div>";
  return h||'<div class="dnote">No frozen detail on record for this game.</div>';
 }
-function ticketRow(d,slip,p,i,band){
+function choiceRow(d,slip,p,i,band){
+ /* ONE slim row per choice (v7): rank + kind spine | kind pill + pick /
+    game · stake @ price | state block (status or live score + clock,
+    P&L once settled). The detail panel rides below the row on the Bets
+    tab only; in the band the whole board tap-throughs to the Bets tab. */
  const st=p.state||"upcoming";
  const meta=metaFor(d,slip.number,p.game_id);
  const live=p.live||(meta&&meta.live)||null;
- let state="";
- if(st==="ended")state='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">ENDED'+(p.result?" · "+esc(String(p.result).toUpperCase()):"")+"</span>"
-   +(p.final_score?'<span class="trow-score">FT '+esc(p.final_score)+"</span>":"")
-   +(p.pnl_m!=null?'<span class="trow-pnl num '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
+ let sMain="", sSub="";
+ if(st==="ended"){
+   sMain='<span class="chip '+(p.result==="won"?"grn":p.result==="lost"?"red":"ink")+'">'+(p.result?esc(String(p.result).toUpperCase()):"ENDED")+"</span>";
+   sSub=(p.final_score?'<span>FT '+esc(p.final_score)+"</span>":"")
+     +(p.pnl_m!=null?' <span class="pnl '+(p.pnl_m>0?"pos":p.pnl_m<0?"neg":"")+'">'+fmtM(p.pnl_m)+"</span>":"");
+ }
  else if(live&&live.state==="in"){
    const sc=scoreLine(live);
-   state='<span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
-   +(sc?'<span class="trow-score-live">'+esc(sc)+"</span>":"")
-   +(clockLine(live)?'<span class="trow-clock">'+esc(clockLine(live))+"</span>":"")
-   +(p.tip_time?'<span class="trow-when">tipped '+esc(p.tip_time)+"</span>":"");
+   sMain='<span class="crow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
+     +(sc?' <span class="crow-score">'+esc(sc)+"</span>":"");
+   sSub=clockLine(live)?'<span class="ck">'+esc(clockLine(live))+"</span>":"";
  }
  else if(live&&live.state==="final"){
    const sc=scoreLine(live);
-   state='<span class="chip unofficial">FINAL \u2014 UNOFFICIAL</span>'
-   +(sc?'<span class="trow-score-live">'+esc(sc)+"</span>":"")
-   +'<span class="trow-when">grade pending</span>';
+   sMain='<span class="chip unofficial">FINAL \u2014 UNOFFICIAL</span>'
+     +(sc?' <span class="crow-score">'+esc(sc)+"</span>":"");
+   sSub="grade pending";
  }
- else if(st==="inplay")state='<span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
-   +(p.tip_time?'<span class="trow-when">tipped '+esc(p.tip_time)+"</span>":"");
- else state='<span class="chip amb">UPCOMING</span>'
-   +(p.tip_time?'<span class="trow-when">tips '+esc(p.tip_time)+"</span>":"");
- const micro='<span class="lab">'+(p.paper?"Paper pick":"Bet")+'</span> — <b>'+esc(stakeWords(p.called_stake_m))+'</b> @ <b>'+esc(p.odds||"")+"</b>"
-   +(meta&&meta.league?" · "+esc(meta.league):"")
+ else if(st==="inplay"){
+   sMain='<span class="crow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>';
+   sSub=p.tip_time?"tipped "+esc(p.tip_time):"";
+ }
+ else{
+   sMain='<span class="chip amb">UPCOMING</span>';
+   sSub=p.tip_time?"tips "+esc(p.tip_time):"";
+ }
+ const line2=esc(p.game||"")+' \u00b7 <b>'+esc(stakeWords(p.called_stake_m))+'</b> @ <b>'+esc(p.odds||"")+"</b>"
+   +(meta&&meta.league?" \u00b7 "+esc(meta.league):"")
    +(meta&&meta.sport?' <span class="sport-chip">'+esc(meta.sport)+"</span>":"");
  const bits=[];
  if(p.user_bet)bits.push('<span class="lab">Your bet</span> — '
    +(p.user_bet.stake_m!=null?'<b>'+fmtInt(p.user_bet.stake_m)+"m @ "+esc(p.user_bet.odds)+"</b>"
-     +(p.user_bet.stake_m!==p.called_stake_m?" · the call was "+stakeWords(p.called_stake_m):" · exactly as called")
+     +(p.user_bet.stake_m!==p.called_stake_m?" \u00b7 the call was "+stakeWords(p.called_stake_m):" \u00b7 exactly as called")
      :"amount not stated @ "+esc(p.user_bet.odds)));
- if(p.desk||p.paper)bits.push('<span class="lab">Paper desk</span> — the Underdog Desk\u2019s own line is paper; only a bet marked yours is real');
- const note=bits.length?'<div class="trow-note">'+bits.join(" · ")+"</div>":"";
- const tap=band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+" choice "+(i+1)+": "+esc(p.pick||"")+' — see it on the Bets tab"':"";
+ if(p.paper)bits.push('<span class="lab">Paper desk</span> — rides on the cards only; never counted in the bankroll');
+ const note=bits.length?'<div class="crow-note">'+bits.join(" \u00b7 ")+"</div>":"";
+ const kindCls=p.kind==="GRAND PICK"?"k-grand":p.kind==="CONFIDENCE"?"k-conf":"k-desk";
  const key=slip.number+":"+p.game_id;
- const expBtn=band?"":'<button class="trow-exp" type="button" data-det="'+esc(key)+'" aria-expanded="'+(openDetail.has(key)?"true":"false")+'">'+(openDetail.has(key)?"Details \u25b4":"Details \u25be")+"</button>";
- const panel=band?"":'<div class="tdet'+(openDetail.has(key)?" open":"")+'" data-detpanel="'+esc(key)+'">'+detailHtml(d,slip,p,meta)+"</div>";
- return '<div class="trow"'+tap+">"
-   +'<div class="trow-medal"><span class="medal">'+String(i+1).padStart(2,"0")+'</span><span class="trow-kind">'+esc(p.kind||"")+"</span></div>"
-   +'<div class="trow-main"><div class="trow-pick">'+esc(p.pick||"")+'</div>'
-   +'<div class="trow-game">'+esc(p.game||"")+"</div>"
-   +'<div class="trow-micro">'+micro+"</div>"+note+"</div>"
-   +'<div class="trow-state">'+state+expBtn+"</div></div>"+panel;
+ const expBtn=band?"":'<button class="crow-exp" type="button" data-det="'+esc(key)+'" aria-expanded="'+(openDetail.has(key)?"true":"false")+'">'+(openDetail.has(key)?"Details \u25b4":"Details \u25be")+"</button>";
+ const panel=band?"":'<div class="cdet'+(openDetail.has(key)?" open":"")+'" data-detpanel="'+esc(key)+'">'+detailHtml(d,slip,p,meta)+"</div>";
+ return '<div class="crow '+kindCls+'">'
+   +'<div class="crow-rank">'+String(i+1).padStart(2,"0")+"</div>"
+   +'<div class="crow-main"><div class="crow-line1"><span class="crow-kind">'+esc(p.kind||"")+'</span>'
+   +'<span class="crow-pick">'+esc(p.pick||"")+"</span></div>"
+   +'<div class="crow-line2">'+line2+"</div>"+note+"</div>"
+   +'<div class="crow-state"><div>'+sMain+"</div>"
+   +(sSub?'<div class="crow-sub">'+sSub+"</div>":"")+expBtn+"</div></div>"+panel;
 }
-function slipProgress(slip){
+function slipProgressCounts(slip){
  /* counts from the slip's own games: officially ended, live-final and
-    in-play come from the grade + the overlay; the rest are still to come */
- const gl=slip.games_list||[]; if(!gl.length)return "";
- if(slip.status!=="LOCKED"&&slip.status!=="PART-GRADED")return "";
+    in-play come from the grade + the overlay; the rest are still to
+    come. Null when there is nothing to summarise. */
+ const gl=slip.games_list||[]; if(!gl.length)return null;
+ if(slip.status!=="LOCKED"&&slip.status!=="PART-GRADED")return null;
  let fin=0,inp=0;
  gl.forEach(g=>{ if(g.status==="ENDED"||(g.live&&g.live.state==="final"))fin++;
    else if(g.live&&g.live.state==="in")inp++; });
- const total=gl.length, up=total-fin-inp;
- const fp=Math.round(fin/total*1000)/10, ip=Math.round(inp/total*1000)/10;
- return '<div class="ticket-prog"><div class="prog-bar"><span class="pf" style="width:'+fp+'%"></span><span class="pi" style="width:'+ip+'%"></span></div>'
-   +'<span class="prog-txt">'+fin+" final \u00b7 "+inp+" in play \u00b7 "+up+" to come</span></div>";
+ return {fin:fin,inp:inp,up:gl.length-fin-inp,total:gl.length};
 }
-function slipTicket(d,slip,picks,band){
+function choicesSlip(d,slip,picks,band){
+ /* one compact group per slip: a ONE-LINE header (title · meta ·
+    progress summary) over a 3px progress strip, then one slim row
+    per choice. The same renderer serves the Bets tab and the band. */
  const sports=slipSports(slip);
- const meta=[slip.date||"",sports.join(" + "),slip.status||""].filter(Boolean).join(" · ");
- return '<div class="ticket'+(band?" band-ticket":" reveal")+'"'
-   +(band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+' Top 3 — see the Bets tab"':"")+">"
-   +'<div class="ticket-head"><span class="ticket-title">Slip #'+esc(slip.number)+' — <b>Top 3</b></span>'
-   +(meta?'<span class="ticket-meta">'+esc(meta)+"</span>":"")+"</div>"
-   +slipProgress(slip)
-   +picks.map((p,i)=>ticketRow(d,slip,p,i,band)).join("")+"</div>";
+ const pc=slipProgressCounts(slip);
+ const meta=[slip.date||"",sports.join(" + "),picks.length+" calls"].filter(Boolean).join(" · ");
+ const prog=pc?'<span class="choices-prog"><b>'+pc.fin+'</b> final \u00b7 <b>'+pc.inp+'</b> in play \u00b7 <b>'+pc.up+'</b> to come</span>':"";
+ const bar=pc?'<div class="choices-bar"><span class="pf" style="width:'+(pc.fin/pc.total*100)+'%"></span><span class="pi" style="width:'+(pc.inp/pc.total*100)+'%"></span></div>':"";
+ return '<div class="choices'+(band?" band-choices":" reveal")+'"'
+   +(band?' data-tab="bets" role="button" tabindex="0" aria-label="Slip #'+esc(slip.number)+' choices — see the Bets tab"':"")+">"
+   +'<div class="choices-head"><span class="choices-title">Slip #'+esc(slip.number)+' — <b>Choices</b></span>'
+   +(meta?'<span class="choices-meta">'+esc(meta)+"</span>":"")+prog+"</div>"
+   +bar
+   +picks.map((p,i)=>choiceRow(d,slip,p,i,band)).join("")+"</div>";
 }
 /* ================= IN PLAY NOW strip (Court tab, v6) =================
    Every in-play game across the live slips, score + clock, straight
@@ -1276,10 +1295,10 @@ function renderInPlay(d){
 }
 function renderBoard(d){
  const b=d.bankroll||{};
- $("bets-mini").innerHTML="<span>Bankroll <b>"+(b.current_m!=null?fmtInt(b.current_m)+"m":"—")+'</b></span><span class="sep">◆</span>'
-   +"<span>Your record <b>"+esc(b.record||"—")+'</b></span><span class="sep">◆</span>'
-   +"<span>In play <b>"+(b.pending?b.pending.length:0)+"</b></span>";
- /* The Choices board: one Top-3 board per slip, shown ONLY while at least
+ $("bets-mini").innerHTML="<span>Bankroll <b>"+(b.balance_m!=null?fmtInt(b.balance_m)+"m":"—")+'</b></span><span class="sep">◆</span>'
+   +"<span>Settled <b>"+esc(b.record||"—")+'</b></span><span class="sep">◆</span>'
+   +"<span>Out now <b>"+(b.pending_m?fmtInt(b.pending_m)+"m":"0m")+"</b></span>";
+ /* The Choices board: one board per slip, shown ONLY while at least
     one of its picks is still upcoming or in play. A fully settled slip
     leaves this tab — its picks are history (Record Book + archive). */
  const slips=(d.slips||[]).slice().sort((a,b2)=>(b2.number||0)-(a.number||0));
@@ -1291,19 +1310,19 @@ function renderBoard(d){
    if(live)boards.push({slip:s,picks:picks});
  });
  if(!boards.length){
-   $("board").innerHTML='<div class="card" style="text-align:center"><b style="font-family:var(--serif);font-size:1.15rem">No live choices right now</b><br><span class="sub">The next slip\u2019s Top 3 will appear here the moment it locks.</span></div>';
+   $("board").innerHTML='<div class="card" style="text-align:center"><b style="font-family:var(--serif);font-size:1.15rem">No live choices right now</b><br><span class="sub">The next slip\u2019s choices will appear here the moment it locks.</span></div>';
    return;
  }
- $("board").innerHTML=boards.map(({slip,picks})=>slipTicket(d,slip,picks,false)).join("");
+ $("board").innerHTML=boards.map(({slip,picks})=>choicesSlip(d,slip,picks,false)).join("");
 }
 /* ================= render: TONIGHT'S CHOICES band (Court tab) =========
-   v5.2: the live Top 3, compact, straight under the hero — the same live
-   boards as the Bets tab (same boardPicks source, same live rule: a slip
-   appears only while >=1 pick is UPCOMING or IN PLAY). v5.3: the band is
-   the SAME betslip ticket as the Bets tab, one density tighter, rendered
-   by slipTicket/ticketRow — tapping the ticket, a row or the band head
-   carries data-tab="bets", which the global click handler turns into a
-   tab switch. */
+   The live choices, compact, straight under the hero — the same live
+   boards as the Bets tab (same boardPicks source, same live rule: a
+   slip appears only while >=1 pick is UPCOMING or IN PLAY). v7: the
+   band is the SAME slim-row board as the Bets tab, one density
+   tighter, rendered by choicesSlip/choiceRow — tapping the board or
+   the band head carries data-tab="bets", which the global click
+   handler turns into a tab switch. */
 function renderTonightBand(d){
  const el=$("tonight-band"); if(!el)return;
  const slips=(d.slips||[]).slice().sort((a,b)=>(b.number||0)-(a.number||0));
@@ -1315,23 +1334,52 @@ function renderTonightBand(d){
  });
  if(!boards.length){
    el.innerHTML='<div class="band-head"><span class="band-title">TONIGHT\u2019S CHOICES</span></div>'
-     +'<div class="band-empty">No live choices right now — the next slip\u2019s Top 3 will appear here.</div>';
+     +'<div class="band-empty">No live choices right now — the next slip\u2019s choices will appear here.</div>';
    return;
  }
  el.innerHTML='<div class="band-head" data-tab="bets" role="button" tabindex="0"><span class="band-title">TONIGHT\u2019S CHOICES</span><span class="band-go">All choices on the Bets tab ❯</span></div>'
-   +boards.map(({slip,picks})=>slipTicket(d,slip,picks,true)).join("");
+   +boards.map(({slip,picks})=>choicesSlip(d,slip,picks,true)).join("");
 }
 function renderBank(d){
+ /* The live bankroll: balance, settled P&L and record, the pending
+    exposure, and the ledger itself with its running balance. Only
+    CALLED bets count — the grand pick and every confidence fire at
+    their called stakes, from Slip #36 onward — and a bet enters the
+    ledger only when its slip's two-source grade lands. The paper
+    desk is excluded, and the exclusion is printed, not hidden. */
  const b=d.bankroll||{};
- $("bank-num").textContent=(b.current_m!=null)?fmtInt(b.current_m)+"m":"—";
+ $("bank-num").textContent=(b.balance_m!=null)?fmtInt(b.balance_m)+"m":"—";
  $("bank-since").textContent=(b.start_m!=null)
-   ?"Reset to "+fmtInt(b.start_m)+"m on "+(b.since||"")+" — this counter moves only when one of YOUR graded bets settles. The pre-reset record is preserved in full below."
+   ?"Live since the reset on "+(b.reset_date||b.since||"")+" at "+fmtInt(b.start_m)+"m — the tracked ledger of the called bets (the grand pick and every confidence fire, at their called stakes) from Slip #"+(b.first_tracked_slip||36)+" onward."
    :"BANKROLL RESET PENDING — the counter starts the moment the reset lands";
  $("bank-grid").innerHTML=
-   '<div class="stat"><div class="lab">Earned since reset</div><div class="v num '+(b.earned_m>0?"pos":b.earned_m<0?"neg":"")+'">'+fmtM(b.earned_m)+'</div></div>'
-  +'<div class="stat"><div class="lab">Your bets since reset</div><div class="v num">'+esc(b.record||"—")+'</div></div>'
+   '<div class="stat"><div class="lab">Settled P&L</div><div class="v num '+(b.settled_pnl_m>0?"pos":b.settled_pnl_m<0?"neg":"")+'">'+fmtM(b.settled_pnl_m)+'</div></div>'
+  +'<div class="stat"><div class="lab">Settled record</div><div class="v num">'+esc(b.record||"—")+'</div></div>'
   +'<div class="stat"><div class="lab">Win rate</div><div class="v num">'+(b.winrate_pct!=null?b.winrate_pct.toFixed(1)+"%":"—")+'</div></div>'
-  +'<div class="stat"><div class="lab">Bets still in play</div><div class="v num">'+esc(b.in_play!=null?b.in_play:(b.pending?b.pending.length:"—"))+'</div></div>';
+  +'<div class="stat"><div class="lab">Out now (pending)</div><div class="v num">'+(b.pending_m!=null?fmtInt(b.pending_m)+"m":"—")+'</div></div>';
+ const led=b.ledger||[], pen=b.pending||[], excl=b.paper_excluded||[];
+ let h='<div class="bank-sec">The ledger — settled called bets</div>';
+ if(!led.length){
+   h+='<div class="led-empty">No settled bets yet — the ledger opens when Slip #36 is graded. Until then the balance stands untouched at '+(b.start_m!=null?fmtInt(b.start_m)+"m":"—")+'.</div>';
+ }else{
+   h+=led.map(e=>'<div class="led-row"><span class="chip '+(e.result==="WON"?"grn":"red")+'">'+esc(e.result)+'</span>'
+     +'<span class="lp">'+esc(e.pick)+'</span>'
+     +'<span class="lm">Slip #'+esc(e.slip)+" \u00b7 "+esc(e.kind)+" \u00b7 "+fmtInt(e.stake_m)+"m @ "+esc(e.price)+'</span>'
+     +'<span class="lpnl '+(e.pnl_m>0?"pos":e.pnl_m<0?"neg":"")+'">'+fmtM(e.pnl_m)+'</span>'
+     +'<span class="lb">'+fmtInt(e.balance_after_m)+'m</span></div>').join("");
+ }
+ if(pen.length){
+   h+='<div class="bank-sec">Out now — settles at grading</div>'
+     +pen.map(e=>'<div class="led-row"><span class="chip amb">PENDING</span>'
+       +'<span class="lp">'+esc(e.pick)+'</span>'
+       +'<span class="lm">Slip #'+esc(e.slip)+" \u00b7 "+esc(e.kind)+'</span>'
+       +'<span class="lb">'+fmtInt(e.stake_m)+"m @ "+esc(e.price)+"</span></div>").join("");
+ }
+ if(excl.length){
+   h+='<div class="bank-excl"><b>Not counted:</b> '+excl.map(e=>"the "+esc(String(e.kind).toLowerCase())+" pick <b>"+esc(e.pick)+"</b> @ "+esc(e.price)+" (Slip #"+esc(e.slip)+")").join("; ")
+     +" — the desk is paper by design; it rides on the cards only, never in this ledger.</div>";
+ }
+ $("bank-ledger").innerHTML=h;
 }
 function resChip(r){if(r==="won")return '<span class="chip grn">WON</span>';if(r==="lost")return '<span class="chip red">LOST</span>';
  if(r==="pending")return '<span class="chip amb">PENDING</span>';return '<span class="chip ink">'+esc(String(r||"").toUpperCase())+"</span>"}
@@ -1499,7 +1547,7 @@ function recRow(g,i){
  const side=g.outcome
    ?'<div class="rec-score">'+esc(g.final_score||"")+'</div>'+resChip(g.outcome.toLowerCase())
    :(lv&&lv.state==="in")
-     ?'<div class="rec-live"><span class="trow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
+     ?'<div class="rec-live"><span class="crow-live"><span class="livepulse"></span><span class="livetxt">IN PLAY</span></span>'
        +(scoreLine(lv)?'<span class="rec-score-live">'+esc(scoreLine(lv))+"</span>":"")
        +(clockLine(lv)?'<span class="rec-clock">'+esc(clockLine(lv))+"</span>":"")+"</div>"
      :(lv&&lv.state==="final")
@@ -1591,8 +1639,8 @@ function tweenNum(el,target,suffix){
 /* ================= bankroll count-up ================= */
 let countUpAnim=null;
 function animateBankroll(){
- const b=(DATA&&DATA.bankroll)||{}, el=$("hero-bank"); if(!el||b.current_m==null)return;
- const target=b.current_m;
+ const b=(DATA&&DATA.bankroll)||{}, el=$("hero-bank"); if(!el||b.balance_m==null)return;
+ const target=b.balance_m;
  if(REDUCED||typeof requestAnimationFrame!=="function"){el.textContent=fmtInt(target)+"m";return}
  const from=0,start=performance.now(),dur=1800;
  if(countUpAnim&&countUpAnim.cancel)countUpAnim.cancel();
