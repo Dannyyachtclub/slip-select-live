@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T07:55:45.845869-06:00",
+  "generated_at": "2026-11-19T08:00:45.255941-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T07:42:50.230303-06:00",
-      "headline": "Latest search cycle: 219"
+      "last_activity": "2026-11-19T07:58:32.687332-06:00",
+      "headline": "Latest search cycle: 220"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T07:50:34.629317-06:00",
-      "headline": "Latest filing: P183"
+      "last_activity": "2026-11-19T07:59:52.713335-06:00",
+      "headline": "Latest filing: P189"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 220 — 2026-11-19 07:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
+      "at": "2026-11-19T07:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 219 — 2026-11-19 07:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T07:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 215 — 2026-11-19 06:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T06:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 214 — 2026-11-19 06:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — the three discovery kings unchanged; closing record…",
-      "at": "2026-11-19T06:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
