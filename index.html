@@ -104,10 +104,16 @@ img.portrait{background:#090b18;object-fit:cover;display:block}
 .hero-king{margin-top:43px;max-width:680px}
 .hero-king-name{font-family:var(--serif);font-size:clamp(1.42rem,6vw,2.25rem);font-weight:800;line-height:1.12;color:#fff}
 .hero-king-line{color:var(--mut);font-size:.92rem;margin-top:6px;overflow-wrap:anywhere}
-.hero-bank{margin-top:25px;text-align:center}
-.hero-bank .amt{font-family:var(--serif);font-size:clamp(2rem,11.6vw,4.6rem);font-weight:900;line-height:1.04;
-  color:var(--gold-hi);font-variant-numeric:tabular-nums;letter-spacing:.015em;text-shadow:0 8px 34px rgba(0,0,0,.66);white-space:nowrap}
-.hero-bank .mini{color:var(--mut);font-size:.9rem;margin-top:5px}
+.hero-bank{margin-top:25px;text-align:center;width:100%;max-width:100%}
+/* the amount is sized to FIT its line at phone widths: the full
+   "1,000,000,000m" (14 tabular glyphs) at 8.6vw measures inside the
+   hero-inner width at both 320px and 390px with headroom — the old
+   11.6vw overflowed the container by ~80px and the nowrap line
+   spilled across the label above and the caption below. Static
+   flow only: nothing is positioned over this block. */
+.hero-bank .amt{font-family:var(--serif);font-size:clamp(1.6rem,8.6vw,4.6rem);font-weight:900;line-height:1.08;
+  color:var(--gold-hi);font-variant-numeric:tabular-nums;letter-spacing:.01em;text-shadow:0 8px 34px rgba(0,0,0,.66);white-space:nowrap}
+.hero-bank .mini{color:var(--mut);font-size:.9rem;margin-top:8px;line-height:1.5}
 .hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(640px,100%);margin-top:22px;border-top:1px solid rgba(200,162,74,.22);border-bottom:1px solid rgba(200,162,74,.22)}
 .hero-stat{padding:13px 8px 12px;text-align:center;min-width:0}
 .hero-stat + .hero-stat{border-left:1px solid rgba(200,162,74,.16)}
@@ -1369,9 +1375,10 @@ function renderBank(d){
  /* The live bankroll: balance, settled P&L and record, the pending
     exposure, and the ledger itself with its running balance. Only
     CALLED bets count — the grand pick and every confidence fire at
-    their called stakes, from Slip #36 onward — and a bet enters the
-    ledger only when its slip's two-source grade lands. The paper
-    desk is excluded, and the exclusion is printed, not hidden. */
+    their called stakes, on every slip dated from the reset onward
+    (v8 scope) — and a bet enters the ledger only when its slip's
+    two-source grade lands. The paper desk is excluded, and the
+    exclusion is printed, not hidden. */
  const b=d.bankroll||{};
  $("bank-num").textContent=(b.balance_m!=null)?fmtInt(b.balance_m)+"m":"—";
  $("bank-since").textContent=(b.start_m!=null)
@@ -1385,7 +1392,7 @@ function renderBank(d){
  const led=b.ledger||[], pen=b.pending||[], excl=b.paper_excluded||[];
  let h='<div class="bank-sec">The ledger — settled called bets</div>';
  if(!led.length){
-   h+='<div class="led-empty">No settled bets yet — the ledger opens when Slip #36 is graded. Until then the balance stands untouched at '+(b.start_m!=null?fmtInt(b.start_m)+"m":"—")+'.</div>';
+   h+='<div class="led-empty">No settled bets yet — the ledger opens when the first tracked slip is graded. Until then the balance stands untouched at '+(b.start_m!=null?fmtInt(b.start_m)+"m":"—")+'.</div>';
  }else{
    h+=led.map(e=>'<div class="led-row"><span class="chip '+(e.result==="WON"?"grn":"red")+'">'+esc(e.result)+'</span>'
      +'<span class="lp">'+esc(e.pick)+'</span>'
