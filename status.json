@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:30:46.889946-06:00",
+  "generated_at": "2026-11-18T23:35:48.277219-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-18T23:16:07.949495-06:00",
+      "last_activity": "2026-11-18T23:31:34.227527-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -853,6 +853,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G190 — F5 SOFT-ANGLE EXTREMES (fortieth visit) — 2026-11-18",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
+      "at": "2026-11-18T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G189 — F4 CROSS-REFERENCE (thirty-ninth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 still has no testable best form; the sitting F3 champion…",
       "at": "2026-11-18T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G185 — F5 SOFT-ANGLE EXTREMES (thirty-ninth visit) — 2026-11-18",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note. NOT a milestone under…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G184 — F4 CROSS-REFERENCE (thirty-eighth visit) — 2026-11-18",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD, no new best form — F4 still has no testable best form; the sitting F3 champion…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
@@ -2897,7 +2897,7 @@
     },
     {
       "number": 36,
-      "status": "LOCKED",
+      "status": "GRADED",
       "games": null,
       "grand_pick": {
         "selection": "UConn Huskies",
@@ -2921,9 +2921,9 @@
       "date": "2026-11-18",
       "games_status": {
         "games_total": 17,
-        "games_ended": 0,
-        "games_live_final": 16,
-        "games_live_in": 1
+        "games_ended": 17,
+        "games_live_final": 0,
+        "games_live_in": 0
       },
       "games_list": [
         {
@@ -2931,483 +2931,123 @@
           "game": "Creighton Bluejays v Bethune-Cookman Wildcats",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Creighton Bluejays)",
+          "final_score": "88-65",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Creighton Bluejays",
           "price": 1.0111,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 88,
-            "away_score": 65,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "88-65",
-          "detail": {
-            "home": "Creighton Bluejays",
-            "away": "Bethune-Cookman Wildcats",
-            "prices": {
-              "home": 1.0111,
-              "away": 26.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 96.26,
-              "away": 3.74
-            },
-            "overround_pct": 2.75,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Bethune-Cookman Wildcats",
-                "price": 26.0,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "Creighton Bluejays",
-                "price": 1.0111,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Creighton Bluejays",
-                "price": 1.0111,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Bethune-Cookman Wildcats",
-                "price": 26.0,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 follows the lone dissenter — the crowned FAVP150160 chain takes the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Creighton Bluejays",
-                "price": 1.0111,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 153.5,
-              "projection": 150.95
-            },
-            "bet_call": "CONFIDENCE BET (v1.1, walled off) — Creighton Bluejays, 25m @ 1.0111. De-vig 96.26% >= 90% bar and 0 fragility trips (differential +9.3/game; defensive rank 120th of 365). The 1.0111 price is under the 1.15 floor, which the confidence rule expressly overrides."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-02",
           "game": "Colorado Buffaloes v Portland Pilots",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Portland Pilots)",
+          "final_score": "74-77",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Colorado Buffaloes",
           "price": 1.0741,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 74,
-            "away_score": 77,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "74-77",
-          "detail": {
-            "home": "Colorado Buffaloes",
-            "away": "Portland Pilots",
-            "prices": {
-              "home": 1.0741,
-              "away": 9.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 89.34,
-              "away": 10.66
-            },
-            "overround_pct": 4.21,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Colorado Buffaloes",
-                "price": 1.0741,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Colorado Buffaloes",
-                "price": 1.0741,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Colorado Buffaloes",
-                "price": 1.0741,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Colorado Buffaloes",
-                "price": 1.0741,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Colorado Buffaloes",
-                "price": 1.0741,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 156.5,
-              "projection": 162.05
-            },
-            "bet_call": "NO BET — Colorado's de-vig (89.34%) is under the 90% confidence bar, and the favourite trips the screen once (Portland's +23.0 differential and 101.8 scored/game dwarf Colorado's +4.5 edge). A live one-trip case for Portland, recorded as a near-miss; the slip's team exposure is already called on the grand pick and the desk."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-03",
           "game": "Arizona Wildcats v UConn Huskies",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Arizona Wildcats)",
+          "final_score": "85-79",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Arizona Wildcats",
           "price": 1.6024,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 85,
-            "away_score": 79,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "85-79",
-          "detail": {
-            "home": "Arizona Wildcats",
-            "away": "UConn Huskies",
-            "prices": {
-              "home": 1.6024,
-              "away": 2.4,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 59.96,
-              "away": 40.04
-            },
-            "overround_pct": 4.07,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Arizona Wildcats",
-                "price": 1.6024,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Arizona Wildcats",
-                "price": 1.6024,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Arizona Wildcats",
-                "price": 1.6024,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Arizona Wildcats",
-                "price": 1.6024,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Arizona Wildcats",
-                "price": 1.6024,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 146.5,
-              "projection": 151.85
-            },
-            "bet_call": "BET — GRAND PICK: UConn Huskies, small 25m @ 2.40. Named gap (Kim Rule): the market favourite Arizona trips the fragility screen — its differential edge over the dog is -13.3 points/game (Arizona +13.2 v UConn +26.5), the wrong way entirely — while UConn holds the better record (4-0 v 3-1) and a far better defence (58.0 allowed/game, 16th of 365 nationally, v Arizona's 74.0, 223rd). No favourite on this slip trips the screen twice; this is the slip's clearest named gap. Whether the kings agree is recorded on the cards; the call stands on the frozen numbers either way."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-04",
           "game": "San José State Spartans v Fresno State Bulldogs",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (San José State Spartans)",
+          "final_score": "92-86",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "San José State Spartans",
           "price": 1.3704,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 92,
-            "away_score": 86,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "92-86",
-          "detail": {
-            "home": "San José State Spartans",
-            "away": "Fresno State Bulldogs",
-            "prices": {
-              "home": 1.3704,
-              "away": 3.2,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 70.02,
-              "away": 29.98
-            },
-            "overround_pct": 4.22,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "San José State Spartans",
-                "price": 1.3704,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "San José State Spartans",
-                "price": 1.3704,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "San José State Spartans",
-                "price": 1.3704,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "San José State Spartans",
-                "price": 1.3704,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "San José State Spartans",
-                "price": 1.3704,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 156.5,
-              "projection": 163.8
-            },
-            "bet_call": null
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-05",
           "game": "Colorado State Rams v North Dakota State Bison",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Colorado State Rams)",
+          "final_score": "71-64",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "North Dakota State Bison",
           "price": 7.5,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 71,
-            "away_score": 64,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "71-64",
-          "detail": {
-            "home": "Colorado State Rams",
-            "away": "North Dakota State Bison",
-            "prices": {
-              "home": 1.1,
-              "away": 7.5,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 87.21,
-              "away": 12.79
-            },
-            "overround_pct": 4.24,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "North Dakota State Bison",
-                "price": 7.5,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "North Dakota State Bison",
-                "price": 7.5,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Colorado State Rams",
-                "price": 1.1,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "North Dakota State Bison",
-                "price": 7.5,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 stays with the two-court majority — no leg of the crowned FAVP150160…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Colorado State Rams",
-                "price": 1.1,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 147.5,
-              "projection": 152.55
-            },
-            "bet_call": null
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-06",
           "game": "Utah State Aggies v Weber State Wildcats",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Utah State Aggies)",
+          "final_score": "101-71",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Utah State Aggies",
           "price": 1.002,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 101,
-            "away_score": 71,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "101-71",
-          "detail": {
-            "home": "Utah State Aggies",
-            "away": "Weber State Wildcats",
-            "prices": {
-              "home": 1.002,
-              "away": 41.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 97.61,
-              "away": 2.39
-            },
-            "overround_pct": 2.24,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Utah State Aggies",
-                "price": 1.002,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Utah State Aggies",
-                "price": 1.002,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Utah State Aggies",
-                "price": 1.002,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Utah State Aggies",
-                "price": 1.002,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Utah State Aggies",
-                "price": 1.002,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 172.5,
-              "projection": 168.35
-            },
-            "bet_call": "CONFIDENCE BET (v1.1, walled off) — Utah State Aggies, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +35.0/game; defensive rank 167th of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-07",
           "game": "Missouri Tigers v Alcorn State Braves",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Missouri Tigers)",
+          "final_score": "102-41",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
@@ -3416,888 +3056,201 @@
             "status": "NOT_AVAILABLE",
             "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
           },
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 102,
-            "away_score": 41,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "102-41",
-          "detail": {
-            "home": "Missouri Tigers",
-            "away": "Alcorn State Braves",
-            "prices": {
-              "home": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-              },
-              "away": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-              },
-              "draw": null
-            },
-            "devig_pct": {
-              "home": null,
-              "away": null
-            },
-            "overround_pct": {
-              "status": "NOT_AVAILABLE",
-              "reason": "No market exists to compute an overround."
-            },
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Missouri Tigers",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-                },
-                "reason": "Standings favourite — no market exists for any clause to price against; model-only pick, bet layer closed for this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Missouri Tigers",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-                },
-                "reason": "Standings favourite; model-only pick, bet layer closed for this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Missouri Tigers",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-                },
-                "reason": "Standings favourite; no priced favourite exists for any component to flip; model-only pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Missouri Tigers",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-                },
-                "reason": "Model-only game — no market prices exist for the courts to split on; the selector line follows the standings favourite for forward…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Missouri Tigers",
-                "price": {
-                  "status": "NOT_AVAILABLE",
-                  "reason": "No bookmaker moneyline pair exists for this fixture at freeze: DraftKings lists no moneyline on the ESPN feed (spread -45.5 only), Covers lists the moneyline as OFF, and Pinnacle has the matchup with no open moneyline market. MODEL-ONLY game."
-                },
-                "reason": "Model-only game — no market price and no priced ball read; nominal standings-favourite line for forward judgment only. VG19-DOGGE600VETO…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 157.85
-            },
-            "bet_call": "NO BET — model-only game: the moneyline is off the board on every reachable source, so the bet layer is closed for this game."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-08",
           "game": "BYU Cougars v Northern Colorado Bears",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (BYU Cougars)",
+          "final_score": "98-54",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "BYU Cougars",
           "price": 1.002,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 98,
-            "away_score": 54,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "98-54",
-          "detail": {
-            "home": "BYU Cougars",
-            "away": "Northern Colorado Bears",
-            "prices": {
-              "home": 1.002,
-              "away": 41.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 97.61,
-              "away": 2.39
-            },
-            "overround_pct": 2.24,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "BYU Cougars",
-                "price": 1.002,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "BYU Cougars",
-                "price": 1.002,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "BYU Cougars",
-                "price": 1.002,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "BYU Cougars",
-                "price": 1.002,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "BYU Cougars",
-                "price": 1.002,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 163.5,
-              "projection": 161.75
-            },
-            "bet_call": "CONFIDENCE BET (v1.1, walled off) — BYU Cougars, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +20.7/game; defensive rank 251st of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-09",
           "game": "Arizona State Sun Devils v Oakland Golden Grizzlies",
           "time": "20:00",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Arizona State Sun Devils)",
+          "final_score": "68-65",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Arizona State Sun Devils",
           "price": 1.0154,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 68,
-            "away_score": 65,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "68-65",
-          "detail": {
-            "home": "Arizona State Sun Devils",
-            "away": "Oakland Golden Grizzlies",
-            "prices": {
-              "home": 1.0154,
-              "away": 21.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 95.39,
-              "away": 4.61
-            },
-            "overround_pct": 3.25,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Arizona State Sun Devils",
-                "price": 1.0154,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Arizona State Sun Devils",
-                "price": 1.0154,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Arizona State Sun Devils",
-                "price": 1.0154,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Arizona State Sun Devils",
-                "price": 1.0154,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Arizona State Sun Devils",
-                "price": 1.0154,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 147.5,
-              "projection": 155.65
-            },
-            "bet_call": "CONFIDENCE BET (v1.1, walled off) — Arizona State Sun Devils, 25m @ 1.0154. De-vig 95.39% >= 90% bar and 0 fragility trips (differential +22.3/game; defensive rank 52nd of 365). The 1.0154 price is under the 1.15 floor, which the confidence rule expressly overrides."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-10",
           "game": "Denver Nuggets v Boston Celtics",
           "time": "20:30",
           "tip_at": "2026-11-18T20:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Denver Nuggets)",
+          "final_score": "105-101",
           "bet_call": null,
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Denver Nuggets",
           "price": 2.15,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 105,
-            "away_score": 101,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "105-101",
-          "detail": {
-            "home": "Denver Nuggets",
-            "away": "Boston Celtics",
-            "prices": {
-              "home": 2.15,
-              "away": 1.7353,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 44.66,
-              "away": 55.34
-            },
-            "overround_pct": 4.14,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Boston Celtics",
-                "price": 1.7353,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Denver Nuggets",
-                "price": 2.15,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Denver Nuggets",
-                "price": 2.15,
-                "reason": "Clause sport_venue_dogprice_range_flip is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Denver Nuggets",
-                "price": 2.15,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 stays with the two-court majority — no leg of the crowned FAVP150160…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Boston Celtics",
-                "price": 1.7353,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 219.5,
-              "projection": 222.55
-            },
-            "bet_call": null
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-11",
           "game": "San Diego Toreros v UC Riverside Highlanders",
           "time": "20:30",
           "tip_at": "2026-11-18T20:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (San Diego Toreros)",
+          "final_score": "71-62",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "San Diego Toreros",
           "price": 1.3448,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 71,
-            "away_score": 62,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "71-62",
-          "detail": {
-            "home": "San Diego Toreros",
-            "away": "UC Riverside Highlanders",
-            "prices": {
-              "home": 1.3448,
-              "away": 3.35,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 71.36,
-              "away": 28.64
-            },
-            "overround_pct": 4.21,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "San Diego Toreros",
-                "price": 1.3448,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "San Diego Toreros",
-                "price": 1.3448,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "San Diego Toreros",
-                "price": 1.3448,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "San Diego Toreros",
-                "price": 1.3448,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "San Diego Toreros",
-                "price": 1.3448,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 147.5,
-              "projection": 155.5
-            },
-            "bet_call": "UNDERDOG DESK (paper) — UC Riverside Highlanders @ 3.35, flat 25m paper, Underdog Desk pick #14. Named gap: the favourite San Diego trips the fragility screen once — its differential edge over the dog is -7.0 the wrong way (San Diego +8.7 v UC Riverside +15.7) — and UC Riverside defends better (67.8 allowed/game v 75.5) at the same 3-1 record. No real bet called on this game."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-12",
           "game": "Los Angeles Lakers v Utah Jazz",
           "time": "21:00",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Utah Jazz)",
+          "final_score": "97-109",
           "bet_call": null,
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Los Angeles Lakers",
           "price": 1.1764,
-          "outcome": null,
-          "live": {
-            "state": "in",
-            "home_score": 97,
-            "away_score": 109,
-            "clock": "39.0",
-            "period": 4,
-            "detail": "39.0 - 4th",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "in",
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Los Angeles Lakers",
-            "away": "Utah Jazz",
-            "prices": {
-              "home": 1.1764,
-              "away": 5.24,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 81.67,
-              "away": 18.33
-            },
-            "overround_pct": 4.09,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Utah Jazz",
-                "price": 5.24,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "Los Angeles Lakers",
-                "price": 1.1764,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Los Angeles Lakers",
-                "price": 1.1764,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Utah Jazz",
-                "price": 5.24,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 follows the lone dissenter — the crowned FAVP150160 chain takes the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Los Angeles Lakers",
-                "price": 1.1764,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 230.5,
-              "projection": 231.65
-            },
-            "bet_call": null
-          }
+          "detail": null
         },
         {
           "game_id": "S36-13",
           "game": "Sacramento Kings v Phoenix Suns",
           "time": "21:00",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Phoenix Suns, away)",
+          "final_score": "107-128",
           "bet_call": null,
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Phoenix Suns",
           "price": 1.3717,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 107,
-            "away_score": 128,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "107-128",
-          "detail": {
-            "home": "Sacramento Kings",
-            "away": "Phoenix Suns",
-            "prices": {
-              "home": 3.21,
-              "away": 1.3717,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 29.94,
-              "away": 70.06
-            },
-            "overround_pct": 4.05,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Phoenix Suns",
-                "price": 1.3717,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Phoenix Suns",
-                "price": 1.3717,
-                "reason": "Trips veto — the fragility count cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Phoenix Suns",
-                "price": 1.3717,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Phoenix Suns",
-                "price": 1.3717,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Phoenix Suns",
-                "price": 1.3717,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 226.5,
-              "projection": 229.2
-            },
-            "bet_call": "NO BET — the favourite Phoenix trips the screen once (negative differential, -3.4/game, at a losing 6-7 record), but the dog Sacramento is 1-12 with a -13.4 differential and the league's 28th-ranked defence; the gap does not name a bet on Sacramento. Recorded as a near-miss."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-14",
           "game": "Nevada Wolf Pack v Idaho Vandals",
           "time": "21:00",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Nevada Wolf Pack)",
+          "final_score": "91-74",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Nevada Wolf Pack",
           "price": 1.0476,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 91,
-            "away_score": 74,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "91-74",
-          "detail": {
-            "home": "Nevada Wolf Pack",
-            "away": "Idaho Vandals",
-            "prices": {
-              "home": 1.0476,
-              "away": 12.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 91.97,
-              "away": 8.03
-            },
-            "overround_pct": 3.79,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.0476,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.0476,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.0476,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.0476,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.0476,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 146.5,
-              "projection": 155.1
-            },
-            "bet_call": "NO BET — Nevada's de-vig (91.97%) clears the 90% confidence bar, but the favourite trips the fragility screen once (its differential edge over Idaho is -9.2, the wrong way), so the confidence rule cannot fire. Recorded as screen evidence only."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-15",
           "game": "San Francisco Dons v Louisiana Ragin' Cajuns",
           "time": "21:00",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (San Francisco Dons)",
+          "final_score": "77-56",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "San Francisco Dons",
           "price": 1.16,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 77,
-            "away_score": 56,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "77-56",
-          "detail": {
-            "home": "San Francisco Dons",
-            "away": "Louisiana Ragin' Cajuns",
-            "prices": {
-              "home": 1.16,
-              "away": 5.55,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 82.71,
-              "away": 17.29
-            },
-            "overround_pct": 4.22,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Louisiana Ragin' Cajuns",
-                "price": 5.55,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "San Francisco Dons",
-                "price": 1.16,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Louisiana Ragin' Cajuns",
-                "price": 5.55,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Selector",
-                "pick": "San Francisco Dons",
-                "price": 1.16,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 follows the lone dissenter — the crowned FAVP150160 chain takes the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "San Francisco Dons",
-                "price": 1.16,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 134.5,
-              "projection": 129.65
-            },
-            "bet_call": null
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-16",
           "game": "Hawai'i Rainbow Warriors v Washington State Cougars",
           "time": "21:00",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Washington State Cougars)",
+          "final_score": "63-79",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Hawai'i Rainbow Warriors",
           "price": 1.8929,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 63,
-            "away_score": 79,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "63-79",
-          "detail": {
-            "home": "Hawai'i Rainbow Warriors",
-            "away": "Washington State Cougars",
-            "prices": {
-              "home": 1.8929,
-              "away": 1.9259,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 50.43,
-              "away": 49.57
-            },
-            "overround_pct": 4.75,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Hawai'i Rainbow Warriors",
-                "price": 1.8929,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Hawai'i Rainbow Warriors",
-                "price": 1.8929,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Hawai'i Rainbow Warriors",
-                "price": 1.8929,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Hawai'i Rainbow Warriors",
-                "price": 1.8929,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Hawai'i Rainbow Warriors",
-                "price": 1.8929,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              }
-            ],
-            "totals": {
-              "line": 137.5,
-              "projection": 152.9
-            },
-            "bet_call": null
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S36-17",
           "game": "San Diego State Aztecs v Texas Southern Tigers",
           "time": "21:00",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (San Diego State Aztecs)",
+          "final_score": "97-51",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "San Diego State Aztecs",
           "price": 1.0111,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 97,
-            "away_score": 51,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "97-51",
-          "detail": {
-            "home": "San Diego State Aztecs",
-            "away": "Texas Southern Tigers",
-            "prices": {
-              "home": 1.0111,
-              "away": 26.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 96.26,
-              "away": 3.74
-            },
-            "overround_pct": 2.75,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "San Diego State Aztecs",
-                "price": 1.0111,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Regime",
-                "pick": "San Diego State Aztecs",
-                "price": 1.0111,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "San Diego State Aztecs",
-                "price": 1.0111,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "San Diego State Aztecs",
-                "price": 1.0111,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-FAVP150160 line,…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "San Diego State Aztecs",
-                "price": 1.0111,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG19-DOGGE600VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 157.5,
-              "projection": 164.2
-            },
-            "bet_call": "CONFIDENCE BET (v1.1, walled off) — San Diego State Aztecs, 25m @ 1.0111. De-vig 96.26% >= 90% bar and 0 fragility trips (differential +15.0/game; defensive rank 152nd of 365). The 1.0111 price is under the 1.15 floor, which the confidence rule expressly overrides."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         }
       ],
       "top3": [
@@ -4310,25 +3263,15 @@
           "stake_m": 25,
           "price": 2.4,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "85-79",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 85,
-            "away_score": 79,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "85-79",
-          "reason": "BET — GRAND PICK: UConn Huskies, small 25m @ 2.40. Named gap (Kim Rule): the market favourite Arizona trips the fragility screen — its differential edge over the dog is -13.3 points/game (Arizona +13.2 v UConn +26.5), the wrong way entirely — while UConn holds the better record (4-0 v 3-1) and a far better defence (58.0 allowed/game, 16th of 365 nationally, v Arizona's 74.0, 223rd). No favourite on this slip trips the screen twice; this is the slip's clearest named gap. Whether the kings agree is recorded on the cards; the call stands on the frozen numbers either way.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4342,25 +3285,15 @@
           "stake_m": 25,
           "price": 1.002,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.05,
+          "final_score": "101-71",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 101,
-            "away_score": 71,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "101-71",
-          "reason": "CONFIDENCE BET (v1.1, walled off) — Utah State Aggies, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +35.0/game; defensive rank 167th of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4374,25 +3307,15 @@
           "stake_m": 25,
           "price": 3.35,
           "paper": true,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "71-62",
           "tip_at": "2026-11-18T20:30:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 71,
-            "away_score": 62,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "71-62",
-          "reason": "UNDERDOG DESK (paper) — UC Riverside Highlanders @ 3.35, flat 25m paper, Underdog Desk pick #14. Named gap: the favourite San Diego trips the fragility screen once — its differential edge over the dog is -7.0 the wrong way (San Diego +8.7 v UC Riverside +15.7) — and UC Riverside defends better (67.8 allowed/game v 75.5) at the same 3-1 record. No real bet called on this game.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4409,25 +3332,15 @@
           "stake_m": 25,
           "price": 2.4,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "85-79",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 85,
-            "away_score": 79,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "85-79",
-          "reason": "BET — GRAND PICK: UConn Huskies, small 25m @ 2.40. Named gap (Kim Rule): the market favourite Arizona trips the fragility screen — its differential edge over the dog is -13.3 points/game (Arizona +13.2 v UConn +26.5), the wrong way entirely — while UConn holds the better record (4-0 v 3-1) and a far better defence (58.0 allowed/game, 16th of 365 nationally, v Arizona's 74.0, 223rd). No favourite on this slip trips the screen twice; this is the slip's clearest named gap. Whether the kings agree is recorded on the cards; the call stands on the frozen numbers either way.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4442,25 +3355,15 @@
           "stake_m": 25,
           "price": 1.002,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.05,
+          "final_score": "101-71",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 101,
-            "away_score": 71,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "101-71",
-          "reason": "CONFIDENCE BET (v1.1, walled off) — Utah State Aggies, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +35.0/game; defensive rank 167th of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4475,25 +3378,15 @@
           "stake_m": 25,
           "price": 1.0111,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.28,
+          "final_score": "88-65",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 88,
-            "away_score": 65,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "88-65",
-          "reason": "CONFIDENCE BET (v1.1, walled off) — Creighton Bluejays, 25m @ 1.0111. De-vig 96.26% >= 90% bar and 0 fragility trips (differential +9.3/game; defensive rank 120th of 365). The 1.0111 price is under the 1.15 floor, which the confidence rule expressly overrides.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4508,25 +3401,15 @@
           "stake_m": 25,
           "price": 1.002,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.05,
+          "final_score": "98-54",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 98,
-            "away_score": 54,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "98-54",
-          "reason": "CONFIDENCE BET (v1.1, walled off) — BYU Cougars, 25m @ 1.002. De-vig 97.61% >= 90% bar and 0 fragility trips (differential +20.7/game; defensive rank 251st of 365). The 1.002 price is under the 1.15 floor, which the confidence rule expressly overrides.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4541,25 +3424,15 @@
           "stake_m": 25,
           "price": 1.0154,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.39,
+          "final_score": "68-65",
           "tip_at": "2026-11-18T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 68,
-            "away_score": 65,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "68-65",
-          "reason": "CONFIDENCE BET (v1.1, walled off) — Arizona State Sun Devils, 25m @ 1.0154. De-vig 95.39% >= 90% bar and 0 fragility trips (differential +22.3/game; defensive rank 52nd of 365). The 1.0154 price is under the 1.15 floor, which the confidence rule expressly overrides.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4574,25 +3447,15 @@
           "stake_m": 25,
           "price": 1.0111,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.28,
+          "final_score": "97-51",
           "tip_at": "2026-11-18T21:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 97,
-            "away_score": 51,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "97-51",
-          "reason": "CONFIDENCE BET (v1.1, walled off) — San Diego State Aztecs, 25m @ 1.0111. De-vig 96.26% >= 90% bar and 0 fragility trips (differential +15.0/game; defensive rank 152nd of 365). The 1.0111 price is under the 1.15 floor, which the confidence rule expressly overrides.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4607,25 +3470,15 @@
           "stake_m": 25,
           "price": 3.35,
           "paper": true,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "71-62",
           "tip_at": "2026-11-18T20:30:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 71,
-            "away_score": 62,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "71-62",
-          "reason": "UNDERDOG DESK (paper) — UC Riverside Highlanders @ 3.35, flat 25m paper, Underdog Desk pick #14. Named gap: the favourite San Diego trips the fragility screen once — its differential edge over the dog is -7.0 the wrong way (San Diego +8.7 v UC Riverside +15.7) — and UC Riverside defends better (67.8 allowed/game v 75.5) at the same 3-1 record. No real bet called on this game.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -4890,25 +3743,15 @@
       "price": 2.4,
       "kind": "GRAND PICK",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
-      "final_score": null,
+      "final_score": "85-79",
       "tip_at": "2026-11-18T20:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 85,
-        "away_score": 79,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "85-79"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -4919,25 +3762,15 @@
       "price": 1.002,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.05,
       "fire": 1,
-      "final_score": null,
+      "final_score": "101-71",
       "tip_at": "2026-11-18T20:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 101,
-        "away_score": 71,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "101-71"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -4948,25 +3781,15 @@
       "price": 1.0111,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.28,
       "fire": 2,
-      "final_score": null,
+      "final_score": "88-65",
       "tip_at": "2026-11-18T20:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 88,
-        "away_score": 65,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "88-65"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -4977,25 +3800,15 @@
       "price": 1.002,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.05,
       "fire": 3,
-      "final_score": null,
+      "final_score": "98-54",
       "tip_at": "2026-11-18T20:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 98,
-        "away_score": 54,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "98-54"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -5006,25 +3819,15 @@
       "price": 1.0154,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.39,
       "fire": 4,
-      "final_score": null,
+      "final_score": "68-65",
       "tip_at": "2026-11-18T20:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 68,
-        "away_score": 65,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "68-65"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -5035,25 +3838,15 @@
       "price": 1.0111,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.28,
       "fire": 5,
-      "final_score": null,
+      "final_score": "97-51",
       "tip_at": "2026-11-18T21:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 97,
-        "away_score": 51,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "97-51"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 36,
@@ -5064,25 +3857,15 @@
       "price": 3.35,
       "kind": "UNDERDOG DESK",
       "paper": true,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
-      "final_score": null,
+      "final_score": "71-62",
       "tip_at": "2026-11-18T20:30:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 71,
-        "away_score": 62,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-18T23:30:39.376326-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "71-62"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     }
   ],
   "bankroll": {
@@ -5102,69 +3885,14 @@
         "reason": "dated before the reset date"
       }
     ],
-    "balance_m": 999999951.5,
-    "settled_pnl_m": -48.5,
-    "wins": 2,
-    "losses": 2,
-    "record": "2-2",
-    "winrate_pct": 50.0,
-    "pending_m": 150,
-    "pending": [
-      {
-        "slip": 36,
-        "kind": "GRAND PICK",
-        "game_id": "S36-03",
-        "pick": "UConn Huskies",
-        "stake_m": 25,
-        "price": 2.4,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 36,
-        "kind": "CONFIDENCE",
-        "game_id": "S36-06",
-        "pick": "Utah State Aggies",
-        "stake_m": 25,
-        "price": 1.002,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 36,
-        "kind": "CONFIDENCE",
-        "game_id": "S36-01",
-        "pick": "Creighton Bluejays",
-        "stake_m": 25,
-        "price": 1.0111,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 36,
-        "kind": "CONFIDENCE",
-        "game_id": "S36-08",
-        "pick": "BYU Cougars",
-        "stake_m": 25,
-        "price": 1.002,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 36,
-        "kind": "CONFIDENCE",
-        "game_id": "S36-09",
-        "pick": "Arizona State Sun Devils",
-        "stake_m": 25,
-        "price": 1.0154,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 36,
-        "kind": "CONFIDENCE",
-        "game_id": "S36-17",
-        "pick": "San Diego State Aztecs",
-        "stake_m": 25,
-        "price": 1.0111,
-        "status": "LOCKED"
-      }
-    ],
+    "balance_m": 999999927.55,
+    "settled_pnl_m": -72.45,
+    "wins": 7,
+    "losses": 3,
+    "record": "7-3",
+    "winrate_pct": 70.0,
+    "pending_m": 0,
+    "pending": [],
     "ledger": [
       {
         "slip": 34,
@@ -5209,6 +3937,72 @@
         "result": "WON",
         "pnl_m": 0.75,
         "balance_after_m": 999999951.5
+      },
+      {
+        "slip": 36,
+        "kind": "GRAND PICK",
+        "game_id": "S36-03",
+        "pick": "UConn Huskies",
+        "stake_m": 25,
+        "price": 2.4,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": 999999926.5
+      },
+      {
+        "slip": 36,
+        "kind": "CONFIDENCE",
+        "game_id": "S36-06",
+        "pick": "Utah State Aggies",
+        "stake_m": 25,
+        "price": 1.002,
+        "result": "WON",
+        "pnl_m": 0.05,
+        "balance_after_m": 999999926.55
+      },
+      {
+        "slip": 36,
+        "kind": "CONFIDENCE",
+        "game_id": "S36-01",
+        "pick": "Creighton Bluejays",
+        "stake_m": 25,
+        "price": 1.0111,
+        "result": "WON",
+        "pnl_m": 0.28,
+        "balance_after_m": 999999926.83
+      },
+      {
+        "slip": 36,
+        "kind": "CONFIDENCE",
+        "game_id": "S36-08",
+        "pick": "BYU Cougars",
+        "stake_m": 25,
+        "price": 1.002,
+        "result": "WON",
+        "pnl_m": 0.05,
+        "balance_after_m": 999999926.88
+      },
+      {
+        "slip": 36,
+        "kind": "CONFIDENCE",
+        "game_id": "S36-09",
+        "pick": "Arizona State Sun Devils",
+        "stake_m": 25,
+        "price": 1.0154,
+        "result": "WON",
+        "pnl_m": 0.39,
+        "balance_after_m": 999999927.27
+      },
+      {
+        "slip": 36,
+        "kind": "CONFIDENCE",
+        "game_id": "S36-17",
+        "pick": "San Diego State Aztecs",
+        "stake_m": 25,
+        "price": 1.0111,
+        "result": "WON",
+        "pnl_m": 0.28,
+        "balance_after_m": 999999927.55
       }
     ],
     "paper_excluded": [
@@ -5247,8 +4041,8 @@
     },
     "underdog_desk": {
       "wins": 6,
-      "losses": 7,
-      "pnl_m": 130.0
+      "losses": 8,
+      "pnl_m": 105.0
     },
     "draw_desk": {
       "wins": 2,
@@ -5257,7 +4051,7 @@
     }
   },
   "vault": {
-    "count": 206,
+    "count": 223,
     "next_opening": "2026-12-01"
   },
   "autopsy_challengers": [
