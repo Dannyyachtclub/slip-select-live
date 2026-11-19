@@ -1119,6 +1119,21 @@ def slip_context(number, relpath):
     m = DATE_RE.search(text.split("\n", 1)[0])
     if m:
         ctx["date"] = m.group(1)
+    else:
+        # some tracker headers print the date in words ("Wednesday
+        # Nov 18, 2026") instead of ISO — parse that form too, from
+        # the same first line, so a slip's date is never silently
+        # None (Slip #36's header is the case on file)
+        months = {name: i + 1 for i, name in enumerate(
+            ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"])}
+        mw = re.search(r"(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+                       r"[a-z]*\s+(\d{1,2}),\s+(\d{4})",
+                       text.split("\n", 1)[0])
+        if mw:
+            ctx["date"] = (f"{int(mw.group(3)):04d}-"
+                           f"{months[mw.group(1)]:02d}-"
+                           f"{int(mw.group(2)):02d}")
     return ctx
 
 
@@ -1197,27 +1212,29 @@ def build_bets(slips, contexts):
     return rows
 
 
-FIRST_TRACKED_SLIP = 36
-
-
 def build_bankroll(slips, contexts):
     """The LIVE bankroll — a tracked ledger of the CALLED bets only: the
     grand pick and EVERY confidence fire, each at its called stake as
-    recorded in the tracker. Scope: slips locked on/after the reset
-    date, starting with Slip #36 — the first slip locked after the
-    reset was declared (Slip #35 was already graded by then, so it is
-    pre-tracking history and never enters this ledger). The Underdog
-    Desk is paper by design: it rides on the cards but is EXCLUDED
-    here, and the exclusion is listed in paper_excluded. A slip's bets
-    sit in pending until the slip's tracker is GRADED — the two-source
-    grade is the only settlement event; the live overlay never settles
-    the bankroll. Nothing is invented: a graded bet whose game cannot
-    be settled from the graded record is reported under unsettled_m,
-    never guessed."""
+    recorded in the tracker. Scope (user directive 2026-11-18, v8 —
+    supersedes the original Slip-#36-first scope): every slip DATED
+    on/after the reset date in bankroll_config.json — the billion is
+    the system's ledger from the reset day itself, so the slips of
+    2026-11-18 (Slips #33, #34, #35 graded, #36 pending at the time of
+    the change) all count, and future slips join automatically by
+    date. The rule is keyed to the slip's date, never to a hardcoded
+    slip number. The Underdog Desk is paper by design: it rides on
+    the cards but is EXCLUDED here, and the exclusion is listed in
+    paper_excluded. A slip's bets sit in pending until the slip's
+    tracker is GRADED — the two-source grade is the only settlement
+    event; the live overlay never settles the bankroll. Nothing is
+    invented: a graded bet whose game cannot be settled from the
+    graded record is reported under unsettled_m, never guessed."""
     cfg = load_bankroll_config()
     start = cfg.get("start_m")
     reset = cfg.get("reset_date") or DEFAULT_BANKROLL_CONFIG["reset_date"]
     ledger, pending, paper_excluded = [], [], []
+    scoped = []
+    out_of_scope = []
     balance = start
     settled_pnl = 0.0
     wins = losses = 0
@@ -1225,12 +1242,16 @@ def build_bankroll(slips, contexts):
     unsettled_m = 0
     for slip in sorted(slips, key=lambda s: s["number"]):
         n = slip["number"]
-        if n < FIRST_TRACKED_SLIP:
-            continue
         ctx = contexts.get(n, {})
         sdate = ctx.get("date")
-        if sdate and sdate < reset:
+        if not sdate or sdate < reset:
+            out_of_scope.append({
+                "slip": n, "date": sdate,
+                "reason": ("no date on the tracker — cannot be placed "
+                           "in the date scope" if not sdate else
+                           "dated before the reset date")})
             continue
+        scoped.append(n)
         layer = ctx.get("bet_layer", {})
         counted = []
         if layer.get("GRAND PICK"):
@@ -1282,7 +1303,9 @@ def build_bankroll(slips, contexts):
         "start_m": start,
         "reset_date": reset,
         "since": reset,
-        "first_tracked_slip": FIRST_TRACKED_SLIP,
+        "first_tracked_slip": min(scoped) if scoped else None,
+        "scoped_slips": scoped,
+        "out_of_scope": out_of_scope,
         "balance_m": balance,
         "settled_pnl_m": settled_pnl,
         "wins": wins,
@@ -1295,9 +1318,9 @@ def build_bankroll(slips, contexts):
         "paper_excluded": paper_excluded,
         "unsettled_m": unsettled_m,
         "note": ("Called bets only — the grand pick and every confidence "
-                 "fire at their called stakes, from Slip #36 onward. The "
-                 "Underdog Desk is paper by design and never enters "
-                 "this ledger."),
+                 "fire at their called stakes, on every slip dated from "
+                 "the reset onward. The Underdog Desk is paper by design "
+                 "and never enters this ledger."),
     }
 
 
