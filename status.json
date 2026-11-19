@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T08:25:41.959898-06:00",
+  "generated_at": "2026-11-19T08:30:42.174037-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-19T07:53:08.381322-06:00",
+      "last_activity": "2026-11-19T08:29:05.976389-06:00",
       "headline": "VG21-BBH7580FLIP — 186-53, +28.37% fitted ROI"
     },
     {
@@ -154,14 +154,14 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T08:14:02.584361-06:00",
-      "headline": "Latest search cycle: 221"
+      "last_activity": "2026-11-19T08:29:12.144390-06:00",
+      "headline": "Latest search cycle: 222"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T08:23:15.201378-06:00",
+      "last_activity": "2026-11-19T08:30:14.358392-06:00",
       "headline": "Latest filing: P203"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 222 — 2026-11-19 08:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; kings tied to the cent on every run;…",
+      "at": "2026-11-19T08:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 221 — 2026-11-19 08:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T08:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 217 — 2026-11-19 07:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
       "at": "2026-11-19T07:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 216 — 2026-11-19 06:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call and on closing re-check — kings unchanged; two PASS audit runs byte-identical,…",
-      "at": "2026-11-19T06:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -804,6 +804,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P179: PER-SIDE BET-ACCEPTANCE DELAY ASYMMETRY FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G226;…",
+      "summary": "Filed Arena P179: PER-SIDE BET-ACCEPTANCE DELAY ASYMMETRY FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G226; classes c + i)",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P178: TIMEZONE-SHIFT (JET-LAG) SOFT-ANGLE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena…",
       "summary": "Filed Arena P178: TIMEZONE-SHIFT (JET-LAG) SOFT-ANGLE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena G225;…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -834,13 +841,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P174: PER-SIDE PREFILLED (DEFAULT) STAKE ASYMMETRY FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena…",
       "summary": "Filed Arena P174: PER-SIDE PREFILLED (DEFAULT) STAKE ASYMMETRY FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G221;…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P173: ELEVATION-DIFFERENTIAL / ACCLIMATISATION FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19,…",
-      "summary": "Filed Arena P173: ELEVATION-DIFFERENTIAL / ACCLIMATISATION FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena G220;…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -888,8 +888,8 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
-      "title": "R4-G91 (loop, 2026-11-19) — Vanguard generation on the VG21-BBH7580FLIP base",
-      "summary": "NO NEW KING — VG21-BBH7580FLIP stands (186-53, priced 227, +1609.73m, +28.37%). The generation's only above-king gate-sized headline,…",
+      "title": "R4-G92 (loop, 2026-11-19) — Vanguard generation on the VG21-BBH7580FLIP base",
+      "summary": "NO NEW KING — VG21-BBH7580FLIP stands (186-53, priced 227, +1609.73m, +28.37%). The generation's only above-king headline, V7…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
