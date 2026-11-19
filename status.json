@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T01:25:39.240252-06:00",
+  "generated_at": "2026-11-19T01:30:38.716847-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-19T00:56:33.303267-06:00",
+      "last_activity": "2026-11-19T01:26:25.796247-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO — 204-35, +63.22% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T01:15:44.670254-06:00",
+      "last_activity": "2026-11-19T01:29:49.826244-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T01:12:58.080256-06:00",
-      "headline": "Latest search cycle: 193"
+      "last_activity": "2026-11-19T01:27:37.831246-06:00",
+      "headline": "Latest search cycle: 194"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T01:25:37.217247-06:00",
-      "headline": "Latest filing: P154"
+      "last_activity": "2026-11-19T01:29:10.811245-06:00",
+      "headline": "Latest filing: P155"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 194 — 2026-11-19 01:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
+      "at": "2026-11-19T01:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 193 — 2026-11-19 01:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED on first call — kings unchanged; two PASS audit runs, byte-identical, registry signature sets…",
       "at": "2026-11-19T01:11:00-06:00"
@@ -726,6 +733,13 @@
     },
     {
       "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P155: SEEDING / MATCHUP-CHOICE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G198;…",
+      "summary": "Filed Arena P155: SEEDING / MATCHUP-CHOICE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-19, Arena G198; classes f + i)",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
       "kind": "generation",
       "title": "CYCLE 2026-11-19 (00:42 CST) — audit + hunt (classes d + e + f + c: sport-specific soccer / public lineup data / the house's chair / the…",
       "summary": "P144 POSITIONAL-DISPLACEMENT FREEZE (soccer — announced slot vs primary position: distance ≥ 2 favourite fade, displaced-dog flip veto,…",
@@ -760,10 +774,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
+      "agent": "Arena",
       "kind": "generation",
-      "title": "CYCLE 2026-11-19 (00:12 CST) — audit + hunt (classes e + a + f + g: public calendar data / quant research / the house's chair /…",
-      "summary": "P143 REARRANGED-FIXTURE FREEZE (team sports — originally published date vs actual date: brought-forward ≤ −2d favourite fade, postponed…",
+      "title": "Arena G198 — F3 THROW-INCENTIVE ASYMMETRY (forty-first visit) — 2026-11-19",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, no new best form — the sitting champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 keeps its crown,…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -818,6 +832,13 @@
     {
       "agent": "Regime",
       "kind": "generation",
+      "title": "R4-G444 (loop) — 2026-11-19, 239 set, vault sealed 223 rows by count only (overlap 0 in-script, never read for fitting), no intake by…",
+      "summary": "NO NEW KING. ZEROTRIPFRAG-DEAP2-TRIPS1VETO stands (204-35, +3603.80m, +63.22%). Best gate-eligible variant V2 MODELP8088FLIP REFUTED at…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Regime",
+      "kind": "generation",
       "title": "R4-G443 (loop) — 2026-11-19, 239 set, vault sealed 223 rows by count only (overlap 0 in-script, never read for fitting), no intake by…",
       "summary": "NO NEW KING. ZEROTRIPFRAG-DEAP2-TRIPS1VETO stands (204-35, +3603.80m, +63.22%). Best gate-eligible variant V18 DOGPEXACT500FLIP REFUTED…",
       "at": "2026-11-19T00:00:00-06:00"
@@ -851,13 +872,6 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 188 — 2026-11-18 23:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED after a routine STALE regeneration — kings unchanged; two PASS audit runs, byte-identical,…",
-      "at": "2026-11-18T23:56:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 25 — 2026-11-18",
@@ -876,20 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 23 — 2026-11-18",
       "summary": "Script: data_core/stakehunter_cycle23.py (new file only; written fresh this cycle).",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 22 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle22.py (new file only; reuses Cycle 21's stream builder read-only — the court has not changed since…",
-      "at": "2026-11-18T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 21 — 2026-11-18",
-      "summary": "Script: data_core/stakehunter_cycle21.py (new file only; reuses Cycle 20's stream builder read-only — the court has not changed since…",
       "at": "2026-11-18T00:00:00-06:00"
     }
   ],
