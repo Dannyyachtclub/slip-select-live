@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:40:44.722620-06:00",
+  "generated_at": "2026-11-20T06:45:54.165781-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-20T06:19:10.401655-06:00",
+      "last_activity": "2026-11-20T06:45:27.310722-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP — 212-27, +68.46% fitted ROI"
     },
     {
@@ -147,36 +147,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T06:31:00.816685-06:00",
+      "last_activity": "2026-11-20T06:45:07.697721-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T06:27:26.248676-06:00",
-      "headline": "Latest search cycle: 310"
+      "last_activity": "2026-11-20T06:42:26.204714-06:00",
+      "headline": "Latest search cycle: 311"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T06:29:59.356683-06:00",
+      "last_activity": "2026-11-20T06:44:46.054720-06:00",
       "headline": "Latest filing: P286"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T06:13:36.517641-06:00",
+      "last_activity": "2026-11-20T06:43:36.632717-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T06:15:19.260645-06:00",
-      "headline": "Cycle 86: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-20T06:45:42.149723-06:00",
+      "headline": "Cycle 87: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 86,
+    "latest_cycle": 87,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 311 — 2026-11-20 06:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T06:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 310 — 2026-11-20 06:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T06:26:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-20T05:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 305 — 2026-11-20 05:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
-      "at": "2026-11-20T05:11:00-06:00"
+      "title": "CYCLE 87 — 2026-11-20",
+      "summary": "Script: data_core/stakehunter_cycle87.py (new file only; stream builder written fresh this cycle against court_state.json). Firewall…",
+      "at": "2026-11-20T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -769,6 +776,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P276: SNOWPACK FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G315; classes f + c)",
+      "summary": "Filed Arena P276: SNOWPACK FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G315; classes f + c)",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "ARENA FILING — Arena P275: THROW-INS-SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G314; classes f + i)",
       "summary": "Filed Arena P275: THROW-INS-SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G314; classes f + i)",
       "at": "2026-11-20T00:00:00-06:00"
@@ -802,10 +816,10 @@
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P270: HABOOB / DUST-WALL VISIBILITY FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G310;…",
-      "summary": "Filed Arena P270: HABOOB / DUST-WALL VISIBILITY FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G310; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G315 — F5 SOFT-ANGLE EXTREMES (sixty-fifth visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G315, no branch DEAD, and no new best form — MILESTONE: NEEDS-FREEZE spec Arena P276 (snowpack freeze:…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -844,13 +858,6 @@
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G309 — F4 CROSS-REFERENCE (sixtieth visit) — 2026-11-20",
-      "summary": "Verdict: NO NEW ARENA CHAMPION in G309, no branch DEAD, and no new best form — MILESTONE: NEEDS-FREEZE spec Arena P269 (foul-share…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G127 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "R4-G123 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Only above-king headline SUB-GATE: V14a SPLIT…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G122 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
-      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Only above-king headline SUB-GATE, counted once:…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:40:39.304157-06:00",
+            "fetched_at": "2026-11-20T06:45:50.389870-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:40:39.304157-06:00",
+            "fetched_at": "2026-11-20T06:45:50.389870-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T06:40:39.304157-06:00",
+            "fetched_at": "2026-11-20T06:45:50.389870-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:40:39.304157-06:00",
+            "fetched_at": "2026-11-20T06:45:50.389870-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:40:39.304157-06:00",
+            "fetched_at": "2026-11-20T06:45:50.389870-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T06:40:39.304157-06:00",
+        "fetched_at": "2026-11-20T06:45:50.389870-06:00",
         "source": "ESPN",
         "official": false
       },
