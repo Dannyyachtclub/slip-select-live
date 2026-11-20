@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T08:40:55.519464-06:00",
+  "generated_at": "2026-11-20T08:45:47.507058-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-20T07:29:04.893833-06:00",
+      "last_activity": "2026-11-20T08:41:28.814398-06:00",
       "headline": "VG24-BRANDDV75HOMEONLY — 188-51, +32.48% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T08:28:32.772401-06:00",
-      "headline": "Latest search cycle: 318"
+      "last_activity": "2026-11-20T08:43:24.042397-06:00",
+      "headline": "Latest search cycle: 319"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T08:13:48.533404-06:00",
+      "last_activity": "2026-11-20T08:43:40.404397-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T08:16:16.396404-06:00",
+      "last_activity": "2026-11-20T08:44:25.541397-06:00",
       "headline": "Cycle 90: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 319 — 2026-11-20 08:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T08:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 318 — 2026-11-20 08:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T08:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 314 — 2026-11-20 07:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T07:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 313 — 2026-11-20 07:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T07:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -859,6 +859,13 @@
     },
     {
       "agent": "Vanguard",
+      "kind": "generation",
+      "title": "R4-G130 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
+      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Above-king headlines, all gate-blocked: V27 MERGE…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
       "kind": "gate-refusal",
       "title": "R4-G129 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Two above-king headlines, both GATE-REFUSED: V10…",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "R4-G126 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). NO variant above the king on P&L — nothing…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G125 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
-      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). NO variant above the king in any form — nothing…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T08:40:48.147678-06:00",
+            "fetched_at": "2026-11-20T08:45:42.288082-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T08:40:48.147678-06:00",
+            "fetched_at": "2026-11-20T08:45:42.288082-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T08:40:48.147678-06:00",
+            "fetched_at": "2026-11-20T08:45:42.288082-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T08:40:48.147678-06:00",
+            "fetched_at": "2026-11-20T08:45:42.288082-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T08:40:48.147678-06:00",
+            "fetched_at": "2026-11-20T08:45:42.288082-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T08:40:48.147678-06:00",
+        "fetched_at": "2026-11-20T08:45:42.288082-06:00",
         "source": "ESPN",
         "official": false
       },
