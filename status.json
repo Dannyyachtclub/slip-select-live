@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T12:40:46.467067-06:00",
+  "generated_at": "2026-11-20T12:45:47.578411-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-20T12:05:13.344587-06:00",
+      "last_activity": "2026-11-20T12:42:02.494539-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15 — 208-31, +63.24% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T12:27:18.012505-06:00",
-      "headline": "Latest search cycle: 334"
+      "last_activity": "2026-11-20T12:42:24.970540-06:00",
+      "headline": "Latest search cycle: 335"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T12:13:28.812472-06:00",
+      "last_activity": "2026-11-20T12:44:16.438544-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T12:16:00.723478-06:00",
+      "last_activity": "2026-11-20T12:45:29.890547-06:00",
       "headline": "Cycle 90: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 335 — 2026-11-20 12:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T12:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 334 — 2026-11-20 12:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T12:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 330 — 2026-11-20 11:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T11:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 329 — 2026-11-20 11:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T11:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7035,12 +7035,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 42,
-            "away_score": 51,
-            "clock": "0:00",
-            "period": 1,
-            "detail": "Halftime",
-            "fetched_at": "2026-11-20T12:40:41.389129-06:00",
+            "home_score": 44,
+            "away_score": 53,
+            "clock": "18:30",
+            "period": 2,
+            "detail": "18:30 - 2nd",
+            "fetched_at": "2026-11-20T12:45:43.048211-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7114,12 +7114,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 44,
-            "away_score": 41,
-            "clock": "16:01",
+            "home_score": 48,
+            "away_score": 42,
+            "clock": "14:57",
             "period": 2,
-            "detail": "16:01 - 2nd",
-            "fetched_at": "2026-11-20T12:40:41.389129-06:00",
+            "detail": "14:57 - 2nd",
+            "fetched_at": "2026-11-20T12:45:43.048211-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T12:40:41.389129-06:00",
+            "fetched_at": "2026-11-20T12:45:43.048211-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7763,12 +7763,12 @@
           "tip_at": "2026-11-20T11:30:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 42,
-            "away_score": 51,
-            "clock": "0:00",
-            "period": 1,
-            "detail": "Halftime",
-            "fetched_at": "2026-11-20T12:40:41.389129-06:00",
+            "home_score": 44,
+            "away_score": 53,
+            "clock": "18:30",
+            "period": 2,
+            "detail": "18:30 - 2nd",
+            "fetched_at": "2026-11-20T12:45:43.048211-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7820,12 +7820,12 @@
           "tip_at": "2026-11-20T11:30:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 42,
-            "away_score": 51,
-            "clock": "0:00",
-            "period": 1,
-            "detail": "Halftime",
-            "fetched_at": "2026-11-20T12:40:41.389129-06:00",
+            "home_score": 44,
+            "away_score": 53,
+            "clock": "18:30",
+            "period": 2,
+            "detail": "18:30 - 2nd",
+            "fetched_at": "2026-11-20T12:45:43.048211-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8458,12 +8458,12 @@
       "tip_at": "2026-11-20T11:30:00-06:00",
       "live": {
         "state": "in",
-        "home_score": 42,
-        "away_score": 51,
-        "clock": "0:00",
-        "period": 1,
-        "detail": "Halftime",
-        "fetched_at": "2026-11-20T12:40:41.389129-06:00",
+        "home_score": 44,
+        "away_score": 53,
+        "clock": "18:30",
+        "period": 2,
+        "detail": "18:30 - 2nd",
+        "fetched_at": "2026-11-20T12:45:43.048211-06:00",
         "source": "ESPN",
         "official": false
       },
