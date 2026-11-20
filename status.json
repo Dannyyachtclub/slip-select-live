@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:25:44.402359-06:00",
+  "generated_at": "2026-11-20T06:30:47.873251-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-20T06:01:04.047609-06:00",
+      "last_activity": "2026-11-20T06:29:24.930681-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15 — 208-31, +63.24% fitted ROI"
     },
     {
@@ -154,14 +154,14 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T06:13:47.785641-06:00",
-      "headline": "Latest search cycle: 309"
+      "last_activity": "2026-11-20T06:27:26.248676-06:00",
+      "headline": "Latest search cycle: 310"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T06:22:40.889664-06:00",
+      "last_activity": "2026-11-20T06:29:59.356683-06:00",
       "headline": "Latest filing: P286"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 310 — 2026-11-20 06:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T06:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 309 — 2026-11-20 06:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T06:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 305 — 2026-11-20 05:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
       "at": "2026-11-20T05:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 304 — 2026-11-20 04:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
-      "at": "2026-11-20T04:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -769,6 +769,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "ARENA FILING — Arena P275: THROW-INS-SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G314; classes f + i)",
+      "summary": "Filed Arena P275: THROW-INS-SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G314; classes f + i)",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "CYCLE 2026-11-20 (06:12 CST) — audit + hunt (classes d + e + f: sport-specific basketball / public transaction-wire data / the house's…",
       "summary": "P284 ASSIGNMENT-DAY FREEZE — FILED as collector proposal P284 (number drawn from the spec-number authority before writing; census-first,…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -799,13 +806,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P270: HABOOB / DUST-WALL VISIBILITY FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G310;…",
       "summary": "Filed Arena P270: HABOOB / DUST-WALL VISIBILITY FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G310; classes f + i)",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (05:12 CST) — audit + hunt (classes a + e + d + f: quant research / public schedule data / sport-specific team sports /…",
-      "summary": "P282 SEASON-PHASE MISMATCH / GAMES-PLAYED GAP FREEZE — FILED as collector proposal P282 (number drawn from the spec-number authority…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:25:40.694845-06:00",
+            "fetched_at": "2026-11-20T06:30:44.095090-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:25:40.694845-06:00",
+            "fetched_at": "2026-11-20T06:30:44.095090-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T06:25:40.694845-06:00",
+            "fetched_at": "2026-11-20T06:30:44.095090-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:25:40.694845-06:00",
+            "fetched_at": "2026-11-20T06:30:44.095090-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:25:40.694845-06:00",
+            "fetched_at": "2026-11-20T06:30:44.095090-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T06:25:40.694845-06:00",
+        "fetched_at": "2026-11-20T06:30:44.095090-06:00",
         "source": "ESPN",
         "official": false
       },
