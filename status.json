@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:10:47.056604-06:00",
+  "generated_at": "2026-11-20T15:15:56.108231-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,35 +147,35 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T15:00:33.091006-06:00",
+      "last_activity": "2026-11-20T15:15:49.731045-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T14:57:28.473998-06:00",
-      "headline": "Latest search cycle: 344"
+      "last_activity": "2026-11-20T15:13:02.685038-06:00",
+      "headline": "Latest search cycle: 345"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T14:59:15.742003-06:00",
+      "last_activity": "2026-11-20T15:15:19.435044-06:00",
       "headline": "Latest filing: P315"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T14:43:36.094963-06:00",
+      "last_activity": "2026-11-20T15:13:34.104039-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T14:45:22.942967-06:00",
+      "last_activity": "2026-11-20T15:15:22.428044-06:00",
       "headline": "Cycle 90: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 345 — 2026-11-20 15:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T15:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 344 — 2026-11-20 14:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T14:56:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 340 — 2026-11-20 13:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T13:56:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 339 — 2026-11-20 13:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T13:41:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -818,6 +818,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G349 — F4 CROSS-REFERENCE (sixty-ninth visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G349, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond its dead testable branch.…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G348 — F3 THROW-INCENTIVE ASYMMETRY (seventy-fourth visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G348, no branch DEAD, and no new best form — F3 remains gated by its sitting champion…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -848,13 +855,6 @@
       "kind": "generation",
       "title": "Arena G344 — F4 CROSS-REFERENCE (sixty-eighth visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G344, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond its dead testable branch.…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G343 — F3 THROW-INCENTIVE ASYMMETRY (seventy-third visit) — 2026-11-20",
-      "summary": "Verdict: NO ARENA CHAMPION in G343, no branch DEAD, and no new best form — F3 remains gated by its sitting champion…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:10:39.893949-06:00",
+            "fetched_at": "2026-11-20T15:15:48.605561-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:10:39.893949-06:00",
+            "fetched_at": "2026-11-20T15:15:48.605561-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:10:39.893949-06:00",
+            "fetched_at": "2026-11-20T15:15:48.605561-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:10:39.893949-06:00",
+            "fetched_at": "2026-11-20T15:15:48.605561-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:10:39.893949-06:00",
+            "fetched_at": "2026-11-20T15:15:48.605561-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T15:10:39.893949-06:00",
+        "fetched_at": "2026-11-20T15:15:48.605561-06:00",
         "source": "ESPN",
         "official": false
       },
