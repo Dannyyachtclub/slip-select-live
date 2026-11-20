@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T04:40:44.882900-06:00",
+  "generated_at": "2026-11-20T04:45:45.671933-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,36 +147,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T04:29:52.976748-06:00",
+      "last_activity": "2026-11-20T04:43:23.021773-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T04:27:04.891742-06:00",
-      "headline": "Latest search cycle: 302"
+      "last_activity": "2026-11-20T04:43:22.242773-06:00",
+      "headline": "Latest search cycle: 303"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T04:29:29.766747-06:00",
+      "last_activity": "2026-11-20T04:43:02.035772-06:00",
       "headline": "Latest filing: P279"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T04:13:08.344716-06:00",
+      "last_activity": "2026-11-20T04:43:14.154773-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T04:14:52.461720-06:00",
-      "headline": "Cycle 82: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-20T04:44:49.882776-06:00",
+      "headline": "Cycle 83: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 82,
+    "latest_cycle": 83,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 303 — 2026-11-20 04:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
+      "at": "2026-11-20T04:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 302 — 2026-11-20 04:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
       "at": "2026-11-20T04:26:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-20T03:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 297 — 2026-11-20 03:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
-      "at": "2026-11-20T03:11:00-06:00"
+      "title": "CYCLE 83 — 2026-11-20",
+      "summary": "Script: data_core/stakehunter_cycle83.py (new file only; stream builder written fresh this cycle against court_state.json). Firewall…",
+      "at": "2026-11-20T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -736,6 +743,13 @@
       "kind": "generation",
       "title": "CYCLE 37 — 2026-11-20 — Slice 6 RE-AUTOPSY under the GRID8090OVRHIXHOME-Quantum kings (SINGLE-KING blind spots)",
       "summary": "The GRID8090OVRHIXHOME Quantum crown did three things at once: it banked +125.00m on S25-04, spent −29.25m on BB2-06 (a loss the…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P267: REJECTED-RETRY SHARE FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-20, Arena…",
+      "summary": "Filed Arena P267: REJECTED-RETRY SHARE FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-20, Arena G307; classes…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -774,10 +788,10 @@
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P263: APPEARANCE-THRESHOLD STARTER SHARE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-20,…",
-      "summary": "Filed Arena P263: APPEARANCE-THRESHOLD STARTER SHARE FREEZE (serves ARENA F3, throw-incentive asymmetry; filed 2026-11-20, Arena G303;…",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G307 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (sixty-fifth visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G307, no branch DEAD, and no new best form — MILESTONE: NEEDS-FREEZE spec Arena P267 (rejected-retry share…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -813,13 +827,6 @@
       "kind": "generation",
       "title": "Arena G302 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (sixty-fourth visit) — 2026-11-20",
       "summary": "All computation through data_core/engine.py via arena_g302.py + outcome-blind census arena_g302_audit_census.py. Set: 239 rows…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G301 — F1 HOUSE-VIEW (sixty-third visit) — 2026-11-20",
-      "summary": "All computation through data_core/engine.py via arena_g301.py + outcome-blind census arena_g301_audit_census.py. Set: 239 rows…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "gate-refusal",
       "title": "SELECTOR R4-G309 (loop) — 2026-11-20, 239-game set",
       "summary": "NO NEW KING. NOFAVP stands (212-27, +3868.25m, +68.46%). One above-king headline GATE-REFUSED ON COUNT: V26 TIGHTEN CROWN DV<65 (queued…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G308 (loop) — 2026-11-20, 239-game set",
-      "summary": "NO NEW KING. NOFAVP stands RE-BASED on the new Quantum king (212-27, +3868.25m, +68.46%), re-run FIRST and tied EXACTLY to the G491…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T04:40:42.452171-06:00",
+            "fetched_at": "2026-11-20T04:45:43.135103-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T04:40:42.452171-06:00",
+            "fetched_at": "2026-11-20T04:45:43.135103-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T04:40:42.452171-06:00",
+            "fetched_at": "2026-11-20T04:45:43.135103-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T04:40:42.452171-06:00",
+            "fetched_at": "2026-11-20T04:45:43.135103-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T04:40:42.452171-06:00",
+            "fetched_at": "2026-11-20T04:45:43.135103-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T04:40:42.452171-06:00",
+        "fetched_at": "2026-11-20T04:45:43.135103-06:00",
         "source": "ESPN",
         "official": false
       },
