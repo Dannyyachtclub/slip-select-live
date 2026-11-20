@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T06:10:45.034079-06:00",
+  "generated_at": "2026-11-20T06:15:43.354824-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-20T05:39:26.916878-06:00",
+      "last_activity": "2026-11-20T06:13:20.612640-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -147,36 +147,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T05:59:55.939606-06:00",
+      "last_activity": "2026-11-20T06:14:55.908644-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T05:57:13.337599-06:00",
-      "headline": "Latest search cycle: 308"
+      "last_activity": "2026-11-20T06:13:47.785641-06:00",
+      "headline": "Latest search cycle: 309"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T05:58:53.086603-06:00",
-      "headline": "Latest filing: P283"
+      "last_activity": "2026-11-20T06:15:28.525645-06:00",
+      "headline": "Latest filing: P286"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T05:43:44.591886-06:00",
+      "last_activity": "2026-11-20T06:13:36.517641-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T05:45:59.068570-06:00",
-      "headline": "Cycle 85: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-20T06:15:19.260645-06:00",
+      "headline": "Cycle 86: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 85,
+    "latest_cycle": 86,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 309 — 2026-11-20 06:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T06:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 308 — 2026-11-20 05:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T05:56:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-20T04:56:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 303 — 2026-11-20 04:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
-      "at": "2026-11-20T04:41:00-06:00"
+      "title": "CYCLE 86 — 2026-11-20",
+      "summary": "Script: data_core/stakehunter_cycle86.py (new file only; stream builder written fresh this cycle against court_state.json). Firewall…",
+      "at": "2026-11-20T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -804,6 +811,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G313 — F3 THROW-INCENTIVE ASYMMETRY (sixty-seventh visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G313, no branch DEAD, and no new best form — F3 remains with its gated champion as its only testable best…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G312 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (sixty-sixth visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G312, no branch DEAD, and no new best form — F2 remains parked beyond the steam control. MILESTONE:…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -834,13 +848,6 @@
       "kind": "generation",
       "title": "Arena G308 — F3 THROW-INCENTIVE ASYMMETRY (sixty-sixth visit) — 2026-11-20",
       "summary": "Verdict: NO NEW ARENA CHAMPION in G308, no branch DEAD, and no new best form — MILESTONE: NEEDS-FREEZE spec Arena P268 (award-ballot…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G307 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (sixty-fifth visit) — 2026-11-20",
-      "summary": "Verdict: NO ARENA CHAMPION in G307, no branch DEAD, and no new best form — MILESTONE: NEEDS-FREEZE spec Arena P267 (rejected-retry share…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "R4-G121 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Only above-king P&L headline V14 SPLIT clause19…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G314 (loop) — 2026-11-20, 239-game set",
-      "summary": "NO NEW KING. NOFAVP stands (212-27, +3868.25m, +68.46%). Best gate-eligible variant V24 INVERSION NOTCH / V27 ABLATION NOTCH…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:10:41.336686-06:00",
+            "fetched_at": "2026-11-20T06:15:38.870099-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:10:41.336686-06:00",
+            "fetched_at": "2026-11-20T06:15:38.870099-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T06:10:41.336686-06:00",
+            "fetched_at": "2026-11-20T06:15:38.870099-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:10:41.336686-06:00",
+            "fetched_at": "2026-11-20T06:15:38.870099-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T06:10:41.336686-06:00",
+            "fetched_at": "2026-11-20T06:15:38.870099-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T06:10:41.336686-06:00",
+        "fetched_at": "2026-11-20T06:15:38.870099-06:00",
         "source": "ESPN",
         "official": false
       },
