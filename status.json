@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:10:47.652230-06:00",
+  "generated_at": "2026-11-20T00:15:46.342729-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-19T23:45:36.001677-06:00",
+      "last_activity": "2026-11-20T00:15:30.439177-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -147,35 +147,35 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T00:02:06.170719-06:00",
+      "last_activity": "2026-11-20T00:15:29.110177-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T23:57:35.048708-06:00",
-      "headline": "Latest search cycle: 284"
+      "last_activity": "2026-11-20T00:12:33.017170-06:00",
+      "headline": "Latest search cycle: 285"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T00:00:59.352718-06:00",
-      "headline": "Latest filing: P255"
+      "last_activity": "2026-11-20T00:15:20.131176-06:00",
+      "headline": "Latest filing: P261"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T23:43:07.216671-06:00",
+      "last_activity": "2026-11-20T00:13:24.689172-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T23:45:11.559676-06:00",
+      "last_activity": "2026-11-20T00:14:58.919176-06:00",
       "headline": "Cycle 66: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -683,10 +683,52 @@
   },
   "activity": [
     {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 285 — 2026-11-20 00:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with identical kings, no regeneration by this loop; the three discovery kings…",
+      "at": "2026-11-20T00:11:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P248: OVER-SHARE (TOTALS) FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G289; classes f + i)",
+      "summary": "Filed Arena P248: OVER-SHARE (TOTALS) FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G289; classes f + i)",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G289 — F4 CROSS-REFERENCE (fifty-seventh visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G289, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond the D8 control.…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Quantum",
+      "kind": "generation",
+      "title": "R4-G485 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO stands (204-35, +3649.93m, +63.75%). NO variant above the king in any form — nothing was…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Regime",
+      "kind": "generation",
+      "title": "Regime R4-G485 (loop, 2026-11-20)",
+      "summary": "NO NEW KING — ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO (grand king) stands (207-32, priced 228, +3679.70m, +64.56%). The only…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
       "agent": "Legacy",
       "kind": "gate-refusal",
       "title": "R4-G486 (loop, 2026-11-20) — NO NEW KING (one gate-refused headline)",
       "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15 stands (208-31, +3620.48m, +63.24%). One above-king headline GATE-REFUSED ON ACCURACY: V5…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
+      "kind": "generation",
+      "title": "R4-G485 (loop, 2026-11-19) — NO NEW KING",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15 stands (208-31, +3620.48m, +63.24%). NO variant above the king in any form — nothing was…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -723,13 +765,6 @@
       "title": "CYCLE 280 — 2026-11-19 22:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with identical kings, no regeneration needed; the three discovery kings tied…",
       "at": "2026-11-19T22:56:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 279 — 2026-11-19 22:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT, SEARCHED, NO CROWN: verify_court_state PASSED at start and close with all five kings tied to the cent (Quantum king now…",
-      "at": "2026-11-19T22:41:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -851,45 +886,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P243: HAIL FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena G285; classes f + i)",
-      "summary": "Filed Arena P243: HAIL FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-19, Arena G285; classes f + i)",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
       "agent": "Arena",
       "kind": "generation",
       "title": "Arena G288 — F3 THROW-INCENTIVE ASYMMETRY (sixty-second visit) — 2026-11-19",
       "summary": "Verdict: NO ARENA CHAMPION in G288, no branch DEAD, and no new best form — F3 remains NEEDS-FREEZE only beyond its sitting champion,…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G287 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (sixty-first visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION in G287, no branch DEAD, and no new best form — F2 remains parked in full; the family has no testable best…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G286 — F1 HOUSE-VIEW (sixtieth visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION in G286, no branch DEAD, and no new best form — F1's testable best remains the F-E note, which replicated…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G285 — F5 SOFT-ANGLE EXTREMES (fifty-ninth visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION in G285, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond the K-A note, which…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G284 — F4 CROSS-REFERENCE (fifty-sixth visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION in G284, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE: NEEDS-FREEZE spec…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T00:10:44.820043-06:00",
+            "fetched_at": "2026-11-20T00:15:43.555461-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T00:10:44.820043-06:00",
+            "fetched_at": "2026-11-20T00:15:43.555461-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T00:10:44.820043-06:00",
+            "fetched_at": "2026-11-20T00:15:43.555461-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T00:10:44.820043-06:00",
+            "fetched_at": "2026-11-20T00:15:43.555461-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T00:10:44.820043-06:00",
+            "fetched_at": "2026-11-20T00:15:43.555461-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T00:10:44.820043-06:00",
+        "fetched_at": "2026-11-20T00:15:43.555461-06:00",
         "source": "ESPN",
         "official": false
       },
