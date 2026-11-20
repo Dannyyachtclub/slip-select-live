@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T02:40:48.541725-06:00",
+  "generated_at": "2026-11-20T02:45:46.284181-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -45,24 +45,24 @@
     },
     {
       "court": "Quantum",
-      "name": "DEVIG538FLIP-DEAP4-DOGGE10VETO",
+      "name": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME",
       "grand_king": false,
       "wins": 204,
       "losses": 35,
       "priced": 229,
-      "pnl_m": 3649.93,
-      "roi_pct": 63.75,
+      "pnl_m": 3745.68,
+      "roi_pct": 65.43,
       "set_size": 239,
       "dog_line": {
-        "picks": 68,
-        "wins": 50,
-        "losses": 18,
-        "priced": 65,
-        "pnl_m": 1850.9,
-        "roi_pct": 113.9
+        "picks": 71,
+        "wins": 51,
+        "losses": 20,
+        "priced": 68,
+        "pnl_m": 1900.9,
+        "roi_pct": 111.82
       },
       "stamp": null,
-      "crowned_on": "2026-11-19"
+      "crowned_on": "2026-11-20"
     },
     {
       "court": "Selector",
@@ -126,8 +126,8 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-20T02:17:38.758843-06:00",
-      "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO — 204-35, +63.75% fitted ROI"
+      "last_activity": "2026-11-20T02:44:15.450219-06:00",
+      "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
       "name": "Selector",
@@ -147,35 +147,35 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T02:28:29.822868-06:00",
+      "last_activity": "2026-11-20T02:44:43.513906-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T02:27:40.573866-06:00",
-      "headline": "Latest search cycle: 294"
+      "last_activity": "2026-11-20T02:42:10.346900-06:00",
+      "headline": "Latest search cycle: 295"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T02:28:04.042867-06:00",
+      "last_activity": "2026-11-20T02:43:56.481904-06:00",
       "headline": "Latest filing: P271"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T02:13:21.038833-06:00",
+      "last_activity": "2026-11-20T02:43:14.840902-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T02:14:51.860836-06:00",
+      "last_activity": "2026-11-20T02:44:48.009906-06:00",
       "headline": "Cycle 66: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 295 — 2026-11-20 02:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
+      "at": "2026-11-20T02:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 294 — 2026-11-20 02:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with no regeneration needed by this loop; the three discovery kings tied to…",
       "at": "2026-11-20T02:26:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-20T01:26:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 289 — 2026-11-20 01:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at start and close with identical kings, no regeneration by this loop; the three discovery kings…",
-      "at": "2026-11-20T01:11:00-06:00"
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P258: CORNERS-SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G299)",
+      "summary": "Filed Arena P258: CORNERS-SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-20, Arena G299)",
+      "at": "2026-11-20T00:00:00-06:00"
     },
     {
       "agent": "Edge Finder",
@@ -760,10 +767,10 @@
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P254: STORM-SURGE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G295; classes f + i)",
-      "summary": "Filed Arena P254: STORM-SURGE FREEZE (serves ARENA F5, soft-angle extremes; filed 2026-11-20, Arena G295; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G299 — F4 CROSS-REFERENCE (fifty-ninth visit) — 2026-11-20",
+      "summary": "All computation through data_core/engine.py via arena_g299.py + outcome-blind census arena_g299_audit_census.py. Set: 239 rows…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -799,13 +806,6 @@
       "kind": "generation",
       "title": "Arena G292 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (sixty-second visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G292, no branch DEAD, and no new best form — F2 remains parked in full; the family has no testable best…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G291 — F1 HOUSE-VIEW (sixty-first visit) — 2026-11-20",
-      "summary": "Verdict: NO ARENA CHAMPION in G291, no branch DEAD, and no new best form — F-E remains F1's best form (standalone note). MILESTONE:…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -880,16 +880,16 @@
     },
     {
       "agent": "Quantum",
-      "kind": "generation",
-      "title": "Quantum R4-G490 (loop, 2026-11-20)",
-      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO stands (204-35, +3649.93m, +63.75%). Two above-king headlines (V17 +65.39%, V18 +66.31%)…",
+      "kind": "crown",
+      "title": "Quantum R4-G491 (loop, 2026-11-20)",
+      "summary": "NEW QUANTUM KING CROWNED. DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME stands (204-35, +3745.68m, +65.43%, §16 stamp PROVISIONAL)…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
       "agent": "Quantum",
       "kind": "generation",
-      "title": "R4-G489 (loop, 2026-11-20) — NO NEW KING",
-      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO stands (204-35, +3649.93m, +63.75%). NO variant above the king in any form — nothing was…",
+      "title": "Quantum R4-G490 (loop, 2026-11-20)",
+      "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO stands (204-35, +3649.93m, +63.75%). Two above-king headlines (V17 +65.39%, V18 +66.31%)…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T02:40:39.480017-06:00",
+            "fetched_at": "2026-11-20T02:45:40.656913-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T02:40:39.480017-06:00",
+            "fetched_at": "2026-11-20T02:45:40.656913-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T02:40:39.480017-06:00",
+            "fetched_at": "2026-11-20T02:45:40.656913-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T02:40:39.480017-06:00",
+            "fetched_at": "2026-11-20T02:45:40.656913-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T02:40:39.480017-06:00",
+            "fetched_at": "2026-11-20T02:45:40.656913-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T02:40:39.480017-06:00",
+        "fetched_at": "2026-11-20T02:45:40.656913-06:00",
         "source": "ESPN",
         "official": false
       },
