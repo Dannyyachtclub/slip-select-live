@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T18:01:09.842193-06:00",
+  "generated_at": "2026-11-19T18:05:55.579172-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T17:42:57.259941-06:00",
-      "headline": "Latest search cycle: 259"
+      "last_activity": "2026-11-19T18:01:20.030922-06:00",
+      "headline": "Latest search cycle: 260"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 260 — 2026-11-19 17:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
+      "at": "2026-11-19T17:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 259 — 2026-11-19 17:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
       "at": "2026-11-19T17:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 255 — 2026-11-19 16:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical discovery kings and no regeneration…",
       "at": "2026-11-19T16:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 254 — 2026-11-19 16:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical discovery kings and no regeneration…",
-      "at": "2026-11-19T16:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -5454,7 +5454,7 @@
         "games_total": 32,
         "games_ended": 0,
         "games_live_final": 1,
-        "games_live_in": 3
+        "games_live_in": 8
       },
       "games_list": [
         {
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6876,11 +6876,11 @@
           "live": {
             "state": "in",
             "home_score": 72,
-            "away_score": 69,
-            "clock": "4:20",
+            "away_score": 70,
+            "clock": "3:28",
             "period": 2,
-            "detail": "4:20 - 2nd",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "detail": "3:28 - 2nd",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7094,10 +7094,10 @@
             "state": "in",
             "home_score": 2,
             "away_score": 1,
-            "clock": "69'",
+            "clock": "75'",
             "period": 2,
-            "detail": "69'",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "detail": "75'",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": "0:00",
             "period": 1,
             "detail": "Halftime",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7388,17 +7388,17 @@
           "price": 1.058,
           "outcome": null,
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 8,
+            "away_score": 9,
+            "clock": "17:39",
+            "period": 1,
+            "detail": "17:39 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "detail": {
             "home": "Butler Bulldogs",
@@ -7467,17 +7467,17 @@
           "price": 1.083,
           "outcome": null,
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 5,
+            "away_score": 6,
+            "clock": "17:20",
+            "period": 1,
+            "detail": "17:20 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "detail": {
             "home": "High Point Panthers",
@@ -7546,17 +7546,17 @@
           "price": 1.704,
           "outcome": null,
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 4,
+            "away_score": 2,
+            "clock": "18:00",
+            "period": 1,
+            "detail": "18:00 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "detail": {
             "home": "Jacksonville Dolphins",
@@ -7625,17 +7625,17 @@
           "price": 1.002,
           "outcome": null,
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 5,
+            "away_score": 3,
+            "clock": "17:17",
+            "period": 1,
+            "detail": "17:17 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "detail": {
             "home": "Ohio State Buckeyes",
@@ -7704,17 +7704,17 @@
           "price": 5.83,
           "outcome": null,
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 0,
+            "away_score": 0,
+            "clock": "19:54",
+            "period": 1,
+            "detail": "19:54 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "detail": {
             "home": "St. Bonaventure Bonnies",
@@ -7855,17 +7855,17 @@
           "final_score": null,
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 8,
+            "away_score": 9,
+            "clock": "17:39",
+            "period": 1,
+            "detail": "17:39 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "reason": "LEDGER BET — Butler Bulldogs 25m @ 1.06. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick.",
           "user_bet": false,
@@ -7888,17 +7888,17 @@
           "final_score": null,
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
-            "state": "scheduled",
-            "home_score": null,
-            "away_score": null,
-            "clock": null,
-            "period": null,
-            "detail": "11/19 - 7:00 PM EST",
-            "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+            "state": "in",
+            "home_score": 5,
+            "away_score": 3,
+            "clock": "17:17",
+            "period": 1,
+            "detail": "17:17 - 1st",
+            "fetched_at": "2026-11-19T18:05:52.193431-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "scheduled",
+          "display_state": "in",
           "display_final_score": null,
           "reason": "LEDGER BET — Ohio State Buckeyes 25m @ 1.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick.",
           "user_bet": false,
@@ -8404,17 +8404,17 @@
       "final_score": null,
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
-        "state": "scheduled",
-        "home_score": null,
-        "away_score": null,
-        "clock": null,
-        "period": null,
-        "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+        "state": "in",
+        "home_score": 8,
+        "away_score": 9,
+        "clock": "17:39",
+        "period": 1,
+        "detail": "17:39 - 1st",
+        "fetched_at": "2026-11-19T18:05:52.193431-06:00",
         "source": "ESPN",
         "official": false
       },
-      "display_state": "scheduled",
+      "display_state": "in",
       "display_final_score": null
     },
     {
@@ -8433,17 +8433,17 @@
       "final_score": null,
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
-        "state": "scheduled",
-        "home_score": null,
-        "away_score": null,
-        "clock": null,
-        "period": null,
-        "detail": "11/19 - 7:00 PM EST",
-        "fetched_at": "2026-11-19T18:01:05.808274-06:00",
+        "state": "in",
+        "home_score": 5,
+        "away_score": 3,
+        "clock": "17:17",
+        "period": 1,
+        "detail": "17:17 - 1st",
+        "fetched_at": "2026-11-19T18:05:52.193431-06:00",
         "source": "ESPN",
         "official": false
       },
-      "display_state": "scheduled",
+      "display_state": "in",
       "display_final_score": null
     },
     {
