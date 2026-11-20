@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T19:20:49.664900-06:00",
+  "generated_at": "2026-11-19T19:25:52.527842-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -161,8 +161,8 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T19:14:08.849258-06:00",
-      "headline": "Latest filing: P240"
+      "last_activity": "2026-11-19T19:22:24.966276-06:00",
+      "headline": "Latest filing: P242"
     },
     {
       "name": "Loss Autopsy",
@@ -810,6 +810,13 @@
     },
     {
       "agent": "Edge Finder",
+      "kind": "generation",
+      "title": "CYCLE 2026-11-19 (19:12 CST) — audit + hunt (classes e + f + g: public supporter data / the house's chair / cross-game campaign…",
+      "summary": "P242 ANNOUNCED SUPPORTER-ACTION FREEZE (soccer first — the home crowd's own announced state for this fixture: stay-away fade,…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
       "kind": "filing",
       "title": "ARENA FILING — Arena P226: SECOND-HALF SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G269; classes f + i)",
       "summary": "Filed Arena P226: SECOND-HALF SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G269; classes f + i)",
@@ -841,13 +848,6 @@
       "kind": "filing",
       "title": "ARENA FILING — Arena P223: COMPETITION-LIST BUMP (DISPLAY-DISPLACEMENT) FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena…",
       "summary": "Filed Arena P223: COMPETITION-LIST BUMP (DISPLAY-DISPLACEMENT) FREEZE (serves ARENA F1, house-view; filed 2026-11-19, Arena G266;…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-19 (18:12 CST) — audit + hunt (classes d + e + f: sport-specific team sports / public team-news data / the house's chair —…",
-      "summary": "P239 SQUAD ILLNESS-CLUSTER FREEZE (team sports — players reported ill inside 96h before lock, cluster at ≥3, session-disruption…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -5453,8 +5453,8 @@
       "games_status": {
         "games_total": 32,
         "games_ended": 0,
-        "games_live_final": 3,
-        "games_live_in": 6
+        "games_live_final": 4,
+        "games_live_in": 5
       },
       "games_list": [
         {
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": 2,
             "detail": "FT",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7171,18 +7171,18 @@
           "price": 1.538,
           "outcome": null,
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 93,
             "away_score": 83,
-            "clock": "0:00",
+            "clock": null,
             "period": 2,
-            "detail": "End of 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "93-83",
           "detail": {
             "home": "NC State Wolfpack",
             "away": "Murray State Racers",
@@ -7389,12 +7389,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 47,
-            "away_score": 46,
-            "clock": "14:14",
+            "home_score": 48,
+            "away_score": 48,
+            "clock": "13:01",
             "period": 2,
-            "detail": "14:14 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "13:01 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7468,12 +7468,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 49,
-            "away_score": 47,
-            "clock": "15:23",
+            "home_score": 51,
+            "away_score": 49,
+            "clock": "14:20",
             "period": 2,
-            "detail": "15:23 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "14:20 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7547,12 +7547,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 42,
-            "away_score": 48,
-            "clock": "13:00",
+            "home_score": 45,
+            "away_score": 50,
+            "clock": "11:56",
             "period": 2,
-            "detail": "13:00 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "11:56 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7626,12 +7626,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 73,
-            "away_score": 45,
-            "clock": "9:58",
+            "home_score": 77,
+            "away_score": 47,
+            "clock": "7:50",
             "period": 2,
-            "detail": "9:58 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "7:50 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7705,12 +7705,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 50,
-            "away_score": 33,
-            "clock": "14:46",
+            "home_score": 56,
+            "away_score": 39,
+            "clock": "12:58",
             "period": 2,
-            "detail": "14:46 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "12:58 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7856,12 +7856,12 @@
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 47,
-            "away_score": 46,
-            "clock": "14:14",
+            "home_score": 48,
+            "away_score": 48,
+            "clock": "13:01",
             "period": 2,
-            "detail": "14:14 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "13:01 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7889,12 +7889,12 @@
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 73,
-            "away_score": 45,
-            "clock": "9:58",
+            "home_score": 77,
+            "away_score": 47,
+            "clock": "7:50",
             "period": 2,
-            "detail": "9:58 - 2nd",
-            "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+            "detail": "7:50 - 2nd",
+            "fetched_at": "2026-11-19T19:25:48.263556-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8405,12 +8405,12 @@
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
         "state": "in",
-        "home_score": 47,
-        "away_score": 46,
-        "clock": "14:14",
+        "home_score": 48,
+        "away_score": 48,
+        "clock": "13:01",
         "period": 2,
-        "detail": "14:14 - 2nd",
-        "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+        "detail": "13:01 - 2nd",
+        "fetched_at": "2026-11-19T19:25:48.263556-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8434,12 +8434,12 @@
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
         "state": "in",
-        "home_score": 73,
-        "away_score": 45,
-        "clock": "9:58",
+        "home_score": 77,
+        "away_score": 47,
+        "clock": "7:50",
         "period": 2,
-        "detail": "9:58 - 2nd",
-        "fetched_at": "2026-11-19T19:20:45.617497-06:00",
+        "detail": "7:50 - 2nd",
+        "fetched_at": "2026-11-19T19:25:48.263556-06:00",
         "source": "ESPN",
         "official": false
       },
