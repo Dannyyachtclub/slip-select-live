@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T19:45:45.508939-06:00",
+  "generated_at": "2026-11-19T19:50:47.626016-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,43 +140,43 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-19T19:08:33.549247-06:00",
+      "last_activity": "2026-11-19T19:48:53.442331-06:00",
       "headline": "VG24-BRANDDV75HOMEONLY — 188-51, +32.48% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T19:32:09.682296-06:00",
+      "last_activity": "2026-11-19T19:46:34.094326-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T19:28:29.491288-06:00",
-      "headline": "Latest search cycle: 266"
+      "last_activity": "2026-11-19T19:47:13.453328-06:00",
+      "headline": "Latest search cycle: 267"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T19:45:42.472325-06:00",
-      "headline": "Latest filing: P242"
+      "last_activity": "2026-11-19T19:49:39.142333-06:00",
+      "headline": "Latest filing: P243"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T19:13:45.547257-06:00",
+      "last_activity": "2026-11-19T19:48:43.886331-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T19:16:49.980264-06:00",
-      "headline": "Cycle 64: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-19T19:47:37.109329-06:00",
+      "headline": "Cycle 65: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 64,
+    "latest_cycle": 65,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 267 — 2026-11-19 19:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT, SEARCHED, NO CROWN: verify_court_state PASSED at start and close with all five kings tied to the cent (Regime grand king…",
+      "at": "2026-11-19T19:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 266 — 2026-11-19 19:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "No candidate verified, nothing crowned or registered by this loop, engine untouched by this loop.",
       "at": "2026-11-19T19:26:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-19T18:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 261 — 2026-11-19 18:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed by…",
-      "at": "2026-11-19T18:11:00-06:00"
+      "title": "CYCLE 65 — 2026-11-19",
+      "summary": "Script: data_core/stakehunter_cycle65.py (new file only, written fresh this cycle against the kings named in this run's…",
+      "at": "2026-11-19T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -760,10 +767,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Loss Autopsy",
       "kind": "generation",
-      "title": "CYCLE 59 — 2026-11-19",
-      "summary": "Script: data_core/stakehunter_cycle59.py (new file only, written fresh this cycle against the kings named in this run's…",
+      "title": "CYCLE 35 — 2026-11-19 — Slice 4 RE-AUTOPSY under the DOGGE10VETO kings (FAVOURITE-side losses)",
+      "summary": "The DOGGE10VETO crown did its work entirely on the dog side — three long-dog lottery stakes (12.00 / 11.00 / 26.00) reverted to their…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -802,10 +809,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Loss Autopsy",
+      "agent": "Edge Finder",
       "kind": "generation",
-      "title": "CYCLE 29 — 2026-11-19 — Slice 4 RE-AUTOPSY under the SPLIT26S15 kings (FAVOURITE-side losses)",
-      "summary": "Slice 4's membership and disease are unchanged — grand's favourite book still loses when grand stands nearly alone — but the Legacy…",
+      "title": "CYCLE 2026-11-19 (19:42 CST) — audit + hunt (classes e + f + d: public announcement data / the house's chair / sport-specific team…",
+      "summary": "P243 CLUB BEREAVEMENT-WINDOW FREEZE (team sports — a death closely connected to the club published before lock, frozen by relation and…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -844,10 +851,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P224: FIRST-PRINT FLOW (OPENING MATCHED-FLOW) FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed…",
-      "summary": "Filed Arena P224: FIRST-PRINT FLOW (OPENING MATCHED-FLOW) FREEZE (serves ARENA F2, sharp-flow / insider fingerprints; filed 2026-11-19,…",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G271 — F1 HOUSE-VIEW (fifty-sixth visit) — 2026-11-19",
+      "summary": "Verdict: NO ARENA CHAMPION in G271, no branch DEAD, and no new best form — F1's testable best remains the F-E note, below gate on this…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G266 — F1 HOUSE-VIEW (fifty-fifth visit) — 2026-11-19",
       "summary": "Verdict: NO ARENA CHAMPION in G266, no branch DEAD, and no new best form — F1's testable best remains the F-E note, below gate on this…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G265 — F5 SOFT-ANGLE EXTREMES (fifty-fifth visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION in G265, no branch DEAD, and no new best form — F5's testable best remains the K-A note, below gate.…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
@@ -5453,8 +5453,8 @@
       "games_status": {
         "games_total": 32,
         "games_ended": 0,
-        "games_live_final": 4,
-        "games_live_in": 5
+        "games_live_final": 5,
+        "games_live_in": 4
       },
       "games_list": [
         {
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": 2,
             "detail": "FT",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7389,12 +7389,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 58,
-            "away_score": 56,
-            "clock": "7:45",
+            "home_score": 64,
+            "away_score": 61,
+            "clock": "6:02",
             "period": 2,
-            "detail": "7:45 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "6:02 - 2nd",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7468,12 +7468,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 64,
-            "away_score": 59,
-            "clock": "6:58",
+            "home_score": 70,
+            "away_score": 64,
+            "clock": "4:43",
             "period": 2,
-            "detail": "6:58 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "4:43 - 2nd",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7547,12 +7547,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 59,
-            "away_score": 64,
-            "clock": "5:27",
+            "home_score": 61,
+            "away_score": 67,
+            "clock": "4:32",
             "period": 2,
-            "detail": "5:27 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "4:32 - 2nd",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7625,18 +7625,18 @@
           "price": 1.002,
           "outcome": null,
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 101,
             "away_score": 62,
-            "clock": "0:39",
+            "clock": null,
             "period": 2,
-            "detail": "0:39 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "101-62",
           "detail": {
             "home": "Ohio State Buckeyes",
             "away": "UMBC Retrievers",
@@ -7705,12 +7705,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 64,
-            "away_score": 54,
-            "clock": "6:07",
+            "home_score": 66,
+            "away_score": 58,
+            "clock": "4:42",
             "period": 2,
-            "detail": "6:07 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "4:42 - 2nd",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7856,12 +7856,12 @@
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 58,
-            "away_score": 56,
-            "clock": "7:45",
+            "home_score": 64,
+            "away_score": 61,
+            "clock": "6:02",
             "period": 2,
-            "detail": "7:45 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "6:02 - 2nd",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7888,18 +7888,18 @@
           "final_score": null,
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 101,
             "away_score": 62,
-            "clock": "0:39",
+            "clock": null,
             "period": 2,
-            "detail": "0:39 - 2nd",
-            "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T19:50:42.754516-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "101-62",
           "reason": "LEDGER BET — Ohio State Buckeyes 25m @ 1.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick.",
           "user_bet": false,
           "user_stake_m": null,
@@ -8405,12 +8405,12 @@
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
         "state": "in",
-        "home_score": 58,
-        "away_score": 56,
-        "clock": "7:45",
+        "home_score": 64,
+        "away_score": 61,
+        "clock": "6:02",
         "period": 2,
-        "detail": "7:45 - 2nd",
-        "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+        "detail": "6:02 - 2nd",
+        "fetched_at": "2026-11-19T19:50:42.754516-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8433,18 +8433,18 @@
       "final_score": null,
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
-        "state": "in",
+        "state": "final",
         "home_score": 101,
         "away_score": 62,
-        "clock": "0:39",
+        "clock": null,
         "period": 2,
-        "detail": "0:39 - 2nd",
-        "fetched_at": "2026-11-19T19:45:42.294177-06:00",
+        "detail": "Final",
+        "fetched_at": "2026-11-19T19:50:42.754516-06:00",
         "source": "ESPN",
         "official": false
       },
-      "display_state": "in",
-      "display_final_score": null
+      "display_state": "final",
+      "display_final_score": "101-62"
     },
     {
       "slip": 38,
