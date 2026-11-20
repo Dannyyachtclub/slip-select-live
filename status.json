@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T13:35:50.453170-06:00",
+  "generated_at": "2026-11-20T13:40:55.277318-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-20T13:03:38.780589-06:00",
+      "last_activity": "2026-11-20T13:40:12.780674-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP — 212-27, +68.46% fitted ROI"
     },
     {
@@ -4898,8 +4898,8 @@
       "games_status": {
         "games_total": 40,
         "games_ended": 0,
-        "games_live_final": 0,
-        "games_live_in": 3
+        "games_live_final": 1,
+        "games_live_in": 2
       },
       "games_list": [
         {
@@ -7036,11 +7036,11 @@
           "live": {
             "state": "in",
             "home_score": 76,
-            "away_score": 80,
-            "clock": "0:23",
+            "away_score": 83,
+            "clock": "0:03",
             "period": 2,
-            "detail": "0:23 - 2nd",
-            "fetched_at": "2026-11-20T13:35:44.567797-06:00",
+            "detail": "0:03 - 2nd",
+            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7113,18 +7113,18 @@
           "price": 1.98,
           "outcome": null,
           "live": {
-            "state": "in",
-            "home_score": 82,
-            "away_score": 68,
-            "clock": "0:24",
+            "state": "final",
+            "home_score": 85,
+            "away_score": 70,
+            "clock": null,
             "period": 2,
-            "detail": "0:24 - 2nd",
-            "fetched_at": "2026-11-20T13:35:44.567797-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "85-70",
           "detail": {
             "home": "Minnesota Golden Gophers",
             "away": "Oklahoma State Cowboys",
@@ -7544,12 +7544,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 35,
-            "away_score": 23,
-            "clock": "6:45",
+            "home_score": 41,
+            "away_score": 28,
+            "clock": "3:11",
             "period": 1,
-            "detail": "6:45 - 1st",
-            "fetched_at": "2026-11-20T13:35:44.567797-06:00",
+            "detail": "3:11 - 1st",
+            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7764,11 +7764,11 @@
           "live": {
             "state": "in",
             "home_score": 76,
-            "away_score": 80,
-            "clock": "0:23",
+            "away_score": 83,
+            "clock": "0:03",
             "period": 2,
-            "detail": "0:23 - 2nd",
-            "fetched_at": "2026-11-20T13:35:44.567797-06:00",
+            "detail": "0:03 - 2nd",
+            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7821,11 +7821,11 @@
           "live": {
             "state": "in",
             "home_score": 76,
-            "away_score": 80,
-            "clock": "0:23",
+            "away_score": 83,
+            "clock": "0:03",
             "period": 2,
-            "detail": "0:23 - 2nd",
-            "fetched_at": "2026-11-20T13:35:44.567797-06:00",
+            "detail": "0:03 - 2nd",
+            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8459,11 +8459,11 @@
       "live": {
         "state": "in",
         "home_score": 76,
-        "away_score": 80,
-        "clock": "0:23",
+        "away_score": 83,
+        "clock": "0:03",
         "period": 2,
-        "detail": "0:23 - 2nd",
-        "fetched_at": "2026-11-20T13:35:44.567797-06:00",
+        "detail": "0:03 - 2nd",
+        "fetched_at": "2026-11-20T13:40:49.470617-06:00",
         "source": "ESPN",
         "official": false
       },
