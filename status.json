@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T20:15:49.122580-06:00",
+  "generated_at": "2026-11-19T20:20:59.240341-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-19T19:34:15.450301-06:00",
+      "last_activity": "2026-11-19T20:18:41.412778-06:00",
       "headline": "DEVIG538FLIP-DEAP4 — 201-38, +62.43% fitted ROI"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-19T20:03:49.695363-06:00",
+      "last_activity": "2026-11-19T20:19:33.642174-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -161,7 +161,7 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-19T20:02:28.491360-06:00",
+      "last_activity": "2026-11-19T20:18:42.949702-06:00",
       "headline": "Latest filing: P243"
     },
     {
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T20:15:28.020175-06:00",
-      "headline": "Cycle 65: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-19T20:17:06.076174-06:00",
+      "headline": "Cycle 66: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 65,
+    "latest_cycle": 66,
     "findings": [
       {
         "id": "Z1",
@@ -810,6 +810,13 @@
     },
     {
       "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "ARENA FILING — Arena P231: WIN-BONUS WEIGHT (SQUAD BONUS POOL vs MONTHLY WAGE BILL) FREEZE (serves ARENA F3, throw-incentive asymmetry;…",
+      "summary": "Filed Arena P231: WIN-BONUS WEIGHT (SQUAD BONUS POOL vs MONTHLY WAGE BILL) FREEZE (serves ARENA F3, throw-incentive asymmetry; filed…",
+      "at": "2026-11-19T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
       "kind": "generation",
       "title": "CYCLE 2026-11-19 (19:42 CST) — audit + hunt (classes e + f + d: public announcement data / the house's chair / sport-specific team…",
       "summary": "P243 CLUB BEREAVEMENT-WINDOW FREEZE (team sports — a death closely connected to the club published before lock, frozen by relation and…",
@@ -844,10 +851,10 @@
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "ARENA FILING — Arena P226: SECOND-HALF SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G269; classes f + i)",
-      "summary": "Filed Arena P226: SECOND-HALF SHARE FREEZE (serves ARENA F4, cross-reference; filed 2026-11-19, Arena G269; classes f + i)",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G273 — F3 THROW-INCENTIVE ASYMMETRY (fifty-eighth visit) — 2026-11-19",
+      "summary": "Verdict: NO NEW ARENA CHAMPION, no branch DEAD, and no new best form — F3 remains NEEDS-FREEZE only beyond its sitting champion.…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Arena G268 — F3 THROW-INCENTIVE ASYMMETRY (fifty-seventh visit) — 2026-11-19",
       "summary": "Verdict: NO ARENA CHAMPION in G268, no branch DEAD, and no new best form — F3 remains gated on its sitting champion, fully specified,…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G267 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (fifty-sixth visit) — 2026-11-19",
-      "summary": "Verdict: NO ARENA CHAMPION in G267, no branch DEAD, and no new best form — F2 remains parked, fully specified, awaiting its freeze; its…",
       "at": "2026-11-19T00:00:00-06:00"
     }
   ],
@@ -5453,8 +5453,8 @@
       "games_status": {
         "games_total": 32,
         "games_ended": 0,
-        "games_live_final": 8,
-        "games_live_in": 1
+        "games_live_final": 9,
+        "games_live_in": 0
       },
       "games_list": [
         {
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": 2,
             "detail": "FT",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7388,18 +7388,18 @@
           "price": 1.058,
           "outcome": null,
           "live": {
-            "state": "in",
-            "home_score": 82,
+            "state": "final",
+            "home_score": 84,
             "away_score": 77,
-            "clock": "0:17",
+            "clock": null,
             "period": 2,
-            "detail": "0:17 - 2nd",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "84-77",
           "detail": {
             "home": "Butler Bulldogs",
             "away": "Northeastern Huskies",
@@ -7473,7 +7473,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7552,7 +7552,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7710,7 +7710,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7855,18 +7855,18 @@
           "final_score": null,
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
-            "state": "in",
-            "home_score": 82,
+            "state": "final",
+            "home_score": 84,
             "away_score": 77,
-            "clock": "0:17",
+            "clock": null,
             "period": 2,
-            "detail": "0:17 - 2nd",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "84-77",
           "reason": "LEDGER BET — Butler Bulldogs 25m @ 1.06. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the grand king's (Regime ZEROTRIPFRAG-DEAP2-TRIPS1VETO) card pick.",
           "user_bet": false,
           "user_stake_m": null,
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+            "fetched_at": "2026-11-19T20:20:47.219193-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8404,18 +8404,18 @@
       "final_score": null,
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
-        "state": "in",
-        "home_score": 82,
+        "state": "final",
+        "home_score": 84,
         "away_score": 77,
-        "clock": "0:17",
+        "clock": null,
         "period": 2,
-        "detail": "0:17 - 2nd",
-        "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+        "detail": "Final",
+        "fetched_at": "2026-11-19T20:20:47.219193-06:00",
         "source": "ESPN",
         "official": false
       },
-      "display_state": "in",
-      "display_final_score": null
+      "display_state": "final",
+      "display_final_score": "84-77"
     },
     {
       "slip": 38,
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-19T20:15:39.663939-06:00",
+        "fetched_at": "2026-11-19T20:20:47.219193-06:00",
         "source": "ESPN",
         "official": false
       },
