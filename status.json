@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T17:25:51.152630-06:00",
+  "generated_at": "2026-11-20T17:30:49.917554-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-20T16:18:17.424644-06:00",
+      "last_activity": "2026-11-20T17:28:44.053611-06:00",
       "headline": "VG24-BRANDDV75HOMEONLY — 188-51, +32.48% fitted ROI"
     },
     {
@@ -154,14 +154,14 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T17:14:03.869618-06:00",
-      "headline": "Latest search cycle: 353"
+      "last_activity": "2026-11-20T17:28:52.931611-06:00",
+      "headline": "Latest search cycle: 354"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T17:18:58.729615-06:00",
+      "last_activity": "2026-11-20T17:30:49.497610-06:00",
       "headline": "Latest filing: P323"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 354 — 2026-11-20 17:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. A Selector ablation crown (ABLCROWN, +73.70% fitted) landed…",
+      "at": "2026-11-20T17:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 353 — 2026-11-20 17:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T17:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 349 — 2026-11-20 16:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T16:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 348 — 2026-11-20 15:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T15:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -867,6 +867,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G142 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
+      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). No gate-eligible variant above the king — nothing…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G141 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). No gate-eligible variant above the king. Best…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "R4-G139 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Above-king headlines, SUB-GATE and QUEUED only: V2…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G138 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
-      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Above-king headline, SUB-GATE and QUEUED only: V13…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:25:48.497211-06:00",
+            "fetched_at": "2026-11-20T17:30:47.019874-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:25:48.497211-06:00",
+            "fetched_at": "2026-11-20T17:30:47.019874-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:25:48.497211-06:00",
+            "fetched_at": "2026-11-20T17:30:47.019874-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:25:48.497211-06:00",
+            "fetched_at": "2026-11-20T17:30:47.019874-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:25:48.497211-06:00",
+            "fetched_at": "2026-11-20T17:30:47.019874-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T17:25:48.497211-06:00",
+        "fetched_at": "2026-11-20T17:30:47.019874-06:00",
         "source": "ESPN",
         "official": false
       },
