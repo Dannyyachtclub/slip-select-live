@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T13:45:46.946241-06:00",
+  "generated_at": "2026-11-20T13:50:52.022157-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,14 +140,14 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-20T13:09:35.141603-06:00",
+      "last_activity": "2026-11-20T13:49:08.001824-06:00",
       "headline": "VG24-BRANDDV75HOMEONLY — 188-51, +32.48% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T13:30:59.005653-06:00",
+      "last_activity": "2026-11-20T13:45:59.356816-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -818,6 +818,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G343 — F3 THROW-INCENTIVE ASYMMETRY (seventy-third visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G343, no branch DEAD, and no new best form — F3 remains gated by its sitting champion…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G342 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (seventy-second visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G342, no branch DEAD, and no new best form — F2 remains parked beyond the B1 steam control. MILESTONE:…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -851,10 +858,10 @@
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
+      "agent": "Vanguard",
       "kind": "generation",
-      "title": "Arena G337 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (seventy-first visit) — 2026-11-20",
-      "summary": "Verdict: NO ARENA CHAMPION in G337, no branch DEAD, and no new best form — F2 remains parked beyond the B1 steam control. MILESTONE:…",
+      "title": "R4-G138 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
+      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Above-king headline, SUB-GATE and QUEUED only: V13…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "R4-G134 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Above-king headline, sub-gate only: V13 SPLIT…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G133 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
-      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). Above-king headline, sub-gate only: V9 EUROLEAGUE…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -4898,8 +4898,8 @@
       "games_status": {
         "games_total": 40,
         "games_ended": 0,
-        "games_live_final": 1,
-        "games_live_in": 2
+        "games_live_final": 2,
+        "games_live_in": 1
       },
       "games_list": [
         {
@@ -7034,18 +7034,18 @@
           "price": 2.37,
           "outcome": null,
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 76,
             "away_score": 85,
-            "clock": "0:00",
+            "clock": null,
             "period": 2,
-            "detail": "0:00 - 2nd",
-            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-20T13:50:46.862138-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "76-85",
           "detail": {
             "home": "Middle Tennessee Blue Raiders",
             "away": "Temple Owls",
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
+            "fetched_at": "2026-11-20T13:50:46.862138-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7544,12 +7544,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 41,
-            "away_score": 30,
-            "clock": "2:32",
+            "home_score": 43,
+            "away_score": 36,
+            "clock": "0:00",
             "period": 1,
-            "detail": "2:32 - 1st",
-            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
+            "detail": "Halftime",
+            "fetched_at": "2026-11-20T13:50:46.862138-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7762,18 +7762,18 @@
           "final_score": null,
           "tip_at": "2026-11-20T11:30:00-06:00",
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 76,
             "away_score": 85,
-            "clock": "0:00",
+            "clock": null,
             "period": 2,
-            "detail": "0:00 - 2nd",
-            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-20T13:50:46.862138-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "76-85",
           "reason": "BET — GRAND PICK: Middle Tennessee Blue Raiders, small 25m @ 2.37. Named gap (Kim Rule): The frozen differentials point the other way from the price: Middle Tennessee run +5.0 points/game against Temple's -2.8 — a 7.8-point rate gap for the team priced as the 2.37 underdog. Temple's 1.61 is the bigger programme's brand price; on the frozen rates Middle Tennessee is at least Temple's equal. Regime and the Selector (the card pick) both take Middle Tennessee. The grand pick IS this game's ledger bet (the card pick is also Middle Tennessee Blue Raiders) — one 25m bet, not two.",
           "user_bet": false,
           "user_stake_m": null,
@@ -7819,18 +7819,18 @@
           "final_score": null,
           "tip_at": "2026-11-20T11:30:00-06:00",
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 76,
             "away_score": 85,
-            "clock": "0:00",
+            "clock": null,
             "period": 2,
-            "detail": "0:00 - 2nd",
-            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-20T13:50:46.862138-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "76-85",
           "reason": "BET — GRAND PICK: Middle Tennessee Blue Raiders, small 25m @ 2.37. Named gap (Kim Rule): The frozen differentials point the other way from the price: Middle Tennessee run +5.0 points/game against Temple's -2.8 — a 7.8-point rate gap for the team priced as the 2.37 underdog. Temple's 1.61 is the bigger programme's brand price; on the frozen rates Middle Tennessee is at least Temple's equal. Regime and the Selector (the card pick) both take Middle Tennessee. The grand pick IS this game's ledger bet (the card pick is also Middle Tennessee Blue Raiders) — one 25m bet, not two.",
           "user_bet": false,
           "user_stake_m": null,
@@ -8457,18 +8457,18 @@
       "final_score": null,
       "tip_at": "2026-11-20T11:30:00-06:00",
       "live": {
-        "state": "in",
+        "state": "final",
         "home_score": 76,
         "away_score": 85,
-        "clock": "0:00",
+        "clock": null,
         "period": 2,
-        "detail": "0:00 - 2nd",
-        "fetched_at": "2026-11-20T13:45:43.636528-06:00",
+        "detail": "Final",
+        "fetched_at": "2026-11-20T13:50:46.862138-06:00",
         "source": "ESPN",
         "official": false
       },
-      "display_state": "in",
-      "display_final_score": null
+      "display_state": "final",
+      "display_final_score": "76-85"
     },
     {
       "slip": 39,
