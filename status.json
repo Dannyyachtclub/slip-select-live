@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T03:20:45.069797-06:00",
+  "generated_at": "2026-11-20T03:25:47.343210-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-20T02:51:50.741922-06:00",
+      "last_activity": "2026-11-20T03:21:40.730992-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP — 212-27, +68.46% fitted ROI"
     },
     {
@@ -859,6 +859,13 @@
     },
     {
       "agent": "Selector",
+      "kind": "gate-refusal",
+      "title": "SELECTOR R4-G309 (loop) — 2026-11-20, 239-game set",
+      "summary": "NO NEW KING. NOFAVP stands (212-27, +3868.25m, +68.46%). One above-king headline GATE-REFUSED ON COUNT: V26 TIGHTEN CROWN DV<65 (queued…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
       "kind": "generation",
       "title": "SELECTOR R4-G308 (loop) — 2026-11-20, 239-game set",
       "summary": "NO NEW KING. NOFAVP stands RE-BASED on the new Quantum king (212-27, +3868.25m, +68.46%), re-run FIRST and tied EXACTLY to the G491…",
@@ -882,13 +889,6 @@
       "agent": "Selector",
       "kind": "generation",
       "title": "SELECTOR R4-G305 (loop) — 2026-11-20, 239-game set",
-      "summary": "NO NEW KING. NOFAVP stands (213-26, +3897.50m, +68.98%), re-run FIRST on the unchanged base and tied EXACTLY. Best gate-eligible variant…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G304 (loop) — 2026-11-20, 239-game set",
       "summary": "NO NEW KING. NOFAVP stands (213-26, +3897.50m, +68.98%), re-run FIRST on the unchanged base and tied EXACTLY. Best gate-eligible variant…",
       "at": "2026-11-20T00:00:00-06:00"
     }
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T03:20:41.756254-06:00",
+            "fetched_at": "2026-11-20T03:25:40.324265-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T03:20:41.756254-06:00",
+            "fetched_at": "2026-11-20T03:25:40.324265-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 2:00 PM EST",
-            "fetched_at": "2026-11-20T03:20:41.756254-06:00",
+            "fetched_at": "2026-11-20T03:25:40.324265-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T03:20:41.756254-06:00",
+            "fetched_at": "2026-11-20T03:25:40.324265-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": null,
             "detail": "11/20 - 12:30 PM EST",
-            "fetched_at": "2026-11-20T03:20:41.756254-06:00",
+            "fetched_at": "2026-11-20T03:25:40.324265-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": null,
         "detail": "11/20 - 12:30 PM EST",
-        "fetched_at": "2026-11-20T03:20:41.756254-06:00",
+        "fetched_at": "2026-11-20T03:25:40.324265-06:00",
         "source": "ESPN",
         "official": false
       },
