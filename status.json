@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T20:10:58.816021-06:00",
+  "generated_at": "2026-11-19T20:15:49.122580-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-19T19:58:21.869351-06:00",
-      "headline": "Latest search cycle: 268"
+      "last_activity": "2026-11-19T20:14:12.484175-06:00",
+      "headline": "Latest search cycle: 269"
     },
     {
       "name": "Edge Finder",
@@ -168,14 +168,14 @@
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-19T19:48:43.886331-06:00",
+      "last_activity": "2026-11-19T20:13:44.009175-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-19T19:47:37.109329-06:00",
+      "last_activity": "2026-11-19T20:15:28.020175-06:00",
       "headline": "Cycle 65: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 269 — 2026-11-19 20:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed; the…",
+      "at": "2026-11-19T20:11:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 268 — 2026-11-19 19:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "CLEAN AUDIT (verify_court_state STALE at first call, regenerated per the CAN'T-LIE clause and PASSED, then PASSED again on closing…",
       "at": "2026-11-19T19:56:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-19T18:56:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 263 — 2026-11-19 18:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "CLEAN AUDIT (verify_court_state PASSED at cycle start and again on closing re-check with identical kings and no regeneration needed by…",
-      "at": "2026-11-19T18:41:00-06:00"
+      "title": "CYCLE 66 — 2026-11-19",
+      "summary": "Script: data_core/stakehunter_cycle66.py (new file only, written fresh this cycle against the kings named in this run's…",
+      "at": "2026-11-19T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -757,13 +764,6 @@
       "kind": "generation",
       "title": "CYCLE 61 — 2026-11-19",
       "summary": "Script: data_core/stakehunter_cycle61.py (new file only, written fresh this cycle against the kings named in this run's…",
-      "at": "2026-11-19T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 60 — 2026-11-19",
-      "summary": "Script: data_core/stakehunter_cycle60.py (new file only, written fresh this cycle against the kings named in this run's…",
       "at": "2026-11-19T00:00:00-06:00"
     },
     {
@@ -5453,8 +5453,8 @@
       "games_status": {
         "games_total": 32,
         "games_ended": 0,
-        "games_live_final": 5,
-        "games_live_in": 4
+        "games_live_final": 8,
+        "games_live_in": 1
       },
       "games_list": [
         {
@@ -6314,7 +6314,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -6880,7 +6880,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7097,7 +7097,7 @@
             "clock": null,
             "period": 2,
             "detail": "FT",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7177,7 +7177,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7389,12 +7389,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 79,
+            "home_score": 82,
             "away_score": 77,
-            "clock": "0:38",
+            "clock": "0:17",
             "period": 2,
-            "detail": "0:38 - 2nd",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "detail": "0:17 - 2nd",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7467,18 +7467,18 @@
           "price": 1.083,
           "outcome": null,
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 85,
             "away_score": 74,
-            "clock": "0:02",
+            "clock": null,
             "period": 2,
-            "detail": "0:02 - 2nd",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "85-74",
           "detail": {
             "home": "High Point Panthers",
             "away": "Montana State Bobcats",
@@ -7546,18 +7546,18 @@
           "price": 1.704,
           "outcome": null,
           "live": {
-            "state": "in",
+            "state": "final",
             "home_score": 72,
-            "away_score": 76,
-            "clock": "0:01",
+            "away_score": 78,
+            "clock": null,
             "period": 2,
-            "detail": "0:01 - 2nd",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "72-78",
           "detail": {
             "home": "Jacksonville Dolphins",
             "away": "Little Rock Trojans",
@@ -7631,7 +7631,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7704,18 +7704,18 @@
           "price": 5.83,
           "outcome": null,
           "live": {
-            "state": "in",
-            "home_score": 77,
+            "state": "final",
+            "home_score": 78,
             "away_score": 69,
-            "clock": "0:14",
+            "clock": null,
             "period": 2,
-            "detail": "0:14 - 2nd",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "detail": "Final",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
-          "display_state": "in",
-          "display_final_score": null,
+          "display_state": "final",
+          "display_final_score": "78-69",
           "detail": {
             "home": "St. Bonaventure Bonnies",
             "away": "Buffalo Bulls",
@@ -7856,12 +7856,12 @@
           "tip_at": "2026-11-19T18:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 79,
+            "home_score": 82,
             "away_score": 77,
-            "clock": "0:38",
+            "clock": "0:17",
             "period": 2,
-            "detail": "0:38 - 2nd",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "detail": "0:17 - 2nd",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7894,7 +7894,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+            "fetched_at": "2026-11-19T20:15:39.663939-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8405,12 +8405,12 @@
       "tip_at": "2026-11-19T18:00:00-06:00",
       "live": {
         "state": "in",
-        "home_score": 79,
+        "home_score": 82,
         "away_score": 77,
-        "clock": "0:38",
+        "clock": "0:17",
         "period": 2,
-        "detail": "0:38 - 2nd",
-        "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+        "detail": "0:17 - 2nd",
+        "fetched_at": "2026-11-19T20:15:39.663939-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -8439,7 +8439,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-19T20:10:49.166497-06:00",
+        "fetched_at": "2026-11-19T20:15:39.663939-06:00",
         "source": "ESPN",
         "official": false
       },
