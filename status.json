@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T16:25:45.794254-06:00",
+  "generated_at": "2026-11-20T16:30:46.161482-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-20T15:32:29.303063-06:00",
+      "last_activity": "2026-11-20T16:27:39.265639-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15 — 208-31, +63.24% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T16:17:35.789644-06:00",
+      "last_activity": "2026-11-20T16:29:18.873639-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T16:14:31.735645-06:00",
-      "headline": "Latest search cycle: 349"
+      "last_activity": "2026-11-20T16:27:58.687639-06:00",
+      "headline": "Latest search cycle: 350"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T16:16:19.672645-06:00",
-      "headline": "Latest filing: P319"
+      "last_activity": "2026-11-20T16:28:30.211639-06:00",
+      "headline": "Latest filing: P320"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 350 — 2026-11-20 16:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T16:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 349 — 2026-11-20 16:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T16:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 345 — 2026-11-20 15:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T15:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 344 — 2026-11-20 14:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T14:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -783,6 +783,13 @@
     {
       "agent": "Edge Finder",
       "kind": "filing",
+      "title": "CYCLE 2026-11-20 (16:12 CST) — audit + hunt (classes c + f + d: market microstructure / the house's chair / sport-specific team sports —…",
+      "summary": "P320 AWARDED-RESULT FORM CONTAMINATION FREEZE — FILED as collector proposal P320 (number drawn from the spec-number authority before…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
       "title": "CYCLE 2026-11-20 (15:42 CST) — audit + hunt (classes a + c + f: quant research / market microstructure / the house's chair — the last…",
       "summary": "P319 LAST-OUTING MARGIN FREEZE — FILED as collector proposal P319 (number drawn from the spec-number authority before writing;…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -816,10 +823,10 @@
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (13:12 CST) — audit + hunt (classes h + g + c + a: money flow / cross-market structure / market microstructure / quant…",
-      "summary": "P309 PM FEE-LOAD FREEZE — FILED as collector proposal P309 (number drawn from the spec-number authority before writing; census-first,…",
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G354 — F4 CROSS-REFERENCE (seventieth visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G354, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond the D8 control.…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -855,13 +862,6 @@
       "kind": "generation",
       "title": "Arena G349 — F4 CROSS-REFERENCE (sixty-ninth visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G349, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond its dead testable branch.…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G348 — F3 THROW-INCENTIVE ASYMMETRY (seventy-fourth visit) — 2026-11-20",
-      "summary": "Verdict: NO ARENA CHAMPION in G348, no branch DEAD, and no new best form — F3 remains gated by its sitting champion…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T16:25:43.227435-06:00",
+            "fetched_at": "2026-11-20T16:30:43.541745-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T16:25:43.227435-06:00",
+            "fetched_at": "2026-11-20T16:30:43.541745-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T16:25:43.227435-06:00",
+            "fetched_at": "2026-11-20T16:30:43.541745-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T16:25:43.227435-06:00",
+            "fetched_at": "2026-11-20T16:30:43.541745-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T16:25:43.227435-06:00",
+            "fetched_at": "2026-11-20T16:30:43.541745-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T16:25:43.227435-06:00",
+        "fetched_at": "2026-11-20T16:30:43.541745-06:00",
         "source": "ESPN",
         "official": false
       },
