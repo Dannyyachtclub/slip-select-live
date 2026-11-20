@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T13:40:55.277318-06:00",
+  "generated_at": "2026-11-20T13:45:46.946241-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,28 +154,28 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T13:28:05.165646-06:00",
-      "headline": "Latest search cycle: 338"
+      "last_activity": "2026-11-20T13:43:11.548809-06:00",
+      "headline": "Latest search cycle: 339"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T13:30:30.923652-06:00",
+      "last_activity": "2026-11-20T13:44:39.106812-06:00",
       "headline": "Latest filing: P309"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T13:13:49.375613-06:00",
+      "last_activity": "2026-11-20T13:43:55.526810-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T13:16:14.283619-06:00",
+      "last_activity": "2026-11-20T13:45:45.477815-06:00",
       "headline": "Cycle 90: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 339 — 2026-11-20 13:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T13:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 338 — 2026-11-20 13:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T13:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 334 — 2026-11-20 12:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T12:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 333 — 2026-11-20 12:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T12:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7036,11 +7036,11 @@
           "live": {
             "state": "in",
             "home_score": 76,
-            "away_score": 83,
-            "clock": "0:03",
+            "away_score": 85,
+            "clock": "0:00",
             "period": 2,
-            "detail": "0:03 - 2nd",
-            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
+            "detail": "0:00 - 2nd",
+            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
+            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7545,11 +7545,11 @@
           "live": {
             "state": "in",
             "home_score": 41,
-            "away_score": 28,
-            "clock": "3:11",
+            "away_score": 30,
+            "clock": "2:32",
             "period": 1,
-            "detail": "3:11 - 1st",
-            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
+            "detail": "2:32 - 1st",
+            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7764,11 +7764,11 @@
           "live": {
             "state": "in",
             "home_score": 76,
-            "away_score": 83,
-            "clock": "0:03",
+            "away_score": 85,
+            "clock": "0:00",
             "period": 2,
-            "detail": "0:03 - 2nd",
-            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
+            "detail": "0:00 - 2nd",
+            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7821,11 +7821,11 @@
           "live": {
             "state": "in",
             "home_score": 76,
-            "away_score": 83,
-            "clock": "0:03",
+            "away_score": 85,
+            "clock": "0:00",
             "period": 2,
-            "detail": "0:03 - 2nd",
-            "fetched_at": "2026-11-20T13:40:49.470617-06:00",
+            "detail": "0:00 - 2nd",
+            "fetched_at": "2026-11-20T13:45:43.636528-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8459,11 +8459,11 @@
       "live": {
         "state": "in",
         "home_score": 76,
-        "away_score": 83,
-        "clock": "0:03",
+        "away_score": 85,
+        "clock": "0:00",
         "period": 2,
-        "detail": "0:03 - 2nd",
-        "fetched_at": "2026-11-20T13:40:49.470617-06:00",
+        "detail": "0:00 - 2nd",
+        "fetched_at": "2026-11-20T13:45:43.636528-06:00",
         "source": "ESPN",
         "official": false
       },
