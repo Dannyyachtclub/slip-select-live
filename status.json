@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T15:55:51.738788-06:00",
+  "generated_at": "2026-11-20T16:00:54.378325-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T15:44:12.816659-06:00",
-      "headline": "Latest search cycle: 347"
+      "last_activity": "2026-11-20T15:57:21.459653-06:00",
+      "headline": "Latest search cycle: 348"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 348 — 2026-11-20 15:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T15:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 347 — 2026-11-20 15:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T15:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 343 — 2026-11-20 14:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T14:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 342 — 2026-11-20 14:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T14:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:55:48.582919-06:00",
+            "fetched_at": "2026-11-20T16:00:51.482114-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:55:48.582919-06:00",
+            "fetched_at": "2026-11-20T16:00:51.482114-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:55:48.582919-06:00",
+            "fetched_at": "2026-11-20T16:00:51.482114-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:55:48.582919-06:00",
+            "fetched_at": "2026-11-20T16:00:51.482114-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T15:55:48.582919-06:00",
+            "fetched_at": "2026-11-20T16:00:51.482114-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T15:55:48.582919-06:00",
+        "fetched_at": "2026-11-20T16:00:51.482114-06:00",
         "source": "ESPN",
         "official": false
       },
