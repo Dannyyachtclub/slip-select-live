@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T16:25:43.545016-06:00",
+  "generated_at": "2026-11-21T16:30:41.960652-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-21T16:01:05.478665-06:00",
+      "last_activity": "2026-11-21T16:28:11.516659-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T16:14:41.230662-06:00",
+      "last_activity": "2026-11-21T16:29:23.955658-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T16:11:57.467662-06:00",
-      "headline": "Latest search cycle: 445"
+      "last_activity": "2026-11-21T16:26:58.711659-06:00",
+      "headline": "Latest search cycle: 446"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T16:17:27.347661-06:00",
-      "headline": "Latest filing: P395"
+      "last_activity": "2026-11-21T16:28:47.357658-06:00",
+      "headline": "Latest filing: P396"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 446 — 2026-11-21 16:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T16:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G433 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-21, 16:26 CST run) — COMPLETED",
+      "summary": "All computation through data_core/engine.py via arena_g433.py + outcome-blind census arena_g433_audit_census.py. Set: 239 rows…",
+      "at": "2026-11-21T16:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 445 — 2026-11-21 16:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T16:11:00-06:00"
@@ -730,13 +744,6 @@
       "title": "CYCLE 441 — 2026-11-21 15:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T15:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 440 — 2026-11-21 14:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T14:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -869,13 +876,6 @@
       "kind": "generation",
       "title": "Arena G428 — F3 THROW-INCENTIVE ASYMMETRY (next visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G428, no branch DEAD, and no new best form — F3 remains with THROW10-VETO as its champion form and…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G427 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (next visit) — 2026-11-21",
-      "summary": "Verdict: NO ARENA CHAMPION in G427, no branch DEAD, and no new best form — F2 remains parked with its B1 steam control testable (tied at…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T16:17:27.347661-06:00",
-        "headline": "P1-M7 SLATE-ENVIRONMENT GATE ON THE STALE-REFERENCE FORM — FILED as a mutation of P1 crossed with P385 (needs-capture via its P1 parent)."
+        "last_activity": "2026-11-21T16:28:47.357658-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no minimum-fee release field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no minrel column; the route is one…"
       },
       {
         "name": "Loss Autopsy",
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T16:14:41.230662-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HL form fought — each remains 0/239 frozen (both top1share fields and move_lc_pp header-absent in the…"
+        "last_activity": "2026-11-21T16:29:23.955658-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HM form fought — each remains 0/239 frozen (both minrel fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
