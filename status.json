@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:25:40.507747-06:00",
+  "generated_at": "2026-11-21T14:30:40.777734-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T14:07:52.564863-06:00",
+      "last_activity": "2026-11-21T14:30:14.250848-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T14:00:00.601869-06:00",
+      "last_activity": "2026-11-21T14:26:00.642851-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T13:58:54.541869-06:00",
+      "last_activity": "2026-11-21T14:27:41.930850-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T14:12:16.298860-06:00",
-      "headline": "Latest search cycle: 437"
+      "last_activity": "2026-11-21T14:27:17.619850-06:00",
+      "headline": "Latest search cycle: 438"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 438 — 2026-11-21 14:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T14:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 437 — 2026-11-21 14:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T14:11:00-06:00"
@@ -718,25 +725,11 @@
       "at": "2026-11-21T13:11:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 432 — 2026-11-21 12:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
-      "at": "2026-11-21T12:56:00-06:00"
-    },
-    {
       "agent": "Arena",
       "kind": "generation",
       "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 12:56 CST run) — COMPLETED (prior aborted attempts superseded)",
       "summary": "Verdict: NO ARENA CHAMPION in G420, no branch DEAD, and no new best form — F5 remains with its K-A note testable and NEEDS-FREEZE…",
       "at": "2026-11-21T12:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 12:41 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
-      "summary": "AUDIT FAILED (fifteenth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — recorded sha256…",
-      "at": "2026-11-21T12:41:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -853,6 +846,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G425 — F5 SOFT-ANGLE EXTREMES (2026-11-21, loop)",
+      "summary": "Verdict: NO ARENA CHAMPION in G425, no branch DEAD, and no new best form — F5's NEEDS-FREEZE bench grows by one fully specified witness,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G424 — F4 CROSS-REFERENCE (next visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G424, no branch DEAD, and no new best form — F4's NEEDS-FREEZE bench grows by one fully specified witness.…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -881,14 +881,14 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
-      "title": "R4-G187 (loop, 2026-11-21) — NO NEW KING",
+      "title": "R4-G188 (loop, 2026-11-21) — NO NEW KING",
       "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
       "agent": "Vanguard",
       "kind": "generation",
-      "title": "Vanguard R4-G186 (loop, 2026-11-21) — NO NEW KING",
+      "title": "R4-G187 (loop, 2026-11-21) — NO NEW KING",
       "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
       "at": "2026-11-21T00:00:00-06:00"
     }
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T13:58:54.541869-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HE form fought — each remains 0/239 frozen (all four offensive-rebounds fields header-absent in the ledger);…"
+        "last_activity": "2026-11-21T14:27:41.930850-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HF form fought — each remains 0/239 frozen (both acrolein fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
