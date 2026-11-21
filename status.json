@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T13:00:40.144360-06:00",
+  "generated_at": "2026-11-21T13:05:41.942192-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,14 +119,14 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-21T12:35:47.822217-06:00",
+      "last_activity": "2026-11-21T13:00:47.355909-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-21T12:40:06.292225-06:00",
+      "last_activity": "2026-11-21T13:05:37.700906-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T12:41:55.402228-06:00",
-      "headline": "Latest search cycle: 431"
+      "last_activity": "2026-11-21T13:00:59.929909-06:00",
+      "headline": "Latest search cycle: 432"
     },
     {
       "name": "Edge Finder",
@@ -683,6 +683,13 @@
   },
   "activity": [
     {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 432 — 2026-11-21 12:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO CROWN. Grand king unbeaten by Regime search and Optuna (0 feasible of 300).",
+      "at": "2026-11-21T12:56:00-06:00"
+    },
+    {
       "agent": "Arena",
       "kind": "generation",
       "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 12:56 CST run) — COMPLETED (prior aborted attempts superseded)",
@@ -758,13 +765,6 @@
       "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 11:41 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
       "summary": "AUDIT FAILED (eleventh consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
       "at": "2026-11-21T11:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 426 — 2026-11-21 11:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-425. Root cause named from primary records: court_state.py's Selector resolver only…",
-      "at": "2026-11-21T11:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
