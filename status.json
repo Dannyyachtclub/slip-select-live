@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T15:55:40.811115-06:00",
+  "generated_at": "2026-11-21T16:00:41.768118-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-21T15:30:44.502672-06:00",
+      "last_activity": "2026-11-21T15:56:48.360666-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T15:44:30.310669-06:00",
+      "last_activity": "2026-11-21T15:59:31.383665-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T15:42:31.366669-06:00",
-      "headline": "Latest search cycle: 443"
+      "last_activity": "2026-11-21T15:57:24.945666-06:00",
+      "headline": "Latest search cycle: 444"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T15:46:39.207669-06:00",
-      "headline": "Latest filing: P393"
+      "last_activity": "2026-11-21T15:58:35.208666-06:00",
+      "headline": "Latest filing: P394"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 444 — 2026-11-21 15:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T15:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 443 — 2026-11-21 15:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T15:41:00-06:00"
@@ -723,13 +730,6 @@
       "title": "CYCLE 439 — 2026-11-21 14:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T14:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 438 — 2026-11-21 14:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T14:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -846,6 +846,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G431 — F1 HOUSE-VIEW (next visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G431, no branch DEAD, and no new best form — F1 remains with its F-E note testable (standalone-proven,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G429 — F4 CROSS-REFERENCE (next visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G429, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -869,13 +876,6 @@
       "kind": "generation",
       "title": "Arena G426 — F1 HOUSE-VIEW (next visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G426, no branch DEAD, and no new best form — F1 remains with its F-E note testable (standalone-proven,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G425 — F5 SOFT-ANGLE EXTREMES (2026-11-21, loop)",
-      "summary": "Verdict: NO ARENA CHAMPION in G425, no branch DEAD, and no new best form — F5's NEEDS-FREEZE bench grows by one fully specified witness,…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T14:57:42.789680-06:00",
-        "headline": "Best parallel this run: late money is a revision signal, not a decision signal — it speaks loudest about games the lock thought it had already settled. Where the lock favourite was strong (de-vig…"
+        "last_activity": "2026-11-21T15:57:15.226666-06:00",
+        "headline": "Filed to intake: (1) the role × strength cells with ONE new pre-registered test, H-RR4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that fresh universe reaches 30 games,…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T14:58:18.416680-06:00",
-        "headline": "Best parallel: the orphan window is one layer from closed for the second straight read, and that layer is now five regenerations deep in proven scope-blindness — the site regenerated at 14:55:39…"
+        "last_activity": "2026-11-21T16:00:07.333665-06:00",
+        "headline": "Best parallel: clock hour is sport composition in disguise — pooled, MORNING is the worst favourite band (−19.78%, n=71) and PRIME middling (−8.91%, n=32), but within basketball the ordering inverts…"
       },
       {
         "name": "Correlation Hunter",
@@ -7117,7 +7117,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T15:46:39.207669-06:00",
+        "last_activity": "2026-11-21T15:58:35.208666-06:00",
         "headline": "P41-M3 AWARD GATE ON THE SHOOTING-LUCK FADE — FILED as a mutation of P41 crossed with P384 (needs-capture via its parents)."
       },
       {
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T15:44:30.310669-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT: improvement distance = full for every HG form (0/239 frozen); requirement to close = the Arena P393 lock pass on future slips (venue station naphthalene series read…"
+        "last_activity": "2026-11-21T15:59:31.383665-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HK form fought — each remains 0/239 frozen (both bet-builder fields header-absent in the ledger); requirement…"
       },
       {
         "name": "Overseer",
