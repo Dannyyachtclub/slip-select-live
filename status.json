@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:45:37.904300-06:00",
+  "generated_at": "2026-11-21T00:50:37.393051-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T00:17:35.189839-06:00",
+      "last_activity": "2026-11-21T00:46:51.392057-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15 — 208-31, +63.24% fitted ROI"
     },
     {
@@ -161,15 +161,15 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T00:44:31.366052-06:00",
-      "headline": "Latest filing: P348"
+      "last_activity": "2026-11-21T00:46:57.446057-06:00",
+      "headline": "Latest filing: P349"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-21T00:13:27.033987-06:00",
-      "headline": "13 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
+      "last_activity": "2026-11-21T00:46:33.190056-06:00",
+      "headline": "15 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
@@ -718,6 +718,20 @@
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
+      "agent": "Loss Autopsy",
+      "kind": "generation",
+      "title": "CYCLE 41 — 2026-11-21 — Slice 4 RE-AUTOPSY under the VG25 kings (FAVOURITE-side losses)",
+      "summary": "VG25's crown did its work on the dog side and at the slice's edge — three fixes, one break — and Slice 4's membership did not move at…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "filing",
+      "title": "CYCLE 2026-11-21 (00:42 CST) — audit + hunt (classes a + g + f: quant research / cross-game price history / the house's chair — the…",
+      "summary": "One new angle filed this cycle: P345, the own-history price percentile / peak-price freeze — tonight's price located inside the team's…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
       "agent": "Edge Finder",
       "kind": "filing",
       "title": "CYCLE 2026-11-21 (00:12 CST) — audit + hunt (classes h + c + g + f: money flow / market microstructure / cross-market leg structure /…",
@@ -785,6 +799,13 @@
       "kind": "generation",
       "title": "Regime R4-G533 (loop, 2026-11-21) — NO NEW KING",
       "summary": "NO NEW KING. ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO (grand king) stands (207-32, priced 228, +3679.70m, +64.56%; dog 61 picks, 48-13,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
+      "kind": "generation",
+      "title": "Legacy R4-G535 (loop, 2026-11-21)",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15 stands (208-31, priced 229, +3620.48m, +63.24%; dog 57 picks, 47-10, priced 53, +1822.77m,…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -869,27 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 37 — 2026-11-20 — Slice 6 RE-AUTOPSY under the GRID8090OVRHIXHOME-Quantum kings (SINGLE-KING blind spots)",
       "summary": "The GRID8090OVRHIXHOME Quantum crown did three things at once: it banked +125.00m on S25-04, spent −29.25m on BB2-06 (a loss the…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (23:42 CST) — audit + hunt (classes e + d + f: public registry data / sport-specific soccer / the house's chair — the…",
-      "summary": "P338 REGISTRATION-BAN FREEZE — FILED as collector proposal P338 (number drawn from the spec-number authority before writing;…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (23:12 CST) — audit + hunt (classes e + d + f: public licence/registry data / sport-specific team sports / the house's…",
-      "summary": "P337 LICENCE-TABLE DISPLACEMENT FREEZE — FILED as collector proposal P337 (number drawn from the spec-number authority before writing;…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (22:42 CST) — audit + hunt (classes e + g + f: public registry data / cross-game lineage / the house's chair — the club…",
-      "summary": "P336 CLUB ENTITY-DISCONTINUITY / FEED-LINEAGE FREEZE — FILED as collector proposal P336 (number drawn from the spec-number authority…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
@@ -6848,6 +6848,26 @@
       "losses": 26,
       "pnl_m": 3777.8,
       "roi_pct": 66.28,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-57",
+      "name": "LONE-FAV FLIP",
+      "mechanism": "LONE-FAV FLIP",
+      "wins": 209,
+      "losses": 30,
+      "pnl_m": 3964.25,
+      "roi_pct": 69.55,
+      "status": "gate-clearing challenger (not crowned)"
+    },
+    {
+      "id": "AUTOPSY-59",
+      "name": "L&S FAV FLIP",
+      "mechanism": "L&S FAV FLIP",
+      "wins": 210,
+      "losses": 29,
+      "pnl_m": 3990.5,
+      "roi_pct": 70.32,
       "status": "gate-clearing challenger (not crowned)"
     },
     {
