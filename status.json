@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T02:25:42.420536-06:00",
+  "generated_at": "2026-11-21T02:30:38.933203-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,14 +112,14 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T02:00:43.371212-06:00",
+      "last_activity": "2026-11-21T02:26:00.862266-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15 — 208-31, +63.24% fitted ROI"
     },
     {
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-21T02:06:17.699224-06:00",
+      "last_activity": "2026-11-21T02:30:26.965275-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T02:13:48.621240-06:00",
+      "last_activity": "2026-11-21T02:28:33.470271-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T02:12:48.410238-06:00",
-      "headline": "Latest search cycle: 389"
+      "last_activity": "2026-11-21T02:27:08.460268-06:00",
+      "headline": "Latest search cycle: 390"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T02:19:34.383252-06:00",
-      "headline": "Latest filing: P356"
+      "last_activity": "2026-11-21T02:27:59.814270-06:00",
+      "headline": "Latest filing: P357"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 390 — 2026-11-21 02:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T02:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 389 — 2026-11-21 02:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T02:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 385 — 2026-11-21 01:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T01:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 384 — 2026-11-21 00:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T00:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -804,6 +804,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G394 — F4 CROSS-REFERENCE (seventy-eighth visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G394, no branch DEAD, and no new best form — F4 remains with the D8 control testably and NEEDS-FREEZE only…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G393 — F3 THROW-INCENTIVE ASYMMETRY (eighty-third visit) — 2026-11-21",
       "summary": "Verdict: NO NEW ARENA CHAMPION in G393, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 stands…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -834,13 +841,6 @@
       "kind": "generation",
       "title": "Arena G389 — F4 CROSS-REFERENCE (seventy-seventh visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G389, no branch DEAD, and no new best form — F4 remains with the D8 control testably and NEEDS-FREEZE only…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G388 — F3 THROW-INCENTIVE ASYMMETRY (eighty-second visit) — 2026-11-21",
-      "summary": "Verdict: NO NEW ARENA CHAMPION in G388, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-FLIPDEVIG85 stands…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -7097,8 +7097,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T02:19:34.383252-06:00",
-        "headline": "One new angle filed this cycle: P353, the referee workload freeze — the named official's own rest days and 7-day appointment load, derived from the appointment dates P176's fingerprint walk already…"
+        "last_activity": "2026-11-21T02:27:59.814270-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no total-steals field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no stl column; the route is one capture…"
       },
       {
         "name": "Loss Autopsy",
@@ -7142,8 +7142,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T02:13:48.621240-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every GR form fought — each remains 0/239 frozen (both parentloan fields header-absent in the ledger); requirement…"
+        "last_activity": "2026-11-21T02:28:33.470271-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every GT form fought — each remains 0/239 frozen (all four steals fields header-absent in the ledger); requirement…"
       },
       {
         "name": "Overseer",
