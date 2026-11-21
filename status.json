@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T17:25:41.987414-06:00",
+  "generated_at": "2026-11-21T17:30:40.776722-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T17:06:15.099077-06:00",
+      "last_activity": "2026-11-21T17:29:59.129056-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -140,29 +140,29 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T17:02:36.450080-06:00",
+      "last_activity": "2026-11-21T17:26:23.078059-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T17:15:48.436069-06:00",
+      "last_activity": "2026-11-21T17:28:50.009057-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T17:11:58.679072-06:00",
-      "headline": "Latest search cycle: 449"
+      "last_activity": "2026-11-21T17:26:49.750058-06:00",
+      "headline": "Latest search cycle: 450"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T17:15:23.571048-06:00",
-      "headline": "Latest filing: P399"
+      "last_activity": "2026-11-21T17:28:08.313057-06:00",
+      "headline": "Latest filing: P400"
     },
     {
       "name": "Loss Autopsy",
@@ -683,6 +683,20 @@
   },
   "activity": [
     {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 450 — 2026-11-21 17:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T17:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G437 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-21, 17:26 CST run) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G437, no branch DEAD, and no new best form — F2 remains with its B1 steam control as a note and…",
+      "at": "2026-11-21T17:26:00-06:00"
+    },
+    {
       "agent": "Edge Finder",
       "kind": "generation",
       "title": "CYCLE 2026-11-21 17:12 CST — Edge Finder (classes h lead + c/f supporting)",
@@ -751,13 +765,6 @@
       "title": "Arena G432 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-21, 16:11 CST run) — COMPLETED",
       "summary": "All computation through data_core/engine.py via arena_g432.py + outcome-blind census arena_g432_audit_census.py. Set: 239 rows…",
       "at": "2026-11-21T16:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 444 — 2026-11-21 15:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T15:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -869,13 +876,6 @@
       "kind": "generation",
       "title": "Arena G436 — F1 HOUSE-VIEW (next visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G436, no branch DEAD, and no new best form — F1 remains with its F-E note testable (standalone-proven,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G431 — F1 HOUSE-VIEW (next visit) — 2026-11-21",
-      "summary": "Verdict: NO ARENA CHAMPION in G431, no branch DEAD, and no new best form — F1 remains with its F-E note testable (standalone-proven,…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -7090,8 +7090,8 @@
         "role": "Rotating attackers whose job is killing false correlations",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T16:23:20.893660-06:00",
-        "headline": "Delivery note: one line under the charter — this KILLED clear was filed to intake today (Hunter Run 80) as a registration-only filing whose owner itself cited the prior kill and refused any…"
+        "last_activity": "2026-11-21T17:26:45.270058-06:00",
+        "headline": "Delivery note: one line under the charter — this KILLED clear was filed to intake ~7 minutes before this run (Hunter Run 85, ~17:12 CST) as a registration-only filing with no challenger claim, and…"
       },
       {
         "name": "Web Keeper",
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T17:15:23.571048-06:00",
-        "headline": "TRIAGE: NEEDS-CAPTURE — both popsel fields are absent from the verified field inventory (ledger header, slip JSONs and sidecars carry no popular-selection reading); the route is one capture step…"
+        "last_activity": "2026-11-21T17:28:08.313057-06:00",
+        "headline": "DISTANCE: full for every form fought at G437 — each remains 0/239 frozen (rev60_n and move_lc_pp header-absent in the ledger; census in data_core/arena_g437_audit_census.py). REQUIREMENT TO CLOSE:…"
       },
       {
         "name": "Loss Autopsy",
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T17:15:48.436069-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HL form fought — each remains 0/239 frozen (both popsel fields header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-21T17:28:50.009057-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HM form fought — each remains 0/239 frozen (rev60_n and move_lc_pp header-absent in the ledger); requirement…"
       },
       {
         "name": "Overseer",
