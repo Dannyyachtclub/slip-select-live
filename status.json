@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T01:55:39.528114-06:00",
+  "generated_at": "2026-11-21T02:00:41.139753-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,29 +140,29 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T01:30:02.818148-06:00",
+      "last_activity": "2026-11-21T01:55:49.486202-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T01:44:30.072178-06:00",
+      "last_activity": "2026-11-21T01:59:34.080210-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T01:42:25.115174-06:00",
-      "headline": "Latest search cycle: 387"
+      "last_activity": "2026-11-21T01:57:15.736205-06:00",
+      "headline": "Latest search cycle: 388"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T01:49:23.165189-06:00",
-      "headline": "Latest filing: P354"
+      "last_activity": "2026-11-21T01:59:08.007209-06:00",
+      "headline": "Latest filing: P355"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 388 — 2026-11-21 01:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T01:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 387 — 2026-11-21 01:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T01:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 383 — 2026-11-21 00:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T00:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 382 — 2026-11-21 00:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T00:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -790,6 +790,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G392 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (eighty-second visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G392, no branch DEAD, and no new best form — F2 remains parked, fully specified, awaiting its freeze.…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G391 — F1 HOUSE-VIEW (eighty-first visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G391, no branch DEAD, and no new best form — F1 remains with the F-E standalone note testably and…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -823,10 +830,10 @@
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
+      "agent": "Vanguard",
       "kind": "generation",
-      "title": "Arena G386 — F1 HOUSE-VIEW (eightieth visit) — 2026-11-21",
-      "summary": "Verdict: NO ARENA CHAMPION in G386, no branch DEAD, and no new best form — F1 remains with the F-E standalone note testably and…",
+      "title": "Vanguard R4-G159 (loop, 2026-11-21) — NO NEW KING",
+      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -882,13 +889,6 @@
       "agent": "Selector",
       "kind": "generation",
       "title": "SELECTOR R4-G345 (loop, 2026-11-21) — NO NEW KING; ONE ABOVE-KING SUB-GATE FORM (QUEUE CONFIRMATION ONLY)",
-      "summary": "NO NEW KING — LGM20BBAWAY stands (214-25, priced 226, +4214.20m, +74.59%). One above-king sub-gate form: V29 TIGHTEN DV<60 +75.21%…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G344 (loop, 2026-11-21) — NO NEW KING; ONE ABOVE-KING SUB-GATE FORM (QUEUE CONFIRMATION ONLY)",
       "summary": "NO NEW KING — LGM20BBAWAY stands (214-25, priced 226, +4214.20m, +74.59%). One above-king sub-gate form: V29 TIGHTEN DV<60 +75.21%…",
       "at": "2026-11-21T00:00:00-06:00"
     }
@@ -7025,7 +7025,7 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T00:57:26.325079-06:00",
+        "last_activity": "2026-11-21T01:58:46.901208-06:00",
         "headline": "Rotation note: sub-angles used — lock→close drift × king picks (Run 1); PM-vs-book at lock, census leg (Run 1); entry-price bands × lock prices (Run 2); hedged-instance behaviour (Run 3);…"
       },
       {
@@ -7052,8 +7052,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T00:59:25.355083-06:00",
-        "headline": "Best parallel: final-window CLV is the one systems-layer measurement that has now separated outcomes in the same direction on two independent sets and two closing instruments — #31–#38 final-window…"
+        "last_activity": "2026-11-21T01:59:31.193210-06:00",
+        "headline": "Best parallel: season sample size is priced for the favourite but not, on the evidence, for the kings — discovery-set favourites are GP-flat (THIN −6.35%, n=42, calibration −0.12pp; REST −5.88%,…"
       },
       {
         "name": "Correlation Hunter",
@@ -7097,7 +7097,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T01:49:23.165189-06:00",
+        "last_activity": "2026-11-21T01:59:08.007209-06:00",
         "headline": "One new angle filed this cycle: P352, the book-field camp-structure freeze — the dissenting books on the reference capture page counted by side, so a one-sided stale camp is separable from two-sided…"
       },
       {
@@ -7142,8 +7142,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T01:44:30.072178-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every FK form fought — each remains 0/239 frozen (both chip fields header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-21T01:59:34.080210-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every GP form fought — each remains 0/239 frozen (both worse-acceptance fields header-absent in the ledger);…"
       },
       {
         "name": "Overseer",
