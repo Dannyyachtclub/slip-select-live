@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T18:40:43.972211-06:00",
+  "generated_at": "2026-11-20T18:45:46.775071-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-20T18:04:42.897786-06:00",
+      "last_activity": "2026-11-20T18:45:09.531759-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN — 213-26, +73.70% fitted ROI"
     },
     {
@@ -154,28 +154,28 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T18:28:20.299770-06:00",
-      "headline": "Latest search cycle: 358"
+      "last_activity": "2026-11-20T18:43:24.511760-06:00",
+      "headline": "Latest search cycle: 359"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T18:31:26.928768-06:00",
+      "last_activity": "2026-11-20T18:45:22.958758-06:00",
       "headline": "Latest filing: P326"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T18:13:23.269780-06:00",
+      "last_activity": "2026-11-20T18:43:45.539759-06:00",
       "headline": "11 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T18:15:48.894779-06:00",
+      "last_activity": "2026-11-20T18:45:32.046758-06:00",
       "headline": "Cycle 90: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 359 — 2026-11-20 18:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T18:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 358 — 2026-11-20 18:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T18:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 354 — 2026-11-20 17:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. A Selector ablation crown (ABLCROWN, +73.70% fitted) landed…",
       "at": "2026-11-20T17:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 353 — 2026-11-20 17:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T17:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T18:40:40.569927-06:00",
+            "fetched_at": "2026-11-20T18:45:39.843929-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T18:40:40.569927-06:00",
+            "fetched_at": "2026-11-20T18:45:39.843929-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T18:40:40.569927-06:00",
+            "fetched_at": "2026-11-20T18:45:39.843929-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T18:40:40.569927-06:00",
+            "fetched_at": "2026-11-20T18:45:39.843929-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T18:40:40.569927-06:00",
+            "fetched_at": "2026-11-20T18:45:39.843929-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T18:40:40.569927-06:00",
+        "fetched_at": "2026-11-20T18:45:39.843929-06:00",
         "source": "ESPN",
         "official": false
       },
