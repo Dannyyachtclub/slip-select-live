@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T10:25:41.361294-06:00",
+  "generated_at": "2026-11-21T10:30:40.756124-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T10:07:14.996507-06:00",
+      "last_activity": "2026-11-21T10:30:03.278565-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T10:11:37.027518-06:00",
+      "last_activity": "2026-11-21T10:26:53.681557-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T10:11:45.730519-06:00",
-      "headline": "Latest search cycle: 421"
+      "last_activity": "2026-11-21T10:27:12.219558-06:00",
+      "headline": "Latest search cycle: 422"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 422 — 2026-11-21 10:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-421. Root cause named from primary records: court_state.py's Selector resolver only…",
+      "at": "2026-11-21T10:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 10:26 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
+      "summary": "AUDIT FAILED (sixth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
+      "at": "2026-11-21T10:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 421 — 2026-11-21 10:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-420. Root cause named from primary records: court_state.py's Selector resolver only…",
       "at": "2026-11-21T10:11:00-06:00"
@@ -744,13 +758,6 @@
       "title": "CYCLE 417 — 2026-11-21 09:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Root cause named from primary records: court_state.py's Selector resolver only searches selector_g357 single…",
       "at": "2026-11-21T09:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 416 — 2026-11-21 08:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T08:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -865,10 +872,10 @@
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
+      "agent": "Vanguard",
       "kind": "generation",
-      "title": "Arena G419 — F4 CROSS-REFERENCE (next visit) — 2026-11-21",
-      "summary": "Verdict: NO ARENA CHAMPION in G419, no branch DEAD, and no new best form — F4's NEEDS-FREEZE bench grows by one fully specified witness.…",
+      "title": "Vanguard R4-G179 (loop, 2026-11-21) — NO NEW KING",
+      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "gate-refusal",
       "title": "Vanguard R4-G177 (loop, 2026-11-21) — NO NEW KING (one GATE-REFUSED accuracy-bought headline)",
-      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G176 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
     }
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T10:11:37.027518-06:00",
+        "last_activity": "2026-11-21T10:26:53.681557-06:00",
         "headline": "DISTANCE / REQUIREMENT / HEIGHT: improvement distance = not measurable this run (no fight); requirement to close = a clean court_state regeneration + verify PASS, which requires the Selector…"
       },
       {
