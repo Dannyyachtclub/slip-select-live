@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T23:15:50.134823-06:00",
+  "generated_at": "2026-11-20T23:20:39.290882-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -4872,7 +4872,7 @@
     },
     {
       "number": 39,
-      "status": "LOCKED",
+      "status": "GRADED",
       "games": null,
       "grand_pick": {
         "selection": "Middle Tennessee Blue Raiders",
@@ -4888,7 +4888,7 @@
       },
       "draw_desk": {
         "pick_no": 8,
-        "selection": "Draw",
+        "selection": "Al Zawraa v Al Talaba, Draw",
         "price": 3.1,
         "paper": true
       },
@@ -4897,8 +4897,8 @@
       "date": "2026-11-20",
       "games_status": {
         "games_total": 40,
-        "games_ended": 0,
-        "games_live_final": 3,
+        "games_ended": 40,
+        "games_live_final": 0,
         "games_live_in": 0
       },
       "games_list": [
@@ -4907,2843 +4907,760 @@
           "game": "Western Sydney Wanderers W v Wellington Phoenix W",
           "time": "23:50",
           "tip_at": "2026-11-19T23:50:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Wellington Phoenix W)",
+          "final_score": "0-2",
           "bet_call": null,
           "league": "A-League Women",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.75,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Western Sydney Wanderers W",
-            "away": "Wellington Phoenix W",
-            "prices": {
-              "home": 5.0,
-              "away": 1.53,
-              "draw": 3.75
-            },
-            "devig_pct": {
-              "home": 17.85,
-              "away": 58.34,
-              "draw": 23.8
-            },
-            "overround_pct": 12.03,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.75,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.75,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.75,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.75,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Western Sydney Wanderers W",
-                "price": 5.0,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 2.47
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.75. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-02",
           "game": "Cairns Taipans v Perth Wildcats",
           "time": "02:30",
           "tip_at": "2026-11-20T02:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Cairns Taipans)",
+          "final_score": "98-90",
           "bet_call": null,
           "league": "Australia NBL",
           "sport": "Basketball",
           "pick": "Cairns Taipans",
           "price": 1.82,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Cairns Taipans",
-            "away": "Perth Wildcats",
-            "prices": {
-              "home": 1.82,
-              "away": 1.95,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 51.72,
-              "away": 48.28
-            },
-            "overround_pct": 6.23,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Cairns Taipans",
-                "price": 1.82,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Cairns Taipans",
-                "price": 1.82,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Cairns Taipans",
-                "price": 1.82,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Cairns Taipans",
-                "price": 1.82,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Cairns Taipans",
-                "price": 1.82,
-                "reason": "Trips veto — the fragility count cancels the dog pick; the favourite holds. VG24-BRANDDV75HOMEONLY forward judgment — computed for…"
-              }
-            ],
-            "totals": {
-              "line": 190.5,
-              "projection": 190.9
-            },
-            "bet_call": "LEDGER BET — Cairns Taipans 25m @ 1.82. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-03",
           "game": "Garudayaksa FC v Madura United",
           "time": "02:30",
           "tip_at": "2026-11-20T02:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Garudayaksa FC)",
+          "final_score": "1-0",
           "bet_call": null,
           "league": "Indonesia Super League",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.36,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Garudayaksa FC",
-            "away": "Madura United",
-            "prices": {
-              "home": 2.05,
-              "away": 2.92,
-              "draw": 3.36
-            },
-            "devig_pct": {
-              "home": 43.25,
-              "away": 30.36,
-              "draw": 26.39
-            },
-            "overround_pct": 12.79,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Madura United",
-                "price": 2.92,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": 2.5,
-              "projection": 3.0
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.36. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-04",
           "game": "PSS Sleman v Arema",
           "time": "02:30",
           "tip_at": "2026-11-20T02:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Arema)",
+          "final_score": "0-3",
           "bet_call": null,
           "league": "Indonesia Super League",
           "sport": "Soccer",
           "pick": "PSS Sleman",
           "price": 2.09,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "PSS Sleman",
-            "away": "Arema",
-            "prices": {
-              "home": 2.09,
-              "away": 2.82,
-              "draw": 3.45
-            },
-            "devig_pct": {
-              "home": 42.61,
-              "away": 31.58,
-              "draw": 25.81
-            },
-            "overround_pct": 12.29,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.45,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "PSS Sleman",
-                "price": 2.09,
-                "reason": "Draw-price band veto — a draw priced in [3.40, 3.60) is vetoed; the favourite is taken instead (the DRAW350VETO leg). (2 clauses moved…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.45,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "PSS Sleman",
-                "price": 2.09,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Arema",
-                "price": 2.82,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 3.67
-            },
-            "bet_call": "LEDGER BET — PSS Sleman 25m @ 2.09. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-05",
           "game": "South Melbourne v Canberra Croatia",
           "time": "02:30",
           "tip_at": "2026-11-20T02:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (South Melbourne)",
+          "final_score": "5-2",
           "bet_call": null,
           "league": "Australian Championship",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 7.5,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "South Melbourne",
-            "away": "Canberra Croatia",
-            "prices": {
-              "home": 1.07,
-              "away": 17.0,
-              "draw": 7.5
-            },
-            "devig_pct": {
-              "home": 82.95,
-              "away": 5.22,
-              "draw": 11.83
-            },
-            "overround_pct": 12.67,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 7.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 7.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 7.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 7.5,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "South Melbourne",
-                "price": 1.07,
-                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
-              }
-            ],
-            "totals": {
-              "line": 2.5,
-              "projection": 1.8
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 7.50. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-06",
           "game": "Sydney United 58 v Sutherland Sharks",
           "time": "02:30",
           "tip_at": "2026-11-20T02:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Sydney United 58)",
+          "final_score": "2-0",
           "bet_call": null,
           "league": "Australian Championship",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.6,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Sydney United 58",
-            "away": "Sutherland Sharks",
-            "prices": {
-              "home": 1.7,
-              "away": 3.9,
-              "draw": 3.6
-            },
-            "devig_pct": {
-              "home": 52.41,
-              "away": 22.84,
-              "draw": 24.75
-            },
-            "overround_pct": 12.24,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.6,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.6,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.6,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.6,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Sutherland Sharks",
-                "price": 3.9,
-                "reason": "Clause devig_range_flip is the last to move the pick. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it does not pick…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 2.0
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.60. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-07",
           "game": "Western Sydney Wanderers v Adelaide United",
           "time": "02:40",
           "tip_at": "2026-11-20T02:40:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Western Sydney Wanderers)",
+          "final_score": "4-2",
           "bet_call": null,
           "league": "A-League",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 4.0,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Western Sydney Wanderers",
-            "away": "Adelaide United",
-            "prices": {
-              "home": 1.62,
-              "away": 4.33,
-              "draw": 4.0
-            },
-            "devig_pct": {
-              "home": 56.21,
-              "away": 21.03,
-              "draw": 22.76
-            },
-            "overround_pct": 9.82,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Adelaide United",
-                "price": 4.33,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": 2.5,
-              "projection": 3.08
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 4.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-08",
           "game": "Rajasthan United FC v Chanmari FC",
           "time": "03:30",
           "tip_at": "2026-11-20T03:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Chanmari FC)",
+          "final_score": "1-4",
           "bet_call": null,
           "league": "Indian Football League",
           "sport": "Soccer",
           "pick": "Rajasthan United FC",
           "price": 1.93,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Rajasthan United FC",
-            "away": "Chanmari FC",
-            "prices": {
-              "home": 1.93,
-              "away": 3.55,
-              "draw": 3.5
-            },
-            "devig_pct": {
-              "home": 47.73,
-              "away": 25.95,
-              "draw": 26.32
-            },
-            "overround_pct": 8.55,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Rajasthan United FC",
-                "price": 1.93,
-                "reason": "Draw-price band veto — a draw priced in [3.40, 3.60) is vetoed; the favourite is taken instead (the DRAW350VETO leg). (2 clauses moved…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.5,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP stays with the two-court majority — no leg of the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Rajasthan United FC",
-                "price": 1.93,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 1.92
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.50. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-09",
           "game": "Kashima Antlers v Shimizu S-Pulse",
           "time": "04:00",
           "tip_at": "2026-11-20T04:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Draw",
+          "final_score": "1-1",
           "bet_call": null,
           "league": "J. League",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 4.0,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Kashima Antlers",
-            "away": "Shimizu S-Pulse",
-            "prices": {
-              "home": 1.5,
-              "away": 5.8,
-              "draw": 4.0
-            },
-            "devig_pct": {
-              "home": 61.21,
-              "away": 15.83,
-              "draw": 22.96
-            },
-            "overround_pct": 8.91,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 4.0,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Shimizu S-Pulse",
-                "price": 5.8,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": 2.5,
-              "projection": 3.06
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 4.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-10",
           "game": "Kashiwa Reysol v JEF United Chiba",
           "time": "04:00",
           "tip_at": "2026-11-20T04:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (JEF United Chiba)",
+          "final_score": "0-1",
           "bet_call": null,
           "league": "J. League",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 4.2,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Kashiwa Reysol",
-            "away": "JEF United Chiba",
-            "prices": {
-              "home": 1.5,
-              "away": 5.5,
-              "draw": 4.2
-            },
-            "devig_pct": {
-              "home": 61.35,
-              "away": 16.73,
-              "draw": 21.91
-            },
-            "overround_pct": 8.66,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 4.2,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 4.2,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 4.2,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 4.2,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Kashiwa Reysol",
-                "price": 1.5,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 2.5,
-              "projection": 3.24
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 4.20. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-11",
           "game": "Thanh Hoa FC v Hoang Anh Gia Lai",
           "time": "04:00",
           "tip_at": "2026-11-20T04:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Thanh Hoa FC)",
+          "final_score": "2-1",
           "bet_call": null,
           "league": "Vietnam V-League 1 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.36,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Thanh Hoa FC",
-            "away": "Hoang Anh Gia Lai",
-            "prices": {
-              "home": 2.1,
-              "away": 3.46,
-              "draw": 3.36
-            },
-            "devig_pct": {
-              "home": 44.8,
-              "away": 27.19,
-              "draw": 28.0
-            },
-            "overround_pct": 6.28,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "Soccer ball sits on the draw — de-vig draw 28.0% >= 27% (favourite Thanh Hoa FC de-vig 44.8%); no clause in the stack fires to move off it."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "Soccer ball sits on the draw — de-vig draw 28.0% >= 27% (favourite Thanh Hoa FC de-vig 44.8%); no clause in the stack fires to move off it."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.36,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Thanh Hoa FC",
-                "price": 2.1,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 3.08
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.36. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-12",
           "game": "Vissel Kobe v Mito Hollyhock",
           "time": "04:00",
           "tip_at": "2026-11-20T04:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Mito Hollyhock)",
+          "final_score": "1-2",
           "bet_call": null,
           "league": "J. League",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 4.5,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Vissel Kobe",
-            "away": "Mito Hollyhock",
-            "prices": {
-              "home": 1.4,
-              "away": 7.5,
-              "draw": 4.5
-            },
-            "devig_pct": {
-              "home": 66.77,
-              "away": 12.46,
-              "draw": 20.77
-            },
-            "overround_pct": 6.98,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 4.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 4.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 4.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 4.5,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Vissel Kobe",
-                "price": 1.4,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 2.5,
-              "projection": 2.68
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 4.50. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-13",
           "game": "Imisli FK v Zira",
           "time": "04:30",
           "tip_at": "2026-11-20T04:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Draw",
+          "final_score": "2-2",
           "bet_call": null,
           "league": "Azerbaijan Premier League (Premyer Liqa) 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.24,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Imisli FK",
-            "away": "Zira",
-            "prices": {
-              "home": 3.98,
-              "away": 1.95,
-              "draw": 3.24
-            },
-            "devig_pct": {
-              "home": 23.42,
-              "away": 47.81,
-              "draw": 28.77
-            },
-            "overround_pct": 7.27,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.24,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.24,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.24,
-                "reason": "Soccer ball sits on the draw — de-vig draw 28.77% >= 27% (favourite Zira de-vig 47.81%); no clause in the stack fires to move off it."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.24,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Imisli FK",
-                "price": 3.98,
-                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 2.5
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.24. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-14",
           "game": "Hapoel Jerusalem v Maccabi Ashdod",
           "time": "05:00",
           "tip_at": "2026-11-20T05:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Hapoel Jerusalem)",
+          "final_score": "92-68",
           "bet_call": null,
           "league": "Israel Super League",
           "sport": "Basketball",
           "pick": "Maccabi Ashdod",
           "price": 6.0,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Hapoel Jerusalem",
-            "away": "Maccabi Ashdod",
-            "prices": {
-              "home": 1.1,
-              "away": 6.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 84.51,
-              "away": 15.49
-            },
-            "overround_pct": 7.58,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Hapoel Jerusalem",
-                "price": 1.1,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Maccabi Ashdod",
-                "price": 6.0,
-                "reason": "Differential-gap band flip — a differential gap in the 10-15 band flips the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Hapoel Jerusalem",
-                "price": 1.1,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Maccabi Ashdod",
-                "price": 6.0,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Hapoel Jerusalem",
-                "price": 1.1,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 161.5,
-              "projection": 151.7
-            },
-            "bet_call": "LEDGER BET — Maccabi Ashdod 25m @ 6.00. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). Confidence screen evidence (no fire): Hapoel Jerusalem's de-vig is 84.51% — under the 90% confidence bar, so the confidence rule cannot fire; recorded as screen evidence."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-15",
           "game": "Van v Ararat Armenia",
           "time": "05:00",
           "tip_at": "2026-11-20T05:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Ararat Armenia)",
+          "final_score": "1-2",
           "bet_call": null,
           "league": "Armenian Premier League 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 5.5,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Van",
-            "away": "Ararat Armenia",
-            "prices": {
-              "home": 9.55,
-              "away": 1.29,
-              "draw": 5.5
-            },
-            "devig_pct": {
-              "home": 9.86,
-              "away": 73.01,
-              "draw": 17.12
-            },
-            "overround_pct": 6.17,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 5.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 5.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 5.5,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 5.5,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Ararat Armenia",
-                "price": 1.29,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 3.1
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 5.50. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-16",
           "game": "Hapoel Beer Sheva v Ironi Nes Ziona",
           "time": "05:10",
           "tip_at": "2026-11-20T05:10:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Hapoel Beer Sheva)",
+          "final_score": "90-80",
           "bet_call": null,
           "league": "Israel Super League",
           "sport": "Basketball",
           "pick": "Ironi Nes Ziona",
           "price": 1.36,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Hapoel Beer Sheva",
-            "away": "Ironi Nes Ziona",
-            "prices": {
-              "home": 2.88,
-              "away": 1.36,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 32.08,
-              "away": 67.92
-            },
-            "overround_pct": 8.25,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Hapoel Beer Sheva",
-                "price": 2.88,
-                "reason": "Away-band flip — the favourite's price sits in the flip band and the favourite is away."
-              },
-              {
-                "court": "Regime",
-                "pick": "Ironi Nes Ziona",
-                "price": 1.36,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Ironi Nes Ziona",
-                "price": 1.36,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Hapoel Beer Sheva",
-                "price": 2.88,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Ironi Nes Ziona",
-                "price": 1.36,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 169.5,
-              "projection": 169.8
-            },
-            "bet_call": "LEDGER BET — Hapoel Beer Sheva 25m @ 2.88. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-17",
           "game": "Al Zawraa v Al Talaba",
           "time": "05:15",
           "tip_at": "2026-11-20T05:15:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Al Zawraa)",
+          "final_score": "4-1",
           "bet_call": null,
           "league": "Iraq Stars League 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.1,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Al Zawraa",
-            "away": "Al Talaba",
-            "prices": {
-              "home": 2.03,
-              "away": 3.41,
-              "draw": 3.1
-            },
-            "devig_pct": {
-              "home": 44.44,
-              "away": 26.46,
-              "draw": 29.1
-            },
-            "overround_pct": 10.84,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.1,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.1,
-                "reason": "Soccer ball sits on the draw — de-vig draw 29.1% >= 27% (favourite Al Zawraa de-vig 44.44%); no clause in the stack fires to move off it."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.1,
-                "reason": "Soccer ball sits on the draw — de-vig draw 29.1% >= 27% (favourite Al Zawraa de-vig 44.44%); no clause in the stack fires to move off it."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.1,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Al Talaba",
-                "price": 3.41,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 2.38
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.10. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). DRAW DESK (paper) — Draw @ 3.10, flat 25m paper, Draw Desk entry #8. Named case: Baghdad derby (both clubs Baghdad-based, played at Al-Shaab International Stadium) carrying the slip's highest draw de-vig (29.10%) with a low 2.38-goal projection and near-even frozen rates (Al Zawraa +0.39, Al Talaba -0.23 per game). The desk pick is paper only and is not merged into the ledger bet."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-18",
           "game": "East Bengal FC v SC Delhi",
           "time": "05:30",
           "tip_at": "2026-11-20T05:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Draw",
+          "final_score": "2-2",
           "bet_call": null,
           "league": "Indian Super League 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 4.75,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "East Bengal FC",
-            "away": "SC Delhi",
-            "prices": {
-              "home": 1.38,
-              "away": 6.5,
-              "draw": 4.75
-            },
-            "devig_pct": {
-              "home": 66.54,
-              "away": 14.13,
-              "draw": 19.33
-            },
-            "overround_pct": 8.9,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 4.75,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 4.75,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 4.75,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 4.75,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "East Bengal FC",
-                "price": 1.38,
-                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. (2 clauses moved the pick; the last one decides…"
-              }
-            ],
-            "totals": {
-              "line": 3.5,
-              "projection": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
-              }
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 4.75. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-19",
           "game": "FC Jurong v Balestier Khalsa FC",
           "time": "05:30",
           "tip_at": "2026-11-20T05:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (FC Jurong)",
+          "final_score": "3-2",
           "bet_call": null,
           "league": "Singapore Premier League 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 4.3,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "FC Jurong",
-            "away": "Balestier Khalsa FC",
-            "prices": {
-              "home": 1.57,
-              "away": 5.05,
-              "draw": 4.3
-            },
-            "devig_pct": {
-              "home": 59.67,
-              "away": 18.55,
-              "draw": 21.78
-            },
-            "overround_pct": 6.75,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 4.3,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 4.3,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 4.3,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 4.3,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "FC Jurong",
-                "price": 1.57,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 3.25
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 4.30. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-20",
           "game": "Swit Skolwin v Stal Stalowa Wola",
           "time": "05:30",
           "tip_at": "2026-11-20T05:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Stal Stalowa Wola)",
+          "final_score": "1-2",
           "bet_call": null,
           "league": "Poland II Liga 2026/27",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.62,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Swit Skolwin",
-            "away": "Stal Stalowa Wola",
-            "prices": {
-              "home": 2.9,
-              "away": 2.22,
-              "draw": 3.62
-            },
-            "devig_pct": {
-              "home": 32.18,
-              "away": 42.04,
-              "draw": 25.78
-            },
-            "overround_pct": 7.15,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.62,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.62,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.62,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.62,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Stal Stalowa Wola",
-                "price": 2.22,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 3.32
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.62. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-21",
           "game": "Beijing Guoan v Shanghai Port",
           "time": "05:35",
           "tip_at": "2026-11-20T05:35:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Shanghai Port)",
+          "final_score": "0-2",
           "bet_call": null,
           "league": "Chinese FA Cup 2026",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.82,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Beijing Guoan",
-            "away": "Shanghai Port",
-            "prices": {
-              "home": 2.92,
-              "away": 2.17,
-              "draw": 3.82
-            },
-            "devig_pct": {
-              "home": 32.15,
-              "away": 43.27,
-              "draw": 24.58
-            },
-            "overround_pct": 6.51,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.82,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.82,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.82,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.82,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Shanghai Port",
-                "price": 2.17,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No projection: verified scoring rates for both teams were not frozen at lock (no soccer totals projection for these competitions)."
-              }
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.82. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-22",
           "game": "AGMK v Qizilqum Zarafshon",
           "time": "06:00",
           "tip_at": "2026-11-20T06:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Qizilqum Zarafshon)",
+          "final_score": "0-1",
           "bet_call": null,
           "league": "Uzbekistan Superliga 2026",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.76,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "AGMK",
-            "away": "Qizilqum Zarafshon",
-            "prices": {
-              "home": 1.78,
-              "away": 4.14,
-              "draw": 3.76
-            },
-            "devig_pct": {
-              "home": 52.54,
-              "away": 22.59,
-              "draw": 24.87
-            },
-            "overround_pct": 6.93,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.76,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.76,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.76,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.76,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Qizilqum Zarafshon",
-                "price": 4.14,
-                "reason": "Clause devig_range_flip is the last to move the pick. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it does not pick…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 2.43
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.76. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-23",
           "game": "Lokomotiv Tashkent v Pakhtakor Tashkent",
           "time": "06:00",
           "tip_at": "2026-11-20T06:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Lokomotiv Tashkent)",
+          "final_score": "2-1",
           "bet_call": null,
           "league": "Uzbekistan Superliga 2026",
           "sport": "Soccer",
           "pick": "Draw",
           "price": 3.69,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Lokomotiv Tashkent",
-            "away": "Pakhtakor Tashkent",
-            "prices": {
-              "home": 3.76,
-              "away": 1.95,
-              "draw": 3.69
-            },
-            "devig_pct": {
-              "home": 25.33,
-              "away": 48.85,
-              "draw": 25.82
-            },
-            "overround_pct": 4.98,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Draw",
-                "price": 3.69,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Regime",
-                "pick": "Draw",
-                "price": 3.69,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Draw",
-                "price": 3.69,
-                "reason": "Soccer draw rule — the stack's soccer clause sets the pick to the draw."
-              },
-              {
-                "court": "Selector",
-                "pick": "Draw",
-                "price": 3.69,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Lokomotiv Tashkent",
-                "price": 3.76,
-                "reason": "Dog-price band rule — the dog's price sits in the named band, so the pick takes the dog. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 1.5,
-              "projection": 2.81
-            },
-            "bet_call": "LEDGER BET — Draw 25m @ 3.69. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-24",
           "game": "KTP Basket v Helsinki Seagulls",
           "time": "10:30",
           "tip_at": "2026-11-20T10:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (KTP Basket)",
+          "final_score": "99-82",
           "bet_call": null,
           "league": "Finland Korisliiga",
           "sport": "Basketball",
           "pick": "Helsinki Seagulls",
           "price": 2.52,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "KTP Basket",
-            "away": "Helsinki Seagulls",
-            "prices": {
-              "home": 1.42,
-              "away": 2.52,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 63.96,
-              "away": 36.04
-            },
-            "overround_pct": 10.11,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "KTP Basket",
-                "price": 1.42,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Helsinki Seagulls",
-                "price": 2.52,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Helsinki Seagulls",
-                "price": 2.52,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "KTP Basket",
-                "price": 1.42,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "KTP Basket",
-                "price": 1.42,
-                "reason": "Clause diffpos_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG24-BRANDDV75HOMEONLY forward…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 172.25
-            },
-            "bet_call": "LEDGER BET — KTP Basket 25m @ 1.42. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-25",
           "game": "Salon Vilpas v Kauhajoen Karhu",
           "time": "10:30",
           "tip_at": "2026-11-20T10:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Salon Vilpas)",
+          "final_score": "90-76",
           "bet_call": null,
           "league": "Finland Korisliiga",
           "sport": "Basketball",
           "pick": "Salon Vilpas",
           "price": 1.34,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Salon Vilpas",
-            "away": "Kauhajoen Karhu",
-            "prices": {
-              "home": 1.34,
-              "away": 2.98,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 68.98,
-              "away": 31.02
-            },
-            "overround_pct": 8.18,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Salon Vilpas",
-                "price": 1.34,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Salon Vilpas",
-                "price": 1.34,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Kauhajoen Karhu",
-                "price": 2.98,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Selector",
-                "pick": "Salon Vilpas",
-                "price": 1.34,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP stays with the two-court majority — no leg of the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Salon Vilpas",
-                "price": 1.34,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 169.1
-            },
-            "bet_call": "LEDGER BET — Salon Vilpas 25m @ 1.34. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-26",
           "game": "UU Korihait v Tapiolan Honka",
           "time": "10:30",
           "tip_at": "2026-11-20T10:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (UU Korihait)",
+          "final_score": "103-99",
           "bet_call": null,
           "league": "Finland Korisliiga",
           "sport": "Basketball",
           "pick": "Tapiolan Honka",
           "price": 2.59,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "UU Korihait",
-            "away": "Tapiolan Honka",
-            "prices": {
-              "home": 1.4,
-              "away": 2.59,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 64.91,
-              "away": 35.09
-            },
-            "overround_pct": 10.04,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Tapiolan Honka",
-                "price": 2.59,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Regime",
-                "pick": "Tapiolan Honka",
-                "price": 2.59,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Quantum",
-                "pick": "UU Korihait",
-                "price": 1.4,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "UU Korihait",
-                "price": 1.4,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Tapiolan Honka",
-                "price": 2.59,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. VG24-BRANDDV75HOMEONLY forward judgment — computed for grading; it…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 188.95
-            },
-            "bet_call": "LEDGER BET — UU Korihait 25m @ 1.40. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-27",
           "game": "FMP Beograd v Igokea",
           "time": "11:00",
           "tip_at": "2026-11-20T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Igokea)",
+          "final_score": "69-71",
           "bet_call": null,
           "league": "ABA League Group A",
           "sport": "Basketball",
           "pick": "FMP Beograd",
           "price": 1.6,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "FMP Beograd",
-            "away": "Igokea",
-            "prices": {
-              "home": 1.6,
-              "away": 2.38,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 59.8,
-              "away": 40.2
-            },
-            "overround_pct": 4.52,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "FMP Beograd",
-                "price": 1.6,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "FMP Beograd",
-                "price": 1.6,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "FMP Beograd",
-                "price": 1.6,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "FMP Beograd",
-                "price": 1.6,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "FMP Beograd",
-                "price": 1.6,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 167.5,
-              "projection": 167.25
-            },
-            "bet_call": "LEDGER BET — FMP Beograd 25m @ 1.60. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-28",
           "game": "Gornik Walbrzych v GTK Gliwice",
           "time": "11:00",
           "tip_at": "2026-11-20T11:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Gornik Walbrzych)",
+          "final_score": "70-52",
           "bet_call": null,
           "league": "PLK",
           "sport": "Basketball",
           "pick": "Gornik Walbrzych",
           "price": 1.3,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Gornik Walbrzych",
-            "away": "GTK Gliwice",
-            "prices": {
-              "home": 1.3,
-              "away": 3.2,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 71.11,
-              "away": 28.89
-            },
-            "overround_pct": 8.17,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Gornik Walbrzych",
-                "price": 1.3,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Gornik Walbrzych",
-                "price": 1.3,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Gornik Walbrzych",
-                "price": 1.3,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Gornik Walbrzych",
-                "price": 1.3,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Gornik Walbrzych",
-                "price": 1.3,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 164.5,
-              "projection": 166.55
-            },
-            "bet_call": "LEDGER BET — Gornik Walbrzych 25m @ 1.30. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-29",
           "game": "Anadolu Efes v ASVEL Lyon-Villeurbanne",
           "time": "11:30",
           "tip_at": "2026-11-20T11:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Anadolu Efes)",
+          "final_score": "107-81",
           "bet_call": null,
           "league": "EuroLeague",
           "sport": "Basketball",
           "pick": "Anadolu Efes",
           "price": 1.34,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Anadolu Efes",
-            "away": "ASVEL Lyon-Villeurbanne",
-            "prices": {
-              "home": 1.34,
-              "away": 3.3,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 71.12,
-              "away": 28.88
-            },
-            "overround_pct": 4.93,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Anadolu Efes",
-                "price": 1.34,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Anadolu Efes",
-                "price": 1.34,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "ASVEL Lyon-Villeurbanne",
-                "price": 3.3,
-                "reason": "Brand fade — the favourite's name is carrying the price, so the pick goes the other way."
-              },
-              {
-                "court": "Selector",
-                "pick": "Anadolu Efes",
-                "price": 1.34,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP stays with the two-court majority — no leg of the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Anadolu Efes",
-                "price": 1.34,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 172.5,
-              "projection": 177.38
-            },
-            "bet_call": "LEDGER BET — Anadolu Efes 25m @ 1.34. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-30",
           "game": "Krka v Borac",
           "time": "11:30",
           "tip_at": "2026-11-20T11:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Krka)",
+          "final_score": "91-73",
           "bet_call": null,
           "league": "ABA League Group A",
           "sport": "Basketball",
           "pick": "Krka",
           "price": 1.42,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Krka",
-            "away": "Borac",
-            "prices": {
-              "home": 1.42,
-              "away": 2.6,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 64.68,
-              "away": 35.32
-            },
-            "overround_pct": 8.88,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Borac",
-                "price": 2.6,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Regime",
-                "pick": "Krka",
-                "price": 1.42,
-                "reason": "Trips veto — the fragility count cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Borac",
-                "price": 2.6,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Selector",
-                "pick": "Krka",
-                "price": 1.42,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Krka",
-                "price": 1.42,
-                "reason": "Trips veto — the fragility count cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides it.)…"
-              }
-            ],
-            "totals": {
-              "line": 165.75,
-              "projection": 165.43
-            },
-            "bet_call": "LEDGER BET — Krka 25m @ 1.42. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-31",
           "game": "Middle Tennessee Blue Raiders v Temple Owls",
           "time": "11:30",
           "tip_at": "2026-11-20T11:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Temple Owls)",
+          "final_score": "76-85",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Middle Tennessee Blue Raiders",
           "price": 2.37,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 76,
-            "away_score": 85,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-20T23:15:46.374823-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "76-85",
-          "detail": {
-            "home": "Middle Tennessee Blue Raiders",
-            "away": "Temple Owls",
-            "prices": {
-              "home": 2.37,
-              "away": 1.61,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 40.45,
-              "away": 59.55
-            },
-            "overround_pct": 4.31,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Temple Owls",
-                "price": 1.61,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Middle Tennessee Blue Raiders",
-                "price": 2.37,
-                "reason": "Away-band flip — the favourite's price sits in the flip band and the favourite is away."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Temple Owls",
-                "price": 1.61,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Middle Tennessee Blue Raiders",
-                "price": 2.37,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Temple Owls",
-                "price": 1.61,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 146.5,
-              "projection": 152.0
-            },
-            "bet_call": "BET — GRAND PICK: Middle Tennessee Blue Raiders, small 25m @ 2.37. Named gap (Kim Rule): The frozen differentials point the other way from the price: Middle Tennessee run +5.0 points/game against Temple's -2.8 — a 7.8-point rate gap for the team priced as the 2.37 underdog. Temple's 1.61 is the bigger programme's brand price; on the frozen rates Middle Tennessee is at least Temple's equal. Regime and the Selector (the card pick) both take Middle Tennessee. The grand pick IS this game's ledger bet (the card pick is also Middle Tennessee Blue Raiders) — one 25m bet, not two."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S39-32",
           "game": "Minnesota Golden Gophers v Oklahoma State Cowboys",
           "time": "11:30",
           "tip_at": "2026-11-20T11:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Minnesota Golden Gophers)",
+          "final_score": "85-70",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Minnesota Golden Gophers",
           "price": 1.98,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 85,
-            "away_score": 70,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-20T23:15:46.374823-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "85-70",
-          "detail": {
-            "home": "Minnesota Golden Gophers",
-            "away": "Oklahoma State Cowboys",
-            "prices": {
-              "home": 1.98,
-              "away": 1.85,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 48.3,
-              "away": 51.7
-            },
-            "overround_pct": 4.56,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Oklahoma State Cowboys",
-                "price": 1.85,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Minnesota Golden Gophers",
-                "price": 1.98,
-                "reason": "Away-band flip — the favourite's price sits in the flip band and the favourite is away."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Oklahoma State Cowboys",
-                "price": 1.85,
-                "reason": "Clause ball_dog_veto is the last to move the pick."
-              },
-              {
-                "court": "Selector",
-                "pick": "Minnesota Golden Gophers",
-                "price": 1.98,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Oklahoma State Cowboys",
-                "price": 1.85,
-                "reason": "Clause diffpos_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG24-BRANDDV75HOMEONLY forward…"
-              }
-            ],
-            "totals": {
-              "line": 146.5,
-              "projection": 153.5
-            },
-            "bet_call": "LEDGER BET — Minnesota Golden Gophers 25m @ 1.98. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S39-33",
           "game": "Cibona v Kvarner",
           "time": "12:00",
           "tip_at": "2026-11-20T12:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Cibona)",
+          "final_score": "90-73",
           "bet_call": null,
           "league": "Croatia Premier League",
           "sport": "Basketball",
           "pick": "Kvarner",
           "price": 6.1,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Cibona",
-            "away": "Kvarner",
-            "prices": {
-              "home": 1.08,
-              "away": 6.1,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 84.96,
-              "away": 15.04
-            },
-            "overround_pct": 8.99,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Cibona",
-                "price": 1.08,
-                "reason": "Differential-dog veto — the dog's own differential cancels the dog pick; the favourite holds. (2 clauses moved the pick; the last one…"
-              },
-              {
-                "court": "Regime",
-                "pick": "Kvarner",
-                "price": 6.1,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Kvarner",
-                "price": 6.1,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Cibona",
-                "price": 1.08,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Cibona",
-                "price": 1.08,
-                "reason": "Clause diffpos_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG24-BRANDDV75HOMEONLY forward…"
-              }
-            ],
-            "totals": {
-              "line": 171.25,
-              "projection": 169.0
-            },
-            "bet_call": "LEDGER BET — Cibona 25m @ 1.08. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). Confidence screen evidence (no fire): Cibona's de-vig is 84.96% — under the 90% confidence bar, so the confidence rule cannot fire; recorded as screen evidence."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-34",
           "game": "Samobor v Dubrovnik",
           "time": "12:00",
           "tip_at": "2026-11-20T12:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Samobor)",
+          "final_score": "84-69",
           "bet_call": null,
           "league": "Premijer liga",
           "sport": "Basketball",
           "pick": "Dubrovnik",
           "price": 1.99,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Samobor",
-            "away": "Dubrovnik",
-            "prices": {
-              "home": 1.7,
-              "away": 1.99,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 53.93,
-              "away": 46.07
-            },
-            "overround_pct": 9.07,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Dubrovnik",
-                "price": 1.99,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Regime",
-                "pick": "Dubrovnik",
-                "price": 1.99,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Dubrovnik",
-                "price": 1.99,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Selector",
-                "pick": "Dubrovnik",
-                "price": 1.99,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Dubrovnik",
-                "price": 1.99,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 163.9
-            },
-            "bet_call": "LEDGER BET — Dubrovnik 25m @ 1.99. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-35",
           "game": "Zadar v Zabok",
           "time": "12:00",
           "tip_at": "2026-11-20T12:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Zadar)",
+          "final_score": "101-74",
           "bet_call": null,
           "league": "Premijer liga",
           "sport": "Basketball",
           "pick": "Zabok",
           "price": 9.81,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Zadar",
-            "away": "Zabok",
-            "prices": {
-              "home": 1.01,
-              "away": 9.81,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 90.67,
-              "away": 9.33
-            },
-            "overround_pct": 9.2,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Zadar",
-                "price": 1.01,
-                "reason": "Sport de-vig band veto — in this sport and confidence band the dog pick is cancelled. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Zabok",
-                "price": 9.81,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Zabok",
-                "price": 9.81,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Zadar",
-                "price": 1.01,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Zadar",
-                "price": 1.01,
-                "reason": "Clause diffpos_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG24-BRANDDV75HOMEONLY forward…"
-              }
-            ],
-            "totals": {
-              "line": {
-                "status": "NOT_AVAILABLE",
-                "reason": "No totals market captured from a reachable source inside the lock window for this competition; not invented."
-              },
-              "projection": 160.55
-            },
-            "bet_call": "LEDGER BET — Zadar 25m @ 1.01. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-36",
           "game": "Bosna Royal v Ilirija",
           "time": "13:00",
           "tip_at": "2026-11-20T13:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Bosna Royal)",
+          "final_score": "73-67",
           "bet_call": null,
           "league": "ABA League: Group B",
           "sport": "Basketball",
           "pick": "Ilirija",
           "price": 4.9,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Bosna Royal",
-            "away": "Ilirija",
-            "prices": {
-              "home": 1.13,
-              "away": 4.9,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 81.26,
-              "away": 18.74
-            },
-            "overround_pct": 8.9,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Ilirija",
-                "price": 4.9,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Regime",
-                "pick": "Ilirija",
-                "price": 4.9,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Ilirija",
-                "price": 4.9,
-                "reason": "Overround flip — the book's margin is fat enough that the pick flips."
-              },
-              {
-                "court": "Selector",
-                "pick": "Ilirija",
-                "price": 4.9,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Bosna Royal",
-                "price": 1.13,
-                "reason": "Clause diffpos_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG24-BRANDDV75HOMEONLY forward…"
-              }
-            ],
-            "totals": {
-              "line": 165.5,
-              "projection": 165.25
-            },
-            "bet_call": "LEDGER BET — Ilirija 25m @ 4.90. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). UNDERDOG DESK (paper) — Ilirija @ 4.90, flat 25m paper, Underdog Desk entry #17. Paper only; not merged into the ledger bet."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-37",
           "game": "Roanne v Limoges",
           "time": "13:00",
           "tip_at": "2026-11-20T13:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Roanne)",
+          "final_score": "85-82",
           "bet_call": null,
           "league": "LNB Elite",
           "sport": "Basketball",
           "pick": "Roanne",
           "price": 1.39,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Roanne",
-            "away": "Limoges",
-            "prices": {
-              "home": 1.39,
-              "away": 3.18,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 69.58,
-              "away": 30.42
-            },
-            "overround_pct": 3.39,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Limoges",
-                "price": 3.18,
-                "reason": "Zero-trip flip — the clean-screen favourite in this price shape gets flipped to the dog."
-              },
-              {
-                "court": "Regime",
-                "pick": "Roanne",
-                "price": 1.39,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Roanne",
-                "price": 1.39,
-                "reason": "Differential-gap veto — the table gap is too wide for the dog pick; the favourite holds. (2 clauses moved the pick; the last one decides…"
-              },
-              {
-                "court": "Selector",
-                "pick": "Limoges",
-                "price": 3.18,
-                "reason": "Selector UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP follows the lone dissenter — the crowned NOFAVP chain…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Roanne",
-                "price": 1.39,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 165.5,
-              "projection": 168.9
-            },
-            "bet_call": "LEDGER BET — Limoges 25m @ 3.18. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-38",
           "game": "UAB Blazers v George Washington Revolutionaries",
           "time": "13:00",
           "tip_at": "2026-11-20T13:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (UAB Blazers)",
+          "final_score": "81-76",
           "bet_call": null,
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "George Washington Revolutionaries",
           "price": 1.16,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 81,
-            "away_score": 76,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-20T23:15:46.374823-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "81-76",
-          "detail": {
-            "home": "UAB Blazers",
-            "away": "George Washington Revolutionaries",
-            "prices": {
-              "home": 5.2,
-              "away": 1.16,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 18.24,
-              "away": 81.76
-            },
-            "overround_pct": 5.44,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "George Washington Revolutionaries",
-                "price": 1.16,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "George Washington Revolutionaries",
-                "price": 1.16,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "George Washington Revolutionaries",
-                "price": 1.16,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "George Washington Revolutionaries",
-                "price": 1.16,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "George Washington Revolutionaries",
-                "price": 1.16,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 151.5,
-              "projection": 145.9
-            },
-            "bet_call": "LEDGER BET — George Washington Revolutionaries 25m @ 1.16. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S39-39",
           "game": "Wurzburg v SC RASTA Vechta",
           "time": "13:00",
           "tip_at": "2026-11-20T13:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (SC RASTA Vechta)",
+          "final_score": "91-97",
           "bet_call": null,
           "league": "BBL",
           "sport": "Basketball",
           "pick": "Wurzburg",
           "price": 1.48,
-          "outcome": null,
+          "outcome": "LOST",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Wurzburg",
-            "away": "SC RASTA Vechta",
-            "prices": {
-              "home": 1.48,
-              "away": 2.6,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 63.73,
-              "away": 36.27
-            },
-            "overround_pct": 6.03,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Wurzburg",
-                "price": 1.48,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Wurzburg",
-                "price": 1.48,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Wurzburg",
-                "price": 1.48,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Wurzburg",
-                "price": 1.48,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Wurzburg",
-                "price": 1.48,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 168.5,
-              "projection": 170.1
-            },
-            "bet_call": "LEDGER BET — Wurzburg 25m @ 1.48. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         },
         {
           "game_id": "S39-40",
           "game": "Astoria Bydgoszcz v Energa Czarni Slupsk",
           "time": "13:15",
           "tip_at": "2026-11-20T13:15:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Astoria Bydgoszcz)",
+          "final_score": "95-58",
           "bet_call": null,
           "league": "Poland Basket Liga (PLK)",
           "sport": "Basketball",
           "pick": "Astoria Bydgoszcz",
           "price": 1.65,
-          "outcome": null,
+          "outcome": "WON",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "detail": {
-            "home": "Astoria Bydgoszcz",
-            "away": "Energa Czarni Slupsk",
-            "prices": {
-              "home": 1.65,
-              "away": 2.15,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 56.58,
-              "away": 43.42
-            },
-            "overround_pct": 7.12,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Astoria Bydgoszcz",
-                "price": 1.65,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Astoria Bydgoszcz",
-                "price": 1.65,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Astoria Bydgoszcz",
-                "price": 1.65,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Astoria Bydgoszcz",
-                "price": 1.65,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Astoria Bydgoszcz",
-                "price": 1.65,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG24-BRANDDV75HOMEONLY forward judgment —…"
-              }
-            ],
-            "totals": {
-              "line": 164.5,
-              "projection": 172.86
-            },
-            "bet_call": "LEDGER BET — Astoria Bydgoszcz 25m @ 1.65. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19)."
-          }
+          "detail": null
         }
       ],
       "top3": [
@@ -7756,25 +5673,15 @@
           "stake_m": 25,
           "price": 2.37,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "76-85",
           "tip_at": "2026-11-20T11:30:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 76,
-            "away_score": 85,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-20T23:15:46.374823-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "76-85",
-          "reason": "BET — GRAND PICK: Middle Tennessee Blue Raiders, small 25m @ 2.37. Named gap (Kim Rule): The frozen differentials point the other way from the price: Middle Tennessee run +5.0 points/game against Temple's -2.8 — a 7.8-point rate gap for the team priced as the 2.37 underdog. Temple's 1.61 is the bigger programme's brand price; on the frozen rates Middle Tennessee is at least Temple's equal. Regime and the Selector (the card pick) both take Middle Tennessee. The grand pick IS this game's ledger bet (the card pick is also Middle Tennessee Blue Raiders) — one 25m bet, not two.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -7782,8 +5689,8 @@
         {
           "rank": 3,
           "kind": "UNDERDOG DESK",
-          "game_id": "S39-36",
-          "game": "Bosna Royal v Ilirija",
+          "game_id": null,
+          "game": null,
           "pick": "Ilirija",
           "stake_m": 25,
           "price": 4.9,
@@ -7792,11 +5699,11 @@
           "result": null,
           "pnl_m": null,
           "final_score": null,
-          "tip_at": "2026-11-20T13:00:00-06:00",
+          "tip_at": null,
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "reason": "LEDGER BET — Ilirija 25m @ 4.90. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). UNDERDOG DESK (paper) — Ilirija @ 4.90, flat 25m paper, Underdog Desk entry #17. Paper only; not merged into the ledger bet.",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -7813,25 +5720,15 @@
           "stake_m": 25,
           "price": 2.37,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "76-85",
           "tip_at": "2026-11-20T11:30:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 76,
-            "away_score": 85,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-20T23:15:46.374823-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "76-85",
-          "reason": "BET — GRAND PICK: Middle Tennessee Blue Raiders, small 25m @ 2.37. Named gap (Kim Rule): The frozen differentials point the other way from the price: Middle Tennessee run +5.0 points/game against Temple's -2.8 — a 7.8-point rate gap for the team priced as the 2.37 underdog. Temple's 1.61 is the bigger programme's brand price; on the frozen rates Middle Tennessee is at least Temple's equal. Regime and the Selector (the card pick) both take Middle Tennessee. The grand pick IS this game's ledger bet (the card pick is also Middle Tennessee Blue Raiders) — one 25m bet, not two.",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -7846,15 +5743,15 @@
           "stake_m": 25,
           "price": 1.01,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 0.25,
+          "final_score": "101-74",
           "tip_at": "2026-11-20T12:00:00-06:00",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "reason": "LEDGER BET — Zadar 25m @ 1.01. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19).",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -7863,8 +5760,8 @@
           "rank": 3,
           "kind": "UNDERDOG DESK",
           "fire": null,
-          "game_id": "S39-36",
-          "game": "Bosna Royal v Ilirija",
+          "game_id": null,
+          "game": null,
           "pick": "Ilirija",
           "stake_m": 25,
           "price": 4.9,
@@ -7873,11 +5770,11 @@
           "result": null,
           "pnl_m": null,
           "final_score": null,
-          "tip_at": "2026-11-20T13:00:00-06:00",
+          "tip_at": null,
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "reason": "LEDGER BET — Ilirija 25m @ 4.90. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). UNDERDOG DESK (paper) — Ilirija @ 4.90, flat 25m paper, Underdog Desk entry #17. Paper only; not merged into the ledger bet.",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -7892,15 +5789,15 @@
           "stake_m": 25,
           "price": 4.9,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "73-67",
           "tip_at": "2026-11-20T13:00:00-06:00",
           "live": null,
           "display_state": null,
           "display_final_score": null,
-          "reason": "LEDGER BET — Ilirija 25m @ 4.90. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP) under consensus picking (user order 2026-11-19). UNDERDOG DESK (paper) — Ilirija @ 4.90, flat 25m paper, Underdog Desk entry #17. Paper only; not merged into the ledger bet.",
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -8450,25 +6347,15 @@
       "price": 2.37,
       "kind": "GRAND PICK",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
-      "final_score": null,
+      "final_score": "76-85",
       "tip_at": "2026-11-20T11:30:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 76,
-        "away_score": 85,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-20T23:15:46.374823-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "76-85"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 39,
@@ -8479,11 +6366,11 @@
       "price": 1.01,
       "kind": "CONFIDENCE",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 0.25,
       "fire": 1,
-      "final_score": null,
+      "final_score": "101-74",
       "tip_at": "2026-11-20T12:00:00-06:00",
       "live": null,
       "display_state": null,
@@ -8491,8 +6378,8 @@
     },
     {
       "slip": 39,
-      "game_id": "S39-36",
-      "game": "Bosna Royal v Ilirija",
+      "game_id": null,
+      "game": null,
       "pick": "Ilirija",
       "stake_m": 25,
       "price": 4.9,
@@ -8503,15 +6390,15 @@
       "pnl_m": null,
       "fire": null,
       "final_score": null,
-      "tip_at": "2026-11-20T13:00:00-06:00",
+      "tip_at": null,
       "live": null,
       "display_state": null,
       "display_final_score": null
     },
     {
       "slip": 39,
-      "game_id": "S39-17",
-      "game": "Al Zawraa v Al Talaba",
+      "game_id": null,
+      "game": null,
       "pick": "Draw",
       "stake_m": 25,
       "price": 3.1,
@@ -8522,7 +6409,7 @@
       "pnl_m": null,
       "fire": null,
       "final_score": null,
-      "tip_at": "2026-11-20T05:15:00-06:00",
+      "tip_at": null,
       "live": null,
       "display_state": null,
       "display_final_score": null
@@ -8536,11 +6423,11 @@
       "price": 4.9,
       "kind": "CHOSEN BET",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
-      "final_score": null,
+      "final_score": "73-67",
       "tip_at": "2026-11-20T13:00:00-06:00",
       "live": null,
       "display_state": null,
@@ -8568,44 +6455,16 @@
         "reason": "dated before tracking began"
       }
     ],
-    "balance_m": 999999920.3,
-    "settled_pnl_m": -79.7,
-    "settled_staked_m": 350.0,
-    "roi_pct": -22.77,
-    "wins": 10,
-    "losses": 4,
-    "record": "10-4",
-    "winrate_pct": 71.43,
-    "pending_m": 75,
-    "pending": [
-      {
-        "slip": 39,
-        "kind": "GRAND PICK",
-        "game_id": "S39-31",
-        "pick": "Middle Tennessee Blue Raiders",
-        "stake_m": 25,
-        "price": 2.37,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 39,
-        "kind": "CONFIDENCE",
-        "game_id": "S39-35",
-        "pick": "Zadar",
-        "stake_m": 25,
-        "price": 1.01,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 39,
-        "kind": "CHOSEN BET",
-        "game_id": "S39-36",
-        "pick": "Ilirija",
-        "stake_m": 25,
-        "price": 4.9,
-        "status": "LOCKED"
-      }
-    ],
+    "balance_m": 999999870.55,
+    "settled_pnl_m": -129.45,
+    "settled_staked_m": 425.0,
+    "roi_pct": -30.46,
+    "wins": 11,
+    "losses": 6,
+    "record": "11-6",
+    "winrate_pct": 64.71,
+    "pending_m": 0,
+    "pending": [],
     "ledger": [
       {
         "slip": 34,
@@ -8760,6 +6619,39 @@
         "result": "WON",
         "pnl_m": 0.05,
         "balance_after_m": 999999920.3
+      },
+      {
+        "slip": 39,
+        "kind": "GRAND PICK",
+        "game_id": "S39-31",
+        "pick": "Middle Tennessee Blue Raiders",
+        "stake_m": 25,
+        "price": 2.37,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": 999999895.3
+      },
+      {
+        "slip": 39,
+        "kind": "CONFIDENCE",
+        "game_id": "S39-35",
+        "pick": "Zadar",
+        "stake_m": 25,
+        "price": 1.01,
+        "result": "WON",
+        "pnl_m": 0.25,
+        "balance_after_m": 999999895.55
+      },
+      {
+        "slip": 39,
+        "kind": "CHOSEN BET",
+        "game_id": "S39-36",
+        "pick": "Ilirija",
+        "stake_m": 25,
+        "price": 4.9,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": 999999870.55
       }
     ],
     "paper_excluded": [
@@ -8834,17 +6726,17 @@
     },
     "underdog_desk": {
       "wins": 6,
-      "losses": 10,
-      "pnl_m": 55.0
+      "losses": 11,
+      "pnl_m": 30.0
     },
     "draw_desk": {
       "wins": 2,
-      "losses": 5,
-      "pnl_m": -37.5
+      "losses": 6,
+      "pnl_m": -62.5
     }
   },
   "vault": {
-    "count": 280,
+    "count": 320,
     "next_opening": "2026-12-01"
   },
   "autopsy_challengers": [
