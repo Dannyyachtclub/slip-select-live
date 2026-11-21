@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T05:15:38.344963-06:00",
+  "generated_at": "2026-11-21T05:20:40.699803-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T04:55:08.137772-06:00",
+      "last_activity": "2026-11-21T05:18:37.624770-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY — 213-26, +73.22% fitted ROI"
     },
     {
@@ -6917,8 +6917,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T04:17:43.324702-06:00",
-        "headline": "Verdict: NOT A MILESTONE — source hunted, no route proven; S39-17 stays NOT_CAPTURED after two runs. Next: re-check Al-Maalouma wire / IFA channels once a Friday instalment is indexed."
+        "last_activity": "2026-11-21T05:17:26.254767-06:00",
+        "headline": "Verdict: NOT A MILESTONE — source hunted, no route proven; S39-20 stays NOT_CAPTURED. Next: 90minut report once indexed / PZPN appointment notice."
       },
       {
         "name": "House Scout",
@@ -6926,8 +6926,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T04:17:17.972701-06:00",
-        "headline": "Verdict: milestone-grade measurement — favourite-reversal census with counts; any court idea keyed on the opening favourite must treat sub-5pp-margin games as identity-unstable (~1 in 4 to 2 in 5…"
+        "last_activity": "2026-11-21T05:17:24.853767-06:00",
+        "headline": "Verdict: milestone-grade measurement — completeness census with counts; there is no B365 coverage-laziness segment in 1X2/totals, and the archive's real completeness risk is BW/WH closing cards in…"
       },
       {
         "name": "Infra Scout",
@@ -6953,8 +6953,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T04:18:14.699703-06:00",
-        "headline": "Milestone: YES — a league's two-source route proven."
+        "last_activity": "2026-11-21T05:17:46.905768-06:00",
+        "headline": "Milestone: YES — a league's two-source route proven (sixteenth"
       },
       {
         "name": "Risk Scout",
@@ -6980,8 +6980,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T04:19:04.058704-06:00",
-        "headline": "Verdict: MILESTONE — a time pattern with counts that should change when the programme acts (half the locked→close disagreement is already present ~13 minutes after lock, before any drift window; the…"
+        "last_activity": "2026-11-21T05:17:10.484766-06:00",
+        "headline": "Verdict: MILESTONE — a time pattern with counts that should change when the programme acts (a big move in either direction inside the final 2h marks the games that lose — 16.7% vs 53.8% for quiet…"
       },
       {
         "name": "Wagering Scout",
@@ -6998,7 +6998,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T04:19:09.946704-06:00",
+        "last_activity": "2026-11-21T05:18:21.975769-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape on a new slip market. No milestone. No census, king, engine, or profile file edited; vault not read."
       },
       {
@@ -7151,8 +7151,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T05:13:29.428757-06:00",
-        "headline": "Result: expansion queue EMPTY — nothing to build this visit, nothing returned to the Director, nothing marked NEEDS-USER. One build per arm-visit cap not used. Next arm: Arm 1."
+        "last_activity": "2026-11-21T05:17:29.529767-06:00",
+        "headline": "2026-11-21 05:15 CST [INTEGRITY Run 5] Site truth: exam split still wrong (nba 222 vs true 212; 185+222=407 vs 397), CLV Tip Watcher ~6 h stale on a 15 m cadence, integrity block lists 0 of its 7…"
       },
       {
         "name": "Integrity Auditor",
@@ -7160,8 +7160,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T04:19:07.980704-06:00",
-        "headline": "7 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 4) + one-line summaries to overseer_log.md. Milestone run — full report delivered."
+        "last_activity": "2026-11-21T05:17:39.339767-06:00",
+        "headline": "Next rotation: canary-test disp_freeze_gate.py and draw_freeze_gate.py (freeze class continues); re-test density/derby after the class repair lands; sample scout_results/scout_timing claims and…"
       },
       {
         "name": "Systems Engineer",
@@ -7289,15 +7289,15 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 4,
-    "last_run": "2026-11-21T04:22:00-06:00",
+    "run": 5,
+    "last_run": "2026-11-21T05:25:00-06:00",
     "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
-    "findings_count": 7,
+    "findings_count": 6,
     "vault_seal": "320 vault ids vs 239 ledger ids, overlap 0 — SEAL INTACT.",
-    "registry": "DB = root mirror census (timestamp comment only differs) — no drift.",
-    "receipts": "Crown receipts COMPLETE for both new crowns: Legacy R4-G541 (court_state regenerated 04:14:29, PROVISIONAL stamp in court_state; EVOLUTION_FRAMEWORK.md line 806 PROVISIONAL) and Selector R4-G352…",
+    "registry": "DB 35,588 = root mirror census — no drift.",
+    "receipts": "Crown receipts COMPLETE for both standing new crowns: Legacy R4-G541 (EVOLUTION_FRAMEWORK.md line 806, PROVISIONAL) and Selector R4-G352 re-gate (line 807, PROVISIONAL); court_state regenerated…",
     "findings": [],
     "canary_broken": [
       "age_freeze_gate.py",
