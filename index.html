@@ -20,7 +20,7 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
-  font-size:15px;line-height:1.45;overflow-x:hidden}
+  font-size:16px;line-height:1.55;overflow-x:hidden}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
 .pos{color:var(--pos)} .neg{color:var(--neg)} .amb{color:var(--amb)}
 .mut{color:var(--mut)} .dim{color:var(--dim)}
@@ -29,7 +29,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
 h1,h2,h3{margin:0}
 .lab{color:var(--dim);font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
 
 /* ---------- top bar ---------- */
 .topbar{position:sticky;top:0;z-index:50;background:rgba(5,7,13,.96);
@@ -72,31 +72,32 @@ h1,h2,h3{margin:0}
 .tabs{position:sticky;top:49px;z-index:49;background:rgba(5,7,13,.97);border-bottom:1px solid var(--line)}
 .tabs-in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
 .tabs-in::-webkit-scrollbar{display:none}
-.tab{flex:1 0 auto;padding:11px 14px;font-size:.82rem;font-weight:700;letter-spacing:.06em;
+.tab{flex:1 0 auto;padding:14px 14px;min-height:48px;display:flex;align-items:center;justify-content:center;font-size:.84rem;font-weight:700;letter-spacing:.06em;
   color:var(--mut);border-bottom:2px solid transparent;text-transform:uppercase;text-align:center}
 .tab[aria-selected="true"]{color:var(--gold-hi);border-bottom-color:var(--gold)}
-.tabpage{display:none;padding:18px 0 34px}
+.tabpage{display:none;padding:22px 0 42px}
 .tabpage.active{display:block}
-.sec-title{font-size:1.05rem;font-weight:800;letter-spacing:.02em;margin:0 0 4px}
-.sec-sub{color:var(--mut);font-size:.86rem;margin:0 0 14px}
+.sec-title{font-size:1.24rem;font-weight:800;letter-spacing:.02em;margin:0 0 5px}
+.sec-sub{color:var(--mut);font-size:.93rem;line-height:1.5;margin:0 0 16px}
 .block{margin:0 0 22px}
 
 /* ---------- cards & grids ---------- */
-.grid{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
 @media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}
-.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:13px 14px}
-.card .v{font-size:1.28rem;font-weight:800;line-height:1.2}
+@media(max-width:759px){.grid{grid-template-columns:repeat(2,1fr)}.king-stats{grid-template-columns:repeat(2,1fr)!important}}
+.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px}
+.card .v{font-size:1.38rem;font-weight:800;line-height:1.2}
 .card .l{font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-top:2px}
 .card .s{font-size:.78rem;color:var(--mut);margin-top:3px}
-.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:14px}
+.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px}
 .panel h3{font-size:.92rem;font-weight:800;margin:0 0 8px}
 
 /* ---------- tables ---------- */
 .tscroll{overflow-x:auto;border:1px solid var(--line-soft);border-radius:12px;background:var(--surface)}
-table{border-collapse:collapse;width:100%;font-size:.84rem;min-width:560px}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:560px}
 th{text-align:left;color:var(--dim);font-size:.64rem;font-weight:700;letter-spacing:.13em;
   text-transform:uppercase;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--inset)}
-td{padding:8px 12px;border-bottom:1px solid var(--line-faint);vertical-align:top}
+td{padding:10px 12px;border-bottom:1px solid var(--line-faint);vertical-align:top}
 tr:last-child td{border-bottom:0}
 td.r,th.r{text-align:right}
 .res{font-weight:800;font-size:.72rem;letter-spacing:.08em}
@@ -109,7 +110,7 @@ td.r,th.r{text-align:right}
 .tag.amb{color:var(--amb);border-color:rgba(224,164,78,.5)}
 
 /* ---------- slips ---------- */
-.slip{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:14px;margin:0 0 12px}
+.slip{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px;margin:0 0 14px}
 .slip-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .slip-head .n{font-size:1rem;font-weight:800}
 .slip-head .d{color:var(--mut);font-size:.8rem}
@@ -128,7 +129,7 @@ details.games summary{cursor:pointer;color:var(--gold-hi);font-size:.8rem;font-w
 details.games table{min-width:640px}
 
 /* ---------- kings ---------- */
-.king{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:14px;margin:0 0 12px}
+.king{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px;margin:0 0 14px;overflow:hidden}
 .king-head{display:flex;gap:12px;align-items:center}
 .king-head img{width:52px;height:52px;border-radius:10px;object-fit:cover;border:1px solid var(--line)}
 .king-head .kc{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
@@ -141,7 +142,7 @@ details.games table{min-width:640px}
 
 /* ---------- activity / research ---------- */
 .feed{display:grid;gap:8px}
-.evt{background:var(--surface);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.evt{background:var(--surface);border:1px solid var(--line-soft);border-radius:10px;padding:13px 14px}
 .evt .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.72rem;color:var(--dim)}
 .evt .t{font-weight:700;font-size:.88rem;margin-top:3px;overflow-wrap:anywhere}
 .evt .s{color:var(--mut);font-size:.82rem;margin-top:2px;overflow-wrap:anywhere}
@@ -237,6 +238,7 @@ const COURT_IMG = {Legacy:"assets/legacy.jpg",Regime:"assets/regime.jpg",Quantum
 const AGENT_IMG = {Legacy:"assets/legacy.jpg",Regime:"assets/regime.jpg",Quantum:"assets/quantum.jpg",Selector:"assets/selector.jpg",Vanguard:"assets/vanguard.jpg",Arena:"assets/arena.jpg",Discovery:"assets/discovery.jpg","Edge Finder":"assets/edgefinder.jpg","Loss Autopsy":"assets/autopsy.jpg",Stakehunter:"assets/stakehunter.jpg","Research Director":"assets/director.jpg",Vault:"assets/vault.jpg"};
 
 let S = null;           /* status.json payload */
+const REDUCED = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
 let activeTab = "overview";
 
 /* ---------- clock: one basis, America/Regina, labelled ---------- */
@@ -273,7 +275,7 @@ function renderStrip(){
   const kingsHTML = (S.kings || []).map((k) =>
     '<div class="kmini' + (isFreshCrown(k) ? " pulse-gold" : "") + '" data-king="' + esc(k.court) + '" role="button" tabindex="0" title="King detail">' +
       (COURT_IMG[k.court] ? '<img src="' + COURT_IMG[k.court] + '" alt="" loading="lazy">' : "") +
-      '<div><div class="kc">' + esc(k.court) + (k.grand_king ? ' <span class="tag gold">Grand</span>' : "") + (isFreshCrown(k) ? ' <span class="tag gold">New crown</span>' : "") + "</div>" +
+      '<div><div class="kc">' + esc(k.court) + (k.grand_king ? ' <span class="tag gold">\u2605 Grand</span>' : "") + (isFreshCrown(k) ? ' <span class="tag gold">\u2605 New crown</span>' : "") + "</div>" +
       '<div class="kv num">' + k.wins + "-" + k.losses + ' · <span class="' + cls(k.roi_pct) + '">' + fmtPct(k.roi_pct) + "</span></div>" +
       '<div class="ks">practice score · fitted</div></div></div>'
   ).join("");
@@ -348,6 +350,51 @@ function renderStrip(){
   .flash-up{transition:color .3s} .flash-up.go{color:var(--pos)!important} .flash-dn.go{color:var(--neg)!important}
   .streak{display:inline-flex;align-items:center;gap:6px;color:var(--gold-hi);font-weight:800}
   .tile-note{font-size:.74rem;color:var(--dim);margin-top:2px}
+
+  /* ===== v2 enhancement: readability, banners, segmented sub-tabs, stars, fireworks ===== */
+  .filters select,.filters input{min-height:44px}
+  .fchip{min-height:44px;display:inline-flex;align-items:center}
+  details.games summary{min-height:44px;display:flex;align-items:center;font-size:.86rem}
+  .pickrow{padding:10px 12px;font-size:.86rem}
+  .evt .t{font-size:.94rem} .evt .s{font-size:.87rem;line-height:1.5}
+  .seg{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;background:var(--inset);
+    border:1px solid var(--line-soft);border-radius:12px;padding:5px;margin:0 0 16px}
+  .seg::-webkit-scrollbar{display:none}
+  .seg button{flex:1 0 auto;min-height:44px;padding:9px 14px;border-radius:8px;font-size:.8rem;
+    font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
+  .seg button[aria-pressed="true"]{background:var(--surface2);color:var(--gold-hi);
+    box-shadow:inset 0 0 0 1px rgba(200,162,74,.55)}
+  .hero{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:0 0 18px;
+    background:linear-gradient(100deg,#05070d 30%,rgba(5,7,13,.55) 65%,rgba(5,7,13,.25)),var(--surface)}
+  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;z-index:0}
+  .hero .hero-in{position:relative;z-index:1;padding:20px 18px}
+  .hero .hero-k{font-size:.66rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-hi)}
+  .hero .hero-t{font-family:var(--serif);font-size:1.45rem;font-weight:700;line-height:1.2;margin-top:5px}
+  .hero .hero-s{color:var(--mut);font-size:.9rem;margin-top:5px;max-width:52ch}
+  .hero .hero-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
+  .sbanner{display:flex;align-items:center;gap:13px;border:1px solid var(--line-soft);border-radius:14px;
+    padding:12px 14px;margin:0 0 16px;background:linear-gradient(100deg,var(--surface2),var(--surface) 70%);overflow:hidden}
+  .sbanner img{width:54px;height:54px;border-radius:10px;object-fit:cover;border:1px solid var(--line);flex:0 0 auto}
+  .sbanner .bt{font-weight:800;font-size:1rem}
+  .sbanner .bs{color:var(--mut);font-size:.84rem}
+  .king-banner{height:64px;border-radius:9px;overflow:hidden;margin:-4px -4px 12px;position:relative}
+  .king-banner img{width:100%;height:100%;object-fit:cover;display:block}
+  .king-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(5,7,13,.55))}
+  .star{color:var(--gold-hi);font-style:normal}
+  .slip.won{border-color:rgba(67,201,138,.55);box-shadow:inset 4px 0 0 var(--pos)}
+  .slip.crowned{border-color:rgba(200,162,74,.6);box-shadow:inset 4px 0 0 var(--gold)}
+  tr.starred td:first-child{box-shadow:inset 3px 0 0 var(--gold)}
+  .fw-veil{position:fixed;inset:0;z-index:200;background:transparent}
+  .fw-veil canvas{width:100%;height:100%;display:block}
+  .fw-hint{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);background:rgba(5,7,13,.85);
+    border:1px solid rgba(200,162,74,.6);color:var(--gold-hi);border-radius:999px;padding:7px 14px;
+    font-size:.78rem;font-weight:700;white-space:nowrap}
+  @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.07)}}
+  .hero img.bg{animation:kenburns 14s ease-in-out infinite alternate}
+  @media (prefers-reduced-motion: reduce){
+    *,*::before,*::after{animation:none!important;transition:none!important}
+  }
+
   `;
   const el = document.createElement("style"); el.textContent = css; document.head.appendChild(el);
 })();
@@ -394,6 +441,7 @@ function setupGlides(){
 const prevVals = {};
 function countUp(el, key, target, fmt){
   if(!el || !isNum(target)) { if(el) el.textContent = fmt(target); return; }
+  if(REDUCED){ prevVals[key] = target; el.textContent = fmt(target); return; }
   const from = isNum(prevVals[key]) ? prevVals[key] : 0;
   prevVals[key] = target;
   if(from === target){ el.textContent = fmt(target); return; }
@@ -429,6 +477,12 @@ function winStreak(){
   for(let i = led.length - 1; i >= 0; i--){ if(led[i].result === "WON") n++; else if(led[i].result === "LOST") break; }
   return n;
 }
+function bestForwardCourt(){
+  const acc = forwardKingLines();
+  let best = null, bestPnl = null;
+  Object.keys(acc).forEach((c) => { if (bestPnl === null || acc[c].pnl_m > bestPnl){ best = c; bestPnl = acc[c].pnl_m; } });
+  return bestPnl !== null && bestPnl > 0 ? best : null;
+}
 function forwardKingLines(){
   /* forward per-king lines: summed from the per-slip king records status.json carries */
   const acc = {};
@@ -454,6 +508,28 @@ function panel(title, inner, extra){
 }
 function tableWrap(head, rows){
   return '<div class="tscroll"><table><thead><tr>' + head + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
+}
+
+
+/* ---------- hero banner: existing artwork, real headline numbers only ---------- */
+function wHero(){
+  const f = S.forward || {}, b = S.bankroll || {}, cb = f.chosen_bets || {};
+  const chips = [];
+  if (isNum(cb.wins)) chips.push('<span class="chip grn">Forward chosen ' + cb.wins + "-" + cb.losses + " \u00b7 " + fmtM(cb.pnl_m) + "</span>");
+  if (b.record) chips.push('<span class="chip gold">Called bets ' + esc(b.record) + " \u00b7 " + fmtM(b.settled_pnl_m) + "</span>");
+  const streak = winStreak();
+  if (streak >= 3) chips.push('<span class="chip gold">\u2605 Win streak W' + streak + "</span>");
+  const grand = (S.kings || []).find((k) => k.grand_king);
+  if (grand) chips.push('<span class="chip">\u2605 Grand King \u00b7 ' + esc(grand.court) + "</span>");
+  return '<div class="hero"><img class="bg" src="assets/hero-poster.webp" alt="" loading="lazy">' +
+    '<div class="hero-in"><div class="hero-k">Slip Select \u00b7 Live Trade Desk</div>' +
+    '<div class="hero-t">Forward results lead. Practice scores stay labelled.</div>' +
+    '<div class="hero-s">The five kings, every slip and called bet, agent activity and research \u2014 organised in tabs below, all times Regina.</div>' +
+    (chips.length ? '<div class="hero-chips">' + chips.join("") + "</div>" : "") + "</div></div>";
+}
+function sectionBanner(img, title, sub){
+  return '<div class="sbanner">' + (img ? '<img src="' + img + '" alt="" loading="lazy">' : "") +
+    '<div><div class="bt">' + title + '</div><div class="bs">' + sub + "</div></div></div>";
 }
 
 /* ================= OVERVIEW widgets ================= */
@@ -493,9 +569,10 @@ function wForwardKings(){
   const acc = forwardKingLines();
   const courts = Object.keys(acc);
   if(!courts.length) return "";
+  const bestF = bestForwardCourt();
   const rows = courts.map((c) => {
     const a = acc[c];
-    return "<tr><td><strong>" + esc(c) + '</strong></td><td class="num">' + a.wins + "-" + a.losses +
+    return "<tr><td>" + (c === bestF ? '<span class="star">\u2605</span> ' : "") + "<strong>" + esc(c) + '</strong></td><td class="num">' + a.wins + "-" + a.losses +
       '</td><td class="num r ' + cls(a.pnl_m) + '">' + fmtM(a.pnl_m) + "</td></tr>";
   }).join("");
   return '<div class="block">' + panel("Forward per-king lines — every slip on file",
@@ -543,10 +620,11 @@ function pickRow(kind, sel, price, res){
 function slipCard(sl){
   const r = sl.results || {}, gs = sl.games_status || {};
   const total = gs.games_total || sl.games || (sl.games_list || []).length || "—";
-  let h = '<article class="slip"><div class="slip-head"><span class="n">Slip #' + sl.number + '</span>' +
+  const gpWon = r.grand_pick && r.grand_pick.result === "WON";
+  let h = '<article class="slip' + (gpWon ? " won" : "") + '"><div class="slip-head"><span class="n">' + (gpWon ? '<span class="star">\u2605</span> ' : "") + 'Slip #' + sl.number + '</span>' +
     '<span class="d">' + esc(sl.date || "") + " · " + total + " games</span>" +
     '<span class="tag ' + (sl.status === "GRADED" ? "" : "grn") + '">' + esc(sl.status || "") + "</span>" +
-    (sl.best_king || r.best_king ? '<span class="best">Best king: <strong>' + esc(sl.best_king || r.best_king) + "</strong></span>" : "") + "</div>";
+    (sl.best_king || r.best_king ? '<span class="best">\u2605 Best king: <strong>' + esc(sl.best_king || r.best_king) + "</strong></span>" : "") + "</div>";
   h += '<div class="pickrows">';
   if (sl.grand_pick) h += pickRow("Grand pick", sl.grand_pick.selection, sl.grand_pick.price, r.grand_pick);
   if (sl.confidence_bet) h += pickRow("Confidence", sl.confidence_bet.selection, sl.confidence_bet.price, r.confidence_bet);
@@ -591,8 +669,8 @@ function wBets(){
     (betFilter.result === "all" || (betFilter.result === "OPEN" ? !b.result : b.result === betFilter.result)) &&
     (betFilter.kind === "all" || b.kind === betFilter.kind));
   const rows = shown.map((b) =>
-    '<tr class="clickable" data-bet="' + (S.bets || []).indexOf(b) + '"><td class="num">#' + b.slip + "</td>" +
-    "<td>" + esc(b.pick || "—") + (b.game ? '<div class="dim" style="font-size:.72rem">' + esc(b.game) + "</div>" : "") + "</td>" +
+    '<tr class="clickable' + (b.result === "WON" ? " starred" : "") + '" data-bet="' + (S.bets || []).indexOf(b) + '"><td class="num">#' + b.slip + "</td>" +
+    "<td>" + (b.result === "WON" ? '<span class="star">\u2605</span> ' : "") + esc(b.pick || "—") + (b.game ? '<div class="dim" style="font-size:.72rem">' + esc(b.game) + "</div>" : "") + "</td>" +
     "<td>" + esc(b.kind || "") + (b.paper ? ' <span class="tag">paper</span>' : "") + "</td>" +
     '<td class="num">' + fmtPrice(b.price) + '</td><td class="num">' + (isNum(b.stake_m) ? b.stake_m + "m" : "—") + "</td>" +
     "<td>" + (b.result ? resChip(b.result) : '<span class="tag grn">' + esc(b.status || "Open") + "</span>") + "</td>" +
@@ -638,9 +716,12 @@ function wKings(){
     '<p class="sec-sub">Fitted lines are practice scores on the ' + (kings[0].set_size || 239) + '-game fitting set. Tap a king for its full line and forward history.</p>' +
     kings.map((k) => {
       const d = k.dog_line || {};
-      return '<article class="king' + (isFreshCrown(k) ? " pulse-gold" : "") + '"><div class="king-head" data-king="' + esc(k.court) + '" role="button" tabindex="0">' +
+      const isBestFwd = bestForwardCourt() === k.court;
+      return '<article class="king' + (isFreshCrown(k) ? " pulse-gold" : "") + '">' +
+        (COURT_IMG[k.court] ? '<div class="king-banner"><img src="' + COURT_IMG[k.court] + '" alt="" loading="lazy"></div>' : "") +
+        '<div class="king-head" data-king="' + esc(k.court) + '" role="button" tabindex="0">' +
         (COURT_IMG[k.court] ? '<img src="' + COURT_IMG[k.court] + '" alt="" loading="lazy">' : "") +
-        '<div><div class="kc">' + esc(k.court) + (k.grand_king ? ' <span class="tag gold">Grand King</span>' : "") + (isFreshCrown(k) ? ' <span class="tag gold">New crown</span>' : "") + "</div>" +
+        '<div><div class="kc">' + esc(k.court) + (k.grand_king ? ' <span class="tag gold">\u2605 Grand King</span>' : "") + (isFreshCrown(k) ? ' <span class="tag gold">\u2605 New crown</span>' : "") + (isBestFwd ? ' <span class="tag grn">\u2605 Best forward</span>' : "") + "</div>" +
         '<div class="kn num">' + esc(k.name) + "</div>" +
         '<div class="dim" style="font-size:.74rem">Crowned ' + esc(k.crowned_on || "—") + (k.stamp ? " · " + esc(k.stamp) : "") + "</div></div></div>" +
         '<div class="king-stats">' +
@@ -719,24 +800,129 @@ function wVault(){
     "</div></div>";
 }
 
+
+/* ================= segmented sub-views (level-2 navigation, shallow) ================= */
+const pageView = {slips: "bets", kings: "all", research: "all"};
+function segHTML(tab, options){
+  return '<div class="seg" role="group" aria-label="' + tab + ' views">' + options.map((o) =>
+    '<button type="button" data-seg-tab="' + tab + '" data-seg-val="' + o[0] + '" aria-pressed="' + (pageView[tab] === o[0]) + '">' + o[1] + "</button>").join("") + "</div>";
+}
+function renderSlipsPage(){
+  const v = pageView.slips;
+  let h = sectionBanner("assets/arena.jpg", "Slips &amp; Bets", "Called bets first, then the ledger, then every slip \u2014 or pick one view.");
+  h += segHTML("slips", [["bets", "Bets"], ["slips", "Slips"], ["ledger", "Ledger"], ["all", "All"]]);
+  if (v === "bets" || v === "all") h += wBets();
+  if (v === "ledger" || v === "all") h += wLedger();
+  if (v === "slips" || v === "all") h += wSlipCards();
+  return h;
+}
+function renderKingsPage(){
+  const v = pageView.kings;
+  let h = sectionBanner("assets/director.jpg", "Kings &amp; Workforce", "Practice (fitted) and forward lines kept apart \u2014 forward is the live record.");
+  h += segHTML("kings", [["all", "All"], ["fitted", "Kings \u00b7 Practice"], ["forward", "Forward"], ["team", "Workforce"]]);
+  if (v === "all" || v === "fitted") h += wKings();
+  if (v === "all" || v === "forward") h += wForwardKings();
+  if (v === "all" || v === "team") h += wAgents();
+  return h;
+}
+function renderResearchPage(){
+  const v = pageView.research;
+  let h = sectionBanner("assets/discovery.jpg", "Research", "Vault, autopsy challengers and Stakehunter sizing research, grouped by type.");
+  h += segHTML("research", [["all", "All"], ["vault", "Vault"], ["challengers", "Challengers"], ["stakehunter", "Stakehunter"]]);
+  if (v === "all" || v === "vault") h += wVault();
+  if (v === "all" || v === "challengers") h += wChallengers();
+  if (v === "all" || v === "stakehunter") h += wStakehunter();
+  return h;
+}
+
 /* ================= widget registry — add new widgets here ================= */
 const WIDGETS = {
-  overview: [wCrownBanner, wForwardTiles, wLiveBoard, wForwardKings, wLatestSlip, wTopActivity],
+  overview: [wHero, wCrownBanner, wForwardTiles, wLiveBoard, wForwardKings, wLatestSlip, wTopActivity],
   slips:    [wBets, wLedger, wSlipCards],
   kings:    [wKings, wAgents],
   activity: [wActivity],
   research: [wVault, wChallengers, wStakehunter]
 };
+const PAGE_RENDER = {slips: renderSlipsPage, kings: renderKingsPage, research: renderResearchPage};
 function renderAll(){
   renderStrip();
   Object.keys(WIDGETS).forEach((tab) => {
+    if (PAGE_RENDER[tab]) { try { $("page-" + tab).innerHTML = PAGE_RENDER[tab](); } catch (e) { $("page-" + tab).innerHTML = ""; } return; }
     $("page-" + tab).innerHTML = WIDGETS[tab].map((w) => { try { return w() || ""; } catch (e) { return ""; } }).join("");
   });
   runCountUps($("page-overview"));
   runCountUps($("page-research"));
+  maybeCelebrate();
   const gen = S.generated_at ? new Date(S.generated_at) : null;
   $("foot").innerHTML = "Slip Select Trade Desk · data refreshed " + (gen && !isNaN(gen) ? dtFmt.format(gen) : "—") +
     " Regina · all times America/Regina · fitted king lines are practice scores; forward results are the live record.";
+}
+
+
+/* ================= fireworks — ONLY on real celebratory data in status.json =================
+   Fires at most once per page load when at least one is true:
+   (a) a king was crowned within the fresh-crown window (isFreshCrown),
+   (b) the called-bet ledger win streak is >= 3,
+   (c) the latest slip's grand pick WON.
+   Never on losses or neutral data. Skipped under prefers-reduced-motion. */
+let celebrated = false;
+function celebrateReason(){
+  const fresh = (S.kings || []).filter(isFreshCrown);
+  if (fresh.length) return "\u2605 New crown \u2014 " + fresh[0].court;
+  const streak = winStreak();
+  if (streak >= 3) return "\u2605 Win streak \u2014 W" + streak + " on called bets";
+  const slips = (S.slips || []).slice().sort((a, b) => b.number - a.number);
+  if (slips.length && ((slips[0].results || {}).grand_pick || {}).result === "WON")
+    return "\u2605 Latest slip #" + slips[0].number + " \u2014 grand pick won";
+  return null;
+}
+function maybeCelebrate(){
+  if (celebrated || REDUCED || !S) return;
+  const reason = celebrateReason();
+  if (!reason) return;
+  celebrated = true;
+  const veil = document.createElement("div");
+  veil.className = "fw-veil";
+  veil.setAttribute("role", "button");
+  veil.setAttribute("aria-label", "Dismiss celebration");
+  veil.innerHTML = '<canvas></canvas><div class="fw-hint">' + esc(reason) + " \u00b7 tap to dismiss</div>";
+  document.body.appendChild(veil);
+  const cv = veil.querySelector("canvas"), ctx = cv.getContext("2d");
+  cv.width = window.innerWidth; cv.height = window.innerHeight;
+  const cols = ["#eed188", "#c8a24a", "#43c98a", "#72c7dc", "#a48fe0"];
+  const parts = [];
+  const bursts = 5;
+  for (let bIdx = 0; bIdx < bursts; bIdx++){
+    const bx = cv.width * (0.18 + 0.64 * (bursts === 1 ? 0.5 : bIdx / (bursts - 1))) + (Math.random() * 30 - 15);
+    const by = cv.height * (0.22 + Math.random() * 0.18);
+    const col = cols[bIdx % cols.length];
+    for (let i = 0; i < 42; i++){
+      const a = Math.random() * Math.PI * 2, sp = 1.6 + Math.random() * 4.4;
+      parts.push({x: bx, y: by, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp - 1.2, life: 1, decay: 0.008 + Math.random() * 0.01, col: col, r: 1.4 + Math.random() * 1.8, delay: bIdx * 9});
+    }
+  }
+  const t0 = performance.now();
+  let raf = 0;
+  const dismiss = () => { cancelAnimationFrame(raf); veil.remove(); };
+  veil.addEventListener("click", dismiss);
+  const frame = (t) => {
+    const el = t - t0;
+    ctx.clearRect(0, 0, cv.width, cv.height);
+    let alive = false;
+    parts.forEach((pt) => {
+      if (el / 16.7 < pt.delay) { alive = true; return; }
+      if (pt.life <= 0) return;
+      alive = true;
+      pt.x += pt.vx; pt.y += pt.vy; pt.vy += 0.045; pt.vx *= 0.985; pt.vy *= 0.99; pt.life -= pt.decay;
+      ctx.globalAlpha = Math.max(0, pt.life);
+      ctx.fillStyle = pt.col;
+      ctx.beginPath(); ctx.arc(pt.x, pt.y, pt.r, 0, Math.PI * 2); ctx.fill();
+    });
+    ctx.globalAlpha = 1;
+    if (alive && el < 2100) raf = requestAnimationFrame(frame); else dismiss();
+  };
+  raf = requestAnimationFrame(frame);
+  setTimeout(dismiss, 2400);
 }
 
 /* ================= modal (detail pop-ups) ================= */
@@ -814,17 +1000,25 @@ document.addEventListener("click", (e) => {
   if(kEl){ kingModal(kEl.getAttribute("data-king")); return; }
   const bEl = e.target.closest("[data-bet]");
   if(bEl){ betModal(parseInt(bEl.getAttribute("data-bet"), 10)); return; }
+  const segEl = e.target.closest("[data-seg-tab]");
+  if(segEl){
+    const tab = segEl.getAttribute("data-seg-tab");
+    pageView[tab] = segEl.getAttribute("data-seg-val");
+    $("page-" + tab).innerHTML = PAGE_RENDER[tab]();
+    if(tab === "research") runCountUps($("page-research"));
+    return;
+  }
   const aEl = e.target.closest("[data-act-agent]");
   if(aEl){ actFilter.agent = aEl.getAttribute("data-act-agent"); $("page-activity").innerHTML = WIDGETS.activity.map((w) => w()).join(""); return; }
   const sEl = e.target.closest("[data-sh]");
-  if(sEl){ shFilter.status = sEl.getAttribute("data-sh"); $("page-research").innerHTML = WIDGETS.research.map((w) => w()).join(""); runCountUps($("page-research")); return; }
+  if(sEl){ shFilter.status = sEl.getAttribute("data-sh"); $("page-research").innerHTML = renderResearchPage(); runCountUps($("page-research")); return; }
 });
 document.addEventListener("change", (e) => {
   if(e.target.id === "f-slip"){ betFilter.slip = e.target.value; }
   else if(e.target.id === "f-result"){ betFilter.result = e.target.value; }
   else if(e.target.id === "f-kind"){ betFilter.kind = e.target.value; }
   else return;
-  $("page-slips").innerHTML = WIDGETS.slips.map((w) => w()).join("");
+  $("page-slips").innerHTML = renderSlipsPage();
 });
 document.addEventListener("keydown", (e) => {
   if(e.key !== "Enter" && e.key !== " ") return;
