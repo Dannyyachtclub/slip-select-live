@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T11:55:41.921275-06:00",
+  "generated_at": "2026-11-21T12:00:40.794738-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T11:30:37.486094-06:00",
+      "last_activity": "2026-11-21T11:58:29.480147-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T11:41:40.197115-06:00",
+      "last_activity": "2026-11-21T11:56:38.695143-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T11:41:46.663477-06:00",
-      "headline": "Latest search cycle: 427"
+      "last_activity": "2026-11-21T11:57:05.634144-06:00",
+      "headline": "Latest search cycle: 428"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 428 — 2026-11-21 11:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-427. Root cause named from primary records: court_state.py's Selector resolver only…",
+      "at": "2026-11-21T11:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 11:56 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
+      "summary": "AUDIT FAILED (twelfth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
+      "at": "2026-11-21T11:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 427 — 2026-11-21 11:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-426. Root cause named from primary records: court_state.py's Selector resolver only…",
       "at": "2026-11-21T11:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 10:41 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
       "summary": "AUDIT FAILED (seventh consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
       "at": "2026-11-21T10:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 422 — 2026-11-21 10:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-421. Root cause named from primary records: court_state.py's Selector resolver only…",
-      "at": "2026-11-21T10:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 10:26 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
-      "summary": "AUDIT FAILED (sixth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
-      "at": "2026-11-21T10:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -874,6 +874,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "Vanguard R4-G183 (loop, 2026-11-21) — NO NEW KING",
+      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "Vanguard R4-G182 (loop, 2026-11-21)",
       "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G181 (loop, 2026-11-21) — NO NEW KING",
-      "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY: 190-49, priced 227, +2219.15m, +39.10%; dog line (§9) 83 picks, 51-32, priced…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G180 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY: 190-49, priced 227, +2219.15m, +39.10%; dog line (§9) 83 picks, 51-32, priced…",
       "at": "2026-11-21T00:00:00-06:00"
     }
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T10:57:25.380032-06:00",
-        "headline": "Filed to intake: (1) the source×sport split with ONE new pre-registered test, H-LL3, gated on slip #40 grading AND a certified court for any king leg, market leg scorable on #40 grading alone only…"
+        "last_activity": "2026-11-21T11:58:08.710146-06:00",
+        "headline": "Best parallel this run: the close source is not the poll's last pass in costume — but it might be the poll's first pass in costume, and that costume is a slip. Recency acquits source completely…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T11:00:05.531037-06:00",
-        "headline": "Best parallel: the orphan-lock window closed in layers, not at once — slip_state regenerated 18m55s after Slip #40's lock (09:51:44 → 10:10:39 CST; verify_slip_state back to exit 0, #40 LOCKED with…"
+        "last_activity": "2026-11-21T11:58:39.249473-06:00",
+        "headline": "Best parallel: the orphan window's closure is one layer closed in 19 minutes and three layers still open at 125 minutes with no internal end — programme_state still certifies a pre-lock world from…"
       },
       {
         "name": "Correlation Hunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T11:41:40.197115-06:00",
+        "last_activity": "2026-11-21T11:56:38.695143-06:00",
         "headline": "DISTANCE / REQUIREMENT / HEIGHT: improvement distance = not measurable this run (no fight); requirement to close = a clean court_state regeneration + verify PASS, which requires the Selector…"
       },
       {
