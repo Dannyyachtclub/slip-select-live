@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T00:40:45.001606-06:00",
+  "generated_at": "2026-11-21T00:45:37.904300-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -87,24 +87,24 @@
     },
     {
       "court": "Vanguard",
-      "name": "VG24-BRANDDV75HOMEONLY",
+      "name": "VG25-LGLENMOD17FLIP",
       "grand_king": false,
-      "wins": 188,
-      "losses": 51,
+      "wins": 190,
+      "losses": 49,
       "priced": 227,
-      "pnl_m": 1843.12,
-      "roi_pct": 32.48,
+      "pnl_m": 2219.15,
+      "roi_pct": 39.1,
       "set_size": 239,
       "dog_line": {
-        "picks": 79,
-        "wins": 48,
-        "losses": 31,
-        "priced": 73,
-        "pnl_m": 1320.33,
-        "roi_pct": 72.35
+        "picks": 83,
+        "wins": 51,
+        "losses": 32,
+        "priced": 77,
+        "pnl_m": 1622.83,
+        "roi_pct": 84.3
       },
       "stamp": null,
-      "crowned_on": "2026-11-19"
+      "crowned_on": "2026-11-21"
     }
   ],
   "agents": [
@@ -140,28 +140,28 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T00:13:19.145987-06:00",
-      "headline": "VG24-BRANDDV75HOMEONLY — 188-51, +32.48% fitted ROI"
+      "last_activity": "2026-11-21T00:41:34.025046-06:00",
+      "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T00:30:10.866022-06:00",
+      "last_activity": "2026-11-21T00:44:49.353053-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T00:27:06.517015-06:00",
-      "headline": "Latest search cycle: 382"
+      "last_activity": "2026-11-21T00:42:31.231048-06:00",
+      "headline": "Latest search cycle: 383"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T00:29:24.371020-06:00",
+      "last_activity": "2026-11-21T00:44:31.366052-06:00",
       "headline": "Latest filing: P348"
     },
     {
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-21T00:15:11.187990-06:00",
-      "headline": "Cycle 122: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-21T00:45:11.951054-06:00",
+      "headline": "Cycle 123: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 122,
+    "latest_cycle": 123,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 383 — 2026-11-21 00:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T00:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 382 — 2026-11-21 00:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T00:26:00-06:00"
@@ -695,6 +702,13 @@
       "title": "CYCLE 381 — 2026-11-21 00:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T00:11:00-06:00"
+    },
+    {
+      "agent": "Stakehunter",
+      "kind": "generation",
+      "title": "CYCLE 123 — 2026-11-21",
+      "summary": "Script: data_core/stakehunter_cycle123.py (new file only; stream builder written fresh this cycle against the state file below).…",
+      "at": "2026-11-21T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -713,6 +727,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G387 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (eighty-first visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G387, no branch DEAD, and no new best form — F2 remains parked, fully specified, awaiting its freeze.…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G386 — F1 HOUSE-VIEW (eightieth visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G386, no branch DEAD, and no new best form — F1 remains with the F-E standalone note testably and…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -722,6 +743,13 @@
       "kind": "generation",
       "title": "Arena G385 — F5 SOFT-ANGLE EXTREMES (eighty-second visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G385, no branch DEAD, and no new best form — F5 remains with the K-A note testably and NEEDS-FREEZE only…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "Vanguard R4-G156 (loop, 2026-11-21) — NEW KING VG25-LGLENMOD17FLIP CROWNED",
+      "summary": "King VG25-LGLENMOD17FLIP crowned through the gate: 190-49, priced 227, +2219.15m, +39.10%; crowned dog line (§9): 83 picks, 51-32,…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -788,13 +816,6 @@
       "at": "2026-11-20T23:26:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 377 — 2026-11-20 23:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T23:11:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 121 — 2026-11-20",
@@ -820,13 +841,6 @@
       "kind": "generation",
       "title": "CYCLE 118 — 2026-11-20",
       "summary": "Script: data_core/stakehunter_cycle118.py (new file only; stream builder written fresh this cycle against the state file below).…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 90 — 2026-11-20",
-      "summary": "Script: data_core/stakehunter_cycle90.py (new file only; stream builder written fresh this cycle against court_state.json). Firewall…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -876,20 +890,6 @@
       "kind": "filing",
       "title": "CYCLE 2026-11-20 (22:42 CST) — audit + hunt (classes e + g + f: public registry data / cross-game lineage / the house's chair — the club…",
       "summary": "P336 CLUB ENTITY-DISCONTINUITY / FEED-LINEAGE FREEZE — FILED as collector proposal P336 (number drawn from the spec-number authority…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (22:12 CST) — audit + hunt (classes e + d + f: public transaction data / sport-specific team sports / the house's chair…",
-      "summary": "P335 DEADLINE-CHURN FREEZE — FILED as collector proposal P335 (number drawn from the spec-number authority before writing; census-first,…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "filing",
-      "title": "CYCLE 2026-11-20 (21:42 CST) — audit + hunt (classes e + a + d + f: public schedule data / quant research / sport-specific team sports /…",
-      "summary": "One new angle filed this cycle: P334, the phantom-rest freeze — the side's immediately preceding scheduled fixture postponed and never…",
       "at": "2026-11-20T00:00:00-06:00"
     }
   ],
