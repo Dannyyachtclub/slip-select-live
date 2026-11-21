@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T17:55:50.830596-06:00",
+  "generated_at": "2026-11-20T18:00:54.574978-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-20T17:07:37.012334-06:00",
+      "last_activity": "2026-11-20T17:56:26.159792-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T17:42:38.461605-06:00",
-      "headline": "Latest search cycle: 355"
+      "last_activity": "2026-11-20T17:58:21.127791-06:00",
+      "headline": "Latest search cycle: 356"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 356 — 2026-11-20 17:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T17:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 355 — 2026-11-20 17:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T17:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 351 — 2026-11-20 16:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T16:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 350 — 2026-11-20 16:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T16:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:55:45.652779-06:00",
+            "fetched_at": "2026-11-20T18:00:47.731068-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:55:45.652779-06:00",
+            "fetched_at": "2026-11-20T18:00:47.731068-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:55:45.652779-06:00",
+            "fetched_at": "2026-11-20T18:00:47.731068-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:55:45.652779-06:00",
+            "fetched_at": "2026-11-20T18:00:47.731068-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T17:55:45.652779-06:00",
+            "fetched_at": "2026-11-20T18:00:47.731068-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T17:55:45.652779-06:00",
+        "fetched_at": "2026-11-20T18:00:47.731068-06:00",
         "source": "ESPN",
         "official": false
       },
