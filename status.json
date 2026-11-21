@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T21:25:45.083864-06:00",
+  "generated_at": "2026-11-20T21:30:45.876581-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-20T21:02:18.258317-06:00",
+      "last_activity": "2026-11-20T21:27:43.114300-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -147,21 +147,21 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-20T21:15:22.829308-06:00",
+      "last_activity": "2026-11-20T21:30:11.976298-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T21:12:39.807310-06:00",
-      "headline": "Latest search cycle: 369"
+      "last_activity": "2026-11-20T21:27:59.602299-06:00",
+      "headline": "Latest search cycle: 370"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T21:21:11.243304-06:00",
+      "last_activity": "2026-11-20T21:29:09.253299-06:00",
       "headline": "Latest filing: P335"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 370 — 2026-11-20 21:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T21:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 369 — 2026-11-20 21:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T21:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 365 — 2026-11-20 20:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T20:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 364 — 2026-11-20 19:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T19:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -839,6 +839,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G374 — F4 CROSS-REFERENCE (seventy-fourth visit) — 2026-11-20",
+      "summary": "Verdict: NO ARENA CHAMPION in G374, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond the D8 control.…",
+      "at": "2026-11-20T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G373 — F3 THROW-INCENTIVE ASYMMETRY (seventy-ninth visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G373, no branch DEAD, and no new best form — F3 remains gated by its sitting champion. MILESTONE:…",
       "at": "2026-11-20T00:00:00-06:00"
@@ -869,13 +876,6 @@
       "kind": "generation",
       "title": "Arena G369 — F4 CROSS-REFERENCE (seventy-third visit) — 2026-11-20",
       "summary": "Verdict: NO ARENA CHAMPION in G369, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond the D8 control.…",
-      "at": "2026-11-20T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G368 — F3 THROW-INCENTIVE ASYMMETRY (seventy-eighth visit) — 2026-11-20",
-      "summary": "Verdict: NO ARENA CHAMPION in G368, no branch DEAD, and no new best form — F3 remains gated by its sitting champion. MILESTONE:…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T21:25:38.795923-06:00",
+            "fetched_at": "2026-11-20T21:30:42.188130-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T21:25:38.795923-06:00",
+            "fetched_at": "2026-11-20T21:30:42.188130-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T21:25:38.795923-06:00",
+            "fetched_at": "2026-11-20T21:30:42.188130-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T21:25:38.795923-06:00",
+            "fetched_at": "2026-11-20T21:30:42.188130-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T21:25:38.795923-06:00",
+            "fetched_at": "2026-11-20T21:30:42.188130-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T21:25:38.795923-06:00",
+        "fetched_at": "2026-11-20T21:30:42.188130-06:00",
         "source": "ESPN",
         "official": false
       },
