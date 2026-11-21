@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T17:45:40.452478-06:00",
+  "generated_at": "2026-11-21T17:50:42.036005-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T17:22:30.502062-06:00",
+      "last_activity": "2026-11-21T17:48:16.315039-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY-BBDVGE80-DOGC79PAIR2545 — 213-26, +76.44% fitted ROI"
     },
     {
@@ -161,7 +161,7 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T17:44:41.213708-06:00",
+      "last_activity": "2026-11-21T17:46:34.513040-06:00",
       "headline": "Latest filing: P401"
     },
     {
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-21T17:44:47.294042-06:00",
-      "headline": "Cycle 149: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-21T17:45:47.756041-06:00",
+      "headline": "Cycle 157: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 149,
+    "latest_cycle": 157,
     "findings": [
       {
         "id": "Z1",
@@ -683,6 +683,13 @@
   },
   "activity": [
     {
+      "agent": "Edge Finder",
+      "kind": "generation",
+      "title": "CYCLE 2026-11-21 17:42 CST — Edge Finder (classes a lead + d/f/g supporting)",
+      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION — PASS, no regeneration needed: verify_court_state.py exited 0 at run…",
+      "at": "2026-11-21T17:42:00-06:00"
+    },
+    {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 451 — 2026-11-21 17:41 CST (scheduled run, job discovery-loop-continuous)",
@@ -861,13 +868,6 @@
       "agent": "Edge Finder",
       "kind": "generation",
       "title": "CYCLE 2026-11-21 (15:12 CST) — audit + hunt (class d lead: sport-specific factors, basketball first; class e supporting: public-data…",
-      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION — PASSES: verify_court_state.py exited 0 in this run before any…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-21 (14:42 CST) — audit + hunt (class b lead: open-source / public-data releases; class c supporting: market microstructure…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION — PASSES: verify_court_state.py exited 0 in this run before any…",
       "at": "2026-11-21T00:00:00-06:00"
     },
@@ -7054,8 +7054,8 @@
         "role": "How the kings agree, dissent and merge",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T16:50:48.761091-06:00",
-        "headline": "Best parallel from this branch, Run 42: fragility trips invert unanimously between sets on the certified kings — fitted, the tripped band (trips ≥1) pays less than the clean band for all five kings…"
+        "last_activity": "2026-11-21T17:50:33.093037-06:00",
+        "headline": "Best parallel from this branch, Run 43: the forward short-favourite band (<1.50) splits the court by construction type — the three base kings lose there (Legacy −4.47%, Regime −11.69%, Quantum…"
       },
       {
         "name": "Markets Branch",
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T17:44:41.213708-06:00",
-        "headline": "TRIAGE: NEEDS-CAPTURE — no per-assist-bonus field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no assistbonus column; the route is one…"
+        "last_activity": "2026-11-21T17:46:34.513040-06:00",
+        "headline": "P274-M2 WITHIN-ROUND TAX RANK — FILED as a multi-way mutation of P274-M1 crossed with P388 (needs-capture via its parents; label grep-verified free before writing — P274 carries M1 only)."
       },
       {
         "name": "Loss Autopsy",
