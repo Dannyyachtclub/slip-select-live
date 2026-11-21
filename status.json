@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T20:40:50.484486-06:00",
+  "generated_at": "2026-11-20T20:45:48.169932-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-20T20:08:31.570354-06:00",
+      "last_activity": "2026-11-20T20:42:11.126331-06:00",
       "headline": "VG24-BRANDDV75HOMEONLY — 188-51, +32.48% fitted ROI"
     },
     {
@@ -154,28 +154,28 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T20:28:05.679791-06:00",
-      "headline": "Latest search cycle: 366"
+      "last_activity": "2026-11-20T20:42:37.641330-06:00",
+      "headline": "Latest search cycle: 367"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T20:30:14.545339-06:00",
+      "last_activity": "2026-11-20T20:44:41.336329-06:00",
       "headline": "Latest filing: P332"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-20T20:13:52.284350-06:00",
+      "last_activity": "2026-11-20T20:43:46.178330-06:00",
       "headline": "13 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-20T20:14:53.761350-06:00",
+      "last_activity": "2026-11-20T20:44:33.737329-06:00",
       "headline": "Cycle 90: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 367 — 2026-11-20 20:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T20:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 366 — 2026-11-20 20:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T20:26:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 362 — 2026-11-20 19:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T19:26:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 361 — 2026-11-20 19:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T19:11:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -881,14 +881,14 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
-      "title": "R4-G146 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
-      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). NO variant above the king in any form — nothing…",
+      "title": "R4-G147 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
+      "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). One above-king headline, SUB-GATE and QUEUED only:…",
       "at": "2026-11-20T00:00:00-06:00"
     },
     {
       "agent": "Vanguard",
       "kind": "generation",
-      "title": "R4-G145 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
+      "title": "R4-G146 (loop, 2026-11-20) — Parent: VG24-BRANDDV75HOMEONLY",
       "summary": "NO NEW KING — VG24-BRANDDV75HOMEONLY stands (188-51, priced 227, +1843.12m, +32.48%). NO variant above the king in any form — nothing…",
       "at": "2026-11-20T00:00:00-06:00"
     }
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T20:40:45.249242-06:00",
+            "fetched_at": "2026-11-20T20:45:40.899611-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T20:40:45.249242-06:00",
+            "fetched_at": "2026-11-20T20:45:40.899611-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T20:40:45.249242-06:00",
+            "fetched_at": "2026-11-20T20:45:40.899611-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T20:40:45.249242-06:00",
+            "fetched_at": "2026-11-20T20:45:40.899611-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T20:40:45.249242-06:00",
+            "fetched_at": "2026-11-20T20:45:40.899611-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T20:40:45.249242-06:00",
+        "fetched_at": "2026-11-20T20:45:40.899611-06:00",
         "source": "ESPN",
         "official": false
       },
