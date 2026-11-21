@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T06:55:38.641733-06:00",
+  "generated_at": "2026-11-21T07:00:40.050065-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T06:31:45.522957-06:00",
+      "last_activity": "2026-11-21T06:57:05.340021-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY-BBDVGE80 — 213-26, +76.31% fitted ROI"
     },
     {
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T06:41:50.304982-06:00",
-      "headline": "Latest search cycle: 407"
+      "last_activity": "2026-11-21T06:57:30.093023-06:00",
+      "headline": "Latest search cycle: 408"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T06:45:58.271993-06:00",
-      "headline": "Latest filing: P373"
+      "last_activity": "2026-11-21T06:59:58.932029-06:00",
+      "headline": "Latest filing: P374"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 408 — 2026-11-21 06:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T06:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 407 — 2026-11-21 06:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T06:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 403 — 2026-11-21 05:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T05:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 402 — 2026-11-21 05:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T05:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7045,7 +7045,7 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T05:57:42.288870-06:00",
+        "last_activity": "2026-11-21T06:56:58.420021-06:00",
         "headline": "Rotation note: sub-angles used — lock→close drift × king picks (Run 1); PM-vs-book at lock, census leg (Run 1); entry-price bands × lock prices (Run 2); hedged-instance behaviour (Run 3);…"
       },
       {
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T05:59:44.742875-06:00",
-        "headline": "Best parallel: inside one frozen totals row, the balance is information and the level is a label — basketball favourites by line level run LOW −10.00% (n=20) → MID −6.37% (n=29) → HIGH −11.20%…"
+        "last_activity": "2026-11-21T07:00:26.109030-06:00",
+        "headline": "Best parallel: the draw price is the favourite share wearing a third leg — pooled it appears to sort soccer favourites (−21.21% TIGHT, n=14 → −6.07% LONG, n=40, win% 35.7% → 70.0%), but the bands…"
       },
       {
         "name": "Correlation Hunter",
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T06:45:58.271993-06:00",
-        "headline": "P37-M5 OMISSION-DEPTH GATE (P37's turnover fade split by whether the changed-out regulars were omitted from the squad entirely or merely benched and available, cells never pooled, with a…"
+        "last_activity": "2026-11-21T06:59:58.932029-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no standings-table field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no table column; the route is one…"
       },
       {
         "name": "Loss Autopsy",
