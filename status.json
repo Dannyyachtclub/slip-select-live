@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T19:55:57.698087-06:00",
+  "generated_at": "2026-11-20T20:00:49.321564-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-20T19:15:37.793738-06:00",
+      "last_activity": "2026-11-20T19:58:06.402708-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY — 214-25, +74.59% fitted ROI"
     },
     {
@@ -154,15 +154,15 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-20T19:42:40.551719-06:00",
-      "headline": "Latest search cycle: 363"
+      "last_activity": "2026-11-20T19:57:53.815708-06:00",
+      "headline": "Latest search cycle: 364"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-20T19:52:59.802712-06:00",
-      "headline": "Latest filing: P330"
+      "last_activity": "2026-11-20T20:00:40.960707-06:00",
+      "headline": "Latest filing: P331"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 364 — 2026-11-20 19:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-20T19:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 363 — 2026-11-20 19:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T19:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 359 — 2026-11-20 18:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-20T18:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 358 — 2026-11-20 18:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-20T18:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7040,7 +7040,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T19:55:51.659443-06:00",
+            "fetched_at": "2026-11-20T20:00:45.348081-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7119,7 +7119,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T19:55:51.659443-06:00",
+            "fetched_at": "2026-11-20T20:00:45.348081-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7549,7 +7549,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T19:55:51.659443-06:00",
+            "fetched_at": "2026-11-20T20:00:45.348081-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7768,7 +7768,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T19:55:51.659443-06:00",
+            "fetched_at": "2026-11-20T20:00:45.348081-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7825,7 +7825,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-20T19:55:51.659443-06:00",
+            "fetched_at": "2026-11-20T20:00:45.348081-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8463,7 +8463,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-20T19:55:51.659443-06:00",
+        "fetched_at": "2026-11-20T20:00:45.348081-06:00",
         "source": "ESPN",
         "official": false
       },
