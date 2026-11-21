@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T11:05:40.109697-06:00",
+  "generated_at": "2026-11-21T11:10:41.400567-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T11:02:02.464041-06:00",
+      "last_activity": "2026-11-21T11:10:06.599056-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T10:57:22.821032-06:00",
+      "last_activity": "2026-11-21T11:06:13.642048-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
@@ -874,6 +874,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G181 (loop, 2026-11-21) — NO NEW KING",
+      "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY: 190-49, priced 227, +2219.15m, +39.10%; dog line (§9) 83 picks, 51-32, priced…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G180 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY: 190-49, priced 227, +2219.15m, +39.10%; dog line (§9) 83 picks, 51-32, priced…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "Vanguard R4-G179 (loop, 2026-11-21) — NO NEW KING",
-      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G178 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
     }
@@ -6919,8 +6919,8 @@
         "role": "Owns pick accuracy itself — hit rates, leaks and calibration",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T10:38:27.877587-06:00",
-        "headline": "Verdict: NO MILESTONE — front (b) blocked on an uncertified court for the fourth consecutive Accuracy run; ledger unchanged from Run 52's last verified state."
+        "last_activity": "2026-11-21T11:08:24.963053-06:00",
+        "headline": "Verdict: NO MILESTONE — front (c) blocked on an uncertified court for the fifth consecutive Accuracy run; ledger unchanged from Run 52's last verified state."
       },
       {
         "name": "Betting Scout",
@@ -7036,8 +7036,8 @@
         "role": "World events, stock & crypto moves × game days",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T10:09:03.865512-06:00",
-        "headline": "Rotation note: sub-angles used — scheduled-event day vs ordinary day (Run 1); event category decomposition + event days × lock-to-close drift/CLV (Run 2); event days × prediction-market behaviour +…"
+        "last_activity": "2026-11-21T11:08:04.801052-06:00",
+        "headline": "No milestone. No parallel holds on both sets — this run ran no ROI test, and says so. Sub-angle headline per set — FITTED: untouched and still closed on every attachable category (Runs 4–5); no…"
       },
       {
         "name": "Flow Branch",
