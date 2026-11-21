@@ -818,7 +818,8 @@ function wActivity(){
   const shown = acts.filter((a) => actFilter.agent === "all" || a.agent === actFilter.agent);
   return '<div class="block"><h2 class="sec-title">Agent activity</h2>' +
     '<p class="sec-sub">The newest ' + shown.length + ' events from the loop logs. All times Regina.</p>' + f +
-    '<div class="feed">' + (shown.length ? shown.map(evtHTML).join("") : '<p class="empty">No events for that agent.</p>') + "</div></div>";
+    '<div class="feed">' + (shown.length ? shown.map(evtHTML).join("") : '<p class="empty">No events for that agent.</p>') + "</div>" +
+    srcLine("Activity source: the loops' own logs, newest events first, as exported into this file") + "</div>";
 }
 
 /* ================= RESEARCH widgets ================= */
@@ -862,6 +863,256 @@ function wVault(){
 }
 
 
+/* ================= v3: liveness, workforce, charts, truth =================
+   Liveness is DERIVED at view time from each agent's own timestamps:
+   Live = last activity within 1x its cadence, Quiet = within 2x,
+   Stale = beyond. Nothing here renders a status from a static list. */
+function liveness(lastIso, cadenceMin){
+  if(!lastIso) return {key: "none", label: "No report"};
+  const t = new Date(lastIso).getTime();
+  if(isNaN(t)) return {key: "none", label: "No report"};
+  const ageMin = (Date.now() - t) / 60000;
+  if(!isNum(cadenceMin)){
+    return ageMin <= 120 ? {key: "live", label: "Live"} : {key: "stale", label: "Stale"};
+  }
+  if(ageMin <= cadenceMin) return {key: "live", label: "Live"};
+  if(ageMin <= 2 * cadenceMin) return {key: "quiet", label: "Quiet"};
+  return {key: "stale", label: "Stale"};
+}
+function srcLine(text){
+  return '<p class="src-line">' + text + " · Data as of " +
+    (S.generated_at ? fmtDT(S.generated_at) : "—") + " Regina.</p>";
+}
+function researchAgents(){ return ((S.research || {}).agents) || []; }
+function liveCount(agents){
+  return agents.filter((a) => liveness(a.last_activity, a.cadence_minutes).key === "live").length;
+}
+
+/* ---------- workforce cards (Research) + preview (Overview) ---------- */
+const wfFilter = {group: "all"};
+const WF_GROUPS = ["Discovery Scouts", "Correlation Web", "Hunters & Inventors", "Oversight & Integrity", "Capture & Data"];
+function wfCard(a){
+  const lv = liveness(a.last_activity, a.cadence_minutes);
+  const tagCls = lv.key === "live" ? "grn" : lv.key === "quiet" ? "amb" : lv.key === "stale" ? "red" : "";
+  return '<div class="wf-card"><div class="wf-top"><span class="sdot ' + lv.key + '"></span>' +
+    '<span class="an">' + esc(a.name) + '</span><span class="tag ' + tagCls + '">' + lv.label + "</span>" +
+    (a.cadence ? '<span class="tag">' + esc(a.cadence) + "</span>" : "") + "</div>" +
+    '<div class="ar">' + esc(a.role || "") + '</div>' +
+    '<div class="ah">' + esc(a.headline || "") + "</div>" +
+    '<div class="when">Last activity ' + (a.last_activity ? fmtDT(a.last_activity) + " Regina" : "—") + "</div></div>";
+}
+function wWorkforce(){
+  const agents = researchAgents();
+  if(!agents.length) return "";
+  const groups = WF_GROUPS.filter((g) => agents.some((a) => a.group === g));
+  const chips = '<div class="filters"><span class="flab">Group</span>' +
+    '<button class="fchip" data-wf-group="all" aria-pressed="' + (wfFilter.group === "all") + '">All · ' + agents.length + "</button>" +
+    groups.map((g) => '<button class="fchip" data-wf-group="' + esc(g) + '" aria-pressed="' + (wfFilter.group === g) + '">' + esc(g) + "</button>").join("") + "</div>";
+  let body = "";
+  groups.forEach((g) => {
+    const ga = agents.filter((a) => a.group === g && (wfFilter.group === "all" || wfFilter.group === g));
+    if(!ga.length) return;
+    body += '<div class="group-h">' + esc(g) + " · " + ga.length + '</div><div class="wf-grid">' + ga.map(wfCard).join("") + "</div>";
+  });
+  return '<div class="block"><h2 class="sec-title">Research workforce</h2>' +
+    '<p class="sec-sub">' + agents.length + " research agents beyond the courts — " + liveCount(agents) +
+    " live right now. Every headline is the latest line from that agent's own log; liveness is computed from its log timestamps against its cadence.</p>" +
+    chips + body +
+    srcLine("Workforce source: each agent's own programme log (headline + last activity) and the cron census (cadence). Live = within one cadence, Quiet = within two, Stale = beyond") + "</div>";
+}
+function wWorkforcePreview(){
+  const agents = researchAgents();
+  if(!agents.length) return "";
+  const recent = agents.slice().sort((a, b) => String(b.last_activity || "").localeCompare(String(a.last_activity || ""))).slice(0, 10);
+  const minis = recent.map((a) => {
+    const lv = liveness(a.last_activity, a.cadence_minutes);
+    return '<div class="wf-mini"><span class="sdot ' + lv.key + '"></span><div style="min-width:0">' +
+      '<div class="an">' + esc(a.name) + '</div><div class="ar">' + esc(a.group) + " · " + lv.label +
+      (a.last_activity ? " · " + fmtTime(a.last_activity) : "") + "</div></div></div>";
+  }).join("");
+  return '<div class="block"><h2 class="sec-title">Research workforce</h2>' +
+    '<p class="sec-sub">' + agents.length + " scouts, branches, hunters and watchdogs work beyond the courts — " +
+    liveCount(agents) + " live now. Most recent activity first; the full workforce, with each agent's latest finding, lives in Research.</p>" +
+    '<div class="wf-minis">' + minis + "</div>" +
+    '<button class="fchip" data-goto="research" style="margin-top:10px">See the full workforce \u2192</button></div>';
+}
+
+/* ---------- desk-at-a-glance tiles (Overview) ---------- */
+function wDeskTiles(){
+  const tiles = [];
+  let w = 0, l = 0;
+  (S.slips || []).forEach((sl) => (sl.games_list || []).forEach((g) => {
+    if(g.outcome === "WON") w++; else if(g.outcome === "LOST") l++;
+  }));
+  if(w + l > 0) tiles.push(statTile((100 * w / (w + l)).toFixed(1) + "%", "Forward accuracy · Card picks",
+    "Across " + (w + l) + " graded games on the slips in this file",
+    {cu: 100 * w / (w + l), cuKey: "fwdacc", cuFmt: "pct1"}));
+  const acc = forwardKingLines(), courts = Object.keys(acc);
+  if(courts.length){
+    const inp = courts.filter((c) => acc[c].pnl_m > 0).length;
+    tiles.push(statTile(inp + " of " + courts.length, "Kings in profit · Forward",
+      "On the per-slip king records in this file" + (bestForwardCourt() ? " · \u2605 best: " + esc(bestForwardCourt()) : "")));
+  }
+  const ra = researchAgents();
+  if(ra.length) tiles.push(statTile(liveCount(ra) + " of " + ra.length, "Research agents live",
+    "Liveness derived from each agent's own log timestamps"));
+  const ex = (S.research || {}).exam;
+  if(ex && isNum(ex.games) && (ex.lines || []).length){
+    const best = ex.lines.slice().sort((a, b) => b.roi_pct - a.roi_pct)[0];
+    tiles.push(statTile(ex.games + " games", "Fresh-history exam · Sealed",
+      "Kings graded once on games they never trained on · best " + esc(best.court) + " " + fmtPct(best.roi_pct) +
+      " ROI · plain favourite " + fmtPct((ex.control || {}).roi_pct)));
+  }
+  const v = S.vault || {};
+  if(isNum(v.count)) tiles.push(statTile(String(v.count), "Vault · Sealed games",
+    "Next opening " + esc(v.next_opening || "—"), {cu: v.count, cuKey: "vaulttile", cuFmt: "int"}));
+  if(!tiles.length) return "";
+  return '<div class="block"><h2 class="sec-title">The desk at a glance</h2><div class="grid">' + tiles.join("") + "</div></div>";
+}
+
+/* ---------- System Truth — the Integrity Auditor's verdicts ---------- */
+function wSystemTruth(){
+  const it = S.integrity;
+  if(!it) return "";
+  const rows = [];
+  if(it.last_run) rows.push('<div class="kv-row"><span class="k">Last auditor run</span><span class="v">' + fmtDT(it.last_run) + " Regina" + (it.run ? " · Run " + it.run : "") + "</span></div>");
+  if(isNum(it.claims_checked)) rows.push('<div class="kv-row"><span class="k">Claims re-derived</span><span class="v">' + it.claims_checked + " checked against primary records</span></div>");
+  if(isNum(it.canary_fixtures)) rows.push('<div class="kv-row"><span class="k">Gate canaries</span><span class="v">' + it.canary_fixtures + " fabricated fixtures fed to " + (isNum(it.canary_gates) ? it.canary_gates : "—") + " gates</span></div>");
+  if(isNum(it.findings_count)) rows.push('<div class="kv-row"><span class="k">Open findings</span><span class="v">' + it.findings_count + "</span></div>");
+  if(it.vault_seal) rows.push('<div class="kv-row"><span class="k">Vault seal</span><span class="v">' + esc(it.vault_seal) + "</span></div>");
+  if(it.registry) rows.push('<div class="kv-row"><span class="k">Registry agreement</span><span class="v">' + esc(it.registry) + "</span></div>");
+  if(it.receipts) rows.push('<div class="kv-row"><span class="k">Crown receipts</span><span class="v">' + esc(it.receipts) + "</span></div>");
+  let inner = '<div class="kv-rows">' + rows.join("") + "</div>";
+  if((it.findings || []).length){
+    inner += '<h3 style="margin:13px 0 2px;font-size:.9rem">Open findings — stated plainly</h3>' +
+      it.findings.map((f) => '<div class="truth-finding"><strong>Finding ' + f.n + ".</strong> " + esc(f.summary) + "</div>").join("");
+  }
+  if((it.canary_broken || []).length){
+    inner += '<p class="tile-note" style="margin-top:10px">Gates the canary ledger records as broken: ' +
+      it.canary_broken.map(esc).join(", ") + ".</p>";
+  }
+  inner += srcLine("System Truth source: the Integrity Auditor's own log (" + esc(it.source || "") + ") and its findings as filed in the programme intake. Anything the auditor has not reported is omitted, never filled in");
+  return '<div class="block">' + panel("System Truth — Integrity Auditor", inner) + "</div>";
+}
+
+/* ---------- charts: inline SVG, real status.json numbers only ---------- */
+function wKingChart(){
+  const kings = S.kings || [];
+  if(!kings.length) return "";
+  const acc = forwardKingLines();
+  const data = kings.map((k) => {
+    const a = acc[k.court];
+    const decided = a ? (a.wins + a.losses) : 0;
+    return {court: k.court, practice: k.roi_pct,
+            forward: (a && decided > 0) ? (a.pnl_m / (25 * decided)) * 100 : null};
+  });
+  let maxAbs = 10;
+  data.forEach((d) => { maxAbs = Math.max(maxAbs, Math.abs(d.practice || 0), Math.abs(d.forward || 0)); });
+  const W = 360, plotX0 = 64, plotW = 292, zeroX = plotX0 + plotW / 2, scale = (plotW / 2) / maxAbs;
+  const top = 30, blockH = 54, H = top + data.length * blockH + 8;
+  const bar = (v, y, fill) => {
+    if(!isNum(v)) return "";
+    const wdt = Math.max(1, Math.abs(v) * scale);
+    const x = v >= 0 ? zeroX : zeroX - wdt;
+    const lx = v >= 0 ? x + wdt + 5 : x - 5;
+    return '<rect x="' + x.toFixed(1) + '" y="' + y + '" width="' + wdt.toFixed(1) + '" height="11" rx="3" fill="' + fill + '"/>' +
+      '<text x="' + lx.toFixed(1) + '" y="' + (y + 10) + '" font-size="11" font-weight="700" fill="' + fill + '" text-anchor="' + (v >= 0 ? "start" : "end") + '">' + fmtPct(v) + "</text>";
+  };
+  let svg = '<svg class="chart-svg" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Practice versus forward ROI by king">' +
+    '<rect x="' + plotX0 + '" y="8" width="11" height="11" rx="3" fill="#c8a24a"/><text x="' + (plotX0 + 16) + '" y="17" font-size="11" fill="var(--mut)">Practice (fitted)</text>' +
+    '<rect x="216" y="8" width="11" height="11" rx="3" fill="#43c98a"/><text x="232" y="17" font-size="11" fill="var(--mut)">Fresh (forward)</text>' +
+    '<line x1="' + zeroX + '" y1="26" x2="' + zeroX + '" y2="' + (H - 4) + '" stroke="var(--line)" stroke-dasharray="4 4"/>';
+  data.forEach((d, i) => {
+    const y0 = top + i * blockH;
+    svg += '<text x="0" y="' + (y0 + 12) + '" font-size="12" class="svg-t">' + esc(d.court) + "</text>" +
+      bar(d.practice, y0 + 17, "#c8a24a") +
+      (isNum(d.forward) ? bar(d.forward, y0 + 31, d.forward >= 0 ? "#43c98a" : "#e46565")
+                        : '<text x="' + (zeroX + 6) + '" y="' + (y0 + 41) + '" font-size="11" fill="var(--dim)">no fresh record</text>');
+  });
+  svg += "</svg>";
+  return '<div class="block">' + panel("Practice vs fresh — ROI by king", svg +
+    '<p class="chart-note">Gold = practice ROI on the fitted set (the king\'s own line in this file). Green/red = fresh ROI, summed from the per-slip king records in this file at flat 25m per pick — the same derivation as the forward table. The separate forward leaderboard file is not used: it still carries the superseded VG24 Vanguard line (Integrity Auditor Finding 1).</p>') + "</div>";
+}
+function wSlipChart(){
+  const slips = (S.slips || []).slice().sort((a, b) => a.number - b.number)
+    .map((sl) => {
+      const pnls = (sl.top3 || []).map((t) => t.pnl_m).filter(isNum);
+      return pnls.length ? {n: sl.number, v: pnls.reduce((x, y) => x + y, 0)} : null;
+    }).filter(Boolean);
+  if(!slips.length) return "";
+  let maxV = 10, minV = -10;
+  slips.forEach((s) => { maxV = Math.max(maxV, s.v); minV = Math.min(minV, s.v); });
+  const W = 360, plotTop = 28, plotBot = 156, plotX0 = 30, plotX1 = 356;
+  const zeroY = plotTop + (maxV / (maxV - minV)) * (plotBot - plotTop);
+  const slot = (plotX1 - plotX0) / slips.length, barW = Math.min(36, slot * 0.6);
+  let svg = '<svg class="chart-svg" viewBox="0 0 ' + W + ' 192" role="img" aria-label="Card profit and loss by slip">' +
+    '<line x1="' + plotX0 + '" y1="' + zeroY.toFixed(1) + '" x2="' + plotX1 + '" y2="' + zeroY.toFixed(1) + '" stroke="var(--line)"/>';
+  slips.forEach((s, i) => {
+    const cx = plotX0 + slot * i + slot / 2;
+    const hgt = Math.abs(s.v) / (maxV - minV) * (plotBot - plotTop);
+    const y = s.v >= 0 ? zeroY - hgt : zeroY;
+    const fill = s.v >= 0 ? "#43c98a" : "#e46565";
+    svg += '<rect x="' + (cx - barW / 2).toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + barW + '" height="' + Math.max(1, hgt).toFixed(1) + '" rx="4" fill="' + fill + '"/>' +
+      '<text x="' + cx + '" y="' + (s.v >= 0 ? y - 6 : y + hgt + 15) + '" font-size="11" font-weight="700" fill="' + fill + '" text-anchor="middle">' + fmtM(s.v, 0) + "</text>" +
+      '<text x="' + cx + '" y="176" font-size="11" fill="var(--mut)" text-anchor="middle">#' + s.n + "</text>";
+  });
+  svg += "</svg>";
+  return '<div class="block">' + panel("Card P&amp;L by slip", svg +
+    '<p class="chart-note">Sum of each slip\'s three chosen bets (grand pick, confidence, desk) exactly as recorded in this file, flat stakes. Slips #' +
+    slips[0].n + "–#" + slips[slips.length - 1].n + ".</p>") + "</div>";
+}
+function wActivityChart(){
+  const acts = S.activity || [];
+  if(!acts.length) return "";
+  const counts = {};
+  acts.forEach((a) => { if(a.agent) counts[a.agent] = (counts[a.agent] || 0) + 1; });
+  const items = Object.keys(counts).map((k) => ({label: k, v: counts[k]})).sort((a, b) => b.v - a.v);
+  if(!items.length) return "";
+  const max = items[0].v, W = 360, rowH = 25, top = 6, H = top + items.length * rowH + 4;
+  const barX = 100, barMax = W - barX - 30;
+  let svg = '<svg class="chart-svg" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Activity entries by agent">';
+  items.forEach((it, i) => {
+    const y = top + i * rowH;
+    const wdt = Math.max(2, (it.v / max) * barMax);
+    svg += '<text x="0" y="' + (y + 15) + '" font-size="11.5" fill="var(--ink)">' + esc(it.label) + "</text>" +
+      '<rect x="' + barX + '" y="' + (y + 4) + '" width="' + wdt.toFixed(1) + '" height="13" rx="4" fill="#c8a24a"/>' +
+      '<text x="' + (barX + wdt + 6) + '" y="' + (y + 15) + '" font-size="11.5" font-weight="700" fill="var(--gold-hi)">' + it.v + "</text>";
+  });
+  svg += "</svg>";
+  return '<div class="block">' + panel("Activity mix — latest " + acts.length + " events", svg +
+    '<p class="chart-note">Entries per agent in the activity feed this file carries (the newest ' + acts.length + ' loop-log events). A feed window, not a lifetime total.</p>') + "</div>";
+}
+
+/* ---------- pipeline diagram: static structure, no live values ---------- */
+function wPipeline(){
+  const steps = [
+    ["RESEARCH", "Scouts · Correlation Web · Hunters · Inventor", ""],
+    ["COURTS MUTATE", "variants bred on the practice set, registry-checked", ""],
+    ["KINGS", "Legacy · Regime · Quantum · Selector · Vanguard", ""],
+    ["CARD", "Selector chooses the pick, game by game", ""],
+    ["SLIPS", "locked before play · graded the same night", ""],
+    ["VAULT", "sealed holdout · opens Dec 1 · kings judged blind", "gold"]
+  ];
+  let svg = '<svg class="pipe-svg" viewBox="0 0 360 486" role="img" aria-label="How the system flows: research to courts to kings to card to slips to vault, watched by oversight">';
+  steps.forEach((s, i) => {
+    const y = 6 + i * 68;
+    svg += '<rect class="' + (s[2] === "gold" ? "svg-box-gold" : "svg-box") + '" x="24" y="' + y + '" width="312" height="46" rx="10"/>' +
+      '<text x="180" y="' + (y + 20) + '" font-size="13" text-anchor="middle" class="svg-t">' + s[0] + "</text>" +
+      '<text x="180" y="' + (y + 37) + '" font-size="11" text-anchor="middle" class="svg-s">' + s[1] + "</text>";
+    if(i < steps.length - 1){
+      const ay = y + 46;
+      svg += '<line class="svg-arrow" x1="180" y1="' + ay + '" x2="180" y2="' + (ay + 18) + '"/>' +
+        '<polygon points="174,' + (ay + 15) + ' 186,' + (ay + 15) + ' 180,' + (ay + 22) + '" fill="var(--gold)"/>';
+    }
+  });
+  const wy = 6 + steps.length * 68 + 2;
+  svg += '<rect class="svg-box-watch" x="24" y="' + wy + '" width="312" height="46" rx="10"/>' +
+    '<text x="180" y="' + (wy + 20) + '" font-size="13" text-anchor="middle" class="svg-t">WATCH LAYER</text>' +
+    '<text x="180" y="' + (wy + 37) + '" font-size="11" text-anchor="middle" class="svg-s">Overseer · Integrity Auditor · Crown Sentinel</text></svg>';
+  return '<div class="block">' + panel("How the system flows", svg +
+    '<p class="chart-note">Structure only — research feeds the courts, the courts breed the kings, the Selector\'s card becomes slips, and graded slips feed the sealed vault. The watch layer audits every layer above it.</p>') + "</div>";
+}
+
 /* ================= segmented sub-views (level-2 navigation, shallow) ================= */
 const pageView = {slips: "bets", kings: "all", research: "all"};
 function segHTML(tab, options){
@@ -875,6 +1126,7 @@ function renderSlipsPage(){
   if (v === "bets" || v === "all") h += wBets();
   if (v === "ledger" || v === "all") h += wLedger();
   if (v === "slips" || v === "all") h += wSlipCards();
+  h += srcLine("Slips &amp; bets source: each slip's own graded tracker and the called-bet ledger, as exported into this file");
   return h;
 }
 function renderKingsPage(){
@@ -883,22 +1135,28 @@ function renderKingsPage(){
   h += segHTML("kings", [["all", "All"], ["fitted", "Kings \u00b7 Practice"], ["forward", "Forward"], ["team", "Workforce"]]);
   if (v === "all" || v === "fitted") h += wKings();
   if (v === "all" || v === "forward") h += wForwardKings();
+  if (v === "forward") h += wKingChart();
   if (v === "all" || v === "team") h += wAgents();
+  h += srcLine("Kings source: the court record as exported from the programme's state files — the Integrity Auditor re-derives these lines against the verified court record (see System Truth). Forward source: summed from the per-slip king records in this file only — the forward leaderboard file is not used, as it still carries the superseded VG24 Vanguard line");
   return h;
 }
 function renderResearchPage(){
   const v = pageView.research;
-  let h = sectionBanner("assets/discovery.jpg", "Research", "Vault, autopsy challengers and Stakehunter sizing research, grouped by type.");
-  h += segHTML("research", [["all", "All"], ["vault", "Vault"], ["challengers", "Challengers"], ["stakehunter", "Stakehunter"]]);
+  let h = sectionBanner("assets/discovery.jpg", "Research", "The full research workforce, charts and diagrams, the vault, autopsy challengers and Stakehunter sizing research — grouped by type.");
+  h += segHTML("research", [["all", "All"], ["workforce", "Workforce"], ["charts", "Charts"], ["vault", "Vault"], ["challengers", "Challengers"], ["stakehunter", "Stakehunter"]]);
+  if (v === "all" || v === "workforce") h += wWorkforce();
+  if (v === "all" || v === "charts") h += wKingChart() + wPipeline() + wSlipChart() + wActivityChart();
   if (v === "all" || v === "vault") h += wVault();
   if (v === "all" || v === "challengers") h += wChallengers();
   if (v === "all" || v === "stakehunter") h += wStakehunter();
+  if (v === "all") h += wSystemTruth();
+  h += srcLine("Research source: the programme's own primary records — agent logs, the cron census, the vault count, the autopsy and Stakehunter logs, and the sealed exam results file");
   return h;
 }
 
 /* ================= widget registry — add new widgets here ================= */
 const WIDGETS = {
-  overview: [wHero, wCrownBanner, wForwardTiles, wLiveBoard, wForwardKings, wLatestSlip, wTopActivity],
+  overview: [wHero, wCrownBanner, wForwardTiles, wDeskTiles, wSystemTruth, wLiveBoard, wForwardKings, wWorkforcePreview, wLatestSlip, wTopActivity],
   slips:    [wBets, wLedger, wSlipCards],
   kings:    [wKings, wAgents],
   activity: [wActivity],
@@ -1071,6 +1329,10 @@ document.addEventListener("click", (e) => {
   }
   const aEl = e.target.closest("[data-act-agent]");
   if(aEl){ actFilter.agent = aEl.getAttribute("data-act-agent"); $("page-activity").innerHTML = WIDGETS.activity.map((w) => w()).join(""); return; }
+  const wfEl = e.target.closest("[data-wf-group]");
+  if(wfEl){ wfFilter.group = wfEl.getAttribute("data-wf-group"); $("page-research").innerHTML = renderResearchPage(); runCountUps($("page-research")); return; }
+  const goEl = e.target.closest("[data-goto]");
+  if(goEl){ const t = document.querySelector('.tab[data-tab="' + goEl.getAttribute("data-goto") + '"]'); if(t) t.click(); return; }
   const sEl = e.target.closest("[data-sh]");
   if(sEl){ shFilter.status = sEl.getAttribute("data-sh"); $("page-research").innerHTML = renderResearchPage(); runCountUps($("page-research")); return; }
 });
