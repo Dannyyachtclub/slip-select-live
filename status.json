@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T12:25:39.642959-06:00",
+  "generated_at": "2026-11-21T12:30:42.186046-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T12:11:33.230171-06:00",
+      "last_activity": "2026-11-21T12:26:30.853199-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T12:11:54.080172-06:00",
-      "headline": "Latest search cycle: 429"
+      "last_activity": "2026-11-21T12:26:35.793199-06:00",
+      "headline": "Latest search cycle: 430"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 430 — 2026-11-21 12:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-429. Root cause named from primary records: court_state.py's Selector resolver only…",
+      "at": "2026-11-21T12:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 12:26 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
+      "summary": "AUDIT FAILED (fourteenth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — recorded sha256…",
+      "at": "2026-11-21T12:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 429 — 2026-11-21 12:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-428. Root cause named from primary records: court_state.py's Selector resolver only…",
       "at": "2026-11-21T12:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 11:11 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
       "summary": "AUDIT FAILED (ninth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
       "at": "2026-11-21T11:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 424 — 2026-11-21 10:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-423. Root cause named from primary records: court_state.py's Selector resolver only…",
-      "at": "2026-11-21T10:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 10:56 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
-      "summary": "AUDIT FAILED (eighth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
-      "at": "2026-11-21T10:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T12:11:33.230171-06:00",
+        "last_activity": "2026-11-21T12:26:30.853199-06:00",
         "headline": "DISTANCE / REQUIREMENT / HEIGHT: improvement distance = not measurable this run (no fight); requirement to close = a clean court_state regeneration + verify PASS, which requires the Selector…"
       },
       {
