@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T01:25:45.277249-06:00",
+  "generated_at": "2026-11-21T01:30:47.221933-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,36 +133,36 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T01:00:31.926086-06:00",
+      "last_activity": "2026-11-21T01:26:05.942570-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY — 214-25, +74.59% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T01:05:10.131096-06:00",
+      "last_activity": "2026-11-21T01:30:02.818148-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T01:13:51.190114-06:00",
+      "last_activity": "2026-11-21T01:28:53.664145-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T01:12:17.848111-06:00",
-      "headline": "Latest search cycle: 385"
+      "last_activity": "2026-11-21T01:27:30.220143-06:00",
+      "headline": "Latest search cycle: 386"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T01:18:02.633123-06:00",
-      "headline": "Latest filing: P352"
+      "last_activity": "2026-11-21T01:28:16.538144-06:00",
+      "headline": "Latest filing: P353"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 386 — 2026-11-21 01:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T01:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 385 — 2026-11-21 01:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T01:11:00-06:00"
@@ -769,6 +776,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G390 — F5 SOFT-ANGLE EXTREMES (eighty-third visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G390, no branch DEAD, and no new best form — F5 remains with the K-A below-gate note testably and…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G389 — F4 CROSS-REFERENCE (seventy-seventh visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G389, no branch DEAD, and no new best form — F4 remains with the D8 control testably and NEEDS-FREEZE only…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -804,6 +818,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "Vanguard R4-G158 (loop, 2026-11-21) — NO NEW KING",
+      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "Vanguard R4-G157 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY (190-49, priced 227, +2219.15m, +39.10%); king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -820,6 +841,13 @@
       "kind": "generation",
       "title": "Vanguard R4-G155 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King VG24-BRANDDV75HOMEONLY re-run FIRST and tied EXACTLY (188-51, priced 227, +1843.12m, +32.48%); king dog line (§9): 79 picks, 48-31,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
+      "kind": "generation",
+      "title": "SELECTOR R4-G347 (loop, 2026-11-21) — NO NEW KING; ONE ABOVE-KING SUB-GATE FORM (QUEUE CONFIRMATION ONLY)",
+      "summary": "NO NEW KING — LGM20BBAWAY stands (214-25, priced 226, +4214.20m, +74.59%). One above-king sub-gate form: V29 TIGHTEN DV<60 +75.21%…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -862,34 +890,6 @@
       "kind": "gate-refusal",
       "title": "Regime R4-G534 (loop, 2026-11-21) — NO NEW KING",
       "summary": "NO NEW KING. Two above-king headlines, both GATE-REFUSED on accuracy: V12 BBHOMEDOG21CONSFLIP at +66.55% (swing +113.55m at -4 net wins…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Regime",
-      "kind": "generation",
-      "title": "Regime R4-G533 (loop, 2026-11-21) — NO NEW KING",
-      "summary": "NO NEW KING. ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO (grand king) stands (207-32, priced 228, +3679.70m, +64.56%; dog 61 picks, 48-13,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Legacy",
-      "kind": "generation",
-      "title": "Legacy R4-G536 (loop, 2026-11-21)",
-      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15 stands (208-31, +3620.48m, +63.24%). Best gate-eligible variant V22 BRANDAWAYFLIP REFUTED at…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Legacy",
-      "kind": "generation",
-      "title": "Legacy R4-G535 (loop, 2026-11-21)",
-      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15 stands (208-31, priced 229, +3620.48m, +63.24%; dog 57 picks, 47-10, priced 53, +1822.77m,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Legacy",
-      "kind": "generation",
-      "title": "Legacy R4-G534 (loop, 2026-11-21)",
-      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15 stands (208-31, priced 229, +3620.48m, +63.24%; dog 57 picks, 47-10, priced 53, +1822.77m,…",
       "at": "2026-11-21T00:00:00-06:00"
     }
   ],
