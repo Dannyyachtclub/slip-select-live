@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T09:25:37.795916-06:00",
+  "generated_at": "2026-11-21T09:30:44.664986-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,14 +119,14 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-21T09:02:40.630342-06:00",
+      "last_activity": "2026-11-21T09:25:52.380401-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-21T09:06:34.630352-06:00",
+      "last_activity": "2026-11-21T09:29:52.899412-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T09:11:50.806365-06:00",
+      "last_activity": "2026-11-21T09:26:53.628404-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T09:12:01.116366-06:00",
-      "headline": "Latest search cycle: 417"
+      "last_activity": "2026-11-21T09:27:02.620404-06:00",
+      "headline": "Latest search cycle: 418"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 418 — 2026-11-21 09:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone), repeat of cycle 417. Root cause named from primary records: court_state.py's Selector resolver only searches…",
+      "at": "2026-11-21T09:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 09:26 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
+      "summary": "AUDIT FAILED (second consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
+      "at": "2026-11-21T09:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 417 — 2026-11-21 09:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Root cause named from primary records: court_state.py's Selector resolver only searches selector_g357 single…",
       "at": "2026-11-21T09:11:00-06:00"
@@ -716,13 +730,6 @@
       "title": "CYCLE 413 — 2026-11-21 08:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T08:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 412 — 2026-11-21 07:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T07:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -862,13 +869,6 @@
       "kind": "generation",
       "title": "Arena G416 — F1 HOUSE-VIEW (next visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G416, no branch DEAD, and no new best form — F1 remains with its F-E note testable (standalone-proven,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G415 — F5 SOFT-ANGLE EXTREMES (next visit) — 2026-11-21",
-      "summary": "Verdict: NO ARENA CHAMPION in G415, no branch DEAD, and no new best form — F5 remains with its K-A note testable and NEEDS-FREEZE…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T09:11:50.806365-06:00",
+        "last_activity": "2026-11-21T09:26:53.628404-06:00",
         "headline": "DISTANCE / REQUIREMENT / HEIGHT: improvement distance = not measurable this run (no fight); requirement to close = a clean court_state regeneration + verify PASS, which requires the Selector…"
       },
       {
