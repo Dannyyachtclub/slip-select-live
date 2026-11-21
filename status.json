@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T13:25:39.410270-06:00",
+  "generated_at": "2026-11-21T13:30:38.804339-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-21T13:05:37.700906-06:00",
+      "last_activity": "2026-11-21T13:30:02.872889-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T13:14:43.300900-06:00",
+      "last_activity": "2026-11-21T13:28:42.501890-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T13:12:13.102901-06:00",
-      "headline": "Latest search cycle: 433"
+      "last_activity": "2026-11-21T13:27:07.502891-06:00",
+      "headline": "Latest search cycle: 434"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T13:15:26.039899-06:00",
-      "headline": "Latest filing: P384"
+      "last_activity": "2026-11-21T13:28:16.390890-06:00",
+      "headline": "Latest filing: P385"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 434 — 2026-11-21 13:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T13:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 433 — 2026-11-21 13:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T13:11:00-06:00"
@@ -744,20 +751,6 @@
       "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 12:11 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
       "summary": "AUDIT FAILED (thirteenth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
       "at": "2026-11-21T12:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 428 — 2026-11-21 11:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-427. Root cause named from primary records: court_state.py's Selector resolver only…",
-      "at": "2026-11-21T11:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 11:56 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
-      "summary": "AUDIT FAILED (twelfth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
-      "at": "2026-11-21T11:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -869,6 +862,13 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-21 (10:42 CST) — audit + hunt (class d lead: sport-specific factors, basketball first; class e supporting: public-data…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION — FAILED AGAIN THIS CYCLE (milestone failure, recorded plainly):…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G422 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (next visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G422, no branch DEAD, and no new best form — F2 remains parked with its B1 steam control testable (tied at…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -7117,7 +7117,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T13:15:26.039899-06:00",
+        "last_activity": "2026-11-21T13:28:16.390890-06:00",
         "headline": "P373-M1 TRAJECTORY-GATED GAMEC CELL — FILED as a mutation under existing numbers (needs-capture via parents)."
       },
       {
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T13:14:43.300900-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HF form fought — each remains 0/239 frozen (both key-statistics fields header-absent in the ledger);…"
+        "last_activity": "2026-11-21T13:28:42.501890-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HC form fought — each remains 0/239 frozen (both promoshare fields and move_lc_pp header-absent in the…"
       },
       {
         "name": "Overseer",
