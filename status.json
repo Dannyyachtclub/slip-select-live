@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T12:55:41.245115-06:00",
+  "generated_at": "2026-11-21T13:00:40.144360-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T12:30:50.058207-06:00",
+      "last_activity": "2026-11-21T12:56:11.991912-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -147,7 +147,7 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T12:41:36.019228-06:00",
+      "last_activity": "2026-11-21T12:59:34.812910-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
@@ -161,8 +161,8 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T12:44:15.929233-06:00",
-      "headline": "Latest filing: P382"
+      "last_activity": "2026-11-21T12:58:31.123911-06:00",
+      "headline": "Latest filing: P383"
     },
     {
       "name": "Loss Autopsy",
@@ -683,6 +683,13 @@
   },
   "activity": [
     {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 12:56 CST run) — COMPLETED (prior aborted attempts superseded)",
+      "summary": "Verdict: NO ARENA CHAMPION in G420, no branch DEAD, and no new best form — F5 remains with its K-A note testable and NEEDS-FREEZE…",
+      "at": "2026-11-21T12:56:00-06:00"
+    },
+    {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 431 — 2026-11-21 12:41 CST (scheduled run, job discovery-loop-continuous)",
@@ -757,13 +764,6 @@
       "kind": "generation",
       "title": "CYCLE 426 — 2026-11-21 11:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone), repeat of cycles 417-425. Root cause named from primary records: court_state.py's Selector resolver only…",
-      "at": "2026-11-21T11:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G420 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 11:26 CST run) — ABORTED AGAIN: COURT-STATE MILESTONE FAILURE",
-      "summary": "AUDIT FAILED (tenth consecutive G420 attempt): verify_court_state.py exited 1 at intake (STALE RECORD — court_state.json generated…",
       "at": "2026-11-21T11:26:00-06:00"
     },
     {
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T11:58:08.710146-06:00",
-        "headline": "Best parallel this run: the close source is not the poll's last pass in costume — but it might be the poll's first pass in costume, and that costume is a slip. Recency acquits source completely…"
+        "last_activity": "2026-11-21T12:58:23.381911-06:00",
+        "headline": "Best parallel this run: the opponent's late money is not a verdict on your side — in soccer it is mostly your own side's move read in a mirror (r = −0.748), and where it separates at all, it…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T11:58:39.249473-06:00",
-        "headline": "Best parallel: the orphan window's closure is one layer closed in 19 minutes and three layers still open at 125 minutes with no internal end — programme_state still certifies a pre-lock world from…"
+        "last_activity": "2026-11-21T12:58:39.620911-06:00",
+        "headline": "Best parallel: the orphan window's closure remains one layer closed in 19 minutes and three layers open at 185 minutes across three hourly reads — programme_state still certifies a pre-lock world…"
       },
       {
         "name": "Correlation Hunter",
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T12:44:15.929233-06:00",
-        "headline": "P5-M4 GLASS-GATED HIGH-TOTAL FADE — FILED as a mutation of P5 crossed with Arena P347 and P5-M1 (needs-capture via its parents' existing lock passes; no new field or source)."
+        "last_activity": "2026-11-21T12:58:31.123911-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no styrene field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no styrene column; the route is one capture step…"
       },
       {
         "name": "Loss Autopsy",
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T12:41:36.019228-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT: improvement distance = not measurable this run (no fight); requirement to close = a clean court_state regeneration + verify PASS, which requires the Selector…"
+        "last_activity": "2026-11-21T12:59:34.812910-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HE form fought — each remains 0/239 frozen (both styrene fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
