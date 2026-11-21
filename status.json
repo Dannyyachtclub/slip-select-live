@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T08:45:48.596207-06:00",
+  "generated_at": "2026-11-21T08:50:40.614394-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,14 +133,14 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T08:20:09.210233-06:00",
+      "last_activity": "2026-11-21T08:46:27.003301-06:00",
       "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY-BBDVGE80 — 213-26, +76.31% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T08:25:23.683247-06:00",
+      "last_activity": "2026-11-21T08:50:37.487311-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
@@ -161,7 +161,7 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T08:44:04.110295-06:00",
+      "last_activity": "2026-11-21T08:46:10.720300-06:00",
       "headline": "Latest filing: P381"
     },
     {
@@ -790,6 +790,13 @@
     {
       "agent": "Edge Finder",
       "kind": "generation",
+      "title": "CYCLE 2026-11-21 (08:42 CST) — audit + hunt (class d lead: sport-specific factors, basketball first; class f supporting: the house's…",
+      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION: verify_court_state.py first exited 1 (STALE — mutation_loop_state.md…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "generation",
       "title": "CYCLE 2026-11-21 (08:12 CST) — audit + hunt (class b lead: open-source / public data releases; class c supporting: market…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION: kings resolved ONLY from data_core/court_state.json after…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -819,13 +826,6 @@
       "agent": "Edge Finder",
       "kind": "generation",
       "title": "CYCLE 2026-11-21 (06:12 CST) — audit + hunt (classes d + h lead: sport-specific basketball-first / money flow supporting — the five who…",
-      "summary": "1. AUDIT OF HUNTED GROUND (this cycle)",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-21 (05:42 CST) — audit + hunt (classes g + d + a lead: cross-market same-event / sport-specific basketball-first / quant…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle)",
       "at": "2026-11-21T00:00:00-06:00"
     },
@@ -874,6 +874,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "Vanguard R4-G175 (loop, 2026-11-21)",
+      "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "Vanguard R4-G174 (loop, 2026-11-21)",
       "summary": "King re-run FIRST and tied EXACTLY: VG25-LGLENMOD17FLIP 190-49, priced 227, +2219.15m, +39.10%; king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "Vanguard R4-G173 (loop, 2026-11-21) — NO NEW KING",
-      "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY (190-49, priced 227, +2219.15m, +39.10%); king dog-pick line (§9): 83 picks,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G172 (loop, 2026-11-21) — NO NEW KING",
       "summary": "King VG25-LGLENMOD17FLIP re-run FIRST and tied EXACTLY (190-49, priced 227, +2219.15m, +39.10%); king dog-pick line (§9): 83 picks,…",
       "at": "2026-11-21T00:00:00-06:00"
     }
@@ -7054,8 +7054,8 @@
         "role": "How the kings agree, dissent and merge",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T07:50:40.214158-06:00",
-        "headline": "Best parallel from this branch, Run 33: price-band gradients split the court by voice on both sets — Vanguard's own-price ordering (>2.50 > 1.50–2.50 > <1.50) is identical fitted (+121.45% / +36.79%…"
+        "last_activity": "2026-11-21T08:50:20.154311-06:00",
+        "headline": "Best parallel from this branch, Run 34: overround thickness inverts between sets on the certified kings — fitted, the big four's pooled ROI rises with overround (<6 +59.58% / 6–8.5 +70.86% / >8.5…"
       },
       {
         "name": "Markets Branch",
@@ -7081,8 +7081,8 @@
         "role": "Hunts patterns across every dimension at once",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T08:15:08.576221-06:00",
-        "headline": "LEAVES with verdicts: Run 66 Creative 2 (tested, wounded form above), Creative 3 (census closed), W193 (tested, watch grade)."
+        "last_activity": "2026-11-21T08:46:01.918300-06:00",
+        "headline": "SLIP #40 STATE: does not exist (pending []). Nothing in this run touches a king, card, engine, bet or the vault. Milestone claimed: a merge clearing the gate — M-LONGDOG clears the FORWARD gate…"
       },
       {
         "name": "Correlation Red Team",
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T08:44:04.110295-06:00",
-        "headline": "P7-M5 PM-CHURN GATE ON BOOK STEAM — FILED as a mutation of P7 crossed with P368 (needs-capture; inherits both parents)."
+        "last_activity": "2026-11-21T08:46:10.720300-06:00",
+        "headline": "P158-M1 SCRIPT-CONFIRMATION GATE ON THE SEGMENT-PRICE FLIP — FILED as a mutation of P158 crossed with P370 (needs-capture; inherits both parents)."
       },
       {
         "name": "Loss Autopsy",
