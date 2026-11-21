@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T01:40:43.191233-06:00",
+  "generated_at": "2026-11-21T01:45:45.654300-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,14 +119,14 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-21T01:15:42.090118-06:00",
+      "last_activity": "2026-11-21T01:40:56.585171-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-21T01:21:06.730129-06:00",
+      "last_activity": "2026-11-21T01:45:16.309180-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME — 204-35, +65.43% fitted ROI"
     },
     {
@@ -147,36 +147,36 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T01:28:53.664145-06:00",
+      "last_activity": "2026-11-21T01:44:30.072178-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T01:27:30.220143-06:00",
-      "headline": "Latest search cycle: 386"
+      "last_activity": "2026-11-21T01:42:25.115174-06:00",
+      "headline": "Latest search cycle: 387"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T01:28:16.538144-06:00",
-      "headline": "Latest filing: P353"
+      "last_activity": "2026-11-21T01:45:34.361181-06:00",
+      "headline": "Latest filing: P354"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-21T01:13:06.858112-06:00",
+      "last_activity": "2026-11-21T01:43:25.878176-06:00",
       "headline": "15 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-21T01:15:09.121117-06:00",
-      "headline": "Cycle 124: 34 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-21T01:44:55.494179-06:00",
+      "headline": "Cycle 125: 34 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,7 +187,7 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 124,
+    "latest_cycle": 125,
     "findings": [
       {
         "id": "Z1",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 387 — 2026-11-21 01:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T01:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 386 — 2026-11-21 01:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T01:26:00-06:00"
@@ -718,11 +725,11 @@
       "at": "2026-11-21T00:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 381 — 2026-11-21 00:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T00:11:00-06:00"
+      "title": "CYCLE 125 — 2026-11-21",
+      "summary": "Script: data_core/stakehunter_cycle125.py (new file only; stream builder written fresh this cycle against the state file below).…",
+      "at": "2026-11-21T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -776,6 +783,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G391 — F1 HOUSE-VIEW (eighty-first visit) — 2026-11-21",
+      "summary": "Verdict: NO ARENA CHAMPION in G391, no branch DEAD, and no new best form — F1 remains with the F-E standalone note testably and…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G390 — F5 SOFT-ANGLE EXTREMES (eighty-third visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G390, no branch DEAD, and no new best form — F5 remains with the K-A below-gate note testably and…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -806,13 +820,6 @@
       "kind": "generation",
       "title": "Arena G386 — F1 HOUSE-VIEW (eightieth visit) — 2026-11-21",
       "summary": "Verdict: NO ARENA CHAMPION in G386, no branch DEAD, and no new best form — F1 remains with the F-E standalone note testably and…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G385 — F5 SOFT-ANGLE EXTREMES (eighty-second visit) — 2026-11-21",
-      "summary": "Verdict: NO ARENA CHAMPION in G385, no branch DEAD, and no new best form — F5 remains with the K-A note testably and NEEDS-FREEZE only…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -881,15 +888,8 @@
     {
       "agent": "Regime",
       "kind": "generation",
-      "title": "Regime R4-G535 (loop, 2026-11-21) — NO NEW KING",
+      "title": "Regime R4-G536 (loop, 2026-11-21) — NO NEW KING",
       "summary": "NO NEW KING. ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO (grand king) stands (207-32, priced 228, +3679.70m, +64.56%; dog 61 picks, 48-13,…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Regime",
-      "kind": "gate-refusal",
-      "title": "Regime R4-G534 (loop, 2026-11-21) — NO NEW KING",
-      "summary": "NO NEW KING. Two above-king headlines, both GATE-REFUSED on accuracy: V12 BBHOMEDOG21CONSFLIP at +66.55% (swing +113.55m at -4 net wins…",
       "at": "2026-11-21T00:00:00-06:00"
     }
   ],
