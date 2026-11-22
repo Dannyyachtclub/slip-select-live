@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T11:15:38.638685-06:00",
+  "generated_at": "2026-11-22T11:20:40.422685-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -6930,7 +6930,7 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T10:18:33.381885-06:00",
+        "last_activity": "2026-11-22T11:18:08.238885-06:00",
         "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
       },
       {
@@ -6939,8 +6939,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T10:17:09.421885-06:00",
-        "headline": "Verdict: milestone-grade measurement — AH disagreement is the rarest and least persistent of any surface; a B365-vs-PS AH split is churn, not a signal."
+        "last_activity": "2026-11-22T11:17:18.867885-06:00",
+        "headline": "Verdict: milestone-grade measurement — the exchange is the cheapest closing surface measured and the archive's \"best price\" column is a floor, not the best, wherever BFE prices exist (2425 season…"
       },
       {
         "name": "Infra Scout",
@@ -6993,8 +6993,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T10:17:18.380885-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: the CLV watcher is lock-triggered (lock+~5 min first capture on both slips), so the 13.01h silence was the inter-lock gap, not a capture failure, and no capture…"
+        "last_activity": "2026-11-22T11:17:08.296885-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: slip41 polls on a clean ~15-minute cadence and its first cohort closed at T-2.8 min and dropped at tip exactly as slip40 did, so no capture window or lock time…"
       },
       {
         "name": "Wagering Scout",
@@ -7011,8 +7011,8 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T10:21:59.838885-06:00",
-        "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape on a new slip market. No milestone. No census, king, engine, or profile file edited; vault not read."
+        "last_activity": "2026-11-22T11:19:26.810884-06:00",
+        "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape detected. No milestone. Baselines stand: lead 168 decided / +$10.14M / +14.31pp beat-close; anti rank 1 32 decided /…"
       },
       {
         "name": "Context Branch",
@@ -7092,8 +7092,8 @@
         "role": "The web's librarian — every finding indexed, every cross mapped",
         "cadence": "every 2h",
         "cadence_minutes": 120,
-        "last_activity": "2026-11-22T09:15:36.460886-06:00",
-        "headline": "Gaps: GAP-33 filed (PM SV2/RP2, two log-only items, 0 intake hits each; owner PM Strategy Hunter). GAP-26a milestone CONTINUES; GAP-6/GAP-8–GAP-32 still open (low)."
+        "last_activity": "2026-11-22T11:15:48.306885-06:00",
+        "headline": "Delivery line: MILESTONE — GAP-26a continues: the court will not certify (cause evolved to a Legacy G619 crown parse failure), so the kings dimension stays hidden for a seventeenth straight…"
       },
       {
         "name": "Inventor",
@@ -7164,8 +7164,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T11:13:37.418885-06:00",
-        "headline": "Grounding: verify_court_state.py exit 1 STALE (court gen 2026-11-21T18:04:48-06:00, recorded sha ae7d720d… vs current 1333bf9c… — standing blocked-regeneration finding, owner Crown Sentinel /…"
+        "last_activity": "2026-11-22T11:17:32.470885-06:00",
+        "headline": "2026-11-22 Integrity Auditor Run 35: 8 findings filed (court_state stale verify exit 1, Regime superseded by G586, Legacy G619 crown receipt partial, integrity block null/empty, forward…"
       },
       {
         "name": "Integrity Auditor",
@@ -7173,8 +7173,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T10:18:19.936885-06:00",
-        "headline": "lock_gate.py regression: no self-test; ghost not re-run this run, BROKEN carried from Run 32, not re-proven."
+        "last_activity": "2026-11-22T11:17:32.463885-06:00",
+        "headline": "lock_gate.py regression: no self-test (usage error); ghost fixture not re-run this run, BROKEN carried from Run 32, not re-proven."
       },
       {
         "name": "Systems Engineer",
@@ -7236,8 +7236,8 @@
         "role": "The negative catalogue — games that were never priced",
         "cadence": "weekly",
         "cadence_minutes": 10080,
-        "last_activity": "2026-11-20T08:45:13.249397-06:00",
-        "headline": "Grounding at build: verify_court_state.py exit 0 (court_state gen 2026-11-20T08:41:59-06:00, set 239, all 5 kings PASS — Regime DOGGE10VETO 207-32 +64.56% grand king, Selector NOFAVP 212-27 +68.46%…"
+        "last_activity": "2026-11-22T11:19:17.265885-06:00",
+        "headline": "Seed sweep: programme trackers/logs on disk. 15 rows appended to data_core/censored_catalogue.csv, all seed_kind=reconstructed-from-logs: no-market 14 (Slip #17 all 5 badminton matches — no prices…"
       },
       {
         "name": "CLV Tip Watcher",
@@ -7302,8 +7302,8 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 34,
-    "last_run": "2026-11-22T10:22:00-06:00",
+    "run": 35,
+    "last_run": "2026-11-22T11:25:00-06:00",
     "claims_checked": 9,
     "canary_gates": null,
     "canary_fixtures": null,
