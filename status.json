@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:25:45.323723-06:00",
+  "generated_at": "2026-11-21T18:30:49.851910-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T17:57:22.265030-06:00",
+      "last_activity": "2026-11-21T18:27:38.625003-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T18:11:52.894017-06:00",
+      "last_activity": "2026-11-21T18:27:13.500003-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T18:12:27.940017-06:00",
-      "headline": "Latest search cycle: 453"
+      "last_activity": "2026-11-21T18:27:12.151003-06:00",
+      "headline": "Latest search cycle: 454"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 454 — 2026-11-21 18:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken, now by Selector ambiguity: court_state.py finds 3 rules in…",
+      "at": "2026-11-21T18:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 18:26 CST run, second attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
+      "at": "2026-11-21T18:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 453 — 2026-11-21 18:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification is broken by the Quantum G580 crown's side-effect on the Selector court:…",
       "at": "2026-11-21T18:11:00-06:00"
@@ -758,20 +772,6 @@
       "title": "CYCLE 449 — 2026-11-21 17:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
       "at": "2026-11-21T17:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 448 — 2026-11-21 16:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T16:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G435 — F5 SOFT-ANGLE EXTREMES (2026-11-21, 16:56 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G435, no branch DEAD, and no new best form — F5 remains with the K-A note testable and NEEDS-FREEZE only…",
-      "at": "2026-11-21T16:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T18:11:52.894017-06:00",
-        "headline": "Post-regeneration verify still exits 1 (STALE). Per CAN'T-LIE CONSUMPTION: no king-dependent work was done this run — no audit re-runs trusted, no variants fought, no registry rows filed, no…"
+        "last_activity": "2026-11-21T18:27:13.500003-06:00",
+        "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must disambiguate selector_g386 — r18, r19 and r23 cannot all be the certified reproduce rule — and regenerate a…"
       },
       {
         "name": "Overseer",
