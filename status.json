@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T06:15:43.508584-06:00",
+  "generated_at": "2026-11-22T06:20:43.291699-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-22T05:50:22.313840-06:00",
+      "last_activity": "2026-11-22T06:20:38.014888-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -6937,8 +6937,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T05:17:19.109862-06:00",
-        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture."
+        "last_activity": "2026-11-22T06:17:56.572888-06:00",
+        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture, including the programme's first DIRECT_RIVAL positives."
       },
       {
         "name": "House Scout",
@@ -6946,8 +6946,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T05:17:04.065862-06:00",
-        "headline": "Verdict: milestone-grade measurement — AH completes the margin-split trilogy: it is the cheapest B365 surface and the only one with no hiding side; AH edge claims need clear only ~3.7pp, evenly…"
+        "last_activity": "2026-11-22T06:17:17.136888-06:00",
+        "headline": "Verdict: milestone-grade measurement — draw disagreement census with counts; Pinnacle wins every high-disagreement draw cell at both stamps, and B365 shades the draw down at close exactly where…"
       },
       {
         "name": "Infra Scout",
@@ -6973,8 +6973,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T05:21:07.626860-06:00",
-        "headline": "Deliverables: results_source_map.md SLB row updated + RE-VERIFICATION 2 subsection appended; intake appended 2026-11-22."
+        "last_activity": "2026-11-22T06:17:20.584888-06:00",
+        "headline": "Deliverables: results_source_map.md Egypt Cup row updated + RE-VERIFICATION 2 subsection appended; intake appended 2026-11-22."
       },
       {
         "name": "Risk Scout",
@@ -7000,8 +7000,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T05:16:37.923193-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: slip40 sits idle as the single-batch clock predicts (still LOCKED 5h post-deferral), so no grading clock moves on this run."
+        "last_activity": "2026-11-22T06:17:41.176888-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: slip40 sits idle as the single-batch clock predicts (still LOCKED 6h post-deferral), so no grading clock moves on this run."
       },
       {
         "name": "Wagering Scout",
@@ -7018,7 +7018,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T05:18:28.500862-06:00",
+        "last_activity": "2026-11-22T06:19:02.163888-06:00",
         "headline": "Verdict: NO material change on either side, no new FLOW qualifier, no new pack or late-money flag. No census, king, engine, or profile file edited; vault not read."
       },
       {
@@ -7171,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T06:13:45.859888-06:00",
-        "headline": "Grounding: verify_court_state.py exit 1 STALE (court_state.json gen 2026-11-21T18:04:48-06:00; recorded sha ae7d720d… vs current 2c6fdc31…) — standing blocked-regeneration finding, owner Crown…"
+        "last_activity": "2026-11-22T06:16:55.691888-06:00",
+        "headline": "2026-11-22 06:22 CST INTEGRITY Run 30: 8 findings filed — court stale/crown receipts partial, Regime superseded, stamps null, integrity block defective, 6 activity contradictions, CLV ~124x stale,…"
       },
       {
         "name": "Integrity Auditor",
@@ -7180,8 +7180,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T05:17:23.786862-06:00",
-        "headline": "7 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 29) + one-line summary to overseer_log.md. Milestone run — full report delivered."
+        "last_activity": "2026-11-22T06:16:55.686888-06:00",
+        "headline": "defend_freeze_gate regression: POS FAIL exit honestly (sidecar absent) this run; prior ghost PASS not reproduced here, broken status carried from Run 25."
       },
       {
         "name": "Systems Engineer",
@@ -7309,13 +7309,13 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 29,
-    "last_run": "2026-11-22T05:25:00-06:00",
+    "run": 30,
+    "last_run": "2026-11-22T06:22:00-06:00",
     "claims_checked": 9,
     "canary_gates": null,
     "canary_fixtures": null,
-    "findings_count": 7,
-    "vault_seal": "320 vs 239 ids, overlap 0 — SEAL INTACT.",
+    "findings_count": null,
+    "vault_seal": null,
     "registry": null,
     "receipts": null,
     "findings": [],
