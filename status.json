@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T18:15:42.159671-06:00",
+  "generated_at": "2026-11-21T18:20:40.974702-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,21 +66,21 @@
     },
     {
       "court": "Selector",
-      "name": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY-BBDVGE80-DOGC79PAIR2545",
+      "name": "SPLIT",
       "grand_king": false,
-      "wins": 213,
-      "losses": 26,
-      "priced": 226,
-      "pnl_m": 4318.78,
-      "roi_pct": 76.44,
+      "wins": 214,
+      "losses": 25,
+      "priced": 227,
+      "pnl_m": 4319.03,
+      "roi_pct": 76.11,
       "set_size": 239,
       "dog_line": {
-        "picks": 68,
+        "picks": 67,
         "wins": 54,
-        "losses": 14,
-        "priced": 63,
-        "pnl_m": 2282.15,
-        "roi_pct": 144.9
+        "losses": 13,
+        "priced": 62,
+        "pnl_m": 2309.15,
+        "roi_pct": 148.98
       },
       "stamp": null,
       "crowned_on": "2026-11-21"
@@ -133,8 +133,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T17:48:16.315039-06:00",
-      "headline": "UUUUUUUUU4-OVRMISS-NODP-NBBINV-LGLEN20BBONLY-OVRGE87-AWAYDVLT70-NOFAVP-ABLE9-ABLCROWN-LGM20BBAWAY-BBDVGE80-DOGC79PAIR2545 — 213-26, +76.44% fitted ROI"
+      "last_activity": "2026-11-21T18:18:01.036012-06:00",
+      "headline": "SPLIT — 214-25, +76.11% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -6937,8 +6937,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T17:17:53.726067-06:00",
-        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
+        "last_activity": "2026-11-21T18:17:52.074012-06:00",
+        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture: home_venue_name on S40-01 (Hala Tivoli, with own=0), S40-02 (Trento arena,…"
       },
       {
         "name": "House Scout",
@@ -6946,8 +6946,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T17:17:53.783067-06:00",
-        "headline": "Verdict: milestone-grade measurement — AH disagreement census with counts; completes the three-card trilogy: the ≥2pp deviation rule that indicts B365 in 1X2 (both stamps) and opening totals does…"
+        "last_activity": "2026-11-21T18:17:33.128012-06:00",
+        "headline": "Verdict: milestone-grade measurement — disagreement persistence census with counts; the flat aggregate hides ~3/4 turnover, and only the persistent ~22% subset carries an exploitable understatement…"
       },
       {
         "name": "Infra Scout",
@@ -6973,8 +6973,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T17:18:40.117066-06:00",
-        "headline": "Milestone: NO new league proven — a named grading risk narrowed, and a genuine-postponement route for this cup proven."
+        "last_activity": "2026-11-21T18:17:33.692012-06:00",
+        "headline": "Milestone: NO new league proven — a named grading risk confirmed and sharpened."
       },
       {
         "name": "Risk Scout",
@@ -6982,8 +6982,8 @@
         "role": "Attacks the programme's own checkers and gates for holes",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T17:44:12.656043-06:00",
-        "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-21 (P340, P344); the guard is described in the intake entry for the Overseer…"
+        "last_activity": "2026-11-21T18:17:06.437012-06:00",
+        "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-21 (P340, P344); the guard (verdict-column parsing, re-test suffix stripping…"
       },
       {
         "name": "Sport Frontier Scout",
@@ -7000,8 +7000,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T17:17:19.409067-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: third doubled gap landed just before final-2h entry, but first final-2h cycles held ~15 min; no clock moves."
+        "last_activity": "2026-11-21T18:17:24.072012-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: no doubled gap has entered any final-2h window, so no capture window or cadence moves; S40-08's close remains the pending verdict."
       },
       {
         "name": "Wagering Scout",
@@ -7018,7 +7018,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T17:18:53.129066-06:00",
+        "last_activity": "2026-11-21T18:18:43.620011-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape on a new slip market. No milestone. No census, king, engine, or profile file edited; vault not read."
       },
       {
@@ -7081,8 +7081,8 @@
         "role": "Hunts patterns across every dimension at once",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T17:45:12.989042-06:00",
-        "headline": "CLOSED: Run 85 Creative 2 (M-SPORT-RG carrier census — run by Red Team R41, verdict KILLED); W250 (tested, dead); W251 (tested — leaves the backlog as a weakened registration)."
+        "last_activity": "2026-11-21T18:16:05.666013-06:00",
+        "headline": "CLOSED: the pooled dog-gap question (Systems R43's named frame — run here, verdict flat)."
       },
       {
         "name": "Correlation Red Team",
@@ -7171,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T18:14:49.128015-06:00",
-        "headline": "UNVERIFIABLE: Integrity Run 17 registry census PASS 39,829 — mirror now 40,111, no preserved census receipt; sixth consecutive audit with this class. Owner: Integrity Auditor / parent wiring."
+        "last_activity": "2026-11-21T18:18:13.057011-06:00",
+        "headline": "2026-11-21 18:15 CST — INTEGRITY Run 18: 8 findings filed (totals + venueday census gaps, stakes re-test still, Quantum G580 crown missing regenerated court_state — verify exit 1 while site presents…"
       },
       {
         "name": "Integrity Auditor",
@@ -7180,8 +7180,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T17:18:12.344066-06:00",
-        "headline": "7 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 17) + one-line summary to overseer_log.md. Milestone run — full report delivered."
+        "last_activity": "2026-11-21T18:18:13.058012-06:00",
+        "headline": "8 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 18) + one-line summary to overseer_log.md. Milestone run — full report delivered."
       },
       {
         "name": "Systems Engineer",
@@ -7309,15 +7309,15 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 17,
-    "last_run": "2026-11-21T17:30:00-06:00",
+    "run": 18,
+    "last_run": "2026-11-21T18:30:00-06:00",
     "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
-    "findings_count": 7,
+    "findings_count": 8,
     "vault_seal": "320 vs 239 ids, overlap 0 — SEAL INTACT.",
-    "registry": "PASS 39,829 — no drift. Vault seal: 320 vs 239 ids, overlap 0 — SEAL INTACT.",
-    "receipts": "Crown receipts COMPLETE (EVOLUTION lines 809/810 + PROVISIONAL + verify exit 0). No new crown since Run 13.",
+    "registry": "PASS 40,135 — no drift at check time. Vault seal: 320 vs 239 ids, overlap 0 — SEAL INTACT.",
+    "receipts": null,
     "findings": [],
     "canary_broken": [
       "age_freeze_gate.py",
