@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T09:40:42.154748-06:00",
+  "generated_at": "2026-11-22T09:45:41.824088-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-22T09:17:47.750886-06:00",
+      "last_activity": "2026-11-22T09:42:11.368886-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -147,35 +147,35 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T09:26:35.210886-06:00",
+      "last_activity": "2026-11-22T09:41:44.143886-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T09:26:58.818886-06:00",
-      "headline": "Latest search cycle: 514"
+      "last_activity": "2026-11-22T09:41:52.292886-06:00",
+      "headline": "Latest search cycle: 515"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-22T09:33:52.818886-06:00",
+      "last_activity": "2026-11-22T09:43:24.659886-06:00",
       "headline": "Latest filing: P407"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-22T09:13:35.064886-06:00",
+      "last_activity": "2026-11-22T09:43:33.021886-06:00",
       "headline": "17 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-22T09:13:53.158886-06:00",
+      "last_activity": "2026-11-22T09:43:31.456886-06:00",
       "headline": "Cycle 157: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 515 — 2026-11-22 09:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixty-third consecutive cycle (453-515): court_state.py…",
+      "at": "2026-11-22T09:41:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 09:41 CST run, sixty-third attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T09:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 514 — 2026-11-22 09:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixty-second consecutive cycle (453-514): court_state.py…",
       "at": "2026-11-22T09:26:00-06:00"
@@ -753,18 +767,11 @@
       "at": "2026-11-22T08:26:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Stakehunter",
       "kind": "generation",
-      "title": "CYCLE 509 — 2026-11-22 08:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the fifty-seventh consecutive cycle (453-509): court_state.py…",
-      "at": "2026-11-22T08:11:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 08:11 CST run, fifty-seventh attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
-      "at": "2026-11-22T08:11:00-06:00"
+      "title": "CYCLE 189 — 2026-11-22 — AUDIT FAILURE (MILESTONE, NO SIZING RUN)",
+      "summary": "Script: none written — the cycle stopped at the audit gate, by design. No sizing script was created and no rule was tested this cycle,…",
+      "at": "2026-11-22T00:00:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -802,10 +809,10 @@
       "at": "2026-11-22T00:00:00-06:00"
     },
     {
-      "agent": "Stakehunter",
+      "agent": "Edge Finder",
       "kind": "generation",
-      "title": "CYCLE 183 — 2026-11-22 — AUDIT FAILURE (MILESTONE, NO SIZING RUN)",
-      "summary": "Script: none written — the cycle stopped at the audit gate, by design. No sizing script was created and no rule was tested this cycle,…",
+      "title": "CYCLE 2026-11-22 (09:42 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
+      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: TOTAL 44,371 variant rows (LEGACY variant 7,421 +…",
       "at": "2026-11-22T00:00:00-06:00"
     },
     {
@@ -841,13 +848,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-22 (07:12 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: TOTAL 43,648 variant rows (LEGACY variant 7,289 +…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-22 (06:42 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
-      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: TOTAL 43,510 variant rows (LEGACY variant 7,267 ·…",
       "at": "2026-11-22T00:00:00-06:00"
     },
     {
@@ -6928,8 +6928,8 @@
         "role": "Price movement and lock-to-close behaviour of the kings' picks",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:13:40.043886-06:00",
-        "headline": "Computation: ~/workspace/goals/dynamic-pick-engine-for-every-slip/hidden_files/scout_betting_run145_2026-11-22.py (output alongside). Slip #40 LOCKED (12 games); verify_slip_state PASS."
+        "last_activity": "2026-11-22T09:43:52.195886-06:00",
+        "headline": "Computation: ~/workspace/goals/dynamic-pick-engine-for-every-slip/hidden_files/scout_betting_run146_2026-11-22.py (output scout_betting_run146_out.txt alongside). Slip #40 remains LOCKED (12 games);…"
       },
       {
         "name": "Data Sources Scout",
@@ -6955,8 +6955,8 @@
         "role": "Watches the machine room — backups, restarts, job health",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:14:36.331886-06:00",
-        "headline": "Area: backup freshness follow-through (P205, primary) + court-verification freshness + census/headroom context. Headline: live registry 44,261 vs snapshot_20261122-0828 42,376 (both quick_check ok,…"
+        "last_activity": "2026-11-22T09:44:00.759939-06:00",
+        "headline": "Area: cron fleet behaviour (primary) + backup RPO / court freshness / census context. Headline: last 100 runs (08:50–09:42 CST) 80 succeeded / 10 failed / 10 running; all 10 failures…"
       },
       {
         "name": "Methods Scout",
@@ -6982,8 +6982,8 @@
         "role": "Attacks the programme's own checkers and gates for holes",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:15:30.749886-06:00",
-        "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-22 (P397, P398); the guard (result-to-game binding named…"
+        "last_activity": "2026-11-22T09:43:41.236886-06:00",
+        "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-22 (P397, P398); the guard (selection-matched fallback, named…"
       },
       {
         "name": "Sport Frontier Scout",
@@ -7081,8 +7081,8 @@
         "role": "Hunts patterns across every dimension at once",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:15:41.356886-06:00",
-        "headline": "SLIP #40 STATE: LOCKED, 12 basketball games, excluded from every outcome number above. Nothing in this run touches a king, card, engine, bet or the vault. Milestone note: none under the charter's…"
+        "last_activity": "2026-11-22T09:45:12.110886-06:00",
+        "headline": "LEAVES with verdicts: the Red Team R57 composition question on W337/M117 (TESTED — MIXED: neither composition-only nor dose-real; sport-split is the answer, filed as the M117 amendment)."
       },
       {
         "name": "Correlation Red Team",
@@ -7108,8 +7108,8 @@
         "role": "Invents new multi-way hypothesis families — one a day",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:14:50.545886-06:00",
-        "headline": "MEASUREMENT CONSEQUENCE: PM-capture presence is recorded as an explicit NON-LEG for any future ref-convergence family, joining uncharted verdict and neighbour anchoring (Run 18) on the excluded…"
+        "last_activity": "2026-11-22T09:44:09.430886-06:00",
+        "headline": "MEASUREMENT CONSEQUENCE: margin-move class joins source class (Run 17) as a surviving convergence split — and, like source, it survives only in its single-book-scoped form. Any future…"
       },
       {
         "name": "Edge Finder",
@@ -7117,8 +7117,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:33:52.818886-06:00",
-        "headline": "OWNER: Edge Finder, reporting to the Overseer Loop. No king, engine, profile, or stake change is proposed; a passing trial earns only a reported abstention flag beside picks, adoption is a separate…"
+        "last_activity": "2026-11-22T09:43:24.659886-06:00",
+        "headline": "Next cycle's rotation: class (c) market microstructure to lead again, once the can't-lie gate passes; if it still fails, report the failure again and do no king-dependent work."
       },
       {
         "name": "Loss Autopsy",
@@ -7126,8 +7126,8 @@
         "role": "Dissects the kings' losses for shared features",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:13:35.064886-06:00",
-        "headline": "2026-11-22 09:12 CST — Cycle 83 BLOCKED at the court-state gate — king-change trigger FIRED in the state file (Regime R4-G586 / Selector R4-G392 crowns noted in Cycles 59–82 still uncertified;…"
+        "last_activity": "2026-11-22T09:43:33.021886-06:00",
+        "headline": "2026-11-22 09:42 CST — Cycle 84 BLOCKED at the court-state gate — king-change trigger FIRED in the state file (Regime R4-G586 / Selector R4-G392 crowns noted in Cycles 59–83 still uncertified;…"
       },
       {
         "name": "Red Team",
@@ -7135,8 +7135,8 @@
         "role": "The court whose only job is breaking the kings",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:14:20.558886-06:00",
-        "headline": "Verdict: MILESTONE FAILURE — CYCLE STOPPED, NO ATTACK RUN, NO WEAKNESS CLAIMED (thirty-first consecutive gate stop, Cycles 135–165). Attacking on stale or unverified lines would be fabrication. The…"
+        "last_activity": "2026-11-22T09:44:00.028886-06:00",
+        "headline": "Verdict: MILESTONE FAILURE — CYCLE STOPPED, NO ATTACK RUN, NO WEAKNESS CLAIMED (thirty-second consecutive gate stop, Cycles 135–166). Attacking on stale or unverified lines would be fabrication. The…"
       },
       {
         "name": "MicroFish",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T09:26:35.210886-06:00",
+        "last_activity": "2026-11-22T09:41:44.143886-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
@@ -7171,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:17:10.084886-06:00",
-        "headline": "2026-11-22 09:22 CST INTEGRITY Run 33: 8 findings filed — court stale/crowns partial (F1), Regime superseded (F2), stamps null (F3), integrity block nulls (F4), activity contradictions (F5),…"
+        "last_activity": "2026-11-22T09:43:55.574886-06:00",
+        "headline": "FAILURE FINDING 6 (still live, worsening; owner site exporter / Systems Engineer): stakehunter panel lag — status.json stakehunter.latest_cycle 157 vs stakehunter_log.md now at Cycle 189…"
       },
       {
         "name": "Integrity Auditor",
@@ -7189,7 +7189,7 @@
         "role": "Standing owner of system-parts upgrades and verification",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:14:03.875886-06:00",
+        "last_activity": "2026-11-22T09:43:31.612886-06:00",
         "headline": "BLOCKER (owner: parent / mutation + selector loops): Selector certification fails at G392 — no rule reproduces its line over the current base kings. Needs a selector-loop re-derivation /…"
       },
       {
@@ -7198,8 +7198,8 @@
         "role": "Staleness check — no surface may quote a superseded king",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:13:20.144886-06:00",
-        "headline": "Result: MILESTONE FAILURE — broken court receipt persists (thirty-first consecutive run in this sequence, following 18:12 on 2026-11-21 through 08:42 on 2026-11-22). Nobody can tell what is stale…"
+        "last_activity": "2026-11-22T09:43:05.920886-06:00",
+        "headline": "Result: MILESTONE FAILURE — broken court receipt persists (thirty-second consecutive run in this sequence, following 18:12 on 2026-11-21 through 09:12 on 2026-11-22). Nobody can tell what is stale…"
       },
       {
         "name": "Research Director",
@@ -7225,7 +7225,7 @@
         "role": "Offline trait databases and bundle backstop for new slips",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:13:16.082886-06:00",
+        "last_activity": "2026-11-22T09:42:55.408886-06:00",
         "headline": "Queue item worked: 3 bundle backstop — census-only check (provably no new lock to backstop; queue items 1 and 2 complete, Slip 39's backstop closed in run 28, Slip 40's in run 98 and its P196 scan…"
       },
       {
@@ -7234,7 +7234,7 @@
         "role": "Closes the needs-freeze queue and fixes closing-price capture",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T09:13:43.744886-06:00",
+        "last_activity": "2026-11-22T09:43:38.435886-06:00",
         "headline": "CLV fix status: PROVEN on Slip #39 (39/40) and PROVEN on Slip #40 (12/12 FINAL). Court-state: STALE, regen FAILED (same Selector g392 shape) — no king used."
       },
       {
