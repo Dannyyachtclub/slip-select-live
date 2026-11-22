@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T23:25:41.633007-06:00",
+  "generated_at": "2026-11-21T23:30:38.407770-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T22:59:34.930446-06:00",
+      "last_activity": "2026-11-21T23:25:51.674644-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP — 216-23, +78.33% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T23:11:38.008616-06:00",
+      "last_activity": "2026-11-21T23:26:47.884646-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T23:11:50.652616-06:00",
-      "headline": "Latest search cycle: 473"
+      "last_activity": "2026-11-21T23:26:49.275646-06:00",
+      "headline": "Latest search cycle: 474"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 474 — 2026-11-21 23:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the twenty-second consecutive cycle (453-474): court_state.py…",
+      "at": "2026-11-21T23:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 23:26 CST run, twenty-second attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
+      "at": "2026-11-21T23:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 473 — 2026-11-21 23:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the twenty-first consecutive cycle (453-473): court_state.py…",
       "at": "2026-11-21T23:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 22:11 CST run, seventeenth attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
       "at": "2026-11-21T22:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 468 — 2026-11-21 21:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixteenth consecutive cycle (453-468): court_state.py finds…",
-      "at": "2026-11-21T21:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 21:56 CST run, sixteenth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
-      "at": "2026-11-21T21:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T23:11:38.008616-06:00",
+        "last_activity": "2026-11-21T23:26:47.884646-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
