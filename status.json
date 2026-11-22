@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T12:15:45.607796-06:00",
+  "generated_at": "2026-11-22T12:20:43.276335-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -6930,8 +6930,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T11:18:08.238885-06:00",
-        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
+        "last_activity": "2026-11-22T12:18:57.369480-06:00",
+        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture."
       },
       {
         "name": "House Scout",
@@ -6939,8 +6939,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T11:17:18.867885-06:00",
-        "headline": "Verdict: milestone-grade measurement — the exchange is the cheapest closing surface measured and the archive's \"best price\" column is a floor, not the best, wherever BFE prices exist (2425 season…"
+        "last_activity": "2026-11-22T12:17:13.273475-06:00",
+        "headline": "Verdict: milestone-grade measurement — BFE totals is the exchange's strongest surface yet measured, and the archive's recorded Max is again a floor, not the best, on totals wherever BFE prices exist…"
       },
       {
         "name": "Infra Scout",
@@ -6966,8 +6966,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T11:27:03.229558-06:00",
-        "headline": "Deliverables: results_source_map.md Cameroon row updated + RE-VERIFICATION 2 subsection appended; intake appended 2026-11-22."
+        "last_activity": "2026-11-22T12:18:14.336478-06:00",
+        "headline": "Milestone: YES (weakness cure, route complete) — official leg proven for every test game and an independent editorial arbiter now exists; no named grading risk remains for this league."
       },
       {
         "name": "Risk Scout",
@@ -6993,8 +6993,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T11:17:08.296885-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: slip41 polls on a clean ~15-minute cadence and its first cohort closed at T-2.8 min and dropped at tip exactly as slip40 did, so no capture window or lock time…"
+        "last_activity": "2026-11-22T12:17:15.949475-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: slip41 closes its second and third cohorts at T-2.6 to T-3.2 min with zero post-tip receipts and no gap over 20 min, so no capture window or lock time moves."
       },
       {
         "name": "Wagering Scout",
@@ -7011,7 +7011,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T11:19:26.810884-06:00",
+        "last_activity": "2026-11-22T12:18:56.918479-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape detected. No milestone. Baselines stand: lead 168 decided / +$10.14M / +14.31pp beat-close; anti rank 1 32 decided /…"
       },
       {
@@ -7164,8 +7164,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T12:14:11.228467-06:00",
-        "headline": "FAILURE FINDING 6 (still live, worsening; owner site exporter / Systems Engineer): stakehunter panel lag — status.json stakehunter.latest_cycle 157 vs stakehunter_log.md Cycle 194 audit-failure…"
+        "last_activity": "2026-11-22T12:17:24.949476-06:00",
+        "headline": "2026-11-22 12:25 CST INTEGRITY Run 36 MILESTONE: 5 findings filed — site kings match no certified court (verify exit 1 STALE), exam split NBA 222 vs 212 still live, stakehunter 157 vs Cycle 194,…"
       },
       {
         "name": "Integrity Auditor",
@@ -7173,8 +7173,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T11:17:32.463885-06:00",
-        "headline": "lock_gate.py regression: no self-test (usage error); ghost fixture not re-run this run, BROKEN carried from Run 32, not re-proven."
+        "last_activity": "2026-11-22T12:17:24.946476-06:00",
+        "headline": "lock_gate.py regression: UNVERIFIABLE this run — NO SELF-TEST (requires slip_json); BROKEN status carried from Run 32, not re-proven."
       },
       {
         "name": "Systems Engineer",
@@ -7302,9 +7302,9 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 35,
-    "last_run": "2026-11-22T11:25:00-06:00",
-    "claims_checked": 9,
+    "run": 36,
+    "last_run": "2026-11-22T12:25:00-06:00",
+    "claims_checked": null,
     "canary_gates": null,
     "canary_fixtures": null,
     "findings_count": null,
