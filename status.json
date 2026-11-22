@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T20:55:41.449751-06:00",
+  "generated_at": "2026-11-21T21:00:43.154701-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,21 +66,21 @@
     },
     {
       "court": "Selector",
-      "name": "SPLIT",
+      "name": "ABLATION-BBDVGE80-TENNISTOP",
       "grand_king": false,
-      "wins": 214,
-      "losses": 25,
+      "wins": 216,
+      "losses": 23,
       "priced": 227,
-      "pnl_m": 4319.03,
-      "roi_pct": 76.11,
+      "pnl_m": 4445.0,
+      "roi_pct": 78.33,
       "set_size": 239,
       "dog_line": {
-        "picks": 67,
-        "wins": 54,
+        "picks": 69,
+        "wins": 56,
         "losses": 13,
-        "priced": 62,
-        "pnl_m": 2309.15,
-        "roi_pct": 148.98
+        "priced": 64,
+        "pnl_m": 2389.65,
+        "roi_pct": 149.35
       },
       "stamp": null,
       "crowned_on": "2026-11-21"
@@ -133,8 +133,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-21T20:32:38.607214-06:00",
-      "headline": "SPLIT — 214-25, +76.11% fitted ROI"
+      "last_activity": "2026-11-21T20:57:49.040503-06:00",
+      "headline": "ABLATION-BBDVGE80-TENNISTOP — 216-23, +78.33% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T20:41:49.478210-06:00",
+      "last_activity": "2026-11-21T20:56:27.526503-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T20:42:01.428210-06:00",
-      "headline": "Latest search cycle: 463"
+      "last_activity": "2026-11-21T20:56:28.239503-06:00",
+      "headline": "Latest search cycle: 464"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 464 — 2026-11-21 20:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken by Selector ambiguity for the twelfth consecutive cycle (453-464):…",
+      "at": "2026-11-21T20:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 20:56 CST run, twelfth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11–20:41 CST…",
+      "at": "2026-11-21T20:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 463 — 2026-11-21 20:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken by Selector ambiguity for the eleventh consecutive cycle (453-463):…",
       "at": "2026-11-21T20:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 19:41 CST run, seventh attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11, 18:26, 18:41,…",
       "at": "2026-11-21T19:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 458 — 2026-11-21 19:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken by Selector ambiguity for the sixth consecutive cycle:…",
-      "at": "2026-11-21T19:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 19:26 CST run, sixth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11, 18:26, 18:41,…",
-      "at": "2026-11-21T19:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T19:58:00.348230-06:00",
-        "headline": "Filed to intake: (1) the venue-in-strong cells with ONE new pre-registered test, H-VV4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that universe reaches 30 games,…"
+        "last_activity": "2026-11-21T20:56:55.925503-06:00",
+        "headline": "Filed to intake: (1) the venue × sport cells with ONE new pre-registered test, H-WW4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that universe reaches 30 games,…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T19:59:27.704229-06:00",
-        "headline": "Best parallel: slip position has no assembly-attention gradient — LATE is the only positive pooled tercile (+1.71%, n=57) against EARLY −7.35% (n=66), per-slip EARLY-vs-LATE signs split 4–4, and…"
+        "last_activity": "2026-11-21T20:59:05.195502-06:00",
+        "headline": "Best parallel: trip-notes count is a batch name, not verification depth — pooled MULTI favourites beat SINGLE by +9.05pp (−4.34%, n=49 vs −13.39%, n=134) only because MULTI is exactly Slip #33's…"
       },
       {
         "name": "Correlation Hunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T20:41:49.478210-06:00",
+        "last_activity": "2026-11-21T20:56:27.526503-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must disambiguate selector_g386 — r18, r19 and r23 cannot all be the certified reproduce rule — and regenerate a…"
       },
       {
