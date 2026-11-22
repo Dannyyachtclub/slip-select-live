@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T03:55:40.428153-06:00",
+  "generated_at": "2026-11-22T04:00:43.902021-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T03:34:11.908251-06:00",
+      "last_activity": "2026-11-22T03:59:21.569916-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T03:41:43.640251-06:00",
+      "last_activity": "2026-11-22T03:56:41.232918-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T03:41:51.262251-06:00",
-      "headline": "Latest search cycle: 491"
+      "last_activity": "2026-11-22T03:56:37.485918-06:00",
+      "headline": "Latest search cycle: 492"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 492 — 2026-11-22 03:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the fortieth consecutive cycle (453-492): court_state.py finds…",
+      "at": "2026-11-22T03:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 03:56 CST run, fortieth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T03:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 491 — 2026-11-22 03:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the thirty-ninth consecutive cycle (453-491): court_state.py…",
       "at": "2026-11-22T03:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 02:41 CST run, thirty-fifth attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
       "at": "2026-11-22T02:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 486 — 2026-11-22 02:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the thirty-fourth consecutive cycle (453-486): court_state.py…",
-      "at": "2026-11-22T02:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 02:26 CST run, thirty-fourth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
-      "at": "2026-11-22T02:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -853,6 +853,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G218 (loop, 2026-11-22) — NO NEW KING",
+      "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G217 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G213 (loop, 2026-11-22) — VANGUARD",
-      "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G212 (loop, 2026-11-22)",
       "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
       "at": "2026-11-22T00:00:00-06:00"
     }
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T02:56:33.258251-06:00",
-        "headline": "Rotation note: sub-angles used — Runs 1–51 as listed in Run 51's note, plus draw-shortened × favourite-drifted (Run 52; market leg only, king leg blocked). Remaining work: the Run 25 survivor…"
+        "last_activity": "2026-11-22T03:56:25.268918-06:00",
+        "headline": "Filed to intake: (1) the venue split of favourite abandonment with ONE new pre-registered test, H-DDD4, on the next ≥30 fresh graded games from slip #40 onward (soccer scored on the next ≥30 fresh…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T02:58:02.221251-06:00",
-        "headline": "Best parallel: Slip #40 is late on two independent systems clocks for the fourth straight read — site scope 1,024 minutes across seventeen regenerations (still #33–#39), grading appointment ≥222…"
+        "last_activity": "2026-11-22T03:57:57.541917-06:00",
+        "headline": "Best parallel: Slip #40 is late on two independent systems clocks for the fifth straight read — site scope 1,084 minutes across eighteen regenerations (still #33–#39), grading appointment ≥282…"
       },
       {
         "name": "Correlation Hunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T03:41:43.640251-06:00",
+        "last_activity": "2026-11-22T03:56:41.232918-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
