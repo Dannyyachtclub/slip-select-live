@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T01:15:39.916033-06:00",
+  "generated_at": "2026-11-22T01:20:39.201628-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-22T00:50:18.755459-06:00",
+      "last_activity": "2026-11-22T01:19:39.954154-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -867,6 +867,13 @@
     {
       "agent": "Legacy",
       "kind": "generation",
+      "title": "Legacy R4-G597 (loop, 2026-11-22)",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP stands (210-29, priced 229, +4065.20m, +71.01%; dog 64 picks,…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
+      "kind": "generation",
       "title": "Legacy R4-G596 (loop, 2026-11-22)",
       "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP stands (210-29, priced 229, +4065.20m, +71.01%; dog 64 picks,…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 476 — 2026-11-21 23:56 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the twenty-fourth consecutive cycle (453-476): court_state.py…",
-      "at": "2026-11-21T23:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 23:56 CST run, twenty-fourth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
       "at": "2026-11-21T23:56:00-06:00"
     }
   ],
@@ -6946,8 +6946,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T00:18:53.515749-06:00",
-        "headline": "Verdict: milestone-grade measurement — sharp-book position census with counts; Pinnacle leads the consensus (above Avg 92% of outcomes) but is still not the best available price ~85% of the time,…"
+        "last_activity": "2026-11-22T01:16:55.631458-06:00",
+        "headline": "Verdict: milestone-grade measurement — sharp-book totals position census with counts; Pinnacle leads consensus on totals (above Avg ~95%) yet is best on only 12.80% of closing outcomes, and PS-only…"
       },
       {
         "name": "Infra Scout",
@@ -6973,8 +6973,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T00:16:54.130744-06:00",
-        "headline": "Deliverables: results_source_map.md Azerbaijan row updated + re-verification note; intake appended 2026-11-22."
+        "last_activity": "2026-11-22T01:20:30.057458-06:00",
+        "headline": "Milestone: YES (weakness cure) — LNB Elite now has a proven official arbiter; leg B is BRef + two editorials + official Match Center."
       },
       {
         "name": "Risk Scout",
@@ -7000,8 +7000,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T00:17:24.273746-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: slip40 sits idle exactly as the single-batch clock predicts (still LOCKED 1h post-deferral, 22.99h to wait), so no new clock moves; Run 63's milestone remains…"
+        "last_activity": "2026-11-22T01:17:12.210458-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: capture hour follows tip hour (slip40 0% overnight vs pooled 62.3%), and slip40 sits idle as the single-batch clock predicts, so no capture window, lock time, or…"
       },
       {
         "name": "Wagering Scout",
@@ -7018,8 +7018,8 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T00:24:37.096760-06:00",
-        "headline": "Verdict: Late-money flag on Slip #40's S40-12 (one-sided final-2h flow toward the slip's own, losing side, single-wallet dominated) + no pack claim (high-volume non-discrimination, stated) + NO…"
+        "last_activity": "2026-11-22T01:18:41.717458-06:00",
+        "headline": "Verdict: NO material change on either side, no new FLOW qualifier, no new pack or late-money flag. No census, king, engine, or profile file edited; vault not read."
       },
       {
         "name": "Context Branch",
@@ -7171,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T01:14:30.749458-06:00",
-        "headline": "Grounding: verify_court_state.py exit 1 STALE (court gen 2026-11-21T18:04:48-06:00, recorded sha ae7d720d… vs current a2fe8dea…; regeneration blocked on Selector G392 no-rule refusal, owner Mutation…"
+        "last_activity": "2026-11-22T01:17:36.863458-06:00",
+        "headline": "INTEGRITY Run 25: 6 findings filed (court_state still stale with hash moved again; site Regime superseded by G586; card-source role contradiction live; defend_freeze_gate still passes ghost canary)…"
       },
       {
         "name": "Integrity Auditor",
@@ -7180,8 +7180,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T00:17:25.151746-06:00",
-        "headline": "11 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 24) + one-line summary to overseer_log.md. Milestone run — full report delivered."
+        "last_activity": "2026-11-22T01:17:36.859458-06:00",
+        "headline": "6 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 25) + one-line summary to overseer_log.md. Milestone run — full report delivered."
       },
       {
         "name": "Systems Engineer",
@@ -7309,12 +7309,12 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 24,
-    "last_run": "2026-11-22T00:20:00-06:00",
-    "claims_checked": 10,
+    "run": 25,
+    "last_run": "2026-11-22T01:25:00-06:00",
+    "claims_checked": 8,
     "canary_gates": null,
     "canary_fixtures": null,
-    "findings_count": 11,
+    "findings_count": 6,
     "vault_seal": "320 vs 239 ids, overlap 0 — SEAL INTACT.",
     "registry": null,
     "receipts": null,
