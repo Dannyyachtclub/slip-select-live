@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T17:55:38.371489-06:00",
+  "generated_at": "2026-11-21T18:00:42.995573-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-21T17:29:59.129056-06:00",
+      "last_activity": "2026-11-21T17:57:22.265030-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T17:45:10.303042-06:00",
+      "last_activity": "2026-11-21T17:59:58.316028-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-FLIPDEVIG85"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T17:43:34.629462-06:00",
-      "headline": "Latest search cycle: 451"
+      "last_activity": "2026-11-21T17:57:10.986031-06:00",
+      "headline": "Latest search cycle: 452"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T17:46:34.513040-06:00",
-      "headline": "Latest filing: P401"
+      "last_activity": "2026-11-21T17:59:04.830029-06:00",
+      "headline": "Latest filing: P402"
     },
     {
       "name": "Loss Autopsy",
@@ -683,6 +683,20 @@
   },
   "activity": [
     {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 452 — 2026-11-21 17:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
+      "at": "2026-11-21T17:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G439 — F4 CROSS-REFERENCE (2026-11-21, 17:56 CST run) — COMPLETED",
+      "summary": "Verdict: NO NEW ARENA CHAMPION in G439 and no branch DEAD — every HO form is untestable on the frozen set, so F4 keeps its prior best…",
+      "at": "2026-11-21T17:56:00-06:00"
+    },
+    {
       "agent": "Edge Finder",
       "kind": "generation",
       "title": "CYCLE 2026-11-21 17:42 CST — Edge Finder (classes a lead + d/f/g supporting)",
@@ -758,20 +772,6 @@
       "title": "Arena G434 — F4 CROSS-REFERENCE (2026-11-21, 16:41 CST run) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G434, no branch DEAD, and no new best form — F4 remains with the D8 control testable and NEEDS-FREEZE only…",
       "at": "2026-11-21T16:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 446 — 2026-11-21 16:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown, engine untouched. Per step 6, idle delivers NOTHING.",
-      "at": "2026-11-21T16:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G433 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-21, 16:26 CST run) — COMPLETED",
-      "summary": "All computation through data_core/engine.py via arena_g433.py + outcome-blind census arena_g433_audit_census.py. Set: 239 rows…",
-      "at": "2026-11-21T16:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T16:57:23.715085-06:00",
-        "headline": "Filed to intake: (1) the venue × strength cells with ONE new pre-registered test, H-SS4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that universe reaches 30 games,…"
+        "last_activity": "2026-11-21T17:57:04.146031-06:00",
+        "headline": "Filed to intake: (1) the venue × role decomposition with ONE new pre-registered test, H-TT4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that fresh universe reaches 30…"
       },
       {
         "name": "Kings Branch",
@@ -7117,7 +7117,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T17:46:34.513040-06:00",
+        "last_activity": "2026-11-21T17:59:04.830029-06:00",
         "headline": "P274-M2 WITHIN-ROUND TAX RANK — FILED as a multi-way mutation of P274-M1 crossed with P388 (needs-capture via its parents; label grep-verified free before writing — P274 carries M1 only)."
       },
       {
@@ -7162,8 +7162,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T17:45:10.303042-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HN form fought — each remains 0/239 frozen (both assistbonus fields header-absent in the ledger); requirement…"
+        "last_activity": "2026-11-21T17:59:58.316028-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HO form fought — each remains 0/239 frozen (all four bnch fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
