@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T19:15:49.681416-06:00",
+  "generated_at": "2026-11-21T19:21:27.430428-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T18:45:29.890986-06:00",
+      "last_activity": "2026-11-21T19:16:20.991249-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
@@ -161,7 +161,7 @@
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-21T18:43:35.132988-06:00",
+      "last_activity": "2026-11-21T19:17:57.231747-06:00",
       "headline": "Latest filing: P402"
     },
     {
@@ -853,6 +853,13 @@
     {
       "agent": "Edge Finder",
       "kind": "generation",
+      "title": "CYCLE 2026-11-21 (19:12 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
+      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: 40,363 variant rows (LEGACY 6,684 · REGIME 7,179 +…",
+      "at": "2026-11-21T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "generation",
       "title": "CYCLE 2026-11-21 (18:42 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: 40,249 variant rows (LEGACY 6,663 · REGIME 7,161 +…",
       "at": "2026-11-21T00:00:00-06:00"
@@ -869,13 +876,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-21 (16:42 CST) — audit + hunt (class g lead: cross-market patterns; class h supporting: money flow — the prediction-market…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION — REGENERATED, THEN PASSES: verify_court_state.py first exited 1 in…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-21 (16:12 CST) — audit + hunt (class f lead: the house's chair; class g supporting: cross-game patterns — the slate the…",
-      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - CAN'T-LIE KING RESOLUTION — PASSES: verify_court_state.py exited 0 in this run before any…",
       "at": "2026-11-21T00:00:00-06:00"
     },
     {
@@ -6937,8 +6937,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T18:17:52.074012-06:00",
-        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture: home_venue_name on S40-01 (Hala Tivoli, with own=0), S40-02 (Trento arena,…"
+        "last_activity": "2026-11-21T19:17:30.748249-06:00",
+        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
       },
       {
         "name": "House Scout",
@@ -6946,8 +6946,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T18:17:33.128012-06:00",
-        "headline": "Verdict: milestone-grade measurement — disagreement persistence census with counts; the flat aggregate hides ~3/4 turnover, and only the persistent ~22% subset carries an exploitable understatement…"
+        "last_activity": "2026-11-21T19:17:27.237249-06:00",
+        "headline": "Verdict: milestone-grade measurement — persistence trilogy completed (1X2 22.0% / totals 8.9% / AH 6.3%) with counts; opening disagreement is perishable everywhere, and AH persistence indicts both…"
       },
       {
         "name": "Infra Scout",
@@ -6973,8 +6973,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T18:17:33.692012-06:00",
-        "headline": "Milestone: NO new league proven — a named grading risk confirmed and sharpened."
+        "last_activity": "2026-11-21T19:17:58.141330-06:00",
+        "headline": "Milestone: NO new league proven — a named grading risk narrowed (editorial leg cured in supporters' form; official/mainstream legs still absent)."
       },
       {
         "name": "Risk Scout",
@@ -7000,8 +7000,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T18:17:24.072012-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: no doubled gap has entered any final-2h window, so no capture window or cadence moves; S40-08's close remains the pending verdict."
+        "last_activity": "2026-11-21T19:16:51.277249-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: the pending final-2h verdict resolves clean (11/11 closes at ~T-3.6 min, no doubled gap ever inside a final-2h window), so no capture window or cadence moves;…"
       },
       {
         "name": "Wagering Scout",
@@ -7018,7 +7018,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T18:18:43.620011-06:00",
+        "last_activity": "2026-11-21T19:18:55.445248-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape on a new slip market. No milestone. No census, king, engine, or profile file edited; vault not read."
       },
       {
@@ -7117,7 +7117,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T18:43:35.132988-06:00",
+        "last_activity": "2026-11-21T19:17:57.231747-06:00",
         "headline": "Next cycle's rotation: class (c) market microstructure to lead again, once the can't-lie gate passes; if it still fails, report the failure again and do no king-dependent work."
       },
       {
@@ -7171,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-21T19:14:32.983250-06:00",
-        "headline": "MILESTONE — stakehunter-panel enrolment lag closed in both meta-gates (see Protections built, Stakehunter Panel Enrolment bullet): the Stakehunter Panel receipt, the 31st *_receipt.json on disk and…"
+        "last_activity": "2026-11-21T19:17:54.937249-06:00",
+        "headline": "2026-11-21 19:30 CST — INTEGRITY Run 19: 9 findings filed (road_trip + width census gaps, totals still gapped, G580/G386/G388 court receipts missing, site Selector stale at G386 with name 'SPLIT',…"
       },
       {
         "name": "Integrity Auditor",
@@ -7180,8 +7180,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T18:18:13.058012-06:00",
-        "headline": "8 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 18) + one-line summary to overseer_log.md. Milestone run — full report delivered."
+        "last_activity": "2026-11-21T19:17:54.928249-06:00",
+        "headline": "9 findings to data_core/discovery_intake.md (scout=INTEGRITY, Run 19) + one-line summary to overseer_log.md. Milestone run — full report delivered."
       },
       {
         "name": "Systems Engineer",
@@ -7309,14 +7309,14 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 18,
-    "last_run": "2026-11-21T18:30:00-06:00",
+    "run": 19,
+    "last_run": "2026-11-21T19:30:00-06:00",
     "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
-    "findings_count": 8,
-    "vault_seal": "320 vs 239 ids, overlap 0 — SEAL INTACT.",
-    "registry": "PASS 40,135 — no drift at check time. Vault seal: 320 vs 239 ids, overlap 0 — SEAL INTACT.",
+    "findings_count": 9,
+    "vault_seal": "320 vault ids vs 239 ledger ids, overlap 0 — SEAL INTACT.",
+    "registry": "PASS 40,389 — no drift at check time.",
     "receipts": null,
     "findings": [],
     "canary_broken": [
