@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:55:41.269826-06:00",
+  "generated_at": "2026-11-22T17:00:47.575294-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,15 +140,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T16:41:53.899649-06:00",
+      "last_activity": "2026-11-22T16:56:59.752635-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T16:41:42.140649-06:00",
-      "headline": "Latest search cycle: 543"
+      "last_activity": "2026-11-22T16:56:59.225635-06:00",
+      "headline": "Latest search cycle: 544"
     },
     {
       "name": "Edge Finder",
@@ -678,6 +678,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 544 — 2026-11-22 16:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the ninety-second consecutive cycle (453-544): court_state.py…",
+      "at": "2026-11-22T16:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 16:56 CST run, ninety-second attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
+      "at": "2026-11-22T16:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 543 — 2026-11-22 16:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the ninety-first consecutive cycle (453-543): court_state.py…",
       "at": "2026-11-22T16:41:00-06:00"
@@ -744,20 +758,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 15:41 CST run, eighty-seventh attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
       "at": "2026-11-22T15:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 538 — 2026-11-22 15:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the eighty-sixth consecutive cycle (453-538): court_state.py…",
-      "at": "2026-11-22T15:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 15:26 CST run, eighty-sixth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
-      "at": "2026-11-22T15:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7038,8 +7038,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:56:35.625690-06:00",
-        "headline": "Best parallel this run: the draw's gentle moves are a role compass, and direction flips the needle. Gentle draw *shortening*: favourite +8.8pp, dog −13.0pp (both scored, n=10). Gentle draw *drift*…"
+        "last_activity": "2026-11-22T16:57:57.213634-06:00",
+        "headline": "Best parallel this run: the favourite conjunction cannot exist — the draw's shortening is the favourite's drift, so \"both monies arrive\" is an empty cell by arithmetic, not by chance. Of 14…"
       },
       {
         "name": "Kings Branch",
@@ -7065,8 +7065,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:58:11.468689-06:00",
-        "headline": "Best parallel: Slip #40 stays late on both its clocks for the seventeenth straight read — site scope 1,805 minutes across thirty regenerations (still #33–#39), grading appointment ≥1,002 minutes…"
+        "last_activity": "2026-11-22T16:58:23.434634-06:00",
+        "headline": "Best parallel: Slip #40 stays late on both its clocks for the eighteenth straight read — site scope 1,865 minutes across thirty-one regenerations (still #33–#39), grading appointment ≥1,062 minutes…"
       },
       {
         "name": "Correlation Hunter",
@@ -7137,8 +7137,8 @@
         "role": "The tiny honest predictor every king must beat",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T10:57:34.329885-06:00",
-        "headline": "Blocker owner: court-state / Legacy court (upstream of MicroFish; MicroFish does not edit king stacks or other loops' files). Fifteenth consecutive blocked run in the log series (18:23, 19:23,…"
+        "last_activity": "2026-11-22T16:59:14.744633-06:00",
+        "headline": "Blocker owner: court-state / Legacy court (upstream of MicroFish; MicroFish does not edit king stacks or other loops' files). Sixteenth consecutive blocked run in this series; the blocker remains…"
       },
       {
         "name": "PM Strategy Hunter",
@@ -7155,7 +7155,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T16:41:53.899649-06:00",
+        "last_activity": "2026-11-22T16:56:59.752635-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state owner must fix the Legacy crown record format at line 14219 (dog line in the separate-line form court_state.py expects) or fix the parser,…"
       },
       {
