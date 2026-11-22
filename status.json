@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T00:20:39.591608-06:00",
+  "generated_at": "2026-11-22T00:25:42.747543-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-22T00:02:01.468715-06:00",
+      "last_activity": "2026-11-22T00:24:53.063760-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
     },
     {
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-21T23:57:53.823707-06:00",
+      "last_activity": "2026-11-22T00:20:46.675752-06:00",
       "headline": "VG25-LGLENMOD17FLIP — 190-49, +39.10% fitted ROI"
     },
     {
@@ -725,6 +725,13 @@
       "at": "2026-11-22T00:00:00-06:00"
     },
     {
+      "agent": "Legacy",
+      "kind": "generation",
+      "title": "Legacy R4-G595 (loop, 2026-11-22)",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP stands (210-29, priced 229, +4065.20m, +71.01%; dog 64 picks,…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
       "agent": "Discovery",
       "kind": "generation",
       "title": "CYCLE 476 — 2026-11-21 23:56 CST (scheduled run, job discovery-loop-continuous)",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-21 (22:12 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: 41,181 variant rows (LEGACY 6,852 · REGIME 7,323 +…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-21 (21:42 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
-      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: 41,041 variant rows (LEGACY 6,831 · REGIME 7,305 +…",
       "at": "2026-11-21T00:00:00-06:00"
     }
   ],
@@ -7018,8 +7018,8 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T23:19:24.067631-06:00",
-        "headline": "Verdict: NO material change on either side + no new FLOW qualifier + no new slip-market flag. No census, king, engine, or profile file edited; vault not read."
+        "last_activity": "2026-11-22T00:24:37.096760-06:00",
+        "headline": "Verdict: Late-money flag on Slip #40's S40-12 (one-sided final-2h flow toward the slip's own, losing side, single-wallet dominated) + no pack claim (high-volume non-discrimination, stated) + NO…"
       },
       {
         "name": "Context Branch",
@@ -7090,8 +7090,8 @@
         "role": "Rotating attackers whose job is killing false correlations",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T23:22:09.455637-06:00",
-        "headline": "Delivery note: one line under the charter — M95-DRAWKEEP was filed on 2026-11-21 as a price-form registration (NOT a challenger, selection chain attached at Run 46) and has not previously been heard…"
+        "last_activity": "2026-11-22T00:21:23.350753-06:00",
+        "headline": "Delivery note: one line under the charter — the MID-book draw inversion was filed to intake minutes before this run (2026-11-22 ~00:12 CST, Hunter Run 99) as a correlation + registration whose owner…"
       },
       {
         "name": "Web Keeper",
@@ -7144,8 +7144,8 @@
         "role": "The tiny honest predictor every king must beat",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T23:24:37.112641-06:00",
-        "headline": "MILESTONE STATUS: kings-trailing cannot be determined this run (verification failed). The blocker is the court's, not MicroFish's: court_state regeneration refusing to certify Selector."
+        "last_activity": "2026-11-22T00:24:35.977760-06:00",
+        "headline": "Blocker owner: court-state / Selector court (upstream of MicroFish; MicroFish does not edit king stacks or other loops' files). Seventh consecutive blocked run (18:23, 19:23, 20:23, 21:23, 22:23,…"
       },
       {
         "name": "PM Strategy Hunter",
