@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T00:25:42.747543-06:00",
+  "generated_at": "2026-11-22T00:30:40.101072-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-22T00:08:25.436728-06:00",
+      "last_activity": "2026-11-22T00:30:33.780459-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T00:11:47.400734-06:00",
+      "last_activity": "2026-11-22T00:26:51.852459-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T00:11:55.057735-06:00",
-      "headline": "Latest search cycle: 477"
+      "last_activity": "2026-11-22T00:27:08.012459-06:00",
+      "headline": "Latest search cycle: 478"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 478 — 2026-11-22 00:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the twenty-sixth consecutive cycle (453-478): court_state.py…",
+      "at": "2026-11-22T00:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 00:26 CST run, twenty-sixth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T00:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 477 — 2026-11-22 00:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the twenty-fifth consecutive cycle (453-477): court_state.py…",
       "at": "2026-11-22T00:11:00-06:00"
@@ -722,6 +736,13 @@
       "kind": "generation",
       "title": "R4-G595 (loop, 2026-11-22) — Quantum generation",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 stands (205-34, priced 228, +3775.33m, +66.23%; dog 66…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Regime",
+      "kind": "generation",
+      "title": "Regime R4-G595 (loop, 2026-11-22)",
+      "summary": "NO NEW KING. ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP (grand king) stands (209-30, priced 228, +3983.73m, +69.89%; dog…",
       "at": "2026-11-22T00:00:00-06:00"
     },
     {
@@ -786,20 +807,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 23:11 CST run, twenty-first attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
       "at": "2026-11-21T23:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 472 — 2026-11-21 22:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the twentieth consecutive cycle (453-472): court_state.py finds…",
-      "at": "2026-11-21T22:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 22:56 CST run, twentieth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
-      "at": "2026-11-21T22:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-21 (22:42 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
       "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: 41,321 variant rows (LEGACY 6,872 · REGIME 7,341 +…",
-      "at": "2026-11-21T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-21 (22:12 CST) — audit + hunt (class c lead: market microstructure) — COURT-STATE MILESTONE FAILURE (repeat, failure shape…",
-      "summary": "1. AUDIT OF HUNTED GROUND (this cycle) - Registry recount via registry_db.py count: 41,181 variant rows (LEGACY 6,852 · REGIME 7,323 +…",
       "at": "2026-11-21T00:00:00-06:00"
     }
   ],
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T00:11:47.400734-06:00",
+        "last_activity": "2026-11-22T00:26:51.852459-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
