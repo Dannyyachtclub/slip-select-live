@@ -1,26 +1,19 @@
 {
-  "generated_at": "2026-11-22T10:25:45.403965-06:00",
+  "generated_at": "2026-11-22T10:30:41.476151-06:00",
   "kings": [
     {
       "court": "Legacy",
-      "name": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP",
+      "name": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP",
       "grand_king": false,
       "wins": 210,
       "losses": 29,
       "priced": 229,
-      "pnl_m": 4065.2,
-      "roi_pct": 71.01,
+      "pnl_m": 4095.8,
+      "roi_pct": 71.54,
       "set_size": 239,
-      "dog_line": {
-        "picks": 64,
-        "wins": 51,
-        "losses": 13,
-        "priced": 60,
-        "pnl_m": 2144.02,
-        "roi_pct": 142.93
-      },
+      "dog_line": null,
       "stamp": null,
-      "crowned_on": "2026-11-21"
+      "crowned_on": "2026-11-22"
     },
     {
       "court": "Regime",
@@ -112,8 +105,8 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-22T10:00:25.547885-06:00",
-      "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP — 210-29, +71.01% fitted ROI"
+      "last_activity": "2026-11-22T10:26:32.309885-06:00",
+      "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
       "name": "Regime",
@@ -147,15 +140,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T10:11:47.504885-06:00",
+      "last_activity": "2026-11-22T10:26:45.220885-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T10:11:52.264885-06:00",
-      "headline": "Latest search cycle: 517"
+      "last_activity": "2026-11-22T10:26:47.663885-06:00",
+      "headline": "Latest search cycle: 518"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +678,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 518 — 2026-11-22 10:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixty-sixth consecutive cycle (453-518): court_state.py…",
+      "at": "2026-11-22T10:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 10:26 CST run, sixty-sixth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T10:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 517 — 2026-11-22 10:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixty-fifth consecutive cycle (453-517): court_state.py…",
       "at": "2026-11-22T10:11:00-06:00"
@@ -751,20 +758,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 09:11 CST run, sixty-first attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
       "at": "2026-11-22T09:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 512 — 2026-11-22 08:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixtieth consecutive cycle (453-512): court_state.py finds…",
-      "at": "2026-11-22T08:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 08:56 CST run, sixtieth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
-      "at": "2026-11-22T08:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7162,7 +7155,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T10:11:47.504885-06:00",
+        "last_activity": "2026-11-22T10:26:45.220885-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g424's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4446.73m) over the…"
       },
       {
