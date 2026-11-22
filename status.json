@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T03:25:40.657023-06:00",
+  "generated_at": "2026-11-22T03:30:42.784326-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,14 +126,14 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-22T03:01:34.481251-06:00",
+      "last_activity": "2026-11-22T03:26:28.192251-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 — 205-34, +66.23% fitted ROI"
     },
     {
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-22T03:04:15.231251-06:00",
+      "last_activity": "2026-11-22T03:29:08.096251-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP — 216-23, +78.33% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T03:11:27.439251-06:00",
+      "last_activity": "2026-11-22T03:26:35.731251-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T03:11:39.927251-06:00",
-      "headline": "Latest search cycle: 489"
+      "last_activity": "2026-11-22T03:26:52.395251-06:00",
+      "headline": "Latest search cycle: 490"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 490 — 2026-11-22 03:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the thirty-eighth consecutive cycle (453-490): court_state.py…",
+      "at": "2026-11-22T03:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 03:26 CST run, thirty-eighth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T03:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 489 — 2026-11-22 03:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the thirty-seventh consecutive cycle (453-489): court_state.py…",
       "at": "2026-11-22T03:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 02:11 CST run, thirty-third attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
       "at": "2026-11-22T02:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 484 — 2026-11-22 01:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the thirty-second consecutive cycle (453-484): court_state.py…",
-      "at": "2026-11-22T01:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 01:56 CST run, thirty-second attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
-      "at": "2026-11-22T01:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -888,7 +888,7 @@
     {
       "agent": "Selector",
       "kind": "generation",
-      "title": "R4-G407 (loop, 2026-11-22) — NO NEW KING",
+      "title": "R4-G408 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. ABLATION-BBDVGE80-TENNISTOP stands (216-23, priced 227, +4445.00m, +78.33%; dog 69 picks, 56-13, priced 64, +2389.65m,…",
       "at": "2026-11-22T00:00:00-06:00"
     }
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T03:11:27.439251-06:00",
+        "last_activity": "2026-11-22T03:26:35.731251-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
