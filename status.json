@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T21:55:42.820998-06:00",
+  "generated_at": "2026-11-21T22:00:42.478985-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-21T21:41:55.893482-06:00",
+      "last_activity": "2026-11-21T21:56:52.038475-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-21T21:41:50.545482-06:00",
-      "headline": "Latest search cycle: 467"
+      "last_activity": "2026-11-21T21:56:55.753475-06:00",
+      "headline": "Latest search cycle: 468"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 468 — 2026-11-21 21:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the sixteenth consecutive cycle (453-468): court_state.py finds…",
+      "at": "2026-11-21T21:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 21:56 CST run, sixteenth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort). -…",
+      "at": "2026-11-21T21:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 467 — 2026-11-21 21:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the fifteenth consecutive cycle (453-467): court_state.py finds…",
       "at": "2026-11-21T21:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 20:41 CST run, eleventh attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11–20:26 CST…",
       "at": "2026-11-21T20:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 462 — 2026-11-21 20:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken by Selector ambiguity for the tenth consecutive cycle (453-462):…",
-      "at": "2026-11-21T20:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-21 20:26 CST run, tenth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11–20:11 CST…",
-      "at": "2026-11-21T20:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T20:56:55.925503-06:00",
-        "headline": "Filed to intake: (1) the venue × sport cells with ONE new pre-registered test, H-WW4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that universe reaches 30 games,…"
+        "last_activity": "2026-11-21T21:56:54.225475-06:00",
+        "headline": "Filed to intake: (1) the venue×role cells with ONE new pre-registered test, H-XX4, on the next ≥30 fresh drift games from slip #40 onward (scored only when that universe reaches 30 games, alongside…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-21T20:59:05.195502-06:00",
-        "headline": "Best parallel: trip-notes count is a batch name, not verification depth — pooled MULTI favourites beat SINGLE by +9.05pp (−4.34%, n=49 vs −13.39%, n=134) only because MULTI is exactly Slip #33's…"
+        "last_activity": "2026-11-21T22:00:04.149474-06:00",
+        "headline": "Best parallel: the favourite's own season win% is another absolute dial that does not travel — discovery basketball runs LOW −4.08% (9-4, n=13, calibration +1.34pp) → MID −21.23% (priced n=25,…"
       },
       {
         "name": "Correlation Hunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-21T21:41:55.893482-06:00",
+        "last_activity": "2026-11-21T21:56:52.038475-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
