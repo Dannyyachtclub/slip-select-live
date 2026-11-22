@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T04:55:37.866873-06:00",
+  "generated_at": "2026-11-22T05:00:37.639020-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,7 +119,7 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-22T04:34:29.080892-06:00",
+      "last_activity": "2026-11-22T04:59:23.974875-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T04:42:10.268887-06:00",
+      "last_activity": "2026-11-22T04:56:50.929876-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T04:41:47.459887-06:00",
-      "headline": "Latest search cycle: 495"
+      "last_activity": "2026-11-22T04:56:37.672877-06:00",
+      "headline": "Latest search cycle: 496"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 496 — 2026-11-22 04:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the forty-fourth consecutive cycle (453-496): court_state.py…",
+      "at": "2026-11-22T04:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 04:56 CST run, forty-fourth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T04:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 495 — 2026-11-22 04:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the forty-third consecutive cycle (453-495): court_state.py…",
       "at": "2026-11-22T04:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 03:41 CST run, thirty-ninth attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
       "at": "2026-11-22T03:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 490 — 2026-11-22 03:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the thirty-eighth consecutive cycle (453-490): court_state.py…",
-      "at": "2026-11-22T03:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 03:26 CST run, thirty-eighth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
-      "at": "2026-11-22T03:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7045,8 +7045,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T03:56:25.268918-06:00",
-        "headline": "Filed to intake: (1) the venue split of favourite abandonment with ONE new pre-registered test, H-DDD4, on the next ≥30 fresh graded games from slip #40 onward (soccer scored on the next ≥30 fresh…"
+        "last_activity": "2026-11-22T04:56:42.914876-06:00",
+        "headline": "Filed to intake: (1) the favourite-shortened venue split with ONE new pre-registered test, H-EEE4, on the next ≥30 fresh drift games from slip #40 onward (confirmed if basketball fav-shortened home…"
       },
       {
         "name": "Kings Branch",
@@ -7072,8 +7072,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T03:57:57.541917-06:00",
-        "headline": "Best parallel: Slip #40 is late on two independent systems clocks for the fifth straight read — site scope 1,084 minutes across eighteen regenerations (still #33–#39), grading appointment ≥282…"
+        "last_activity": "2026-11-22T04:57:49.783876-06:00",
+        "headline": "Best parallel: Slip #40 is late on two independent systems clocks for the sixth straight read — site scope 1,144 minutes across nineteen regenerations (still #33–#39), grading appointment ≥342…"
       },
       {
         "name": "Correlation Hunter",
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T04:42:10.268887-06:00",
+        "last_activity": "2026-11-22T04:56:50.929876-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
