@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T07:25:42.380221-06:00",
+  "generated_at": "2026-11-22T07:30:49.306929-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T07:00:38.444888-06:00",
+      "last_activity": "2026-11-22T07:27:27.358887-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T07:11:48.803888-06:00",
+      "last_activity": "2026-11-22T07:26:42.120887-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T07:12:17.139888-06:00",
-      "headline": "Latest search cycle: 505"
+      "last_activity": "2026-11-22T07:27:32.236887-06:00",
+      "headline": "Latest search cycle: 506"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 506 — 2026-11-22 07:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the fifty-fourth consecutive cycle (453-506): court_state.py…",
+      "at": "2026-11-22T07:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 07:26 CST run, fifty-fourth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
+      "at": "2026-11-22T07:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 505 — 2026-11-22 07:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the fifty-third consecutive cycle (453-505): court_state.py…",
       "at": "2026-11-22T07:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 06:11 CST run, forty-ninth attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
       "at": "2026-11-22T06:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 500 — 2026-11-22 05:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the forty-eighth consecutive cycle (453-500): court_state.py…",
-      "at": "2026-11-22T05:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 05:56 CST run, forty-eighth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (per G439 rotation note; unchanged since the 18:11 CST abort on…",
-      "at": "2026-11-22T05:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -853,6 +853,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G226 (loop, 2026-11-22) — Vanguard",
+      "summary": "NO NEW KING — VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%;…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G225 (loop, 2026-11-22) — Vanguard",
       "summary": "NO NEW KING — VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%;…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "crown",
       "title": "R4-G221 (loop, 2026-11-22) — Vanguard",
       "summary": "NEW VANGUARD KING CROWNED — VG26-OVR800870VETO (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m,…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G220 (loop, 2026-11-22) — NO NEW KING",
-      "summary": "NO NEW KING. VG25-LGLENMOD17FLIP stands (190-49, priced 227, +2219.15m, +39.10%; dog 83 picks, 51-32, priced 77, +1622.83m, +84.30%;…",
       "at": "2026-11-22T00:00:00-06:00"
     }
   ],
@@ -7162,7 +7162,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T07:11:48.803888-06:00",
+        "last_activity": "2026-11-22T07:26:42.120887-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state / Selector owner must make selector_g392's certified reproduce rule reproduce its parsed crown line (216-23, priced 227, +4445.00m) over the…"
       },
       {
