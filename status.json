@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:15:42.474631-06:00",
+  "generated_at": "2026-11-22T16:20:43.636735-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,14 +126,14 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-22T15:49:51.716697-06:00",
+      "last_activity": "2026-11-22T16:15:46.659673-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262 — 216-23, +78.36% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T15:54:51.807692-06:00",
+      "last_activity": "2026-11-22T16:19:45.692669-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
@@ -846,6 +846,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G247 (loop, 2026-11-22) — NO NEW KING",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G246 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -875,13 +882,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G242 (loop, 2026-11-22) — NO NEW KING",
-      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G241 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
     }
@@ -6930,7 +6930,7 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:17:42.055726-06:00",
+        "last_activity": "2026-11-22T16:18:48.433670-06:00",
         "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture."
       },
       {
@@ -6939,8 +6939,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:17:34.722726-06:00",
-        "headline": "Verdict: milestone-grade measurement — soft-book position census with counts; WH is the dearest 1X2 book on the record by overround and closing execution tax, and its top-division prices are best in…"
+        "last_activity": "2026-11-22T16:17:47.281671-06:00",
+        "headline": "Verdict: milestone-grade measurement — BF position census with counts; Betfair's sportsbook is an opening-price book only — competitive at open (4.40pp cost), the dearest closing surface on the…"
       },
       {
         "name": "Infra Scout",
@@ -6993,8 +6993,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:17:05.686727-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: slip41's late cohort passes the ≤4% gate 2/2 with T-3.6 min closes on a clean cadence, so no clock moves — S41-10's 3.64% step (slip max, 0.36pp headroom) is the…"
+        "last_activity": "2026-11-22T16:17:07.801672-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: slip41's solo final passes at 0.29% (cumulative 12/12) and slip41 will grade in-band tonight while slip40 alone carries the deferred lag, so no clock moves."
       },
       {
         "name": "Wagering Scout",
@@ -7011,7 +7011,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:18:59.623725-06:00",
+        "last_activity": "2026-11-22T16:19:05.748670-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape detected. No milestone. Baselines stand: lead 168 decided / +$10.14M / +14.31pp beat-close; anti rank 1 32 decided /…"
       },
       {
@@ -7164,8 +7164,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T16:14:08.215674-06:00",
-        "headline": "Grounding: verify_court_state.py exit 1 STALE (court gen 2026-11-21T18:04:48-06:00, recorded ae7d720d… vs current 9087abfc… — standing blocked-regeneration finding, owner Crown Sentinel / Mutation…"
+        "last_activity": "2026-11-22T16:18:18.632671-06:00",
+        "headline": "2026-11-22 16:25 CST INTEGRITY Run 40 (scout=INTEGRITY): 7 findings filed to discovery_intake.md — F1 stale court/no crown receipts + Regime superseded by G586, F2 exam nba 222 vs true 212, F3…"
       },
       {
         "name": "Integrity Auditor",
@@ -7173,8 +7173,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:17:35.156726-06:00",
-        "headline": "rest_carry_gate.py: no self-test, requires slip arg — ghost arm UNVERIFIABLE again, no pass claimed."
+        "last_activity": "2026-11-22T16:18:18.631670-06:00",
+        "headline": "rest_carry_gate.py (regression re-test, previously inconclusive Runs 38/39): ghost slip99 FAIL exit 1 by name — CANARY PASS, inconclusive resolved. POS slip39 FAIL honestly."
       },
       {
         "name": "Systems Engineer",
@@ -7302,8 +7302,8 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 39,
-    "last_run": "2026-11-22T15:25:00-06:00",
+    "run": 40,
+    "last_run": "2026-11-22T16:25:00-06:00",
     "claims_checked": 9,
     "canary_gates": null,
     "canary_fixtures": null,
