@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:15:41.630042-06:00",
+  "generated_at": "2026-11-22T10:20:40.346472-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T09:56:11.804886-06:00",
+      "last_activity": "2026-11-22T10:20:27.396885-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
@@ -853,6 +853,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G233 (loop, 2026-11-22) — NO NEW KING",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G232 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "R4-G228 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G227 (loop, 2026-11-22) — VANGUARD",
-      "summary": "NO NEW KING — VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%;…",
       "at": "2026-11-22T00:00:00-06:00"
     }
   ],
@@ -6937,7 +6937,7 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T09:18:12.081886-06:00",
+        "last_activity": "2026-11-22T10:18:33.381885-06:00",
         "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
       },
       {
@@ -6946,8 +6946,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T09:17:38.707886-06:00",
-        "headline": "Verdict: milestone-grade measurement — direction × role persistence census with counts; pooled totals persistence hides a 7× spread, and the only sticky totals split is B365-high on a favourite…"
+        "last_activity": "2026-11-22T10:17:09.421885-06:00",
+        "headline": "Verdict: milestone-grade measurement — AH disagreement is the rarest and least persistent of any surface; a B365-vs-PS AH split is churn, not a signal."
       },
       {
         "name": "Infra Scout",
@@ -6973,8 +6973,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T09:17:16.590886-06:00",
-        "headline": "Deliverables: results_source_map.md RE-VERIFICATION 6 section appended; intake appended 2026-11-22."
+        "last_activity": "2026-11-22T10:17:21.254885-06:00",
+        "headline": "Deliverables: results_source_map.md RE-VERIFICATION 7 section appended; intake appended 2026-11-22."
       },
       {
         "name": "Risk Scout",
@@ -7000,8 +7000,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T09:17:04.651115-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: missing is a slip37–38-era failure (95.3% of misses, ~zero since) whose declaration lags tip by a median 2.71h, and slip40 sits idle as the single-batch clock…"
+        "last_activity": "2026-11-22T10:17:18.380885-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: the CLV watcher is lock-triggered (lock+~5 min first capture on both slips), so the 13.01h silence was the inter-lock gap, not a capture failure, and no capture…"
       },
       {
         "name": "Wagering Scout",
@@ -7171,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T10:15:09.197885-06:00",
-        "headline": "MILESTONE — foundry-lock enrolment lag closed in both meta-gates (see Protections built, Foundry Lock Enrolment bullet): the Foundry Lock receipt, the 37th *_receipt.json on disk and unenrolled…"
+        "last_activity": "2026-11-22T10:18:19.939885-06:00",
+        "headline": "2026-11-22 10:22 CST INTEGRITY Run 34: 8 findings filed — court stale/crown receipts partial (F1), Regime superseded (F2), stamps null (F3), integrity block nulls (F4), forward stale (F5), liveness…"
       },
       {
         "name": "Integrity Auditor",
@@ -7180,8 +7180,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T09:17:10.078886-06:00",
-        "headline": "defend_freeze_gate regression: POS FAIL honestly (sidecar absent); broken carried, not re-proven."
+        "last_activity": "2026-11-22T10:18:19.936885-06:00",
+        "headline": "lock_gate.py regression: no self-test; ghost not re-run this run, BROKEN carried from Run 32, not re-proven."
       },
       {
         "name": "Systems Engineer",
@@ -7309,8 +7309,8 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 33,
-    "last_run": "2026-11-22T09:22:00-06:00",
+    "run": 34,
+    "last_run": "2026-11-22T10:22:00-06:00",
     "claims_checked": 9,
     "canary_gates": null,
     "canary_fixtures": null,
