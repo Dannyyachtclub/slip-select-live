@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T16:25:39.970716-06:00",
+  "generated_at": "2026-11-22T16:30:43.728802-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,15 +140,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T16:11:49.152677-06:00",
+      "last_activity": "2026-11-22T16:27:06.984663-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T16:11:43.927677-06:00",
-      "headline": "Latest search cycle: 541"
+      "last_activity": "2026-11-22T16:27:16.376662-06:00",
+      "headline": "Latest search cycle: 542"
     },
     {
       "name": "Edge Finder",
@@ -678,6 +678,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 542 — 2026-11-22 16:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the ninetieth consecutive cycle (453-542): court_state.py fails…",
+      "at": "2026-11-22T16:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 16:26 CST run, ninetieth attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
+      "at": "2026-11-22T16:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 541 — 2026-11-22 16:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the eighty-ninth consecutive cycle (453-541): court_state.py…",
       "at": "2026-11-22T16:11:00-06:00"
@@ -744,20 +758,6 @@
       "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 15:11 CST run, eighty-fifth attempt)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
       "at": "2026-11-22T15:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 536 — 2026-11-22 14:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the eighty-fourth consecutive cycle (453-536): court_state.py…",
-      "at": "2026-11-22T14:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 14:56 CST run, eighty-fourth attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
-      "at": "2026-11-22T14:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -6966,8 +6966,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T15:16:56.211727-06:00",
-        "headline": "Milestone: NO — a named grading risk confirmed again; the editorial leg for this"
+        "last_activity": "2026-11-22T16:30:03.640251-06:00",
+        "headline": "Deliverables: results_source_map.md WE League row + section updated;"
       },
       {
         "name": "Risk Scout",
@@ -7155,7 +7155,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T16:11:49.152677-06:00",
+        "last_activity": "2026-11-22T16:27:06.984663-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state owner must fix the Legacy crown record format at line 14219 (dog line in the separate-line form court_state.py expects) or fix the parser,…"
       },
       {
