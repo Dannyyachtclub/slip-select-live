@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T14:25:38.662311-06:00",
+  "generated_at": "2026-11-22T14:30:46.006354-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,14 +112,14 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-22T13:59:58.565737-06:00",
+      "last_activity": "2026-11-22T14:25:47.863882-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
     },
     {
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-22T14:05:09.977882-06:00",
+      "last_activity": "2026-11-22T14:30:30.929881-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 — 205-34, +66.23% fitted ROI"
     },
     {
@@ -140,15 +140,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T14:11:38.962882-06:00",
+      "last_activity": "2026-11-22T14:26:39.026881-06:00",
       "headline": null
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T14:11:46.848882-06:00",
-      "headline": "Latest search cycle: 533"
+      "last_activity": "2026-11-22T14:26:43.738881-06:00",
+      "headline": "Latest search cycle: 534"
     },
     {
       "name": "Edge Finder",
@@ -678,6 +678,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 534 — 2026-11-22 14:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the eighty-second consecutive cycle (453-534): court_state.py…",
+      "at": "2026-11-22T14:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G440 — BLOCKED AGAIN / MILESTONE FAILURE (2026-11-22 14:26 CST run, eighty-second attempt)",
+      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
+      "at": "2026-11-22T14:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 533 — 2026-11-22 14:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the eighty-first consecutive cycle (453-533): court_state.py…",
       "at": "2026-11-22T14:11:00-06:00"
@@ -744,20 +758,6 @@
       "title": "Arena G440 — BLOCKED AGAIN / MILESTONE FAILURE (2026-11-22 13:11 CST run)",
       "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged, pending since the 2026-11-21 aborts). - AUDIT…",
       "at": "2026-11-22T13:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 528 — 2026-11-22 12:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the seventy-sixth consecutive cycle (453-528): court_state.py…",
-      "at": "2026-11-22T12:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — BLOCKED AGAIN / MILESTONE FAILURE (2026-11-22 12:56 CST run)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged, pending since the 2026-11-21 aborts). - AUDIT…",
-      "at": "2026-11-22T12:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -7155,7 +7155,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T14:11:38.962882-06:00",
+        "last_activity": "2026-11-22T14:26:39.026881-06:00",
         "headline": "Owner/next step (outside Arena firewall): the court_state owner must fix the Legacy crown record format at line 14219 (dog line in the separate-line form court_state.py expects) or fix the parser,…"
       },
       {
