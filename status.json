@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:45:40.629915-06:00",
+  "generated_at": "2026-11-22T10:50:41.660809-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -105,7 +105,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-22T10:26:32.309885-06:00",
+      "last_activity": "2026-11-22T10:50:20.547885-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -133,7 +133,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T10:20:27.396885-06:00",
+      "last_activity": "2026-11-22T10:46:03.393885-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
@@ -846,6 +846,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G234 (loop, 2026-11-22) — NO NEW KING",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G233 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -875,13 +882,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G229 (loop, 2026-11-22) — NO NEW KING",
-      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G228 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
     }
@@ -7002,8 +7002,8 @@
         "role": "Stakes, timing and execution — how a chosen bet becomes money",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T07:15:28.978888-06:00",
-        "headline": "Verdict: BLOCKED — WAGERING resumes pricing on the first verified court; owner Overseer / court-mutation loop (Selector g392 reproducibility)."
+        "last_activity": "2026-11-22T10:48:11.420885-06:00",
+        "headline": "Verdict: BLOCKED — WAGERING resumes pricing on the first verified court; owner Overseer / court-mutation loop (Legacy crown-line parse at line 14219, then Selector reproducibility behind it)."
       },
       {
         "name": "Wallet & Flow Scout",
@@ -7047,8 +7047,8 @@
         "role": "How the kings agree, dissent and merge",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T09:48:46.587886-06:00",
-        "headline": "Blocked — no milestone, no challenger, nothing filed. The owed first work after certification stays unchanged: crown-delta audits for the G392/G586 chain, then the queued #40+ tests once slip #40…"
+        "last_activity": "2026-11-22T10:48:51.059885-06:00",
+        "headline": "Blocked — no milestone, no challenger, nothing filed. Sub-angle, one line: crown-delta audit — FITTED: not computable (no verified kings); FORWARD: not computable (no verified kings; slips #40/#41…"
       },
       {
         "name": "Markets Branch",
