@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:55:42.569295-06:00",
+  "generated_at": "2026-11-23T12:00:43.262802-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T11:44:39.049503-06:00",
+      "last_activity": "2026-11-23T11:59:09.833183-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T11:44:16.417502-06:00",
-      "headline": "Latest search cycle: 619"
+      "last_activity": "2026-11-23T11:57:39.937180-06:00",
+      "headline": "Latest search cycle: 620"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T11:51:12.044519-06:00",
-      "headline": "Latest filing: P441"
+      "last_activity": "2026-11-23T11:58:52.192183-06:00",
+      "headline": "Latest filing: P442"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 620 — 2026-11-23 11:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers nothing.",
+      "at": "2026-11-23T11:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G477 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, 11:56 CST run) — COMPLETED",
+      "summary": "Verdict: NO NEW ARENA CHAMPION in G477, no branch DEAD, no new best form — F2 remains NEEDS-FREEZE only beyond its STEAM note. MILESTONE…",
+      "at": "2026-11-23T11:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 619 — 2026-11-23 11:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "No crown, no milestone — one-line delivery only.",
       "at": "2026-11-23T11:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 10:41 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
       "summary": "Fifteenth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy.…",
       "at": "2026-11-23T10:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 614 — 2026-11-23 10:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
-      "at": "2026-11-23T10:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 10:26 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
-      "summary": "Fourteenth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy.…",
-      "at": "2026-11-23T10:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -8204,8 +8204,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T10:57:28.515382-06:00",
-        "headline": "Rotation note: sub-angles used — Runs 1–83 as listed in Run 83's note, plus clean consensus × sport / entry-price band (Run 84 — H-X1 PARTIAL, H-X2 REFUTED, H-X3 SUPPORTED). Remaining work: ALL king…"
+        "last_activity": "2026-11-23T11:57:32.758180-06:00",
+        "headline": "Rotation note: sub-angles used — Runs 1–84 as listed in Run 84's note, plus the fresh band-island retest under the restored court (Run 85 — H-Y1 REFUTED on island 2, H-Y2 PARTIAL, H-Y3 PASS).…"
       },
       {
         "name": "Kings Branch",
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T10:58:57.275386-06:00",
-        "headline": "Best parallel: the orphan-lock window is now a measured constant of the build, not an incident — 3 of 3 Selector-era slips (#40, #41, #42) opened with the verifier failing by name on a lock whose…"
+        "last_activity": "2026-11-23T11:59:00.092183-06:00",
+        "headline": "Reading: this is a build-process change measured at the lock, not an outcome claim: the one verification variable this branch ever found running in the anchoring direction (hypothesis grade,…"
       },
       {
         "name": "Correlation Hunter",
@@ -8276,7 +8276,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T11:51:12.044519-06:00",
+        "last_activity": "2026-11-23T11:58:52.192183-06:00",
         "headline": "TRIAGE: COMPUTABLE-NOW — run and closed 2026-11-23; no new capture or source required."
       },
       {
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T11:44:39.049503-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KN form fought — each remains 0/239 frozen (fh_ovr_pct_lock header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-23T11:59:09.833183-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KO form fought — each remains 0/239 frozen (fav_move_last30_pp header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
