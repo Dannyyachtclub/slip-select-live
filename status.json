@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T00:55:38.417534-06:00",
+  "generated_at": "2026-11-23T01:00:42.271544-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-23T00:30:09.902418-06:00",
+      "last_activity": "2026-11-23T00:59:32.796417-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -147,21 +147,21 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T00:44:28.833996-06:00",
+      "last_activity": "2026-11-23T00:59:35.419417-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T00:42:25.767418-06:00",
-      "headline": "Latest search cycle: 575"
+      "last_activity": "2026-11-23T00:56:52.976417-06:00",
+      "headline": "Latest search cycle: 576"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T00:45:38.620418-06:00",
+      "last_activity": "2026-11-23T00:59:16.434417-06:00",
       "headline": "Latest filing: P424"
     },
     {
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 576 — 2026-11-23 00:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T00:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G449 — F4 CROSS-REFERENCE (2026-11-23, 00:56 CST run) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G449, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery…",
+      "at": "2026-11-23T00:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 575 — 2026-11-23 00:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T00:41:00-06:00"
@@ -832,6 +846,13 @@
     {
       "agent": "Legacy",
       "kind": "generation",
+      "title": "R4-G658 (loop, 2026-11-23) — Legacy generation, set 239, NO NEW KING",
+      "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP stands (210-29, priced 229, +4095.80m,…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Legacy",
+      "kind": "generation",
       "title": "R4-G657 (loop, 2026-11-23)",
       "summary": "NO NEW KING. COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP stands (210-29, priced 229, +4095.80m,…",
       "at": "2026-11-23T00:00:00-06:00"
@@ -865,32 +886,11 @@
       "at": "2026-11-22T23:41:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 570 — 2026-11-22 23:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "MILESTONE — SEARCH STILL BLOCKED + VAULT COUNT CHANGED. Court-state certification holds (verify exits 0 after routine regeneration), all…",
-      "at": "2026-11-22T23:26:00-06:00"
-    },
-    {
       "agent": "Arena",
       "kind": "generation",
       "title": "Arena G445 — F5 SOFT-ANGLE EXTREMES (2026-11-22, 23:26 CST run, completed by the 23:56 CST run) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G445, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its standing below-gate…",
       "at": "2026-11-22T23:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G444 — F4 CROSS-REFERENCE (2026-11-22, 23:11 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G444, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery…",
-      "at": "2026-11-22T23:11:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G443 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-22, 22:56 CST run) — COMPLETED",
-      "summary": "Verdict: NO NEW ARENA CHAMPION in G443, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands as…",
-      "at": "2026-11-22T22:56:00-06:00"
     }
   ],
   "slips": [
@@ -8204,8 +8204,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T23:56:48.489418-06:00",
-        "headline": "Rotation note: sub-angles used — Runs 1–67 as listed in Run 67's note, plus game net flow × soccer dogs (Run 68), game net flow × the draw, soccer (Run 69), game net flow × basketball sides (Run…"
+        "last_activity": "2026-11-23T00:56:41.071417-06:00",
+        "headline": "Best parallel this run: the exodus-favourite gap is the most repeatable number in the flow family — and it still cannot be confirmed, because the fresh money never arrived. Old universe exodus…"
       },
       {
         "name": "Kings Branch",
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T23:57:57.726418-06:00",
-        "headline": "Best parallel: Slip #40's two frozen clocks unfroze together — graded 1,440 min late in the same 23:15 CST run that graded Slip #41 on time (n=19), site-visible 41 min later (2,284 min after lock),…"
+        "last_activity": "2026-11-23T00:58:42.290860-06:00",
+        "headline": "Best parallel: the pooled decider queue resolves both carried tests to capture-structure facts again — P4's short-price capture gap survives only as a pooled letter (+4.83pp: 2+ −4.10%, n=11 vs 0–1…"
       },
       {
         "name": "Correlation Hunter",
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T00:45:38.620418-06:00",
-        "headline": "GUARD REQUIRED: (1) every scope statement in walk_forward.json/.md (forward slip range, forward block count, sequence lengths in the decay reading) is derived from the forward_slips actually loaded,…"
+        "last_activity": "2026-11-23T00:59:16.434417-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no total-dunks field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no dnk column; the route is one capture step…"
       },
       {
         "name": "Loss Autopsy",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T00:44:28.833996-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HT form fought — each remains 0/239 frozen (all three kingmaker fields header-absent in the ledger);…"
+        "last_activity": "2026-11-23T00:59:35.419417-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HU form fought — each remains 0/239 frozen (all four dnk fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
