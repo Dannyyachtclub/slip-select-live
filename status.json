@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:55:49.379898-06:00",
+  "generated_at": "2026-11-23T00:00:41.036516-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,35 +133,35 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-22T23:30:33.512869-06:00",
+      "last_activity": "2026-11-22T23:57:18.544418-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T23:34:43.920325-06:00",
+      "last_activity": "2026-11-23T00:00:34.805418-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-22T23:13:09.026280-06:00",
+      "last_activity": "2026-11-22T23:59:20.197418-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T23:42:04.399341-06:00",
-      "headline": "Latest search cycle: 571"
+      "last_activity": "2026-11-22T23:57:17.792418-06:00",
+      "headline": "Latest search cycle: 572"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-22T23:43:47.418344-06:00",
+      "last_activity": "2026-11-22T23:58:40.007418-06:00",
       "headline": "Latest filing: P417"
     },
     {
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 572 — 2026-11-22 23:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "MILESTONE — SEARCH STILL BLOCKED + VAULT COUNT STILL OFF BASELINE (8th consecutive cycle, 565-572). Court-state certification holds…",
+      "at": "2026-11-22T23:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 571 — 2026-11-22 23:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "MILESTONE — SEARCH STILL BLOCKED + VAULT COUNT STILL OFF BASELINE. Court-state certification holds (verify exits 0 after routine…",
       "at": "2026-11-22T23:41:00-06:00"
@@ -694,6 +701,13 @@
       "kind": "generation",
       "title": "CYCLE 570 — 2026-11-22 23:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "MILESTONE — SEARCH STILL BLOCKED + VAULT COUNT CHANGED. Court-state certification holds (verify exits 0 after routine regeneration), all…",
+      "at": "2026-11-22T23:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G445 — F5 SOFT-ANGLE EXTREMES (2026-11-22, 23:26 CST run, completed by the 23:56 CST run) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G445, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its standing below-gate…",
       "at": "2026-11-22T23:26:00-06:00"
     },
     {
@@ -739,13 +753,6 @@
       "at": "2026-11-22T22:41:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 566 — 2026-11-22 22:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "MILESTONE — SEARCH STILL BLOCKED. Court-state certification holds (verify exits 0 after routine regeneration), all five kings reproduce…",
-      "at": "2026-11-22T22:26:00-06:00"
-    },
-    {
       "agent": "Arena",
       "kind": "generation",
       "title": "Arena G441 — F1 HOUSE-VIEW (2026-11-22, 22:26 CST run) — COMPLETED",
@@ -758,13 +765,6 @@
       "title": "Arena G440 — F5 SOFT-ANGLE EXTREMES (2026-11-22, 22:11 CST run) — COMPLETED (first successful G440 after 111 consecutive aborts)",
       "summary": "Verdict: NO ARENA CHAMPION in G440, no branch DEAD, and no new best form — F5 remains with the K-A note testable (replicated on the new…",
       "at": "2026-11-22T22:11:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G440 — ABORTED AGAIN / MILESTONE FAILURE (2026-11-22 21:56 CST run, one-hundred-and-eleventh attempt)",
-      "summary": "Intended generation: G440 — F5 SOFT-ANGLE EXTREMES, carrier Quantum (rotation unchanged since the 18:11 CST abort on 2026-11-21). -…",
-      "at": "2026-11-22T21:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -867,6 +867,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G264 (loop, 2026-11-22) — NO NEW KING",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G263 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G261 (loop, 2026-11-22) — NO NEW KING",
-      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G260 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
     }
@@ -8204,7 +8204,7 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:56:50.129246-06:00",
+        "last_activity": "2026-11-22T23:56:48.489418-06:00",
         "headline": "Rotation note: sub-angles used — Runs 1–67 as listed in Run 67's note, plus game net flow × soccer dogs (Run 68), game net flow × the draw, soccer (Run 69), game net flow × basketball sides (Run…"
       },
       {
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:58:11.009248-06:00",
-        "headline": "Best parallel: Slip #40 stays late on both its clocks for the twenty-fourth straight read — site scope 2,225 minutes across thirty-seven regenerations (still #33–#39), grading appointment ≥1,422…"
+        "last_activity": "2026-11-22T23:57:57.726418-06:00",
+        "headline": "Best parallel: Slip #40's two frozen clocks unfroze together — graded 1,440 min late in the same 23:15 CST run that graded Slip #41 on time (n=19), site-visible 41 min later (2,284 min after lock),…"
       },
       {
         "name": "Correlation Hunter",
@@ -8276,7 +8276,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T23:43:47.418344-06:00",
+        "last_activity": "2026-11-22T23:58:40.007418-06:00",
         "headline": "Hunt disposition: no new filing (class-e candidates all previously filed, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
       },
       {
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-22T23:13:09.026280-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HT form fought — each remains 0/239 frozen (all four scpts fields header-absent in the ledger); requirement…"
+        "last_activity": "2026-11-22T23:59:20.197418-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HU form fought — each remains 0/239 frozen (both chloroform fields header-absent in the ledger); requirement…"
       },
       {
         "name": "Overseer",
