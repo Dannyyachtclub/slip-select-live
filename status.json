@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T02:25:38.472071-06:00",
+  "generated_at": "2026-11-23T02:30:38.790047-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,21 +147,21 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T02:13:26.041566-06:00",
+      "last_activity": "2026-11-23T02:28:55.942602-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T02:11:58.039562-06:00",
-      "headline": "Latest search cycle: 581"
+      "last_activity": "2026-11-23T02:27:09.179598-06:00",
+      "headline": "Latest search cycle: 582"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T02:13:26.623566-06:00",
+      "last_activity": "2026-11-23T02:28:16.709600-06:00",
       "headline": "Latest filing: P424"
     },
     {
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 582 — 2026-11-23 02:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T02:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G455 — F5 SOFT-ANGLE EXTREMES (2026-11-23, 02:26 CST run) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G455, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its standing below-gate…",
+      "at": "2026-11-23T02:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 581 — 2026-11-23 02:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T02:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G450 — F5 SOFT-ANGLE EXTREMES (2026-11-23, 01:11 CST run) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G450, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its standing below-gate…",
       "at": "2026-11-23T01:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 576 — 2026-11-23 00:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T00:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G449 — F4 CROSS-REFERENCE (2026-11-23, 00:56 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G449, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery…",
-      "at": "2026-11-23T00:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -8276,7 +8276,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T02:13:26.623566-06:00",
+        "last_activity": "2026-11-23T02:28:16.709600-06:00",
         "headline": "Hunt disposition: no new filing (class-a candidates all previously filed or refuted, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
       },
       {
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T02:13:26.041566-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HV form fought — each remains 0/239 frozen (all four ftatt fields header-absent in the ledger); requirement…"
+        "last_activity": "2026-11-23T02:28:55.942602-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HW form fought — each remains 0/239 frozen (both trichloroethylene fields header-absent in the ledger);…"
       },
       {
         "name": "Overseer",
