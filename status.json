@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T08:25:41.240817-06:00",
+  "generated_at": "2026-11-23T08:30:40.444721-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -87,24 +87,24 @@
     },
     {
       "court": "Vanguard",
-      "name": "VG26-OVR800870VETO",
+      "name": "VG26-OVR800870VETO-SPLIT23HOME",
       "grand_king": false,
       "wins": 191,
       "losses": 48,
       "priced": 227,
-      "pnl_m": 2227.75,
-      "roi_pct": 39.26,
+      "pnl_m": 2262.68,
+      "roi_pct": 39.87,
       "set_size": 239,
       "dog_line": {
-        "picks": 78,
-        "wins": 49,
-        "losses": 29,
-        "priced": 72,
-        "pnl_m": 1626.53,
-        "roi_pct": 90.36
+        "picks": 82,
+        "wins": 51,
+        "losses": 31,
+        "priced": 76,
+        "pnl_m": 1647.83,
+        "roi_pct": 86.73
       },
       "stamp": null,
-      "crowned_on": "2026-11-22"
+      "crowned_on": "2026-11-23"
     }
   ],
   "agents": [
@@ -140,22 +140,22 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-23T08:00:42.678850-06:00",
-      "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
+      "last_activity": "2026-11-23T08:28:40.556837-06:00",
+      "headline": "VG26-OVR800870VETO-SPLIT23HOME — 191-48, +39.87% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T08:11:50.254845-06:00",
+      "last_activity": "2026-11-23T08:27:13.341838-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T08:11:59.081845-06:00",
-      "headline": "Latest search cycle: 605"
+      "last_activity": "2026-11-23T08:26:55.443838-06:00",
+      "headline": "Latest search cycle: 606"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 606 — 2026-11-23 08:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
+      "at": "2026-11-23T08:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 08:26 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
+      "summary": "Sixth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy. This…",
+      "at": "2026-11-23T08:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 605 — 2026-11-23 08:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
       "at": "2026-11-23T08:11:00-06:00"
@@ -751,13 +765,6 @@
       "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 07:11 CST run) — ABORTED, MILESTONE FAILURE (can't-lie consumption)",
       "summary": "Rotation next from G473 was G474 — F4 CROSS-REFERENCE, carrier Legacy. This generation did NO king-dependent work, per the can't-lie…",
       "at": "2026-11-23T07:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 600 — 2026-11-23 06:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T06:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -844,10 +851,10 @@
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G473 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, loop) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F3 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P438 completed…",
+      "agent": "Vanguard",
+      "kind": "crown",
+      "title": "R4-G284 (loop, 2026-11-23) — NEW KING CROWNED",
+      "summary": "NEW VANGUARD KING CROWNED — VG26-OVR800870VETO-SPLIT23HOME (191-48, priced 227, +2262.68m, +39.87%; crowned dog line 82 picks, 51-31,…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "Vanguard R4-G279 (loop, 2026-11-23)",
-      "summary": "NO NEW KING. VG26-OVR800870VETO re-run FIRST and tied EXACTLY (191-48, priced 227, +2227.75m, +39.26%); king dog-pick line (§9): 78…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "Vanguard R4-G278 (loop, 2026-11-23)",
       "summary": "NO NEW KING. VG26-OVR800870VETO re-run FIRST and tied EXACTLY (191-48, priced 227, +2227.75m, +39.26%); king dog-pick line (§9): 78…",
       "at": "2026-11-23T00:00:00-06:00"
     }
@@ -8321,7 +8321,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T08:11:50.254845-06:00",
+        "last_activity": "2026-11-23T08:27:13.341838-06:00",
         "headline": "CONSEQUENCE: No audit tie-out, no census-led fight, no variants, no registry rows, no NEEDS-FREEZE spec drawn or filed this run. Spec authority audit exits 0 (log_max_arena 438, next 439) — no…"
       },
       {
