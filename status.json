@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:15:40.235227-06:00",
+  "generated_at": "2026-11-23T06:20:41.128649-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -8096,8 +8096,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:17:00.204964-06:00",
-        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
+        "last_activity": "2026-11-23T06:17:21.854693-06:00",
+        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture."
       },
       {
         "name": "House Scout",
@@ -8105,8 +8105,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:17:14.783964-06:00",
-        "headline": "Verdict: milestone-grade measurement — era-split 1X2 staleness census with counts completing the staleness-by-era trilogy (1X2 / totals / AH); B365 and BW pooled rates overstate the current regime,…"
+        "last_activity": "2026-11-23T06:17:30.708694-06:00",
+        "headline": "Verdict: milestone-grade measurement — margin-split census with counts; B365 taxes the strong favourite hardest, the reverse of a flat-split assumption, and EC is its dearest 1X2 league."
       },
       {
         "name": "Infra Scout",
@@ -8132,8 +8132,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:17:30.453964-06:00",
-        "headline": "Milestone: NO — re-verification only. One line: FIBA Europe Cup re-verified on S38-04, 88–90 reproduced by feeds + FIBA official box + RealGM + Polish editorial, forward gap closed retrospectively."
+        "last_activity": "2026-11-23T06:17:56.580695-06:00",
+        "headline": "Milestone: NO — re-verification only; route already proven. One line: Spain ACB re-verified on Round 9, route stands, acb.com flagged browser-only pending a direct read."
       },
       {
         "name": "Risk Scout",
@@ -8159,8 +8159,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:17:03.680964-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: cadence is a stable ~15 min per slip from slip38 onward with no hour-of-day decay, so no capture window or poll clock moves."
+        "last_activity": "2026-11-23T06:17:26.436693-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: capture misses are fixture failures on specific slips/dates, not a diurnal watcher gap, so no capture window or poll hour moves."
       },
       {
         "name": "Wagering Scout",
@@ -8177,8 +8177,8 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:18:22.274965-06:00",
-        "headline": "Verdict: NO material FLOW change; no drift against the reset baselines (lead 166 decided, 96-70, +$9,983,545.59, +16.09pp beat-close); no new qualifier on either side; no pack shape detected. No…"
+        "last_activity": "2026-11-23T06:18:58.735697-06:00",
+        "headline": "Verdict: NO material FLOW change; no drift against the current census baselines (lead 167 decided, 96-71, +$9,986,026.84, +16.16pp beat-close, 71.54% positive share); no new qualifier on either side…"
       },
       {
         "name": "Context Branch",
@@ -8330,8 +8330,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T06:15:32.771689-06:00",
-        "headline": "PM Watchlist Enrolment — both meta-gates: the enrolment lag left open by the PM Watchlist Gate's 04:12 CST build is CLOSED. Pre-repair live evidence (this run, primary records): 45 *_receipt.json…"
+        "last_activity": "2026-11-23T06:17:39.048694-06:00",
+        "headline": "2026-11-23 06:30 CST — INTEGRITY Run 54: 8 findings filed (F1 stale court/stamps null, F2 exam split, F3 stakehunter 224 vs 230, F4 integrity nulls, F5 slips games null, F6 CLV liveness, F7…"
       },
       {
         "name": "Integrity Auditor",
@@ -8339,8 +8339,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:17:07.104964-06:00",
-        "headline": "age_freeze_gate.py: ghost slip99 FAIL exit 1 by name — absence-refusal only, no full-content pass claimed."
+        "last_activity": "2026-11-23T06:17:39.048694-06:00",
+        "headline": "totals_freeze_gate.py: ghost slip99 FAIL by name (slip file not found) — absence-refusal only; full-content break stands from Run 43, not re-proven this run."
       },
       {
         "name": "Systems Engineer",
@@ -8468,8 +8468,8 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 53,
-    "last_run": "2026-11-23T05:30:00-06:00",
+    "run": 54,
+    "last_run": "2026-11-23T06:30:00-06:00",
     "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
