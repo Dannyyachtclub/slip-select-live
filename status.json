@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:40:41.006383-06:00",
+  "generated_at": "2026-11-23T04:45:40.004242-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-23T04:19:41.284952-06:00",
+      "last_activity": "2026-11-23T04:44:42.759958-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -147,35 +147,35 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T04:29:12.259954-06:00",
+      "last_activity": "2026-11-23T04:43:50.803957-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T04:27:02.019954-06:00",
-      "headline": "Latest search cycle: 590"
+      "last_activity": "2026-11-23T04:41:51.271957-06:00",
+      "headline": "Latest search cycle: 591"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T04:28:54.507954-06:00",
-      "headline": "Latest filing: P428"
+      "last_activity": "2026-11-23T04:43:44.500957-06:00",
+      "headline": "Latest filing: P429"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-23T04:13:07.032951-06:00",
+      "last_activity": "2026-11-23T04:43:28.083957-06:00",
       "headline": "17 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-23T04:14:22.093951-06:00",
+      "last_activity": "2026-11-23T04:44:15.902957-06:00",
       "headline": "Cycle 224: 34 sizing finding(s) banked (proposals only)"
     },
     {
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 591 — 2026-11-23 04:41 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T04:41:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G464 — F4 CROSS-REFERENCE (2026-11-23, 04:41 CST run) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G464, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond its D8 control. MILESTONE…",
+      "at": "2026-11-23T04:41:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 590 — 2026-11-23 04:26 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T04:26:00-06:00"
@@ -753,20 +767,6 @@
       "at": "2026-11-23T03:26:00-06:00"
     },
     {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 585 — 2026-11-23 03:11 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T03:11:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G458 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, 03:11 CST run) — COMPLETED",
-      "summary": "Verdict: NO NEW ARENA CHAMPION in G458, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands…",
-      "at": "2026-11-23T03:11:00-06:00"
-    },
-    {
       "agent": "Stakehunter",
       "kind": "generation",
       "title": "CYCLE 224 — 2026-11-23",
@@ -811,6 +811,13 @@
     {
       "agent": "Edge Finder",
       "kind": "generation",
+      "title": "CYCLE 2026-11-23 (04:42 CST) — audit + hunt (class f lead: the house's chair) — CAN'T-LIE GATE PASSED",
+      "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 50,436 variant rows (LEGACY variant 8,450 + separator 1 ·…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Edge Finder",
+      "kind": "generation",
       "title": "CYCLE 2026-11-23 (04:12 CST) — audit + hunt (class e lead: public-data sources) — CAN'T-LIE GATE PASSED",
       "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 50,248 variant rows (LEGACY variant 8,428 + separator 1 ·…",
       "at": "2026-11-23T00:00:00-06:00"
@@ -841,13 +848,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-23 (02:12 CST) — audit + hunt (class a lead: quant / sports-betting research) — CAN'T-LIE GATE PASSED",
       "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 49,525 variant rows (LEGACY variant 8,318 + separator 1 ·…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-23 (01:42 CST) — audit + hunt (class i lead: incentive anomalies) — CAN'T-LIE GATE PASSED",
-      "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 49,339 variant rows (LEGACY variant 8,296 + separator 1 ·…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -8087,8 +8087,8 @@
         "role": "Price movement and lock-to-close behaviour of the kings' picks",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:22.949951-06:00",
-        "headline": "Verdict: MILESTONE — forward king value is price-band inverted vs fitted: the largest forward band (SHORT) loses for 4/5 kings while LONG pays every king; XLONG is a small warning cell. Era caution:…"
+        "last_activity": "2026-11-23T04:43:15.596376-06:00",
+        "headline": "Verdict: MILESTONE pattern (no spec filed) — draw value cells are king-blind; MID profits are dog-driven. No crown."
       },
       {
         "name": "Data Sources Scout",
@@ -8114,8 +8114,8 @@
         "role": "Watches the machine room — backups, restarts, job health",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:44.038951-06:00",
-        "headline": "Verdict: MEDIUM-HIGH; filed to discovery_intake.md only — no spec drawn (INFRA 0/2 today; standing user directive + daily job already exist). Court verified exit 0 at run start (generated 04:11:25…"
+        "last_activity": "2026-11-23T04:44:27.837957-06:00",
+        "headline": "Headline: snapshot_20261123-0827 verified 137 files / 104.8 MB, registry 49,632 rows quick_check ok vs live 50,470 ok = RPO 838 rows / ~2 h 15 min at ~372 rows/h; retention_log records prune #2…"
       },
       {
         "name": "Methods Scout",
@@ -8141,7 +8141,7 @@
         "role": "Attacks the programme's own checkers and gates for holes",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:14:56.113062-06:00",
+        "last_activity": "2026-11-23T04:43:49.038635-06:00",
         "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-23 (P421, P424); the guard is described in the intake entry for the Overseer…"
       },
       {
@@ -8168,8 +8168,8 @@
         "role": "Stakes, timing and execution — how a chosen bet becomes money",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:25.629951-06:00",
-        "headline": "Verdict: MILESTONE — the veto is primarily a favourite-side line; its dog side is thinner (60% flag rate on n=35) and king-dependent."
+        "last_activity": "2026-11-23T04:43:36.082963-06:00",
+        "headline": "Verdict: MILESTONE — the veto is a game-level line that holds on split games too; the remaining wagering question is split-game profitability itself (a consensus gate is the candidate proposal shape…"
       },
       {
         "name": "Wallet & Flow Scout",
@@ -8240,8 +8240,8 @@
         "role": "Hunts patterns across every dimension at once",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:14:55.880951-06:00",
-        "headline": "LEAVES with verdicts: the Systems × Hunter gap×tercile bred child (tested as T2 — ordering survives, compounding dead)."
+        "last_activity": "2026-11-23T04:44:46.189958-06:00",
+        "headline": "ENTERS: Creative 1–3, W458–W460, the unconfirmed-and-unwritten child."
       },
       {
         "name": "Correlation Red Team",
@@ -8267,8 +8267,8 @@
         "role": "Invents new multi-way hypothesis families — one a day",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:53.080951-06:00",
-        "headline": "HONEST READING: this is the arithmetic shadow of the anti panel's definition — these wallets lose, so a majority they oppose tends to win and a majority they join tends to win less; it is NOT a…"
+        "last_activity": "2026-11-23T04:43:45.036957-06:00",
+        "headline": "FORM A IS NOT A MARGIN PHENOMENON (the run's central result): Form A's median overround is 6.39 (range 3.33–8.97 across its 4 rows) vs 6.58 for the other 10 ≥3pp rows — the trigger cell sits at…"
       },
       {
         "name": "Edge Finder",
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:28:54.507954-06:00",
-        "headline": "TRIAGE: NEEDS-CAPTURE — no qualification-gap field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no qual_gap column; the route is one…"
+        "last_activity": "2026-11-23T04:43:44.500957-06:00",
+        "headline": "Hunt disposition: no new filing (class-f candidates all previously filed or refuted, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
       },
       {
         "name": "Loss Autopsy",
@@ -8285,7 +8285,7 @@
         "role": "Dissects the kings' losses for shared features",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:07.032951-06:00",
+        "last_activity": "2026-11-23T04:43:28.083957-06:00",
         "headline": "Lone-dog veto verified identical to Cycle 109 AUTOPSY-63 (7 fires, +127.60m at +5) and NOT re-registered. Diffgap3 veto verified identical to Cycle 40 AUTOPSY-56 (7 fires, -414.88m at -3) — REFUTED…"
       },
       {
@@ -8294,8 +8294,8 @@
         "role": "The court whose only job is breaking the kings",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:48.731951-06:00",
-        "headline": "Verdict: SURVIVED — no bleed slice, no milestone. On an unchanged book the Regime grand king withstands Attack A a third time; this re-attack confirms no bleed slice has emerged since Cycle 197.…"
+        "last_activity": "2026-11-23T04:43:35.985957-06:00",
+        "headline": "Verdict: SURVIVED — not carrier-dependent, no milestone. On an unchanged book the Regime grand king withstands Attack B a third time; this re-attack confirms no carrier dependence has emerged since…"
       },
       {
         "name": "MicroFish",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T04:29:12.259954-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KA form fought — each remains 0/239 frozen (both qual_gap fields header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-23T04:43:50.803957-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KB form fought — each remains 0/239 frozen (all four attempts fields header-absent in the ledger);…"
       },
       {
         "name": "Overseer",
@@ -8330,8 +8330,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:17:50.855952-06:00",
-        "headline": "2026-11-23 04:25 CST INTEGRITY Run 52: 8 findings filed (F1 stale court receipt/null stamps, F2 exam split 185+222≠397, F3 stakehunter 224 vs Cycle 226, F4 integrity block nulls, F5 slips 35–41…"
+        "last_activity": "2026-11-23T04:43:43.427957-06:00",
+        "headline": "EP-4 Phantom Lab first run LANDED (was NOT DUE at the 02:12 visit): Night 1 — 2026-11-23 SCORED NIGHT, court gate PASS (verify_court_state.py exit 0, court gen 03:45:12 CST); batch…"
       },
       {
         "name": "Integrity Auditor",
@@ -8348,7 +8348,7 @@
         "role": "Standing owner of system-parts upgrades and verification",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:42.250688-06:00",
+        "last_activity": "2026-11-23T04:44:23.616957-06:00",
         "headline": "Item 5: landed; slip verifier PASS this run (24 GRADED / 0 LOCKED)."
       },
       {
@@ -8357,7 +8357,7 @@
         "role": "Staleness check — no surface may quote a superseded king",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:12:49.941951-06:00",
+        "last_activity": "2026-11-23T04:43:13.452383-06:00",
         "headline": "Result: 1 hit on a non-site surface (ALIGNMENT_SYNTHESIS.md — Selector headline stale, unchanged); live SITE CLEAN. No surface edited."
       },
       {
@@ -8384,7 +8384,7 @@
         "role": "Offline trait databases and bundle backstop for new slips",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:12:40.300951-06:00",
+        "last_activity": "2026-11-23T04:42:45.926957-06:00",
         "headline": "Queue item worked: 3 bundle backstop — census-only check (provably no new lock to backstop; queue items 1 and 2 complete, Slip 41's backstop closed in run 147)."
       },
       {
@@ -8393,7 +8393,7 @@
         "role": "Closes the needs-freeze queue and fixes closing-price capture",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:12.345951-06:00",
+        "last_activity": "2026-11-23T04:43:09.912957-06:00",
         "headline": "CLV fix status: PROVEN on Slip #39 (39/40 FINAL), Slip #40 (12/12 FINAL), and Slip #41 (19/19 FINAL)."
       },
       {
