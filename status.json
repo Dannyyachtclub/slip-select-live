@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:55:42.304424-06:00",
+  "generated_at": "2026-11-23T08:00:43.565601-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,29 +133,29 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-23T07:30:27.538863-06:00",
+      "last_activity": "2026-11-23T07:55:51.208853-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-23T07:34:31.290873-06:00",
+      "last_activity": "2026-11-23T08:00:42.678850-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T07:41:59.666890-06:00",
+      "last_activity": "2026-11-23T07:57:42.761852-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T07:41:57.184890-06:00",
-      "headline": "Latest search cycle: 603"
+      "last_activity": "2026-11-23T07:56:51.863852-06:00",
+      "headline": "Latest search cycle: 604"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 604 — 2026-11-23 07:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
+      "at": "2026-11-23T07:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 07:56 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
+      "summary": "Fourth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy. This…",
+      "at": "2026-11-23T07:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 603 — 2026-11-23 07:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
       "at": "2026-11-23T07:41:00-06:00"
@@ -737,13 +751,6 @@
       "title": "CYCLE 599 — 2026-11-23 06:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T06:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 598 — 2026-11-23 06:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T06:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -844,10 +851,10 @@
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
-      "agent": "Arena",
+      "agent": "Vanguard",
       "kind": "generation",
-      "title": "Arena G471 — F1 HOUSE-VIEW (2026-11-23, loop) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F1 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P436 completed…",
+      "title": "Vanguard R4-G283 (loop, 2026-11-23)",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "Vanguard R4-G278 (loop, 2026-11-23)",
       "summary": "NO NEW KING. VG26-OVR800870VETO re-run FIRST and tied EXACTLY (191-48, priced 227, +2227.75m, +39.26%); king dog-pick line (§9): 78…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G277 (loop, 2026-11-23) — NO NEW KING",
-      "summary": "King VG26-OVR800870VETO re-run FIRST and tied EXACTLY (191-48, priced 227, +2227.75m, +39.26%); king dog-pick line (§9): 78 picks,…",
       "at": "2026-11-23T00:00:00-06:00"
     }
   ],
@@ -8204,8 +8204,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:56:48.379785-06:00",
-        "headline": "Filed to intake: the end-driven restatement with its named next test (on the next informative refresh, followed delta ≥50 decided: confirmed as end-driven if every sport/band end again signs ≤−1…"
+        "last_activity": "2026-11-23T07:57:54.832851-06:00",
+        "headline": "Rotation note: sub-angles used — Runs 1–67 as listed in Run 67's note, plus game net flow × soccer dogs (Run 68), game net flow × the draw, soccer (Run 69), game net flow × basketball sides (Run…"
       },
       {
         "name": "Kings Branch",
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:59:29.531791-06:00",
-        "headline": "Best parallel: on away-favourite basketball the value is in the side, not the selection — always-dog +94.87% (9/15, mean price 2.958) vs favourite −34.23% on the same games (+38.69%, n=13 excluding…"
+        "last_activity": "2026-11-23T07:59:19.701851-06:00",
+        "headline": "Best parallel: away-favourite dog value is basketball-only on the Selector era — pooled away always-dog +57.10% vs favourite −18.69% (n=21; ex-long-dog +28.18%, n=17) decomposes into basketball…"
       },
       {
         "name": "Correlation Hunter",
@@ -8321,7 +8321,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T07:41:59.666890-06:00",
+        "last_activity": "2026-11-23T07:57:42.761852-06:00",
         "headline": "CONSEQUENCE: No audit tie-out, no census-led fight, no variants, no registry rows, no NEEDS-FREEZE spec drawn or filed this run. Spec authority audit exits 0 (log_max_arena 438, next 439) — no…"
       },
       {
