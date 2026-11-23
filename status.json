@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T17:45:41.355635-06:00",
+  "generated_at": "2026-11-23T17:50:45.469532-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-23T17:23:17.994073-06:00",
+      "last_activity": "2026-11-23T17:45:53.705062-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -175,8 +175,8 @@
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-23T17:44:50.424063-06:00",
-      "headline": "Cycle 252: 817 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-23T17:45:44.562063-06:00",
+      "headline": "Cycle 253: 821 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
@@ -187,8 +187,64 @@
     }
   ],
   "stakehunter": {
-    "latest_cycle": 252,
+    "latest_cycle": 253,
     "findings": [
+      {
+        "id": "HO1",
+        "name": "MHDEV TIERS",
+        "cycle": 253,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +4,826.26 vs +3,989.28, +836.98m) while staking LESS than flat on every king (grand king 5,460.00 vs 5,700.00), ROI up on every king (grand king +88.39% vs +69.99%; Selector +97.47%…"
+      },
+      {
+        "id": "HO2",
+        "name": "MHDEV INVERTED",
+        "cycle": 253,
+        "status": "REFUTED",
+        "verdict": "P&L down everywhere — the mirror confirms the midhinge-deviation direction from both sides"
+      },
+      {
+        "id": "HO3",
+        "name": "MHDEV GRADED",
+        "cycle": 253,
+        "status": "NOT A FINDING",
+        "verdict": "5 of 5 P&L wins (grand king +5,697.86) but DD breaches on Regime (78.68 > 75.00) and Quantum (113.46 > 112.50). The continuous dose crosses where the tiers stay inside — the same pattern as HL3/HM3"
+      },
+      {
+        "id": "HO4",
+        "name": "MHDEV BOOST-ONLY",
+        "cycle": 253,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 (grand king +5,530.72, ROI +82.67%), guard intact, but stakes ~990m more per king than flat — weighed below HO1/HO8"
+      },
+      {
+        "id": "HO5",
+        "name": "MHDEV BRAKE-ONLY",
+        "cycle": 253,
+        "status": "NOT A FINDING",
+        "verdict": "ROI up on all five kings at ~1,060–1,125m less staked, P&L down everywhere"
+      },
+      {
+        "id": "HO6",
+        "name": "MHDEV STEEP",
+        "cycle": 253,
+        "status": "NOT A FINDING",
+        "verdict": "5 of 5 P&L wins (grand king +6,114.12, the cycle's largest raw grand-king line) but DD breaches on Legacy (129.82 > 112.50), Regime (91.81 > 75.00) and Quantum (125.00 > 112.50). ### Cycle 253 closing notes - Audit clean:…"
+      },
+      {
+        "id": "HO7",
+        "name": "MHDEV x SIDE",
+        "cycle": 253,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 (grand king +5,207.46), ROI up everywhere, guard intact; side adds nothing over the midhinge signal alone at lower stake, so it carries no claim beyond that signal itself"
+      },
+      {
+        "id": "HO8",
+        "name": "MHDEV x SPREAD",
+        "cycle": 253,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5 (grand king +4,315.51) while staking less than flat on every king (grand king 5,100.00), ROI up everywhere, guard intact"
+      },
       {
         "id": "HN1",
         "name": "RANK TIERS",
@@ -15551,7 +15607,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -15630,7 +15686,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -15709,7 +15765,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -15783,12 +15839,12 @@
           "outcome": null,
           "live": {
             "state": "in",
-            "home_score": 48,
-            "away_score": 52,
-            "clock": "10:51",
+            "home_score": 58,
+            "away_score": 56,
+            "clock": "8:32",
             "period": 2,
-            "detail": "10:51 - 2nd",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "detail": "8:32 - 2nd",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -15867,7 +15923,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -15946,7 +16002,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16025,7 +16081,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16104,7 +16160,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:30 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16183,7 +16239,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:30 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16262,7 +16318,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:30 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16341,7 +16397,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 8:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16420,7 +16476,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 8:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16499,7 +16555,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 8:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16578,7 +16634,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 8:30 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16657,7 +16713,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 9:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16736,7 +16792,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 10:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16815,7 +16871,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 10:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16894,7 +16950,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 11:30 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -16975,7 +17031,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -17002,12 +17058,12 @@
           "tip_at": "2026-11-23T16:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 48,
-            "away_score": 52,
-            "clock": "10:51",
+            "home_score": 58,
+            "away_score": 56,
+            "clock": "8:32",
             "period": 2,
-            "detail": "10:51 - 2nd",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "detail": "8:32 - 2nd",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -17042,7 +17098,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -17070,12 +17126,12 @@
           "tip_at": "2026-11-23T16:00:00-06:00",
           "live": {
             "state": "in",
-            "home_score": 48,
-            "away_score": 52,
-            "clock": "10:51",
+            "home_score": 58,
+            "away_score": 56,
+            "clock": "8:32",
             "period": 2,
-            "detail": "10:51 - 2nd",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "detail": "8:32 - 2nd",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -17108,7 +17164,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 7:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -17141,7 +17197,7 @@
             "clock": null,
             "period": null,
             "detail": "11/23 - 9:00 PM EST",
-            "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+            "fetched_at": "2026-11-23T17:50:42.886626-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -17957,7 +18013,7 @@
         "clock": null,
         "period": null,
         "detail": "11/23 - 7:00 PM EST",
-        "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+        "fetched_at": "2026-11-23T17:50:42.886626-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -17981,12 +18037,12 @@
       "tip_at": "2026-11-23T16:00:00-06:00",
       "live": {
         "state": "in",
-        "home_score": 48,
-        "away_score": 52,
-        "clock": "10:51",
+        "home_score": 58,
+        "away_score": 56,
+        "clock": "8:32",
         "period": 2,
-        "detail": "10:51 - 2nd",
-        "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+        "detail": "8:32 - 2nd",
+        "fetched_at": "2026-11-23T17:50:42.886626-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -18015,7 +18071,7 @@
         "clock": null,
         "period": null,
         "detail": "11/23 - 7:00 PM EST",
-        "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+        "fetched_at": "2026-11-23T17:50:42.886626-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -18044,7 +18100,7 @@
         "clock": null,
         "period": null,
         "detail": "11/23 - 9:00 PM EST",
-        "fetched_at": "2026-11-23T17:45:39.803263-06:00",
+        "fetched_at": "2026-11-23T17:50:42.886626-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -18852,8 +18908,8 @@
         "role": "How the kings agree, dissent and merge",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T16:51:23.821088-06:00",
-        "headline": "Milestone — parallels holding on BOTH sets — with the P1 bar breaches named and no new challenger filed. Error correlation survives a full court turnover and a 71-game forward expansion in its…"
+        "last_activity": "2026-11-23T17:49:58.942060-06:00",
+        "headline": "Best parallel from this branch, Run 91: Vanguard's decorrelation failure inside the mixed group is now scored in full and holds as a group-shape parallel on both sets — fitted 'other' Vanguard-pair…"
       },
       {
         "name": "Markets Branch",
@@ -18879,8 +18935,8 @@
         "role": "Hunts patterns across every dimension at once",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T17:17:11.637076-06:00",
-        "headline": "Milestone note: none claimed — W126 holds on discovery only; fitted and fresh are both NOT TESTABLE for capture, so no both-sets milestone is possible, and the finding is UNJUDGED. Nothing crowned;…"
+        "last_activity": "2026-11-23T17:46:16.784062-06:00",
+        "headline": "Milestone note: none claimed — the W537 niche holds on discovery only, fitted and fresh are both NOT TESTABLE for capture, the only merge built on it is dead on the accuracy leg, and the finding is…"
       },
       {
         "name": "Correlation Red Team",
@@ -19114,8 +19170,8 @@
     "canary_fixtures": 1,
     "findings_count": 3,
     "vault_seal": "INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
-    "registry": "PASS (mirror 55,824 == DB 55,824, content verified)",
-    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 55,824 == DB 55,824, content verified); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
+    "registry": "PASS (mirror 55,878 == DB 55,878, content verified)",
+    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 55,878 == DB 55,878, content verified); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
     "findings": [
       {
         "n": 1,
