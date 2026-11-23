@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:25:44.590068-06:00",
+  "generated_at": "2026-11-23T06:30:40.790678-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T06:14:38.579687-06:00",
+      "last_activity": "2026-11-23T06:30:28.252724-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T06:12:20.752681-06:00",
-      "headline": "Latest search cycle: 597"
+      "last_activity": "2026-11-23T06:27:15.220716-06:00",
+      "headline": "Latest search cycle: 598"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T06:13:55.177685-06:00",
-      "headline": "Latest filing: P435"
+      "last_activity": "2026-11-23T06:30:03.474723-06:00",
+      "headline": "Latest filing: P436"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 598 — 2026-11-23 06:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T06:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 597 — 2026-11-23 06:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T06:11:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 593 — 2026-11-23 05:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T05:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 592 — 2026-11-23 04:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T04:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -811,6 +811,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G471 — F1 HOUSE-VIEW (2026-11-23, loop) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F1 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P436 completed…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G470 — F5 SOFT-ANGLE EXTREMES (2026-11-23, loop) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G470, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its ELOSTRONG note.…",
       "at": "2026-11-23T00:00:00-06:00"
@@ -841,13 +848,6 @@
       "kind": "generation",
       "title": "Arena G466 — F1 HOUSE-VIEW (2026-11-23)",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F1 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P431 completed…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G465 — F5 SOFT-ANGLE EXTREMES (2026-11-23, loop)",
-      "summary": "Verdict: NO ARENA CHAMPION in G465, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its ELOSTRONG note.…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T06:13:55.177685-06:00",
-        "headline": "TRIAGE: NEEDS-CAPTURE — no grass-height field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no grass column; the route is one lock-time…"
+        "last_activity": "2026-11-23T06:30:03.474723-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no totals-price field exists in the verified field inventory in data_core/spec_triage.md as a ledger column and the ledger's 55-column header carries no totals-price column…"
       },
       {
         "name": "Loss Autopsy",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T06:14:38.579687-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KH form fought — each remains 0/239 frozen (both grass fields header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-23T06:30:28.252724-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KI form fought — each remains 0/239 frozen (all four totals fields header-absent in the ledger); requirement…"
       },
       {
         "name": "Overseer",
