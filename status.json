@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:05:42.647394-06:00",
+  "generated_at": "2026-11-22T23:10:40.905884-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,7 +140,7 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-22T22:45:21.070221-06:00",
+      "last_activity": "2026-11-22T23:09:47.592273-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
@@ -860,6 +860,13 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G262 (loop, 2026-11-22) — NO NEW KING",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
+      "at": "2026-11-22T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G261 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G258 (loop, 2026-11-22) — NO NEW KING",
-      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G257 (loop, 2026-11-22) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-22T00:00:00-06:00"
     }
@@ -6919,8 +6919,8 @@
         "role": "Owns pick accuracy itself — hit rates, leaks and calibration",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T22:39:11.747208-06:00",
-        "headline": "Verdict: MILESTONE (ceiling re-base) — after 36 consecutive blocked runs (72–107), the accuracy frontier is re-certified on a live court; E4's top line survives the new kings, and P1-COMBINED-GAMEC…"
+        "last_activity": "2026-11-22T23:08:58.958968-06:00",
+        "headline": "Verdict: NO MILESTONE — front (e) re-based on the certified court with no disposition flip; live queue unchanged: P1-COMBINED-GAMEC alone, pooled-fresh grading on #40+."
       },
       {
         "name": "Betting Scout",
@@ -7036,8 +7036,8 @@
         "role": "World events, stock & crypto moves × game days",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:07:29.630142-06:00",
-        "headline": "No milestone. No parallel holds on both sets — this run ran no ROI test, and says so. Sub-angle headline per set — FITTED: untouched and still closed on every attachable category (Runs 4–5); no…"
+        "last_activity": "2026-11-22T23:07:47.782269-06:00",
+        "headline": "Best parallel from this branch, Run 71: the court is certified again — verify exit 0, all five kings PASS to the cent on the regenerated court (fitted Selector 215-24, +77.71%; forward Vanguard…"
       },
       {
         "name": "Flow Branch",
@@ -7153,8 +7153,8 @@
         "role": "Paper prediction-market strategies, new categories of success",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:10:46.977932-06:00",
-        "headline": "Court verification PASSED this run — kings cited behind exit 0. verify_court_state.py exited 0 (court_state.json regenerated 2026-11-22T22:09:49-06:00; all five sitting kings reproduce their…"
+        "last_activity": "2026-11-22T23:10:16.332274-06:00",
+        "headline": "Court verification FAILED this run — no king lines taken. verify_court_state.py exited 1: court_state.json is stale (mutation_loop_state.md changed since it was generated; recorded sha f05a0164…,…"
       },
       {
         "name": "Arena",
