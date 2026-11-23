@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T05:15:39.584643-06:00",
+  "generated_at": "2026-11-23T05:20:41.569318-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-23T04:54:42.351960-06:00",
+      "last_activity": "2026-11-23T05:19:20.983965-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 — 205-34, +66.23% fitted ROI"
     },
     {
@@ -8096,7 +8096,7 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T04:17:24.825952-06:00",
+        "last_activity": "2026-11-23T05:17:00.204964-06:00",
         "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
       },
       {
@@ -8105,8 +8105,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T04:17:26.978952-06:00",
-        "headline": "Verdict: milestone-grade measurement — AH position census with counts completing the position trilogy; AH is B365's cheapest executable surface vs panel-best, and D2 is its worst-served AH league."
+        "last_activity": "2026-11-23T05:17:14.783964-06:00",
+        "headline": "Verdict: milestone-grade measurement — era-split 1X2 staleness census with counts completing the staleness-by-era trilogy (1X2 / totals / AH); B365 and BW pooled rates overstate the current regime,…"
       },
       {
         "name": "Infra Scout",
@@ -8132,8 +8132,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T04:17:23.468952-06:00",
-        "headline": "Milestone: NO — re-verification on a new fixture; route already proven and its dispute already resolved. One line: BBL re-verified on S41-01 (79–90 reproduced unanimously by feeds + dpa wire +…"
+        "last_activity": "2026-11-23T05:17:30.453964-06:00",
+        "headline": "Milestone: NO — re-verification only. One line: FIBA Europe Cup re-verified on S38-04, 88–90 reproduced by feeds + FIBA official box + RealGM + Polish editorial, forward gap closed retrospectively."
       },
       {
         "name": "Risk Scout",
@@ -8159,8 +8159,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T04:17:37.696952-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: the off-grid penalty is real and deterministic wherever it can occur (5/5 stale, ~9.5 min median penalty), but slips 40+41 never present an off-grid tip, so no…"
+        "last_activity": "2026-11-23T05:17:03.680964-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: cadence is a stable ~15 min per slip from slip38 onward with no hour-of-day decay, so no capture window or poll clock moves."
       },
       {
         "name": "Wagering Scout",
@@ -8177,7 +8177,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T04:18:35.188952-06:00",
+        "last_activity": "2026-11-23T05:18:22.274965-06:00",
         "headline": "Verdict: NO material FLOW change; no drift against the reset baselines (lead 166 decided, 96-70, +$9,983,545.59, +16.09pp beat-close); no new qualifier on either side; no pack shape detected. No…"
       },
       {
@@ -8330,8 +8330,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T05:13:51.202964-06:00",
-        "headline": "VERIFIED: court PASS (verify exit 0, gen 05:11:34 CST, Selector 215-24 +78.27% card source, Regime 209-30 +69.89% grand); slip verify exit 0 (35/24/0/11); Arm 3 Forward Board enrolment + self-test…"
+        "last_activity": "2026-11-23T05:17:07.112964-06:00",
+        "headline": "2026-11-23 05:30 CST INTEGRITY Run 53: 8 findings filed (F1 stale court/stamps null, F2 exam split, F3 stakehunter 224 vs 228, F4 integrity block nulls, F5 slips 36–41 games null, F6 CLV ~24× stale…"
       },
       {
         "name": "Integrity Auditor",
@@ -8339,8 +8339,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T04:17:50.852952-06:00",
-        "headline": "lock_gate.py (regression): ghost S99-GHOST-999 PASS exit 0, pass:true, hash 22b9bfbd… in fresh Run 52 scratch — BROKEN, RE-PROVEN (F7). Unrepaired since Run 32."
+        "last_activity": "2026-11-23T05:17:07.104964-06:00",
+        "headline": "age_freeze_gate.py: ghost slip99 FAIL exit 1 by name — absence-refusal only, no full-content pass claimed."
       },
       {
         "name": "Systems Engineer",
@@ -8468,9 +8468,9 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 52,
-    "last_run": "2026-11-23T04:25:00-06:00",
-    "claims_checked": 12,
+    "run": 53,
+    "last_run": "2026-11-23T05:30:00-06:00",
+    "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
     "findings_count": null,
