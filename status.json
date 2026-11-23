@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T01:55:39.153841-06:00",
+  "generated_at": "2026-11-23T02:00:40.795917-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -126,7 +126,7 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-23T01:34:23.535417-06:00",
+      "last_activity": "2026-11-23T01:59:45.026534-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 — 205-34, +66.23% fitted ROI"
     },
     {
@@ -147,21 +147,21 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T01:43:45.808417-06:00",
+      "last_activity": "2026-11-23T01:59:34.979533-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T01:41:58.815417-06:00",
-      "headline": "Latest search cycle: 579"
+      "last_activity": "2026-11-23T01:57:15.753528-06:00",
+      "headline": "Latest search cycle: 580"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T01:44:10.952417-06:00",
+      "last_activity": "2026-11-23T01:59:17.782533-06:00",
       "headline": "Latest filing: P424"
     },
     {
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 580 — 2026-11-23 01:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T01:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G453 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, 01:56 CST run) — COMPLETED",
+      "summary": "Verdict: NO NEW ARENA CHAMPION in G453, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands as…",
+      "at": "2026-11-23T01:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 579 — 2026-11-23 01:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T01:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G448 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, 00:41 CST run) — COMPLETED",
       "summary": "Verdict: NO NEW ARENA CHAMPION in G448, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands as…",
       "at": "2026-11-23T00:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 574 — 2026-11-23 00:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "No crown, no milestone.",
-      "at": "2026-11-23T00:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G447 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, 00:26 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G447, no branch DEAD, and no new best form — F2 remains NEEDS-FREEZE only beyond its standing B1 steam…",
-      "at": "2026-11-23T00:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -881,14 +881,14 @@
     {
       "agent": "Quantum",
       "kind": "generation",
-      "title": "R4-G660 (loop, 2026-11-23) — NO NEW KING",
+      "title": "R4-G661 (loop, 2026-11-23) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 stands (205-34, priced 228, +3775.33m, +66.23%; dog 66…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
       "agent": "Quantum",
       "kind": "generation",
-      "title": "R4-G659 (loop, 2026-11-23)",
+      "title": "R4-G660 (loop, 2026-11-23) — NO NEW KING",
       "summary": "NO NEW KING. DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 stands (205-34, priced 228, +3775.33m, +66.23%; dog 66…",
       "at": "2026-11-23T00:00:00-06:00"
     }
@@ -8204,8 +8204,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T00:56:41.071417-06:00",
-        "headline": "Best parallel this run: the exodus-favourite gap is the most repeatable number in the flow family — and it still cannot be confirmed, because the fresh money never arrived. Old universe exodus…"
+        "last_activity": "2026-11-23T01:57:17.551528-06:00",
+        "headline": "Filed to intake: (1) the battery census with its named next test — the #40-alone filings (H-EE5/H-FF4/H-II4/H-BB3R/H-CC4/H-DD5/H-HH4/H-JJ4/H-KK3/H-LL3) are NOT re-filed singly; they convert to a…"
       },
       {
         "name": "Kings Branch",
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T00:58:42.290860-06:00",
-        "headline": "Best parallel: the pooled decider queue resolves both carried tests to capture-structure facts again — P4's short-price capture gap survives only as a pooled letter (+4.83pp: 2+ −4.10%, n=11 vs 0–1…"
+        "last_activity": "2026-11-23T01:58:39.905531-06:00",
+        "headline": "Best parallel: price-source cross-check presence is the first build-verification variable to beat the liquidity-tracer pattern — cross-checked favourites +6.29% (n=31) vs unchecked −6.90% (n=40)…"
       },
       {
         "name": "Correlation Hunter",
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T01:44:10.952417-06:00",
-        "headline": "Hunt disposition: no new filing (class-i candidates all previously filed, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
+        "last_activity": "2026-11-23T01:59:17.782533-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — none of series_wins_fav, series_wins_dog or series_target exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries none of…"
       },
       {
         "name": "Loss Autopsy",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T01:43:45.808417-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HT form fought — each remains 0/239 frozen (both jump-share fields header-absent in the ledger); requirement…"
+        "last_activity": "2026-11-23T01:59:34.979533-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every HU form fought — each remains 0/239 frozen (all three series fields header-absent in the ledger); requirement…"
       },
       {
         "name": "Overseer",
