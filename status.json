@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T00:45:38.922868-06:00",
+  "generated_at": "2026-11-23T00:50:39.654323-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-23T00:22:16.151418-06:00",
+      "last_activity": "2026-11-23T00:49:57.012487-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
@@ -762,6 +762,13 @@
     {
       "agent": "Selector",
       "kind": "generation",
+      "title": "SELECTOR R4-G459 (loop, 2026-11-23) — NO NEW KING",
+      "summary": "NO NEW KING. Sitting king ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 stands (215-24, +78.27%, highest fitted, card…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
+      "kind": "generation",
       "title": "SELECTOR R4-G458 (loop, 2026-11-23) — NO NEW KING",
       "summary": "NO NEW KING. Sitting king ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 stands (215-24, +78.27%, highest fitted, card…",
       "at": "2026-11-23T00:00:00-06:00"
@@ -883,13 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 217 — 2026-11-22",
       "summary": "Script: data_core/stakehunter_cycle217.py (new file only; stream builder written fresh this cycle against the state file below).…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Stakehunter",
-      "kind": "generation",
-      "title": "CYCLE 216 — 2026-11-22",
-      "summary": "Script: data_core/stakehunter_cycle216.py (new file only; stream builder written fresh this cycle against the state file below).…",
       "at": "2026-11-22T00:00:00-06:00"
     }
   ],
@@ -8213,8 +8213,8 @@
         "role": "How the kings agree, dissent and merge",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T23:49:42.650418-06:00",
-        "headline": "No milestone. The filed money parallel failed its verbatim test: on the first new games after Run 72, the Selector's refinement delta flipped sign against every eligible base (0/3), and its Regime…"
+        "last_activity": "2026-11-23T00:50:11.838418-06:00",
+        "headline": "(The forward \"changed vs best king\" counts in the raw output — 103 vs Vanguard — are base distance between the Selector and Vanguard, not rule changes; changed vs the Selector, the rule's own base,…"
       },
       {
         "name": "Markets Branch",
