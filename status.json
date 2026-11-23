@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:15:40.532540-06:00",
+  "generated_at": "2026-11-22T23:20:41.407375-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-22T22:49:13.208229-06:00",
+      "last_activity": "2026-11-22T23:17:59.210290-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -5823,7 +5823,7 @@
       "draw_desk": null,
       "results": null,
       "user_bets": null,
-      "date": "2026-11-16",
+      "date": "2026-11-21",
       "games_status": {
         "games_total": 12,
         "games_ended": 12,
@@ -6220,7 +6220,7 @@
       "draw_desk": null,
       "results": null,
       "user_bets": null,
-      "date": "2026-11-16",
+      "date": "2026-11-22",
       "games_status": {
         "games_total": 19,
         "games_ended": 19,
@@ -7525,33 +7525,25 @@
       36,
       37,
       38,
-      39
+      39,
+      40,
+      41
     ],
     "out_of_scope": [
       {
         "slip": 33,
         "date": "2026-11-17",
         "reason": "dated before tracking began"
-      },
-      {
-        "slip": 40,
-        "date": "2026-11-16",
-        "reason": "dated before tracking began"
-      },
-      {
-        "slip": 41,
-        "date": "2026-11-16",
-        "reason": "dated before tracking began"
       }
     ],
-    "balance_m": 999999870.55,
-    "settled_pnl_m": -129.45,
-    "settled_staked_m": 425.0,
-    "roi_pct": -30.46,
-    "wins": 11,
-    "losses": 6,
-    "record": "11-6",
-    "winrate_pct": 64.71,
+    "balance_m": 999999876.87,
+    "settled_pnl_m": -123.13,
+    "settled_staked_m": 575.0,
+    "roi_pct": -21.41,
+    "wins": 14,
+    "losses": 9,
+    "record": "14-9",
+    "winrate_pct": 60.87,
     "pending_m": 0,
     "pending": [],
     "ledger": [
@@ -7741,6 +7733,72 @@
         "result": "LOST",
         "pnl_m": -25.0,
         "balance_after_m": 999999870.55
+      },
+      {
+        "slip": 40,
+        "kind": "GRAND PICK",
+        "game_id": "S40-07",
+        "pick": "Basket Zaragoza",
+        "stake_m": 25,
+        "price": 3.1,
+        "result": "WON",
+        "pnl_m": 52.5,
+        "balance_after_m": 999999923.05
+      },
+      {
+        "slip": 40,
+        "kind": "CONFIDENCE",
+        "game_id": "S40-11",
+        "pick": "San Antonio Spurs",
+        "stake_m": 25,
+        "price": 1.063,
+        "result": "WON",
+        "pnl_m": 1.57,
+        "balance_after_m": 999999924.62
+      },
+      {
+        "slip": 40,
+        "kind": "CHOSEN BET",
+        "game_id": "S40-05",
+        "pick": "BC Andorra",
+        "stake_m": 25,
+        "price": 3.3,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": 999999899.62
+      },
+      {
+        "slip": 41,
+        "kind": "GRAND PICK",
+        "game_id": "S41-13",
+        "pick": "Oklahoma City Thunder",
+        "stake_m": 25,
+        "price": 2.39,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": 999999874.62
+      },
+      {
+        "slip": 41,
+        "kind": "CHOSEN BET",
+        "game_id": "S41-02",
+        "pick": "La Laguna Tenerife",
+        "stake_m": 25,
+        "price": 2.09,
+        "result": "WON",
+        "pnl_m": 27.25,
+        "balance_after_m": 999999901.87
+      },
+      {
+        "slip": 41,
+        "kind": "CHOSEN BET",
+        "game_id": "S41-05",
+        "pick": "APU Udine",
+        "stake_m": 25,
+        "price": 2.4,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": 999999876.87
       }
     ],
     "paper_excluded": [
@@ -7797,6 +7855,18 @@
         "kind": "DRAW DESK",
         "pick": "Draw",
         "price": 3.1
+      },
+      {
+        "slip": 40,
+        "kind": "UNDERDOG DESK",
+        "pick": "BC Andorra",
+        "price": 3.3
+      },
+      {
+        "slip": 41,
+        "kind": "UNDERDOG DESK",
+        "pick": "Golden State Warriors",
+        "price": 3.86
       }
     ],
     "unsettled_m": 0,
@@ -8026,8 +8096,8 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:17:57.111164-06:00",
-        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
+        "last_activity": "2026-11-22T23:17:07.310288-06:00",
+        "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture: full referee crews for all seven Slip #41 NBA fixtures."
       },
       {
         "name": "House Scout",
@@ -8035,8 +8105,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:17:30.430163-06:00",
-        "headline": "Verdict: milestone-grade measurement — AH favourite-flip census with counts completing the flip trilogy; the AH favourite label flips in ~38% of fixed-line matches for both books and means nothing…"
+        "last_activity": "2026-11-22T23:17:33.493289-06:00",
+        "headline": "Verdict: milestone-grade measurement — first totals position census with counts; totals venue tax is real but smaller than 1X2 (B365 close 4.60pp vs soft-book 1X2 6.93–7.58pp), Pinnacle is the…"
       },
       {
         "name": "Infra Scout",
@@ -8062,8 +8132,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:17:29.193188-06:00",
-        "headline": "Deliverables: results_source_map.md Singapore row updated + RE-VERIFICATION 13 subsection appended; intake appended 2026-11-22."
+        "last_activity": "2026-11-22T23:17:02.810288-06:00",
+        "headline": "Deliverables: results_source_map.md RE-VERIFICATION 14 subsection appended; intake appended 2026-11-22."
       },
       {
         "name": "Risk Scout",
@@ -8089,8 +8159,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:16:59.069162-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: idle is legitimate and grading is on its projected track with the batch 0.99h away, so no clock moves; next run verifies the batch."
+        "last_activity": "2026-11-22T23:17:13.641316-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: the batch fired on projection and graded both slips in one pass (slip41 3.75h in-band, slip40 26.25h deferred), confirming the single-batch clock, so no clock…"
       },
       {
         "name": "Wagering Scout",
@@ -8107,7 +8177,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:19:49.527168-06:00",
+        "last_activity": "2026-11-22T23:19:16.508293-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape detected. No milestone. Baselines stand: lead 168 decided / +$10.14M / +14.31pp beat-close; anti rank 1 32 decided /…"
       },
       {
@@ -8260,8 +8330,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T23:15:22.724284-06:00",
-        "headline": "MILESTONE — invention built and bench-proven: the Desk Record Gate (see Inventions filed/built, head bullet). Self-test 11/11 by name, exit 0. Live run PASS, exit 0 — 37 checks: both desk records'…"
+        "last_activity": "2026-11-22T23:18:39.165291-06:00",
+        "headline": "2026-11-22 23:35 CST INTEGRITY Run 47 (MILESTONE): 8 findings filed to discovery_intake.md — site king stamps null (F1), exam split wrong 222 vs true 212 (F2), integrity block null/empty (F3), slips…"
       },
       {
         "name": "Integrity Auditor",
@@ -8269,8 +8339,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T22:18:42.391165-06:00",
-        "headline": "lock_gate.py (regression): ghost S99-GHOST-999 PASS exit 0, hash 22b9bfbd… — BROKEN, RE-PROVEN (F8)."
+        "last_activity": "2026-11-22T23:18:39.164291-06:00",
+        "headline": "lock_gate.py (regression): ghost S99-GHOST-999 PASS exit 0, pass:true, hash 22b9bfbd… — BROKEN, RE-PROVEN (F7). Unrepaired since Run 32."
       },
       {
         "name": "Systems Engineer",
@@ -8398,9 +8468,9 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 46,
-    "last_run": "2026-11-22T22:35:00-06:00",
-    "claims_checked": 10,
+    "run": 47,
+    "last_run": "2026-11-22T23:35:00-06:00",
+    "claims_checked": 11,
     "canary_gates": null,
     "canary_fixtures": null,
     "findings_count": null,
