@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:25:39.906251-06:00",
+  "generated_at": "2026-11-23T04:30:41.788339-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -119,14 +119,14 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-23T04:00:00.052948-06:00",
+      "last_activity": "2026-11-23T04:25:55.307954-06:00",
       "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP — 209-30, +69.89% fitted ROI"
     },
     {
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-23T04:05:05.339949-06:00",
+      "last_activity": "2026-11-23T04:29:39.332954-06:00",
       "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 — 205-34, +66.23% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T04:13:46.136951-06:00",
+      "last_activity": "2026-11-23T04:29:12.259954-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T04:12:04.535951-06:00",
-      "headline": "Latest search cycle: 589"
+      "last_activity": "2026-11-23T04:27:02.019954-06:00",
+      "headline": "Latest search cycle: 590"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T04:13:32.091951-06:00",
-      "headline": "Latest filing: P427"
+      "last_activity": "2026-11-23T04:28:54.507954-06:00",
+      "headline": "Latest filing: P428"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 590 — 2026-11-23 04:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T04:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G463 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, 04:26 CST run) — COMPLETED",
+      "summary": "Verdict: NO NEW ARENA CHAMPION in G463, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands…",
+      "at": "2026-11-23T04:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 589 — 2026-11-23 04:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T04:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G458 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, 03:11 CST run) — COMPLETED",
       "summary": "Verdict: NO NEW ARENA CHAMPION in G458, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands…",
       "at": "2026-11-23T03:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 584 — 2026-11-23 02:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T02:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G457 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, 02:56 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G457, no branch DEAD, and no new best form — F2 remains NEEDS-FREEZE only beyond its standing B1 steam…",
-      "at": "2026-11-23T02:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:13:32.091951-06:00",
-        "headline": "Hunt disposition: no new filing (class-e candidates all previously filed, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
+        "last_activity": "2026-11-23T04:28:54.507954-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no qualification-gap field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no qual_gap column; the route is one…"
       },
       {
         "name": "Loss Autopsy",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T04:13:46.136951-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every JZ form fought — each remains 0/239 frozen (both rev_pace_ratio and move_lc_pp header-absent in the ledger);…"
+        "last_activity": "2026-11-23T04:29:12.259954-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KA form fought — each remains 0/239 frozen (both qual_gap fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
