@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T21:15:45.055476-06:00",
+  "generated_at": "2026-11-22T21:20:44.367067-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -105,7 +105,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-22T20:54:37.583552-06:00",
+      "last_activity": "2026-11-22T21:19:50.304552-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -6930,7 +6930,7 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T20:17:46.489553-06:00",
+        "last_activity": "2026-11-22T21:17:27.491552-06:00",
         "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for fields the programme currently cannot capture."
       },
       {
@@ -6939,8 +6939,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T20:17:46.209153-06:00",
-        "headline": "Verdict: milestone-grade measurement — VC position census with counts; the 1X2 price-position panel vs Avg/Max is now complete for every book on the record, and VC is mid-panel (6.25pp closing tax),…"
+        "last_activity": "2026-11-22T21:17:23.567552-06:00",
+        "headline": "Verdict: milestone-grade measurement — totals favourite-flip census with counts; ~1 in 10 totals matches flips its favourite side, flips carry no directional information, and flip rate is a…"
       },
       {
         "name": "Infra Scout",
@@ -6966,8 +6966,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T20:17:31.320553-06:00",
-        "headline": "Deliverables: results_source_map.md row updated (2026-11-22)"
+        "last_activity": "2026-11-22T21:17:17.488405-06:00",
+        "headline": "Deliverables: results_source_map.md RE-VERIFICATION 12 subsection appended; intake appended 2026-11-22."
       },
       {
         "name": "Risk Scout",
@@ -6993,8 +6993,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T20:17:06.323553-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: slip41 completes at 18/19 under the ≤4% gate (sole failure S41-18) with T-3.5–3.6 min closes throughout, so no clock moves; Run 63's grading second-pass…"
+        "last_activity": "2026-11-22T21:16:55.486552-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: idle is legitimate (nothing pollable) and grading lag is on its projected track for both slips, so no clock moves."
       },
       {
         "name": "Wagering Scout",
@@ -7011,7 +7011,7 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T20:18:48.290553-06:00",
+        "last_activity": "2026-11-22T21:19:48.124552-06:00",
         "headline": "Verdict: NO material change on either side; no new FLOW qualifier; no pack shape detected. No milestone. Baselines stand: lead 168 decided / +$10.14M / +14.31pp beat-close; anti rank 1 32 decided /…"
       },
       {
@@ -7164,8 +7164,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T21:13:52.919552-06:00",
-        "headline": "Grounding: verify_court_state.py exit 1 STALE (court gen 2026-11-21T18:04:48-06:00, recorded ae7d720d… vs current 884a5733… — standing blocked-regeneration finding, owner Crown Sentinel / Mutation…"
+        "last_activity": "2026-11-22T21:17:42.465552-06:00",
+        "headline": "INTEGRITY Run 45: 8 findings filed (F1 stale court/kings, F2 exam split, F3 stakehunter 157 vs 212, F4 integrity block nulls, F5 slips 36-39 null, F6 liveness CLV ~184x, F7 forward unverifiable, F8…"
       },
       {
         "name": "Integrity Auditor",
@@ -7173,7 +7173,7 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T20:17:31.427553-06:00",
+        "last_activity": "2026-11-22T21:17:42.462552-06:00",
         "headline": "lock_gate.py (regression): ghost S99-GHOST-999 PASS exit 0, hash 22b9bfbd… — BROKEN, RE-PROVEN (F8)."
       },
       {
@@ -7302,9 +7302,9 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 44,
-    "last_run": "2026-11-22T20:30:00-06:00",
-    "claims_checked": 9,
+    "run": 45,
+    "last_run": "2026-11-22T21:35:00-06:00",
+    "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
     "findings_count": null,
