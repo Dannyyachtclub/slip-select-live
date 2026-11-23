@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:15:42.778681-06:00",
+  "generated_at": "2026-11-23T07:20:41.704463-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-23T06:49:25.993768-06:00",
+      "last_activity": "2026-11-23T07:15:43.664829-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -8096,7 +8096,7 @@
         "role": "Proves new data routes — results, referees, prices — before use",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:17:21.854693-06:00",
+        "last_activity": "2026-11-23T07:17:47.698834-06:00",
         "headline": "Verdict: MILESTONE — source proven reachable with correct sample values for a field the programme currently cannot capture."
       },
       {
@@ -8105,8 +8105,8 @@
         "role": "Sits in the bookmaker's chair — margin, shading, house pricing",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:17:30.708694-06:00",
-        "headline": "Verdict: milestone-grade measurement — margin-split census with counts; B365 taxes the strong favourite hardest, the reverse of a flat-split assumption, and EC is its dearest 1X2 league."
+        "last_activity": "2026-11-23T07:17:25.542833-06:00",
+        "headline": "Verdict: milestone-grade measurement — open-vs-close margin-split census with counts; the house's favourite tax is an opening price, and its late margin growth is a dog-side widening, not a…"
       },
       {
         "name": "Infra Scout",
@@ -8132,8 +8132,8 @@
         "role": "Hunts result sources so every graded game has a verified score",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:17:56.580695-06:00",
-        "headline": "Milestone: NO — re-verification only; route already proven. One line: Spain ACB re-verified on Round 9, route stands, acb.com flagged browser-only pending a direct read."
+        "last_activity": "2026-11-23T07:17:44.461834-06:00",
+        "headline": "Milestone: YES — a named grading risk (single-family editorial absence) cured; Egypt Cup now has a proven independent editorial leg for all three programme ties."
       },
       {
         "name": "Risk Scout",
@@ -8159,8 +8159,8 @@
         "role": "Kickoff timing, windows, and when prices move",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:17:26.436693-06:00",
-        "headline": "Verdict: NOT A MILESTONE — one line: capture misses are fixture failures on specific slips/dates, not a diurnal watcher gap, so no capture window or poll hour moves."
+        "last_activity": "2026-11-23T07:17:07.613832-06:00",
+        "headline": "Verdict: NOT A MILESTONE — one line: current-era capture timing needs no change (slip41: 19/19 captured, every close within 2.61–3.48 min of tip, zero failed polls), so no capture window, lock time,…"
       },
       {
         "name": "Wagering Scout",
@@ -8177,8 +8177,8 @@
         "role": "Follows prediction-market wallets and money flow",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:18:58.735697-06:00",
-        "headline": "Verdict: NO material FLOW change; no drift against the current census baselines (lead 167 decided, 96-71, +$9,986,026.84, +16.16pp beat-close, 71.54% positive share); no new qualifier on either side…"
+        "last_activity": "2026-11-23T07:19:04.502837-06:00",
+        "headline": "Verdict: NO material FLOW change; no drift against the current census baselines (lead 167 decided, 96-71, +$9,986,026.84, +16.16pp beat-close); no new qualifier on either side; no pack shape…"
       },
       {
         "name": "Context Branch",
@@ -8330,8 +8330,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T07:14:06.853825-06:00",
-        "headline": "Grounding: verify_court_state.py exit 1 STALE this run (court_state gen 2026-11-23T06:52:21-06:00; mutation_loop_state.md advanced after that generation — sentinel-cadence lag, owner Crown Sentinel;…"
+        "last_activity": "2026-11-23T07:18:17.746835-06:00",
+        "headline": "2026-11-23 07:30 CST INTEGRITY Run 55: 8 findings filed (F1 stale court/G673 crown receipt + null stamps, F2 exam split 222 vs true 212, F3 stakehunter 224 vs Cycle 232, F4 integrity nulls, F5 slips…"
       },
       {
         "name": "Integrity Auditor",
@@ -8339,8 +8339,8 @@
         "role": "Anti-fabrication watchdog — re-derives claims, canary-tests gates",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:17:39.048694-06:00",
-        "headline": "totals_freeze_gate.py: ghost slip99 FAIL by name (slip file not found) — absence-refusal only; full-content break stands from Run 43, not re-proven this run."
+        "last_activity": "2026-11-23T07:18:17.742835-06:00",
+        "headline": "lock_gate.py (regression): ghost S99-GHOST-999 PASS exit 0, hash 22b9bfbd… — BROKEN, RE-PROVEN (F7). Unrepaired since Run 32. All 97 *_gate.py have now been rotation-tested (Run 52 completed…"
       },
       {
         "name": "Systems Engineer",
@@ -8468,8 +8468,8 @@
   },
   "integrity": {
     "source": "data_core/integrity_auditor_log.md",
-    "run": 54,
-    "last_run": "2026-11-23T06:30:00-06:00",
+    "run": 55,
+    "last_run": "2026-11-23T07:30:00-06:00",
     "claims_checked": 10,
     "canary_gates": null,
     "canary_fixtures": null,
