@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:55:41.537150-06:00",
+  "generated_at": "2026-11-23T07:00:43.936099-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -24,24 +24,24 @@
     },
     {
       "court": "Regime",
-      "name": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP",
+      "name": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP-REORDER33X39",
       "grand_king": true,
       "wins": 209,
       "losses": 30,
       "priced": 228,
-      "pnl_m": 3983.73,
-      "roi_pct": 69.89,
+      "pnl_m": 3989.28,
+      "roi_pct": 69.99,
       "set_size": 239,
       "dog_line": {
         "picks": 65,
         "wins": 51,
         "losses": 14,
         "priced": 61,
-        "pnl_m": 2104.65,
-        "roi_pct": 138.01
+        "pnl_m": 2119.15,
+        "roi_pct": 138.96
       },
       "stamp": null,
-      "crowned_on": "2026-11-21"
+      "crowned_on": "2026-11-23"
     },
     {
       "court": "Quantum",
@@ -119,8 +119,8 @@
       "name": "Regime",
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
-      "last_activity": "2026-11-23T06:30:57.941725-06:00",
-      "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP — 209-30, +69.89% fitted ROI"
+      "last_activity": "2026-11-23T06:58:13.573788-06:00",
+      "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP-REORDER33X39 — 209-30, +69.99% fitted ROI"
     },
     {
       "name": "Quantum",
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T06:44:12.194756-06:00",
+      "last_activity": "2026-11-23T07:00:20.005793-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T06:42:12.135751-06:00",
-      "headline": "Latest search cycle: 599"
+      "last_activity": "2026-11-23T06:57:04.549182-06:00",
+      "headline": "Latest search cycle: 600"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T06:43:52.720755-06:00",
-      "headline": "Latest filing: P437"
+      "last_activity": "2026-11-23T06:59:22.705791-06:00",
+      "headline": "Latest filing: P438"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 600 — 2026-11-23 06:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T06:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 599 — 2026-11-23 06:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T06:41:00-06:00"
@@ -716,13 +723,6 @@
       "title": "CYCLE 595 — 2026-11-23 05:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T05:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 594 — 2026-11-23 05:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T05:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -811,6 +811,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G473 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, loop) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F3 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P438 completed…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G472 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, loop) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F2 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P437 completed…",
       "at": "2026-11-23T00:00:00-06:00"
@@ -841,13 +848,6 @@
       "kind": "generation",
       "title": "Arena G468 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-23, loop) — COMPLETED",
       "summary": "Verdict: NO NEW ARENA CHAMPION in G468, no branch DEAD, and no new best form — F3's champion ARENA-F3-CHAMPXBAND-VETOFLIP stands…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G467 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, loop) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G467, no branch DEAD, and no new best form — F2 remains NEEDS-FREEZE only beyond its steam control.…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -8204,8 +8204,8 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:56:57.722646-06:00",
-        "headline": "Rotation note: sub-angles used — Runs 1–67 as listed in Run 67's note, plus game net flow × soccer dogs (Run 68), game net flow × the draw, soccer (Run 69), game net flow × basketball sides (Run…"
+        "last_activity": "2026-11-23T06:56:48.379785-06:00",
+        "headline": "Filed to intake: the end-driven restatement with its named next test (on the next informative refresh, followed delta ≥50 decided: confirmed as end-driven if every sport/band end again signs ≤−1…"
       },
       {
         "name": "Kings Branch",
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T05:59:00.889651-06:00",
-        "headline": "Best parallel: the Selector partially fades the worst favourite population and still loses on it — basketball away-favourite fav-share 60.0% (n=15) vs home 77.8% (n=36), ROI −10.70% vs the…"
+        "last_activity": "2026-11-23T06:59:29.531791-06:00",
+        "headline": "Best parallel: on away-favourite basketball the value is in the side, not the selection — always-dog +94.87% (9/15, mean price 2.958) vs favourite −34.23% on the same games (+38.69%, n=13 excluding…"
       },
       {
         "name": "Correlation Hunter",
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T06:43:52.720755-06:00",
-        "headline": "TRIAGE: NEEDS-CAPTURE — qgap_max_60m_min and move_lc_pp are both header-absent from the verified ledger inventory in data_core/spec_triage.md (0/239); the polling sidecar that already produces the…"
+        "last_activity": "2026-11-23T06:59:22.705791-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — title_lead_fav_pts and title_lead_dog_pts are both header-absent from the verified ledger inventory in data_core/spec_triage.md (0/239); the published league table is already…"
       },
       {
         "name": "Loss Autopsy",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T06:44:12.194756-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KJ form fought — each remains 0/239 frozen (both qgap_max_60m_min and move_lc_pp header-absent in the…"
+        "last_activity": "2026-11-23T07:00:20.005793-06:00",
+        "headline": "POSTSCRIPT (same run, after the state bullet landed): the routine post-work regeneration of court_state.json now fails honestly — a concurrent Regime R4-G673 crown landed during this run and changed…"
       },
       {
         "name": "Overseer",
