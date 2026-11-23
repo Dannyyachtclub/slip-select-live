@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T22:05:46.330844-06:00",
+  "generated_at": "2026-11-22T22:10:43.016006-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -11,30 +11,37 @@
       "pnl_m": 4095.8,
       "roi_pct": 71.54,
       "set_size": 239,
-      "dog_line": null,
+      "dog_line": {
+        "picks": 67,
+        "wins": 52,
+        "losses": 15,
+        "priced": 63,
+        "pnl_m": 2136.52,
+        "roi_pct": 135.65
+      },
       "stamp": null,
       "crowned_on": "2026-11-22"
     },
     {
       "court": "Regime",
-      "name": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO",
+      "name": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP",
       "grand_king": true,
-      "wins": 207,
-      "losses": 32,
+      "wins": 209,
+      "losses": 30,
       "priced": 228,
-      "pnl_m": 3679.7,
-      "roi_pct": 64.56,
+      "pnl_m": 3983.73,
+      "roi_pct": 69.89,
       "set_size": 239,
       "dog_line": {
-        "picks": 61,
-        "wins": 48,
-        "losses": 13,
-        "priced": 57,
-        "pnl_m": 1874.15,
-        "roi_pct": 131.52
+        "picks": 65,
+        "wins": 51,
+        "losses": 14,
+        "priced": 61,
+        "pnl_m": 2104.65,
+        "roi_pct": 138.01
       },
       "stamp": null,
-      "crowned_on": "2026-11-19"
+      "crowned_on": "2026-11-21"
     },
     {
       "court": "Quantum",
@@ -61,19 +68,19 @@
       "court": "Selector",
       "name": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262",
       "grand_king": false,
-      "wins": 216,
-      "losses": 23,
+      "wins": 215,
+      "losses": 24,
       "priced": 227,
-      "pnl_m": 4446.73,
-      "roi_pct": 78.36,
+      "pnl_m": 4409.83,
+      "roi_pct": 77.71,
       "set_size": 239,
       "dog_line": {
-        "picks": 69,
+        "picks": 71,
         "wins": 56,
-        "losses": 13,
-        "priced": 64,
-        "pnl_m": 2389.65,
-        "roi_pct": 149.35
+        "losses": 15,
+        "priced": 66,
+        "pnl_m": 2339.65,
+        "roi_pct": 141.8
       },
       "stamp": null,
       "crowned_on": "2026-11-22"
@@ -113,7 +120,7 @@
       "role": "Grand king — its pick is the card pick on every slip",
       "status": "active",
       "last_activity": "2026-11-22T22:05:17.362137-06:00",
-      "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO — 207-32, +64.56% fitted ROI"
+      "headline": "ZEROTRIPFRAG-DEAP2-TRIPS1VETO-DOGGE10VETO-LGLEN227R17FLIP — 209-30, +69.89% fitted ROI"
     },
     {
       "name": "Quantum",
@@ -127,7 +134,7 @@
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
       "last_activity": "2026-11-22T21:35:31.470552-06:00",
-      "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262 — 216-23, +78.36% fitted ROI"
+      "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262 — 215-24, +77.71% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -6912,8 +6919,8 @@
         "role": "Owns pick accuracy itself — hit rates, leaks and calibration",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T21:38:18.803552-06:00",
-        "headline": "Verdict: NO MILESTONE — front (b) blocked on an uncertified court for the thirty-fifth consecutive Accuracy run (Runs 72–106); ledger unchanged from Run 71's last verified state."
+        "last_activity": "2026-11-22T22:08:30.510144-06:00",
+        "headline": "Verdict: NO MILESTONE — front (c) blocked on an uncertified court for the thirty-sixth consecutive Accuracy run (Runs 72–107); ledger unchanged from Run 71's last verified state."
       },
       {
         "name": "Betting Scout",
@@ -7029,7 +7036,7 @@
         "role": "World events, stock & crypto moves × game days",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T21:07:19.943552-06:00",
+        "last_activity": "2026-11-22T22:07:29.630142-06:00",
         "headline": "No milestone. No parallel holds on both sets — this run ran no ROI test, and says so. Sub-angle headline per set — FITTED: untouched and still closed on every attachable category (Runs 4–5); no…"
       },
       {
@@ -7164,8 +7171,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-22T21:43:55.177552-06:00",
-        "headline": "VERIFIED: Arm 3 CLV Coverage enrolment (grep 4/1, meta-gate self-tests 12/12 + 11/11 re-run, receipt PASS checked 31); Arm 4 Canary Enrolment Gate (self-test 8/8 re-run, receipt FAIL 16 checked / 12…"
+        "last_activity": "2026-11-22T22:10:04.498147-06:00",
+        "headline": "Selector G424: its crowned line (216-23, +4446.73m) was computed over the pre-G619 Legacy base and could never reproduce over current bases — the true downstream failure behind faults 1-2's…"
       },
       {
         "name": "Integrity Auditor",
