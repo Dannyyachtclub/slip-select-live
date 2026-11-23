@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T08:55:42.622170-06:00",
+  "generated_at": "2026-11-23T09:00:49.208138-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-23T08:31:56.333836-06:00",
+      "last_activity": "2026-11-23T08:55:46.123825-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T08:42:03.357831-06:00",
+      "last_activity": "2026-11-23T08:57:25.190824-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T08:42:15.813831-06:00",
-      "headline": "Latest search cycle: 607"
+      "last_activity": "2026-11-23T08:56:58.293824-06:00",
+      "headline": "Latest search cycle: 608"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 608 — 2026-11-23 08:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
+      "at": "2026-11-23T08:56:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 08:56 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
+      "summary": "Eighth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy. This…",
+      "at": "2026-11-23T08:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 607 — 2026-11-23 08:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
       "at": "2026-11-23T08:41:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 07:41 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
       "summary": "Third consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy. This…",
       "at": "2026-11-23T07:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 602 — 2026-11-23 07:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
-      "at": "2026-11-23T07:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 07:26 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
-      "summary": "Second consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy. This…",
-      "at": "2026-11-23T07:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -8204,7 +8204,7 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T07:57:54.832851-06:00",
+        "last_activity": "2026-11-23T08:57:50.866824-06:00",
         "headline": "Rotation note: sub-angles used — Runs 1–67 as listed in Run 67's note, plus game net flow × soccer dogs (Run 68), game net flow × the draw, soccer (Run 69), game net flow × basketball sides (Run…"
       },
       {
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T07:59:19.701851-06:00",
-        "headline": "Best parallel: away-favourite dog value is basketball-only on the Selector era — pooled away always-dog +57.10% vs favourite −18.69% (n=21; ex-long-dog +28.18%, n=17) decomposes into basketball…"
+        "last_activity": "2026-11-23T08:59:24.612823-06:00",
+        "headline": "Best parallel: price-source concentration is not a dial — dominant-source favourites +7.81% (n=33) vs singleton +4.00% (n=24) pooled, but basketball inverts it (−0.55%, n=22 vs +1.63%, n=19), the…"
       },
       {
         "name": "Correlation Hunter",
@@ -8321,7 +8321,7 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T08:42:03.357831-06:00",
+        "last_activity": "2026-11-23T08:57:25.190824-06:00",
         "headline": "CONSEQUENCE: No audit tie-out, no census-led fight, no variants, no registry rows, no NEEDS-FREEZE spec drawn or filed this run. Spec authority audit exits 0 (log_max_arena 438, next 439) — no…"
       },
       {
