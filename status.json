@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T00:20:41.402990-06:00",
+  "generated_at": "2026-11-23T00:25:39.995634-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,14 +133,14 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-22T23:57:18.544418-06:00",
+      "last_activity": "2026-11-23T00:22:16.151418-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-23T00:00:46.693418-06:00",
+      "last_activity": "2026-11-23T00:24:59.919418-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
@@ -711,6 +711,20 @@
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "R4-G265 (loop, 2026-11-23) — NO NEW KING",
+      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Selector",
+      "kind": "generation",
+      "title": "SELECTOR R4-G458 (loop, 2026-11-23) — NO NEW KING",
+      "summary": "NO NEW KING. Sitting king ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 stands (215-24, +78.27%, highest fitted, card…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
       "agent": "Quantum",
       "kind": "generation",
       "title": "R4-G656 — Quantum generation (loop, 2026-11-23)",
@@ -876,20 +890,6 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-22 (22:42 CST) — audit + hunt (class c lead: market microstructure) — CAN'T-LIE GATE PASSED",
       "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 48,214 variant rows (LEGACY variant 8,125 + separator 1 ·…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-22 (22:12 CST) — audit + hunt (class b lead: open-source tools/data) — CAN'T-LIE GATE PASSED (first pass since 2026-11-21…",
-      "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 48,025 variant rows (LEGACY variant 8,103 + separator 1 ·…",
-      "at": "2026-11-22T00:00:00-06:00"
-    },
-    {
-      "agent": "Edge Finder",
-      "kind": "generation",
-      "title": "CYCLE 2026-11-22 (21:42 CST) — audit + hunt (class a lead: quant / sports-betting research) — COURT-STATE MILESTONE FAILURE (repeat,…",
-      "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 47,879 variant rows (LEGACY variant 8,059 + separator 1 ·…",
       "at": "2026-11-22T00:00:00-06:00"
     }
   ],
@@ -8249,8 +8249,8 @@
         "role": "Rotating attackers whose job is killing false correlations",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T23:25:22.152305-06:00",
-        "headline": "Delivery note: one line under the charter — Runs 144/145 were filed to intake ~30–60 minutes before this run and have not previously been heard in chat as good news beyond their own filings, so this…"
+        "last_activity": "2026-11-23T00:22:03.901418-06:00",
+        "headline": "Delivery note: this is a MILESTONE under the charter — a WOUNDED finding previously heard as good news: T2 was filed as SUPPORTED in Hunter Run 145 and its basketball claim was repeated as good news…"
       },
       {
         "name": "Web Keeper",
@@ -8303,8 +8303,8 @@
         "role": "The tiny honest predictor every king must beat",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-22T23:23:57.831302-06:00",
-        "headline": "Graded: MicroFish opposed the Regime comparison pick (the card line on #31-#38; graded comparison court thereafter) in 125 game(s): S31-01, S31-02, S31-03, S31-04, S31-05, S31-06, S31-07, S31-08,…"
+        "last_activity": "2026-11-23T00:24:16.756418-06:00",
+        "headline": "Court verification PASS in this run (court_state generated 2026-11-23T00:23:49-06:00, verify_court_state.py exit 0, all five kings)."
       },
       {
         "name": "PM Strategy Hunter",
