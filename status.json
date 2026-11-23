@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T05:25:38.171936-06:00",
+  "generated_at": "2026-11-23T05:30:43.020288-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,29 +140,29 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-23T05:07:34.998962-06:00",
+      "last_activity": "2026-11-23T05:29:03.011967-06:00",
       "headline": "VG26-OVR800870VETO — 191-48, +39.26% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T05:13:38.068964-06:00",
+      "last_activity": "2026-11-23T05:28:14.049967-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T05:12:39.637964-06:00",
-      "headline": "Latest search cycle: 593"
+      "last_activity": "2026-11-23T05:26:44.689966-06:00",
+      "headline": "Latest search cycle: 594"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T05:14:09.725964-06:00",
-      "headline": "Latest filing: P431"
+      "last_activity": "2026-11-23T05:27:59.897967-06:00",
+      "headline": "Latest filing: P432"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 594 — 2026-11-23 05:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T05:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 593 — 2026-11-23 05:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T05:11:00-06:00"
@@ -737,20 +744,6 @@
       "title": "Arena G462 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, 04:11 CST run) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G462, no branch DEAD, and no new best form — F2 remains parked, fully specified, awaiting its freeze. This…",
       "at": "2026-11-23T04:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 588 — 2026-11-23 03:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T03:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G461 — F1 HOUSE-VIEW (2026-11-23, 03:56 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G461, no branch DEAD, and no new best form — F1 remains NEEDS-FREEZE only beyond its standing F-E…",
-      "at": "2026-11-23T03:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -839,6 +832,13 @@
     {
       "agent": "Arena",
       "kind": "generation",
+      "title": "Arena G467 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-23, loop) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G467, no branch DEAD, and no new best form — F2 remains NEEDS-FREEZE only beyond its steam control.…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
       "title": "Arena G466 — F1 HOUSE-VIEW (2026-11-23)",
       "summary": "Verdict: NO ARENA CHAMPION, no branch DEAD — F1 remains NEEDS-FREEZE on this witness. MILESTONE: NEEDS-FREEZE spec Arena P431 completed…",
       "at": "2026-11-23T00:00:00-06:00"
@@ -848,6 +848,13 @@
       "kind": "generation",
       "title": "Arena G465 — F5 SOFT-ANGLE EXTREMES (2026-11-23, loop)",
       "summary": "Verdict: NO ARENA CHAMPION in G465, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its ELOSTRONG note.…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "R4-G277 (loop, 2026-11-23) — NO NEW KING",
+      "summary": "King VG26-OVR800870VETO re-run FIRST and tied EXACTLY (191-48, priced 227, +2227.75m, +39.26%); king dog-pick line (§9): 78 picks,…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -882,13 +889,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G272 (loop, 2026-11-23) — NO NEW KING",
-      "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G271 (loop, 2026-11-23) — NO NEW KING",
       "summary": "NO NEW KING. VG26-OVR800870VETO stands (191-48, priced 227, +2227.75m, +39.26%; dog 78 picks, 49-29, priced 72, +1626.53m, +90.36%; ball…",
       "at": "2026-11-23T00:00:00-06:00"
     }
@@ -8276,7 +8276,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T05:14:09.725964-06:00",
+        "last_activity": "2026-11-23T05:27:59.897967-06:00",
         "headline": "Hunt disposition: no new filing (class-g candidates all previously filed, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
       },
       {
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T05:13:38.068964-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KD form fought — each remains 0/239 frozen (house_disp_fav_pct header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-23T05:28:14.049967-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KE form fought — each remains 0/239 frozen (both fields header-absent in the ledger); requirement to close =…"
       },
       {
         "name": "Overseer",
