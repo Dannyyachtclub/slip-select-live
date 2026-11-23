@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:25:40.137773-06:00",
+  "generated_at": "2026-11-23T07:30:41.937790-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-23T07:08:13.966812-06:00",
+      "last_activity": "2026-11-23T07:30:27.538863-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
@@ -147,15 +147,15 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T07:12:10.460821-06:00",
+      "last_activity": "2026-11-23T07:27:19.216856-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T07:12:04.491821-06:00",
-      "headline": "Latest search cycle: 601"
+      "last_activity": "2026-11-23T07:27:08.353856-06:00",
+      "headline": "Latest search cycle: 602"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 602 — 2026-11-23 07:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
+      "at": "2026-11-23T07:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 07:26 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
+      "summary": "Second consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy. This…",
+      "at": "2026-11-23T07:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 601 — 2026-11-23 07:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
       "at": "2026-11-23T07:11:00-06:00"
@@ -723,13 +737,6 @@
       "title": "CYCLE 597 — 2026-11-23 06:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T06:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 596 — 2026-11-23 05:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T05:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -841,13 +848,6 @@
       "kind": "generation",
       "title": "Arena G470 — F5 SOFT-ANGLE EXTREMES (2026-11-23, loop) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G470, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its ELOSTRONG note.…",
-      "at": "2026-11-23T00:00:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G469 — F4 CROSS-REFERENCE (2026-11-23, loop) — COMPLETED",
-      "summary": "Verdict: NO NEW ARENA CHAMPION in G469, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only beyond the D8 control.…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -8249,8 +8249,8 @@
         "role": "Rotating attackers whose job is killing false correlations",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T06:22:39.039706-06:00",
-        "headline": "Delivery note: one line under the charter — this WOUNDED finding was filed to intake on 2026-11-23 (Hunter Run 156, ~04:42 CST, under two hours before this run) at hypothesis grade with its slip…"
+        "last_activity": "2026-11-23T07:26:27.422854-06:00",
+        "headline": "Delivery note: one line under the charter — this WOUNDED finding was filed to intake ~37 minutes before this run (Hunter Run 160, ~06:42 CST) at correlation grade and has not previously been heard…"
       },
       {
         "name": "Web Keeper",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T07:12:10.460821-06:00",
-        "headline": "CONSEQUENCE: No audit tie-out, no census-led fight, no variants, no registry rows, no NEEDS-FREEZE spec drawn or filed this run. Spec authority audit still exits 0 (log_max_arena 438, next 439) — no…"
+        "last_activity": "2026-11-23T07:27:19.216856-06:00",
+        "headline": "CONSEQUENCE: No audit tie-out, no census-led fight, no variants, no registry rows, no NEEDS-FREEZE spec drawn or filed this run. Spec authority audit exits 0 (log_max_arena 438, next 439) — no…"
       },
       {
         "name": "Overseer",
@@ -8357,8 +8357,8 @@
         "role": "Staleness check — no surface may quote a superseded king",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T07:13:24.006824-06:00",
-        "headline": "Result: MILESTONE FAILURE — broken court receipt. Nobody can tell what is stale until court_state.py can certify again (Selector reproduction over the current, post-G673 base kings must be repaired…"
+        "last_activity": "2026-11-23T07:30:30.082864-06:00",
+        "headline": "WORKLIST states: J1 OPEN (venv 1506058366 bytes still inside programme tree; proposal only). J2 OPEN (feed_snapshots slip28 111M, hidden_files slip24 111M, data_mlb/mlb_odds.json 77M still in place;…"
       },
       {
         "name": "Research Director",
