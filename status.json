@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:25:43.527669-06:00",
+  "generated_at": "2026-11-23T11:30:41.104066-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -112,7 +112,7 @@
       "name": "Legacy",
       "role": "King — market-first picking court",
       "status": "active",
-      "last_activity": "2026-11-23T10:59:57.352388-06:00",
+      "last_activity": "2026-11-23T11:27:07.396458-06:00",
       "headline": "COINFLIP64-DEAP6-SPLIT26S15-LGLENMOD17FLIP-HBHOMEDV7590FLIP-DIFFFAVNEG2510FLIP — 210-29, +71.54% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T11:15:23.824428-06:00",
+      "last_activity": "2026-11-23T11:29:23.130464-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T11:13:19.124423-06:00",
-      "headline": "Latest search cycle: 617"
+      "last_activity": "2026-11-23T11:27:43.354459-06:00",
+      "headline": "Latest search cycle: 618"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T11:14:57.766427-06:00",
-      "headline": "Latest filing: P439"
+      "last_activity": "2026-11-23T11:29:08.331463-06:00",
+      "headline": "Latest filing: P440"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,20 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 618 — 2026-11-23 11:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NOTHING implemented, no crown, no search — discovery_engine.py and optuna_tune.py still seed the superseded G586 Regime stack without…",
+      "at": "2026-11-23T11:26:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G475 — F5 SOFT-ANGLE EXTREMES (2026-11-23, 11:26 CST run) — COMPLETED",
+      "summary": "Verdict: NO NEW ARENA CHAMPION in G475, no branch DEAD, no new best form — F5 remains NEEDS-FREEZE only beyond its ELOSTRONG note.…",
+      "at": "2026-11-23T11:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 617 — 2026-11-23 11:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NOTHING implemented, no crown, no search — discovery_engine.py and optuna_tune.py still seed the superseded G586 Regime stack without…",
       "at": "2026-11-23T11:11:00-06:00"
@@ -751,20 +765,6 @@
       "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 10:11 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
       "summary": "Thirteenth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy.…",
       "at": "2026-11-23T10:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 612 — 2026-11-23 09:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NOTHING implemented, no crown, no search. The court must be repaired/reconciled by the owning work before this loop can do…",
-      "at": "2026-11-23T09:56:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G474 — F4 CROSS-REFERENCE (2026-11-23, 09:56 CST run) — ABORTED AGAIN, MILESTONE FAILURE (can't-lie consumption)",
-      "summary": "Twelfth consecutive abort of the pending G474 generation. Rotation next from G473 remains G474 — F4 CROSS-REFERENCE, carrier Legacy.…",
-      "at": "2026-11-23T09:56:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -8276,7 +8276,7 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T11:14:57.766427-06:00",
+        "last_activity": "2026-11-23T11:29:08.331463-06:00",
         "headline": "Court restored and verified in-run; class (d) hunt resumed per Director Assignment 2 and found all sport-specific ground already filed — no re-file, no new filing, no number drawn. Next rotation:…"
       },
       {
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T11:15:23.824428-06:00",
-        "headline": "Registry: ARENA court-label probe re-run this generation — a single ARENA row aborts the whole append (FATAL: not a registry pipe row; DB unchanged at 52,678 variant rows at probe), so rows filed…"
+        "last_activity": "2026-11-23T11:29:23.130464-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KM form fought — each remains 0/239 frozen (court_pace_index_tip header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
