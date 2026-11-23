@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:55:41.288084-06:00",
+  "generated_at": "2026-11-23T05:00:43.786752-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,7 +133,7 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-23T04:35:30.544955-06:00",
+      "last_activity": "2026-11-23T05:00:07.054164-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
@@ -147,22 +147,22 @@
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-23T04:43:50.803957-06:00",
+      "last_activity": "2026-11-23T04:59:08.887961-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-23T04:41:51.271957-06:00",
-      "headline": "Latest search cycle: 591"
+      "last_activity": "2026-11-23T04:57:05.126960-06:00",
+      "headline": "Latest search cycle: 592"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-23T04:43:44.500957-06:00",
-      "headline": "Latest filing: P429"
+      "last_activity": "2026-11-23T04:58:54.208961-06:00",
+      "headline": "Latest filing: P430"
     },
     {
       "name": "Loss Autopsy",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 592 — 2026-11-23 04:56 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
+      "at": "2026-11-23T04:56:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 591 — 2026-11-23 04:41 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
       "at": "2026-11-23T04:41:00-06:00"
@@ -751,20 +758,6 @@
       "title": "Arena G460 — F5 SOFT-ANGLE EXTREMES (2026-11-23, 03:41 CST run) — COMPLETED",
       "summary": "Verdict: NO ARENA CHAMPION in G460, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its standing below-gate…",
       "at": "2026-11-23T03:41:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 586 — 2026-11-23 03:26 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers NOTHING.",
-      "at": "2026-11-23T03:26:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G459 — F4 CROSS-REFERENCE (2026-11-23, 03:26 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G459, no branch DEAD, and no new best form — F4 remains NEEDS-FREEZE only. MILESTONE under the delivery…",
-      "at": "2026-11-23T03:26:00-06:00"
     },
     {
       "agent": "Stakehunter",
@@ -848,6 +841,13 @@
       "kind": "generation",
       "title": "CYCLE 2026-11-23 (02:12 CST) — audit + hunt (class a lead: quant / sports-betting research) — CAN'T-LIE GATE PASSED",
       "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 49,525 variant rows (LEGACY variant 8,318 + separator 1 ·…",
+      "at": "2026-11-23T00:00:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G465 — F5 SOFT-ANGLE EXTREMES (2026-11-23, loop)",
+      "summary": "Verdict: NO ARENA CHAMPION in G465, no branch DEAD, and no new best form — F5 remains NEEDS-FREEZE only beyond its ELOSTRONG note.…",
       "at": "2026-11-23T00:00:00-06:00"
     },
     {
@@ -8204,7 +8204,7 @@
         "role": "Wallets, prediction markets and price paths",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T03:56:40.448947-06:00",
+        "last_activity": "2026-11-23T04:56:32.694960-06:00",
         "headline": "Rotation note: sub-angles used — Runs 1–67 as listed in Run 67's note, plus game net flow × soccer dogs (Run 68), game net flow × the draw, soccer (Run 69), game net flow × basketball sides (Run…"
       },
       {
@@ -8231,8 +8231,8 @@
         "role": "How a slip was built × how it did",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-23T03:59:47.565948-06:00",
-        "headline": "Best parallel: frozen prices rot measurably with lock-to-tip gap in the price record — basketball beat-close 69.2% → 63.6% → 38.5% and mean CLV +2.38% → +1.96% → −0.55% across SHORT/MID/LONG bands…"
+        "last_activity": "2026-11-23T04:59:59.234961-06:00",
+        "headline": "Best parallel: favourite venue forward-confirms in basketball and only there — pooled HOME +6.23% (38-12, n=50) vs AWAY −18.69% (n=21), basketball HOME +13.82% (31-5, n=36, win% 86.1) vs AWAY…"
       },
       {
         "name": "Correlation Hunter",
@@ -8276,8 +8276,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-23T04:43:44.500957-06:00",
-        "headline": "Hunt disposition: no new filing (class-f candidates all previously filed or refuted, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
+        "last_activity": "2026-11-23T04:58:54.208961-06:00",
+        "headline": "TRIAGE: NEEDS-CAPTURE — no illuminance field exists in the verified field inventory in data_core/spec_triage.md and the ledger's 55-column header carries no lux column; the route is one lock-time…"
       },
       {
         "name": "Loss Autopsy",
@@ -8321,8 +8321,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-23T04:43:50.803957-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KB form fought — each remains 0/239 frozen (all four attempts fields header-absent in the ledger);…"
+        "last_activity": "2026-11-23T04:59:08.887961-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every KC form fought — each remains 0/239 frozen (both lux fields header-absent in the ledger); requirement to…"
       },
       {
         "name": "Overseer",
