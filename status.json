@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:25:42.303302-06:00",
+  "generated_at": "2026-11-22T23:30:40.848558-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -66,13 +66,13 @@
     },
     {
       "court": "Selector",
-      "name": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262",
+      "name": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78",
       "grand_king": false,
       "wins": 215,
       "losses": 24,
       "priced": 227,
-      "pnl_m": 4409.83,
-      "roi_pct": 77.71,
+      "pnl_m": 4442.08,
+      "roi_pct": 78.27,
       "set_size": 239,
       "dog_line": {
         "picks": 71,
@@ -133,8 +133,8 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-22T23:05:17.088263-06:00",
-      "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262 — 215-24, +77.71% fitted ROI"
+      "last_activity": "2026-11-22T23:30:33.512869-06:00",
+      "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +78.27% fitted ROI"
     },
     {
       "name": "Vanguard",
@@ -154,8 +154,8 @@
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-22T23:11:49.420007-06:00",
-      "headline": "Latest search cycle: 569"
+      "last_activity": "2026-11-22T23:27:11.002309-06:00",
+      "headline": "Latest search cycle: 570"
     },
     {
       "name": "Edge Finder",
@@ -685,6 +685,13 @@
     {
       "agent": "Discovery",
       "kind": "generation",
+      "title": "CYCLE 570 — 2026-11-22 23:26 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "MILESTONE — SEARCH STILL BLOCKED + VAULT COUNT CHANGED. Court-state certification holds (verify exits 0 after routine regeneration), all…",
+      "at": "2026-11-22T23:26:00-06:00"
+    },
+    {
+      "agent": "Discovery",
+      "kind": "generation",
       "title": "CYCLE 569 — 2026-11-22 23:11 CST (scheduled run, job discovery-loop-continuous)",
       "summary": "MILESTONE — SEARCH STILL BLOCKED. Court-state certification holds (verify exits 0 at start, no regeneration needed), all five kings…",
       "at": "2026-11-22T23:11:00-06:00"
@@ -751,13 +758,6 @@
       "title": "Arena G440 — F5 SOFT-ANGLE EXTREMES (2026-11-22, 22:11 CST run) — COMPLETED (first successful G440 after 111 consecutive aborts)",
       "summary": "Verdict: NO ARENA CHAMPION in G440, no branch DEAD, and no new best form — F5 remains with the K-A note testable (replicated on the new…",
       "at": "2026-11-22T22:11:00-06:00"
-    },
-    {
-      "agent": "Discovery",
-      "kind": "generation",
-      "title": "CYCLE 564 — 2026-11-22 21:56 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "AUDIT FAILURE (milestone). Court-state certification remains broken for the one-hundred-and-twelfth consecutive cycle (453-564):…",
-      "at": "2026-11-22T21:56:00-06:00"
     },
     {
       "agent": "Arena",
