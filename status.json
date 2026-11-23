@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T12:30:39.823310-06:00",
+  "generated_at": "2026-11-23T12:35:39.558555-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -45,42 +45,42 @@
     },
     {
       "court": "Quantum",
-      "name": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30",
+      "name": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30-SPLIT17HOME",
       "grand_king": false,
-      "wins": 205,
-      "losses": 34,
+      "wins": 208,
+      "losses": 31,
       "priced": 228,
-      "pnl_m": 3775.33,
-      "roi_pct": 66.23,
+      "pnl_m": 3788.1,
+      "roi_pct": 66.46,
       "set_size": 239,
       "dog_line": {
-        "picks": 66,
-        "wins": 49,
-        "losses": 17,
-        "priced": 63,
-        "pnl_m": 1917.9,
-        "roi_pct": 121.77
+        "picks": 59,
+        "wins": 47,
+        "losses": 12,
+        "priced": 56,
+        "pnl_m": 1937.9,
+        "roi_pct": 138.42
       },
       "stamp": null,
-      "crowned_on": "2026-11-21"
+      "crowned_on": "2026-11-23"
     },
     {
       "court": "Selector",
       "name": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78",
       "grand_king": false,
-      "wins": 215,
-      "losses": 24,
+      "wins": 216,
+      "losses": 23,
       "priced": 227,
-      "pnl_m": 4415.55,
-      "roi_pct": 77.81,
+      "pnl_m": 4361.83,
+      "roi_pct": 76.86,
       "set_size": 239,
       "dog_line": {
-        "picks": 69,
-        "wins": 55,
-        "losses": 14,
-        "priced": 64,
-        "pnl_m": 2336.65,
-        "roi_pct": 146.04
+        "picks": 64,
+        "wins": 53,
+        "losses": 11,
+        "priced": 59,
+        "pnl_m": 2306.65,
+        "roi_pct": 156.38
       },
       "stamp": null,
       "crowned_on": "2026-11-23"
@@ -126,15 +126,15 @@
       "name": "Quantum",
       "role": "King — model-weighted picking court",
       "status": "active",
-      "last_activity": "2026-11-23T12:05:50.189196-06:00",
-      "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30 — 205-34, +66.23% fitted ROI"
+      "last_activity": "2026-11-23T12:33:23.716247-06:00",
+      "headline": "DEVIG538FLIP-DEAP4-DOGGE10VETO-GRID8090OVRHIXHOME-REORDER11X30-SPLIT17HOME — 208-31, +66.46% fitted ROI"
     },
     {
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
       "last_activity": "2026-11-23T12:13:53.072211-06:00",
-      "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 215-24, +77.81% fitted ROI"
+      "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 216-23, +76.86% fitted ROI"
     },
     {
       "name": "Vanguard",
