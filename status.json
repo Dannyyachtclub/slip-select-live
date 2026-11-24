@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T08:10:44.470748-06:00",
+  "generated_at": "2026-11-24T08:15:46.088149-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -140,55 +140,97 @@
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-24T07:50:14.247663-06:00",
+      "last_activity": "2026-11-24T08:15:16.599314-06:00",
       "headline": "VG26-OVR800870VETO-SPLIT23HOME — 191-48, +39.87% fitted ROI"
     },
     {
       "name": "Arena",
       "role": "Proving court — exotic ideas fight here; never touches the kings",
       "status": "active",
-      "last_activity": "2026-11-24T07:59:45.018791-06:00",
+      "last_activity": "2026-11-24T08:15:14.543751-06:00",
       "headline": "Sitting champion: ARENA-F3-CHAMPXBAND-VETOFLIP"
     },
     {
       "name": "Discovery",
       "role": "Evolution search — breeds candidate kings (DEAP + Optuna)",
       "status": "active",
-      "last_activity": "2026-11-24T07:57:25.797797-06:00",
-      "headline": "Latest search cycle: 700"
+      "last_activity": "2026-11-24T08:12:03.594759-06:00",
+      "headline": "Latest search cycle: 701"
     },
     {
       "name": "Edge Finder",
       "role": "Hunts brand-new edges and files collector specs",
       "status": "active",
-      "last_activity": "2026-11-24T07:59:25.238792-06:00",
-      "headline": "Latest filing: P522"
+      "last_activity": "2026-11-24T08:14:48.812752-06:00",
+      "headline": "Latest filing: P523"
     },
     {
       "name": "Loss Autopsy",
       "role": "Studies the kings' losses to invent new rules",
       "status": "active",
-      "last_activity": "2026-11-24T07:43:16.974649-06:00",
+      "last_activity": "2026-11-24T08:13:18.297756-06:00",
       "headline": "17 gate-clearing challenger(s) banked (AUTOPSY-6, AUTOPSY-7)"
     },
     {
       "name": "Stakehunter",
       "role": "Goblin banker — hunts stake-sizing rules (proposals only; flat 25m stays the scoreboard)",
       "status": "active",
-      "last_activity": "2026-11-24T07:44:27.307651-06:00",
-      "headline": "Cycle 281: 911 sizing finding(s) banked (proposals only)"
+      "last_activity": "2026-11-24T08:14:55.467752-06:00",
+      "headline": "Cycle 282: 917 sizing finding(s) banked (proposals only)"
     },
     {
       "name": "Research Director",
       "role": "Daily manager — assigns hunting grounds, issues stop orders",
       "status": "daily",
-      "last_activity": "2026-11-23T08:15:00-06:00",
+      "last_activity": "2026-11-24T08:15:00-06:00",
       "headline": "Daily brief at 08:15 CST"
     }
   ],
   "stakehunter": {
-    "latest_cycle": 281,
+    "latest_cycle": 282,
     "findings": [
+      {
+        "id": "IS1",
+        "name": "SECMIN TIERS",
+        "cycle": 282,
+        "status": "FINDING",
+        "verdict": "Beats flat on 4 of 5 (misses only Vanguard, by 14.58m), guard intact; grand king +4,354.95 at +76.94% ROI, on less staked than flat. NOT FINDINGS: IS2 inverted control beats flat on 1 of 5 (Vanguard only), confirming IS1's…"
+      },
+      {
+        "id": "IS3",
+        "name": "SECMIN GRADED",
+        "cycle": 282,
+        "status": "FINDING",
+        "verdict": "Beats flat P&L on 5 of 5, DD guard intact everywhere (its drawdown never exceeds flat's on any king — it is BELOW flat on Legacy, Quantum, Selector and Vanguard); grand king +5,502.66 vs flat +3,989.28 at +84.24% ROI (flat…"
+      },
+      {
+        "id": "IS4",
+        "name": "HIGH-SECMIN BOOST-ONLY",
+        "cycle": 282,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, guard intact; grand king +5,113.83 at +77.31% ROI"
+      },
+      {
+        "id": "IS6",
+        "name": "SECMIN STEEP",
+        "cycle": 282,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, guard intact — the first steep dose in the recent run of cycles to stay guard-clean on all five kings; grand king +5,287.50 at +84.60% ROI"
+      },
+      {
+        "id": "IS7",
+        "name": "SECMIN × DEV",
+        "cycle": 282,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, guard intact; grand king +4,783.70 at +77.72% ROI"
+      },
+      {
+        "id": "IS8",
+        "name": "SECMIN × OWN SIDE",
+        "cycle": 282,
+        "status": "FINDING",
+        "verdict": "Beats flat on 5 of 5, guard intact; grand king +4,755.66 at +75.43% ROI"
+      },
       {
         "id": "IR1",
         "name": "SECONDMAX TIERS",
@@ -846,52 +888,24 @@
         "cycle": 254,
         "status": "FINDING",
         "verdict": "Beats flat on 5 of 5 (grand king +4,199.65) with the guard intact, but ROI is DOWN on four of five kings (up only on Vanguard) — its P&L gain is bought with ~420–1,010m more stake per king, unlike HP7/HP8 whose ROI rises…"
-      },
-      {
-        "id": "HP2",
-        "name": "KURT INVERTED",
-        "cycle": 254,
-        "status": "REFUTED",
-        "verdict": "P&L down everywhere — the mirror confirms the kurtosis direction from both sides: heavy-tailed slips are where the extra stake belongs, evenly-spread slips are not"
-      },
-      {
-        "id": "HP3",
-        "name": "KURT GRADED",
-        "cycle": 254,
-        "status": "NOT A FINDING",
-        "verdict": "5 of 5 P&L wins (grand king +4,521.13) but DD breaches on Regime (90.00 > 75.00), Selector (135.00 > 112.50) and Vanguard (370.04 > 310.25)"
-      },
-      {
-        "id": "HP4",
-        "name": "KURT BOOST-ONLY",
-        "cycle": 254,
-        "status": "NOT A FINDING",
-        "verdict": "5 of 5 P&L wins (grand king +4,860.89) but DD breaches on Regime (80.00 > 75.00), Selector (120.00 > 112.50) and Vanguard (328.92 > 310.25)"
-      },
-      {
-        "id": "HP5",
-        "name": "KURT BRAKE-ONLY",
-        "cycle": 254,
-        "status": "NOT A FINDING",
-        "verdict": "ROI up on three kings at ~460–800m less staked, P&L down everywhere"
-      },
-      {
-        "id": "HP6",
-        "name": "KURT STEEP",
-        "cycle": 254,
-        "status": "NOT A FINDING",
-        "verdict": "5 of 5 P&L wins (grand king +4,900.59, the cycle's largest raw grand-king line) but DD breaches on Regime (100.00 > 75.00), Selector (150.00 > 112.50) and Vanguard (411.15 > 310.25). ### Cycle 254 closing notes - Audit clean:…"
-      },
-      {
-        "id": "HP7",
-        "name": "KURT x DEV",
-        "cycle": 254,
-        "status": "FINDING",
-        "verdict": "Beats flat P&L on 5 of 5 kings (grand king +4,678.92 vs +3,989.28, +689.64m) with ROI up on every king (grand king +73.39% vs +69.99%; Vanguard +45.75% vs +39.87%), DD guard intact on all five. The dev gate is doing real work:…"
       }
     ]
   },
   "activity": [
+    {
+      "agent": "Discovery",
+      "kind": "generation",
+      "title": "CYCLE 701 — 2026-11-24 08:11 CST (scheduled run, job discovery-loop-continuous)",
+      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers nothing.",
+      "at": "2026-11-24T08:11:00-06:00"
+    },
+    {
+      "agent": "Arena",
+      "kind": "generation",
+      "title": "Arena G558 — F3 THROW-INCENTIVE ASYMMETRY (2026-11-24, 08:11 CST run) — COMPLETED",
+      "summary": "Verdict: NO ARENA CHAMPION in G558, no branch DEAD, and no new best form — F3's sitting champion ARENA-F3-CHAMPXBAND-VETOFLIP stands.…",
+      "at": "2026-11-24T08:11:00-06:00"
+    },
     {
       "agent": "Discovery",
       "kind": "generation",
@@ -963,18 +977,11 @@
       "at": "2026-11-24T06:56:00-06:00"
     },
     {
-      "agent": "Discovery",
+      "agent": "Edge Finder",
       "kind": "generation",
-      "title": "CYCLE 695 — 2026-11-24 06:41 CST (scheduled run, job discovery-loop-continuous)",
-      "summary": "NO search, NO candidate, NOTHING implemented, no crown. Per step 6, an idle cycle delivers nothing.",
-      "at": "2026-11-24T06:41:00-06:00"
-    },
-    {
-      "agent": "Arena",
-      "kind": "generation",
-      "title": "Arena G552 — F2 SHARP-FLOW / INSIDER FINGERPRINTS (2026-11-24, 06:41 CST run) — COMPLETED",
-      "summary": "Verdict: NO ARENA CHAMPION in G552, no branch DEAD, and no new best form — F2 remains parked beyond its B1 control note. MILESTONE:…",
-      "at": "2026-11-24T06:41:00-06:00"
+      "title": "CYCLE 2026-11-24 (08:12 CST) — audit + DS-8 census (Director's Assignment 2) + hunt (class i lead: incentive anomalies) — CAN'T-LIE GATE…",
+      "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 63,040 variant rows (LEGACY variant 9,932 + separator 1 ·…",
+      "at": "2026-11-24T00:00:00-06:00"
     },
     {
       "agent": "Edge Finder",
@@ -1012,10 +1019,17 @@
       "at": "2026-11-24T00:00:00-06:00"
     },
     {
-      "agent": "Edge Finder",
+      "agent": "Vanguard",
       "kind": "generation",
-      "title": "CYCLE 2026-11-24 (05:12 CST) — audit + hunt (class c lead: market microstructure) — CAN'T-LIE GATE PASSED",
-      "summary": "1. AUDIT OF HUNTED GROUND - Registry recount via registry_db.py count: TOTAL 61,542 variant rows (LEGACY variant 9,756 + separator 1 ·…",
+      "title": "R4-G386 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
+      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
+      "at": "2026-11-24T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "R4-G385 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
+      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
       "at": "2026-11-24T00:00:00-06:00"
     },
     {
@@ -1043,20 +1057,6 @@
       "agent": "Vanguard",
       "kind": "generation",
       "title": "R4-G381 (loop, 2026-11-24) — NO NEW KING (one above-king form accuracy-refused)",
-      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
-      "at": "2026-11-24T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G380 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
-      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
-      "at": "2026-11-24T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G379 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
       "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
       "at": "2026-11-24T00:00:00-06:00"
     },
@@ -7277,7 +7277,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7356,7 +7356,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7435,7 +7435,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7514,7 +7514,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7593,7 +7593,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7672,7 +7672,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7751,7 +7751,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7830,7 +7830,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7909,7 +7909,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7988,7 +7988,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8067,7 +8067,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8146,7 +8146,7 @@
             "clock": null,
             "period": 5,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8225,7 +8225,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8304,7 +8304,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8383,7 +8383,7 @@
             "clock": null,
             "period": 3,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8462,7 +8462,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8541,7 +8541,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8620,7 +8620,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8701,7 +8701,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8733,7 +8733,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8768,7 +8768,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8801,7 +8801,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8834,7 +8834,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8867,7 +8867,7 @@
             "clock": null,
             "period": 3,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+            "fetched_at": "2026-11-24T08:15:40.818575-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -9683,7 +9683,7 @@
         "clock": null,
         "period": 4,
         "detail": "Final",
-        "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+        "fetched_at": "2026-11-24T08:15:40.818575-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -9712,7 +9712,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+        "fetched_at": "2026-11-24T08:15:40.818575-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -9741,7 +9741,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+        "fetched_at": "2026-11-24T08:15:40.818575-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -9770,7 +9770,7 @@
         "clock": null,
         "period": 3,
         "detail": "Final/OT",
-        "fetched_at": "2026-11-24T08:10:40.302609-06:00",
+        "fetched_at": "2026-11-24T08:15:40.818575-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -10452,8 +10452,8 @@
         "role": "Price movement and lock-to-close behaviour of the kings' picks",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:32.555649-06:00",
-        "headline": "Suggested owner: Edge Finder (MID fav re-test on #42+, era mandatory; ELITE/WORST not to be filed as fav conditioners); Overseer Loop (triage)."
+        "last_activity": "2026-11-24T08:13:45.367755-06:00",
+        "headline": "Verdict: MILESTONE (negative / non-portable) — fragility trips are not a fav-pick conditioner: the positive cells (1, 2) flip by era and sport, and trips=0 loses for every king. Contrasts Run 214,…"
       },
       {
         "name": "Data Sources Scout",
@@ -10479,8 +10479,8 @@
         "role": "Watches the machine room — backups, restarts, job health",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:44:05.970650-06:00",
-        "headline": "Verdict: MEDIUM; filed to discovery_intake.md only — no spec drawn (remedies P205+P439 already filed; INFRA 0/2 today)."
+        "last_activity": "2026-11-24T08:13:56.365755-06:00",
+        "headline": "Verdict: MEDIUM; filed to discovery_intake.md only — no spec drawn (INFRA 0/2 today; remedies P205+P211+P439 already filed)."
       },
       {
         "name": "Methods Scout",
@@ -10506,8 +10506,8 @@
         "role": "Attacks the programme's own checkers and gates for holes",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:44:06.245651-06:00",
-        "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-24 (P444, P446); the guard (SNAPSHOT_AFTER_TIP/TIP_CLOCK_MISSING legs in…"
+        "last_activity": "2026-11-24T08:15:32.306081-06:00",
+        "headline": "Filed: intake entry in data_core/discovery_intake.md. NO protection spec filed: RISK is at its 2-per-day cap for 2026-11-24 (P444, P446); the guard (PARTIAL publishes no trigger + CAPTURED-only fire…"
       },
       {
         "name": "Sport Frontier Scout",
@@ -10533,8 +10533,8 @@
         "role": "Stakes, timing and execution — how a chosen bet becomes money",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:55.692650-06:00",
-        "headline": "Verdict: measured forward-sample NEGATIVE for a rule — expanding-overround games are a dead zone in-sample, but the signal is tip-time only and slip-confounded; flat 25m at book stands."
+        "last_activity": "2026-11-24T08:13:50.464386-06:00",
+        "headline": "Verdict: measured forward-sample NEGATIVE for a series-length rule — long-watch games hold the worst dogs and the largest waiting gain, but the signal is tip-time only and slip-confounded; flat 25m…"
       },
       {
         "name": "Wallet & Flow Scout",
@@ -10632,7 +10632,7 @@
         "role": "Invents new multi-way hypothesis families — one a day",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:26.604649-06:00",
+        "last_activity": "2026-11-24T08:13:19.948756-06:00",
         "headline": "Daily quota 2026-11-24: UNSPENT (0/1) at run start and still UNSPENT at run end. No new family filed; no number drawn."
       },
       {
@@ -10641,8 +10641,8 @@
         "role": "Always-on hunt for new angles and edges",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:59:25.238792-06:00",
-        "headline": "Hunt disposition: no new filing (class-h candidates all previously filed, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
+        "last_activity": "2026-11-24T08:14:48.812752-06:00",
+        "headline": "DS-8 census completed and reported above (2 quick rematches / 496 classifiable fixtures, below the >=3-changed-picks plausibility bar — census-stage, re-census as pools grow). Class-(i) hunt…"
       },
       {
         "name": "Loss Autopsy",
@@ -10650,7 +10650,7 @@
         "role": "Dissects the kings' losses for shared features",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:16.974649-06:00",
+        "last_activity": "2026-11-24T08:13:18.297756-06:00",
         "headline": "All three standing Slice-5 forms verified with fire sets AND per-fire deltas identical to their latest genuine pricings, so their refutations replicate by construction and were NOT re-traded or…"
       },
       {
@@ -10659,8 +10659,8 @@
         "role": "The court whose only job is breaking the kings",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:49.705650-06:00",
-        "headline": "Verdict: SURVIVED — no milestone. On an unchanged book the Regime R4-G673 grand king withstands Attack F a seventh time; it is NOT inversion-dependent and NOT a mirror of a shared bleed — its strict…"
+        "last_activity": "2026-11-24T08:13:52.312755-06:00",
+        "headline": "Verdict: SURVIVED — no bleed slice, no milestone. On an unchanged book the Regime R4-G673 grand king withstands Attack A an eighth time; this re-attack confirms no bleed slice has emerged since…"
       },
       {
         "name": "MicroFish",
@@ -10677,8 +10677,8 @@
         "role": "Paper prediction-market strategies, new categories of success",
         "cadence": "every 1h",
         "cadence_minutes": 60,
-        "last_activity": "2026-11-24T07:10:53.972581-06:00",
-        "headline": "Kings taken only from data_core/court_state.json after verify_court_state.py exit 0 this run (all five courts PASS; court record generated 2026-11-24T07:05:50-06:00 — Selector 216-23, +76.86%…"
+        "last_activity": "2026-11-24T08:10:54.063762-06:00",
+        "headline": "Status: BLOCKED ON NEXT CAPTURE — not a finding, not a milestone. Next substantive run is conditional: the moment the captured universe advances past 2026-11-23, continue pooled forward accumulation…"
       },
       {
         "name": "Arena",
@@ -10686,8 +10686,8 @@
         "role": "Exotic-idea proving court — walled off from the kings",
         "cadence": "every 15m",
         "cadence_minutes": 15,
-        "last_activity": "2026-11-24T07:59:45.018791-06:00",
-        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every NG form fought — each remains 0/239 frozen (counter-move fields header-absent in the ledger); requirement to…"
+        "last_activity": "2026-11-24T08:15:14.543751-06:00",
+        "headline": "DISTANCE / REQUIREMENT / HEIGHT (this generation): improvement distance = full for every NH form fought — each remains 0/239 frozen (vetmin fields header-absent in the ledger); requirement to close…"
       },
       {
         "name": "Overseer",
@@ -10695,8 +10695,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T08:03:44.621781-06:00",
-        "headline": "Risk Scout Run 237 PROVEN a new latent freeze-gate hole — owner: Freeze Engineer (roof_freeze_step.py / roof_freeze_gate.py) with Systems Engineer. A roof snapshot dated after kickoff, dated 2099,…"
+        "last_activity": "2026-11-24T08:15:00.514752-06:00",
+        "headline": "FAILURE FINDING (standing, still live; owner grading-nightly / Systems Engineer): Slip 42 grading remains OVERDUE. Grading Latency Gate live re-run this run (scratch receipt…"
       },
       {
         "name": "Integrity Auditor",
@@ -10713,7 +10713,7 @@
         "role": "Standing owner of system-parts upgrades and verification",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:44:23.557651-06:00",
+        "last_activity": "2026-11-24T08:14:05.900754-06:00",
         "headline": "Item 5: landed; slip verifier PASS this run (24 GRADED / 1 LOCKED #42)."
       },
       {
@@ -10722,7 +10722,7 @@
         "role": "Staleness check — no surface may quote a superseded king",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:42:00-06:00",
+        "last_activity": "2026-11-24T08:12:00-06:00",
         "headline": "Result: CLEAN — live SITE CLEAN and all other surfaces clean for current presentation. No surface edited, vault not read."
       },
       {
@@ -10731,8 +10731,8 @@
         "role": "Manages the hunters and assigns the hunting grounds (daily)",
         "cadence": "daily 08:15",
         "cadence_minutes": 1440,
-        "last_activity": "2026-11-23T08:15:00-06:00",
-        "headline": "Hunt disposition: no new filing (class-h candidates all previously filed, verified above); no spec number drawn this cycle; authority audit after this entry must exit 0."
+        "last_activity": "2026-11-24T08:15:00-06:00",
+        "headline": "ARENA: G558 rotation continues, but the milestone filing alternates: one generation files a NEEDS-FREEZE spec, the next must instead run a CENSUS of an already-filed Arena spec on the frozen set…"
       },
       {
         "name": "Janitor",
@@ -10749,7 +10749,7 @@
         "role": "Offline trait databases and bundle backstop for new slips",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:11.779649-06:00",
+        "last_activity": "2026-11-24T08:13:03.449757-06:00",
         "headline": "Coverage before → after: unchanged on every table — P190/P191 BRA 20/20 + URU 16/16 rows (as-of 2026-11-19T14:57:13Z); P195 27/36 CAPTURED (15 BRA + 12 URU, mgr_games non-null re-counted this run;…"
       },
       {
@@ -10758,7 +10758,7 @@
         "role": "Closes the needs-freeze queue and fixes closing-price capture",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T07:43:21.148649-06:00",
+        "last_activity": "2026-11-24T08:13:18.589756-06:00",
         "headline": "CLV fix status: PROVEN on Slip #39 (39/40 FINAL), Slip #40 (12/12 FINAL), Slip #41 (19/19 FINAL), and Slip #42 (18/18 FINAL)."
       },
       {
@@ -10839,8 +10839,8 @@
     "canary_gates": 2,
     "canary_fixtures": 2,
     "vault_seal": "INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
-    "registry": "PASS (mirror 63,040 == DB 63,040, content verified)",
-    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 63,040 == DB 63,040, content verified); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
+    "registry": "DRIFT (mirror 63,058 != DB 63,112)",
+    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry DRIFT (mirror 63,058 != DB 63,112); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
     "findings": [
       {
         "n": 1,
