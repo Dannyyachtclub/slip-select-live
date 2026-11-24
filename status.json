@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T08:35:46.195028-06:00",
+  "generated_at": "2026-11-24T08:40:46.428888-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -133,14 +133,14 @@
       "name": "Selector",
       "role": "King — chooses which king to follow, game by game",
       "status": "active",
-      "last_activity": "2026-11-24T08:10:22.689764-06:00",
+      "last_activity": "2026-11-24T08:36:30.410697-06:00",
       "headline": "ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — 216-23, +76.86% fitted ROI"
     },
     {
       "name": "Vanguard",
       "role": "King — fragility-discount picking court",
       "status": "active",
-      "last_activity": "2026-11-24T08:15:16.599314-06:00",
+      "last_activity": "2026-11-24T08:40:43.976686-06:00",
       "headline": "VG26-OVR800870VETO-SPLIT23HOME — 191-48, +39.87% fitted ROI"
     },
     {
@@ -1021,6 +1021,20 @@
     {
       "agent": "Vanguard",
       "kind": "generation",
+      "title": "R4-G388 (loop, 2026-11-24) — NO NEW KING (one above-king form REFUSED on the accuracy flag)",
+      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
+      "at": "2026-11-24T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
+      "title": "R4-G387 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
+      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
+      "at": "2026-11-24T00:00:00-06:00"
+    },
+    {
+      "agent": "Vanguard",
+      "kind": "generation",
       "title": "R4-G386 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
       "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
       "at": "2026-11-24T00:00:00-06:00"
@@ -1047,17 +1061,10 @@
       "at": "2026-11-24T00:00:00-06:00"
     },
     {
-      "agent": "Vanguard",
+      "agent": "Selector",
       "kind": "generation",
-      "title": "R4-G382 (loop, 2026-11-24) — NO NEW KING (no above-king form at any size)",
-      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
-      "at": "2026-11-24T00:00:00-06:00"
-    },
-    {
-      "agent": "Vanguard",
-      "kind": "generation",
-      "title": "R4-G381 (loop, 2026-11-24) — NO NEW KING (one above-king form accuracy-refused)",
-      "summary": "NO NEW KING. VG26-OVR800870VETO-SPLIT23HOME stands (191-48, priced 227, +2262.68m, +39.87%; dog 82 picks, 51-31, priced 76, +1647.83m,…",
+      "title": "SELECTOR R4-G533 (loop, 2026-11-24)",
+      "summary": "NO NEW KING. Sitting king ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 stands (216-23, +76.86%, highest fitted, card…",
       "at": "2026-11-24T00:00:00-06:00"
     },
     {
@@ -1092,13 +1099,6 @@
       "agent": "Selector",
       "kind": "generation",
       "title": "SELECTOR R4-G527 (loop, 2026-11-24)",
-      "summary": "NO NEW KING. Sitting king ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 stands (216-23, +76.86%, highest fitted, card…",
-      "at": "2026-11-24T00:00:00-06:00"
-    },
-    {
-      "agent": "Selector",
-      "kind": "generation",
-      "title": "SELECTOR R4-G526 (loop, 2026-11-24)",
       "summary": "NO NEW KING. Sitting king ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 stands (216-23, +76.86%, highest fitted, card…",
       "at": "2026-11-24T00:00:00-06:00"
     }
@@ -7277,7 +7277,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7356,7 +7356,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7435,7 +7435,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7514,7 +7514,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7593,7 +7593,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7672,7 +7672,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7751,7 +7751,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7830,7 +7830,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7909,7 +7909,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -7988,7 +7988,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8067,7 +8067,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8146,7 +8146,7 @@
             "clock": null,
             "period": 5,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8225,7 +8225,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8304,7 +8304,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8383,7 +8383,7 @@
             "clock": null,
             "period": 3,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8462,7 +8462,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8541,7 +8541,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8620,7 +8620,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8701,7 +8701,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8733,7 +8733,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8768,7 +8768,7 @@
             "clock": null,
             "period": 4,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8801,7 +8801,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8834,7 +8834,7 @@
             "clock": null,
             "period": 2,
             "detail": "Final",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -8867,7 +8867,7 @@
             "clock": null,
             "period": 3,
             "detail": "Final/OT",
-            "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+            "fetched_at": "2026-11-24T08:40:42.827760-06:00",
             "source": "ESPN",
             "official": false
           },
@@ -9683,7 +9683,7 @@
         "clock": null,
         "period": 4,
         "detail": "Final",
-        "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+        "fetched_at": "2026-11-24T08:40:42.827760-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -9712,7 +9712,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+        "fetched_at": "2026-11-24T08:40:42.827760-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -9741,7 +9741,7 @@
         "clock": null,
         "period": 2,
         "detail": "Final",
-        "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+        "fetched_at": "2026-11-24T08:40:42.827760-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -9770,7 +9770,7 @@
         "clock": null,
         "period": 3,
         "detail": "Final/OT",
-        "fetched_at": "2026-11-24T08:35:42.876221-06:00",
+        "fetched_at": "2026-11-24T08:40:42.827760-06:00",
         "source": "ESPN",
         "official": false
       },
@@ -10443,8 +10443,8 @@
         "role": "Owns pick accuracy itself — hit rates, leaks and calibration",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-24T08:08:47.094768-06:00",
-        "headline": "Verdict: NO MILESTONE — front (a) worked, ledger current and verified, headline unchanged."
+        "last_activity": "2026-11-24T08:38:27.813691-06:00",
+        "headline": "Verdict: NO MILESTONE — front (b) worked, no new leak; ledger unchanged."
       },
       {
         "name": "Betting Scout",
@@ -10839,8 +10839,8 @@
     "canary_gates": 2,
     "canary_fixtures": 2,
     "vault_seal": "INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
-    "registry": "PASS (mirror 63,231 == DB 63,231, content verified)",
-    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 63,231 == DB 63,231, content verified); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
+    "registry": "PASS (mirror 63,310 == DB 63,310, content verified)",
+    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 63,310 == DB 63,310, content verified); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
     "findings": [
       {
         "n": 1,
