@@ -2,16 +2,14 @@
 <html lang="en-CA">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#05070d">
-<title>Slip Select — Trade Desk</title>
-<meta name="description" content="Slip Select live trade desk: forward record, the five kings, slips and called bets, agent activity and research.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Slip Select — Live Desk</title>
 <style>
 :root{
   --bg:#05070d; --bg2:#080a13; --surface:#0b0e19; --surface2:#101527; --inset:#070912;
   --line:#262c47; --line-soft:#1a1f36; --line-faint:#12162a;
   --ink:#f4efe3; --mut:#a7adc0; --dim:#6f7690;
-  --gold:#c8a24a; --gold-hi:#eed188; --gold-deep:#6d531d;
+  --gold:#c8a24a; --gold-hi:#eed188;
   --pos:#43c98a; --neg:#e46565; --amb:#e0a44e; --cyan:#72c7dc; --vio:#a48fe0;
   --serif:Georgia,"Times New Roman",serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
@@ -20,1345 +18,396 @@
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
-  font-size:16px;line-height:1.55;overflow-x:hidden}
-.num{font-family:var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  font-size:16px;line-height:1.55}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
 .pos{color:var(--pos)} .neg{color:var(--neg)} .amb{color:var(--amb)}
 .mut{color:var(--mut)} .dim{color:var(--dim)}
 a{color:var(--gold-hi)}
-button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 :focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
-h1,h2,h3{margin:0}
-.lab{color:var(--dim);font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.wrap{max-width:760px;margin:0 auto;padding:0 14px 48px}
 
 /* ---------- top bar ---------- */
-.topbar{position:sticky;top:0;z-index:50;background:rgba(5,7,13,.96);
-  border-bottom:1px solid var(--line-soft)}
-.topbar-in{display:flex;align-items:center;gap:12px;padding:9px 0}
-.brand{display:flex;align-items:center;gap:10px;min-width:0}
-.brand-mark{flex:0 0 auto;width:30px;height:30px;color:var(--gold)}
-.brand-name{font-family:var(--serif);font-weight:700;font-size:1.02rem;letter-spacing:.22em;white-space:nowrap}
-.brand-sub{font-size:.62rem;font-weight:700;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
-.top-right{margin-left:auto;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
-.clock{font-size:.86rem;color:var(--mut)}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--pos);display:inline-block}
-.dot.stale{background:var(--amb)}
-.chip{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border:1px solid var(--line);
-  border-radius:999px;font-size:.72rem;font-weight:600;color:var(--mut);white-space:nowrap;background:var(--inset)}
-.chip.gold{color:var(--gold-hi);border-color:rgba(200,162,74,.55)}
-.chip.grn{color:var(--pos);border-color:rgba(67,201,138,.5)}
-.chip.red{color:var(--neg);border-color:rgba(228,101,101,.5)}
-.chip.amb{color:var(--amb);border-color:rgba(224,164,78,.5)}
-.chip.cyan{color:var(--cyan);border-color:rgba(114,199,220,.5)}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(5,7,13,.97);
+  border-bottom:1px solid var(--line-soft);padding:12px 14px}
+.topbar-in{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.brand-name{font-family:var(--serif);font-weight:700;font-size:1.15rem;letter-spacing:.18em}
+.brand-sub{font-size:.68rem;font-weight:700;letter-spacing:.28em;color:var(--gold);text-transform:uppercase}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--pos);display:inline-block;flex:0 0 auto}
+.updated{margin-left:auto;font-size:.85rem;color:var(--mut)}
 
-/* ---------- status strip ---------- */
-.strip{border-bottom:1px solid var(--line-soft);background:linear-gradient(180deg,var(--bg2),var(--bg))}
-.strip-in{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;padding:10px 0}
-.strip-in::-webkit-scrollbar{display:none}
-.stat{flex:0 0 auto;padding:2px 16px 2px 0;margin-right:16px;border-right:1px solid var(--line-faint)}
-.stat:last-child{border-right:0}
-.stat .v{font-size:1.06rem;font-weight:700;line-height:1.25;white-space:nowrap}
-.stat .l{font-size:.64rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);white-space:nowrap}
-.kingsrow{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 0 12px}
-.kingsrow::-webkit-scrollbar{display:none}
-.kmini{flex:0 0 auto;display:flex;align-items:center;gap:9px;background:var(--surface);
-  border:1px solid var(--line-soft);border-radius:10px;padding:7px 11px 7px 8px;min-width:172px}
-.kmini img{width:34px;height:34px;border-radius:8px;object-fit:cover;border:1px solid var(--line)}
-.kmini .kc{font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.kmini .kv{font-size:.86rem;font-weight:700}
-.kmini .ks{font-size:.68rem;color:var(--dim)}
+/* ---------- headings ---------- */
+h2.sec{font-size:1.35rem;line-height:1.25;margin:34px 0 4px;font-weight:800}
+.sec-sub{color:var(--mut);font-size:.98rem;margin:0 0 14px}
+h3{font-size:1.08rem;margin:0 0 6px}
 
-/* ---------- tabs ---------- */
-.tabs{position:sticky;top:49px;z-index:49;background:rgba(5,7,13,.97);border-bottom:1px solid var(--line)}
-.tabs-in{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
-.tabs-in::-webkit-scrollbar{display:none}
-.tab{flex:1 0 auto;padding:14px 14px;min-height:48px;display:flex;align-items:center;justify-content:center;font-size:.84rem;font-weight:700;letter-spacing:.06em;
-  color:var(--mut);border-bottom:2px solid transparent;text-transform:uppercase;text-align:center}
-.tab[aria-selected="true"]{color:var(--gold-hi);border-bottom-color:var(--gold)}
-.tabpage{display:none;padding:22px 0 42px}
-.tabpage.active{display:block}
-.sec-title{font-size:1.24rem;font-weight:800;letter-spacing:.02em;margin:0 0 5px}
-.sec-sub{color:var(--mut);font-size:.93rem;line-height:1.5;margin:0 0 16px}
-.block{margin:0 0 22px}
+/* ---------- big stat cards ---------- */
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+@media(min-width:620px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stat{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:14px}
+.stat .l{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+.stat .v{font-size:1.55rem;font-weight:800;line-height:1.2;margin-top:2px}
+.stat .s{font-size:.88rem;color:var(--mut)}
 
-/* ---------- cards & grids ---------- */
-.grid{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:760px){.grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:759px){.grid{grid-template-columns:repeat(2,1fr)}.king-stats{grid-template-columns:repeat(2,1fr)!important}}
-.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px}
-.card .v{font-size:1.38rem;font-weight:800;line-height:1.2}
-.card .l{font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--dim);margin-top:2px}
-.card .s{font-size:.78rem;color:var(--mut);margin-top:3px}
-.panel{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px}
-.panel h3{font-size:.92rem;font-weight:800;margin:0 0 8px}
+/* ---------- generic cards ---------- */
+.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:5px 0;border-bottom:1px solid var(--line-faint)}
+.row:last-child{border-bottom:0}
+.row .k{color:var(--mut)}
+.row .v{font-weight:700;text-align:right}
+.badge{display:inline-block;padding:3px 10px;border-radius:999px;font-size:.8rem;font-weight:800;
+  letter-spacing:.06em;background:rgba(200,162,74,.16);color:var(--gold-hi);border:1px solid rgba(200,162,74,.6)}
+.tag{display:inline-block;padding:2px 8px;border-radius:6px;border:1px solid var(--line);
+  font-size:.78rem;font-weight:700;color:var(--mut)}
+.res-WON{color:var(--pos);font-weight:800}.res-LOST{color:var(--neg);font-weight:800}
+.res-PUSH,.res-VOID{color:var(--amb);font-weight:800}
 
-/* ---------- tables ---------- */
-.tscroll{overflow-x:auto;border:1px solid var(--line-soft);border-radius:12px;background:var(--surface)}
-table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:560px}
-th{text-align:left;color:var(--dim);font-size:.64rem;font-weight:700;letter-spacing:.13em;
-  text-transform:uppercase;padding:9px 12px;border-bottom:1px solid var(--line);white-space:nowrap;background:var(--inset)}
-td{padding:10px 12px;border-bottom:1px solid var(--line-faint);vertical-align:top}
+/* ---------- king cards ---------- */
+.king{padding:0;overflow:hidden}
+.king-head{display:flex;gap:14px;align-items:center;padding:16px 16px 10px}
+.king-head img{width:64px;height:64px;border-radius:10px;object-fit:cover;border:1px solid var(--line);flex:0 0 auto}
+.king-name{font-size:1.6rem;font-weight:900;line-height:1.1}
+.king-sub{color:var(--mut);font-size:.92rem;margin-top:2px}
+.king-body{padding:0 16px 16px}
+.linebox{background:var(--inset);border:1px solid var(--line-faint);border-radius:10px;padding:12px 14px;margin-top:10px}
+.linebox .t{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+.linebox .big{font-size:1.25rem;font-weight:800;margin-top:2px}
+.linebox.live{border-color:rgba(67,201,138,.35)}
+.rulename{font-size:.8rem;color:var(--dim);word-break:break-word;margin-top:10px}
+
+/* ---------- comparison table + bars ---------- */
+table{width:100%;border-collapse:collapse;background:var(--surface);
+  border:1px solid var(--line-soft);border-radius:12px;overflow:hidden}
+th{text-align:left;color:var(--dim);font-size:.78rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;padding:12px;border-bottom:1px solid var(--line);background:var(--inset)}
+td{padding:12px;border-bottom:1px solid var(--line-faint);font-size:1rem;vertical-align:top}
 tr:last-child td{border-bottom:0}
-td.r,th.r{text-align:right}
-.res{font-weight:800;font-size:.72rem;letter-spacing:.08em}
-.res.WON{color:var(--pos)} .res.LOST{color:var(--neg)} .res.PUSH,.res.VOID{color:var(--amb)}
-.tag{display:inline-block;padding:1px 7px;border-radius:5px;border:1px solid var(--line);
-  font-size:.66rem;font-weight:700;letter-spacing:.07em;color:var(--mut);white-space:nowrap}
-.tag.gold{color:var(--gold-hi);border-color:rgba(200,162,74,.55)}
-.tag.grn{color:var(--pos);border-color:rgba(67,201,138,.5)}
-.tag.red{color:var(--neg);border-color:rgba(228,101,101,.5)}
-.tag.amb{color:var(--amb);border-color:rgba(224,164,78,.5)}
+@media(max-width:560px){
+  table,thead,tbody,tr,td{display:block;width:100%}
+  thead{display:none}
+  tr{border-bottom:1px solid var(--line);padding:8px 0}
+  tr:last-child{border-bottom:0}
+  td{border-bottom:0;padding:5px 14px}
+  td::before{content:attr(data-l);display:block;font-size:.75rem;font-weight:700;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--dim)}
+}
+.bar-row{margin:12px 0}
+.bar-lab{display:flex;justify-content:space-between;gap:10px;font-weight:700;margin-bottom:4px}
+.bar-track{background:var(--inset);border:1px solid var(--line-faint);border-radius:6px;height:22px;overflow:hidden}
+.bar-fill{height:100%}
+.bar-fill.p{background:var(--pos)} .bar-fill.n{background:var(--neg)}
 
-/* ---------- slips ---------- */
-.slip{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px;margin:0 0 14px}
-.slip-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
-.slip-head .n{font-size:1rem;font-weight:800}
-.slip-head .d{color:var(--mut);font-size:.8rem}
-.slip-head .best{margin-left:auto;font-size:.78rem;color:var(--mut)}
-.pickrows{display:grid;gap:6px;margin-top:10px}
-@media(min-width:760px){.pickrows{grid-template-columns:1fr 1fr}}
-.pickrow{display:flex;gap:8px;align-items:baseline;background:var(--inset);border:1px solid var(--line-faint);
-  border-radius:8px;padding:7px 10px;font-size:.82rem}
-.pickrow .k{flex:0 0 86px}
-.pickrow .p{font-weight:600;overflow-wrap:anywhere}
-.pickrow .o{margin-left:auto;text-align:right;white-space:nowrap}
-.krec{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
-.krec .kr{background:var(--inset);border:1px solid var(--line-faint);border-radius:8px;padding:5px 9px;font-size:.74rem}
-details.games{margin-top:10px}
-details.games summary{cursor:pointer;color:var(--gold-hi);font-size:.8rem;font-weight:700;padding:4px 0}
-details.games table{min-width:640px}
+/* ---------- lists ---------- */
+.item{padding:10px 0;border-bottom:1px solid var(--line-faint)}
+.item:last-child{border-bottom:0}
+.item .t{font-weight:700}
+.item .s{color:var(--mut);font-size:.93rem}
 
-/* ---------- kings ---------- */
-.king{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:16px;margin:0 0 14px;overflow:hidden}
-.king-head{display:flex;gap:12px;align-items:center}
-.king-head img{width:52px;height:52px;border-radius:10px;object-fit:cover;border:1px solid var(--line)}
-.king-head .kc{font-size:.7rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.king-head .kn{font-weight:700;font-size:.86rem;overflow-wrap:anywhere}
-.king-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
-@media(min-width:760px){.king-stats{grid-template-columns:repeat(6,1fr)}}
-.king-stats .cell{background:var(--inset);border:1px solid var(--line-faint);border-radius:8px;padding:8px 10px}
-.king-stats .v{font-size:1rem;font-weight:800}
-.king-stats .l{font-size:.6rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--dim)}
-
-/* ---------- activity / research ---------- */
-.feed{display:grid;gap:8px}
-.evt{background:var(--surface);border:1px solid var(--line-soft);border-radius:10px;padding:13px 14px}
-.evt .meta{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:.72rem;color:var(--dim)}
-.evt .t{font-weight:700;font-size:.88rem;margin-top:3px;overflow-wrap:anywhere}
-.evt .s{color:var(--mut);font-size:.82rem;margin-top:2px;overflow-wrap:anywhere}
-.agent{display:flex;gap:10px;align-items:flex-start;background:var(--surface);
-  border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
-.agent img{width:38px;height:38px;border-radius:8px;object-fit:cover;border:1px solid var(--line)}
-.agent .an{font-weight:800;font-size:.88rem}
-.agent .ar{color:var(--mut);font-size:.78rem}
-.agent .ah{color:var(--dim);font-size:.78rem;margin-top:2px;overflow-wrap:anywhere}
-.agent .when{margin-left:auto;text-align:right;font-size:.7rem;color:var(--dim);white-space:nowrap}
-.finding{border-bottom:1px solid var(--line-faint);padding:9px 0}
-.finding:last-child{border-bottom:0}
-.finding .fh{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
-.finding .fn{font-weight:700;font-size:.86rem}
-.finding .fv{color:var(--mut);font-size:.8rem;margin-top:2px}
-.foot{border-top:1px solid var(--line-soft);padding:16px 0 26px;color:var(--dim);font-size:.76rem}
-.empty{color:var(--dim);font-size:.86rem;padding:10px 0}
-.err{background:#2a1215;border:1px solid rgba(228,101,101,.5);color:#f3c1c1;border-radius:10px;padding:12px 14px;font-size:.86rem}
+/* ---------- tucked sections ---------- */
+details{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;margin-bottom:12px}
+details summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px;
+  padding:12px 16px;font-weight:800;font-size:1.05rem;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";margin-left:auto;color:var(--gold-hi);font-size:1.3rem}
+details[open ] summary::after{content:"\2212"}
+details .inner{padding:0 16px 16px}
+.err{background:rgba(228,101,101,.12);border:1px solid rgba(228,101,101,.5);border-radius:12px;
+  padding:16px;color:var(--ink)}
+footer{color:var(--dim);font-size:.88rem;margin-top:36px;text-align:center}
 </style>
 </head>
 <body>
+<header class="topbar"><div class="topbar-in">
+  <div><div class="brand-name">SLIP SELECT</div><div class="brand-sub">Live Desk</div></div>
+  <span class="dot" id="dot"></span>
+  <div class="updated" id="updated">Loading…</div>
+</div></header>
 
-<header class="topbar">
-  <div class="wrap topbar-in">
-    <div class="brand">
-      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-        <path d="M24 5 L29 15 L24 12.4 L19 15 Z" fill="currentColor" opacity=".95"/>
-        <path d="M10 12 L18.5 18.5 L14.8 19.4 L8.5 17 Z" fill="currentColor" opacity=".6"/>
-        <path d="M38 12 L29.5 18.5 L33.2 19.4 L39.5 17 Z" fill="currentColor" opacity=".6"/>
-        <path d="M24 12.5 C30 16 33 21 32.4 27.5 C32 32 29 36.5 24 43 C19 36.5 16 32 15.6 27.5 C15 21 18 16 24 12.5 Z" fill="currentColor" opacity=".88"/>
-        <circle cx="20.6" cy="24.5" r="1.5" fill="#05070d"/><circle cx="27.4" cy="24.5" r="1.5" fill="#05070d"/>
-      </svg>
-      <div>
-        <div class="brand-name">SLIP&nbsp;SELECT</div>
-        <div class="brand-sub">Trade Desk</div>
-      </div>
-    </div>
-    <div class="top-right">
-      <span class="chip" id="live-chip"><span class="dot" id="live-dot"></span><span id="live-txt">Live</span></span>
-      <span class="clock num" id="clock">—</span>
-      <span class="chip gold" id="updated">Regina · loading…</span>
-    </div>
-  </div>
-</header>
-
-<div class="strip">
-  <div class="wrap">
-    <div class="strip-in" id="strip"><div class="glide-track" id="strip-track"></div></div>
-    <div class="kingsrow" id="kingsrow"><div class="glide-track" id="kings-track"></div></div>
-  </div>
-</div>
-
-<div class="wrap"><div id="stale-banner" class="stale-banner" hidden></div></div>
-
-<nav class="tabs" aria-label="Desk sections">
-  <div class="wrap tabs-in" id="tabs" role="tablist">
-    <button class="tab" role="tab" data-tab="overview" aria-selected="true">Overview</button>
-    <button class="tab" role="tab" data-tab="slips" aria-selected="false">Slips &amp; Bets</button>
-    <button class="tab" role="tab" data-tab="kings" aria-selected="false">Kings</button>
-    <button class="tab" role="tab" data-tab="activity" aria-selected="false">Activity</button>
-    <button class="tab" role="tab" data-tab="research" aria-selected="false">Research</button>
-  </div>
-</nav>
-
-<main class="wrap">
-  <section class="tabpage active" id="page-overview" role="tabpanel"></section>
-  <section class="tabpage" id="page-slips" role="tabpanel"></section>
-  <section class="tabpage" id="page-kings" role="tabpanel"></section>
-  <section class="tabpage" id="page-activity" role="tabpanel"></section>
-  <section class="tabpage" id="page-research" role="tabpanel"></section>
+<main class="wrap" id="app">
   <div id="fatal"></div>
-  <footer class="foot" id="foot"></footer>
+  <div id="content"><p class="mut">Loading the desk…</p></div>
+  <footer>Slip Select — every number on this page comes straight from the programme's own record.</footer>
 </main>
 
 <script>
-"use strict";
-/* ============ Slip Select Trade Desk — renders entirely from status.json ============ */
-const TZ = "America/Regina";
-const $ = (id) => document.getElementById(id);
-const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const isNum = (v) => typeof v === "number" && isFinite(v);
-const fmtM = (v, dp) => isNum(v) ? (v > 0 ? "+" : "") + v.toLocaleString("en-CA",{minimumFractionDigits:(dp==null?2:dp),maximumFractionDigits:(dp==null?2:dp)}) + "m" : "—";
-const fmtPct = (v) => isNum(v) ? (v > 0 ? "+" : "") + v.toFixed(2) + "%" : "—";
-const fmtPrice = (v) => isNum(v) ? (Math.round(v*1000)/1000).toString() : "—";
-const cls = (v) => isNum(v) ? (v > 0 ? "pos" : v < 0 ? "neg" : "") : "";
-const dFmt = new Intl.DateTimeFormat("en-CA",{timeZone:TZ,month:"short",day:"numeric"});
-const tFmt = new Intl.DateTimeFormat("en-CA",{timeZone:TZ,hour:"numeric",minute:"2-digit",hour12:true});
-const dtFmt = new Intl.DateTimeFormat("en-CA",{timeZone:TZ,month:"short",day:"numeric",hour:"numeric",minute:"2-digit",hour12:true});
-const clockFmt = new Intl.DateTimeFormat("en-CA",{timeZone:TZ,hour:"numeric",minute:"2-digit",second:"2-digit",hour12:true});
-function fmtDay(iso){ if(!iso) return "—"; const d = new Date(iso); return isNaN(d) ? "—" : dFmt.format(d); }
-function fmtTime(iso){ if(!iso) return "—"; const d = new Date(iso); return isNaN(d) ? "—" : tFmt.format(d); }
-function fmtDT(iso){ if(!iso) return "—"; const d = new Date(iso); return isNaN(d) ? "—" : dtFmt.format(d); }
-function resChip(r){ return r ? '<span class="res ' + esc(r) + '">' + esc(r) + "</span>" : '<span class="dim">—</span>'; }
+/* ============ Slip Select Live Desk — renders entirely from status.json ============ */
 const COURT_IMG = {Legacy:"assets/legacy.jpg",Regime:"assets/regime.jpg",Quantum:"assets/quantum.jpg",Selector:"assets/selector.jpg",Vanguard:"assets/vanguard.jpg"};
 const AGENT_IMG = {Legacy:"assets/legacy.jpg",Regime:"assets/regime.jpg",Quantum:"assets/quantum.jpg",Selector:"assets/selector.jpg",Vanguard:"assets/vanguard.jpg",Arena:"assets/arena.jpg",Discovery:"assets/discovery.jpg","Edge Finder":"assets/edgefinder.jpg","Loss Autopsy":"assets/autopsy.jpg",Stakehunter:"assets/stakehunter.jpg","Research Director":"assets/director.jpg",Vault:"assets/vault.jpg"};
+let S = null;
 
-let S = null;           /* status.json payload */
-const REDUCED = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
-let activeTab = "overview";
-
-/* ---------- clock: one basis, America/Regina, labelled ---------- */
-function tickClock(){
-  $("clock").textContent = clockFmt.format(new Date()) + " Regina";
-}
-setInterval(tickClock, 1000); tickClock();
-
-/* ---------- tabs ---------- */
-$("tabs").addEventListener("click", (e) => {
-  const b = e.target.closest(".tab"); if(!b) return;
-  activeTab = b.dataset.tab;
-  document.querySelectorAll(".tab").forEach((t) => t.setAttribute("aria-selected", t.dataset.tab === activeTab ? "true" : "false"));
-  document.querySelectorAll(".tabpage").forEach((p) => p.classList.toggle("active", p.id === "page-" + activeTab));
-  window.scrollTo({top:0});
-});
-
-/* ---------- status strip: forward record leads, kings follow ---------- */
-function renderStrip(){
-  const f = S.forward || {}, b = S.bankroll || {}, v = S.vault || {};
-  const cb = f.chosen_bets || {}, cf = f.confidence || {};
-  const cells = [];
-  if (isNum(cb.wins)) cells.push({v: cb.wins + "-" + cb.losses, l: "Forward · Chosen bets", c: cls(cb.pnl_m), s: fmtM(cb.pnl_m)});
-  if (isNum(cf.wins)) cells.push({v: cf.wins + "-" + cf.losses, l: "Forward · Confidence", c: cls(cf.pnl_m), s: fmtM(cf.pnl_m)});
-  if (b.record) cells.push({v: b.record, l: "Called bets · Record", c: cls(b.settled_pnl_m), s: fmtM(b.settled_pnl_m)});
-  if (isNum(b.winrate_pct)) cells.push({v: b.winrate_pct.toFixed(1) + "%", l: "Called bets · Win rate", c: "", s: ""});
-  if (isNum(v.count)) cells.push({v: String(v.count), l: "Vault · Sealed games", c: "", s: v.next_opening ? "opens " + v.next_opening : ""});
-  const grand = (S.kings || []).find((k) => k.grand_king);
-  if (grand) cells.push({v: esc(grand.court), l: "Grand King", c: "", s: fmtPct(grand.roi_pct) + " practice"});
-  const stripHTML = cells.map((c) =>
-    '<div class="stat"><div class="v num ' + c.c + '">' + c.v + (c.s ? ' <span style="font-size:.8rem">' + c.s + "</span>" : "") + '</div><div class="l">' + c.l + "</div></div>"
-  ).join("");
-  $("strip-track").innerHTML = stripHTML + stripHTML;
-  const kingsHTML = (S.kings || []).map((k) =>
-    '<div class="kmini' + (isFreshCrown(k) ? " pulse-gold" : "") + '" data-king="' + esc(k.court) + '" role="button" tabindex="0" title="King detail">' +
-      (COURT_IMG[k.court] ? '<img src="' + COURT_IMG[k.court] + '" alt="" loading="lazy">' : "") +
-      '<div><div class="kc">' + esc(k.court) + (k.grand_king ? ' <span class="tag gold">\u2605 Grand</span>' : "") + (isFreshCrown(k) ? ' <span class="tag gold">\u2605 New crown</span>' : "") + "</div>" +
-      '<div class="kv num">' + k.wins + "-" + k.losses + ' · <span class="' + cls(k.roi_pct) + '">' + fmtPct(k.roi_pct) + "</span></div>" +
-      '<div class="ks">practice score · fitted</div></div></div>'
-  ).join("");
-  $("kings-track").innerHTML = kingsHTML + kingsHTML;
-  setupGlides();
-  const gen = S.generated_at ? new Date(S.generated_at) : null;
-  $("updated").textContent = "Data as of " + (gen && !isNaN(gen) ? dtFmt.format(gen) : "—") + " Regina";
-  const stale = gen && !isNaN(gen) && (Date.now() - gen.getTime() > 15 * 60 * 1000);
-  $("live-dot").className = "dot" + (stale ? " stale" : "");
-  $("live-txt").textContent = stale ? "Stale" : "Live";
-  checkStale();
+function esc(x){return String(x==null?"":x).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function num(x){return x==null?"—":String(x);}
+function m(x){return x==null?"—":String(x)+"m";}
+function pct(x){return x==null?"—":String(x)+"%";}
+function cls(x){return (typeof x==="number"&&x<0)?"neg":(typeof x==="number"&&x>0)?"pos":"";}
+function rec(w,l){return num(w)+"-"+num(l);}
+function when(ts){
+  if(!ts) return "—";
+  const d=new Date(ts);
+  return isNaN(d)?esc(ts):d.toLocaleString("en-CA",{timeZone:"America/Regina",dateStyle:"medium",timeStyle:"short"});
 }
 
-/* ---------- stale-data banner: judges the age of status.json itself ----------
-   If the data file is more than ~10 minutes old when viewed, say so loudly.
-   This judges the file's own generated_at stamp — never invented data. */
-function checkStale(){
-  const el = $("stale-banner");
-  if(!el) return;
-  if(!S || !S.generated_at){ el.hidden = true; return; }
-  const gen = new Date(S.generated_at);
-  const ageMin = (Date.now() - gen.getTime()) / 60000;
-  if(!isNaN(ageMin) && ageMin > 10){
-    el.hidden = false;
-    el.innerHTML = "<strong>Stale data.</strong> These figures are as of " + dtFmt.format(gen) +
-      " Regina (" + Math.round(ageMin) + " min old). The desk refreshes every 5 minutes — " +
-      "if this banner persists, the refresh job needs attention.";
-  } else {
-    el.hidden = true;
-  }
-}
-setInterval(checkStale, 30000);
-
-/* =====================================================================
-   COMPONENT SYSTEM — how this desk is built (read before adding widgets)
-   - Every tab page is a list of WIDGETS: small functions (S) => htmlString,
-     registered in the WIDGETS map below under their tab name.
-   - To add a widget later: write one function, add it to the tab's array.
-     No restructuring of the page, tabs or loader is needed.
-   - Shared building blocks: statTile(), panel(), tableWrap(), tag(), and
-     the modal (openModal/closeModal) for detail views.
-   - Interactivity is delegated: clicks on [data-king], [data-bet],
-     [data-slip-games] etc. are handled once, centrally, near the bottom.
-   ===================================================================== */
-
-/* ---------- extra component styles (injected so the base sheet stays lean) ---------- */
-(function injectCSS(){
-  const css = `
-  .glide-track{display:flex;gap:inherit;width:max-content;will-change:transform}
-  #kings-track{gap:0} #kings-track .kmini{margin-right:8px}
-  #strip-track{gap:0}
-  .strip-in,.kingsrow{overflow:hidden;cursor:grab;touch-action:pan-y}
-  .strip-in .stat{flex:0 0 auto}
-  @keyframes pulseGold{0%,100%{box-shadow:0 0 0 0 rgba(200,162,74,0)}50%{box-shadow:0 0 0 3px rgba(200,162,74,.55)}}
-  @keyframes pulseLive{0%,100%{box-shadow:0 0 0 0 rgba(67,201,138,0)}50%{box-shadow:0 0 0 3px rgba(67,201,138,.5)}}
-  @keyframes pulseAmb{0%,100%{box-shadow:0 0 0 0 rgba(224,164,78,0)}50%{box-shadow:0 0 0 3px rgba(224,164,78,.55)}}
-  .pulse-gold{animation:pulseGold 2.2s ease-in-out infinite;border-color:rgba(200,162,74,.7)!important}
-  .pulse-live{animation:pulseLive 2.2s ease-in-out infinite;border-color:rgba(67,201,138,.6)!important}
-  .pulse-amb{animation:pulseAmb 2.2s ease-in-out infinite;border-color:rgba(224,164,78,.65)!important}
-  @keyframes shimmer{0%{background-position:-400px 0}100%{background-position:400px 0}}
-  .crown-banner{background:linear-gradient(100deg,var(--surface) 30%,#1a1607 50%,var(--surface) 70%);
-    background-size:400px 100%;animation:shimmer 3.2s linear infinite;
-    border:1px solid rgba(200,162,74,.65);border-radius:12px;padding:13px 14px;margin:0 0 14px}
-  .crown-banner .t{font-weight:800;font-size:.98rem;color:var(--gold-hi)}
-  .crown-banner .s{color:var(--mut);font-size:.84rem;margin-top:2px}
-  .tabpage{animation:fadeSlide .28s ease both}
-  @keyframes fadeSlide{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
-  details.games .games-body{animation:fadeSlide .25s ease both}
-  .filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
-  .filters select,.filters input{background:var(--inset);color:var(--ink);border:1px solid var(--line);
-    border-radius:8px;padding:7px 9px;font-size:.82rem;max-width:100%}
-  .filters .flab{font-size:.66rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--dim)}
-  .fchip{padding:6px 11px;border:1px solid var(--line);border-radius:999px;font-size:.76rem;font-weight:700;color:var(--mut)}
-  .fchip[aria-pressed="true"]{color:var(--gold-hi);border-color:rgba(200,162,74,.6);background:var(--inset)}
-  tr.clickable{cursor:pointer} tr.clickable:hover td{background:var(--surface2)}
-  .kmini{cursor:pointer} .king-head{cursor:pointer}
-  .modal-veil{position:fixed;inset:0;background:rgba(2,3,7,.72);z-index:100;display:none;
-    align-items:flex-end;justify-content:center}
-  .modal-veil.open{display:flex}
-  @media(min-width:760px){.modal-veil{align-items:center}}
-  .modal{background:var(--surface);border:1px solid var(--line);border-radius:16px 16px 0 0;
-    width:100%;max-width:640px;max-height:86vh;overflow-y:auto;padding:18px;animation:fadeSlide .25s ease both}
-  @media(min-width:760px){.modal{border-radius:16px}}
-  .modal .m-head{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px}
-  .modal .m-title{font-weight:800;font-size:1rem;overflow-wrap:anywhere}
-  .modal .m-sub{color:var(--mut);font-size:.8rem}
-  .modal .m-close{margin-left:auto;flex:0 0 auto;width:34px;height:34px;border:1px solid var(--line);
-    border-radius:9px;color:var(--mut);font-size:1rem;line-height:1}
-  .kv-rows{display:grid;gap:6px}
-  .kv-row{display:flex;gap:10px;justify-content:space-between;border-bottom:1px solid var(--line-faint);padding:6px 0;font-size:.86rem}
-  .kv-row:last-child{border-bottom:0}
-  .kv-row .k{color:var(--dim)} .kv-row .v{font-weight:700;text-align:right;overflow-wrap:anywhere}
-  .flash-up{transition:color .3s} .flash-up.go{color:var(--pos)!important} .flash-dn.go{color:var(--neg)!important}
-  .streak{display:inline-flex;align-items:center;gap:6px;color:var(--gold-hi);font-weight:800}
-  .tile-note{font-size:.74rem;color:var(--dim);margin-top:2px}
-
-  /* ===== v2 enhancement: readability, banners, segmented sub-tabs, stars, fireworks ===== */
-  .filters select,.filters input{min-height:44px}
-  .fchip{min-height:44px;display:inline-flex;align-items:center}
-  details.games summary{min-height:44px;display:flex;align-items:center;font-size:.86rem}
-  .pickrow{padding:10px 12px;font-size:.86rem}
-  .evt .t{font-size:.94rem} .evt .s{font-size:.87rem;line-height:1.5}
-  .seg{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;background:var(--inset);
-    border:1px solid var(--line-soft);border-radius:12px;padding:5px;margin:0 0 16px}
-  .seg::-webkit-scrollbar{display:none}
-  .seg button{flex:1 0 auto;min-height:44px;padding:9px 14px;border-radius:8px;font-size:.8rem;
-    font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--mut);white-space:nowrap}
-  .seg button[aria-pressed="true"]{background:var(--surface2);color:var(--gold-hi);
-    box-shadow:inset 0 0 0 1px rgba(200,162,74,.55)}
-  .hero{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:0 0 18px;
-    background:linear-gradient(100deg,#05070d 30%,rgba(5,7,13,.55) 65%,rgba(5,7,13,.25)),var(--surface)}
-  .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;z-index:0}
-  .hero .hero-in{position:relative;z-index:1;padding:20px 18px}
-  .hero .hero-k{font-size:.66rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-hi)}
-  .hero .hero-t{font-family:var(--serif);font-size:1.45rem;font-weight:700;line-height:1.2;margin-top:5px}
-  .hero .hero-s{color:var(--mut);font-size:.9rem;margin-top:5px;max-width:52ch}
-  .hero .hero-chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}
-  .sbanner{display:flex;align-items:center;gap:13px;border:1px solid var(--line-soft);border-radius:14px;
-    padding:12px 14px;margin:0 0 16px;background:linear-gradient(100deg,var(--surface2),var(--surface) 70%);overflow:hidden}
-  .sbanner img{width:54px;height:54px;border-radius:10px;object-fit:cover;border:1px solid var(--line);flex:0 0 auto}
-  .sbanner .bt{font-weight:800;font-size:1rem}
-  .sbanner .bs{color:var(--mut);font-size:.84rem}
-  .king-banner{height:64px;border-radius:9px;overflow:hidden;margin:-4px -4px 12px;position:relative}
-  .king-banner img{width:100%;height:100%;object-fit:cover;display:block}
-  .king-banner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(5,7,13,.55))}
-  .star{color:var(--gold-hi);font-style:normal}
-  .slip.won{border-color:rgba(67,201,138,.55);box-shadow:inset 4px 0 0 var(--pos)}
-  .slip.crowned{border-color:rgba(200,162,74,.6);box-shadow:inset 4px 0 0 var(--gold)}
-  tr.starred td:first-child{box-shadow:inset 3px 0 0 var(--gold)}
-  .fw-veil{position:fixed;inset:0;z-index:200;background:transparent}
-  .fw-veil canvas{width:100%;height:100%;display:block}
-  .fw-hint{position:absolute;left:50%;bottom:9%;transform:translateX(-50%);background:rgba(5,7,13,.85);
-    border:1px solid rgba(200,162,74,.6);color:var(--gold-hi);border-radius:999px;padding:7px 14px;
-    font-size:.78rem;font-weight:700;white-space:nowrap}
-  @keyframes kenburns{from{transform:scale(1)}to{transform:scale(1.07)}}
-  .hero img.bg{animation:kenburns 14s ease-in-out infinite alternate}
-
-  /* ===== v3: workforce, charts, pipeline, liveness, truthfulness ===== */
-  .stale-banner{background:#2a2110;border:1px solid rgba(224,164,78,.7);color:#f3dfae;
-    border-radius:10px;padding:11px 14px;font-size:.88rem;margin:12px 0 0;line-height:1.5}
-  .src-line{color:var(--dim);font-size:.74rem;line-height:1.5;border-top:1px solid var(--line-faint);
-    padding-top:8px;margin:14px 0 0}
-  .sdot{width:9px;height:9px;border-radius:50%;display:inline-block;flex:0 0 auto;background:var(--dim)}
-  .sdot.live{background:var(--pos);animation:pulseLive 2.2s ease-in-out infinite}
-  .sdot.quiet{background:var(--amb)}
-  .sdot.stale{background:var(--neg)}
-  .sdot.none{background:var(--dim);opacity:.5}
-  .group-h{font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
-    color:var(--gold-hi);margin:18px 0 8px}
-  .wf-grid{display:grid;gap:10px;grid-template-columns:1fr}
-  @media(min-width:760px){.wf-grid{grid-template-columns:1fr 1fr}}
-  .wf-card{background:var(--surface);border:1px solid var(--line-soft);border-radius:10px;padding:12px 14px}
-  .wf-card .wf-top{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-  .wf-card .an{font-weight:800;font-size:.9rem}
-  .wf-card .ar{color:var(--mut);font-size:.8rem;margin-top:3px}
-  .wf-card .ah{color:var(--ink);font-size:.84rem;margin-top:5px;line-height:1.5;overflow-wrap:anywhere}
-  .wf-card .when{color:var(--dim);font-size:.72rem;margin-top:6px}
-  .wf-minis{display:grid;gap:8px;grid-template-columns:1fr}
-  @media(min-width:760px){.wf-minis{grid-template-columns:1fr 1fr}}
-  .wf-mini{display:flex;gap:9px;align-items:center;background:var(--surface);
-    border:1px solid var(--line-soft);border-radius:10px;padding:9px 12px;min-height:44px}
-  .wf-mini .an{font-weight:800;font-size:.86rem}
-  .wf-mini .ar{color:var(--dim);font-size:.74rem}
-  .chart-svg{width:100%;height:auto;display:block}
-  .chart-note{font-size:.74rem;color:var(--dim);margin-top:6px;line-height:1.5}
-  .pipe-svg{width:100%;height:auto;display:block;max-width:560px;margin:0 auto}
-  .svg-box{fill:var(--surface2);stroke:var(--line)}
-  .svg-box-gold{fill:var(--surface2);stroke:rgba(200,162,74,.7)}
-  .svg-box-watch{fill:var(--inset);stroke:rgba(114,199,220,.55);stroke-dasharray:5 4}
-  .svg-t{fill:var(--ink);font-weight:700}
-  .svg-s{fill:var(--mut)}
-  .svg-arrow{stroke:var(--gold);stroke-width:1.6}
-  .truth-finding{border-left:3px solid var(--neg);background:var(--inset);border-radius:0 8px 8px 0;
-    padding:8px 11px;font-size:.85rem;line-height:1.5;margin-top:7px;overflow-wrap:anywhere}
-  @media (prefers-reduced-motion: reduce){
-    *,*::before,*::after{animation:none!important;transition:none!important}
-  }
-
-  `;
-  const el = document.createElement("style"); el.textContent = css; document.head.appendChild(el);
-})();
-
-/* ---------- gliding strip: continuous slow glide, drag while touched, resumes on release ----------
-   Standing user rule: the strip glides on its own, can be dragged while touched,
-   and resumes sliding the moment the touch ends — never stays paused, no jump-cuts. */
-const glides = [];
-function makeGlide(viewportId, trackId){
-  const vp = $(viewportId), track = $(trackId);
-  if(!vp || !track) return null;
-  const g = {vp, track, off: 0, dragging: false, lastX: 0, half: 0, raf: 0};
-  const measure = () => { g.half = track.scrollWidth / 2; };
-  const step = () => {
-    if(!g.dragging && g.half > vp.clientWidth + 4){
-      g.off -= 0.45;                                   /* ~27px/s at 60fps — slow glide */
-      if(-g.off >= g.half) g.off += g.half;            /* seamless wrap, no jump-cut */
-      track.style.transform = "translateX(" + g.off + "px)";
-    }
-    g.raf = requestAnimationFrame(step);
-  };
-  vp.addEventListener("pointerdown", (e) => { g.dragging = true; g.lastX = e.clientX; vp.setPointerCapture(e.pointerId); });
-  vp.addEventListener("pointermove", (e) => {
-    if(!g.dragging) return;
-    const dx = e.clientX - g.lastX;
-    g.off += dx; g.lastX = e.clientX; g.moved = (g.moved || 0) + Math.abs(dx);
-    if(g.half > 0){ if(g.off > 0) g.off -= g.half; if(-g.off >= g.half) g.off += g.half; }
-    track.style.transform = "translateX(" + g.off + "px)";
-  });
-  const end = () => { if(g.moved > 6) window.__lastDragEnd = Date.now(); g.moved = 0; g.dragging = false; };  /* release -> the loop resumes gliding */
-  vp.addEventListener("pointerup", end); vp.addEventListener("pointercancel", end);
-  measure(); step();
-  g.remeasure = measure;
-  return g;
-}
-let stripGlide = null, kingsGlide = null;
-function setupGlides(){
-  if(!stripGlide) stripGlide = makeGlide("strip", "strip-track");
-  if(!kingsGlide) kingsGlide = makeGlide("kingsrow", "kings-track");
-  requestAnimationFrame(() => { if(stripGlide) stripGlide.remeasure(); if(kingsGlide) kingsGlide.remeasure(); });
+/* ---------- 1. top summary: settled P&L only ---------- */
+function summaryHTML(){
+  const b=S.bankroll||{};
+  return '<div class="stats">'
+    +'<div class="stat"><div class="l">Settled profit / loss</div><div class="v num '+cls(b.settled_pnl_m)+'">'+m(b.settled_pnl_m)+'</div><div class="s">Since '+esc(b.tracking_since||"")+'</div></div>'
+    +'<div class="stat"><div class="l">Record</div><div class="v num">'+esc(b.record||rec(b.wins,b.losses))+'</div><div class="s">Win rate '+pct(b.winrate_pct)+'</div></div>'
+    +'<div class="stat"><div class="l">Staked</div><div class="v num">'+m(b.settled_staked_m)+'</div><div class="s">Settled bets only</div></div>'
+    +'<div class="stat"><div class="l">Return (ROI)</div><div class="v num '+cls(b.roi_pct)+'">'+pct(b.roi_pct)+'</div><div class="s">On settled stakes</div></div>'
+    +'</div>';
 }
 
-/* ---------- animated count-up: numbers animate to their real value, never change it ---------- */
-const prevVals = {};
-function countUp(el, key, target, fmt){
-  if(!el || !isNum(target)) { if(el) el.textContent = fmt(target); return; }
-  if(REDUCED){ prevVals[key] = target; el.textContent = fmt(target); return; }
-  const from = isNum(prevVals[key]) ? prevVals[key] : 0;
-  prevVals[key] = target;
-  if(from === target){ el.textContent = fmt(target); return; }
-  const t0 = performance.now(), dur = 650;
-  const stepFn = (t) => {
-    const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
-    el.textContent = fmt(from + (target - from) * e);
-    if(p < 1) requestAnimationFrame(stepFn); else el.textContent = fmt(target);
-  };
-  requestAnimationFrame(stepFn);
-}
-function runCountUps(scope){
-  (scope || document).querySelectorAll("[data-cu]").forEach((el) => {
-    const v = parseFloat(el.getAttribute("data-cu"));
-    const kind = el.getAttribute("data-cufmt");
-    const fmt = kind === "pct" ? fmtPct : kind === "pct1" ? ((x) => isNum(x) ? x.toFixed(1) + "%" : "—") : kind === "int" ? ((x) => isNum(x) ? String(Math.round(x)) : "—") : ((x) => fmtM(x));
-    countUp(el, el.getAttribute("data-cukey"), v, fmt);
-  });
+/* ---------- 2. game totals up front ---------- */
+function totalsHTML(){
+  const f=S.forward||{}, v=S.vault||{};
+  const slipsCount=Array.isArray(f.slips)?f.slips.length:"—";
+  const pending=Array.isArray(f.pending_slips)&&f.pending_slips.length?("Slip #"+f.pending_slips.map(esc).join(", #")):"None";
+  return '<h2 class="sec">The totals</h2><p class="sec-sub">How much real testing has been done so far.</p>'
+    +'<div class="stats">'
+    +'<div class="stat"><div class="l">Live games graded</div><div class="v num">'+num(f.games)+'</div><div class="s">Real slips, real results</div></div>'
+    +'<div class="stat"><div class="l">Games in the vault</div><div class="v num">'+num(v.count)+'</div><div class="s">Next opening '+esc(v.next_opening||"")+'</div></div>'
+    +'<div class="stat"><div class="l">Slips graded</div><div class="v num">'+slipsCount+'</div><div class="s">In the live record</div></div>'
+    +'<div class="stat"><div class="l">Waiting to grade</div><div class="v num" style="font-size:1.15rem;padding-top:6px">'+pending+'</div><div class="s">Pending slips</div></div>'
+    +'</div>';
 }
 
-/* ---------- notability: driven ONLY by real status.json data ---------- */
-function reginaDay(iso){ if(!iso) return null; const d = new Date(iso); return isNaN(d) ? null : dFmt.format(d); }
-function isFreshCrown(k){
-  if(!k || !k.crowned_on || !S || !S.generated_at) return false;
-  const gen = new Date(S.generated_at), cr = new Date(k.crowned_on + "T12:00:00-06:00");
-  return !isNaN(gen) && !isNaN(cr) && (gen - cr) >= 0 && (gen - cr) < 36 * 3600 * 1000;
-}
-function liveBets(){ return (S.bets || []).filter((b) => b.status === "IN PLAY"); }
-function openSlips(){ return (S.slips || []).filter((s) => s.status && s.status !== "GRADED"); }
-function winStreak(){
-  const led = ((S.bankroll || {}).ledger || []).slice();
-  let n = 0;
-  for(let i = led.length - 1; i >= 0; i--){ if(led[i].result === "WON") n++; else if(led[i].result === "LOST") break; }
-  return n;
-}
-function bestForwardCourt(){
-  const acc = forwardKingLines();
-  let best = null, bestPnl = null;
-  Object.keys(acc).forEach((c) => { if (bestPnl === null || acc[c].pnl_m > bestPnl){ best = c; bestPnl = acc[c].pnl_m; } });
-  return bestPnl !== null && bestPnl > 0 ? best : null;
-}
-function forwardKingLines(){
-  /* forward per-king lines: summed from the per-slip king records status.json carries */
-  const acc = {};
-  (S.slips || []).forEach((sl) => {
-    const kr = (sl.results || {}).king_records || {};
-    Object.keys(kr).forEach((court) => {
-      acc[court] = acc[court] || {wins: 0, losses: 0, pnl_m: 0};
-      acc[court].wins += kr[court].wins || 0; acc[court].losses += kr[court].losses || 0; acc[court].pnl_m += kr[court].pnl_m || 0;
-    });
-  });
-  return acc;
-}
-
-/* ---------- shared building blocks ---------- */
-function statTile(v, label, sub, opts){
-  opts = opts || {};
-  const cu = opts.cu ? ' data-cu="' + opts.cu + '" data-cukey="' + esc(opts.cuKey || label) + '" data-cufmt="' + (opts.cuFmt || "m") + '"' : "";
-  return '<div class="card' + (opts.pulse ? " " + opts.pulse : "") + '"><div class="v num ' + (opts.cls || "") + '"' + cu + ">" + v + '</div><div class="l">' + label + "</div>" +
-    (sub ? '<div class="s">' + sub + "</div>" : "") + "</div>";
-}
-function panel(title, inner, extra){
-  return '<div class="panel' + (extra ? " " + extra : "") + '"><h3>' + title + "</h3>" + inner + "</div>";
-}
-function tableWrap(head, rows){
-  return '<div class="tscroll"><table><thead><tr>' + head + "</tr></thead><tbody>" + rows + "</tbody></table></div>";
-}
-
-
-/* ---------- hero banner: existing artwork, real headline numbers only ---------- */
-function wHero(){
-  const f = S.forward || {}, b = S.bankroll || {}, cb = f.chosen_bets || {};
-  const chips = [];
-  if (isNum(cb.wins)) chips.push('<span class="chip grn">Forward chosen ' + cb.wins + "-" + cb.losses + " \u00b7 " + fmtM(cb.pnl_m) + "</span>");
-  if (b.record) chips.push('<span class="chip gold">Called bets ' + esc(b.record) + " \u00b7 " + fmtM(b.settled_pnl_m) + "</span>");
-  const streak = winStreak();
-  if (streak >= 3) chips.push('<span class="chip gold">\u2605 Win streak W' + streak + "</span>");
-  const grand = (S.kings || []).find((k) => k.grand_king);
-  if (grand) chips.push('<span class="chip">\u2605 Grand King \u00b7 ' + esc(grand.court) + "</span>");
-  return '<div class="hero"><img class="bg" src="assets/hero-poster.webp" alt="" loading="lazy">' +
-    '<div class="hero-in"><div class="hero-k">Slip Select \u00b7 Live Trade Desk</div>' +
-    '<div class="hero-t">Forward results lead. Practice scores stay labelled.</div>' +
-    '<div class="hero-s">The five kings, every slip and called bet, agent activity and research \u2014 organised in tabs below, all times Regina.</div>' +
-    (chips.length ? '<div class="hero-chips">' + chips.join("") + "</div>" : "") + "</div></div>";
-}
-function sectionBanner(img, title, sub){
-  return '<div class="sbanner">' + (img ? '<img src="' + img + '" alt="" loading="lazy">' : "") +
-    '<div><div class="bt">' + title + '</div><div class="bs">' + sub + "</div></div></div>";
-}
-
-/* ================= OVERVIEW widgets ================= */
-function wCrownBanner(){
-  const fresh = (S.kings || []).filter(isFreshCrown);
-  if(!fresh.length) return "";
-  return fresh.map((k) =>
-    '<div class="crown-banner"><div class="t">New crown — ' + esc(k.court) + "</div>" +
-    '<div class="s">' + esc(k.name) + " took the " + esc(k.court) + " crown on " + esc(k.crowned_on) +
-    ". Practice line: " + k.wins + "-" + k.losses + ", " + fmtPct(k.roi_pct) + " ROI (fitted).</div></div>"
-  ).join("");
-}
-function wForwardTiles(){
-  const f = S.forward || {}, b = S.bankroll || {};
-  const desks = [["Chosen bets", f.chosen_bets], ["Confidence", f.confidence], ["Underdog desk", f.underdog_desk], ["Draw desk", f.draw_desk]];
-  const tiles = desks.filter((d) => d[1] && isNum(d[1].wins)).map((d) =>
-    statTile(d[1].wins + "-" + d[1].losses, "Forward · " + d[0],
-      '<span class="num ' + cls(d[1].pnl_m) + '">' + fmtM(d[1].pnl_m) + "</span> at flat stakes",
-      {cls: cls(d[1].pnl_m)}));
-  if (b.record) tiles.push(statTile(b.record, "Called bets · Record",
-    'Settled <span class="num ' + cls(b.settled_pnl_m) + '">' + fmtM(b.settled_pnl_m) + "</span> · ROI " + fmtPct(b.roi_pct),
-    {cls: cls(b.settled_pnl_m)}));
-  if (isNum(b.settled_pnl_m)) tiles.push(statTile(fmtM(b.settled_pnl_m), "Called bets · Settled P&amp;L",
-    "On " + fmtM(b.settled_staked_m, 0) + " staked since " + esc(b.tracking_since || "—"),
-    {cls: cls(b.settled_pnl_m), cu: b.settled_pnl_m, cuKey: "settledpnl", cuFmt: "m"}));
-  if (isNum(b.winrate_pct)) tiles.push(statTile(b.winrate_pct.toFixed(1) + "%", "Called bets · Win rate",
-    "Across the called-bet ledger",
-    {cu: b.winrate_pct, cuKey: "winrate", cuFmt: "pct1"}));
-  const streak = winStreak();
-  if (streak >= 3) tiles.push(statTile('<span class="streak">W' + streak + "</span>", "Called bets · Win streak",
-    "Consecutive wins on the called-bet ledger", {pulse: "pulse-gold"}));
-  return '<div class="block"><h2 class="sec-title">Forward record</h2>' +
-    '<p class="sec-sub">Live results lead. Fitted king lines are practice scores and are labelled as such everywhere.</p>' +
-    '<div class="grid">' + tiles.join("") + "</div></div>";
-}
-function wForwardKings(){
-  const acc = forwardKingLines();
-  const courts = Object.keys(acc);
-  if(!courts.length) return "";
-  const bestF = bestForwardCourt();
-  const rows = courts.map((c) => {
-    const a = acc[c];
-    return "<tr><td>" + (c === bestF ? '<span class="star">\u2605</span> ' : "") + "<strong>" + esc(c) + '</strong></td><td class="num">' + a.wins + "-" + a.losses +
-      '</td><td class="num r ' + cls(a.pnl_m) + '">' + fmtM(a.pnl_m) + "</td></tr>";
-  }).join("");
-  return '<div class="block">' + panel("Forward per-king lines — every slip on file",
-    tableWrap("<th>King</th><th>Forward W-L</th><th class=\"r\">Forward P&amp;L</th>", rows)) + "</div>";
-}
-function wLiveBoard(){
-  const live = liveBets(), open = openSlips();
-  if(!live.length && !open.length) return "";
-  let inner = "";
-  if (open.length) inner += open.map((s) =>
-    '<div class="evt pulse-live"><div class="meta"><span class="tag grn">Slip open</span><span>Slip #' + s.number + "</span><span>" + esc(s.status) + '</span></div>' +
-    '<div class="t">Slip #' + s.number + " — " + ((s.games_status || {}).games_total || s.games || "—") + " games</div></div>"
-  ).join("");
-  if (live.length) inner += live.map((b) =>
-    '<div class="evt pulse-live"><div class="meta"><span class="tag grn">In play</span><span>Slip #' + b.slip + "</span><span>" + esc(b.kind || "") + '</span></div>' +
-    '<div class="t">' + esc(b.pick || b.game || "—") + ' <span class="num mut">@ ' + fmtPrice(b.price) + "</span></div>" +
-    (b.game ? '<div class="s">' + esc(b.game) + "</div>" : "") + "</div>"
-  ).join("");
-  return '<div class="block"><h2 class="sec-title">Live &amp; upcoming</h2><div class="feed">' + inner + "</div></div>";
-}
-function wLatestSlip(){
-  const slips = (S.slips || []).slice().sort((a, b) => b.number - a.number);
-  if(!slips.length) return "";
-  return '<div class="block"><h2 class="sec-title">Latest slip</h2>' + slipCard(slips[0]) + "</div>";
-}
-function wTopActivity(){
-  const acts = (S.activity || []).slice(0, 5);
-  if(!acts.length) return "";
-  return '<div class="block"><h2 class="sec-title">Latest activity</h2><div class="feed">' +
-    acts.map(evtHTML).join("") + "</div></div>";
-}
-function evtHTML(a){
-  return '<div class="evt"><div class="meta"><span class="tag">' + esc(a.agent || "") + '</span><span>' + esc(a.kind || "") +
-    "</span><span>" + fmtDT(a.at) + ' Regina</span></div><div class="t">' + esc(a.title || "") + '</div>' +
-    (a.summary ? '<div class="s">' + esc(a.summary) + "</div>" : "") + "</div>";
-}
-
-/* ================= SLIPS & BETS widgets ================= */
-function pickRow(kind, sel, price, res){
-  if(!sel) return "";
-  return '<div class="pickrow"><span class="k"><span class="tag">' + esc(kind) + '</span></span>' +
-    '<span class="p">' + esc(sel) + '</span><span class="o"><span class="num mut">@ ' + fmtPrice(price) + "</span> " +
-    (res ? resChip(res.result) + ' <span class="num ' + cls(res.pnl_m) + '">' + fmtM(res.pnl_m) + "</span>" : "") + "</span></div>";
-}
-function slipCard(sl){
-  const r = sl.results || {}, gs = sl.games_status || {};
-  const total = gs.games_total || sl.games || (sl.games_list || []).length || "—";
-  const gpWon = r.grand_pick && r.grand_pick.result === "WON";
-  let h = '<article class="slip' + (gpWon ? " won" : "") + '"><div class="slip-head"><span class="n">' + (gpWon ? '<span class="star">\u2605</span> ' : "") + 'Slip #' + sl.number + '</span>' +
-    '<span class="d">' + esc(sl.date || "") + " · " + total + " games</span>" +
-    '<span class="tag ' + (sl.status === "GRADED" ? "" : "grn") + '">' + esc(sl.status || "") + "</span>" +
-    (sl.best_king || r.best_king ? '<span class="best">\u2605 Best king: <strong>' + esc(sl.best_king || r.best_king) + "</strong></span>" : "") + "</div>";
-  h += '<div class="pickrows">';
-  if (sl.grand_pick) h += pickRow("Grand pick", sl.grand_pick.selection, sl.grand_pick.price, r.grand_pick);
-  if (sl.confidence_bet) h += pickRow("Confidence", sl.confidence_bet.selection, sl.confidence_bet.price, r.confidence_bet);
-  if (sl.underdog_desk) h += pickRow("Underdog", sl.underdog_desk.selection, sl.underdog_desk.price, r.underdog_desk);
-  if (sl.draw_desk) h += pickRow("Draw desk", sl.draw_desk.selection, sl.draw_desk.price, r.draw_desk);
-  h += "</div>";
-  const kr = r.king_records || {};
-  const courts = Object.keys(kr);
-  if (courts.length) {
-    h += '<div class="krec">' + courts.map((c) =>
-      '<span class="kr">' + esc(c) + ' <span class="num">' + kr[c].wins + "-" + kr[c].losses + '</span> <span class="num ' + cls(kr[c].pnl_m) + '">' + fmtM(kr[c].pnl_m) + "</span></span>"
-    ).join("") + "</div>";
-  }
-  const games = sl.games_list || [];
-  if (games.length) {
-    const grows = games.map((g) =>
-      "<tr><td>" + esc(g.game || "") + '<div class="dim" style="font-size:.72rem">' + esc(g.league || "") + (g.sport ? " · " + esc(g.sport) : "") + "</div></td>" +
-      "<td>" + esc(g.pick || "—") + (g.bet_call ? '<div class="dim" style="font-size:.72rem">' + esc(g.bet_call) + "</div>" : "") + "</td>" +
-      '<td class="num">' + fmtPrice(g.price) + '</td><td class="num">' + esc(g.final_score || "—") + "</td><td>" + resChip(g.outcome) + "</td>" +
-      '<td class="num">' + fmtTime(g.tip_at) + "</td></tr>"
-    ).join("");
-    h += '<details class="games"><summary>All ' + games.length + ' games — tap to expand</summary><div class="games-body">' +
-      tableWrap("<th>Game</th><th>Pick</th><th>Price</th><th>Score</th><th>Outcome</th><th>Tip (Regina)</th>", grows) + "</div></details>";
-  }
-  return h + "</article>";
-}
-const betFilter = {slip: "all", result: "all", kind: "all"};
-function wBets(){
-  const bets = (S.bets || []).slice().sort((a, b) => (b.slip - a.slip) || String(a.kind).localeCompare(String(b.kind)));
-  const slipNums = [...new Set(bets.map((b) => b.slip))].sort((a, b) => b - a);
-  const kinds = [...new Set(bets.map((b) => b.kind).filter(Boolean))].sort();
-  const f = '<div class="filters"><span class="flab">Filter</span>' +
-    '<select id="f-slip" aria-label="Filter by slip"><option value="all">All slips</option>' +
-    slipNums.map((n) => '<option value="' + n + '"' + (String(betFilter.slip) === String(n) ? " selected" : "") + ">Slip #" + n + "</option>").join("") + "</select>" +
-    '<select id="f-result" aria-label="Filter by result">' +
-    [["all", "All results"], ["WON", "Won"], ["LOST", "Lost"], ["OPEN", "Open / in play"]].map((o) =>
-      '<option value="' + o[0] + '"' + (betFilter.result === o[0] ? " selected" : "") + ">" + o[1] + "</option>").join("") + "</select>" +
-    '<select id="f-kind" aria-label="Filter by bet kind"><option value="all">All kinds</option>' +
-    kinds.map((k) => '<option value="' + esc(k) + '"' + (betFilter.kind === k ? " selected" : "") + ">" + esc(k) + "</option>").join("") + "</select></div>";
-  const shown = bets.filter((b) =>
-    (betFilter.slip === "all" || String(b.slip) === String(betFilter.slip)) &&
-    (betFilter.result === "all" || (betFilter.result === "OPEN" ? !b.result : b.result === betFilter.result)) &&
-    (betFilter.kind === "all" || b.kind === betFilter.kind));
-  const rows = shown.map((b) =>
-    '<tr class="clickable' + (b.result === "WON" ? " starred" : "") + '" data-bet="' + (S.bets || []).indexOf(b) + '"><td class="num">#' + b.slip + "</td>" +
-    "<td>" + (b.result === "WON" ? '<span class="star">\u2605</span> ' : "") + esc(b.pick || "—") + (b.game ? '<div class="dim" style="font-size:.72rem">' + esc(b.game) + "</div>" : "") + "</td>" +
-    "<td>" + esc(b.kind || "") + (b.paper ? ' <span class="tag">paper</span>' : "") + "</td>" +
-    '<td class="num">' + fmtPrice(b.price) + '</td><td class="num">' + (isNum(b.stake_m) ? b.stake_m + "m" : "—") + "</td>" +
-    "<td>" + (b.result ? resChip(b.result) : '<span class="tag grn">' + esc(b.status || "Open") + "</span>") + "</td>" +
-    '<td class="num">' + esc(b.final_score || "—") + '</td><td class="num r ' + cls(b.pnl_m) + '">' + fmtM(b.pnl_m) + "</td>" +
-    '<td class="num">' + fmtDT(b.tip_at) + "</td></tr>"
-  ).join("");
-  return '<div class="block"><h2 class="sec-title">Called bets</h2>' +
-    '<p class="sec-sub">' + shown.length + " of " + bets.length + ' bets shown. Tap any row for the full detail.</p>' + f +
-    (shown.length ? tableWrap("<th>Slip</th><th>Pick</th><th>Kind</th><th>Price</th><th>Stake</th><th>Result</th><th>Score</th><th class=\"r\">P&amp;L</th><th>Tip (Regina)</th>", rows)
-      : '<p class="empty">No bets match that filter.</p>') + "</div>";
-}
-function wLedger(){
-  const b = S.bankroll || {}, led = b.ledger || [];
-  if(!led.length) return "";
-  const rows = led.map((e) =>
-    '<tr><td class="num">#' + e.slip + "</td><td>" + esc(e.kind || "") + "</td><td>" + esc(e.pick || "") + "</td>" +
-    '<td class="num">' + fmtPrice(e.price) + "</td><td>" + resChip(e.result) + '</td><td class="num r ' + cls(e.pnl_m) + '">' + fmtM(e.pnl_m) + "</td>" +
-    '<td class="num r">' + (isNum(e.balance_after_m) ? e.balance_after_m.toLocaleString("en-CA",{minimumFractionDigits:2,maximumFractionDigits:2}) + "m" : "—") + "</td></tr>"
-  ).join("");
-  let h = '<div class="block">' + panel("Called-bet ledger — tracking since " + esc(b.tracking_since || "—"),
-    tableWrap("<th>Slip</th><th>Kind</th><th>Pick</th><th>Price</th><th>Result</th><th class=\"r\">P&amp;L</th><th class=\"r\">Balance after</th>", rows) +
-    (b.note ? '<p class="tile-note">' + esc(b.note) + "</p>" : "")) + "</div>";
-  const px = b.paper_excluded || [];
-  if (px.length) {
-    h += '<div class="block">' + panel("Paper desks (excluded from the ledger)",
-      px.map((p) => '<div class="kv-row"><span class="k">Slip #' + p.slip + " · " + esc(p.kind || "") + '</span><span class="v">' + esc(p.pick || "") + ' <span class="num mut">@ ' + fmtPrice(p.price) + "</span></span></div>").join("")) + "</div>";
-  }
-  return h;
-}
-function wSlipCards(){
-  const slips = (S.slips || []).slice().sort((a, b) => b.number - a.number);
-  if(!slips.length) return "";
-  return '<div class="block"><h2 class="sec-title">Slips</h2>' +
-    '<p class="sec-sub">Newest first. Each slip expands to its full game list.</p>' +
-    slips.map(slipCard).join("") + "</div>";
-}
-
-/* ================= KINGS widgets ================= */
-function wKings(){
-  const kings = S.kings || [];
-  if(!kings.length) return "";
-  return '<div class="block"><h2 class="sec-title">The five kings</h2>' +
-    '<p class="sec-sub">Fitted lines are practice scores on the ' + (kings[0].set_size || 239) + '-game fitting set. Tap a king for its full line and forward history.</p>' +
-    kings.map((k) => {
-      const d = k.dog_line || {};
-      const isBestFwd = bestForwardCourt() === k.court;
-      return '<article class="king' + (isFreshCrown(k) ? " pulse-gold" : "") + '">' +
-        (COURT_IMG[k.court] ? '<div class="king-banner"><img src="' + COURT_IMG[k.court] + '" alt="" loading="lazy"></div>' : "") +
-        '<div class="king-head" data-king="' + esc(k.court) + '" role="button" tabindex="0">' +
-        (COURT_IMG[k.court] ? '<img src="' + COURT_IMG[k.court] + '" alt="" loading="lazy">' : "") +
-        '<div><div class="kc">' + esc(k.court) + (k.grand_king ? ' <span class="tag gold">\u2605 Grand King</span>' : "") + (isFreshCrown(k) ? ' <span class="tag gold">\u2605 New crown</span>' : "") + (isBestFwd ? ' <span class="tag grn">\u2605 Best forward</span>' : "") + "</div>" +
-        '<div class="kn num">' + esc(k.name) + "</div>" +
-        '<div class="dim" style="font-size:.74rem">Crowned ' + esc(k.crowned_on || "—") + (k.stamp ? " · " + esc(k.stamp) : "") + "</div></div></div>" +
-        '<div class="king-stats">' +
-        '<div class="cell"><div class="v num">' + k.wins + "-" + k.losses + '</div><div class="l">Record · practice</div></div>' +
-        '<div class="cell"><div class="v num ' + cls(k.roi_pct) + '">' + fmtPct(k.roi_pct) + '</div><div class="l">ROI · practice</div></div>' +
-        '<div class="cell"><div class="v num ' + cls(k.pnl_m) + '">' + fmtM(k.pnl_m, 0) + '</div><div class="l">P&amp;L · practice</div></div>' +
-        '<div class="cell"><div class="v num">' + (isNum(d.wins) ? d.wins + "-" + d.losses : "—") + '</div><div class="l">Dog line W-L</div></div>' +
-        '<div class="cell"><div class="v num ' + cls(d.roi_pct) + '">' + fmtPct(d.roi_pct) + '</div><div class="l">Dog line ROI</div></div>' +
-        '<div class="cell"><div class="v num">' + (isNum(d.picks) ? d.picks : "—") + '</div><div class="l">Dog picks</div></div>' +
-        "</div></article>";
-    }).join("") + "</div>";
-}
-function wAgents(){
-  const agents = S.agents || [];
-  if(!agents.length) return "";
-  return '<div class="block"><h2 class="sec-title">The workforce</h2><div class="feed">' +
-    agents.map((a) =>
-      '<div class="agent">' + (AGENT_IMG[a.name] ? '<img src="' + AGENT_IMG[a.name] + '" alt="" loading="lazy">' : "") +
-      '<div style="min-width:0"><div class="an">' + esc(a.name) + ' <span class="tag ' + (a.status === "active" ? "grn" : "") + '">' + esc(a.status || "") + '</span></div>' +
-      '<div class="ar">' + esc(a.role || "") + '</div><div class="ah">' + esc(a.headline || "") + "</div></div>" +
-      '<div class="when">' + fmtDT(a.last_activity) + "<br>Regina</div></div>"
-    ).join("") + "</div></div>";
-}
-
-/* ================= ACTIVITY widgets ================= */
-const actFilter = {agent: "all"};
-function wActivity(){
-  const acts = S.activity || [];
-  const agents = [...new Set(acts.map((a) => a.agent).filter(Boolean))].sort();
-  const f = '<div class="filters"><span class="flab">Agent</span>' +
-    '<button class="fchip" data-act-agent="all" aria-pressed="' + (actFilter.agent === "all") + '">All</button>' +
-    agents.map((a) => '<button class="fchip" data-act-agent="' + esc(a) + '" aria-pressed="' + (actFilter.agent === a) + '">' + esc(a) + "</button>").join("") + "</div>";
-  const shown = acts.filter((a) => actFilter.agent === "all" || a.agent === actFilter.agent);
-  return '<div class="block"><h2 class="sec-title">Agent activity</h2>' +
-    '<p class="sec-sub">The newest ' + shown.length + ' events from the loop logs. All times Regina.</p>' + f +
-    '<div class="feed">' + (shown.length ? shown.map(evtHTML).join("") : '<p class="empty">No events for that agent.</p>') + "</div>" +
-    srcLine("Activity source: the loops' own logs, newest events first, as exported into this file") + "</div>";
-}
-
-/* ================= RESEARCH widgets ================= */
-const shFilter = {status: "all"};
-function wStakehunter(){
-  const sh = S.stakehunter || {}, finds = sh.findings || [];
-  if(!finds.length) return "";
-  const statuses = [...new Set(finds.map((x) => x.status).filter(Boolean))];
-  const f = '<div class="filters"><span class="flab">Verdict</span>' +
-    '<button class="fchip" data-sh="all" aria-pressed="' + (shFilter.status === "all") + '">All</button>' +
-    statuses.map((st) => '<button class="fchip" data-sh="' + esc(st) + '" aria-pressed="' + (shFilter.status === st) + '">' + esc(st) + "</button>").join("") + "</div>";
-  const shown = finds.filter((x) => shFilter.status === "all" || x.status === shFilter.status);
-  const chipFor = (st) => st === "FINDING" ? "grn" : st === "REFUTED" ? "red" : "amb";
-  const list = shown.length ? shown.map((x) =>
-      '<div class="finding"><div class="fh"><span class="tag ' + chipFor(x.status) + '">' + esc(x.status || "") + '</span>' +
-      '<span class="fn">' + esc(x.id || "") + " — " + esc(x.name || "") + '</span><span class="dim" style="font-size:.74rem">cycle ' + (x.cycle == null ? "—" : x.cycle) + "</span></div>" +
-      (x.verdict ? '<div class="fv">' + esc(x.verdict) + "</div>" : "") + "</div>"
-    ).join("") : '<p class="empty">Nothing under that verdict.</p>';
-  return '<div class="block">' + panel("Stakehunter — sizing research" + (isNum(sh.latest_cycle) ? " · latest cycle " + sh.latest_cycle : ""), f + list) + "</div>";
-}
-function wChallengers(){
-  const ch = S.autopsy_challengers || [];
-  if(!ch.length) return "";
-  const rows = ch.map((c) =>
-    "<tr><td><strong>" + esc(c.id || "") + '</strong><div style="font-size:.78rem">' + esc(c.name || "") + "</div>" +
-    '<div class="dim" style="font-size:.72rem">' + esc(c.mechanism || "") + "</div></td>" +
-    '<td class="num">' + c.wins + "-" + c.losses + '</td><td class="num r ' + cls(c.pnl_m) + '">' + fmtM(c.pnl_m) + "</td>" +
-    '<td class="num r ' + cls(c.roi_pct) + '">' + fmtPct(c.roi_pct) + '</td><td><span class="tag amb">' + esc(c.status || "") + "</span></td></tr>"
-  ).join("");
-  return '<div class="block"><h2 class="sec-title">Autopsy challengers</h2>' +
-    '<p class="sec-sub">Gate-clearing challengers from the loss autopsy — practice scores, not crowned. They earn a crown only through the verified crown path.</p>' +
-    tableWrap("<th>Challenger</th><th>W-L</th><th class=\"r\">P&amp;L</th><th class=\"r\">ROI</th><th>Status</th>", rows) + "</div>";
-}
-function wVault(){
-  const v = S.vault || {};
-  if(!isNum(v.count)) return "";
-  return '<div class="block"><div class="grid">' +
-    statTile(String(v.count), "Vault · Sealed games", "Blind holdout — scored only at openings", {cu: v.count, cuKey: "vault", cuFmt: "int"}) +
-    statTile(esc(v.next_opening || "—"), "Vault · Next opening", "The vault judges the kings on games they never trained on") +
-    "</div></div>";
-}
-
-
-/* ================= v3: liveness, workforce, charts, truth =================
-   Liveness is DERIVED at view time from each agent's own timestamps:
-   Live = last activity within 1x its cadence, Quiet = within 2x,
-   Stale = beyond. Nothing here renders a status from a static list. */
-function liveness(lastIso, cadenceMin){
-  if(!lastIso) return {key: "none", label: "No report"};
-  const t = new Date(lastIso).getTime();
-  if(isNaN(t)) return {key: "none", label: "No report"};
-  const ageMin = (Date.now() - t) / 60000;
-  if(!isNum(cadenceMin)){
-    return ageMin <= 120 ? {key: "live", label: "Live"} : {key: "stale", label: "Stale"};
-  }
-  if(ageMin <= cadenceMin) return {key: "live", label: "Live"};
-  if(ageMin <= 2 * cadenceMin) return {key: "quiet", label: "Quiet"};
-  return {key: "stale", label: "Stale"};
-}
-function srcLine(text){
-  return '<p class="src-line">' + text + " · Data as of " +
-    (S.generated_at ? fmtDT(S.generated_at) : "—") + " Regina.</p>";
-}
-function researchAgents(){ return ((S.research || {}).agents) || []; }
-function liveCount(agents){
-  return agents.filter((a) => liveness(a.last_activity, a.cadence_minutes).key === "live").length;
-}
-
-/* ---------- workforce cards (Research) + preview (Overview) ---------- */
-const wfFilter = {group: "all"};
-const WF_GROUPS = ["Discovery Scouts", "Correlation Web", "Hunters & Inventors", "Oversight & Integrity", "Capture & Data"];
-function wfCard(a){
-  const lv = liveness(a.last_activity, a.cadence_minutes);
-  const tagCls = lv.key === "live" ? "grn" : lv.key === "quiet" ? "amb" : lv.key === "stale" ? "red" : "";
-  return '<div class="wf-card"><div class="wf-top"><span class="sdot ' + lv.key + '"></span>' +
-    '<span class="an">' + esc(a.name) + '</span><span class="tag ' + tagCls + '">' + lv.label + "</span>" +
-    (a.cadence ? '<span class="tag">' + esc(a.cadence) + "</span>" : "") + "</div>" +
-    '<div class="ar">' + esc(a.role || "") + '</div>' +
-    '<div class="ah">' + esc(a.headline || "") + "</div>" +
-    '<div class="when">Last activity ' + (a.last_activity ? fmtDT(a.last_activity) + " Regina" : "—") + "</div></div>";
-}
-function wWorkforce(){
-  const agents = researchAgents();
-  if(!agents.length) return "";
-  const groups = WF_GROUPS.filter((g) => agents.some((a) => a.group === g));
-  const chips = '<div class="filters"><span class="flab">Group</span>' +
-    '<button class="fchip" data-wf-group="all" aria-pressed="' + (wfFilter.group === "all") + '">All · ' + agents.length + "</button>" +
-    groups.map((g) => '<button class="fchip" data-wf-group="' + esc(g) + '" aria-pressed="' + (wfFilter.group === g) + '">' + esc(g) + "</button>").join("") + "</div>";
-  let body = "";
-  groups.forEach((g) => {
-    const ga = agents.filter((a) => a.group === g && (wfFilter.group === "all" || wfFilter.group === g));
-    if(!ga.length) return;
-    body += '<div class="group-h">' + esc(g) + " · " + ga.length + '</div><div class="wf-grid">' + ga.map(wfCard).join("") + "</div>";
-  });
-  return '<div class="block"><h2 class="sec-title">Research workforce</h2>' +
-    '<p class="sec-sub">' + agents.length + " research agents beyond the courts — " + liveCount(agents) +
-    " live right now. Every headline is the latest line from that agent's own log; liveness is computed from its log timestamps against its cadence.</p>" +
-    chips + body +
-    srcLine("Workforce source: each agent's own programme log (headline + last activity) and the cron census (cadence). Live = within one cadence, Quiet = within two, Stale = beyond") + "</div>";
-}
-function wWorkforcePreview(){
-  const agents = researchAgents();
-  if(!agents.length) return "";
-  const recent = agents.slice().sort((a, b) => String(b.last_activity || "").localeCompare(String(a.last_activity || ""))).slice(0, 10);
-  const minis = recent.map((a) => {
-    const lv = liveness(a.last_activity, a.cadence_minutes);
-    return '<div class="wf-mini"><span class="sdot ' + lv.key + '"></span><div style="min-width:0">' +
-      '<div class="an">' + esc(a.name) + '</div><div class="ar">' + esc(a.group) + " · " + lv.label +
-      (a.last_activity ? " · " + fmtTime(a.last_activity) : "") + "</div></div></div>";
-  }).join("");
-  return '<div class="block"><h2 class="sec-title">Research workforce</h2>' +
-    '<p class="sec-sub">' + agents.length + " scouts, branches, hunters and watchdogs work beyond the courts — " +
-    liveCount(agents) + " live now. Most recent activity first; the full workforce, with each agent's latest finding, lives in Research.</p>" +
-    '<div class="wf-minis">' + minis + "</div>" +
-    '<button class="fchip" data-goto="research" style="margin-top:10px">See the full workforce \u2192</button></div>';
-}
-
-/* ---------- desk-at-a-glance tiles (Overview) ---------- */
-function wDeskTiles(){
-  const tiles = [];
-  let w = 0, l = 0;
-  (S.slips || []).forEach((sl) => (sl.games_list || []).forEach((g) => {
-    if(g.outcome === "WON") w++; else if(g.outcome === "LOST") l++;
-  }));
-  if(w + l > 0) tiles.push(statTile((100 * w / (w + l)).toFixed(1) + "%", "Forward accuracy · Card picks",
-    "Across " + (w + l) + " graded games on the slips in this file",
-    {cu: 100 * w / (w + l), cuKey: "fwdacc", cuFmt: "pct1"}));
-  const acc = forwardKingLines(), courts = Object.keys(acc);
-  if(courts.length){
-    const inp = courts.filter((c) => acc[c].pnl_m > 0).length;
-    tiles.push(statTile(inp + " of " + courts.length, "Kings in profit · Forward",
-      "On the per-slip king records in this file" + (bestForwardCourt() ? " · \u2605 best: " + esc(bestForwardCourt()) : "")));
-  }
-  const ra = researchAgents();
-  if(ra.length) tiles.push(statTile(liveCount(ra) + " of " + ra.length, "Research agents live",
-    "Liveness derived from each agent's own log timestamps"));
-  const ex = (S.research || {}).exam;
-  if(ex && isNum(ex.games) && (ex.lines || []).length){
-    const best = ex.lines.slice().sort((a, b) => b.roi_pct - a.roi_pct)[0];
-    tiles.push(statTile(ex.games + " games", "Fresh-history exam · Sealed",
-      "Kings graded once on games they never trained on · best " + esc(best.court) + " " + fmtPct(best.roi_pct) +
-      " ROI · plain favourite " + fmtPct((ex.control || {}).roi_pct)));
-  }
-  const v = S.vault || {};
-  if(isNum(v.count)) tiles.push(statTile(String(v.count), "Vault · Sealed games",
-    "Next opening " + esc(v.next_opening || "—"), {cu: v.count, cuKey: "vaulttile", cuFmt: "int"}));
-  if(!tiles.length) return "";
-  return '<div class="block"><h2 class="sec-title">The desk at a glance</h2><div class="grid">' + tiles.join("") + "</div></div>";
-}
-
-/* ---------- System Truth — the Integrity Auditor's verdicts ---------- */
-function wSystemTruth(){
-  const it = S.integrity;
-  if(!it) return "";
-  const rows = [];
-  if(it.last_run) rows.push('<div class="kv-row"><span class="k">Last auditor run</span><span class="v">' + fmtDT(it.last_run) + " Regina" + (it.run ? " · Run " + it.run : "") + "</span></div>");
-  if(isNum(it.claims_checked)) rows.push('<div class="kv-row"><span class="k">Claims re-derived</span><span class="v">' + it.claims_checked + " checked against primary records</span></div>");
-  if(isNum(it.canary_fixtures)) rows.push('<div class="kv-row"><span class="k">Gate canaries</span><span class="v">' + it.canary_fixtures + " fabricated fixtures fed to " + (isNum(it.canary_gates) ? it.canary_gates : "—") + " gates</span></div>");
-  if(isNum(it.findings_count)) rows.push('<div class="kv-row"><span class="k">Open findings</span><span class="v">' + it.findings_count + "</span></div>");
-  if(it.vault_seal) rows.push('<div class="kv-row"><span class="k">Vault seal</span><span class="v">' + esc(it.vault_seal) + "</span></div>");
-  if(it.registry) rows.push('<div class="kv-row"><span class="k">Registry agreement</span><span class="v">' + esc(it.registry) + "</span></div>");
-  if(it.receipts) rows.push('<div class="kv-row"><span class="k">Crown receipts</span><span class="v">' + esc(it.receipts) + "</span></div>");
-  let inner = '<div class="kv-rows">' + rows.join("") + "</div>";
-  if((it.findings || []).length){
-    inner += '<h3 style="margin:13px 0 2px;font-size:.9rem">Open findings — stated plainly</h3>' +
-      it.findings.map((f) => '<div class="truth-finding"><strong>Finding ' + f.n + ".</strong> " + esc(f.summary) + "</div>").join("");
-  }
-  if((it.canary_broken || []).length){
-    inner += '<p class="tile-note" style="margin-top:10px">Gates the canary ledger records as broken: ' +
-      it.canary_broken.map(esc).join(", ") + ".</p>";
-  }
-  inner += srcLine("System Truth source: the Integrity Auditor's own log (" + esc(it.source || "") + ") and its findings as filed in the programme intake. Anything the auditor has not reported is omitted, never filled in");
-  return '<div class="block">' + panel("System Truth — Integrity Auditor", inner) + "</div>";
-}
-
-/* ---------- charts: inline SVG, real status.json numbers only ---------- */
-function wKingChart(){
-  const kings = S.kings || [];
-  if(!kings.length) return "";
-  const acc = forwardKingLines();
-  const data = kings.map((k) => {
-    const a = acc[k.court];
-    const decided = a ? (a.wins + a.losses) : 0;
-    return {court: k.court, practice: k.roi_pct,
-            forward: (a && decided > 0) ? (a.pnl_m / (25 * decided)) * 100 : null};
-  });
-  let maxAbs = 10;
-  data.forEach((d) => { maxAbs = Math.max(maxAbs, Math.abs(d.practice || 0), Math.abs(d.forward || 0)); });
-  const W = 360, plotX0 = 64, plotW = 292, zeroX = plotX0 + plotW / 2, scale = (plotW / 2) / maxAbs;
-  const top = 30, blockH = 54, H = top + data.length * blockH + 8;
-  const bar = (v, y, fill) => {
-    if(!isNum(v)) return "";
-    const wdt = Math.max(1, Math.abs(v) * scale);
-    const x = v >= 0 ? zeroX : zeroX - wdt;
-    const lx = v >= 0 ? x + wdt + 5 : x - 5;
-    return '<rect x="' + x.toFixed(1) + '" y="' + y + '" width="' + wdt.toFixed(1) + '" height="11" rx="3" fill="' + fill + '"/>' +
-      '<text x="' + lx.toFixed(1) + '" y="' + (y + 10) + '" font-size="11" font-weight="700" fill="' + fill + '" text-anchor="' + (v >= 0 ? "start" : "end") + '">' + fmtPct(v) + "</text>";
-  };
-  let svg = '<svg class="chart-svg" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Practice versus forward ROI by king">' +
-    '<rect x="' + plotX0 + '" y="8" width="11" height="11" rx="3" fill="#c8a24a"/><text x="' + (plotX0 + 16) + '" y="17" font-size="11" fill="var(--mut)">Practice (fitted)</text>' +
-    '<rect x="216" y="8" width="11" height="11" rx="3" fill="#43c98a"/><text x="232" y="17" font-size="11" fill="var(--mut)">Fresh (forward)</text>' +
-    '<line x1="' + zeroX + '" y1="26" x2="' + zeroX + '" y2="' + (H - 4) + '" stroke="var(--line)" stroke-dasharray="4 4"/>';
-  data.forEach((d, i) => {
-    const y0 = top + i * blockH;
-    svg += '<text x="0" y="' + (y0 + 12) + '" font-size="12" class="svg-t">' + esc(d.court) + "</text>" +
-      bar(d.practice, y0 + 17, "#c8a24a") +
-      (isNum(d.forward) ? bar(d.forward, y0 + 31, d.forward >= 0 ? "#43c98a" : "#e46565")
-                        : '<text x="' + (zeroX + 6) + '" y="' + (y0 + 41) + '" font-size="11" fill="var(--dim)">no fresh record</text>');
-  });
-  svg += "</svg>";
-  return '<div class="block">' + panel("Practice vs fresh — ROI by king", svg +
-    '<p class="chart-note">Gold = practice ROI on the fitted set (the king\'s own line in this file). Green/red = fresh ROI, summed from the per-slip king records in this file at flat 25m per pick — the same derivation as the forward table. The separate forward leaderboard file is not used: it still carries the superseded VG24 Vanguard line (Integrity Auditor Finding 1).</p>') + "</div>";
-}
-function wSlipChart(){
-  const slips = (S.slips || []).slice().sort((a, b) => a.number - b.number)
-    .map((sl) => {
-      const pnls = (sl.top3 || []).map((t) => t.pnl_m).filter(isNum);
-      return pnls.length ? {n: sl.number, v: pnls.reduce((x, y) => x + y, 0)} : null;
-    }).filter(Boolean);
-  if(!slips.length) return "";
-  let maxV = 10, minV = -10;
-  slips.forEach((s) => { maxV = Math.max(maxV, s.v); minV = Math.min(minV, s.v); });
-  const W = 360, plotTop = 28, plotBot = 156, plotX0 = 30, plotX1 = 356;
-  const zeroY = plotTop + (maxV / (maxV - minV)) * (plotBot - plotTop);
-  const slot = (plotX1 - plotX0) / slips.length, barW = Math.min(36, slot * 0.6);
-  let svg = '<svg class="chart-svg" viewBox="0 0 ' + W + ' 192" role="img" aria-label="Card profit and loss by slip">' +
-    '<line x1="' + plotX0 + '" y1="' + zeroY.toFixed(1) + '" x2="' + plotX1 + '" y2="' + zeroY.toFixed(1) + '" stroke="var(--line)"/>';
-  slips.forEach((s, i) => {
-    const cx = plotX0 + slot * i + slot / 2;
-    const hgt = Math.abs(s.v) / (maxV - minV) * (plotBot - plotTop);
-    const y = s.v >= 0 ? zeroY - hgt : zeroY;
-    const fill = s.v >= 0 ? "#43c98a" : "#e46565";
-    svg += '<rect x="' + (cx - barW / 2).toFixed(1) + '" y="' + y.toFixed(1) + '" width="' + barW + '" height="' + Math.max(1, hgt).toFixed(1) + '" rx="4" fill="' + fill + '"/>' +
-      '<text x="' + cx + '" y="' + (s.v >= 0 ? y - 6 : y + hgt + 15) + '" font-size="11" font-weight="700" fill="' + fill + '" text-anchor="middle">' + fmtM(s.v, 0) + "</text>" +
-      '<text x="' + cx + '" y="176" font-size="11" fill="var(--mut)" text-anchor="middle">#' + s.n + "</text>";
-  });
-  svg += "</svg>";
-  return '<div class="block">' + panel("Card P&amp;L by slip", svg +
-    '<p class="chart-note">Sum of each slip\'s three chosen bets (grand pick, confidence, desk) exactly as recorded in this file, flat stakes. Slips #' +
-    slips[0].n + "–#" + slips[slips.length - 1].n + ".</p>") + "</div>";
-}
-function wActivityChart(){
-  const acts = S.activity || [];
-  if(!acts.length) return "";
-  const counts = {};
-  acts.forEach((a) => { if(a.agent) counts[a.agent] = (counts[a.agent] || 0) + 1; });
-  const items = Object.keys(counts).map((k) => ({label: k, v: counts[k]})).sort((a, b) => b.v - a.v);
-  if(!items.length) return "";
-  const max = items[0].v, W = 360, rowH = 25, top = 6, H = top + items.length * rowH + 4;
-  const barX = 100, barMax = W - barX - 30;
-  let svg = '<svg class="chart-svg" viewBox="0 0 ' + W + " " + H + '" role="img" aria-label="Activity entries by agent">';
-  items.forEach((it, i) => {
-    const y = top + i * rowH;
-    const wdt = Math.max(2, (it.v / max) * barMax);
-    svg += '<text x="0" y="' + (y + 15) + '" font-size="11.5" fill="var(--ink)">' + esc(it.label) + "</text>" +
-      '<rect x="' + barX + '" y="' + (y + 4) + '" width="' + wdt.toFixed(1) + '" height="13" rx="4" fill="#c8a24a"/>' +
-      '<text x="' + (barX + wdt + 6) + '" y="' + (y + 15) + '" font-size="11.5" font-weight="700" fill="var(--gold-hi)">' + it.v + "</text>";
-  });
-  svg += "</svg>";
-  return '<div class="block">' + panel("Activity mix — latest " + acts.length + " events", svg +
-    '<p class="chart-note">Entries per agent in the activity feed this file carries (the newest ' + acts.length + ' loop-log events). A feed window, not a lifetime total.</p>') + "</div>";
-}
-
-/* ---------- pipeline diagram: static structure, no live values ---------- */
-function wPipeline(){
-  const steps = [
-    ["RESEARCH", "Scouts · Correlation Web · Hunters · Inventor", ""],
-    ["COURTS MUTATE", "variants bred on the practice set, registry-checked", ""],
-    ["KINGS", "Legacy · Regime · Quantum · Selector · Vanguard", ""],
-    ["CARD", "Selector chooses the pick, game by game", ""],
-    ["SLIPS", "locked before play · graded the same night", ""],
-    ["VAULT", "sealed holdout · opens Dec 1 · kings judged blind", "gold"]
-  ];
-  let svg = '<svg class="pipe-svg" viewBox="0 0 360 486" role="img" aria-label="How the system flows: research to courts to kings to card to slips to vault, watched by oversight">';
-  steps.forEach((s, i) => {
-    const y = 6 + i * 68;
-    svg += '<rect class="' + (s[2] === "gold" ? "svg-box-gold" : "svg-box") + '" x="24" y="' + y + '" width="312" height="46" rx="10"/>' +
-      '<text x="180" y="' + (y + 20) + '" font-size="13" text-anchor="middle" class="svg-t">' + s[0] + "</text>" +
-      '<text x="180" y="' + (y + 37) + '" font-size="11" text-anchor="middle" class="svg-s">' + s[1] + "</text>";
-    if(i < steps.length - 1){
-      const ay = y + 46;
-      svg += '<line class="svg-arrow" x1="180" y1="' + ay + '" x2="180" y2="' + (ay + 18) + '"/>' +
-        '<polygon points="174,' + (ay + 15) + ' 186,' + (ay + 15) + ' 180,' + (ay + 22) + '" fill="var(--gold)"/>';
-    }
-  });
-  const wy = 6 + steps.length * 68 + 2;
-  svg += '<rect class="svg-box-watch" x="24" y="' + wy + '" width="312" height="46" rx="10"/>' +
-    '<text x="180" y="' + (wy + 20) + '" font-size="13" text-anchor="middle" class="svg-t">WATCH LAYER</text>' +
-    '<text x="180" y="' + (wy + 37) + '" font-size="11" text-anchor="middle" class="svg-s">Overseer · Integrity Auditor · Crown Sentinel</text></svg>';
-  return '<div class="block">' + panel("How the system flows", svg +
-    '<p class="chart-note">Structure only — research feeds the courts, the courts breed the kings, the Selector\'s card becomes slips, and graded slips feed the sealed vault. The watch layer audits every layer above it.</p>') + "</div>";
-}
-
-/* ================= segmented sub-views (level-2 navigation, shallow) ================= */
-const pageView = {slips: "bets", kings: "all", research: "all"};
-function segHTML(tab, options){
-  return '<div class="seg" role="group" aria-label="' + tab + ' views">' + options.map((o) =>
-    '<button type="button" data-seg-tab="' + tab + '" data-seg-val="' + o[0] + '" aria-pressed="' + (pageView[tab] === o[0]) + '">' + o[1] + "</button>").join("") + "</div>";
-}
-function renderSlipsPage(){
-  const v = pageView.slips;
-  let h = sectionBanner("assets/arena.jpg", "Slips &amp; Bets", "Called bets first, then the ledger, then every slip \u2014 or pick one view.");
-  h += segHTML("slips", [["bets", "Bets"], ["slips", "Slips"], ["ledger", "Ledger"], ["all", "All"]]);
-  if (v === "bets" || v === "all") h += wBets();
-  if (v === "ledger" || v === "all") h += wLedger();
-  if (v === "slips" || v === "all") h += wSlipCards();
-  h += srcLine("Slips &amp; bets source: each slip's own graded tracker and the called-bet ledger, as exported into this file");
-  return h;
-}
-function renderKingsPage(){
-  const v = pageView.kings;
-  let h = sectionBanner("assets/director.jpg", "Kings &amp; Workforce", "Practice (fitted) and forward lines kept apart \u2014 forward is the live record.");
-  h += segHTML("kings", [["all", "All"], ["fitted", "Kings \u00b7 Practice"], ["forward", "Forward"], ["team", "Workforce"]]);
-  if (v === "all" || v === "fitted") h += wKings();
-  if (v === "all" || v === "forward") h += wForwardKings();
-  if (v === "forward") h += wKingChart();
-  if (v === "all" || v === "team") h += wAgents();
-  h += srcLine("Kings source: the court record as exported from the programme's state files — the Integrity Auditor re-derives these lines against the verified court record (see System Truth). Forward source: summed from the per-slip king records in this file only — the forward leaderboard file is not used, as it still carries the superseded VG24 Vanguard line");
-  return h;
-}
-function renderResearchPage(){
-  const v = pageView.research;
-  let h = sectionBanner("assets/discovery.jpg", "Research", "The full research workforce, charts and diagrams, the vault, autopsy challengers and Stakehunter sizing research — grouped by type.");
-  h += segHTML("research", [["all", "All"], ["workforce", "Workforce"], ["charts", "Charts"], ["vault", "Vault"], ["challengers", "Challengers"], ["stakehunter", "Stakehunter"]]);
-  if (v === "all" || v === "workforce") h += wWorkforce();
-  if (v === "all" || v === "charts") h += wKingChart() + wPipeline() + wSlipChart() + wActivityChart();
-  if (v === "all" || v === "vault") h += wVault();
-  if (v === "all" || v === "challengers") h += wChallengers();
-  if (v === "all" || v === "stakehunter") h += wStakehunter();
-  if (v === "all") h += wSystemTruth();
-  h += srcLine("Research source: the programme's own primary records — agent logs, the cron census, the vault count, the autopsy and Stakehunter logs, and the sealed exam results file");
-  return h;
-}
-
-/* ================= widget registry — add new widgets here ================= */
-const WIDGETS = {
-  overview: [wHero, wCrownBanner, wForwardTiles, wDeskTiles, wSystemTruth, wLiveBoard, wForwardKings, wWorkforcePreview, wLatestSlip, wTopActivity],
-  slips:    [wBets, wLedger, wSlipCards],
-  kings:    [wKings, wAgents],
-  activity: [wActivity],
-  research: [wVault, wChallengers, wStakehunter]
-};
-const PAGE_RENDER = {slips: renderSlipsPage, kings: renderKingsPage, research: renderResearchPage};
-function renderAll(){
-  renderStrip();
-  Object.keys(WIDGETS).forEach((tab) => {
-    if (PAGE_RENDER[tab]) { try { $("page-" + tab).innerHTML = PAGE_RENDER[tab](); } catch (e) { $("page-" + tab).innerHTML = ""; } return; }
-    $("page-" + tab).innerHTML = WIDGETS[tab].map((w) => { try { return w() || ""; } catch (e) { return ""; } }).join("");
-  });
-  runCountUps($("page-overview"));
-  runCountUps($("page-research"));
-  maybeCelebrate();
-  const gen = S.generated_at ? new Date(S.generated_at) : null;
-  $("foot").innerHTML = "Slip Select Trade Desk · data refreshed " + (gen && !isNaN(gen) ? dtFmt.format(gen) : "—") +
-    " Regina · all times America/Regina · fitted king lines are practice scores; forward results are the live record.";
-}
-
-
-/* ================= fireworks — ONLY on real celebratory data in status.json =================
-   Fires at most once per page load when at least one is true:
-   (a) a king was crowned within the fresh-crown window (isFreshCrown),
-   (b) the called-bet ledger win streak is >= 3,
-   (c) the latest slip's grand pick WON.
-   Never on losses or neutral data. Skipped under prefers-reduced-motion. */
-let celebrated = false;
-function celebrateReason(){
-  const fresh = (S.kings || []).filter(isFreshCrown);
-  if (fresh.length) return "\u2605 New crown \u2014 " + fresh[0].court;
-  const streak = winStreak();
-  if (streak >= 3) return "\u2605 Win streak \u2014 W" + streak + " on called bets";
-  const slips = (S.slips || []).slice().sort((a, b) => b.number - a.number);
-  if (slips.length && ((slips[0].results || {}).grand_pick || {}).result === "WON")
-    return "\u2605 Latest slip #" + slips[0].number + " \u2014 grand pick won";
+/* ---------- 3. the five kings ---------- */
+function fwdKing(court){
+  const ks=(S.forward&&S.forward.kings)||[];
+  for(const k of ks){ if(k.court===court) return k; }
   return null;
 }
-function maybeCelebrate(){
-  if (celebrated || REDUCED || !S) return;
-  const reason = celebrateReason();
-  if (!reason) return;
-  celebrated = true;
-  const veil = document.createElement("div");
-  veil.className = "fw-veil";
-  veil.setAttribute("role", "button");
-  veil.setAttribute("aria-label", "Dismiss celebration");
-  veil.innerHTML = '<canvas></canvas><div class="fw-hint">' + esc(reason) + " \u00b7 tap to dismiss</div>";
-  document.body.appendChild(veil);
-  const cv = veil.querySelector("canvas"), ctx = cv.getContext("2d");
-  cv.width = window.innerWidth; cv.height = window.innerHeight;
-  const cols = ["#eed188", "#c8a24a", "#43c98a", "#72c7dc", "#a48fe0"];
-  const parts = [];
-  const bursts = 5;
-  for (let bIdx = 0; bIdx < bursts; bIdx++){
-    const bx = cv.width * (0.18 + 0.64 * (bursts === 1 ? 0.5 : bIdx / (bursts - 1))) + (Math.random() * 30 - 15);
-    const by = cv.height * (0.22 + Math.random() * 0.18);
-    const col = cols[bIdx % cols.length];
-    for (let i = 0; i < 42; i++){
-      const a = Math.random() * Math.PI * 2, sp = 1.6 + Math.random() * 4.4;
-      parts.push({x: bx, y: by, vx: Math.cos(a) * sp, vy: Math.sin(a) * sp - 1.2, life: 1, decay: 0.008 + Math.random() * 0.01, col: col, r: 1.4 + Math.random() * 1.8, delay: bIdx * 9});
+function kingCard(k){
+  const f=fwdKing(k.court)||{};
+  const d=k.dog_line||{};
+  return '<div class="card king">'
+    +'<div class="king-head"><img src="'+esc(COURT_IMG[k.court]||"")+'" alt="">'
+    +'<div><div class="king-name">'+esc(k.court)+(k.grand_king?' <span class="badge">GRAND KING</span>':"")+'</div>'
+    +'<div class="king-sub">Crowned '+esc(k.crowned_on||"")+' · Stamp: '+esc(k.stamp||"")+'</div></div></div>'
+    +'<div class="king-body">'
+    +'<div class="linebox live"><div class="t">Live — real slips since</div>'
+    +'<div class="big num">'+rec(f.wins,f.losses)+' &nbsp;<span class="'+cls(f.pnl_m)+'">'+m(f.pnl_m)+'</span> &nbsp;<span class="'+cls(f.roi_pct)+'">'+pct(f.roi_pct)+'</span></div>'
+    +'<div class="mut">'+num(f.games)+' games · '+num(f.priced)+' priced</div></div>'
+    +'<div class="linebox"><div class="t">Fitted — the '+num(k.set_size)+' test games</div>'
+    +'<div class="big num">'+rec(k.wins,k.losses)+' &nbsp;<span class="'+cls(k.pnl_m)+'">'+m(k.pnl_m)+'</span> &nbsp;<span class="'+cls(k.roi_pct)+'">'+pct(k.roi_pct)+'</span></div>'
+    +'<div class="mut">'+num(k.priced)+' priced</div></div>'
+    +'<div class="row"><span class="k">Underdog line (fitted)</span><span class="v num">'+rec(d.wins,d.losses)+' · <span class="'+cls(d.pnl_m)+'">'+m(d.pnl_m)+'</span> · '+pct(d.roi_pct)+'</span></div>'
+    +'<div class="rulename">Rule: '+esc(k.name||"")+'</div>'
+    +'</div></div>';
+}
+function kingsHTML(){
+  return '<h2 class="sec">The five kings</h2>'
+    +'<p class="sec-sub">Each king has two lines. <strong>Live</strong> is real slips and real results — that is the line that counts. <strong>Fitted</strong> is practice on old test games.</p>'
+    +(S.kings||[]).map(kingCard).join("");
+}
+
+/* ---------- 4. king vs king ---------- */
+function compareHTML(){
+  const rows=(S.kings||[]).map(k=>({court:k.court,f:fwdKing(k.court)||{},fit:k}));
+  let h='<h2 class="sec">King vs king</h2><p class="sec-sub">Side by side, live record first.</p>'
+    +'<table><thead><tr><th>King</th><th>Live record</th><th>Live P&amp;L</th><th>Live ROI</th><th>Fitted ROI</th></tr></thead><tbody>';
+  for(const r of rows){
+    h+='<tr><td data-l="King"><strong>'+esc(r.court)+'</strong></td>'
+      +'<td data-l="Live record" class="num">'+rec(r.f.wins,r.f.losses)+'</td>'
+      +'<td data-l="Live P&L" class="num '+cls(r.f.pnl_m)+'">'+m(r.f.pnl_m)+'</td>'
+      +'<td data-l="Live ROI" class="num '+cls(r.f.roi_pct)+'">'+pct(r.f.roi_pct)+'</td>'
+      +'<td data-l="Fitted ROI" class="num">'+pct(r.fit.roi_pct)+'</td></tr>';
+  }
+  h+='</tbody></table>';
+  const vals=rows.map(r=>Math.abs(typeof r.f.pnl_m==="number"?r.f.pnl_m:0));
+  const max=Math.max.apply(null,vals.concat([1]));
+  h+='<div class="card" style="margin-top:12px"><h3>Live profit / loss per king</h3>';
+  for(const r of rows){
+    const v=typeof r.f.pnl_m==="number"?r.f.pnl_m:0;
+    const w=Math.round(Math.abs(v)/max*100);
+    h+='<div class="bar-row"><div class="bar-lab"><span>'+esc(r.court)+'</span><span class="num '+cls(v)+'">'+m(r.f.pnl_m)+'</span></div>'
+      +'<div class="bar-track"><div class="bar-fill '+(v<0?"n":"p")+'" style="width:'+w+'%"></div></div></div>';
+  }
+  h+='<p class="mut" style="margin:6px 0 0">Simple bars — longer means a bigger live profit or loss.</p></div>';
+  return h;
+}
+
+/* ---------- 5a. forward record summary ---------- */
+function deskRow(label,d){
+  d=d||{};
+  return '<div class="row"><span class="k">'+label+'</span><span class="v num">'+rec(d.wins,d.losses)+' · <span class="'+cls(d.pnl_m)+'">'+m(d.pnl_m)+'</span></span></div>';
+}
+function forwardHTML(){
+  const f=S.forward||{};
+  return '<h2 class="sec">The live record, by desk</h2><p class="sec-sub">The special bets, tracked apart from the kings.</p>'
+    +'<div class="card">'
+    +deskRow("Chosen bets",f.chosen_bets)
+    +deskRow("Confidence bets",f.confidence)
+    +deskRow("Underdog desk (paper)",f.underdog_desk)
+    +deskRow("Draw desk (paper)",f.draw_desk)
+    +'</div>';
+}
+
+/* ---------- 5b. slips ---------- */
+function pickLine(label,p,res){
+  if(!p) return "";
+  let h='<div class="row"><span class="k">'+label+'</span><span class="v">'+esc(p.selection||"");
+  if(p.price!=null) h+=' <span class="num">@ '+num(p.price)+'</span>';
+  if(res&&res.result) h+=' — <span class="res-'+esc(res.result)+'">'+esc(res.result)+'</span>';
+  if(res&&res.pnl_m!=null) h+=' <span class="num '+cls(res.pnl_m)+'">('+m(res.pnl_m)+')</span>';
+  return h+'</span></div>';
+}
+function slipCard(s){
+  const r=s.results||{};
+  let h='<div class="card"><h3>Slip #'+num(s.number)+' <span class="tag">'+esc(s.status||"")+'</span></h3>'
+    +'<div class="mut">'+esc(s.date||"")+' · '+num(s.games)+' games</div>'
+    +pickLine("Grand pick",s.grand_pick,r.grand_pick)
+    +pickLine("Confidence bet",s.confidence_bet,r.confidence_bet)
+    +pickLine("Underdog desk (paper)",s.underdog_desk,r.underdog_desk)
+    +pickLine("Draw desk (paper)",s.draw_desk,r.draw_desk);
+  if(r.best_king) h+='<div class="row"><span class="k">Best king on this slip</span><span class="v">'+esc(r.best_king)+'</span></div>';
+  if(r.king_records){
+    h+='<div style="margin-top:8px">';
+    for(const court of Object.keys(r.king_records)){
+      const kr=r.king_records[court];
+      h+='<div class="row"><span class="k">'+esc(court)+'</span><span class="v num">'+rec(kr.wins,kr.losses)+' · <span class="'+cls(kr.pnl_m)+'">'+m(kr.pnl_m)+'</span></span></div>';
     }
+    h+='</div>';
   }
-  const t0 = performance.now();
-  let raf = 0;
-  const dismiss = () => { cancelAnimationFrame(raf); veil.remove(); };
-  veil.addEventListener("click", dismiss);
-  const frame = (t) => {
-    const el = t - t0;
-    ctx.clearRect(0, 0, cv.width, cv.height);
-    let alive = false;
-    parts.forEach((pt) => {
-      if (el / 16.7 < pt.delay) { alive = true; return; }
-      if (pt.life <= 0) return;
-      alive = true;
-      pt.x += pt.vx; pt.y += pt.vy; pt.vy += 0.045; pt.vx *= 0.985; pt.vy *= 0.99; pt.life -= pt.decay;
-      ctx.globalAlpha = Math.max(0, pt.life);
-      ctx.fillStyle = pt.col;
-      ctx.beginPath(); ctx.arc(pt.x, pt.y, pt.r, 0, Math.PI * 2); ctx.fill();
-    });
-    ctx.globalAlpha = 1;
-    if (alive && el < 2100) raf = requestAnimationFrame(frame); else dismiss();
-  };
-  raf = requestAnimationFrame(frame);
-  setTimeout(dismiss, 2400);
+  return h+'</div>';
+}
+function slipsHTML(){
+  const slips=(S.slips||[]).slice().reverse();
+  if(!slips.length) return "";
+  let h='<h2 class="sec">Latest slip</h2>'+slipCard(slips[0]);
+  h+='<h2 class="sec">All slips</h2>'+slips.map(slipCard).join("");
+  return h;
 }
 
-/* ================= modal (detail pop-ups) ================= */
-let veil = null;
-function ensureModal(){
-  if(veil) return veil;
-  veil = document.createElement("div");
-  veil.className = "modal-veil";
-  veil.innerHTML = '<div class="modal" role="dialog" aria-modal="true"><div class="m-head"><div><div class="m-title"></div><div class="m-sub"></div></div>' +
-    '<button class="m-close" type="button" aria-label="Close">✕</button></div><div class="m-body"></div></div>';
-  document.body.appendChild(veil);
-  veil.addEventListener("click", (e) => { if(e.target === veil || e.target.closest(".m-close")) closeModal(); });
-  document.addEventListener("keydown", (e) => { if(e.key === "Escape") closeModal(); });
-  return veil;
-}
-function openModal(title, sub, bodyHTML){
-  ensureModal();
-  veil.querySelector(".m-title").textContent = title;
-  veil.querySelector(".m-sub").textContent = sub || "";
-  veil.querySelector(".m-body").innerHTML = bodyHTML;
-  veil.classList.add("open");
-  document.body.style.overflow = "hidden";
-}
-function closeModal(){ if(veil){ veil.classList.remove("open"); document.body.style.overflow = ""; } }
-function kvRows(pairs){
-  return '<div class="kv-rows">' + pairs.map((p) =>
-    '<div class="kv-row"><span class="k">' + p[0] + '</span><span class="v num">' + p[1] + "</span></div>").join("") + "</div>";
-}
-function kingModal(court){
-  const k = (S.kings || []).find((x) => x.court === court);
-  if(!k) return;
-  const d = k.dog_line || {}, acc = forwardKingLines()[court];
-  let body = kvRows([
-    ["Stack", esc(k.name)],
-    ["Record (practice)", k.wins + "-" + k.losses + " · priced " + (k.priced || "—") + " of " + (k.set_size || "—")],
-    ["ROI (practice)", fmtPct(k.roi_pct)],
-    ["P&amp;L (practice)", fmtM(k.pnl_m)],
-    ["Dog line", (isNum(d.wins) ? d.wins + "-" + d.losses : "—") + " · " + (isNum(d.picks) ? d.picks + " picks" : "")],
-    ["Dog line ROI", fmtPct(d.roi_pct)],
-    ["Dog line P&amp;L", fmtM(d.pnl_m)],
-    ["Forward W-L (slips on file)", acc ? acc.wins + "-" + acc.losses : "—"],
-    ["Forward P&amp;L", acc ? fmtM(acc.pnl_m) : "—"],
-    ["Crowned", esc(k.crowned_on || "—")],
-    ["Stamp", esc(k.stamp || "—")]
-  ]);
-  const hist = (S.slips || []).filter((sl) => ((sl.results || {}).king_records || {})[court])
-    .sort((a, b) => b.number - a.number)
-    .map((sl) => { const r = sl.results.king_records[court];
-      return '<div class="kv-row"><span class="k">Slip #' + sl.number + " · " + esc(sl.date || "") + '</span><span class="v num">' +
-        r.wins + "-" + r.losses + ' · <span class="' + cls(r.pnl_m) + '">' + fmtM(r.pnl_m) + "</span></span></div>"; }).join("");
-  if(hist) body += '<h3 style="margin:14px 0 6px;font-size:.9rem">Per-slip forward history</h3><div class="kv-rows">' + hist + "</div>";
-  openModal(k.court + (k.grand_king ? " — Grand King" : ""), "Tap outside or ✕ to close", body);
-}
-function betModal(idx){
-  const b = (S.bets || [])[idx];
-  if(!b) return;
-  openModal(b.pick || "Bet detail", "Slip #" + b.slip + " · " + (b.kind || ""), kvRows([
-    ["Game", esc(b.game || "—")],
-    ["Pick", esc(b.pick || "—")],
-    ["Kind", esc(b.kind || "—") + (b.paper ? " · paper" : "")],
-    ["Price", fmtPrice(b.price)],
-    ["Stake", isNum(b.stake_m) ? b.stake_m + "m" : "—"],
-    ["Status", esc(b.status || "—")],
-    ["Result", b.result ? esc(b.result) : "—"],
-    ["Final score", esc(b.final_score || "—")],
-    ["P&amp;L", fmtM(b.pnl_m)],
-    ["Tip (Regina)", fmtDT(b.tip_at)]
-  ]));
+/* ---------- 5c. called bets ---------- */
+function betsHTML(){
+  const bets=S.bets||[];
+  if(!bets.length) return "";
+  let h='<h2 class="sec">Called bets</h2><p class="sec-sub">Every called bet on the recent slips, newest slip first.</p><div class="card">';
+  const sorted=bets.slice().sort((a,b)=>(b.slip-a.slip));
+  for(const b of sorted){
+    h+='<div class="item"><div class="t">'+esc(b.pick||"")+' <span class="num mut">@ '+num(b.price)+'</span></div>'
+      +'<div class="s">Slip #'+num(b.slip)+' · '+esc(b.game||"")+'</div>'
+      +'<div class="s"><span class="tag">'+esc(b.kind||"")+'</span> '
+      +(b.paper?' <span class="tag">PAPER</span>':"")
+      +' Stake <span class="num">'+m(b.stake_m)+'</span>'
+      +(b.result?' · <span class="res-'+esc(b.result)+'">'+esc(b.result)+'</span>':' · '+esc(b.status||""))
+      +(b.pnl_m!=null?' · <span class="num '+cls(b.pnl_m)+'">'+m(b.pnl_m)+'</span>':"")
+      +(b.final_score?' · Final <span class="num">'+esc(b.final_score)+'</span>':"")
+      +'</div></div>';
+  }
+  return h+'</div>';
 }
 
-/* ---------- central event delegation ---------- */
-document.addEventListener("click", (e) => {
-  if(window.__lastDragEnd && Date.now() - window.__lastDragEnd < 250 && e.target.closest(".glide-track")) return;  /* a drag is not a tap */
-  const kEl = e.target.closest("[data-king]");
-  if(kEl){ kingModal(kEl.getAttribute("data-king")); return; }
-  const bEl = e.target.closest("[data-bet]");
-  if(bEl){ betModal(parseInt(bEl.getAttribute("data-bet"), 10)); return; }
-  const segEl = e.target.closest("[data-seg-tab]");
-  if(segEl){
-    const tab = segEl.getAttribute("data-seg-tab");
-    pageView[tab] = segEl.getAttribute("data-seg-val");
-    $("page-" + tab).innerHTML = PAGE_RENDER[tab]();
-    if(tab === "research") runCountUps($("page-research"));
-    return;
+/* ---------- 5d. latest activity ---------- */
+function activityHTML(){
+  const acts=(S.activity||[]).slice(0,15);
+  if(!acts.length) return "";
+  let h='<h2 class="sec">Latest activity</h2><div class="card">';
+  for(const a of acts){
+    h+='<div class="item"><div class="t">'+esc(a.title||"")+'</div>'
+      +'<div class="s">'+esc(a.agent||"")+' · '+when(a.at)+'</div>'
+      +'<div class="s">'+esc(a.summary||"")+'</div></div>';
   }
-  const aEl = e.target.closest("[data-act-agent]");
-  if(aEl){ actFilter.agent = aEl.getAttribute("data-act-agent"); $("page-activity").innerHTML = WIDGETS.activity.map((w) => w()).join(""); return; }
-  const wfEl = e.target.closest("[data-wf-group]");
-  if(wfEl){ wfFilter.group = wfEl.getAttribute("data-wf-group"); $("page-research").innerHTML = renderResearchPage(); runCountUps($("page-research")); return; }
-  const goEl = e.target.closest("[data-goto]");
-  if(goEl){ const t = document.querySelector('.tab[data-tab="' + goEl.getAttribute("data-goto") + '"]'); if(t) t.click(); return; }
-  const sEl = e.target.closest("[data-sh]");
-  if(sEl){ shFilter.status = sEl.getAttribute("data-sh"); $("page-research").innerHTML = renderResearchPage(); runCountUps($("page-research")); return; }
-});
-document.addEventListener("change", (e) => {
-  if(e.target.id === "f-slip"){ betFilter.slip = e.target.value; }
-  else if(e.target.id === "f-result"){ betFilter.result = e.target.value; }
-  else if(e.target.id === "f-kind"){ betFilter.kind = e.target.value; }
-  else return;
-  $("page-slips").innerHTML = renderSlipsPage();
-});
-document.addEventListener("keydown", (e) => {
-  if(e.key !== "Enter" && e.key !== " ") return;
-  const kEl = e.target.closest ? e.target.closest("[data-king]") : null;
-  if(kEl){ e.preventDefault(); kingModal(kEl.getAttribute("data-king")); }
-});
+  return h+'</div>';
+}
+
+/* ---------- 6. tucked sections ---------- */
+function detailsBlock(title,inner){
+  return '<details><summary>'+esc(title)+'</summary><div class="inner">'+inner+'</div></details>';
+}
+function workforceHTML(){
+  const agents=S.agents||[];
+  if(!agents.length) return "";
+  let h="";
+  for(const a of agents){
+    h+='<div class="item"><div class="t">'+esc(a.name||"")+' <span class="tag">'+esc(a.status||"")+'</span></div>'
+      +'<div class="s">'+esc(a.role||"")+'</div>'
+      +'<div class="s">'+esc(a.headline||"")+'</div>'
+      +'<div class="s">Last active: '+when(a.last_activity)+'</div></div>';
+  }
+  return detailsBlock("Workforce — the agents",h);
+}
+function stakehunterHTML(){
+  const sh=S.stakehunter||{};
+  const finds=sh.findings||[];
+  if(!finds.length) return "";
+  let h='<p class="mut">Latest cycle: '+num(sh.latest_cycle)+' · Showing '+finds.length+' findings.</p>';
+  for(const f of finds){
+    h+='<div class="item"><div class="t">'+esc(f.id||"")+' — '+esc(f.name||"")+' <span class="tag">'+esc(f.status||"")+'</span></div>'
+      +'<div class="s">'+esc(f.verdict||"")+'</div></div>';
+  }
+  return detailsBlock("Stakehunter findings",h);
+}
+function autopsyHTML(){
+  const ch=S.autopsy_challengers||[];
+  if(!ch.length) return "";
+  let h='<p class="mut">Challengers found by studying past losses. None of these is a king — a challenger still has to earn the crown the proper way.</p>';
+  for(const c of ch){
+    h+='<div class="item"><div class="t">'+esc(c.id||"")+' — '+esc(c.name||"")+'</div>'
+      +'<div class="s num">'+rec(c.wins,c.losses)+' · <span class="'+cls(c.pnl_m)+'">'+m(c.pnl_m)+'</span> · '+pct(c.roi_pct)+'</div>'
+      +'<div class="s">'+esc(c.status||"")+'</div></div>';
+  }
+  return detailsBlock("Autopsy challengers",h);
+}
+function researchHTML(){
+  const r=S.research||{};
+  const agents=r.agents||[], ex=r.exam||{};
+  let h="";
+  if(ex.games!=null){
+    h+='<h3>Blind exam set</h3><div class="row"><span class="k">Games</span><span class="v num">'+num(ex.games)+' ('+num(ex.nba)+' NBA · '+num(ex.soccer)+' soccer)</span></div>';
+    for(const ln of (ex.lines||[])){
+      h+='<div class="row"><span class="k">'+esc(ln.court||"")+'</span><span class="v num">'+rec(ln.wins,ln.losses)+' · <span class="'+cls(ln.pnl_m)+'">'+m(ln.pnl_m)+'</span> · '+pct(ln.roi_pct)+'</span></div>';
+    }
+    if(ex.control) h+='<div class="row"><span class="k">Control (coin-flip line)</span><span class="v num">'+rec(ex.control.wins,ex.control.losses)+' · <span class="'+cls(ex.control.pnl_m)+'">'+m(ex.control.pnl_m)+'</span> · '+pct(ex.control.roi_pct)+'</span></div>';
+    h+='<p class="mut">Graded '+esc(ex.graded_on||"")+'</p>';
+  }
+  for(const a of agents){
+    h+='<div class="item"><div class="t">'+esc(a.name||"")+' <span class="tag">'+esc(a.group||"")+'</span></div>'
+      +'<div class="s">'+esc(a.role||"")+' · Runs '+esc(a.cadence||"")+'</div>'
+      +'<div class="s">'+esc(a.headline||"")+'</div>'
+      +'<div class="s">Last active: '+when(a.last_activity)+'</div></div>';
+  }
+  return h?detailsBlock("Research workforce & exam",h):"";
+}
+function integrityHTML(){
+  const g=S.integrity||{};
+  if(!g||!Object.keys(g).length) return "";
+  let h='<div class="row"><span class="k">Audit run</span><span class="v num">#'+num(g.run)+' · '+when(g.last_run)+'</span></div>'
+    +'<div class="row"><span class="k">Vault seal</span><span class="v">'+esc(g.vault_seal||"")+'</span></div>'
+    +'<div class="row"><span class="k">Registry</span><span class="v">'+esc(g.registry||"")+'</span></div>'
+    +'<div class="row"><span class="k">Receipts</span><span class="v">'+esc(g.receipts||"")+'</span></div>'
+    +'<div class="row"><span class="k">Canary gates / fixtures</span><span class="v num">'+num(g.canary_gates)+' / '+num(g.canary_fixtures)+'</span></div>'
+    +'<div class="row"><span class="k">Findings on record</span><span class="v num">'+num(g.findings_count)+'</span></div>';
+  for(const f of (g.findings||[])){
+    h+='<div class="item"><div class="s">'+esc(f.summary||"")+'</div></div>';
+  }
+  return detailsBlock("Integrity audit",h);
+}
+function tuckedHTML(){
+  const parts=[workforceHTML(),stakehunterHTML(),autopsyHTML(),researchHTML(),integrityHTML()].filter(Boolean);
+  if(!parts.length) return "";
+  return '<h2 class="sec">Behind the scenes</h2><p class="sec-sub">The working machinery — tap to open any part.</p>'+parts.join("");
+}
+
+/* ---------- render ---------- */
+function render(){
+  document.getElementById("updated").textContent="Updated "+when(S.generated_at);
+  document.getElementById("content").innerHTML =
+    summaryHTML()+totalsHTML()+kingsHTML()+compareHTML()+forwardHTML()
+    +slipsHTML()+betsHTML()+activityHTML()+tuckedHTML();
+}
 
 /* ---------- loader: same contract as before — fetch status.json, re-check every 60s ---------- */
 async function load(){
   try{
     const r = await fetch("status.json", {cache: "no-store"});
-    if(!r.ok) throw new Error("status " + r.status);
+    if(!r.ok) throw new Error("HTTP " + r.status);
     S = await r.json();
-    $("fatal").innerHTML = "";
-    renderAll();
+    document.getElementById("fatal").innerHTML = "";
+    render();
   }catch(err){
-    if(!S) $("fatal").innerHTML = '<div class="err">The desk could not load status.json (' + esc(err.message) + "). It will retry automatically.</div>";
+    if(!S) document.getElementById("fatal").innerHTML = '<div class="err">The desk could not load status.json (' + esc(err.message) + "). It will retry automatically.</div>";
   }
 }
 load();
