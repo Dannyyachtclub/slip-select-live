@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T14:13:09.332142-06:00",
+  "generated_at": "2026-11-25T14:43:06.931505-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -9059,44 +9059,44 @@
         "court": "Legacy",
         "wins": 135,
         "losses": 143,
-        "pnl_m": -333.56,
-        "roi_pct": -4.91,
+        "pnl_m": -196.55,
+        "roi_pct": -2.89,
         "games": 278,
         "priced": 272
       },
       {
         "court": "Regime",
-        "wins": 145,
-        "losses": 133,
-        "pnl_m": 3.73,
-        "roi_pct": 0.05,
+        "wins": 126,
+        "losses": 152,
+        "pnl_m": -689.53,
+        "roi_pct": -10.14,
         "games": 278,
         "priced": 272
       },
       {
         "court": "Quantum",
-        "wins": 142,
-        "losses": 136,
-        "pnl_m": -227.3,
-        "roi_pct": -3.34,
+        "wins": 139,
+        "losses": 139,
+        "pnl_m": -151.2,
+        "roi_pct": -2.22,
         "games": 278,
         "priced": 272
       },
       {
         "court": "Selector",
-        "wins": 152,
-        "losses": 126,
-        "pnl_m": -84.55,
-        "roi_pct": -1.24,
+        "wins": 130,
+        "losses": 148,
+        "pnl_m": -434.75,
+        "roi_pct": -6.39,
         "games": 278,
         "priced": 272
       },
       {
         "court": "Vanguard",
-        "wins": 157,
-        "losses": 121,
-        "pnl_m": 102.29,
-        "roi_pct": 1.5,
+        "wins": 146,
+        "losses": 132,
+        "pnl_m": -422.83,
+        "roi_pct": -6.22,
         "games": 278,
         "priced": 272
       }
@@ -9117,9 +9117,12 @@
     ],
     "games": 278,
     "pending_slips": [
-      43
+      43,
+      44
     ],
-    "source": "forward_leaderboard.json"
+    "source": "forward_leaderboard.json",
+    "board_definition": "as-locked: the kings as they sat at each slip's lock, picks as locked (the board file's forward_total_tracker layer)",
+    "board_layer": "forward_total_tracker"
   },
   "vault": {
     "count": 369,
@@ -9557,8 +9560,8 @@
         "role": "Improvement and judgment layer — claim audits, heartbeat, protections",
         "cadence": "every 30m",
         "cadence_minutes": 30,
-        "last_activity": "2026-11-25T08:05:23.722639-06:00",
-        "headline": "Risk Scout Run 249 (2026-11-24 13:42 CST) PROVED new holes in chosen_bets_gate.py: a missing or non-dict grand pick, duplicate grand entries, duplicate game IDs, a mistyped slip status, and…"
+        "last_activity": "2026-11-25T14:22:59.655174-06:00",
+        "headline": "CORRECTION (2026-11-25, forward board reconciliation + user ruling \"Fix what u need\"): the forward figures in the 2026-11-25 digest entry above (Vanguard +102.29m \"only king in profit\", Regime…"
       },
       {
         "name": "Integrity Auditor",
