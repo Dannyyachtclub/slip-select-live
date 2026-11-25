@@ -180,6 +180,35 @@ details .inner{padding:0 16px 16px}
   padding:12px 14px;margin-top:12px}
 footer{color:var(--dim);font-size:.88rem;margin-top:36px;text-align:center}
 
+/* ---------- today: locked-slip game cards ---------- */
+.gcard{background:var(--surface);border:1px solid var(--line-soft);border-radius:12px;padding:14px 16px;margin-bottom:10px}
+.gcard .mu{font-size:1.12rem;font-weight:800;line-height:1.3}
+.gcard .meta{color:var(--mut);font-size:.9rem;margin-top:2px}
+.gcard .cd{display:inline-block;margin-top:8px;padding:3px 10px;border-radius:999px;
+  border:1px solid rgba(114,199,220,.55);color:var(--cyan);font-weight:800;font-size:.85rem}
+.gcard .cd.inplay{border-color:rgba(224,164,78,.6);color:var(--amb)}
+.gcard .cardpick{margin-top:8px;font-size:1rem}
+.kchips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.kchip{border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:.78rem;color:var(--mut)}
+.kchip b{color:var(--ink)}
+.gbadges{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+
+/* ---------- form strips (one block per graded slip) ---------- */
+.formlab{font-size:.8rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:12px}
+.formstrip{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
+.fblock{width:22px;height:22px;border-radius:5px;border:1px solid var(--line-faint)}
+.fblock.w{background:var(--pos)} .fblock.l{background:var(--neg)} .fblock.z{background:var(--surface2)}
+
+/* ---------- freshest result ---------- */
+.card.fresh{border-color:rgba(200,162,74,.65)}
+.winbanner{margin-top:10px;border:1px solid rgba(67,201,138,.55);background:rgba(67,201,138,.12);
+  border-radius:10px;padding:10px 12px;font-weight:800}
+.winbanner .num{color:var(--pos)}
+@media (prefers-reduced-motion: no-preference){
+  .winbanner{animation:winpulse 2.6s ease-in-out infinite}
+  @keyframes winpulse{0%,100%{box-shadow:0 0 0 0 rgba(67,201,138,0)}50%{box-shadow:0 0 0 5px rgba(67,201,138,.14)}}
+}
+
 @media (prefers-reduced-motion: reduce){
   .bk img{animation:none}
 }
@@ -304,6 +333,76 @@ function tickerStart(){
   requestAnimationFrame(step);
 }
 
+/* ---------- 0. today: the locked slip, game by game, live tip countdowns ---------- */
+function cdText(tip){
+  if(!tip) return "";
+  const t=new Date(tip).getTime();
+  if(isNaN(t)) return "";
+  const diff=t-Date.now();
+  if(diff<=0) return "In play — grades tonight";
+  const mins=Math.floor(diff/60000);
+  const d=Math.floor(mins/1440), hh=Math.floor((mins%1440)/60), mm=mins%60;
+  if(d>0) return "Tips in "+d+"d "+hh+"h";
+  if(hh>0) return "Tips in "+hh+"h "+String(mm).padStart(2,"0")+"m";
+  return "Tips in "+mm+"m";
+}
+function tickCountdowns(){
+  const els=document.querySelectorAll(".cd[data-tip]");
+  for(const el of els){
+    const txt=cdText(el.getAttribute("data-tip"));
+    if(!txt) continue;
+    el.textContent=txt;
+    if(txt.indexOf("In play")===0&&el.classList) el.classList.add("inplay");
+  }
+}
+let cdStarted=false;
+function countdownStart(){
+  if(cdStarted) return; cdStarted=true;
+  tickCountdowns();
+  if(typeof setInterval==="function") setInterval(tickCountdowns,30000);
+}
+function gameCard(s,g){
+  const det=g.detail||{};
+  const mu=(det.home&&det.away)?(det.home+" v "+det.away):(g.game||"");
+  let h='<div class="gcard"><div class="mu">'+esc(mu)+'</div>'
+    +'<div class="meta">'+esc(g.league||"")+((g.sport&&g.league)?" · ":"")+esc(g.sport||"")+'</div>';
+  const kinds=[];
+  for(const c of (s.choices||[])){ if(c.game_id===g.game_id&&c.kind) kinds.push(c.kind); }
+  if(kinds.length){
+    h+='<div class="gbadges">'+kinds.map(k=>k==="GRAND PICK"?'<span class="badge">GRAND PICK</span>':'<span class="tag">'+esc(k)+'</span>').join("")+'</div>';
+  }
+  if(g.pick) h+='<div class="cardpick">Card pick: <strong>'+esc(g.pick)+'</strong>'+(g.price!=null?' <span class="num">@ '+num(g.price)+'</span>':"")+'</div>';
+  const kings=det.kings||[];
+  if(kings.length){
+    h+='<div class="kchips">'+kings.map(k=>'<span class="kchip"><b>'+esc(k.court)+'</b>: '+esc(k.pick)+(k.price!=null?' <span class="num">@ '+num(k.price)+'</span>':"")+'</span>').join("")+'</div>';
+  }
+  if(g.tip_at){
+    h+='<div><span class="cd" data-tip="'+esc(g.tip_at)+'">'+esc(cdText(g.tip_at))+'</span>'
+      +' <span class="mut" style="font-size:.88rem">Tip '+when(g.tip_at)+'</span></div>';
+  }else if(g.time){
+    h+='<div class="meta">Tip '+esc(g.time)+'</div>';
+  }
+  return h+'</div>';
+}
+function todayHTML(){
+  const open=(S.slips||[]).filter(x=>x.status&&x.status!=="GRADED"&&Array.isArray(x.games_list)&&x.games_list.length)
+    .sort((a,b)=>b.number-a.number);
+  let h='<h2 class="sec">Today on the desk</h2>';
+  if(open.length){
+    const s=open[0];
+    const games=s.games_list.slice().sort((a,b)=>String(a.tip_at||"").localeCompare(String(b.tip_at||"")));
+    h+='<p class="sec-sub">Slip #'+num(s.number)+' is locked — every game below, with a live countdown to each tip. No live scores on this page: results land at grading.</p>'
+      +games.map(g=>gameCard(s,g)).join("");
+    return h;
+  }
+  const pend=(S.forward&&Array.isArray(S.forward.pending_slips))?S.forward.pending_slips:[];
+  h+='<p class="sec-sub">The locked slip, game by game, with a live countdown to every tip.</p>'
+    +'<div class="card"><div style="font-weight:700">'
+    +(pend.length?("Slip #"+pend.map(esc).join(" and #")+" — locked, waiting to grade."):"No slip is waiting to grade right now.")
+    +'</div><div class="mut" style="margin-top:4px">When the next locked slip\u2019s games reach this page, every game shows here with its king picks and a ticking countdown to its tip.</div></div>';
+  return h;
+}
+
 /* ---------- 1. top summary: settled P&L only ---------- */
 function summaryHTML(){
   const b=S.bankroll||{};
@@ -345,6 +444,26 @@ function pnlChartHTML(){
   return h;
 }
 
+/* ---------- form strip: one block per graded slip, from results.king_records ---------- */
+function formStripHTML(court){
+  const graded=(S.slips||[]).filter(x=>x.status==="GRADED"&&x.results&&x.results.king_records&&x.results.king_records[court])
+    .sort((a,b)=>a.number-b.number);
+  if(!graded.length) return "";
+  const last=graded.slice(-12);
+  const blocks=last.map(x=>{
+    const kr=x.results.king_records[court];
+    const c=(typeof kr.pnl_m==="number"&&kr.pnl_m>0)?"w":((typeof kr.pnl_m==="number"&&kr.pnl_m<0)?"l":"z");
+    return '<span class="fblock '+c+'" title="Slip #'+num(x.number)+' · '+rec(kr.wins,kr.losses)+' · '+m(kr.pnl_m)+'"></span>';
+  }).join("");
+  const l5=graded.slice(-5);
+  let w=0,l=0,p=0;
+  for(const x of l5){ const kr=x.results.king_records[court]; w+=kr.wins||0; l+=kr.losses||0; p+=(typeof kr.pnl_m==="number"?kr.pnl_m:0); }
+  p=Math.round(p*100)/100;
+  return '<div class="formlab">Form — one block per graded slip, oldest first</div>'
+    +'<div class="formstrip">'+blocks+'</div>'
+    +'<div class="mut" style="margin-top:6px">Last '+l5.length+' slips: <span class="num">'+w+'-'+l+'</span> · <span class="num '+cls(p)+'">'+m(p)+'</span> — green blocks are slips this king finished in profit.</div>';
+}
+
 /* ---------- 3. the five kings ---------- */
 function kingCard(k){
   const f=fwdKing(k.court)||{};
@@ -361,6 +480,7 @@ function kingCard(k){
     +'<div class="big num">'+rec(k.wins,k.losses)+' &nbsp;<span class="'+cls(k.pnl_m)+'">'+m(k.pnl_m)+'</span> &nbsp;<span class="'+cls(k.roi_pct)+'">'+pct(k.roi_pct)+'</span></div>'
     +'<div class="mut">'+num(k.priced)+' priced</div></div>'
     +'<div class="row"><span class="k">Underdog line (fitted)</span><span class="v num">'+rec(d.wins,d.losses)+' · <span class="'+cls(d.pnl_m)+'">'+m(d.pnl_m)+'</span> · '+pct(d.roi_pct)+'</span></div>'
+    +formStripHTML(k.court)
     +'<div class="rulename">Rule: '+esc(k.name||"")+'</div>'
     +'</div></div>';
 }
@@ -442,10 +562,13 @@ function pickLine(label,p,res){
   if(res&&res.pnl_m!=null) h+=' <span class="num '+cls(res.pnl_m)+'">('+m(res.pnl_m)+')</span>';
   return h+'</span></div>';
 }
-function slipCard(s){
+function slipCard(s,fresh){
   const r=s.results||{};
-  let h='<div class="card"><h3>Slip #'+num(s.number)+' <span class="tag">'+esc(s.status||"")+'</span></h3>'
+  const gp=r.grand_pick||{};
+  let h='<div class="card'+(fresh?' fresh':'')+'"><h3>Slip #'+num(s.number)+' <span class="tag">'+esc(s.status||"")+'</span>'
+    +(fresh?' <span class="badge">FRESHEST RESULT</span>':"")+'</h3>'
     +'<div class="mut">'+esc(s.date||"")+' · '+num(s.games)+' games</div>'
+    +(fresh&&gp.result==="WON"?'<div class="winbanner">Grand pick WON <span class="num">('+m(gp.pnl_m)+')</span> — the freshest result on the desk.</div>':"")
     +pickLine("Grand pick",s.grand_pick,r.grand_pick)
     +pickLine("Confidence bet",s.confidence_bet,r.confidence_bet)
     +pickLine("Underdog desk (paper)",s.underdog_desk,r.underdog_desk)
@@ -464,8 +587,10 @@ function slipCard(s){
 function slipsHTML(){
   const slips=(S.slips||[]).slice().reverse();
   if(!slips.length) return "";
-  let h='<h2 class="sec">Latest slip</h2>'+slipCard(slips[0]);
-  h+='<h2 class="sec">All slips</h2>'+slips.map(slipCard).join("");
+  const graded=(S.slips||[]).filter(x=>x.status==="GRADED");
+  const freshNo=graded.length?Math.max.apply(null,graded.map(x=>x.number)):null;
+  let h='<h2 class="sec">Latest slip</h2>'+slipCard(slips[0],slips[0].number===freshNo);
+  h+='<h2 class="sec">All slips</h2>'+slips.map(x=>slipCard(x,x.number===freshNo)).join("");
   return h;
 }
 
@@ -613,7 +738,7 @@ function render(){
   document.getElementById("banner-kings").innerHTML=bannerHTML();
   document.getElementById("ticker-track").innerHTML=tickerGroup()+tickerGroup();
   document.getElementById("content").innerHTML =
-    pane("overview", summaryHTML()+totalsHTML()+pnlChartHTML()+forwardHTML())
+    pane("overview", todayHTML()+summaryHTML()+totalsHTML()+pnlChartHTML()+forwardHTML())
     +pane("kings", kingsHTML())
     +pane("compare", compareHTML())
     +pane("slips", slipsHTML())
@@ -621,6 +746,7 @@ function render(){
     +pane("more", tuckedHTML());
   applyTabs();
   tickerStart();
+  countdownStart();
 }
 
 /* ---------- loader: same contract as before — fetch status.json, re-check every 60s ---------- */
