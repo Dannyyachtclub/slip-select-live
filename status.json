@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T23:13:15.278951-06:00",
+  "generated_at": "2026-11-24T23:42:53.915237-06:00",
   "kings": [
     {
       "court": "Legacy",
@@ -7231,7 +7231,7 @@
     },
     {
       "number": 42,
-      "status": "LOCKED",
+      "status": "GRADED",
       "games": 18,
       "grand_pick": {
         "selection": "Portland Trail Blazers",
@@ -7246,13 +7246,49 @@
         "paper": true
       },
       "draw_desk": null,
-      "results": null,
+      "results": {
+        "king_records": {
+          "Legacy": {
+            "wins": 13,
+            "losses": 5,
+            "pnl_m": 108.35
+          },
+          "Regime": {
+            "wins": 13,
+            "losses": 5,
+            "pnl_m": 135.84
+          },
+          "Quantum": {
+            "wins": 13,
+            "losses": 5,
+            "pnl_m": -8.19
+          },
+          "Selector": {
+            "wins": 12,
+            "losses": 6,
+            "pnl_m": 49.78
+          },
+          "Vanguard": {
+            "wins": 11,
+            "losses": 7,
+            "pnl_m": 20.15
+          }
+        },
+        "grand_pick": {
+          "result": "WON",
+          "pnl_m": 34.75
+        },
+        "underdog_desk": {
+          "result": "LOST",
+          "pnl_m": -25.0
+        }
+      },
       "user_bets": null,
       "date": "2026-11-23",
       "games_status": {
         "games_total": 18,
-        "games_ended": 0,
-        "games_live_final": 18,
+        "games_ended": 18,
+        "games_live_final": 0,
         "games_live_in": 0
       },
       "games_list": [
@@ -7261,1422 +7297,342 @@
           "game": "1.3876 / 3.10",
           "time": "13:30",
           "tip_at": "2026-11-23T13:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Ole Miss Rebels)",
+          "final_score": "62-82",
           "bet_call": "",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Ole Miss Rebels",
           "price": 1.3876,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 62,
-            "away_score": 82,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "62-82",
-          "detail": {
-            "home": "Clemson Tigers",
-            "away": "Ole Miss Rebels",
-            "prices": {
-              "home": 3.1,
-              "away": 1.3876,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 30.92,
-              "away": 69.08
-            },
-            "overround_pct": 4.32,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Ole Miss Rebels",
-                "price": 1.3876,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Ole Miss Rebels",
-                "price": 1.3876,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Clemson Tigers",
-                "price": 3.1,
-                "reason": "Clause dogprice_set is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Clemson Tigers",
-                "price": 3.1,
-                "reason": "The three courts split (Ole Miss Rebels, Ole Miss Rebels, Clemson Tigers); the selector rule resolves the split to Clemson Tigers.…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Ole Miss Rebels",
-                "price": 1.3876,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 148.5,
-              "projection": 149.2
-            },
-            "bet_call": "LEDGER BET — Clemson Tigers 25m @ 3.1. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-02",
           "game": "2.14 / 1.7407",
           "time": "15:00",
           "tip_at": "2026-11-23T15:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Belmont Bruins)",
+          "final_score": "68-60",
           "bet_call": "",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Belmont Bruins",
           "price": 1.7407,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 68,
-            "away_score": 60,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "68-60",
-          "detail": {
-            "home": "Belmont Bruins",
-            "away": "Yale Bulldogs",
-            "prices": {
-              "home": 1.7407,
-              "away": 2.14,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 55.14,
-              "away": 44.86
-            },
-            "overround_pct": 4.18,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Belmont Bruins",
-                "price": 1.7407,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Belmont Bruins",
-                "price": 1.7407,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Belmont Bruins",
-                "price": 1.7407,
-                "reason": "Quantum ball is the efficiency-differential side (home-adjusted frozen differentials); no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Belmont Bruins",
-                "price": 1.7407,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Belmont Bruins",
-                "price": 1.7407,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 146.5,
-              "projection": 143.55
-            },
-            "bet_call": "LEDGER BET — Belmont Bruins 25m @ 1.7407. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-03",
           "game": "1.3077 / 3.60",
           "time": "15:30",
           "tip_at": "2026-11-23T15:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Nevada Wolf Pack)",
+          "final_score": "62-71",
           "bet_call": "Over 142.5 (proj 146.7)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Nevada Wolf Pack",
           "price": 1.3077,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 62,
-            "away_score": 71,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "62-71",
-          "detail": {
-            "home": "San Francisco Dons",
-            "away": "Nevada Wolf Pack",
-            "prices": {
-              "home": 3.6,
-              "away": 1.3077,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 26.65,
-              "away": 73.35
-            },
-            "overround_pct": 4.25,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.3077,
-                "reason": "Clause sport_devig_range_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.3077,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.3077,
-                "reason": "Clause ball_dog_veto is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.3077,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Nevada Wolf Pack",
-                "price": 1.3077,
-                "reason": "Vanguard ball falls back to the market favourite — the fragility screen was not frozen for this game, so there is no true-ball read; no…"
-              }
-            ],
-            "totals": {
-              "line": 142.5,
-              "projection": 146.7
-            },
-            "bet_call": "LEDGER BET — Nevada Wolf Pack 25m @ 1.3077. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-04",
           "game": "6.25 / 1.1333",
           "time": "16:00",
           "tip_at": "2026-11-23T16:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (BYU Cougars)",
+          "final_score": "83-77",
           "bet_call": "Under 165.5 (proj 160.7)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "BYU Cougars",
           "price": 1.1333,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 83,
-            "away_score": 77,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "83-77",
-          "detail": {
-            "home": "BYU Cougars",
-            "away": "Washington Huskies",
-            "prices": {
-              "home": 1.1333,
-              "away": 6.25,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 84.65,
-              "away": 15.35
-            },
-            "overround_pct": 4.24,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "BYU Cougars",
-                "price": 1.1333,
-                "reason": "Clause diffdog_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "BYU Cougars",
-                "price": 1.1333,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "BYU Cougars",
-                "price": 1.1333,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "BYU Cougars",
-                "price": 1.1333,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Washington Huskies",
-                "price": 6.25,
-                "reason": "Clause brand_venue_devig_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.) VG26-OVR800870VETO…"
-              }
-            ],
-            "totals": {
-              "line": 165.5,
-              "projection": 160.7
-            },
-            "bet_call": "LEDGER BET — BYU Cougars 25m @ 1.1333. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-05",
           "game": "1.676 / 2.25",
           "time": "18:00",
           "tip_at": "2026-11-23T18:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Memphis Grizzlies)",
+          "final_score": "111-117",
           "bet_call": "Over 214.5 (proj 221.2)",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Memphis Grizzlies",
           "price": 1.676,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 111,
-            "away_score": 117,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "111-117",
-          "detail": {
-            "home": "Charlotte Hornets",
-            "away": "Memphis Grizzlies",
-            "prices": {
-              "home": 2.25,
-              "away": 1.676,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 42.69,
-              "away": 57.31
-            },
-            "overround_pct": 4.11,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Memphis Grizzlies",
-                "price": 1.676,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Memphis Grizzlies",
-                "price": 1.676,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Memphis Grizzlies",
-                "price": 1.676,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Memphis Grizzlies",
-                "price": 1.676,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Memphis Grizzlies",
-                "price": 1.676,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 214.5,
-              "projection": 221.2
-            },
-            "bet_call": "LEDGER BET — Memphis Grizzlies 25m @ 1.676. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-06",
           "game": "2.39 / 1.602",
           "time": "18:00",
           "tip_at": "2026-11-23T18:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Portland Trail Blazers)",
+          "final_score": "111-128",
           "bet_call": "Under 232.5 (proj 227.25)",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Philadelphia 76ers",
           "price": 1.602,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 111,
-            "away_score": 128,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "111-128",
-          "detail": {
-            "home": "Philadelphia 76ers",
-            "away": "Portland Trail Blazers",
-            "prices": {
-              "home": 1.602,
-              "away": 2.39,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 59.87,
-              "away": 40.13
-            },
-            "overround_pct": 4.26,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Philadelphia 76ers",
-                "price": 1.602,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Philadelphia 76ers",
-                "price": 1.602,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Quantum",
-                "pick": "Philadelphia 76ers",
-                "price": 1.602,
-                "reason": "Clause ball_dog_veto is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Philadelphia 76ers",
-                "price": 1.602,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Philadelphia 76ers",
-                "price": 1.602,
-                "reason": "Clause diffdog_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG26-OVR800870VETO forward…"
-              }
-            ],
-            "totals": {
-              "line": 232.5,
-              "projection": 227.25
-            },
-            "bet_call": "LEDGER BET — Philadelphia 76ers 25m @ 1.602. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-07",
           "game": "2.30 / 1.6452",
           "time": "18:00",
           "tip_at": "2026-11-23T18:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Santa Clara Broncos)",
+          "final_score": "102-99",
           "bet_call": "Over 150.5 (proj 158.45)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Illinois State Redbirds",
           "price": 2.3,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 102,
-            "away_score": 99,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "102-99",
-          "detail": {
-            "home": "Santa Clara Broncos",
-            "away": "Illinois State Redbirds",
-            "prices": {
-              "home": 1.6452,
-              "away": 2.3,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 58.3,
-              "away": 41.7
-            },
-            "overround_pct": 4.26,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Santa Clara Broncos",
-                "price": 1.6452,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Illinois State Redbirds",
-                "price": 2.3,
-                "reason": "Clause dogprice_set is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Santa Clara Broncos",
-                "price": 1.6452,
-                "reason": "Clause ball_dog_veto is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Santa Clara Broncos",
-                "price": 1.6452,
-                "reason": "The three courts split (Santa Clara Broncos, Illinois State Redbirds, Santa Clara Broncos); the selector rule resolves the split to…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Santa Clara Broncos",
-                "price": 1.6452,
-                "reason": "Clause diffdog_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG26-OVR800870VETO forward…"
-              }
-            ],
-            "totals": {
-              "line": 150.5,
-              "projection": 158.45
-            },
-            "bet_call": "LEDGER BET — Santa Clara Broncos 25m @ 1.6452. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-08",
           "game": "1.524 / 2.60",
           "time": "18:30",
           "tip_at": "2026-11-23T18:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Indiana Pacers)",
+          "final_score": "125-120",
           "bet_call": "",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Oklahoma City Thunder",
           "price": 1.524,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 125,
-            "away_score": 120,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "125-120",
-          "detail": {
-            "home": "Indiana Pacers",
-            "away": "Oklahoma City Thunder",
-            "prices": {
-              "home": 2.6,
-              "away": 1.524,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 36.95,
-              "away": 63.05
-            },
-            "overround_pct": 4.08,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Indiana Pacers",
-                "price": 2.6,
-                "reason": "Clause zerotrip_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Oklahoma City Thunder",
-                "price": 1.524,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Oklahoma City Thunder",
-                "price": 1.524,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Oklahoma City Thunder",
-                "price": 1.524,
-                "reason": "The three courts split (Indiana Pacers, Oklahoma City Thunder, Oklahoma City Thunder); the selector rule resolves the split to Oklahoma…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Oklahoma City Thunder",
-                "price": 1.524,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 221.5,
-              "projection": 224.75
-            },
-            "bet_call": "LEDGER BET — Oklahoma City Thunder 25m @ 1.524. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-09",
           "game": "4.60 / 1.214",
           "time": "18:30",
           "tip_at": "2026-11-23T18:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Milwaukee Bucks)",
+          "final_score": "111-116",
           "bet_call": "",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Milwaukee Bucks",
           "price": 4.6,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 111,
-            "away_score": 116,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "111-116",
-          "detail": {
-            "home": "Toronto Raptors",
-            "away": "Milwaukee Bucks",
-            "prices": {
-              "home": 1.214,
-              "away": 4.6,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 79.12,
-              "away": 20.88
-            },
-            "overround_pct": 4.11,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Milwaukee Bucks",
-                "price": 4.6,
-                "reason": "Clause zerotrip_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Milwaukee Bucks",
-                "price": 4.6,
-                "reason": "Clause diffgap_range_flip is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Toronto Raptors",
-                "price": 1.214,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Milwaukee Bucks",
-                "price": 4.6,
-                "reason": "The three courts split (Milwaukee Bucks, Milwaukee Bucks, Toronto Raptors); the selector rule resolves the split to Milwaukee Bucks.…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Milwaukee Bucks",
-                "price": 4.6,
-                "reason": "Clause sport_venue_devig_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.) VG26-OVR800870VETO…"
-              }
-            ],
-            "totals": {
-              "line": 223.5,
-              "projection": 227.05
-            },
-            "bet_call": "LEDGER BET — Milwaukee Bucks 25m @ 4.6. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-10",
           "game": "5.55 / 1.161",
           "time": "18:30",
           "tip_at": "2026-11-23T18:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Minnesota Timberwolves)",
+          "final_score": "142-116",
           "bet_call": "",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Minnesota Timberwolves",
           "price": 1.161,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 142,
-            "away_score": 116,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "142-116",
-          "detail": {
-            "home": "Minnesota Timberwolves",
-            "away": "Brooklyn Nets",
-            "prices": {
-              "home": 1.161,
-              "away": 5.55,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 82.7,
-              "away": 17.3
-            },
-            "overround_pct": 4.15,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Minnesota Timberwolves",
-                "price": 1.161,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Minnesota Timberwolves",
-                "price": 1.161,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Minnesota Timberwolves",
-                "price": 1.161,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Minnesota Timberwolves",
-                "price": 1.161,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Minnesota Timberwolves",
-                "price": 1.161,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 224.5,
-              "projection": 224.9
-            },
-            "bet_call": "LEDGER BET — Minnesota Timberwolves 25m @ 1.161. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-11",
           "game": "1.298 / 3.70",
           "time": "19:00",
           "tip_at": "2026-11-23T19:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Underdog (Chicago Bulls)",
+          "final_score": "122-108",
           "bet_call": "",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Chicago Bulls",
           "price": 3.7,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 122,
-            "away_score": 108,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "122-108",
-          "detail": {
-            "home": "Chicago Bulls",
-            "away": "Cleveland Cavaliers",
-            "prices": {
-              "home": 3.7,
-              "away": 1.298,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 25.97,
-              "away": 74.03
-            },
-            "overround_pct": 4.07,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Cleveland Cavaliers",
-                "price": 1.298,
-                "reason": "Clause sport_devig_range_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Chicago Bulls",
-                "price": 3.7,
-                "reason": "Clause diffgap_range_flip is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Cleveland Cavaliers",
-                "price": 1.298,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Cleveland Cavaliers",
-                "price": 1.298,
-                "reason": "The three courts split (Cleveland Cavaliers, Chicago Bulls, Cleveland Cavaliers); the selector rule resolves the split to Cleveland…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Cleveland Cavaliers",
-                "price": 1.298,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 241.5,
-              "projection": 238.25
-            },
-            "bet_call": "LEDGER BET — Cleveland Cavaliers 25m @ 1.298. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-12",
           "game": "1.645 / 2.31",
           "time": "19:00",
           "tip_at": "2026-11-23T19:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Phoenix Suns)",
+          "final_score": "119-123",
           "bet_call": "",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Phoenix Suns",
           "price": 1.645,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 119,
-            "away_score": 123,
-            "clock": null,
-            "period": 5,
-            "detail": "Final/OT",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "119-123",
-          "detail": {
-            "home": "New Orleans Pelicans",
-            "away": "Phoenix Suns",
-            "prices": {
-              "home": 2.31,
-              "away": 1.645,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 41.59,
-              "away": 58.41
-            },
-            "overround_pct": 4.08,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "New Orleans Pelicans",
-                "price": 2.31,
-                "reason": "Clause away_band_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Phoenix Suns",
-                "price": 1.645,
-                "reason": "Clause trips_exact_veto is the last to move the pick. (4 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Phoenix Suns",
-                "price": 1.645,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Phoenix Suns",
-                "price": 1.645,
-                "reason": "The three courts split (New Orleans Pelicans, Phoenix Suns, Phoenix Suns); the selector rule resolves the split to Phoenix Suns.…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "New Orleans Pelicans",
-                "price": 2.31,
-                "reason": "Clause pricepair_ratio_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.) VG26-OVR800870VETO forward…"
-              }
-            ],
-            "totals": {
-              "line": 233.5,
-              "projection": 232.7
-            },
-            "bet_call": "LEDGER BET — Phoenix Suns 25m @ 1.645. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-13",
           "game": "16.00 / 1.0278",
           "time": "19:00",
           "tip_at": "2026-11-23T19:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (North Carolina Tar Heels)",
+          "final_score": "85-45",
           "bet_call": "",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "North Carolina Tar Heels",
           "price": 1.0278,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 85,
-            "away_score": 45,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "85-45",
-          "detail": {
-            "home": "North Carolina Tar Heels",
-            "away": "Monmouth Hawks",
-            "prices": {
-              "home": 1.0278,
-              "away": 16.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 93.96,
-              "away": 6.04
-            },
-            "overround_pct": 3.55,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "North Carolina Tar Heels",
-                "price": 1.0278,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "North Carolina Tar Heels",
-                "price": 1.0278,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "North Carolina Tar Heels",
-                "price": 1.0278,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "North Carolina Tar Heels",
-                "price": 1.0278,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Monmouth Hawks",
-                "price": 16.0,
-                "reason": "Clause brand_venue_devig_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.) VG26-OVR800870VETO…"
-              }
-            ],
-            "totals": {
-              "line": 153.5,
-              "projection": 150.9
-            },
-            "bet_call": "LEDGER BET — North Carolina Tar Heels 25m @ 1.0278. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-14",
           "game": "5.70 / 1.154",
           "time": "19:30",
           "tip_at": "2026-11-23T19:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Houston Rockets)",
+          "final_score": "116-104",
           "bet_call": "Over 223.5 (proj 228.75)",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "LA Clippers",
           "price": 5.7,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 116,
-            "away_score": 104,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "116-104",
-          "detail": {
-            "home": "Houston Rockets",
-            "away": "LA Clippers",
-            "prices": {
-              "home": 1.154,
-              "away": 5.7,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 83.16,
-              "away": 16.84
-            },
-            "overround_pct": 4.2,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "LA Clippers",
-                "price": 5.7,
-                "reason": "Clause zerotrip_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "LA Clippers",
-                "price": 5.7,
-                "reason": "Clause diffgap_range_flip is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Houston Rockets",
-                "price": 1.154,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "LA Clippers",
-                "price": 5.7,
-                "reason": "The three courts split (LA Clippers, LA Clippers, Houston Rockets); the selector rule resolves the split to LA Clippers. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Houston Rockets",
-                "price": 1.154,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 223.5,
-              "projection": 228.75
-            },
-            "bet_call": "LEDGER BET — LA Clippers 25m @ 5.7. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-15",
           "game": "2.05 / 1.80",
           "time": "20:00",
           "tip_at": "2026-11-23T20:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Providence Friars)",
+          "final_score": "72-66",
           "bet_call": "Under 154.5 (proj 145.4)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Providence Friars",
           "price": 1.8,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 72,
-            "away_score": 66,
-            "clock": null,
-            "period": 3,
-            "detail": "Final/OT",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "72-66",
-          "detail": {
-            "home": "Providence Friars",
-            "away": "VCU Rams",
-            "prices": {
-              "home": 1.8,
-              "away": 2.05,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 53.25,
-              "away": 46.75
-            },
-            "overround_pct": 4.34,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Providence Friars",
-                "price": 1.8,
-                "reason": "Legacy ball is market-only: the de-vig favourite holds; no clause in the stack fires on this game."
-              },
-              {
-                "court": "Regime",
-                "pick": "Providence Friars",
-                "price": 1.8,
-                "reason": "Clause sport_venue_dogprice_range_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Providence Friars",
-                "price": 1.8,
-                "reason": "Quantum ball is the efficiency-differential side (home-adjusted frozen differentials); no clause in the stack fires on this game."
-              },
-              {
-                "court": "Selector",
-                "pick": "Providence Friars",
-                "price": 1.8,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Providence Friars",
-                "price": 1.8,
-                "reason": "Clause diffpos_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.) VG26-OVR800870VETO forward…"
-              }
-            ],
-            "totals": {
-              "line": 154.5,
-              "projection": 145.4
-            },
-            "bet_call": "LEDGER BET — Providence Friars 25m @ 1.8. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-16",
           "game": "6.54 / 1.127",
           "time": "21:00",
           "tip_at": "2026-11-23T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Los Angeles Lakers)",
+          "final_score": "109-94",
           "bet_call": "Over 224.5 (proj 229.05)",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "Utah Jazz",
           "price": 6.54,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 109,
-            "away_score": 94,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "109-94",
-          "detail": {
-            "home": "Los Angeles Lakers",
-            "away": "Utah Jazz",
-            "prices": {
-              "home": 1.127,
-              "away": 6.54,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 85.3,
-              "away": 14.7
-            },
-            "overround_pct": 4.02,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Utah Jazz",
-                "price": 6.54,
-                "reason": "Clause zerotrip_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Utah Jazz",
-                "price": 6.54,
-                "reason": "Clause diffgap_range_flip is the last to move the pick. (3 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Los Angeles Lakers",
-                "price": 1.127,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Utah Jazz",
-                "price": 6.54,
-                "reason": "The three courts split (Utah Jazz, Utah Jazz, Los Angeles Lakers); the selector rule resolves the split to Utah Jazz. Selector…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Los Angeles Lakers",
-                "price": 1.127,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 224.5,
-              "projection": 229.05
-            },
-            "bet_call": "LEDGER BET — Utah Jazz 25m @ 6.54. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "LOST",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-17",
           "game": "1.207 / 4.71",
           "time": "21:00",
           "tip_at": "2026-11-23T21:00:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (San Antonio Spurs)",
+          "final_score": "107-123",
           "bet_call": "",
           "league": "NBA",
           "sport": "Basketball",
           "pick": "San Antonio Spurs",
           "price": 1.207,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 107,
-            "away_score": 123,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "107-123",
-          "detail": {
-            "home": "Sacramento Kings",
-            "away": "San Antonio Spurs",
-            "prices": {
-              "home": 4.71,
-              "away": 1.207,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 20.4,
-              "away": 79.6
-            },
-            "overround_pct": 4.08,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "San Antonio Spurs",
-                "price": 1.207,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "San Antonio Spurs",
-                "price": 1.207,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "San Antonio Spurs",
-                "price": 1.207,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "San Antonio Spurs",
-                "price": 1.207,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "San Antonio Spurs",
-                "price": 1.207,
-                "reason": "The court's ball takes the market favourite; no clause in the stack fires on this game. VG26-OVR800870VETO forward judgment — computed…"
-              }
-            ],
-            "totals": {
-              "line": 223.5,
-              "projection": 224.3
-            },
-            "bet_call": "LEDGER BET — San Antonio Spurs 25m @ 1.207. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         },
         {
           "game_id": "S42-18",
           "game": "12.00 / 1.0476",
           "time": "22:30",
           "tip_at": "2026-11-23T22:30:00-06:00",
-          "status": "PENDING",
-          "winner": null,
-          "final_score": null,
+          "status": "ENDED",
+          "winner": "Favourite (Arizona Wildcats)",
+          "final_score": "96-83",
           "bet_call": "Under 158.5 (proj 153.6)",
           "league": "NCAAB",
           "sport": "Basketball",
           "pick": "Arizona Wildcats",
           "price": 1.0476,
-          "outcome": null,
-          "live": {
-            "state": "final",
-            "home_score": 96,
-            "away_score": 83,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "96-83",
-          "detail": {
-            "home": "Arizona Wildcats",
-            "away": "Colorado State Rams",
-            "prices": {
-              "home": 1.0476,
-              "away": 12.0,
-              "draw": null
-            },
-            "devig_pct": {
-              "home": 91.97,
-              "away": 8.03
-            },
-            "overround_pct": 3.79,
-            "kings": [
-              {
-                "court": "Legacy",
-                "pick": "Arizona Wildcats",
-                "price": 1.0476,
-                "reason": "Clause sport_devig_range_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Regime",
-                "pick": "Arizona Wildcats",
-                "price": 1.0476,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Quantum",
-                "pick": "Arizona Wildcats",
-                "price": 1.0476,
-                "reason": "Clause diffgap_veto is the last to move the pick. (2 clauses moved the pick; the last one decides it.)"
-              },
-              {
-                "court": "Selector",
-                "pick": "Arizona Wildcats",
-                "price": 1.0476,
-                "reason": "All three courts agree; the selector takes the shared pick. Selector ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78 — the…"
-              },
-              {
-                "court": "Vanguard",
-                "pick": "Colorado State Rams",
-                "price": 12.0,
-                "reason": "Clause brand_venue_devig_flip is the last to move the pick. (1 clause moved the pick; the last one decides it.) VG26-OVR800870VETO…"
-              }
-            ],
-            "totals": {
-              "line": 158.5,
-              "projection": 153.6
-            },
-            "bet_call": "LEDGER BET — Arizona Wildcats 25m @ 1.0476. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19)."
-          }
+          "outcome": "WON",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "detail": null
         }
       ],
       "top3": [
@@ -8689,25 +7645,15 @@
           "stake_m": 25,
           "price": 2.39,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 34.75,
+          "final_score": "111-128",
           "tip_at": "2026-11-23T18:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 111,
-            "away_score": 128,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "111-128",
-          "reason": "LEDGER BET — Philadelphia 76ers 25m @ 1.602. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19).",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -8715,31 +7661,21 @@
         {
           "rank": 3,
           "kind": "UNDERDOG DESK",
-          "game_id": "S42-04",
-          "game": "6.25 / 1.1333",
+          "game_id": null,
+          "game": null,
           "pick": "Washington Huskies",
           "stake_m": 25,
           "price": 6.25,
           "paper": true,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
           "final_score": null,
-          "tip_at": "2026-11-23T16:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 83,
-            "away_score": 77,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "83-77",
-          "reason": "LEDGER BET — BYU Cougars 25m @ 1.1333. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19).",
+          "tip_at": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -8756,25 +7692,15 @@
           "stake_m": 25,
           "price": 2.39,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "WON",
+          "pnl_m": 34.75,
+          "final_score": "111-128",
           "tip_at": "2026-11-23T18:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 111,
-            "away_score": 128,
-            "clock": null,
-            "period": 4,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "111-128",
-          "reason": "LEDGER BET — Philadelphia 76ers 25m @ 1.602. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19).",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -8783,31 +7709,21 @@
           "rank": 2,
           "kind": "UNDERDOG DESK",
           "fire": null,
-          "game_id": "S42-04",
-          "game": "6.25 / 1.1333",
+          "game_id": null,
+          "game": null,
           "pick": "Washington Huskies",
           "stake_m": 25,
           "price": 6.25,
           "paper": true,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
           "final_score": null,
-          "tip_at": "2026-11-23T16:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 83,
-            "away_score": 77,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "83-77",
-          "reason": "LEDGER BET — BYU Cougars 25m @ 1.1333. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19).",
+          "tip_at": null,
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -8822,25 +7738,15 @@
           "stake_m": 25,
           "price": 2.3,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "102-99",
           "tip_at": "2026-11-23T18:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 102,
-            "away_score": 99,
-            "clock": null,
-            "period": 2,
-            "detail": "Final",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "102-99",
-          "reason": "LEDGER BET — Santa Clara Broncos 25m @ 1.6452. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19).",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -8855,25 +7761,15 @@
           "stake_m": 25,
           "price": 2.05,
           "paper": false,
-          "status": "IN PLAY",
-          "result": null,
-          "pnl_m": null,
-          "final_score": null,
+          "status": "ENDED",
+          "result": "LOST",
+          "pnl_m": -25.0,
+          "final_score": "72-66",
           "tip_at": "2026-11-23T20:00:00-06:00",
-          "live": {
-            "state": "final",
-            "home_score": 72,
-            "away_score": 66,
-            "clock": null,
-            "period": 3,
-            "detail": "Final/OT",
-            "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-            "source": "ESPN",
-            "official": false
-          },
-          "display_state": "final",
-          "display_final_score": "72-66",
-          "reason": "LEDGER BET — Providence Friars 25m @ 1.8. Per the user's instruction (2026-11-18), every choice pick on this slip registers to the billion-bankroll ledger at flat 25m; the pick is the card pick — the sitting Selector king's (ABLATION-BBDVGE80-TENNISTOP-DOGC719PAIR31262-DOGLEN23PAIR78) under consensus picking (user order 2026-11-19).",
+          "live": null,
+          "display_state": null,
+          "display_final_score": null,
+          "reason": null,
           "user_bet": false,
           "user_stake_m": null,
           "user_price": null
@@ -9670,54 +8566,34 @@
       "price": 2.39,
       "kind": "GRAND PICK",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "WON",
+      "pnl_m": 34.75,
       "fire": null,
-      "final_score": null,
+      "final_score": "111-128",
       "tip_at": "2026-11-23T18:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 111,
-        "away_score": 128,
-        "clock": null,
-        "period": 4,
-        "detail": "Final",
-        "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "111-128"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 42,
-      "game_id": "S42-04",
-      "game": "6.25 / 1.1333",
+      "game_id": null,
+      "game": null,
       "pick": "Washington Huskies",
       "stake_m": 25,
       "price": 6.25,
       "kind": "UNDERDOG DESK",
       "paper": true,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
       "final_score": null,
-      "tip_at": "2026-11-23T16:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 83,
-        "away_score": 77,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "83-77"
+      "tip_at": null,
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 42,
@@ -9728,25 +8604,15 @@
       "price": 2.3,
       "kind": "CHOSEN BET",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
-      "final_score": null,
+      "final_score": "102-99",
       "tip_at": "2026-11-23T18:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 102,
-        "away_score": 99,
-        "clock": null,
-        "period": 2,
-        "detail": "Final",
-        "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "102-99"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     },
     {
       "slip": 42,
@@ -9757,25 +8623,15 @@
       "price": 2.05,
       "kind": "CHOSEN BET",
       "paper": false,
-      "status": "IN PLAY",
-      "result": null,
-      "pnl_m": null,
+      "status": "ENDED",
+      "result": "LOST",
+      "pnl_m": -25.0,
       "fire": null,
-      "final_score": null,
+      "final_score": "72-66",
       "tip_at": "2026-11-23T20:00:00-06:00",
-      "live": {
-        "state": "final",
-        "home_score": 72,
-        "away_score": 66,
-        "clock": null,
-        "period": 3,
-        "detail": "Final/OT",
-        "fetched_at": "2026-11-24T23:13:10.075454-06:00",
-        "source": "ESPN",
-        "official": false
-      },
-      "display_state": "final",
-      "display_final_score": "72-66"
+      "live": null,
+      "display_state": null,
+      "display_final_score": null
     }
   ],
   "bankroll": {
@@ -9803,43 +8659,15 @@
       }
     ],
     "balance_m": null,
-    "settled_pnl_m": -123.13,
-    "settled_staked_m": 575.0,
-    "roi_pct": -21.41,
-    "wins": 14,
-    "losses": 9,
-    "record": "14-9",
-    "winrate_pct": 60.87,
-    "pending_m": 75,
-    "pending": [
-      {
-        "slip": 42,
-        "kind": "GRAND PICK",
-        "game_id": "S42-06",
-        "pick": "Portland Trail Blazers",
-        "stake_m": 25,
-        "price": 2.39,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 42,
-        "kind": "CHOSEN BET",
-        "game_id": "S42-07",
-        "pick": "Illinois State Redbirds",
-        "stake_m": 25,
-        "price": 2.3,
-        "status": "LOCKED"
-      },
-      {
-        "slip": 42,
-        "kind": "CHOSEN BET",
-        "game_id": "S42-15",
-        "pick": "VCU Rams",
-        "stake_m": 25,
-        "price": 2.05,
-        "status": "LOCKED"
-      }
-    ],
+    "settled_pnl_m": -138.38,
+    "settled_staked_m": 650.0,
+    "roi_pct": -21.29,
+    "wins": 15,
+    "losses": 11,
+    "record": "15-11",
+    "winrate_pct": 57.69,
+    "pending_m": 0,
+    "pending": [],
     "ledger": [
       {
         "slip": 34,
@@ -10093,6 +8921,39 @@
         "result": "LOST",
         "pnl_m": -25.0,
         "balance_after_m": null
+      },
+      {
+        "slip": 42,
+        "kind": "GRAND PICK",
+        "game_id": "S42-06",
+        "pick": "Portland Trail Blazers",
+        "stake_m": 25,
+        "price": 2.39,
+        "result": "WON",
+        "pnl_m": 34.75,
+        "balance_after_m": null
+      },
+      {
+        "slip": 42,
+        "kind": "CHOSEN BET",
+        "game_id": "S42-07",
+        "pick": "Illinois State Redbirds",
+        "stake_m": 25,
+        "price": 2.3,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": null
+      },
+      {
+        "slip": 42,
+        "kind": "CHOSEN BET",
+        "game_id": "S42-15",
+        "pick": "VCU Rams",
+        "stake_m": 25,
+        "price": 2.05,
+        "result": "LOST",
+        "pnl_m": -25.0,
+        "balance_after_m": null
       }
     ],
     "paper_excluded": [
@@ -10174,9 +9035,9 @@
   },
   "forward": {
     "chosen_bets": {
-      "wins": 18,
-      "losses": 22,
-      "pnl_m": -100.93
+      "wins": 19,
+      "losses": 24,
+      "pnl_m": -116.18
     },
     "confidence": {
       "wins": 36,
@@ -10185,8 +9046,8 @@
     },
     "underdog_desk": {
       "wins": 7,
-      "losses": 12,
-      "pnl_m": 76.5
+      "losses": 13,
+      "pnl_m": 51.5
     },
     "draw_desk": {
       "wins": 2,
@@ -10196,48 +9057,48 @@
     "kings": [
       {
         "court": "Legacy",
-        "wins": 122,
-        "losses": 138,
-        "pnl_m": -441.91,
-        "roi_pct": -6.96,
-        "games": 260,
-        "priced": 254
+        "wins": 135,
+        "losses": 143,
+        "pnl_m": -333.56,
+        "roi_pct": -4.91,
+        "games": 278,
+        "priced": 272
       },
       {
         "court": "Regime",
-        "wins": 132,
-        "losses": 128,
-        "pnl_m": -132.11,
-        "roi_pct": -2.08,
-        "games": 260,
-        "priced": 254
+        "wins": 145,
+        "losses": 133,
+        "pnl_m": 3.73,
+        "roi_pct": 0.05,
+        "games": 278,
+        "priced": 272
       },
       {
         "court": "Quantum",
-        "wins": 129,
-        "losses": 131,
-        "pnl_m": -219.11,
-        "roi_pct": -3.45,
-        "games": 260,
-        "priced": 254
+        "wins": 142,
+        "losses": 136,
+        "pnl_m": -227.3,
+        "roi_pct": -3.34,
+        "games": 278,
+        "priced": 272
       },
       {
         "court": "Selector",
-        "wins": 140,
-        "losses": 120,
-        "pnl_m": -134.34,
-        "roi_pct": -2.12,
-        "games": 260,
-        "priced": 254
+        "wins": 152,
+        "losses": 126,
+        "pnl_m": -84.55,
+        "roi_pct": -1.24,
+        "games": 278,
+        "priced": 272
       },
       {
         "court": "Vanguard",
-        "wins": 146,
-        "losses": 114,
-        "pnl_m": 82.14,
-        "roi_pct": 1.29,
-        "games": 260,
-        "priced": 254
+        "wins": 157,
+        "losses": 121,
+        "pnl_m": 102.29,
+        "roi_pct": 1.5,
+        "games": 278,
+        "priced": 272
       }
     ],
     "slips": [
@@ -10251,16 +9112,17 @@
       38,
       39,
       40,
-      41
-    ],
-    "games": 260,
-    "pending_slips": [
+      41,
       42
+    ],
+    "games": 278,
+    "pending_slips": [
+      43
     ],
     "source": "forward_leaderboard.json"
   },
   "vault": {
-    "count": 351,
+    "count": 369,
     "next_opening": "2026-12-01"
   },
   "autopsy_challengers": [
@@ -10838,9 +9700,9 @@
     "claims_checked": null,
     "canary_gates": 3,
     "canary_fixtures": 3,
-    "vault_seal": "INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
+    "vault_seal": "INTACT (ledger 239 ids ∩ vault 369 ids = 0)",
     "registry": "PASS (mirror 65,992 == DB 65,992, content verified)",
-    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 65,992 == DB 65,992, content verified); vault seal INTACT (ledger 239 ids ∩ vault 351 ids = 0)",
+    "receipts": "court receipt PASS (verify_court_state.py exit 0); registry PASS (mirror 65,992 == DB 65,992, content verified); vault seal INTACT (ledger 239 ids ∩ vault 369 ids = 0)",
     "findings": [
       {
         "n": 1,
