@@ -176,6 +176,8 @@ details[open ] summary::after{content:"\2212"}
 details .inner{padding:0 16px 16px}
 .err{background:rgba(228,101,101,.12);border:1px solid rgba(228,101,101,.5);border-radius:12px;
   padding:16px;color:var(--ink)}
+.proof-note{border:1px solid rgba(224,164,78,.55);background:rgba(224,164,78,.10);border-radius:10px;
+  padding:12px 14px;margin-top:12px}
 footer{color:var(--dim);font-size:.88rem;margin-top:36px;text-align:center}
 
 @media (prefers-reduced-motion: reduce){
@@ -572,8 +574,17 @@ function integrityHTML(){
   }
   return detailsBlock("Integrity audit",h);
 }
+function proofHTML(){
+  let h='<div class="item"><div class="t">The luck test (Romano-Wolf) — PASSED, both steps</div>'
+    +'<div class="s">Checked 25 Nov 2026. The strict test asks: could the kings only look good because thousands of strategies were tried? Step 1 (the five kings on their own): all five passed at the strongest level the test can show — adjusted p &lt; 0.0001, and not one of 10,000 luck-shuffles beat any king. Step 2 (charged for the whole search — 10,579 strategies tried, 285 truly different): all five passed again, at the same level, under two test settings.</div>'
+    +'<div class="s">The honest limits: this is the fitted record (practice on old games), not live slips. The bar they cleared — always back the favourite — is a weak one. And 285 is a floor: the big registry’s rows could not be turned into testable strategies, so the true search was wider and the correction is, if anything, generous to the kings. This crowns nothing.</div></div>'
+    +'<div class="item"><div class="t">Beating the closing price — promising, NOT PROVEN</div>'
+    +'<div class="s">Checked 25 Nov 2026, on 88 graded games (slips #39–#42). Picks whose price beat the closing price returned +6.3%; picks that did not returned −13.4%. All five kings show the same shape. But 88 games is too few — the honest range around that gap still includes zero. Verdict on record: NOT ENOUGH DATA. No betting gate uses this yet; the test re-runs after 4–6 more graded slips.</div></div>'
+    +'<div class="proof-note"><strong>Forward board: under recount (25 Nov 2026).</strong> Two versions of the live forward record disagree — including on which king is in profit — so the forward figures are disputed until the recount lands.</div>';
+  return detailsBlock("Proof — the strongest evidence",h);
+}
 function tuckedHTML(){
-  const parts=[workforceHTML(),stakehunterHTML(),autopsyHTML(),researchHTML(),integrityHTML()].filter(Boolean);
+  const parts=[proofHTML(),workforceHTML(),stakehunterHTML(),autopsyHTML(),researchHTML(),integrityHTML()].filter(Boolean);
   if(!parts.length) return "";
   return '<h2 class="sec">Behind the scenes</h2><p class="sec-sub">The working machinery — tap to open any part.</p>'+parts.join("");
 }
