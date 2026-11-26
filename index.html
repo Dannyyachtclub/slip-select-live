@@ -484,8 +484,31 @@ function kingCard(k){
     +'<div class="rulename">Rule: '+esc(k.name||"")+'</div>'
     +'</div></div>';
 }
+/* ---------- 3b. era 2 ---------- */
+function era2HTML(){
+  const e=(S.forward&&S.forward.era2)||null;
+  if(!e) return "";
+  const sb=(e.kings&&e.kings.length&&e.kings[0].start_balance_m!=null)?e.kings[0].start_balance_m:(e.forward1?e.forward1.start_balance_m:null);
+  let h='<h2 class="sec">ERA 2 — from Slip #'+num(e.starts_slip)+'</h2>'
+    +'<div class="card"><div class="king-body" style="padding-top:16px">'
+    +'<div class="mut">A clean count that starts at Slip #'+num(e.starts_slip)+' — every line below starts at zero, with a fresh paper wallet of '+m(sb)+' that moves with its results.</div>';
+  for(const k of (e.kings||[])){
+    h+='<div class="row"><span class="k">'+esc(k.court)+'</span><span class="v num">'+rec(k.wins,k.losses)+' &nbsp;<span class="'+cls(k.pnl_m)+'">'+m(k.pnl_m)+'</span> &nbsp;<span class="'+cls(k.roi_pct)+'">'+pct(k.roi_pct)+'</span> &nbsp;· Bal '+m(k.balance_m)+'</div>';
+  }
+  if(e.forward1){
+    const f1=e.forward1;
+    h+='<div class="row"><span class="k">FORWARD-1 (Era 2 only)</span><span class="v num">'+rec(f1.wins,f1.losses)+' &nbsp;<span class="'+cls(f1.pnl_m)+'">'+m(f1.pnl_m)+'</span> &nbsp;<span class="'+cls(f1.roi_pct)+'">'+pct(f1.roi_pct)+'</span> &nbsp;· Bal '+m(f1.balance_m)+'</div>';
+  }
+  const pend=e.pending_slips||[];
+  if(pend.length){
+    h+='<div class="mut" style="margin-top:6px">Locked, not yet graded: '+pend.map(n=>'Slip #'+num(n)).join(', ')+'.</div>';
+  }
+  h+='<div class="mut" style="margin-top:8px">Era 1 (through Slip #44) stays on the board below — history is kept, not erased.</div>';
+  return h+'</div></div>';
+}
 function kingsHTML(){
-  return '<h2 class="sec">The five kings</h2>'
+  return era2HTML()
+    +'<h2 class="sec">The five kings</h2>'
     +'<p class="sec-sub">Each king has two lines. <strong>Live</strong> is real slips and real results — that is the line that counts. <strong>Fitted</strong> is practice on old test games.</p>'
     +'<div class="kings-grid">'+(S.kings||[]).map(kingCard).join("")+'</div>';
 }
