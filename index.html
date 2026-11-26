@@ -678,22 +678,39 @@ function slipsHTML(){
 }
 
 /* ---------- 5c. called bets ---------- */
+function betRowHTML(b){
+  return '<div class="item"><div class="t">'+esc(b.pick||"")+' <span class="num mut">@ '+num(b.price)+'</span></div>'
+    +'<div class="s">Slip #'+num(b.slip)+' · '+esc(b.game||"")+'</div>'
+    +'<div class="s"><span class="tag">'+esc(b.kind||"")+'</span> '
+    +(b.paper?' <span class="tag">PAPER</span>':"")
+    +' Stake <span class="num">'+m(b.stake_m)+'</span>'
+    +(b.result?' · <span class="res-'+esc(b.result)+'">'+esc(b.result)+'</span>':' · '+esc(b.status||""))
+    +(b.pnl_m!=null?' · <span class="num '+cls(b.pnl_m)+'">'+m(b.pnl_m)+'</span>':"")
+    +(b.final_score?' · Final <span class="num">'+esc(b.final_score)+'</span>':"")
+    +'</div></div>';
+}
 function betsHTML(){
   const bets=S.bets||[];
   if(!bets.length) return "";
-  let h='<h2 class="sec">Called bets</h2><p class="sec-sub">Every called bet on the recent slips, newest slip first.</p><div class="card">';
   const sorted=bets.slice().sort((a,b)=>(b.slip-a.slip));
-  for(const b of sorted){
-    h+='<div class="item"><div class="t">'+esc(b.pick||"")+' <span class="num mut">@ '+num(b.price)+'</span></div>'
-      +'<div class="s">Slip #'+num(b.slip)+' · '+esc(b.game||"")+'</div>'
-      +'<div class="s"><span class="tag">'+esc(b.kind||"")+'</span> '
-      +(b.paper?' <span class="tag">PAPER</span>':"")
-      +' Stake <span class="num">'+m(b.stake_m)+'</span>'
-      +(b.result?' · <span class="res-'+esc(b.result)+'">'+esc(b.result)+'</span>':' · '+esc(b.status||""))
-      +(b.pnl_m!=null?' · <span class="num '+cls(b.pnl_m)+'">'+m(b.pnl_m)+'</span>':"")
-      +(b.final_score?' · Final <span class="num">'+esc(b.final_score)+'</span>':"")
-      +'</div></div>';
+  const e=(S.forward&&S.forward.era2)||null;
+  const start=(e&&typeof e.starts_slip==="number")?e.starts_slip:null;
+  if(start==null){
+    let h='<h2 class="sec">Called bets</h2><p class="sec-sub">Every called bet on the recent slips, newest slip first.</p><div class="card">';
+    for(const b of sorted){ h+=betRowHTML(b); }
+    return h+'</div>';
   }
+  const isE2=b=>typeof b.slip==="number"&&b.slip>=start;
+  const e2bets=sorted.filter(isE2), e1bets=sorted.filter(b=>!isE2(b));
+  let h='<h2 class="sec">ERA 2 — called bets</h2>';
+  if(e2bets.length){
+    h+='<div class="card">'+e2bets.map(betRowHTML).join("")+'</div>';
+  }else{
+    h+='<div class="card"><div class="mut">No Era 2 bets yet. Era 2 starts with Slip #'+num(start)+'.</div></div>';
+  }
+  h+=era1Divider();
+  h+='<h2 class="sec">Called bets</h2><p class="sec-sub">Every called bet on the recent slips, newest slip first.</p><div class="card">';
+  for(const b of e1bets){ h+=betRowHTML(b); }
   return h+'</div>';
 }
 
