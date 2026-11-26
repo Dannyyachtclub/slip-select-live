@@ -289,12 +289,23 @@ function bannerHTML(){
 /* ---------- ticker: real figures only, slow glide, drag to move ---------- */
 function tickerGroup(){
   const b=S.bankroll||{}, f=S.forward||{}, v=S.vault||{};
-  const items=[
-    'Settled P&amp;L <span class="num '+cls(b.settled_pnl_m)+'">'+m(b.settled_pnl_m)+'</span>',
-    'Record <span class="num">'+esc(b.record||rec(b.wins,b.losses))+'</span>',
-    'Staked <span class="num">'+m(b.settled_staked_m)+'</span>',
-    'ROI <span class="num '+cls(b.roi_pct)+'">'+pct(b.roi_pct)+'</span>'
-  ];
+  const cb=(f.era2&&f.era2.chosen_bets)||null;
+  const items=[];
+  /* ERA 2 leads the strip (user ruling 2026-11-25): the fresh era's
+     chosen-bets line from forward.era2.chosen_bets — record, staked,
+     ROI, wallet balance — labelled so it can't be mistaken for the
+     Era 1 settled line that follows it. Absent era2 data, the strip
+     is byte-identical to the pre-Era-2 page. */
+  if(cb){
+    items.push('ERA 2 &middot; Record <span class="num">'+esc(cb.record||rec(cb.wins,cb.losses))+'</span>');
+    items.push('Staked <span class="num">'+m(cb.staked_m)+'</span>');
+    items.push('ROI <span class="num '+cls(cb.roi_pct)+'">'+pct(cb.roi_pct)+'</span>');
+    items.push('Bal <span class="num">'+m(cb.balance_m)+'</span>');
+  }
+  items.push((cb?'ERA 1 &middot; ':'')+'Settled P&amp;L <span class="num '+cls(b.settled_pnl_m)+'">'+m(b.settled_pnl_m)+'</span>');
+  items.push('Record <span class="num">'+esc(b.record||rec(b.wins,b.losses))+'</span>');
+  items.push('Staked <span class="num">'+m(b.settled_staked_m)+'</span>');
+  items.push('ROI <span class="num '+cls(b.roi_pct)+'">'+pct(b.roi_pct)+'</span>');
   for(const k of (f.kings||[])){
     items.push(esc(k.court)+' live <span class="num '+cls(k.pnl_m)+'">'+m(k.pnl_m)+'</span>');
   }
@@ -513,8 +524,30 @@ function era2HTML(){
   h+='<div class="mut" style="margin-top:8px">Era 1 (through Slip #44) stays on the board below — history is kept, not erased.</div>';
   return h+'</div></div>';
 }
+/* ---------- era divider + era 2 compare block ---------- */
+function era1Divider(){
+  return '<h2 class="sec">ERA 1 — HISTORY</h2>';
+}
+function era2CompareHTML(){
+  const e=(S.forward&&S.forward.era2)||null;
+  if(!e) return "";
+  let h='<h2 class="sec">ERA 2 — king vs king</h2>'
+    +'<p class="sec-sub">The new count, from Slip #'+num(e.starts_slip)+' — every king starts over with a fresh wallet.</p>'
+    +'<table><thead><tr><th>King</th><th>Record</th><th>P&amp;L</th><th>ROI</th><th>Balance</th></tr></thead><tbody>';
+  for(const k of (e.kings||[])){
+    h+='<tr><td data-l="King"><strong>'+esc(k.court)+'</strong></td>'
+      +'<td data-l="Record" class="num">'+rec(k.wins,k.losses)+'</td>'
+      +'<td data-l="P&L" class="num '+cls(k.pnl_m)+'">'+m(k.pnl_m)+'</td>'
+      +'<td data-l="ROI" class="num '+cls(k.roi_pct)+'">'+pct(k.roi_pct)+'</td>'
+      +'<td data-l="Balance" class="num">'+m(k.balance_m)+'</td></tr>';
+  }
+  h+='</tbody></table>';
+  return h;
+}
 function kingsHTML(){
-  return era2HTML()
+  const e2=era2HTML();
+  return e2
+    +(e2?era1Divider():"")
     +'<h2 class="sec">The five kings</h2>'
     +'<p class="sec-sub">Each king has two lines. <strong>Live</strong> is real slips and real results — that is the line that counts. <strong>Fitted</strong> is practice on old test games.</p>'
     +'<div class="kings-grid">'+(S.kings||[]).map(kingCard).join("")+'</div>';
@@ -523,7 +556,9 @@ function kingsHTML(){
 /* ---------- 4. king vs king ---------- */
 function compareHTML(){
   const rows=(S.kings||[]).map(k=>({court:k.court,f:fwdKing(k.court)||{},fit:k}));
-  let h='<h2 class="sec">King vs king</h2><p class="sec-sub">Side by side, live record first.</p>'
+  let h=era2CompareHTML();
+  if(h) h+=era1Divider();
+  h+='<h2 class="sec">King vs king</h2><p class="sec-sub">Side by side, live record first.</p>'
     +'<table><thead><tr><th>King</th><th>Live record</th><th>Live P&amp;L</th><th>Live ROI</th><th>Fitted ROI</th></tr></thead><tbody>';
   for(const r of rows){
     h+='<tr><td data-l="King"><strong>'+esc(r.court)+'</strong></td>'
@@ -619,8 +654,26 @@ function slipsHTML(){
   if(!slips.length) return "";
   const graded=(S.slips||[]).filter(x=>x.status==="GRADED");
   const freshNo=graded.length?Math.max.apply(null,graded.map(x=>x.number)):null;
-  let h='<h2 class="sec">Latest slip</h2>'+slipCard(slips[0],slips[0].number===freshNo);
-  h+='<h2 class="sec">All slips</h2>'+slips.map(x=>slipCard(x,x.number===freshNo)).join("");
+  const e=(S.forward&&S.forward.era2)||null;
+  const start=(e&&typeof e.starts_slip==="number")?e.starts_slip:null;
+  if(start==null){
+    let h='<h2 class="sec">Latest slip</h2>'+slipCard(slips[0],slips[0].number===freshNo);
+    h+='<h2 class="sec">All slips</h2>'+slips.map(x=>slipCard(x,x.number===freshNo)).join("");
+    return h;
+  }
+  const isE2=x=>typeof x.number==="number"&&x.number>=start;
+  const e2slips=slips.filter(isE2), e1slips=slips.filter(x=>!isE2(x));
+  let h='<h2 class="sec">ERA 2 — slips</h2>';
+  if(e2slips.length){
+    h+=e2slips.map(x=>slipCard(x,x.number===freshNo)).join("");
+  }else{
+    h+='<div class="card"><div class="mut">No Era 2 slips yet. Era 2 starts with Slip #'+num(start)+'.</div></div>';
+  }
+  h+=era1Divider();
+  if(e1slips.length){
+    h+='<h2 class="sec">Latest slip</h2>'+slipCard(e1slips[0],e1slips[0].number===freshNo);
+    h+='<h2 class="sec">All slips</h2>'+e1slips.map(x=>slipCard(x,x.number===freshNo)).join("");
+  }
   return h;
 }
 
