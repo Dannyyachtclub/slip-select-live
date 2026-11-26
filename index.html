@@ -209,6 +209,24 @@ footer{color:var(--dim);font-size:.88rem;margin-top:36px;text-align:center}
   @keyframes winpulse{0%,100%{box-shadow:0 0 0 0 rgba(67,201,138,0)}50%{box-shadow:0 0 0 5px rgba(67,201,138,.14)}}
 }
 
+/* ---------- hero cards: today's picks to follow ---------- */
+.hcards{display:grid;grid-template-columns:1fr;gap:12px;margin-bottom:6px}
+@media(min-width:700px){.hcards{grid-template-columns:1fr 1fr}}
+.hcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.hcard.grand{border-color:rgba(200,162,74,.75);background:linear-gradient(180deg,rgba(200,162,74,.10),rgba(200,162,74,0) 55%),var(--surface)}
+.hcard .hk{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.hcard .hgame{color:var(--mut);font-size:1rem;margin-top:6px}
+.hcard .hpick{font-size:1.65rem;font-weight:900;line-height:1.15;margin-top:2px}
+.hcard .hprice{font-size:1.1rem;margin-top:2px}
+.stake5{display:inline-block;margin-top:10px;padding:4px 14px;border-radius:999px;background:var(--gold);
+  color:#14100a;font-weight:900;font-size:1rem;letter-spacing:.04em}
+.hcard .hrow{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line-faint)}
+.hcard .hrow:last-child{border-bottom:0}
+.hcard .hrow .hg{color:var(--mut);font-size:.95rem}
+.hcard .hrow .hp{font-weight:800;text-align:right}
+.agree-lab{display:inline-block;margin-top:8px;padding:3px 10px;border-radius:999px;border:1px solid rgba(67,201,138,.55);
+  color:var(--pos);font-weight:800;font-size:.88rem}
+
 @media (prefers-reduced-motion: reduce){
   .bk img{animation:none}
 }
@@ -238,6 +256,7 @@ footer{color:var(--dim);font-size:.88rem;margin-top:36px;text-align:center}
   <button class="tabbtn" data-tabbtn="compare" aria-selected="false" onclick="showTab('compare')">Compare</button>
   <button class="tabbtn" data-tabbtn="slips" aria-selected="false" onclick="showTab('slips')">Slips</button>
   <button class="tabbtn" data-tabbtn="bets" aria-selected="false" onclick="showTab('bets')">Bets</button>
+  <button class="tabbtn" id="tabbtn-history" data-tabbtn="history" aria-selected="false" style="display:none" onclick="showTab('history')">History</button>
   <button class="tabbtn" data-tabbtn="more" aria-selected="false" onclick="showTab('more')">More</button>
 </div></nav>
 
@@ -271,6 +290,32 @@ function fwdKing(court){
   return null;
 }
 
+/* ---------- era 2 dollars (declaration amendment 2026-11-26) ----------
+   Era 2 counts in dollars: $100 wallet, $5 flat stake, dollars =
+   mills x 0.2. The *_usd fields come from the board/exporter; the
+   conversion fallback keeps older era2 blocks honest. */
+function usd(x){
+  if(x==null||typeof x!=="number") return "—";
+  return (x<0?"-$":"$")+Math.abs(x).toFixed(2);
+}
+function usdS(x){
+  if(x==null||typeof x!=="number") return "—";
+  return (x>0?"+":"")+usd(x);
+}
+function era2Of(){ return (S.forward&&S.forward.era2)||null; }
+function hasEra2(){ return !!era2Of(); }
+function e2Usd(line){
+  if(!line) return {pnl:0,bal:100,staked:0};
+  if(typeof line.pnl_usd==="number") return {pnl:line.pnl_usd,bal:line.balance_usd,staked:line.staked_usd};
+  const p=(typeof line.pnl_m==="number")?Math.round(line.pnl_m*0.2*100)/100:0;
+  return {pnl:p,bal:Math.round((100+p)*100)/100,staked:(line.priced||0)*5};
+}
+function e2King(court){
+  const e=era2Of(); if(!e) return null;
+  for(const k of (e.kings||[])){ if(k.court===court) return k; }
+  return null;
+}
+
 /* ---------- banner: king photos + live chips ---------- */
 function bannerHTML(){
   const e2=(S.forward&&S.forward.era2)||null;
@@ -279,8 +324,9 @@ function bannerHTML(){
   return (S.kings||[]).map(k=>{
     const f=fwdKing(k.court)||{};
     const e=e2k[k.court]||null;
+    const u=e?e2Usd(e):null;
     const chip=e
-      ?'<div class="bk-chip">ERA 2 <span class="num '+cls(e.pnl_m)+'">'+m(e.pnl_m)+'</span> &middot; Bal '+m(e.balance_m)+'</div>'
+      ?'<div class="bk-chip">ERA 2 <span class="num '+cls(u.pnl)+'">'+usdS(u.pnl)+'</span> &middot; Bal '+usd(u.bal)+'</div>'
       :'<div class="bk-chip">Live <span class="num '+cls(f.pnl_m)+'">'+m(f.pnl_m)+'</span></div>';
     return '<div class="bk'+(k.grand_king?" grand":"")+'"><div class="ph"><img src="'+esc(COURT_IMG[k.court]||"")+'" alt="'+esc(k.court)+'"></div>'
       +'<div class="bk-nm">'+esc(k.court)+'</div>'
@@ -291,6 +337,33 @@ function bannerHTML(){
 
 /* ---------- ticker: real figures only, slow glide, drag to move ---------- */
 function tickerGroup(){
+  if(hasEra2()) return ticker2Group();
+  return tickerLegacyGroup();
+}
+/* ERA 2 strip (site reset 2026-11-26): the fresh era only, in
+   dollars — chosen bets first, then each king's Era 2 line. No
+   Era 1 figure appears on the strip any more. */
+function ticker2Group(){
+  const f=S.forward||{}, e=f.era2||{};
+  const cb=e.chosen_bets||null;
+  const items=[];
+  if(cb){
+    const u=e2Usd(cb);
+    items.push('ERA 2 &middot; Record <span class="num">'+esc(cb.record||rec(cb.wins,cb.losses))+'</span>');
+    items.push('P&amp;L <span class="num '+cls(u.pnl)+'">'+usdS(u.pnl)+'</span>');
+    items.push('Staked <span class="num">'+usd(u.staked)+'</span>');
+    items.push('ROI <span class="num '+cls(cb.roi_pct)+'">'+pct(cb.roi_pct)+'</span>');
+    items.push('Bal <span class="num">'+usd(u.bal)+'</span>');
+  }
+  for(const k of (e.kings||[])){
+    const u=e2Usd(k);
+    items.push(esc(k.court)+' <span class="num '+cls(u.pnl)+'">'+usdS(u.pnl)+'</span> &middot; Bal '+usd(u.bal));
+  }
+  const graded=Array.isArray(e.graded_slips)?e.graded_slips.length:0;
+  items.push('Era 2 slips graded <span class="num">'+num(graded)+'</span>');
+  return items.map(i=>'<span class="tick-item">'+i+'</span>').join('<span class="tick-dot">&bull;</span>')+'<span class="tick-dot">&bull;</span>';
+}
+function tickerLegacyGroup(){
   const b=S.bankroll||{}, f=S.forward||{}, v=S.vault||{};
   const cb=(f.era2&&f.era2.chosen_bets)||null;
   const items=[];
@@ -486,7 +559,7 @@ function formStripHTML(court){
 }
 
 /* ---------- 3. the five kings ---------- */
-function kingCard(k){
+function kingCard(k,practice){
   const f=fwdKing(k.court)||{};
   const d=k.dog_line||{};
   return '<div class="card king">'
@@ -497,7 +570,7 @@ function kingCard(k){
     +'<div class="linebox live"><div class="t">Live — real slips since</div>'
     +'<div class="big num">'+rec(f.wins,f.losses)+' &nbsp;<span class="'+cls(f.pnl_m)+'">'+m(f.pnl_m)+'</span> &nbsp;<span class="'+cls(f.roi_pct)+'">'+pct(f.roi_pct)+'</span></div>'
     +'<div class="mut">'+num(f.games)+' games · '+num(f.priced)+' priced</div></div>'
-    +'<div class="linebox"><div class="t">Fitted — the '+num(k.set_size)+' test games</div>'
+    +'<div class="linebox"><div class="t">'+(practice?('PRACTICE — fitted, provisional · the '+num(k.set_size)+' test games'):('Fitted — the '+num(k.set_size)+' test games'))+'</div>'
     +'<div class="big num">'+rec(k.wins,k.losses)+' &nbsp;<span class="'+cls(k.pnl_m)+'">'+m(k.pnl_m)+'</span> &nbsp;<span class="'+cls(k.roi_pct)+'">'+pct(k.roi_pct)+'</span></div>'
     +'<div class="mut">'+num(k.priced)+' priced</div></div>'
     +'<div class="row"><span class="k">Underdog line (fitted)</span><span class="v num">'+rec(d.wins,d.losses)+' · <span class="'+cls(d.pnl_m)+'">'+m(d.pnl_m)+'</span> · '+pct(d.roi_pct)+'</span></div>'
@@ -553,7 +626,7 @@ function kingsHTML(){
     +(e2?era1Divider():"")
     +'<h2 class="sec">The five kings</h2>'
     +'<p class="sec-sub">Each king has two lines. <strong>Live</strong> is real slips and real results — that is the line that counts. <strong>Fitted</strong> is practice on old test games.</p>'
-    +'<div class="kings-grid">'+(S.kings||[]).map(kingCard).join("")+'</div>';
+    +'<div class="kings-grid">'+(S.kings||[]).map(k=>kingCard(k)).join("")+'</div>';
 }
 
 /* ---------- 4. king vs king ---------- */
@@ -622,31 +695,32 @@ function forwardHTML(){
 }
 
 /* ---------- 5b. slips ---------- */
-function pickLine(label,p,res){
+function pickLine(label,p,res,usdMode){
   if(!p) return "";
   let h='<div class="row"><span class="k">'+label+'</span><span class="v">'+esc(p.selection||"");
   if(p.price!=null) h+=' <span class="num">@ '+num(p.price)+'</span>';
   if(res&&res.result) h+=' — <span class="res-'+esc(res.result)+'">'+esc(res.result)+'</span>';
-  if(res&&res.pnl_m!=null) h+=' <span class="num '+cls(res.pnl_m)+'">('+m(res.pnl_m)+')</span>';
+  if(res&&res.pnl_m!=null) h+=' <span class="num '+cls(res.pnl_m)+'">('+(usdMode?usdS(Math.round(res.pnl_m*0.2*100)/100):m(res.pnl_m))+')</span>';
   return h+'</span></div>';
 }
-function slipCard(s,fresh){
+function slipCard(s,fresh,usdMode){
   const r=s.results||{};
   const gp=r.grand_pick||{};
+  const money=(v)=>usdMode?(v==null?"—":usdS(Math.round(v*0.2*100)/100)):m(v);
   let h='<div class="card'+(fresh?' fresh':'')+'"><h3>Slip #'+num(s.number)+' <span class="tag">'+esc(s.status||"")+'</span>'
     +(fresh?' <span class="badge">FRESHEST RESULT</span>':"")+'</h3>'
     +'<div class="mut">'+esc(s.date||"")+' · '+num(s.games)+' games</div>'
-    +(fresh&&gp.result==="WON"?'<div class="winbanner">Grand pick WON <span class="num">('+m(gp.pnl_m)+')</span> — the freshest result on the desk.</div>':"")
-    +pickLine("Grand pick",s.grand_pick,r.grand_pick)
-    +pickLine("Confidence bet",s.confidence_bet,r.confidence_bet)
-    +pickLine("Underdog desk (paper)",s.underdog_desk,r.underdog_desk)
-    +pickLine("Draw desk (paper)",s.draw_desk,r.draw_desk);
+    +(fresh&&gp.result==="WON"?'<div class="winbanner">Grand pick WON <span class="num">('+money(gp.pnl_m)+')</span> — the freshest result on the desk.</div>':"")
+    +pickLine("Grand pick",s.grand_pick,r.grand_pick,usdMode)
+    +pickLine("Confidence bet",s.confidence_bet,r.confidence_bet,usdMode)
+    +pickLine("Underdog desk (paper)",s.underdog_desk,r.underdog_desk,usdMode)
+    +pickLine("Draw desk (paper)",s.draw_desk,r.draw_desk,usdMode);
   if(r.best_king) h+='<div class="row"><span class="k">Best king on this slip</span><span class="v">'+esc(r.best_king)+'</span></div>';
   if(r.king_records){
     h+='<div style="margin-top:8px">';
     for(const court of Object.keys(r.king_records)){
       const kr=r.king_records[court];
-      h+='<div class="row"><span class="k">'+esc(court)+'</span><span class="v num">'+rec(kr.wins,kr.losses)+' · <span class="'+cls(kr.pnl_m)+'">'+m(kr.pnl_m)+'</span></span></div>';
+      h+='<div class="row"><span class="k">'+esc(court)+'</span><span class="v num">'+rec(kr.wins,kr.losses)+' · <span class="'+cls(kr.pnl_m)+'">'+money(kr.pnl_m)+'</span></span></div>';
     }
     h+='</div>';
   }
@@ -681,14 +755,16 @@ function slipsHTML(){
 }
 
 /* ---------- 5c. called bets ---------- */
-function betRowHTML(b){
+function betRowHTML(b,usdMode){
+  const stakeTxt=usdMode?usd(typeof b.stake_m==="number"?Math.round(b.stake_m*0.2*100)/100:null):m(b.stake_m);
+  const pnlTxt=(b.pnl_m!=null)?(usdMode?usdS(Math.round(b.pnl_m*0.2*100)/100):m(b.pnl_m)):null;
   return '<div class="item"><div class="t">'+esc(b.pick||"")+' <span class="num mut">@ '+num(b.price)+'</span></div>'
     +'<div class="s">Slip #'+num(b.slip)+' · '+esc(b.game||"")+'</div>'
     +'<div class="s"><span class="tag">'+esc(b.kind||"")+'</span> '
     +(b.paper?' <span class="tag">PAPER</span>':"")
-    +' Stake <span class="num">'+m(b.stake_m)+'</span>'
+    +' Stake <span class="num">'+stakeTxt+'</span>'
     +(b.result?' · <span class="res-'+esc(b.result)+'">'+esc(b.result)+'</span>':' · '+esc(b.status||""))
-    +(b.pnl_m!=null?' · <span class="num '+cls(b.pnl_m)+'">'+m(b.pnl_m)+'</span>':"")
+    +(b.pnl_m!=null?' · <span class="num '+cls(b.pnl_m)+'">'+pnlTxt+'</span>':"")
     +(b.final_score?' · Final <span class="num">'+esc(b.final_score)+'</span>':"")
     +'</div></div>';
 }
@@ -817,6 +893,266 @@ function tuckedHTML(){
   return '<h2 class="sec">Behind the scenes</h2><p class="sec-sub">The working machinery — tap to open any part.</p>'+parts.join("");
 }
 
+/* ---------- hero cards: today's picks to follow (user order 2026-11-26) ---------- */
+function heroHTML(){
+  const hro=S.hero||null;
+  let h='<h2 class="sec">Today\u2019s picks to follow</h2>';
+  if(!hro){
+    return h+'<div class="card"><div class="mut">No locked slip to follow right now.</div></div>';
+  }
+  const today=new Date().toLocaleDateString("en-CA",{timeZone:"America/Regina"});
+  const isToday=hro.date===today;
+  h+='<p class="sec-sub">'
+    +(isToday?('Slip #'+num(hro.slip)+' — today\u2019s picks you can follow by hand.'):('The most recent locked slip — Slip #'+num(hro.slip)+' · '+esc(hro.date||"")+'.'))
+    +' Every follow is $5.</p>'
+    +'<div class="hcards">';
+  const g=hro.grand_pick;
+  if(g&&g.pick){
+    h+='<div class="hcard grand"><div class="hk">Grand pick</div>'
+      +(g.game?'<div class="hgame">'+esc(g.game)+'</div>':"")
+      +'<div class="hpick">'+esc(g.pick)+'</div>'
+      +'<div class="hprice">Price <span class="num">@ '+num(g.price)+'</span></div>'
+      +'<span class="stake5">$5</span></div>';
+  }else{
+    h+='<div class="hcard"><div class="hk">Grand pick</div><div class="hgame">None today.</div></div>';
+  }
+  const ags=hro.court_agrees||[];
+  if(ags.length){
+    for(const a of ags){
+      h+='<div class="hcard"><div class="hk">Court agrees</div>'
+        +'<div class="hgame">'+esc(a.game||"")+'</div>'
+        +'<div class="hpick">'+esc(a.side||"")+'</div>'
+        +'<div class="hprice">Price <span class="num">@ '+num(a.price)+'</span></div>'
+        +'<span class="agree-lab">'+num(a.agree)+' of '+num(a.of)+' kings agree</span>'
+        +' <span class="stake5">$5</span></div>';
+    }
+  }else{
+    h+='<div class="hcard"><div class="hk">Court agrees</div><div class="hgame">None today — no game has 4 or more kings on the same side.</div></div>';
+  }
+  h+='</div>';
+  const bk=hro.best_king;
+  if(bk&&bk.picks&&bk.picks.length){
+    h+='<div class="hcard" style="margin-bottom:6px"><div class="hk">Best king: '+esc(bk.court)+'</div>'
+      +'<div class="hgame">'+(bk.basis==="era2"?'Leads the Era 2 record.':'Leads on the Era 1 as-locked record — no Era 2 slip graded yet.')+' Every pick below is a $5 follow.</div>';
+    for(const p of bk.picks){
+      h+='<div class="hrow"><span class="hg">'+esc(p.game||"")+'</span><span class="hp">'+esc(p.pick||"")+' <span class="num">@ '+num(p.price)+'</span> · $5</span></div>';
+    }
+    h+='</div>';
+  }else{
+    h+='<div class="hcard"><div class="hk">Best king</div><div class="hgame">None today.</div></div>';
+  }
+  return h;
+}
+
+/* ---------- era 2 overview blocks (dollars) ---------- */
+function summary2HTML(){
+  const e=era2Of(); const cb=(e&&e.chosen_bets)||null;
+  if(!cb) return "";
+  const u=e2Usd(cb);
+  return '<div class="stats">'
+    +'<div class="stat"><div class="l">Era 2 balance</div><div class="v num">'+usd(u.bal)+'</div><div class="s">Started at $100.00</div></div>'
+    +'<div class="stat"><div class="l">Era 2 profit / loss</div><div class="v num '+cls(u.pnl)+'">'+usdS(u.pnl)+'</div><div class="s">Chosen bets, from Slip #'+num(e.starts_slip)+'</div></div>'
+    +'<div class="stat"><div class="l">Record</div><div class="v num">'+esc(cb.record||rec(cb.wins,cb.losses))+'</div><div class="s">Chosen bets settled</div></div>'
+    +'<div class="stat"><div class="l">Staked</div><div class="v num">'+usd(u.staked)+'</div><div class="s">$5.00 a bet</div></div>'
+    +'</div>';
+}
+function totals2HTML(){
+  const e=era2Of(); if(!e) return "";
+  let games=0;
+  for(const k of (e.kings||[])){ games=Math.max(games,typeof k.games==="number"?k.games:0); }
+  const graded=Array.isArray(e.graded_slips)?e.graded_slips.length:0;
+  const pend=(e.pending_slips||[]).length?("Slip #"+e.pending_slips.map(esc).join(", #")):"None";
+  return '<h2 class="sec">The Era 2 totals</h2><p class="sec-sub">How much testing the new count has done so far.</p>'
+    +'<div class="stats">'
+    +'<div class="stat"><div class="l">Games graded</div><div class="v num">'+num(games)+'</div><div class="s">Era 2 slips, real results</div></div>'
+    +'<div class="stat"><div class="l">Slips graded</div><div class="v num">'+num(graded)+'</div><div class="s">In the Era 2 record</div></div>'
+    +'<div class="stat"><div class="l">Waiting to grade</div><div class="v num" style="font-size:1.15rem;padding-top:6px">'+pend+'</div><div class="s">Pending slips</div></div>'
+    +'<div class="stat"><div class="l">Flat stake</div><div class="v num">$5.00</div><div class="s">Every Era 2 bet</div></div>'
+    +'</div>';
+}
+function pnl2HTML(){
+  const e=era2Of(); if(!e) return "";
+  const rows=(S.kings||[]).map(k=>({court:k.court,u:e2Usd(e2King(k.court)||{})}));
+  const vals=rows.map(r=>Math.abs(typeof r.u.pnl==="number"?r.u.pnl:0));
+  const max=Math.max.apply(null,vals.concat([1]));
+  let h='<h2 class="sec">Era 2 profit / loss per king</h2><p class="sec-sub">Dollars — the new count from Slip #'+num(e.starts_slip)+'.</p><div class="card">';
+  for(const r of rows){
+    const v=typeof r.u.pnl==="number"?r.u.pnl:0;
+    const w=Math.round(Math.abs(v)/max*100);
+    h+='<div class="bar-row"><div class="bar-lab"><span>'+esc(r.court)+'</span><span class="num '+cls(v)+'">'+usdS(r.u.pnl)+'</span></div>'
+      +'<div class="bar-track"><div class="bar-fill '+(v<0?"n":"p")+'" style="width:'+w+'%"></div></div></div>';
+  }
+  h+='<p class="mut" style="margin:6px 0 0">Simple bars — longer means a bigger Era 2 profit or loss.</p></div>';
+  return h;
+}
+function desks2HTML(){
+  const e=era2Of(); if(!e) return "";
+  let h='<h2 class="sec">The Era 2 record, by desk</h2><p class="sec-sub">The special bets in the new count, in dollars.</p><div class="card">';
+  const cb=e.chosen_bets;
+  if(cb){
+    const u=e2Usd(cb);
+    h+='<div class="row"><span class="k">Chosen bets</span><span class="v num">'+rec(cb.wins,cb.losses)+' · <span class="'+cls(u.pnl)+'">'+usdS(u.pnl)+'</span> · Bal '+usd(u.bal)+'</span></div>';
+  }
+  if(e.forward1){
+    const u=e2Usd(e.forward1);
+    h+='<div class="row"><span class="k">FORWARD-1 (Era 2 only)</span><span class="v num">'+rec(e.forward1.wins,e.forward1.losses)+' · <span class="'+cls(u.pnl)+'">'+usdS(u.pnl)+'</span> · Bal '+usd(u.bal)+'</span></div>';
+  }
+  return h+'</div>';
+}
+
+/* ---------- era 2 kings + compare ---------- */
+function king2Card(k){
+  const e=e2King(k.court);
+  const u=e2Usd(e||{});
+  return '<div class="card king">'
+    +'<div class="king-head"><img src="'+esc(COURT_IMG[k.court]||"")+'" alt="">'
+    +'<div><div class="king-name">'+esc(k.court)+(k.grand_king?' <span class="badge">GRAND KING</span>':"")+'</div>'
+    +'<div class="king-sub">Era 2 — from Slip #45</div></div></div>'
+    +'<div class="king-body">'
+    +'<div class="linebox live"><div class="t">Era 2 — dollars</div>'
+    +'<div class="big num">'+rec(e?e.wins:null,e?e.losses:null)+' &nbsp;<span class="'+cls(u.pnl)+'">'+usdS(u.pnl)+'</span> &nbsp;<span class="'+cls(e?e.roi_pct:null)+'">'+pct(e?e.roi_pct:null)+'</span></div>'
+    +'<div class="mut">'+num(e?e.games:null)+' games · '+num(e?e.priced:null)+' priced · staked '+usd(u.staked)+'</div></div>'
+    +'<div class="row"><span class="k">Balance</span><span class="v num">'+usd(u.bal)+'</span></div>'
+    +'<div class="row"><span class="k">Started at</span><span class="v num">$100.00</span></div>'
+    +'<div class="row"><span class="k">Flat stake</span><span class="v num">$5.00</span></div>'
+    +'</div></div>';
+}
+function kings2HTML(){
+  return '<h2 class="sec">ERA 2 — the five kings</h2>'
+    +'<p class="sec-sub">The new count, in dollars. Every king starts over with a fresh $100 wallet and flat $5 bets. Era 1 lives in History.</p>'
+    +'<div class="kings-grid">'+(S.kings||[]).map(king2Card).join("")+'</div>';
+}
+function compare2HTML(){
+  const e=era2Of(); if(!e) return "";
+  let h='<h2 class="sec">ERA 2 — king vs king</h2>'
+    +'<p class="sec-sub">The new count side by side, in dollars — every king starts at $100.</p>'
+    +'<table><thead><tr><th>King</th><th>Record</th><th>P&amp;L</th><th>ROI</th><th>Balance</th></tr></thead><tbody>';
+  for(const k of (e.kings||[])){
+    const u=e2Usd(k);
+    h+='<tr><td data-l="King"><strong>'+esc(k.court)+'</strong></td>'
+      +'<td data-l="Record" class="num">'+rec(k.wins,k.losses)+'</td>'
+      +'<td data-l="P&L" class="num '+cls(u.pnl)+'">'+usdS(u.pnl)+'</td>'
+      +'<td data-l="ROI" class="num '+cls(k.roi_pct)+'">'+pct(k.roi_pct)+'</td>'
+      +'<td data-l="Balance" class="num">'+usd(u.bal)+'</td></tr>';
+  }
+  h+='</tbody></table>';
+  h+='<div class="card" style="margin-top:12px"><h3>Era 2 wins vs losses</h3>';
+  for(const k of (e.kings||[])){
+    const w=typeof k.wins==="number"?k.wins:0, l=typeof k.losses==="number"?k.losses:0;
+    const tot=w+l, wp=tot?Math.round(w/tot*100):50;
+    h+='<div class="bar-row"><div class="bar-lab"><span>'+esc(k.court)+'</span><span class="num">'+rec(k.wins,k.losses)+' · '+num(k.games)+' games</span></div>'
+      +'<div class="stack-track"><div class="stack-w" style="width:'+wp+'%"></div><div class="stack-l"></div></div>'
+      +'<div class="stack-lab"><span class="pos num">'+num(k.wins)+' won</span><span class="neg num">'+num(k.losses)+' lost</span></div></div>';
+  }
+  h+='<p class="mut" style="margin:6px 0 0">Green is wins, red is losses, split by the Era 2 record.</p></div>';
+  return h;
+}
+
+/* ---------- era 2 slips + bets ---------- */
+function slips2HTML(){
+  const e=era2Of(); if(!e) return "";
+  const start=e.starts_slip;
+  const slips=(S.slips||[]).filter(x=>typeof x.number==="number"&&x.number>=start).slice().reverse();
+  let h='<h2 class="sec">ERA 2 — slips</h2><p class="sec-sub">Only the new count — slips from #'+num(start)+', money in dollars. Era 1 slips live in History.</p>';
+  if(!slips.length){
+    return h+'<div class="card"><div class="mut">No Era 2 slips yet. Era 2 starts with Slip #'+num(start)+'.</div></div>';
+  }
+  return h+slips.map(x=>slipCard(x,false,true)).join("");
+}
+function bets2HTML(){
+  const e=era2Of(); if(!e) return "";
+  const start=e.starts_slip;
+  const bets=(S.bets||[]).filter(b=>typeof b.slip==="number"&&b.slip>=start)
+    .slice().sort((a,b)=>(b.slip-a.slip));
+  let h='<h2 class="sec">ERA 2 — called bets</h2><p class="sec-sub">The new count only — every stake is $5. Era 1 bets live in History.</p>';
+  if(!bets.length){
+    return h+'<div class="card"><div class="mut">No Era 2 bets yet. Era 2 starts with Slip #'+num(start)+'.</div></div>';
+  }
+  return h+'<div class="card">'+bets.map(b=>betRowHTML(b,true)).join("")+'</div>';
+}
+
+/* ---------- history: era 1 in one place (site reset 2026-11-26) ---------- */
+function historyCompareHTML(){
+  const rows=(S.kings||[]).map(k=>({court:k.court,f:fwdKing(k.court)||{},fit:k}));
+  let h='<h2 class="sec">King vs king — Era 1</h2><p class="sec-sub">Side by side, live record first.</p>'
+    +'<table><thead><tr><th>King</th><th>Live record</th><th>Live P&amp;L</th><th>Live ROI</th><th>Fitted ROI</th></tr></thead><tbody>';
+  for(const r of rows){
+    h+='<tr><td data-l="King"><strong>'+esc(r.court)+'</strong></td>'
+      +'<td data-l="Live record" class="num">'+rec(r.f.wins,r.f.losses)+'</td>'
+      +'<td data-l="Live P&L" class="num '+cls(r.f.pnl_m)+'">'+m(r.f.pnl_m)+'</td>'
+      +'<td data-l="Live ROI" class="num '+cls(r.f.roi_pct)+'">'+pct(r.f.roi_pct)+'</td>'
+      +'<td data-l="Fitted ROI" class="num">'+pct(r.fit.roi_pct)+'</td></tr>';
+  }
+  h+='</tbody></table>';
+  let maxR=1;
+  for(const r of rows){
+    maxR=Math.max(maxR,Math.abs(typeof r.fit.roi_pct==="number"?r.fit.roi_pct:0),Math.abs(typeof r.f.roi_pct==="number"?r.f.roi_pct:0));
+  }
+  const roiRow=(lab,val,kind)=>{
+    const v=typeof val==="number"?val:0;
+    const w=Math.abs(v)/maxR*50;
+    const style=v>=0?("left:50%;width:"+w+"%"):("left:"+(50-w)+"%;width:"+w+"%");
+    return '<div class="roi-row"><span class="roi-lab">'+lab+'</span><div class="roi-track"><div class="roi-zero"></div><div class="roi-bar '+kind+'" style="'+style+'"></div></div><span class="roi-val num '+cls(v)+'">'+pct(val)+'</span></div>';
+  };
+  h+='<div class="card" style="margin-top:12px"><h3>Fitted ROI vs live ROI</h3>'
+    +'<div class="legend"><span><span class="sw fit"></span>Fitted — the test games</span><span><span class="sw liv"></span>Live — real slips</span></div>'
+    +'<p class="mut" style="margin:0 0 4px">Bars run from the middle zero line — right is profit, left is loss.</p>';
+  for(const r of rows){
+    h+='<div class="roi-block"><div class="roi-name">'+esc(r.court)+'</div>'
+      +roiRow("Fitted",r.fit.roi_pct,"fit")
+      +roiRow("Live",r.f.roi_pct,"liv")
+      +'</div>';
+  }
+  h+='</div>';
+  h+='<div class="card"><h3>Live wins vs losses</h3>';
+  for(const r of rows){
+    const w=typeof r.f.wins==="number"?r.f.wins:0, l=typeof r.f.losses==="number"?r.f.losses:0;
+    const tot=w+l, wp=tot?Math.round(w/tot*100):50;
+    h+='<div class="bar-row"><div class="bar-lab"><span>'+esc(r.court)+'</span><span class="num">'+rec(r.f.wins,r.f.losses)+' · '+num(r.f.games)+' games</span></div>'
+      +'<div class="stack-track"><div class="stack-w" style="width:'+wp+'%"></div><div class="stack-l"></div></div>'
+      +'<div class="stack-lab"><span class="pos num">'+num(r.f.wins)+' won</span><span class="neg num">'+num(r.f.losses)+' lost</span></div></div>';
+  }
+  h+='<p class="mut" style="margin:6px 0 0">Green is wins, red is losses, split by the live record.</p></div>';
+  return h;
+}
+function historyHTML(){
+  const e=era2Of(); if(!e) return "";
+  const start=e.starts_slip;
+  const slips=(S.slips||[]).slice().reverse();
+  const e1slips=slips.filter(x=>!(typeof x.number==="number"&&x.number>=start));
+  const graded=(S.slips||[]).filter(x=>x.status==="GRADED");
+  const freshNo=graded.length?Math.max.apply(null,graded.map(x=>x.number)):null;
+  const e1bets=(S.bets||[]).filter(b=>!(typeof b.slip==="number"&&b.slip>=start))
+    .slice().sort((a,b)=>(b.slip-a.slip));
+  let h='<h2 class="sec">HISTORY — ERA 1</h2>'
+    +'<p class="sec-sub">Everything through Slip #'+num(start-1)+', exactly as it was counted, in mills. The fitted court below is PRACTICE — fitted, provisional. The live desk now counts Era 2 only.</p>'
+    +summaryHTML()
+    +totalsHTML()
+    +pnlChartHTML()
+    +forwardHTML()
+    +'<h2 class="sec">The five kings — Era 1</h2>'
+    +'<p class="sec-sub">Each king has two lines. <strong>Live</strong> is real slips and real results. <strong>Practice</strong> is the fitted line on old test games — provisional.</p>'
+    +'<div class="kings-grid">'+(S.kings||[]).map(k=>kingCard(k,true)).join("")+'</div>'
+    +historyCompareHTML();
+  if(e1slips.length){
+    h+='<h2 class="sec">Latest Era 1 slip</h2>'+slipCard(e1slips[0],e1slips[0].number===freshNo)
+      +'<h2 class="sec">All Era 1 slips</h2>'+e1slips.map(x=>slipCard(x,x.number===freshNo)).join("");
+  }
+  if(e1bets.length){
+    h+='<h2 class="sec">Era 1 called bets</h2><div class="card">'
+      +e1bets.map(b=>betRowHTML(b)).join("")+'</div>';
+  }
+  h+=proofHTML();
+  return h;
+}
+
+/* ---------- more tab without proof (proof lives in History now) ---------- */
+function tucked2HTML(){
+  const parts=[workforceHTML(),stakehunterHTML(),autopsyHTML(),researchHTML(),integrityHTML()].filter(Boolean);
+  if(!parts.length) return "";
+  return '<h2 class="sec">Behind the scenes</h2><p class="sec-sub">The working machinery — tap to open any part.</p>'+parts.join("");
+}
+
 /* ---------- tabs ---------- */
 function pane(name,inner){
   if(!inner) inner='<p class="mut" style="margin-top:24px">Nothing here yet.</p>';
@@ -840,13 +1176,30 @@ function render(){
   document.getElementById("updated").textContent="Updated "+when(S.generated_at);
   document.getElementById("banner-kings").innerHTML=bannerHTML();
   document.getElementById("ticker-track").innerHTML=tickerGroup()+tickerGroup();
-  document.getElementById("content").innerHTML =
-    pane("overview", todayHTML()+summaryHTML()+totalsHTML()+pnlChartHTML()+forwardHTML())
-    +pane("kings", kingsHTML())
-    +pane("compare", compareHTML())
-    +pane("slips", slipsHTML())
-    +pane("bets", betsHTML()+activityHTML())
-    +pane("more", tuckedHTML());
+  const hb=document.getElementById("tabbtn-history");
+  if(hasEra2()){
+    /* Site reset (user order 2026-11-26): every stat surface leads
+       with Era 2 in dollars; Era 1 lives only in History. */
+    if(hb) hb.style.display="";
+    document.getElementById("content").innerHTML =
+      pane("overview", heroHTML()+todayHTML()+summary2HTML()+totals2HTML()+pnl2HTML()+desks2HTML())
+      +pane("kings", kings2HTML())
+      +pane("compare", compare2HTML())
+      +pane("slips", slips2HTML())
+      +pane("bets", bets2HTML()+activityHTML())
+      +pane("history", historyHTML())
+      +pane("more", tucked2HTML());
+  }else{
+    if(hb) hb.style.display="none";
+    if(activeTab==="history") activeTab="overview";
+    document.getElementById("content").innerHTML =
+      pane("overview", todayHTML()+summaryHTML()+totalsHTML()+pnlChartHTML()+forwardHTML())
+      +pane("kings", kingsHTML())
+      +pane("compare", compareHTML())
+      +pane("slips", slipsHTML())
+      +pane("bets", betsHTML()+activityHTML())
+      +pane("more", tuckedHTML());
+  }
   applyTabs();
   tickerStart();
   countdownStart();
