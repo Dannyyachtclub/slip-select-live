@@ -270,12 +270,19 @@ function fwdKing(court){
 
 /* ---------- banner: king photos + live chips ---------- */
 function bannerHTML(){
+  const e2=(S.forward&&S.forward.era2)||null;
+  const e2k={};
+  if(e2){ for(const x of (e2.kings||[])) e2k[x.court]=x; }
   return (S.kings||[]).map(k=>{
     const f=fwdKing(k.court)||{};
+    const e=e2k[k.court]||null;
+    const chip=e
+      ?'<div class="bk-chip">ERA 2 <span class="num '+cls(e.pnl_m)+'">'+m(e.pnl_m)+'</span> &middot; Bal '+m(e.balance_m)+'</div>'
+      :'<div class="bk-chip">Live <span class="num '+cls(f.pnl_m)+'">'+m(f.pnl_m)+'</span></div>';
     return '<div class="bk'+(k.grand_king?" grand":"")+'"><div class="ph"><img src="'+esc(COURT_IMG[k.court]||"")+'" alt="'+esc(k.court)+'"></div>'
       +'<div class="bk-nm">'+esc(k.court)+'</div>'
       +(k.grand_king?'<div class="bk-grand">GRAND KING</div>':"")
-      +'<div class="bk-chip">Live <span class="num '+cls(f.pnl_m)+'">'+m(f.pnl_m)+'</span></div></div>';
+      +chip+'</div>';
   }).join("");
 }
 
